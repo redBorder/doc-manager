@@ -1,0 +1,516 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE chapter PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd" [
+<!ENTITY % BOOK_ENTITIES SYSTEM "manual.ent">
+<!ENTITY PRODUCT "Documentation">
+<!ENTITY BOOKID "manual">
+<!ENTITY YEAR "2015">
+<!ENTITY HOLDER "Eneo Tecnología S.L. |">
+]>
+<chapter>
+	<title>Instalación del manager de redBorder Horama Community Version</title>
+	<para>Bienvenido al asistente para la instalación del Manager redBorder Horama Community Version. Gracias a él cualquier persona puede realizar dicha instalación sin necesidad de tener conocimientos específicos de programación en Linux.</para> 
+	<para>Para la instalación del Manager, el usuario dispondrá de una imagen ISO obtenida mediante descarga que podrá guardar en su disco local o bien, grabarla en un DVD o USB para su instalación en máquina física. En cualquier caso, una vez realizada la primera fase de la instalación, el sistema se reiniciará y arrancará desde la opción definida por defecto <literal>Select from local disk.</literal></para>
+	<section>
+		<title>Opciones disponibles del menú principal de la ISO Manager redBorder Horama</title>
+		<para>En él se contemplan las opciones que le permitirán realizar la instalación del Manager. <footnote><para>En la imagen adjunta aparecen las opciones disponibles para la instalación del redBorder IPS, el menú es el mismo en todos los casos, variantdo tan solo, el tipo de sensor a registrar en el Manager. </para></footnote> Asimismo, encontrará otras opciones muy útiles relacionadas con el funcionamiento de su máquina.  </para>
+        <itemizedlist mark="bullet">
+			<listitem>
+				<para><literal>Install Manager:</literal> realiza la instalación del software de Manager en el equipo.</para>
+			</listitem>
+			<listitem>
+				<para><literal>Rescue installed System:</literal> modalidad de inicio de rescate para los casos en que existan problemas de inicio de su máquina (modo avanzado).</para>
+			</listitem>
+			<listitem>
+				<para><literal>Boot from Local Drive:</literal> arranque desde disco local (por defecto).</para>
+			</listitem>
+			<listitem>
+				<para><literal>Memory Test:</literal> testeo de memoria disponible para la instalación del sistema. En caso de que algún módulo de memoria se encuentre defectuoso, esta prueba lo detectará y avisará de ello al usuario.</para>
+			</listitem>
+		</itemizedlist>
+		<para>Para comenzar con el proceso de instalación del Manager, seleccionar la opción <keycap>1</keycap> <literal>Install Manager (IPS o Flow):</literal> para comenzar el proceso de instalación del Manager redBorder Horama, a continuación se deberán realizar una serie de ajustes básicos.</para>
+		<mediaobject>
+			<imageobject>
+				<imagedata scalefit="1" align="center" width="350" fileref="images/ch03_img001.png"/>
+			</imageobject>
+			<textobject>
+				<phrase>Pantalla principal del asistente de instalación del manager redBorder Horama</phrase>
+			</textobject>
+			<caption>
+				<para>Pantalla principal del asistente de instalación del manager redBorder Horama</para>
+			</caption>
+		</mediaobject>
+		<note>
+			<title>Nota</title>
+		<para>En caso de que disponga de más de un puerto ethernet, deberá seleccionar cuál es el elegido para la instalación del Manager.</para>
+		</note>
+		<mediaobject>
+			<imageobject>
+				<imagedata scalefit="1" align="center" width="350" fileref="images/ch03_img002.png"/>
+			</imageobject>
+			<textobject>
+				<phrase>Selección del puerto Ethernet para la instalación del manager redBorder Horama</phrase>
+			</textobject>
+			<caption>
+				<para>Selección del puerto Ethernet para la instalación del manager redBorder Horama</para>
+			</caption>
+		</mediaobject>
+		<para>El proceso de instalación del Manager se realiza en dos etapas:</para>
+		<itemizedlist mark="circle">
+			<listitem>
+				<para>Ajustes básicos e instalación de los paquetes</para>
+			</listitem>
+			<listitem>
+				<para>Finalización de la instalación del Manager: comprende a su vez, dos pasos:</para>
+				<para>a) Configuración de parámetros del sistema: System configuration.</para>
+				<para>b) Puesta en red del Manager: Network configuration.</para>
+			</listitem>
+		</itemizedlist>
+	</section>
+	<section>
+		<title>Proceso de instalación del Manager: ajustes básicos</title>
+		<para>Los ajustes que se realizan antes de comenzar la instalación del Manager son los siguientes:</para>
+		<itemizedlist mark="bullet">
+			<listitem>
+				<para>Selección del idioma</para>
+			</listitem>
+			<listitem>
+				<para>Selección del teclado</para>
+			</listitem>
+			<listitem>
+				<para>Insertar Password</para>
+			</listitem>
+		</itemizedlist>
+		<para><emphasis role="bold">Selección de idioma</emphasis></para>
+		<para>Seleccione el idioma con el que desea operar a partir de este momento.</para>
+		<mediaobject>
+			<imageobject>
+				<imagedata scalefit="1" align="center" width="350" fileref="images/ch02_img002a.png"/>
+			</imageobject>
+			<textobject>
+				<phrase>Ajustes básicos: selección de idioma</phrase>
+			</textobject>
+			<caption>
+				<para>Ajustes básicos: selección de idioma</para>
+			</caption>
+		</mediaobject>
+		<para><emphasis role="bold">Selección tipo de teclado</emphasis></para>
+		<para>Elija el tipo de teclado que quiere utilizar durante el proceso. Debido a su amplia compatibilidad aparecerá seleccionada por defecto la opción de teclado americano [US].</para>
+		<mediaobject>
+			<imageobject>
+				<imagedata scalefit="1" align="center" width="350" fileref="images/ch02_img002b.png"/>
+			</imageobject>
+			<textobject>
+				<phrase>Ajustes básicos: selección de tipo de teclado</phrase>
+			</textobject>
+			<caption>
+				<para>Ajustes basicos: selección de tipo de teclado</para>
+			</caption>
+        </mediaobject>
+        <para><emphasis role="bold">Insertar password</emphasis></para>
+        <para><emphasis>Elegir e insertar una password.</emphasis> Esta, será la clave con la que opere a partir de ahora. Puede ser modificada en cualquier otro momento.</para>
+        <para><emphasis>Confirmar password.</emphasis> Volver a introducir la clave para verificar que la conoce y que no ha cometido ningún error tipográfico. En caso de que la clave sea débil o con poca fortaleza, el programa le avisará mediante una ventana emergente.</para>
+        <para> Si lo desea, puede insertar una contraseña más fuerte o bien, guardar la contraseña actual y cambiarla en otro momento seleccionando la opción <keycap>3</keycap> <literal>Password</literal>, accesible desde el menú del panel de configuración del Manager y del IPS indistintamente.</para>    
+        <note>
+			<title>Nota</title>
+			<para>Recuerde que la contraseña que haya seleccionado en este paso, será la que utilice para acceder al Panel de Administración del Manager Horama.</para>
+        </note>
+        <para>Una vez que haya introducido su Password y haya pulsado la opción <literal>OK</literal>, el sistema procederá a crear las particiones y a realizar la instalación de los paquetes del asistente en su disco duro.</para>
+        <mediaobject>
+			<imageobject>
+				<imagedata scalefit="1" align="center" width="350" fileref="images/ch03_img003.png"/>
+			</imageobject>
+			<textobject>
+				<phrase>Ajustes básicos: password</phrase>
+			</textobject>
+			<caption>
+				<para>Ajustes básicos: password</para>
+			</caption>
+		</mediaobject>
+		<note>
+			<title>Nota</title>
+			<para>El Manager se configura de manera automática en la franja horaria UTC para evitar desfases en la sincronización entre los sensores y el Manager que pueden provocar errores en el sistema.</para>
+        </note>
+        <para><emphasis role= "bold">Instalación de los paquetes y reinicio del sistema</emphasis></para>
+		<para>Una vez que haya insertado el password, se procederá a la instalación de los paquetes de instalación del software en el disco duro.</para>
+		<para>Espere hasta que la barra de progreso le indique que la instalación se ha completado al 100%. Este proceso puede durar unos minutos.</para>
+		<para>No pulse ninguna tecla ni realice ninguna acción mientras visualice las siguientes pantallas:</para>
+		<mediaobject>
+			<imageobject>
+				<imagedata scalefit="1" align="center" width="350" fileref="images/ch02_img002d.png"/>
+			</imageobject>
+			<textobject>
+				<phrase>Instalación de los paquetes del asistente</phrase>
+			</textobject>
+			<caption>
+				<para>Instalación de los paquetes del asistente</para>
+			</caption>
+		</mediaobject>
+		<para>Una vez instalados los paquetes, el programa arranca los últimos scripts para finalizar esta etapa. A continuación, deberá aparecer una pantalla emergente en la que se solicita el reinicio del sistema para finalizar la primera parte de la instalación. Hacer clic en <literal>Reboot</literal>.</para>
+	</section>
+    <section>
+		<title>Finalización de la instalación del Manager redBorder Horama: redBorder Configuration menu</title>   
+		<para>Tras el reinicio automático del sistema se realizarán las siguientes acciones:</para>
+		<itemizedlist mark="bullet">
+			<listitem>
+				<para>Login</para>
+			</listitem>
+			<listitem>
+				<para>Password</para>
+			</listitem>
+			<listitem>
+				<para>Comando rb_sysconf</para>
+			</listitem>
+		</itemizedlist>	
+		<para><emphasis role="bold">Login</emphasis></para>
+		<para>Registrarse con el usuario que tiene mayores permisos: <emphasis>root.</emphasis></para>		
+		<para>Para mayor seguridad, le recomendamos que asigne de tres niveles de usuarios/permisos entre las personas que se vayan a encargar del control del sistema redBorder IPS.</para>
+	    <note>
+			<title>Niveles de usuarios para redBorder IPS</title>
+			<orderedlist numeration="arabic">
+				<listitem>
+					<para>Root: posee todos los permisos. Es el superadministrador del sistema.</para>
+				</listitem>
+				<listitem>
+					<para>Admin:usuario que solo tiene acceso al menú de configuración del sistema, pero que no posee permisos para modificar ficheros.</para> 
+				</listitem>
+				<listitem>
+					<para>Redborder:Este usuario tiene un significado distinto para el manager que para los sensores:</para>
+					<para><emphasis>Manager:</emphasis>Usuario utilizado para registrar los sensores.</para>
+					<para><emphasis>Sensor:</emphasis> Usuario utilizado cuando el manager quiere comunicarse con los sensores.</para>
+				</listitem>	
+            </orderedlist>
+        </note>
+        <mediaobject>
+			<imageobject>
+				<imagedata scalefit="1" align="center" width="350" fileref="images/ch02_img002e.png"/>
+			</imageobject>
+			<textobject>
+				<phrase>Finalización del proceso de instalación: login</phrase>
+			</textobject>
+			<caption>
+				<para>Finalización del proceso de instalación: login</para>
+			</caption>
+		</mediaobject> 
+        <para><emphasis role="bold">Password</emphasis></para>
+		<para>Introducir Contraseña. Esta coincide con la contraseña que usted haya introducido durante el proceso de ajustes básicos.</para>
+		<note>
+			<title>Nota</title>
+			<para> Recuerde que puede cambiar la contraseña en cualquier momento seleccionando la opción <keycap>3</keycap> <literal>Password</literal> accesible desde el menú del panel de configuración del Manager y del IPS indistintamente.</para>
+		</note>	    
+	    <mediaobject>
+			<imageobject>
+				<imagedata scalefit="1" align="center" width="350" fileref="images/ch03_img003.png"/>
+			</imageobject>
+			<textobject>
+				<phrase>Finalización del proceso de instalación: password</phrase>
+			</textobject>
+			<caption>
+				<para>Finalización del proceso de instalación: password</para>
+			</caption>
+		</mediaobject>	
+		<para><emphasis role="bold">Instertar comando <literal>rb_sysconf</literal></emphasis></para>
+		<para>Insertar comando <literal>rb_sysconf</literal> para lanzar el redBorder Configuration menu. Estas son las opciones que encontrará en él: </para>
+		<mediaobject>
+			<imageobject>
+				<imagedata scalefit="1" align="center" width="350" fileref="images/ch02_img002f.png"/>
+			</imageobject>
+			<textobject>
+				<phrase>Finalización del proceso de instalación: insertar comando rbsysconf</phrase>
+			</textobject>
+			<caption>
+				<para>Finalización del proceso de instalación: insertar comando <literal>rbsysconf</literal></para>
+			</caption>
+		</mediaobject>
+		<orderedlist numeration="arabic">
+		 	<listitem>
+				<para><literal>System Configuration:</literal> configuración del hostname, IP del Manager, hora y estatus del Manager.</para>
+			</listitem>
+			<listitem>
+				<para><literal>Network Configuration:</literal> configuración de bonds, segmentos, DNS, rutas e IPMI. Recuerde que, para poner en funcionamiento el Manager, se necesita por lo menos una conexión de red.</para>
+			</listitem>
+			<listitem>
+				<para><literal>Passwords:</literal> acceda a esta opción si desea modificar las contraseñas que haya definido por cada rol de usuario.</para>
+			</listitem>
+			<listitem>
+				<para><literal>Backup System:</literal> creación de un fichero de recuperación, posibilidad de restaurar la máquina a través de la copia de seguridad y visualziación de un listado de las copias de seguridad disponibles, así como la posibilidad de subir dichos ficheros a un servidor FTP.</para>
+			</listitem>
+		</orderedlist>
+		<para><literal>quit:</literal> Salir. Nos devuelve a la pantalla principal de configuración del sistema.</para>
+		<mediaobject>
+			<imageobject>
+				<imagedata scalefit="1" align="center" width="350" fileref="images/ch03_img004.png"/>
+		    </imageobject>
+		    <textobject>
+				<phrase>Pantalla principal del redBorder configuration menu</phrase>
+			</textobject>
+			<caption>
+				<para>Pantalla principal del redBorder configuration menu</para>
+			</caption>
+		</mediaobject>
+		<section>
+			<title>Configuración de parámetros del sistema: System configuration</title>
+			<para>Para acceder a la configuración del sistema, basta con seleccionar la opción <keycap>1</keycap> para acceder a la pantalla de configuración del sistema en la que encontrará las siguientes opciones:</para>
+			<orderedlist numeration="arabic">
+				<listitem>
+					<para>Hostname (rbmanager): Esta opción permite cambiar el hostname del Manager.</para>
+				</listitem>
+				<listitem>
+					<para>Set local time: Configuración de fecha y hora definida para la zona UTC.</para>
+				</listitem>
+				<listitem>
+					<para>IP adress for rB Master Manager [127.0.0.1]</para>
+				</listitem>
+				<listitem>
+					<para>Register rB Sensor/Manager</para>
+				</listitem>
+			</orderedlist>
+			<para>a) apply: Para que los cambios realizados sean guardados es necesario seleccionar esta opción.</para>
+			<para>s) show status: Imprime un resumen sobre el estado del sistema y los datos de registro. Usted visualizará los siguientes bloques de información:</para>
+			<itemizedlist mark="bullet">
+				<listitem>
+					<para>Node properties: información sobre el sistema y su estado.</para>
+				</listitem>
+				<listitem>
+					<para>Manager Mode: Rol del nodo dentro del cluster. <emphasis role="bold">En la versión Community siempre aparecerá el Master.</emphasis></para>
+				</listitem>
+				<listitem>
+					<para>Services: estado de los principales servicios (en verde: funcionamiento correcto).</para>
+				</listitem>
+				<listitem>
+					<para>Kafka Brokers: nombre que designa a un nodo Kafka.</para>
+				</listitem>
+				<listitem>
+					<para>Kafka Topics: Kafka mantiene la alimentación de los mensajes en categorías llamadas "temas". Horama puede hacer frente a una gran cantidad de temas o tipo de eventos , pero en la versión Community sólo los eventos y el monitor están disponibles. </para> <!--nota al pie? p.11-->
+				</listitem>
+			</itemizedlist>
+			<para>q) quit: Nos devuelve a la pantalla inicial del menú de configuración del Manager.</para>
+			<mediaobject>
+				<imageobject>
+					<imagedata scalefit="1" align="center" width="350" fileref="images/ch03_img005.png"/>
+				</imageobject>
+				<textobject>
+					<phrase>Menú de configuración del sistema: Hostname, configuración de hora local e IP del manager</phrase>
+			    </textobject>
+			    <caption>
+				    <para>Menú de configuración del sistema: Hostname, configuración de hora local e IP del manager</para>
+			    </caption>
+			</mediaobject>
+			<note>
+				<title>Nota</title>
+				<para>En el caso de la versión Community, las opción <keycap>3)</keycap> es de carácter informativo ya que, en esta versión, no se pueden crear clusters. Por lo que la IP del Manager maestro es la única que se muestra al no haber Manager esclavos que requieran de IP de sincronismo.</para> <!--Revisar a partir de aquí, copiado literalmente del manual de Rai-->
+			</note>
+			<para> Los pasos que debe seguir en esta fase son los siguientes:</para>
+			<para>Modificar Hostname: seleccionar la opción <keycap>1</keycap> para realizar la modificación del Hostname. Para seleccionar la opción definida por defecto, pulse <keycap>Enter.</keycap></para>
+			<para> Configurar hora local: insertar fecha y hora. El Manager Horama viene configurado por defecto en zona UTC.</para>
+			<important>
+				<title>Importante</title>
+				<para>Recuerde que, para guardar y aplicar los cambios que haya realizado, debe seleccionar la opción <literal>a) apply.</literal></para>
+			</important>
+		</section>
+		<section>
+			<title>Puesta en red del Manager: Network configuration</title>
+			<para>Una vez que se haya realizado la configuración de los parámetros del sistema, volveremos a la pantalla principal del <literal>redBorder configuration menu</literal> saliendo mediante la opción <keycap>q)</keycap>.</para>
+			<para>Para realizar las acciones necesarias para poner el Manager en la red, seleccionar la opción <keycap>2</keycap>.</para>
+			<para><emphasis role="bold">Pasos para la configuración del Manager</emphasis></para>
+			<orderedlist numeration="arabic">
+				<listitem>
+					<para><literal>Management Network Configuration:</literal> seleccione esta opción para configurar la red de gestión mediante la <emphasis role="bold">creación de un bonding.</emphasis> Este procedimiento será explicado en el apartado <emphasis>Finalización de la instalación del Manager Horama.</emphasis></para>
+				</listitem>
+				<listitem>			 
+					<para><literal>DNS and domain settings:</literal> esta opción nos permite realizar las siguientes acciones:</para>
+					<para>a) Indicar el nombre de la máquina</para>	
+					<para>b) Establecer el Dominio DNS</para>
+					<para>c) Asignar máscara (Netmask)</para>
+					<para>d) Asignar pasarela (Gateway)</para>
+				</listitem>
+			</orderedlist>	
+			<para><literal>i) info:</literal> ofrece un resumen del estado de los segmmentos e interfaces de red.</para>
+			<para><literal>a) apply:</literal> aplicar cambios.</para>
+			<para><literal>q) quit:</literal> Salir.</para>
+			<mediaobject>
+				<imageobject>
+					<imagedata scalefit="1" align="center" width="350" fileref="images/ch03_img006.png"/>
+				</imageobject>
+				<textobject>
+					<phrase>Menú de configuración de red: configuración de la red de gestión, DNS y dominio</phrase>
+			    </textobject>
+			    <caption>
+				    <para>Menú de configuración de red: configuración de la red de gestión, DNS y dominio</para>
+			    </caption>
+			</mediaobject>
+		</section>
+		<section>
+			<title>Creación de un nuevo bonding y asignación de puertos al Manager: Management Network Configuration</title>
+			<para>En la pantalla principal del <literal>Network Configuration Menu</literal> seleccionar la opción <keycap>1</keycap> para acceder al <literal>Managment Network Configuration</literal> para la creación de un bonding.</para>
+			<note>
+				<title>Nota</title>
+				<para>Para la correcta instalación de la versión Community del Manager redBorder Horama, es suficiente contar con una interfaz de red o bonding.</para>
+			</note>		 
+			<para>En esta pantalla se muestran el número de bondings que se han creado, los puertos asignados a cada bonding y la máscara e IP de cada uno de los bondings. También puede encontrar el siguiente menú:</para>	
+			<para><literal>n) new bonding:</literal>seleccionar para crear un nuevo bonding.</para>
+			<para><literal>d) delete bonding:</literal>borrar un bonding.</para>
+			<para><literal>q) quit:</literal>Salir.</para>
+			<para>En este paso, el usuario realizará las siguientes acciones:</para>
+			<itemizedlist mark="bullet">
+				<listitem>
+					<para>Asignación de puertos</para>
+				</listitem>
+				<listitem>
+					<para><literal>Insert management IP adress</literal></para>
+				</listitem>
+				<listitem>
+					<para><literal>Insert management Netmask.</literal></para>
+				</listitem>
+				<listitem>
+					<para><literal>Insert default gateway.</literal></para>
+				 </listitem>
+				 <listitem>
+					<para><literal>Insert a route for this bonding.</literal></para>
+				</listitem>
+			</itemizedlist>
+			<para>Para la selección de puertos, se visualizará un listado con información muy valiosa y detallada, que ayudará al administrador a decidir qué puertos son los que quiere asignarle al bond. </para>
+			<para>Para ilustrar este proceso crearemos un bonding (bond 0) y le asignaremos 1 puerto.</para>
+			<para>Para comenzar con el proceso de creación del bonding, seleccione la opción <keycap>n</keycap> que aparece en el submenú lateral derecho de la pantalla.</para>
+			<mediaobject>
+				<imageobject>
+					<imagedata scalefit="1" align="center" width="350" fileref="images/ch03_img007.png"/>
+				</imageobject>
+				<textobject>
+					<phrase>Configuración de la red de gestión: creación de bonding</phrase>
+			    </textobject>
+			    <caption>
+				    <para>Configuración de la red de gestión: creación de bonding</para>
+			    </caption>
+			</mediaobject>
+			<para>Una vez que haya revisado los puertos que se encuentran disponibles, seleccione aquel que desea asignar al bonding, tal y como aparece en el margen inferior de esta pantalla:</para>
+			<para>Introduzca el número de puerto en la línea <literal>Insert bonding first port [0]:_</literal> El número que aparece entre corchetes <literal>[]</literal> es el que define el sistema por defecto. Para seleccionar este número, pulse <keycap>Enter</keycap>.</para> 	
+			<mediaobject>
+				<imageobject>
+					<imagedata scalefit="1" align="center" width="350" fileref="images/ch03_img008.png"/>
+                </imageobject>
+                <textobject>
+					<phrase>Creación de bonding: asignación del primer puerto</phrase>
+			    </textobject>
+			    <caption>
+				    <para>Creación de bonding: asignación del primer puerto</para>
+			    </caption>
+            </mediaobject>
+        </section>
+		<section>
+			<title>Añadir un nuevo puerto al bonding</title>
+			<para>El sistema le hará la siguiente pregunta: <literal>Insert second port (y/N):_.</literal></para>
+			<para>La opción que viene predeterminada por defecto aparece en mayúscula. Recuerde que si NO desea añadir un nuevo puerto tan solo tiene que pulsar la tecla <keycap>Enter</keycap>.</para>
+			<para>En caso de que desee insertar un nuevo puerto, teclee <keycap>y</keycap>.</para>
+			<para>Introduzca el número de puerto en la línea <literal>Insert bonding second port [1]: _</literal></para>
+			<para>El número que aparece entre corchetes <literal>[]</literal> es el que define el sistema por defecto. Para seleccionar este número, pulse <keycap>Enter</keycap>.</para>   
+			<para>Una vez que ha realizado la asignación del segundo puerto al nuevo bonding (bond0), el sistema le pedirá que introduzca de nuevo los datos relativos a la configuración de la red tal y como se ha visto en el apartado anterior: dirección IP, máscara, pasarela y ruta para el nuevo bonding creado.</para>
+			<para>Si su equipo utiliza protocolo DHCP, le será asignada una dirección IP por defecto. Pulsar <keycap>Enter</keycap> para seleccionar la IP, máscara y pasarela asignadas por el sistema. En caso contrario, introduzca manualmente estos valores.</para>
+			<para>El sistema también le otorga una ruta por defecto para el bonding creado. Para insertar una ruta manualmente, seleccione la opción <keycap>y</keycap> en la línea <literal>Insert a route for this bonding (y/N)?:_</literal>.</para>
+			<para>Una vez que haya terminado con este proceso, visualizará un mensaje avisándole de que el bonding se ha creado con éxito.</para>
+			<mediaobject>
+				<imageobject>
+					<imagedata scalefit="1" align="center" width="350" fileref="images/ch03_img008.png"/>
+				</imageobject>
+				<textobject>
+					<phrase>Creación de bonding: añadir un nuevo puerto</phrase>
+			    </textobject>
+			    <caption>
+				    <para>Creación de bonding: añadir un nuevo puerto</para>
+			    </caption>
+			</mediaobject>
+			<note>
+				<title>Nota</title>
+				<para>-Selección de opciones predeterminadas: <keycap>Enter</keycap></para>
+				<para>-Para introducir una IP, máscara o pasarela diferentes a las asignadas por defecto, introdúzcalas manualmente.</para>
+			</note>
+			<warning>
+				<title>Advertencia</title>
+				<para>En caso de que su servidor utilice le protocolo DHCP, la asignación de IP es automática. En caso contrario, deberá introducirla de manera manual.</para>
+			</warning>
+		</section>
+		<section>
+			<title>Finalizar el proceso de creación del bonding</title>
+			<para>Pulsar <keycap>Enter</keycap> para finalizar el proceso de creación del bonding y asignar la ruta definida por defecto.</para>
+			<para>Antes de aplicar cambios y finalizar el proceso de creación del bonding, visualizará una pantalla con un listado que incluye los siguientes elementos:</para>
+			<itemizedlist mark="bullet">
+				<listitem>
+					<para>Bondings</para>
+				</listitem>
+				<listitem>
+					<para>Puertos asignados al bonding</para>
+				</listitem>
+				<listitem>
+					<para>IP/máscara del bonding</para>
+				</listitem>
+				<listitem>
+					<para>Ruta o pasarela del bonding</para>
+				</listitem>
+			</itemizedlist>
+			<para>Para que las modificaciones realizadas queden guardadas, debe realizar la acción de aplicar cambios: <literal>Need to 'apply' to activate changes</literal> seleccionando la opción <keycap>a</keycap> disponible en la pantalla principal <literal>redBorder Network configuration menu.</literal></para>
+			<para>Puede borrar en cualquier momento el/ los bonds creados seleccionado la opción <literal>delete bonding</literal> insertando la letra <keycap>d.</keycap></para>
+			<para>Para salir del menú principal de configuración de red, seleccionar la opción <literal>quit</literal> con la letra <keycap>q.</keycap></para>		 
+		</section>
+        <section>
+			<title>Configuración DNS y dominio</title>
+			<para>En el menú de configuración de red encontramos la opción de <literal>DNS and domain settings</literal>. Para comenzar el proceso, seleccionar la opción <keycap>2.</keycap></para>
+		    <mediaobject>
+				<imageobject>
+					<imagedata scalefit="1" align="center" width="350" fileref="images/ch03_img009.png"/>
+				</imageobject>
+				<textobject>
+					<phrase>Menú de configuración de red: configuración de la red de gestión, DNS y dominio</phrase>
+			    </textobject>
+			    <caption>
+				    <para>Menú de configuración de red: configuración de la red de gestión, DNS y dominio</para>
+			    </caption>
+            </mediaobject>	
+            <para>En el proceso de configuración el usuario deberá introducir:</para>
+            <itemizedlist mark="bullet">
+			  <listitem>
+				  <para>Nombre de Dominio: definido por defecto. Para introducir otro valor, deberá hacerlo manualmente.</para>
+			  </listitem>
+			  <listitem>
+				  <para>Dirección DNS primaria: definido por defecto. Para seleccionar el DNS proporcionado por el sistema hacer <keycap>Enter</keycap>. En caso de que desee indicar el servidor que provee DNS a su red y al que estará asociado el Manager, deberá introducir la dirección manualmente. </para>
+			  </listitem>
+			  <listitem>
+				  <para>Dirección DNS secundaria (opcional): Indicar DNS secundario de manera opcional. Se aconseja introducir un DNS alternativo que sustituya al DNS primario en caso de fallo del servidor.</para>
+			  </listitem>
+		   </itemizedlist>
+		   <mediaobject>
+				<imageobject>
+					<imagedata scalefit="1" align="center" width="350" fileref="images/ch03_img010.png"/>
+				</imageobject>
+				<textobject>
+					<phrase>Inserción de DNS primaria</phrase>
+			    </textobject>
+			    <caption>
+				    <para>Inserción de DNS primaria</para>
+			    </caption>
+			</mediaobject>
+			<mediaobject>
+				<imageobject>
+					<imagedata scalefit="1" align="center" width="350" fileref="images/ch03_img011.png"/>
+				</imageobject>
+				<textobject>
+					<phrase>Finalización de la configuración de la red</phrase>
+			    </textobject>
+			    <caption>
+				    <para>Finalización de la configuración de la red</para>
+			    </caption>
+			</mediaobject>
+		   <para>Una vez introducida esta información, el sistema avisará de que se ha aplicado esta configuración de manera correcta. Para asegurarse de que los cambios han sido aplicados, pulsar <keycap>Enter</keycap> para regresar a la pantalla principal del <literal>redBorder Network configuration menu</literal>. En esta pantalla seleccionar la opción <keycap>a).</keycap></para>
+		   <mediaobject>
+				<imageobject>
+					<imagedata scalefit="1" align="center" width="350" fileref="images/ch03_img012.png"/>
+				</imageobject>
+				<textobject>
+					<phrase>Finalización de la instalación del manager redBorder Horama</phrase>
+			    </textobject>
+			    <caption>
+				    <para>Finalización de la instalación del manager redBorder Horama</para>
+			    </caption>
+			</mediaobject>
+		   <para>Enhorabuena! Ha instalado correctamente el Manager Horama Community Version. Puede acceder a él mediante el <emphasis role="bold">Panel de administración del Manager redBorder Horama.</emphasis></para>
+	    </section>       
+	</section>			
+</chapter>

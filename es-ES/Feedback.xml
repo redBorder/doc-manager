@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE section PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd">
+    <section>
+		<title>Queremos conocer su opinión</title>
+		<para>Si encuentra cualquier tipo de error en este manual, estaremos encantados de recibir sus sugerencias. En caso de que se trate de un error tipográfico o de conceptos puede remitírnoslo mediante un correo electrónico en el que se incluyan los siguientes datos:</para>  
+        <para>Identificador del manual: <emphasis>InstalacionManager_rBHorama_Enterprise-v.3 [ES] (2015-04)</emphasis>, Capítulo o sección y número de página en el que se encuentra el error y fragmento de texto que contiene dicho error.</para>
+        <para>Esta información nos permite localizar fácilmente el error y subsanarlo con el fin de mejorar la documentación que acompaña a nuestros productos.</para>
+        <para>Asimismo, agradecemos cualquier sugerencia referente al modo de exposición u organización de la información que nos ayude a optimizar nuestros manuales.</para>
+        <para>Consulte siempre la última versión de la documentación, disponible en <emphasis role="bold">http://support.redborder.net</emphasis></para>
+        <para>Pueden enviar sus comentarios a la dirección de correo electrónico: <email>info@redborder.net</email></para>
+        <important>
+			<title>ENEO Tecnología S.L.</title>
+			<address>
+				<street>Plaza de las Naciones s/n, Torre Norte (Edificio Aljarafe Center). Planta 12.</street>
+				<city>Mairena del Aljarafe</city>
+                <state>Sevilla</state>
+                <postcode>41927</postcode>
+                <phone> +34 955 60 11 60</phone>
+                <country>Spain</country>
+                <email>info@redborder.net</email> 
+            </address>
+        </important>
+    </section>

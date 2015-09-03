@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE chapter PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd" [
+<!ENTITY % BOOK_ENTITIES SYSTEM "manual.ent">
+<!ENTITY PRODUCT "Documentation">
+<!ENTITY BOOKID "manual">
+<!ENTITY YEAR "2015">
+<!ENTITY HOLDER "Eneo Tecnología S.L. |">
+]>
+<chapter>
+	<title>¿Qué es redBorder Horama?</title>
+	<para><emphasis role="bold">redBorder Horama</emphasis> es una plataforma unificada de monitorización y seguridad que combina las posibilidades ofrecidas por la visibilidad total de la red gracias a la App redBorder Flow, junto con el control de la seguridad de la red mediante redBorder IPS.</para>
+	<para>Los <emphasis role="bold">sensores</emphasis> son sistemas Linux con una distribución totalmente enfocada a la captación y/o prevención de intrusiones en los segmentos de red donde son ubicados (IPS) o bien, a la detección de cualquier anomalía o variación en el flujo de su red (Flow).</para>
+	<blockquote><para>Su nuevo backend Big Data inaugura una nueva era en la gestión de eventos mediante tecnología Open Source, a través de una combinación de Hadoop para almacenamiento masivo (Raw) junto a un motor OLAP para trocear y empaquetar los datos para su análisis. Además, canaliza los eventos en tiempo real para su enriquecimiento, correlación y minería de datos. </para></blockquote>
+	<para>redBorder ofrece un ecosistema completamente escalable y Cloud listo para soportar los despliegues más grandes.</para> 
+	<section>
+		<title>Escenario básico para la instalación de redBorder Horama</title>
+		<para>Un escenario básico típico propuesto por la solución consiste en un conjunto de sensores dispuestos en diferentes puntos sensibles de la red de la organización que conectarán con un manager o cluster de managers para su gestión y monitorización.</para>
+		<para>Dichos puntos están formados por enlaces de red, llamados segmentos, por los que circulará el tráfico sensible y que el sensor analizará de manera más o menos transparente, en función del modo de funcionamiento configurado (IPS/IDS o Flow).</para>
+		<para>Para la planificación de la instalación de equipos sensores, se deberán tener en cuenta algunos aspectos fundamentales:</para> 
+		<itemizedlist mark="circle">
+			<listitem>
+				<para><emphasis role="bold">Los segmentos bypass</emphasis> (interfaces específicas de red pareadas, normalmente con soporte bypass) se interpondrán en medio del tráfico a analizar.</para>
+			</listitem>
+			<listitem>
+				<para><emphasis role="bold">Las interfaces de gestión </emphasis> (en forma de bonding) para acceso remoto tanto desde equipos normales como desde el Manager.</para>
+			</listitem>
+			<listitem>
+				<para><emphasis role="bold">Las interfaces de acceso IPMI para la gestión remota del hardware</emphasis> (conexión SOL ó Serial Over Lan, iKVM y comandos ipmi como inicio, reinicio y apagado).</para>
+			</listitem>
+		</itemizedlist>
+		<para>Para el <emphasis role="bold">Manager,</emphasis> al no ser necesario un hardware específico, la única condición es <emphasis role="bold">la existencia de una o más interfaces de red. </emphasis></para>
+		<para>De esta manera se permite la creación de un bonding para la gestión y conexión con los sensores y otro bonding (opcional) para sus comunicaciones hacia otras redes. Ambos sistemas soportan el estándar 802.1q para virtual LAN (opcional a la hora de configurar).</para>
+		<warning>
+			<title>Advertencia</title>
+			<para>Es MUY IMPORTANTE que primero se realice la configuración del Manager (o cluster de managers) antes de configurar los sensores.</para>
+			<para>El Manager debe estar operativo y en una red accesible a los sensores. Algunos de los procesos de configuración de los sensores dependen del acceso al Manager. <footnote><para>El escenario de instalación del Manager redBorder Horama es el mismo independientemente de los sensores que se instalen y registren en el mismo (IPS, Flow, Malware (beta) o Vault (beta)</para></footnote>.</para>
+		</warning>
+		<mediaobject>
+			<imageobject>
+				<imagedata scalefit="1" align="center" width="350" fileref="images/ch01_img001.png"/>
+			</imageobject>
+			<textobject>
+					<phrase>Escenario básico para instalación del Manager</phrase>
+				</textobject>
+				<caption>
+					<para>Escenario básico para la instalación del Manager</para>
+				</caption>
+		</mediaobject>		    
+	</section>
+	<section>
+		<title>Requisitos para la instalación del manager de redBorder Horama</title>
+		<para>El manager de redBorder Horama se puede instalar mediante dos infraestructuras posibles:</para>
+		<itemizedlist mark="bullet">
+			<listitem>
+				<para><emphasis role="bold">Máquina física:</emphasis> disco local de su equipo (Hardware).</para>
+			</listitem>
+			<listitem>
+				<para><emphasis role="bold">Máquina virtual:</emphasis> estructura de virtualización o Cloud.</para>
+			</listitem>
+		</itemizedlist>
+		<important>
+			<title>Importante</title>
+			<para>Requisitos de instalación del Manager de redBorder en un equipo fí­sico:</para>
+			<para>Memoria y almacenamiento: <emphasis role= "bold"> 60GB de disco duro y un mí­nimo de 12GB de RAM</emphasis>.(Esta cifra dependerá del número de sensores asignados).</para>
+			<para>En caso de que se haya creado un <emphasis role="bold">cluster</emphasis> son necesarias dos interfaces de red: una para la red de gestión (Management IP Address) y otra para la red de sincronismo (Sync IP address).</para>
+			<para><emphasis role= "bold">Una interfaz de red para poner en funcionamiento el Manager.</emphasis> </para>
+		</important>
+		<note>
+			<title><emphasis role="bold">Soluciones Cloud compatibles:</emphasis></title>
+			<itemizedlist mark="bullet">
+				<listitem>
+					<para>VMWare</para>
+				</listitem>
+				<listitem>
+					<para>Open Stack</para>
+				</listitem>
+				<listitem>
+					<para>Amazon Web Services (AWS)</para>
+				</listitem>
+			</itemizedlist>
+		</note>
+	</section>
+</chapter>

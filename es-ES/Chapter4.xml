@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE chapter PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd" [
+<!ENTITY % BOOK_ENTITIES SYSTEM "manual.ent">
+<!ENTITY PRODUCT "Documentation">
+<!ENTITY BOOKID "manual">
+<!ENTITY YEAR "2015">
+<!ENTITY HOLDER "Eneo Tecnología S.L. |">
+]>
+<chapter>
+	<title>Administración del manager redBorder Horama</title>
+		<para>Cuando se ha finalizado el proceso de instalación del manager, el usuario puede acceder al panel de administración introduciendo en la barra de direcciones de su navegador, la IP de gestión asignada al manager.</para>
+		<para><screen>https://direccion-IP-manager</screen></para>
+		<mediaobject>
+			<imageobject>
+				<imagedata scalefit="1" align="center" width="350" fileref="images/ch04_img001.png"/>
+			</imageobject>
+			<textobject>
+				<phrase>Pantalla de acceso al panel de administración del manager: login y password</phrase>
+			</textobject>
+			<caption>
+				<para>Pantalla de acceso al panel de administración del manager: login y password</para>
+			</caption>
+		</mediaobject>
+		<note>
+		<title>Nota</title>
+		<para>Para acceder al panel de administración del manager, el usuario podrá hacer Login con el usuario definido por defecto: <emphasis role="bold">admin o admin@redborder.net</emphasis> y con la contraseña que haya insertado en el proceso de instalación del manager.</para>
+		</note>
+		<warning>
+			<title>Advertencia</title>
+			<para>La web de gestión no funcionará si se intenta acceder a ella mediante web no cifrada.</para>
+		</warning>
+		<para>Nada más acceder al panel de administración del manager, lo primero que visualizará es un <emphasis role="bold">dashboard</emphasis> en el que encontrará diferentes métricas y datos sobre el estado de sensores, dominios, etc.</para>
+		<para>Esta pantalla de inicio es completamente personalizable. El usuario podrá crear tantos dashboards por perfil como crea necesarios.<footnote><para>En el caso de la versión Community, el número de dashboards personalizables se limita a uno por perfil de usuario.</para></footnote></para>
+		<mediaobject>
+			<imageobject>
+				<imagedata scalefit="1" align="center" width="350" fileref="images/ch04_img000.png"/>
+			</imageobject>
+			<textobject>
+				<phrase>Pantalla de inicio del administrador del manager: dashboard</phrase>
+			</textobject>
+			<caption>
+				<para>Pantalla de inicio del administrador del manager: dashboard</para>
+			</caption>
+		</mediaobject>
+	<section>
+		<title>Estructura de la interfaz del panel de administración del manager redBorder Horama</title>
+		<para>Existe una estructura que se repite en todas las interfaces del administrador del manager. Conocer estos elementos le ayudará a navegar por la web de un modo cómodo y sencillo. <footnote><para>En la imagen adjunta aparecen las opciones disponibles para un manager redBorder Horama en el que se han registrado sensores para Flow, IPS y Malware. La estructura será la misma en todos los casos, variando tan solo, las opciones disponibles en la barra de menús, según la App que tenga integrada en el ecossitema Horama.</para></footnote></para>
+        <itemizedlist mark="bullet">
+			<listitem>
+				<para><emphasis role="bold">Barra de menú:</emphasis> en ella encontrará el acceso directo a todas las funciones principales de administración del manager. Se encuentra subdividida en dos áreas diferenciadas según operatividad:</para>
+				<para>a) Área de analítica: en esta zona encontrará todos los datos recogidos por los sensores mostrados en diferentes métricas e informes.</para>
+				<para>b) Área de configuración: opciones de configuración y aprovisionamiento del administrador del manager.</para>
+			</listitem>
+			<listitem>
+				<para><emphasis role="bold">Submenú sección:</emphasis> muestra un resumen de la sección en la que nos encontramos, con las diferentes subopciones disponibles.</para>
+			</listitem>
+			<listitem>
+				<para><emphasis role="bold">Área principal:</emphasis> contenido de la sección en la que nos encontremos. En esta zona se muestran los datos en diferentes métricas y gráficas completamente personalizables. </para>
+			</listitem>
+		</itemizedlist>
+		<para>Para comenzar con el proceso de instalación del Manager, seleccionar la opción <keycap>1</keycap> <literal>Install Manager (IPS o Flow):</literal> para comenzar el proceso de instalación del Manager redBorder Horama, a continuación se deberán realizar una serie de ajustes básicos.</para>
+		<mediaobject>
+			<imageobject>
+				<imagedata scalefit="1" align="center" width="350" fileref="images/ch04_img002.png"/>
+			</imageobject>
+			<textobject>
+				<phrase>Estructura de la interfaz del administrador del manager redBorder Horama</phrase>
+			</textobject>
+			<caption>
+				<para>Estructura de la interfaz del administrador del manager redBorder Horama</para>
+			</caption>
+		</mediaobject>
+		<section>
+			<title>Opciones incluidas en la barra de menú</title>
+			<para>Vamos a realizar una descripción rápida de las opciones que se pueden encontrar en la barra de menú, tanto en el área de análisis como de configuración. En epígrafes posteriores se analizarán las funcionalidades y la configuración de dichas opciones.</para>
+			<mediaobject>
+			<imageobject>
+				<imagedata scalefit="1" align="center" width="350" fileref="images/ch04_img003.png"/>
+			</imageobject>
+			<textobject>
+				<phrase>Detalle de las opciones incluidas en la barra de menú</phrase>
+			</textobject>
+				<caption>
+					<para>Detalle de las opciones incluidas en la barra de menú</para>
+				</caption>
+			</mediaobject>
+			<para><emphasis role="bold">Área de análisis</emphasis></para> <!-- Faltan capturas con datos-->
+			<mediaobject>
+			<imageobject>
+				<imagedata scalefit="1" align="center" width="350" fileref="images/ch04_img004.png"/>
+			</imageobject>
+			<textobject>
+				<phrase>Detalle de la barra de menú: área de análisis</phrase>
+			</textobject>
+				<caption>
+					<para>Detalle de la barra de menú: área de análisis</para>
+				</caption>
+			</mediaobject>
+			<para><emphasis>Dashboard:</emphasis> Ofrece un resumen de los eventos recibidos por los sensores, mostrándolos en diferentes métricas. Se trata de la pantalla que aparece por defecto en el inicio del administrador del manager redBorder Horama.</para>
+			<mediaobject>
+				<imageobject>
+					<imagedata scalefit="1" align="center" width="350" fileref="images/ch04_img000.png"/>
+				</imageobject>
+				<textobject>
+					<phrase>Dashboard</phrase>
+				</textobject>
+				<caption>
+					<para>Dashboard</para>
+				</caption>
+			</mediaobject>
+			<para><emphasis>Eventos/sensores:</emphasis> A continuación, el usuario visualizará los eventos de aquellos sensores que tenga registrados en el manager. En la captura adjunta: Flow, IPS y Malware.</para>
+			<mediaobject>
+				<imageobject>
+					<imagedata scalefit="1" align="center" width="350" fileref="images/ch04_img005.png"/>
+				</imageobject>
+				<textobject>
+					<phrase>Sensores: vista de eventos de IPS</phrase>
+				</textobject>
+				<caption>
+					<para>Sensores: vista de eventos IPS</para>
+				</caption>
+			</mediaobject>
+			<para><emphasis>Monitor:</emphasis></para> <!--Diferencia entre monitor y dashboard. Por qué al elejir monitor aparece como primera opción con un gran submenú?-->
+			<mediaobject>
+				<imageobject>
+					<imagedata scalefit="1" align="center" width="350" fileref="images/ch04_img006.png"/>
+				</imageobject>
+				<textobject>
+					<phrase>Monitor: estado de salud del manager</phrase>
+				</textobject>
+				<caption>
+					<para>Monitor: estado de salud del manager</para>
+				</caption>
+			</mediaobject>
+			<para><emphasis>Social:</emphasis> Muestra un resumen de la actividad e interacción que los usuarios de nuestra red tienen con los Social Media (Twitter).</para>
+			<mediaobject>
+				<imageobject>
+					<imagedata scalefit="1" align="center" width="350" fileref="images/ch04_img007.png"/>
+				</imageobject>
+				<textobject>
+					<phrase>Interacción usuarios de la red con Social Media</phrase>
+				</textobject>
+				<caption>
+					<para>Interacción usuarios de la red con Social Media</para>
+				</caption>
+			</mediaobject>
+			<para><emphasis>Reports:</emphasis> En esta sección el usuario podrá visualizar el listado de todos los informes almacenados, importar y exportar informes y crear nuevos informes personalizados gracias a los widgets.</para>
+			<mediaobject>
+				<imageobject>
+					<imagedata scalefit="1" align="center" width="350" fileref="images/ch04_img008.png"/>
+				</imageobject>
+				<textobject>
+					<phrase>Reports</phrase>
+				</textobject>
+				<caption>
+					<para>Reports</para>
+				</caption>
+			</mediaobject>
+			<para><emphasis role="bold">Área de configuración</emphasis></para>
+			<mediaobject>
+				<imageobject>
+					<imagedata scalefit="1" align="center" width="350" fileref="images/ch04_img004b.png"/>
+				</imageobject>
+				<textobject>
+					<phrase>Detalle de la barra de menú: área de configuración</phrase>
+				</textobject>
+				<caption>
+					<para>Detalle de la barra de menú: área de configuración</para>
+				</caption>
+			</mediaobject>
+			<para><emphasis>Buscador:</emphasis> Buscador general que ofrece los resultados coincidentes con el término de búsqueda que se encuentren en el panel de administración del manager redBorder Horama.</para>
+			<para><emphasis>Sensors:</emphasis> Muestra un listado de los sensores agregados y el árbol de organización de los mismos. Contiene también las políticas globales y locales definidas para cada dominio.</para>
+			<mediaobject>
+				<imageobject>
+					<imagedata scalefit="1" align="center" width="350" fileref="images/ch04_img009.png"/>
+				</imageobject>
+				<textobject>
+					<phrase>Listado de sensores</phrase>
+				</textobject>
+				<caption>
+					<para>Listado de sensores</para>
+				</caption>
+			</mediaobject>
+			<para><emphasis>Tools:</emphasis> Ofrece un listado con las opciones de configuración que se encuentran disponibles para el perfil de administrador y en modo lectura para el resto de usuarios.</para>
+			<mediaobject>
+				<imageobject>
+					<imagedata scalefit="1" align="center" width="350" fileref="images/ch04_img010.png"/>
+				</imageobject>
+				<textobject>
+					<phrase>Opciones disponibles en Tools</phrase>
+				</textobject>
+				<caption>
+					<para>Opciones disponibles en Tools</para>
+				</caption>
+			</mediaobject>
+			<para><emphasis>Users:</emphasis> Configuración de los datos de usuario tales como: nombre, login, Email o personalización de la vista de pantalla del panel de administración del manager. Se identifica con un icono de una persona. </para>
+			<mediaobject>
+				<imageobject>
+					<imagedata scalefit="1" align="center" width="350" fileref="images/ch04_img011.png"/>
+				</imageobject>
+				<textobject>
+					<phrase>Configuración de los datos de usuario</phrase>
+				</textobject>
+				<caption>
+					<para>Configuración de los datos de usuario</para>
+				</caption>
+			</mediaobject>
+			<para><emphasis>Messages:</emphasis> Listado de alertas del sistema. Se identifica mediante el icono de una campana. </para>
+			<mediaobject>
+				<imageobject>
+					<imagedata scalefit="1" align="center" width="350" fileref="images/ch04_img012.png"/>
+				</imageobject>
+				<textobject>
+					<phrase>Listado de mensajes del sistema</phrase>
+				</textobject>
+				<caption>
+					<para>Listado de mensajes del sistema</para>
+				</caption>
+			</mediaobject>
+			<para><emphasis>Help:</emphasis> Al activar esta opción se le ofrecerán ventanas emergentes con ayuda durante su navegación por el administrador del manager. Se identifica mediante un signo de interrogación.</para>
+			<mediaobject>
+				<imageobject>
+					<imagedata scalefit="1" align="center" width="350" fileref="images/ch04_img013.png"/>
+				</imageobject>
+				<textobject>
+					<phrase>Activación de ayuda</phrase>
+				</textobject>
+				<caption>
+					<para>Activación de ayuda</para>
+				</caption>
+			</mediaobject>
+			<para><emphasis>Logout:</emphasis> Para desconectarse de forma segura seleccionar esta opción. Se identifica con el icono on/off.</para>
+		</section>
+	</section>		
+</chapter>

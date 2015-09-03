@@ -1,0 +1,510 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE chapter PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd" [
+<!ENTITY % BOOK_ENTITIES SYSTEM "manual.ent">
+<!ENTITY PRODUCT "Documentation">
+<!ENTITY BOOKID "manual">
+<!ENTITY YEAR "2015">
+<!ENTITY HOLDER "Eneo Tecnología S.L. |">
+]>
+<chapter>
+	<title>Dashboard</title>
+	<section>
+		<title>Opciones de dashboard</title>
+		<para>La primera opción que encontramos en la barra de menú en el área de análisis es la de Dashboard. Esta es la opción que se encuentra seleccionada por defecto nada más ingresar al administrador del manager redBorder Horama.</para>
+		<mediaobject>
+			<imageobject>
+				<imagedata scalefit="1" align="center" width="350" fileref="images/ch04_img015.png"/>
+			</imageobject>
+			<textobject>
+				<phrase>Vista general del dashboard (selección Monitor)</phrase>
+			</textobject>
+			<caption>
+				<para>Vista general del dashboard (selección Monitor)</para>
+			</caption>
+		</mediaobject>
+		<para>La sección dashboard presenta múltiples opciones:</para>
+		<itemizedlist mark="circle">
+			<listitem>
+				<para>Visualización dashboards disponibles: en la primera parte del menú de dashboards, el usuario visualizará los dashboards que se han creado y que están disponibles para su perfil. Basta con hacer clic encima de uno de ellos para obtener los datos deseados.</para>
+			</listitem>
+			<listitem>
+				<para>Creación e importación de dashboards: estas dos opciones permiten añadir un nuevo dashboard personalizado e importar aquellos que ya estén creados con el fin de poder compartirlos con otros usuarios o que se encuentren disponibles para otros perfiles. El proceso de creación de dashboard y de importación se verá detenidamente líneas más adelante.</para>
+			</listitem>
+			<listitem>
+				<para>Añadir widget: añada los widget que desee para personalizar al máximo sus dashboards.</para>
+			</listitem>
+			<listitem>
+				<para>Tiempo de actualización: los datos de los dashboards se actualizan cada 5 minutos (300 segundos). Usted visualizará una cuenta atrás del tiempo que falta para la siguiente actualización. Es posible reiniciar la cuenta clicando sobre la cifra que se muestra. En ese momento aparecerá la palabra "stopped". Clicar de nuevo para comenzar la cuenta atrás desde 300.</para> <!--No estoy segura, repasar-->
+			</listitem>
+			<listitem>
+				<para>Bloqueo: el usuario tiene la opción de bloquear/desbloquear el dashboard que esté consultando para que ningún otro usuario con permisos pueda editarlo. </para><!--No estoy segura, repasar-->
+			</listitem>
+			<listitem>
+				<para>Máquina del tiempo: permite "viajar en el tiempo" y visualizar los resultados de las métricas de un día y hora determinados por el usuario a modo de histórico. </para>
+			</listitem>
+		</itemizedlist>
+		<para><footnote><para> En la captura adjunta se muestran tres dashboards (Monitor, Overall Traffic, Security). El usuario visualizará en esa sección tantos dashboards como haya creado.</para></footnote></para>
+		<mediaobject>
+			<imageobject>
+				<imagedata scalefit="1" align="center" width="350" fileref="images/ch04_img016.png"/>
+			</imageobject>
+			<textobject>
+				<phrase>Detalle de las opciones de la sección dashboard</phrase>
+			</textobject>
+			<caption>
+				<para>Detalle de las opciones de la sección dashboard</para>
+			</caption>
+		</mediaobject>
+		<section>
+			<title>Configuración y clonación de los dashboards disponibles</title>
+			<mediaobject>
+				<imageobject>
+					<imagedata scalefit="1" align="center" width="350" fileref="images/ch04_img017.png"/>
+				</imageobject>
+				<textobject>
+					<phrase>Configuración y clonación de los dashboards</phrase>
+				</textobject>
+				<caption>
+					<para>Configuración y clonación de los dashboards</para>
+				</caption>
+		    </mediaobject>
+			<para><emphasis role="bold">Configuración general:</emphasis> El usuario podrá modificar en cualquier momento la información asociada a cada uno de los dashboards disponibles seleccionando la opción de Configuración general haciendo clic en el icono con forma de herramienta.</para>
+			<para>Información editable de la configuración general del dashboard:</para>
+			<itemizedlist mark="bullet">
+				<listitem>
+					<para>Nombre del dashboard</para>
+				</listitem>
+				<listitem>
+					<para>Selección de dashboard para que se muestre por defecto</para>
+				</listitem>
+				<listitem>
+					<para>Estructura de visualización de los widgets y métricas del dashboard</para>
+				</listitem>
+				<listitem>
+					<para>Descripción del contenido del dashboard</para>
+				</listitem>
+				<listitem>
+					<para>Color de fondo</para>
+				</listitem>
+				<listitem>
+					<para>Usuarios que pueden visualizar el dashboard y permisos de edición: añadir y eliminar</para>
+				</listitem>
+				<listitem>
+					<para>Dominios que se incluyen en el dashboard: añadir y eliminar</para>
+				</listitem>
+			</itemizedlist>
+			<para>Además, en el margen inferior de la pantalla el usuario verá una serie de opciones disponibles:</para>
+			<itemizedlist mark="opencircle">
+				<listitem>
+					<para>Actualizar dashboard</para>
+				</listitem>
+				<listitem>
+					<para>Cancelar</para>
+				</listitem>
+				<listitem>
+					<para>Borrar</para> <!--¿Borra los datos introducidos o el dashboard entero-->
+				</listitem>
+				<listitem>
+					<para>Convertir a informe</para>
+				</listitem>
+				<listitem>
+					<para>Exportar dashboard: el sistema creará un archivo comprimido para su descarga; paso necesario en caso de que se quiera realizar una importación.</para>
+				</listitem>
+			</itemizedlist>
+			<mediaobject>
+				<imageobject>
+					<imagedata scalefit="1" align="center" width="350" fileref="images/ch04_img018.png"/>
+				</imageobject>
+				<textobject>
+					<phrase>Configuración general del dashboard</phrase>
+				</textobject>
+				<caption>
+					<para>Configuración general del dashboard</para>
+				</caption>
+			</mediaobject>	
+			<para><emphasis role="bold">Clonar dashboard:</emphasis> Es posible clonar (copiar) los dashboards con el fin de tenerlo disponible para diferentes usuarios, importarlo, etc. Para ello, basta con asignarle un nombre al dashboard copiado.</para>
+			<mediaobject>
+				<imageobject>
+					<imagedata scalefit="1" align="center" width="350" fileref="images/ch04_img019.png"/>
+				</imageobject>
+				<textobject>
+					<phrase>Clonar dashboard</phrase>
+				</textobject>
+				<caption>
+					<para>Clonar dashboard</para>
+				</caption>
+			</mediaobject>	
+		</section>
+		<section>
+			<title>Crear nuevo dashboard</title>
+			<para>El usuario puede crear tantos dashboards como desee para ver diferentes aspectos de cada uno de los módulos en una vista unificada. <emphasis role="bold"> (En la versión Community, el límite de creación de dashboards es de uno). </emphasis> Asimismo puede configurar el nuevo dashboard como el que se visualiza por defecto en el inicio del administrador del manager. </para>
+			<para>Seleccionar la opción <literal>add dashboard</literal> e introducir la información referente a la configuración general del dashboard; por último, guardar los cambios haciendo clic sobre el botón <literal>Create dashboard.</literal></para>
+			<para>Configuración general del nuevo dashboard:</para>
+			<itemizedlist mark="bullet">
+				<listitem>
+					<para>Nombre del dashboard</para>
+				</listitem>
+				<listitem>
+					<para>Selección de dashboard para que se muestre por defecto</para>
+				</listitem>
+				<listitem>
+					<para>Estructura de visualización de los widgets y métricas del dashboard</para>
+				</listitem>
+				<listitem>
+					<para>Descripción del contenido del dashboard</para>
+				</listitem>
+				<listitem>
+					<para>Color de fondo</para>
+				</listitem>
+				<listitem>
+					<para>Usuarios que pueden visualizar el dashboard y permisos de edición: añadir y eliminar</para>
+				</listitem>
+				<listitem>
+					<para>Dominios que se incluyen en el dashboard: añadir y eliminar</para>
+				</listitem>
+			</itemizedlist>
+			<mediaobject>
+				<imageobject>
+					<imagedata scalefit="1" align="center" width="350" fileref="images/ch04_img020.png"/>
+				</imageobject>
+				<textobject>
+					<phrase>Crear nuevo dashboard</phrase>
+				</textobject>
+				<caption>
+					<para>Crear nuevo dashboard</para>
+				</caption>
+			</mediaobject>
+		</section>
+		<section>
+			<title>Importar dashboard</title>
+			<para>La opción <literal>Importar dashboard</literal> es muy útil en el caso de que queramos compartir dashboards con otros usuarios, o bien, deseemos visualizar los que ellos hayan creado.</para><!--revisar-->
+			<note>
+				<title>Nota</title>
+				<para>Para importar un dashboard, es necesario que este, previamente, haya sido exportado como fichero comprimido y se encuentre disponible entre nuestros archivos.</para>
+			</note>
+			<para>Seleccionar el archivo que se desea importar y a continuación hacer clic sobre la opción <literal>Import dashboard.</literal> UNa vez que hayamos realizado la importación, encontraremos este nuevo dashboard dentro del listadod e dashboards disponibles.</para>
+			<mediaobject>
+				<imageobject>
+					<imagedata scalefit="1" align="center" width="350" fileref="images/ch04_img021.png"/>
+				</imageobject>
+				<textobject>
+					<phrase>Importar dashboard</phrase>
+				</textobject>
+				<caption>
+					<para>Importar dashboard</para>
+				</caption>
+			</mediaobject>			
+		</section>
+		<section>
+			<title>Añadir widget: personalizar los dashboards</title><!--Comprobar que este es el procedimiento exacto-->
+			<para>El usuario puede crear y añadir widgets a sus dashboards. El grado de personalización de la visualización de datos es enorme, puesto que el usuario puede incorporar a sus dashboards widgets preconfigurados o crear widgets 100% personalizados.</para>
+			<para>El primer paso consiste en seleccionar el tipo de widget que se quiere añadir. Existen dos tipos de widgets a personalizar dependiendo del tipo de información que queramos visualizar: </para>
+			<itemizedlist mark="bullet">
+				<listitem>
+					<para><emphasis role="bold">Producto:</emphasis> visualización de los datos recibidos por los diferentes sensores y apps. (Esta vista variará según el tipo de sensores que haya registrados en el manager)</para>
+					<para>-Flow</para>
+					<para>-IPS</para>
+					<para>-Location</para>
+					<para>-Social</para>					
+				</listitem>
+				<listitem>
+					<para><emphasis role="bold">Configuración:</emphasis> permite seleccionar el modo en el que se visualizará la información contenida en el área de configuración de la barra de menú e introducir elementos auxiliares.</para>
+					<para>Infraestructure</para>
+					<para>Shapes</para>
+				</listitem>
+			</itemizedlist>
+			<mediaobject>
+				<imageobject>
+					<imagedata scalefit="1" align="center" width="350" fileref="images/ch04_img022.png"/>
+				</imageobject>
+				<textobject>
+					<phrase>Seleccionar tipo de widget</phrase>
+				</textobject>
+				<caption>
+					<para>Seleccionar tipo de widget</para>
+				</caption>
+			</mediaobject>
+			<para><emphasis role="bold">Grado de personalización de los widgets:</emphasis></para>
+			<itemizedlist mark="circle">
+				<listitem>
+					<para>Widgets preconfigurados: algunos de los widgets que puede seleccionar el usuario contienen información preconfigurada lo que permiten que con un doble clic, sean añadidos al dashboard sobre el que se está trabajando.</para>
+				</listitem>
+				<listitem>
+					<para>Widgets semipersonalizables: algunos widgets contienen una serie de datos definidos por defecto, no obstante, el usuario tendrá que completar algunos detalles de la información general del widget.</para>
+				</listitem>
+				<listitem>
+					<para>Custom widgets: 100% personalizables. Esto quiere decir que, el usuario tendrá que definir toda la información contenida en el widget.</para>
+				</listitem>
+			</itemizedlist>
+			<mediaobject>
+				<imageobject>
+					<imagedata scalefit="1" align="center" width="350" fileref="images/ch04_img023.png"/>
+				</imageobject>
+				<textobject>
+					<phrase>Widget preconfigurado</phrase>
+				</textobject>
+				<caption>
+					<para>Widget preconfigurado</para>
+				</caption>
+			</mediaobject>
+			<mediaobject>
+				<imageobject>
+					<imagedata scalefit="1" align="center" width="350" fileref="images/ch04_img024.png"/>
+				</imageobject>
+				<textobject>
+					<phrase>Widget semipersonalizado: completar detalles de configuración general</phrase>
+				</textobject>
+				<caption>
+					<para>Widget semipersonalizado: completar detalles de configuración general</para>
+				</caption>
+			</mediaobject>
+			<mediaobject>
+				<imageobject>
+					<imagedata scalefit="1" align="center" width="350" fileref="images/ch04_img025.png"/>
+				</imageobject>
+				<textobject>
+					<phrase>Custom widget: 100% personalizable</phrase>
+				</textobject>
+				<caption>
+					<para>Custom widget: 100% personalizable</para>
+				</caption>
+			</mediaobject>				
+			<section>
+				<title>Personalizar un widget de producto</title>
+				<para>Algunos de los widgets que el usuario encuentra disponibles para añadir al dashboard de Horama permiten una personalización completa.</para>
+				<para>Este es el caso del widget asignado al producto IPS. En primer lugar, veamos qué opciones de personalización se incluyen en este tipo de widgets.</para>
+				<mediaobject>
+					<imageobject>
+						<imagedata scalefit="1" align="center" width="350" fileref="images/ch04_img026.png"/>
+					</imageobject>
+					<textobject>
+						<phrase>Icono que identifica un widget 100% personalizable</phrase>
+					</textobject>
+					<caption>
+						<para>Icono que identifica un widget 100% personalizable</para>
+					</caption>
+				</mediaobject>
+				<para>El primer paso para personalizar un widget consiste en seleccionar el modo de visualización de datos o la cardinalidad, esto es, si se desean visualizar las ocurrencias de una columna de un modo determinado.</para>	
+				<mediaobject>
+					<imageobject>
+						<imagedata scalefit="1" align="center" width="350" fileref="images/ch04_img027.png"/>
+					</imageobject>
+					<textobject>
+						<phrase>Opciones de personalización de widget</phrase>
+					</textobject>
+					<caption>
+						<para>Opciones de personalización de widget</para>
+					</caption>
+				</mediaobject>
+				<para><emphasis role="bold">Configuración de widgets según vistas de eventos:</emphasis></para>				
+						<para><emphasis role="bold">Raw:</emphasis> muestra los eventos en bruto (sin filtrar).</para>
+					<mediaobject>
+						<imageobject>
+							<imagedata scalefit="1" align="center" width="350" fileref="images/ch04_img028.png"/>
+						</imageobject>
+						<caption>
+							<para><emphasis role="bold">Visualización RAW </emphasis></para>
+						</caption>
+					</mediaobject>				
+						<para><emphasis role="bold">Tops:</emphasis> los eventos se organizan por columnas en las que se muestran los "tops" o eventos más destacados para un periodo de tiempo determinado.</para>				
+				<mediaobject>
+						<imageobject>
+							<imagedata scalefit="1" align="center" width="350" fileref="images/ch04_img029.png"/>
+						</imageobject>
+						<caption>
+							<para><emphasis role="bold">Visualización Tops</emphasis></para>
+						</caption>
+					</mediaobject>
+					<para><emphasis role="bold">Compare:</emphasis> comparativa de eventos destacados para un periodo de tiempo determinado. A diferencia de la opción Tops, esta solo permite el estilo de gráfico "serie".</para>		
+				<mediaobject>
+					<imageobject>
+						<imagedata scalefit="1" align="center" width="350" fileref="images/ch04_img030.png"/>
+					</imageobject>
+					<caption>
+						<para><emphasis role="bold">Visualización Compare</emphasis></para>
+					</caption>
+				</mediaobject>
+				<para><emphasis role="bold">Cardinalidad:</emphasis></para>
+				<itemizedlist mark="circle">
+					<listitem>
+						<para>Single Unique: mediante esta opción se aislan las ocurrencias o eventos de una columna para un momento determinado. </para>
+					</listitem>
+					
+					<listitem>
+						<para>Group Unique: mediante esta opción se aislan las ocurrencias o eventos de una columna para un momento determinado agrupados según determinados criterios.</para>
+					</listitem>			
+				</itemizedlist>
+				<mediaobject>
+						<imageobject>
+							<imagedata scalefit="1" align="center" width="350" fileref="images/ch04_img031.png"/>
+						</imageobject>
+						<caption>
+							<para>Visualización Single Unique</para>
+						</caption>
+					</mediaobject>
+					<mediaobject>
+						<imageobject>
+							<imagedata scalefit="1" align="center" width="350" fileref="images/ch04_img032.png"/>
+						</imageobject>
+						<caption>
+							<para>Visualización Group Unique</para>
+						</caption>
+					</mediaobject>		
+				<para><emphasis role="bold">Estilo de gráfico: El usuario puede elegir entre diferentes estilos de gráfico disponibles según la visualización seleccionada. </emphasis></para>
+				<mediaobject>
+					<imageobject>
+						<imagedata scalefit="1" align="center" width="350" fileref="images/ch04_img033.png"/>
+					</imageobject>
+					<caption>
+						<para>Gráfico Serie</para>
+					</caption>
+				</mediaobject> 
+				<mediaobject>
+					<imageobject>
+						<imagedata scalefit="1" align="center" width="350" fileref="images/ch04_img038.png"/>
+					</imageobject>
+					<caption>
+						<para>Gráfico Corriente (Stream)</para>
+					</caption>
+				</mediaobject> 
+				<mediaobject>
+					<imageobject>
+						<imagedata scalefit="1" align="center" width="350" fileref="images/ch04_img034.png"/>
+					</imageobject>
+					<caption>
+						<para>Gráfico esférico (Pie)</para>
+					</caption>
+				</mediaobject> 
+				<mediaobject>
+					<imageobject>
+						<imagedata scalefit="1" align="center" width="350" fileref="images/ch04_img039.png"/>
+					</imageobject>
+					<caption>
+						<para>Gráfico Valor (Value)</para>
+					</caption>
+				</mediaobject> 
+				<mediaobject>
+					<imageobject>
+						<imagedata scalefit="1" align="center" width="350" fileref="images/ch04_img035.png"/>
+					</imageobject>
+					<caption>
+						<para>Gráfico barra horizontal (Horizontal bar)</para>
+					</caption>
+				</mediaobject>
+				<mediaobject>
+					<imageobject>
+						<imagedata scalefit="1" align="center" width="350" fileref="images/ch04_img036.png"/>
+					</imageobject>
+					<caption>
+						<para>Gráfico barra vertical (Vertical bar)</para>
+					</caption>
+				</mediaobject> 
+				<mediaobject>
+					<imageobject>
+						<imagedata scalefit="1" align="center" width="350" fileref="images/ch04_img037.png"/>
+					</imageobject>
+					<caption>
+						<para>Gráfico Tabla (Table)</para>
+					</caption>
+				</mediaobject> 
+				<para>Para finalizar el proceso de creación de un widget, seleccionar la opción "Siguiente paso" (Next step). A continuación, introducir la información solicitada en el formulario y pusar "Create widget". En ese momento el nuevo widget se añadirá a su dashboard.</para><!--falta captura y comprobar este paso-->	
+			</section>
+			<section>
+				<title>Personalización de un widget de configuración</title>
+				<para>El usuario puede elegir entre dos tipos de widgets aplicables a las opciones de configuración del manager redBorder Horama:</para>
+				<para><emphasis role="bold">Infraestructure:</emphasis> esta opción permite seleccionar el modo en el que se va a visualizar la información de las distintas opciones que se ofrecen para configurar el manager.</para>
+				<para>1) Sensor: Mapa/Árbol</para>
+				<para>2) Cluster: Diagrama/Tabla</para>
+				<para>3) Alarm: insertar detalles de configuración en el formulario adjunto.</para>
+				<para>4) Monitor: Serie/ Valor</para>
+				<mediaobject>
+					<imageobject>
+						<imagedata scalefit="1" align="center" width="350" fileref="images/ch04_img040.png"/>
+					</imageobject>
+					<caption>
+						<para>Opciones de widgets de configuración</para>
+					</caption>
+				</mediaobject>
+				<para><emphasis role="bold">Shapes:</emphasis> esta opción nos permite insertar elementos auxiliares en nuestros widgets tales como: texto, imagen, cuadrado e incrustar una URL personalizada.</para> <!--captura con opciones y con el formulario correspondiente-->				
+				<mediaobject>
+					<imageobject>
+						<imagedata scalefit="1" align="center" width="350" fileref="images/ch04_img041.png"/>
+					</imageobject>
+					<caption>
+						<para>Shapes o elementos auxiliares para widgets</para>
+					</caption>
+				</mediaobject>
+				<para>Para incorporar cualquiera de estos elementos a los widgets, basta con completar el formulario que aparezca en cada caso y aplicar los cambios mediante la opción "Create Widget".</para>
+				<mediaobject>
+					<imageobject>
+						<imagedata scalefit="1" align="center" width="350" fileref="images/ch04_img042.png"/>
+					</imageobject>
+					<caption>
+						<para>Formulario de configuración de elemento auxiliar para widget</para>
+					</caption>
+				</mediaobject>
+			</section>			
+		</section>
+		<section>
+			<title>Time machine</title>
+			<para>La opción "máquina del tiempo" permite al usuario acceder a los datos del día y hora que le indique al sistema. Este "viaje en el tiempo" nos da la posibilidad de obtener históricos de actividad y eventos con una precisión máxima ya que se puede indicar el minuto exacto que se desea consultar.</para>
+			<mediaobject>
+				<imageobject>
+					<imagedata scalefit="1" align="center" width="350" fileref="images/ch04_img043.png"/>
+				</imageobject>
+				<textobject>
+					<phrase>Time machine</phrase>
+				</textobject>
+				<caption>
+					<para>Time machine</para>
+				</caption>
+			</mediaobject>
+		</section>
+		<section>
+			<title>Clonar, editar, recargar y eliminar widget desde el dashboard</title>
+			<para>Desde el dashboard el usuario tiene acceso directo a los widgets. Estos ofrecen un menú que le permiten realizar las siguientes acciones:</para>
+			<mediaobject>
+				<imageobject>
+					<imagedata scalefit="1" align="center" width="350" fileref="images/ch04_img044.png"/>
+				</imageobject>
+				<caption>
+					<para>Acceso directo a widget desde dashboard</para>
+				</caption>
+			</mediaobject>
+			<itemizedlist mark="bullet"> 
+				<listitem>
+					<para>Clonar: permite duplicar el widget e incorporarlo directamente en el dashboard que se desee. </para>					
+				</listitem>
+				<listitem>
+					<para>Editar: para cambiar la información del widget y las opcioens de visualización, seleccionar editar e indicar el dashboard de destino. </para>
+				</listitem>
+				<listitem>
+					<para>Recargar: se actualizan los datos del widget en ese instante.</para>
+				</listitem>
+				<listitem>
+					<para>Borrar: elimina el widget directamente.</para>
+				</listitem>
+			</itemizedlist>
+			<mediaobject>
+				<imageobject>
+					<imagedata scalefit="1" align="center" width="350" fileref="images/ch04_img045.png"/>
+				</imageobject>
+				<caption>
+					<para>Clonar widget y seleccionar dashboard de destino</para>
+				</caption>
+			</mediaobject>
+			<mediaobject>
+				<imageobject>
+					<imagedata scalefit="1" align="center" width="350" fileref="images/ch04_img046.png"/>
+				</imageobject>
+				<caption>
+					<para>Editar widget y seleccionar dashboard de destino</para>
+				</caption>
+			</mediaobject>
+			<warning>
+				<title>Advertencia</title>
+				<para>Cuando seleccione la opción borrar widget, el sistema no le mostrará una pregunta de confirmación, por lo que debe estar seguro de que desea eliminar dicho widget del dashboard. En caso de que elimine un widget por accidente, recuerde que siempre puede acudir a la opción "Añadir widget" para volver a insertarlo o duplicar alguno de similares características y editarlo a continuación.</para>
+			</warning>
+		</section>
+	</section>		
+</chapter>

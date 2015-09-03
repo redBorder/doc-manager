@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE preface PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd" [
+<!ENTITY % BOOK_ENTITIES SYSTEM "manual.ent">
+<!ENTITY PRODUCT "Documentation">
+<!ENTITY BOOKID "manual">
+<!ENTITY YEAR "2015">
+<!ENTITY HOLDER "Eneo Tecnología S.L. |">
+]>
+<preface id="pref-manual-Preface">
+  <title>Preface</title>
+  <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="Common_Content/Conventions.xml"/>
+  <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="Feedback.xml">
+  </xi:include>
+    <section>
+		<title> Welcome to redBorder Manager</title>
+		<para>Thank you very much for downloading or purchasing version 3.x of redBorder Manager. </para>
+        <para>We are pleased to present this new version of redBorder Manager. It is a powerful platform for safety and network monitoring that combines the capabilities of IPS and visibility offered by redBorder Flow.</para>
+        <para>You can download the latest versions of these Apps in Community format through the following link <emphasis role="bold">http://redborder.net/redborder-store/</emphasis></para>
+        <para>All of our products are Open Source. One of the cornerstones of redBorder is to strengthen and build community. Because of our community we have the chance to constantly innovate and grow through the sharing of ideas, support and uses that other developers make with our code.</para>
+        <para>However, this book is for users who have the Enterprise version which includes more features and benefits.</para>
+        <note>
+			<title>Note</title>
+			<para>If you're a Community user, don’t let consult section Differences between the Community version and the Enterprise redBorder Horama Manager .</para>
+        </note>
+        <para>Thank you very much to all our customers and users. We hope you get the most performance out of this platform to maintain cybersecurity and analysis of your networks.</para>
+    </section>
+    <section>
+		<title>Structure and operation of menus manager installation wizard</title>
+		<para><emphasis role="bold">Menu, submenu and command line</emphasis></para>
+		<para>Menu Setup responds to a pattern repeated in almost all screens:</para>
+		<itemizedlist mark="bullet">
+			<listitem>
+				<para>Menu</para>
+			</listitem>
+			<listitem>
+				<para>Submenu</para>
+			</listitem>
+			<listitem>
+				<para>Command Line</para>
+			</listitem>
+		</itemizedlist>
+		<mediaobject>
+			<imageobject>
+                   <imagedata scalefit="1" align="center" width="350" fileref="images/ips-install/28.png"/>
+            </imageobject>
+            </mediaobject>
+			<para><emphasis>Menu</emphasis></para>
+			<para>Menu on the left side of the screen for a listing with the available options. To select any of them they must be entered in the line <literal>Selection</literal>, the number or letter corresponding to the option you want to choose.</para>
+			<para><emphasis>Submenu</emphasis></para>
+			<para> If you would like to perform different actions select submenu. It will appear on the right side of the screen.</para>
+			<para><emphasis> Line command/Dial options</emphasis></para>
+			<para>in the top margin, and separated from the menu and sub graph, find the area in which they should indicate selections on the line that contains <literal>Selection</literal> and enter commands or data requested to perform the appropriate actions. In this area the date and time of the system can be visualized (default UTC).</para>
+		<section>
+			<title>Selecting Options</title>
+			<para><emphasis role="bold">Defaults</emphasis></para>
+			<para>In some cases of default options, the system will display a series of default options.</para>
+			<para>If this is the answer to a particular question, the defined default option will be displayed in uppercase.</para>
+			<mediaobject>
+				<imageobject>
+					<imagedata scalefit="1" align="center" width="350" fileref="images/ips-install/41.png"/>
+				</imageobject>
+			</mediaobject>
+			<para><emphasis role="bold">Options available in the redBorder installer menu</emphasis></para>
+			<itemizedlist mark="bullet">
+				<listitem>
+					<para>Selecting default: Press <keycap>Enter.</keycap></para>
+				</listitem>
+				<listitem>
+					<para> Other options: enter the letter or command that corresponds.</para>
+				</listitem>
+				<listitem>
+					<para>Quit: when you want to exit a screen to return to the main menu select the <literal>quit</literal>, option by entering the letter <keycap>q.</keycap></para>
+				</listitem>
+				<listitem>
+					<para>Apply Changes: to save and apply the changes made, select <literal>apply</literal> by entering <keycap>a.</keycap></para>
+				</listitem>
+			</itemizedlist>
+			<mediaobject>
+				<imageobject>
+					<imagedata scalefit="1" align="center" width="350" fileref="images/ips-install/35.png"/>
+				</imageobject>
+				</mediaobject>
+			<warning>
+				<title>Caution</title>
+				<para><literal>Need to "apply" to activate changes</literal></para>
+				<para>If you see this message you must select the option <keycap>a</keycap>. Otherwise, the system will not store nor apply the changes.</para>
+			</warning>
+		</section>
+	</section>
+	<section>
+		<title> Differences between the Community and the Enterprise version of redBorder Manager </title>
+		<para>There are some differences between the Community and Enterprise versionsto be taken into account when installing the Manager.</para>
+		<para><emphasis role="bold">Integration versus monoproduct</emphasis></para>
+		<para>If you have downloaded the Community version of redBorder Manager, you will have a platform base with one of the two redBorder applications available: IPS or Flow. This means that you can’t view event management in an integrated manner (IPS) in network flow (Flow), or insert any other redBorder App.</para>
+		<para>The users in the Community version in the menu area (both area display and configuration) of the Manager Administration panel will display data from a single sensor type depending on which one was associated with the Manager: NetFlow collectors or IPS probes.</para>
+		<note>
+			<title>Note</title>
+			<para>In upcoming versions of redBorder Horama, the user will be able to develop their own apps and integrate them into the Manager for unified visualization and integration of data.</para>
+		</note>
+		<para><emphasis role="bold">A single server in front of a Cluster</emphasis></para>
+		<para>The Community version does not create clusters, so you will only be able to install a Manager without the possibility of horizontal scaling.</para>	
+	</section>
+	<section>
+		<title>Software versions of redBorder Manager</title>
+		<para>This document covers the installation of the version of redBorder Manager which includes the following software versions:</para>
+		<itemizedlist mark="circle">
+			<listitem>
+				<para>Apache Zookeeper 3.4.6</para>
+			</listitem>
+			<listitem>
+				<para>Apache Kafka 0.8.2</para>
+			</listitem>
+			<listitem>
+				<para></para>
+			</listitem>
+			<listitem>
+				<para>druid 0.1.8</para>
+			</listitem>
+			<listitem>
+				<para> postgreSQL 9.2.9</para>
+			</listitem>
+			<listitem>
+				<para>chef 11.14.6</para>
+			</listitem>
+			<listitem>
+				<para>nginx 1.6.2</para>
+			</listitem>
+		</itemizedlist>
+	</section>
+</preface>

@@ -1,0 +1,451 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE chapter PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd" [
+<!ENTITY % BOOK_ENTITIES SYSTEM "manual.ent">
+<!ENTITY PRODUCT "Documentation">
+<!ENTITY BOOKID "manual">
+<!ENTITY YEAR "2015">
+<!ENTITY HOLDER "Eneo Tecnología S.L. |">
+]>
+<chapter>
+	<title>Instalación del manager de redBorder Horama Enterprise Version</title>
+	<para>Gracias al asistente de instalación podrá dejar configurado y preparado el manager de una forma rápida y sencilla sin necesidad de tener conocimientos específicos de programación en Linux.</para> 
+	<para>Para la instalación del Manager, el usuario dispondrá de una <emphasis role="bold">imagen ISO</emphasis> obtenida mediante descarga, o bien, a través del <emphasis role="bold">DVD</emphasis>emphasis> facilitado por redBorder. Si obtuvo la imagen mediante descarga, puede guardarla en su disco local o bien, grabarla en un DVD o USB para su instalación en máquina física. En cualquier caso, una vez realizada la primera fase de la instalación, el sistema se reiniciará y arrancará desde la opción definida por defecto: <literal>Select from local disk.</literal></para>
+	<para>Al arrancar el asistente de instalación tendrá acceso a un menú en el que encontrará las siguientes opciones:</para>
+	<itemizedlist mark="bullet">
+		<listitem>
+			<para><literal>Install Manager Horama:</literal> lanza el menú de instalación del Manager Horama.</para>
+		</listitem>
+		<listitem>
+			<para><literal>Install Sensor:</literal> esta opción le permite realizar la instalación y configuración del sensor que corresponda para su posterior registro en el Manager Horama. <footnote><para>Dependiendo de la solución que haya adquirido aparecerán en el menú las diferentes opciones para la instalación y registro de los sensores en el Manager (IPS, Malware, Gateway o Proxy to Cloud)</para></footnote>.</para>
+		</listitem>
+		<listitem>
+			<para><literal>Rescue installed system:</literal> modalidad de inicio de rescate para los casos en que existan problemas de inicio de su máquina (modo avanzado). Además, permite iniciar el procedimiento de resolución del problema o cambiar la contraseña del usuario en caso de pérdida.</para>
+		</listitem>
+		<listitem>
+			<para><literal>Boot from Local Drive:</literal> arranque desde disco local (por defecto).</para>
+		</listitem>
+	    <listitem>
+			<para><literal>Memory Test:</literal> testeo de memoria disponible para la instalación del sistema. En caso de que algún módulo de memoria se encuentre defectuoso, esta prueba lo detectará y avisará de ello al usuario.</para>
+			<para>Es aconsejable revisar el estado de la memoria de la máquina antes de comenzar la instalación el segundo Manager.</para>
+		</listitem>
+	</itemizedlist>
+	<mediaobject>
+		<imageobject>
+			<imagedata scalefit="1" align="center" width="350" fileref="images/ch02_img002.png"/>
+		</imageobject>
+		<textobject>
+			<phrase>Pantalla principal del asistente de instalación del manager redBorder Horama</phrase>
+		</textobject>
+			<caption>
+				<para>Pantalla principal del asistente de instalación del manager redBorder Horama</para>
+			</caption>
+	</mediaobject>
+    <para>El proceso de instalación del Manager se realiza en dos etapas:</para>
+	<itemizedlist mark="circle">
+		<listitem>
+			<para>Ajustes básicos e instalación de los paquetes:</para>
+			<para>a) Selección del idioma</para>
+			<para>b) Selección de telcado</para>
+			<para>c) Insertar password</para>
+		</listitem>
+		<listitem>
+			<para>Finalización de la instalación del Manager:</para>
+			<para>a) Configuración de red </para>
+			<para>b) Configuración del sistema</para>
+		</listitem>
+	</itemizedlist>   
+    <para>Para comenzar con el proceso de instalación del Manager, seleccionar la primera opción del menú: <literal>Install Manager Horama</literal> A continuación se procederá a la realización de una serie de ajustes básicos.</para>
+    <section>
+		<title>Proceso de instalación del Manager: ajustes básicos</title>
+		<para><emphasis role="bold">a) Selección de idioma</emphasis></para>
+		<para>Seleccione el idioma con el que desea operar a partir de este momento.</para> 
+		<mediaobject>
+			<imageobject>
+				<imagedata scalefit="1" align="center" width="350" fileref="images/ch02_img002a.png"/>
+			</imageobject>
+			<textobject>
+					<phrase>Ajustes básicos: selección de idioma</phrase>
+				</textobject>
+				<caption>
+					<para>Ajustes básicos: selección de idioma</para>
+				</caption>
+		</mediaobject>
+		<para><emphasis role="bold">b) Selección tipo de teclado</emphasis></para>
+		<para>Elija el tipo de teclado que quiere utilizar durante el proceso. Debido a su amplia compatibilidad aparecerá seleccionada por defecto la opción de teclado americano [US].</para>
+		<mediaobject>
+			<imageobject>
+				<imagedata scalefit="1" align="center" width="350" fileref="images/ch02_img002b.png"/>
+			</imageobject>
+			<textobject>
+					<phrase>Ajustes básicos: selección de tipo de teclado</phrase>
+				</textobject>
+				<caption>
+					<para>Ajustes basicos: selección de tipo de teclado</para>
+				</caption>
+        </mediaobject>
+        <para><emphasis role="bold">c) Insertar password</emphasis></para>
+        <para><emphasis>1) Elegir e insertar una password.</emphasis> Esta será la clave con la que opere a partir de ahora. Puede ser modificada en cualquier otro momento.</para>
+        <para><emphasis>2) Confirmar password.</emphasis> Volver a introducir la clave para verificar que la conoce y que no ha cometido ningún error tipográfico. En caso de que la clave sea débil o con poca fortaleza, el programa le avisará mediante una ventana emergente.</para>
+        <para> Si lo desea, puede insertar una contraseña más fuerte o bien, guardar la contraseña actual y cambiarla en otro momento seleccionando la opción <keycap>3)</keycap> <literal>Password</literal>, accesible desde el menú del Panel de Administración del Manager.</para>    
+        <note>
+			<title>Nota</title>
+			<para>Recuerde que la contraseña que haya seleccionado en este paso, será la que utilice para acceder al Panel de Administración del manager redBorder Horama.</para>
+        </note>
+        <para>Una vez que haya introducido su Password y haya pulsado la opción <literal>OK</literal>, el sistema procederá a crear las particiones y a realizar la instalación de los paquetes del asistente en su disco duro.</para>
+        <mediaobject>
+			<imageobject>
+				<imagedata scalefit="1" align="center" width="350" fileref="images/ch02_img002c.png"/>
+			</imageobject>
+			<textobject>
+					<phrase>Ajustes básicos: password</phrase>
+			</textobject>
+				<caption>
+					<para>Ajustes básicos: password</para>
+				</caption>
+		</mediaobject>
+        <para><emphasis role= "bold">Instalación de los paquetes y reinicio del sistema</emphasis></para>
+		<para>Una vez que haya insertado el password, se procederá a la instalación de los paquetes de instalación del software en el disco duro.</para>
+		<para>Espere hasta que la barra de progreso le indique que la instalación se ha completado al 100%. Este proceso puede durar unos minutos.</para>
+		<para>No pulse ninguna tecla ni realice ninguna acción hasta que finalice el proceso:</para>
+		<mediaobject>
+			<imageobject>
+				<imagedata scalefit="1" align="center" width="350" fileref="images/ch02_img002d.png"/>
+			</imageobject>
+			<textobject>
+					<phrase>Instalación de los paquetes del asistente</phrase>
+				</textobject>
+				<caption>
+					<para>Instalación de los paquetes del asistente</para>
+				</caption>
+		</mediaobject>
+		<para>Una vez instalados los paquetes, el programa arranca los últimos scripts para finalizar esta etapa. A continuación, deberá aparecer una pantalla emergente en la que se solicita el reinicio del sistema para finalizar la primera parte de la instalación. Hacer clic en <literal>Reboot</literal>. Durante unos segundos visualizará las siguientes pantallas. </para>		
+	</section>
+    <section>
+		<title>Finalización de la instalación del manager redBorder Horama: redBorder Configuration menu</title>
+		<para>Tras el reinicio automático del sistema, visualizaremos la siguiente pantalla:</para>	
+		<mediaobject>
+			<imageobject>
+				<imagedata scalefit="1" align="center" width="350" fileref="images/ch02_img002e.png"/>
+			</imageobject>
+			<textobject>
+					<phrase>Finalización del proceso de instalación: login</phrase>
+				</textobject>
+				<caption>
+					<para>Finalización del proceso de instalación: login</para>
+				</caption>
+		</mediaobject>    
+		<para>A continuación se realizarán las siguientes acciones:</para>
+		<itemizedlist mark="bullet">
+			<listitem>
+				<para>Login</para>
+			</listitem>
+			<listitem>
+				<para>Password</para>
+			</listitem>
+			<listitem>
+				<para>Comando rb_sysconf</para>
+			</listitem>
+		</itemizedlist>	
+		<para><emphasis role="bold">1) Login</emphasis></para>
+		<note>
+			<title>Nota</title>
+			<para>Para realizar la instalación del manager es enecesario registrarse con el usuario que tiene mayores permisos: <emphasis>root.</emphasis></para>
+		</note>		
+		<para>Para mayor seguridad, le recomendamos que asigne tres niveles de usuarios/permisos entre las personas que se vayan a encargar de la gestión del manager.</para>
+		<para><emphasis role="bold">Niveles de usuarios para el  Manager redBorder Horama </emphasis></para>
+		<orderedlist numeration="arabic">
+			<listitem>
+				<para>root: posee todos los permisos. Es el superadministrador del sistema.</para>
+			</listitem>
+			<listitem>
+				<para>admin: usuario que solo tiene acceso al menú de configuración del sistema, pero que no posee permisos para modificar ficheros.</para> 
+			</listitem>
+			<listitem>
+				<para>redborder: este usuario tiene un significado distinto para el manager que para los sensores.</para>
+				<para><emphasis>manager:</emphasis> usuario utilizado para registrar los sensores.</para>
+				<para><emphasis>sensor:</emphasis>  usuario utilizado cuando el manager quiere comunicarse con los sensores.</para>
+			</listitem>	
+        </orderedlist>
+        <para><emphasis role="bold">Password</emphasis></para>
+		<para>Introducir Contraseña. Esta coincide con la contraseña que haya introducido durante la primera fase de ajustes básicos.</para>    
+	    <mediaobject>
+			<imageobject>
+				<imagedata scalefit="1" align="center" width="350" fileref="images/ch02_img002c.png"/>
+			</imageobject>
+			<textobject>
+					<phrase>Finalización del proceso de instalación: password</phrase>
+				</textobject>
+				<caption>
+					<para>Finalización del proceso de instalación: password</para>
+				</caption>
+		</mediaobject>	
+		<para><emphasis role="bold">Instertar comando <literal>rb_sysconf</literal></emphasis></para>
+		<para>Insertar comando <literal>rb_sysconf</literal> para lanzar el redBorder Configuration menu.</para>
+		<mediaobject>
+			<imageobject>
+				<imagedata scalefit="1" align="center" width="350" fileref="images/ch02_img002f.png"/>
+			</imageobject>
+			<textobject>
+					<phrase>Finalización del proceso de instalación: insertar comando rb_sysconf</phrase>
+				</textobject>
+				<caption>
+					<para>Finalización del proceso de instalación: insertar comando <literal>rb_sysconf</literal></para>
+				</caption>
+		</mediaobject>
+		<para>Estas son las opciones que encontrará en la pantalla principal de este menú: </para>
+		<orderedlist numeration="arabic">
+		 	<listitem>
+				<para><literal>System Configuration:</literal> configuración del hostname, IP del Manager, hora y estado del Manager.</para>
+			</listitem>
+			<listitem>
+				<para><literal>Network Configuration:</literal> configuración de bonds, segmentos, DNS, rutas e IPMI. Recuerde que, para poner en funcionamiento el Manager, se necesita por lo menos una conexión de red.</para>
+			</listitem>
+			<listitem>
+				<para><literal>Passwords:</literal> acceda a esta opción si desea modificar las contraseñas que haya definido por cada rol de usuario.</para>
+			</listitem>
+			<listitem>
+				<para><literal>Backup System:</literal> creación de un fichero de recuperación, posibilidad de restaurar la máquina a través de la copia de seguridad y visualziación de un listado de las copias de seguridad disponibles, así como la posibilidad de subir dichos ficheros a un servidor FTP.	</para>
+			</listitem>			
+		</orderedlist>
+		<para><literal>w) start simple wizard:</literal> inicia un asistente que le permitirá de forma sencilla y rápida realizar la instalación y configuración del Manager Horama.</para>
+		<para><literal>q) quit:</literal> Salir. Nos devuelve a la pantalla principal de configuración del sistema.</para>
+		<mediaobject>
+			<imageobject>
+				<imagedata scalefit="1" align="center" width="350" fileref="images/ch02_img003.png"/>
+		    </imageobject>
+		    <textobject>
+					<phrase>Pantalla principal del asistente de instalación del redBorder configuration menu</phrase>
+				</textobject>
+				<caption>
+					<para>Pantalla principal del asistente de instalación del redBorder configuration menu</para>
+				</caption>
+		</mediaobject>
+		<section>
+			<title>Instalación del manager Horama mediante Simple wizard</title>
+			<para>Para realizar la instalación automática del Manager Horama, es necesario seleccionar la opción <keycap>w)</keycap><literal>start simple wizard</literal> que se encuentra en el submenú del redBorder Configuration menu.</para>
+			<important>
+				<title>Importante</title>
+				<para>Los pasos que aquí se van a seguir son los que corresponden a la instalación de un Manager desde cero al que se le va a unir otro Manager en cluster.</para>
+				<para>En caso de que ya haya instalado un Manager, no será necesario repetir la puesta en red del mismo. Tan solo la del nuevo manager que se va a unir al cluster. El usuario podrá realizar de manera manual la configuración del resto de parámetros del sistema mediante la selección de la opción <keycap>1)</keycap><literal>System configuration</literal> en el redBorder configuration menu.</para>
+			</important>
+			<para>Como podrá comprobar, existen una serie de opciones definidas por defecto. Para aceptarlas tan solo tiene que pulsar <keycap>Enter.</keycap> No obstante, puede modificarlas manualmente en cualquier momento del proceso de instalación.</para>
+			<para><emphasis role="bold">Mode, Hostname y DNS</emphasis></para>
+			<mediaobject>
+				<imageobject>
+				  <imagedata scalefit="1" align="center" width="350" fileref="images/ch02_img004.png"/>
+		        </imageobject>
+		         <textobject>
+					<phrase>Instalación mediante simple wizard</phrase>
+				</textobject>
+				<caption>
+					<para>Instalación mediante simple wizard</para>
+				</caption>
+			</mediaobject>
+			<para>1) Seleccionar el modo cluster para unir más de un Manager.</para>
+			<para>2) <literal>Insert Hostname [rbmanager].</literal> La opción que viene definida por defecto es la de <literal>rbmanager.</literal> Este es un nombre que identifica de manera clara y sencilla al Manager y su posición dentro del cluster.</para>
+			<note>
+				<title>Nota</title>
+				<para>Es importante que se utilicen diferentes nombres para cada uno de los Managers que se van a unir al cluster. Lo más aconsejable es seguir una numeración consecutiva (ej.:rbmanager01,rbmanager02) o bien, algún nombre que identifique su rol (ej.: rbmanagermaster, rbmanagerslave01,rbmanagerslave02).</para>
+			</note>
+			<para>3) <literal>Insert domain: [redborder.cluster].</literal> Dominio definido por defecto. </para>
+			<para>4) <literal>Insert DNS Primary.</literal> Definido por defecto. El usuario podrá cambiarlo para indicar el servidor que provee DNS a su red y al que estará asociado el Manager.</para>
+			<para>5) <literal>Insert DNS Secondary (optional).</literal> Indicar DNS secundario de manera opcional. Se aconseja introducir un DNS alternativo que sustituya al DNS primario en caso de fallo del servidor.</para>
+			<para>Una vez introducidos estos valores, el sistema le avisará de que los cambios han sido aplicados con éxito mediante el siguiente mensaje rotulado en verde: <literal>DNS and domain settings applied successfully.</literal></para>
+			<para><emphasis role="bold">Creación de bonding</emphasis></para>
+			<para> El siguiente paso es indicar el servidor de hora: <literal> NTP server [pool.ntp.org]:_</literal> Si existe algún NTP server en su red, se debe indicar. En caso contrario, se asignará uno por defecto.</para>
+			<para>A continuación, el sistema le pedirá que introduzca la IP de gestión: <literal>Insert managment IP address:_.</literal></para>
+			<mediaobject>
+				<imageobject>
+				  <imagedata scalefit="1" align="center" width="350" fileref="images/ch02_img005.png"/>
+		        </imageobject>
+		         <textobject>
+					<phrase>Creación de bonding</phrase>
+				</textobject>
+				<caption>
+					<para>Creación de bonding</para>
+				</caption>
+			</mediaobject>
+			<warning>
+				<title>Advertencia</title>
+				<para>Para la creación de un cluster es necesario que el usuario reserve dos bondings: uno para la red de gestión <emphasis role="bold">(Managment IP address)</emphasis> y otro para la red de sincronismo <emphasis role="bold">(Sync IP address).</emphasis></para>
+			</warning>
+			<para>Para la creación de un bonding deberán especificarse los elementos que se indican a continuación. Para aceptar los valores definidos por defecto basta con pulsar la tecla <keycap>Enter.</keycap> En caso contrario, introducir manualmente los nuevos valores.</para>
+			<itemizedlist mark="bullet">
+				<listitem>
+					<para><literal>Insert managment Netmask</literal></para>
+				</listitem>
+				<listitem>
+					<para><literal>Insert default gateway for this management interface (Y/n):_</literal></para>
+					<para>La opción que viene predeterminada aparece en mayúscula. Recuerde que si desea añadir esta pasarela tan solo tiene que pulsar la tecla <keycap>Enter</keycap>.</para>
+					<para>En caso de que desee insertar una nueva pasarlela para esta interfaz de gestión, teclee <keycap>n</keycap>.</para>
+				</listitem>
+				<listitem>
+					<para><literal>Insert default gateway</literal></para>
+				</listitem>
+				<listitem>
+					<para><literal>Insert a route for this bonding (y/N)?:</literal></para>
+					<para>En caso de que considere necesaria una ruta para el bonding, pulsar <keycap>y</keycap> e insertarla a continuación.</para>
+				</listitem>		
+			</itemizedlist>
+			<para>Una vez introducidos estos valores, el sistema le avisará de que el bonding ha sido creado con éxito mediante el siguiente mensaje rotulado en verde: <literal>Bonding 0 created successfully.</literal></para>
+			<mediaobject>
+				<imageobject>
+				  <imagedata scalefit="1" align="center" width="350" fileref="images/ch02_img006.png"/>
+		        </imageobject>
+		        <textobject>
+					<phrase>Creación de bonding: insertar IP de sincronismo</phrase>
+				</textobject>
+				<caption>
+					<para>Creación de bonding: insertar IP de sincronismo</para>
+				</caption>
+			</mediaobject>
+			<para><emphasis role="bold">Creación de un nuevo bonding</emphasis></para>
+			<para>Para la creación de un nuevo bonding deberemos indicar la IP y la máscara de sincronización e indicar si se desea insertar una ruta para el nuevo bonding a crear.</para>
+			<para> Una vez que haya introducido estos valores, el sistema le avisará de que el nuevo bonding ha sido creado con éxito mediante el siguiente mensaje rotulado en verde: <literal>Bonding 1 created successfully.</literal></para>
+			<para>A continuación le aparecerá la siguiente pregunta: <literal>Would you like to join to other cluster (y/N)?_</literal></para>
+			<warning>
+				<title>Advertencia</title>
+				<para>Durante la instalación del primer Manager, la pregunta <literal> Would you like to join to other cluster (y/N)?_</literal> no aplica, por lo que aparecerá la opción <keycap>N</keycap> definida por defecto.</para>
+			</warning>
+			<mediaobject>
+				<imageobject>
+				  <imagedata scalefit="1" align="center" width="350" fileref="images/ch02_img007.png"/>
+		        </imageobject>
+		        <textobject>
+					<phrase>Creación de nuevo bonding</phrase>
+				</textobject>
+				<caption>
+					<para>Creación de nuevo bonding</para>
+				</caption>
+			</mediaobject>
+			<para><emphasis role="bold">Sincronización con bases de datos y almacenamiento</emphasis></para>
+			<para>En este punto deberemos indicarle al sistema cómo se van a gestionar las bases de datos y el almacenamiento de datos del Manager. Como se observará en la captura de pantalla, en todos los casos la opción <keycap>N</keycap> aparece definida por defecto. Se aconseja, por tanto que sea el Manager quien realice esta gestión. En caso contrario, seleccionar la opción <keycap>y</keycap> para los siguientes casos:</para>
+			<para><literal>Would you like to use remote S3 storage? (y/N).</literal> Indicar en caso de que se use el protocolo de Amazon Web Services (AWS) para transferencia de ficheros.</para>
+			<para><literal>Would you like to use remote memcached? (y/N).</literal> Seleccionar en caso de que se desee realizar el cacheo de las peticiones a bases de datos. </para>
+			<para><literal>Would you like to use remote postgresql database? (y/N).</literal> Gestión mediante base de datos postgresql.</para>
+			<para>Una vez que se haya indicado la opción elegida, deberemos confirmar que deseamos aplicar la configuración que hemos realizado. <literal>Are you sure you want to apply this configuration? (y/N)_</literal></para>
+			<para>Seleccionar la opción <keycap>y</keycap>.</para>
+			<mediaobject>
+				<imageobject>
+				  <imagedata scalefit="1" align="center" width="350" fileref="images/ch02_img008.png"/>
+		        </imageobject>
+		        <textobject>
+					<phrase>Opciones de bases de datos</phrase>
+				</textobject>
+				<caption>
+					<para>Opciones de bases de datos</para>
+				</caption>
+			</mediaobject>
+			<para>A partir de este momento, se efectuará la instalación de los servicios. Este proceso puede llevar unos minutos. Una vez se haya realizado esta instalación, el asistente le devolverá a la pantalla principal del <emphasis role="bold">redBorder configuration menu.</emphasis></para>
+			<para>Para salir del asistente, seleccionar la opción <keycap>q)</keycap> <literal>quit</literal></para>
+			<para>Para la instalación de un nuevo Manager y su unión a un cluster, seleccionar la opción <keycap>w)</keycap> para lanzar de nuevo el asistente de instalación.</para>	
+		</section>
+		<section>
+			<title>Instalación y unión de un nuevo manager al cluster</title>
+			<para>Para la instalación de un segundo manager (en el caso de que se realice en un momento diferente a la instalación del manager maestro) el usuario dispondrá de una imagen ISO obtenida mediante descarga, o bien, a través del DVD facilitado por redBorder. </para>
+			<para>Si obtuvo la imagen mediante descarga, puede guardarla en su disco local o bien, grabarla en un DVD o USB para su instalación en máquina física. En cualquier caso, una vez realizada la primera fase de la instalación, el sistema se reiniciará y arrancará desde la opción definida por defecto <literal>Select from local disk.</literal></para>
+			<para>En la pantalla principal del asistente de instalación del Manager encontrará la opción <literal>Memory Test</literal>, aconsejable para revisar el estado de la memoria de la máquina antes de comenzar la instalación el segundo Manager.</para>
+			<para>Seleccionar <literal>Install Manager Horama</literal> para comenzar con el proceso de instalación.</para>
+			<mediaobject>
+				<imageobject>
+					<imagedata scalefit="1" align="center" width="350" fileref="images/ch02_img002.png"/>
+				</imageobject>
+				<textobject>
+					<phrase>Pantalla principal del asistente de instalación del manager redBorder Horama</phrase>
+				</textobject>
+				<caption>
+					<para>Pantalla principal del asistente de instalación del manager redBorder Horama</para>
+				</caption>
+			</mediaobject>
+			<para>Tras realizar los ajustes básicos e instalación de los paquetes, el sistema se reiniciará de manera automática. A continuación, hacer Login, insertar Password e introducir el comando <literal>rb_sysconf</literal> para acceder a la pantalla principal del <emphasis role="bold"> redBorder configuration menu.</emphasis></para>		
+			<note>
+				<title>Nota</title>
+				<para>La password que seleccione en este caso puede ser diferente de la indicada para el primer Manager. No obstate, se aconseja unificar las contraseñas para evitar confusiones.</para>
+			</note>
+			<mediaobject>
+				<imageobject>
+				  <imagedata scalefit="1" align="center" width="350" fileref="images/ch02_img009.png"/>
+		        </imageobject>
+		        <textobject>
+					<phrase>Instalación de nuevo manager y unión al cluster</phrase>
+				</textobject>
+				<caption>
+					<para>Instalación de nuevo manager y unión al cluster</para>
+				</caption>
+			</mediaobject>
+			<para>Seleccione la opción <keycap>w)</keycap><literal>start simple wizard</literal> para comenzar el proceso de instalación de un segundo Manager. Se recomienda dejar seleccionada la opción por defecto <literal>Selected Mode: cluster.</literal></para>
+			<para>El proceso de instalación de este segundo Manager es idéntico al empleado para la instalación del Manager maestro. En las siguientes pantallas observará que se configuran los mismos elementos: <emphasis role="bold">Hostname, dominio, DNS primario (puede ser diferente al del primer Manager) y secundario y NTP server.</emphasis></para>
+			<!--Revisar conceptos master/esclavo-->
+			<important>
+				<title>Importante</title>
+				<para>Es importante que se utilicen diferentes nombres para cada uno de los Managers que se van a unir al cluster. Lo más aconsejable es seguir una numeración consecutiva (ej.:rbmanager01,rbmanager02) o bien, algún nombre que identifique su rol (ej.: rbmanagermaster, rbmanagerslave01,rbmanagerslave02).</para> 
+			</important>
+			<para>El siguiente paso es la creación de dos bonding: de gestión (bonding 0) y de sincronismo (bonding 1). Indicar (o seleccionar el valor dado por defecto) los siguientes valores:</para>
+			<itemizedlist mark="circle">
+				<listitem>
+					<para>(Managment/sync) IP address</para>
+				</listitem>
+				<listitem>
+					<para>(Managment/sync) Netmask</para>
+				</listitem>
+				<listitem>
+					<para>Default gateway</para>
+				</listitem>
+				<listitem>
+					<para>Ruta para el bonding</para>
+				</listitem>
+			</itemizedlist>
+			<para>Una vez que se hayan introducido estos valores, el asistente confirmará mediante el siguiente mensaje rotulado en verde que los bonding 0 y 1 han sido creados con éxito: <literal>Bonding created successfully.</literal></para>
+			<warning>
+				<title>Advertencia</title>
+				<para>Las redes de gestión del primer y segundo Manager así como las de sincronismo deben tener conectividad entre sí para poder funcionar como cluster. </para>
+			</warning>
+			<mediaobject>
+				<imageobject>
+				  <imagedata scalefit="1" align="center" width="350" fileref="images/ch02_img010.png"/>
+		        </imageobject>
+		        <textobject>
+					<phrase>Instalación de nuevo manager y unión al cluster: bondings</phrase>
+				</textobject>
+				<caption>
+					<para>Instalación de nuevo manager y unión al cluster: bondings</para>
+				</caption>
+			</mediaobject>
+			<para>En este caso ante la pregunta <literal>Would you like to join other cluster? (y/N);</literal> seleccionar la opción <keycap>y</keycap>.</para>
+			<para>El siguiente dato que tiene que ingresar es la IP de sincronismo del cluster: <literal>Cluster SYNC IP Adress (bond1):_</literal> La cual corresponde a la IP de sincronismo (o del bonding 1) del primer manager o Maestro. </para>
+			<mediaobject>
+				<imageobject>
+				  <imagedata scalefit="1" align="center" width="350" fileref="images/ch02_img011.png"/>
+		        </imageobject>
+		        <textobject>
+					<phrase>Unión del nuevo manager al cluster</phrase>
+				</textobject>
+				<caption>
+					<para>Unión del nuevo manager al cluster</para>
+				</caption>
+			</mediaobject>
+			<note>
+				<title>Nota</title>
+				<para>En caso de que su equipo utilice DHCP, estas configuraciones se realizarán de manera automática.</para>
+			</note>
+			<para>Antes de aplicar esta configuración, seleccionar el tipo de servicio que va a asumir cada manager. En la siguiente pantalla podrá visualizar todas las opciones disponibles: </para>
+			<mediaobject>
+				<imageobject>
+				  <imagedata scalefit="1" align="center" width="350" fileref="images/ch02_img012.png"/>
+		        </imageobject>
+		        <textobject>
+					<phrase>Seleccionar servicios para cada uno de los managers</phrase>
+				</textobject>
+				<caption>
+					<para>Seleccionar servicios para cada uno de los managers</para>
+				</caption>
+			</mediaobject>
+			<note>
+				<title>Nota</title>
+				<para>En caso de no seleccionar ninguna opción, el sistema atribuirá al nuevo Manager la opción <literal>1) slave</literal> por defecto.</para>
+				<para>Se recomienda seleccionar el rol de esclavo ya que, de este modo, ambos Managers se reparten los servicios.</para>
+			</note>	
+			 <para>¡Enhorabuena! Ha instalado correctamente el manager redBorder Horama Enterprise Version. Puede acceder a él mediante el <emphasis role="bold">Panel de administración del Manager redBorder Horama.</emphasis></para>	
+		</section>
+    </section>
+</chapter>
