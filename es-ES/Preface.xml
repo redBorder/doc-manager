@@ -12,7 +12,7 @@
   <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="Feedback.xml">
   </xi:include>
     <section>
-		<title>Bienvenidos al Manager redBorder  Horama</title>
+		<title>Bienvenidos al Manager redBorder</title>
 		<para>Muchas gracias por descargar o adquirir la versión 3.x del Manager redBorder Horama.</para>
         <para>Nos complace poder presentarle esta nueva versión de redBorder Manager Horama. Se trata de una potente plataforma de seguridad y monitorización de redes que combina las capacidades del <emphasis role="bold">redBorder IPS</emphasis> y la visibilidad que ofrece <emphasis role="bold">redBorder Flow</emphasis>.</para>
         <para>Puede descargar las últimas versiones de estas Apps en formato Community a través del siguiente enlace <emphasis role="bold">http://redborder.net/redborder-store/</emphasis></para>
@@ -23,8 +23,8 @@
         <para>Muchas gracias a todos nuestros clientes y usuarios. les deseamos que saquen el máximo rendimiento a esta plataforma para mantener la ciberseguridad y el análisis de sus redes.</para>
     </section>
     <section>
-		<title>Conociendo la Guía Oficial de Instalación del Manager redBorder Horama</title>
-		<para>Esta guía contiene información muy útil que le ayudará a realizar una correcta instalación del Manager redBorder Horama.</para>
+		<title>Conociendo la Guía Oficial de Instalación del Manager redBorder</title>
+		<para>Esta guía contiene información muy útil que le ayudará a realizar una correcta instalación del Manager redBorder.</para>
 		<para>Este apartado explica detenidamente cómo moverse por el asistente de instalación del Manager o ISO y es válido tanto si dispone de DVD de instalación como si ha realizado la descarga directa de la ISO. Este documento es ideal tanto para los usuarios que deseen reemplazar la antigua versión, como aquellos que instalen por primera vez la versión 3 del Manager redBorder Horama.</para>
         <para>Si es un usuario con experiencia y ya ha realizado la instalación tanto del Manager como del IPS redBorder en otras ocasiones, puede pasar directamente al capítulo 2 correspondiente a la instalación del Manager.</para>
         <section>

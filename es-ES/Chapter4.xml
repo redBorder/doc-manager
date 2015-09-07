@@ -44,18 +44,30 @@
 		</mediaobject>
 	<section>
 		<title>Estructura de la interfaz del panel de administración del manager redBorder Horama</title>
-		<para>Existe una estructura que se repite en todas las interfaces del administrador del manager. Conocer estos elementos le ayudará a navegar por la web de un modo cómodo y sencillo. <footnote><para>En la imagen adjunta aparecen las opciones disponibles para un manager redBorder Horama en el que se han registrado sensores para Flow, IPS y Malware. La estructura será la misma en todos los casos, variando tan solo, las opciones disponibles en la barra de menús, según la App que tenga integrada en el ecossitema Horama.</para></footnote></para>
+		<para>Existe una estructura que se repite en todas las interfaces del administrador del manager. Conocer estos elementos le ayudará a navegar por la web de un modo cómodo y sencillo. <footnote><para>En la imagen adjunta aparecen las opciones disponibles para un manager redBorder en el que se han registrado sensores para Flow, IPS y Malware. La estructura será la misma en todos los casos, variando tan solo, las opciones disponibles en la barra de menús, según la App que tenga integrada en el ecossitema Horama.</para></footnote></para>
         <itemizedlist mark="bullet">
 			<listitem>
 				<para><emphasis role="bold">Barra de menú:</emphasis> en ella encontrará el acceso directo a todas las funciones principales de administración del manager. Se encuentra subdividida en dos áreas diferenciadas según operatividad:</para>
-				<para>a) Área de analítica: en esta zona encontrará todos los datos recogidos por los sensores mostrados en diferentes métricas e informes.</para>
-				<para>b) Área de configuración: opciones de configuración y aprovisionamiento del administrador del manager.</para>
+				<para>a) Área de analítica (margen superior izquierdo): en esta zona encontrará todos los datos recogidos por los sensores mostrados en diferentes métricas e informes.</para>
+				<para>b) Área de configuración (margen superior derecho): opciones de configuración y aprovisionamiento del administrador del manager.</para>
 			</listitem>
 			<listitem>
 				<para><emphasis role="bold">Submenú sección:</emphasis> muestra un resumen de la sección en la que nos encontramos, con las diferentes subopciones disponibles.</para>
 			</listitem>
 			<listitem>
 				<para><emphasis role="bold">Área principal:</emphasis> contenido de la sección en la que nos encontremos. En esta zona se muestran los datos en diferentes métricas y gráficas completamente personalizables. </para>
+			</listitem>
+			<listitem>
+				<para><emphasis role="bold"></emphasis></para>
+			</listitem>
+			<listitem>
+				<para>Resumen: bajo la gráfica se encuentra un resumen de la información mostrada en la métrica, ofreciendo los valores totales.</para>
+			</listitem>
+			<listitem>
+				<para>Buscador: permite buscar rápidamente en la tabla de datos cualquier elemento relacionado con el atributo que se está consultando. Para ello basta con introducir la IP, sensor, cliente, etc. que se quiera consultar. Además, las búsquedas pueden convertirse en filtros tal y como veremos más adelante.</para>
+			</listitem>
+			<listitem>
+				<para>Tabla de datos: ofrece el detalle de la información que se muestra en la métrica. Además, se pueden realizar diferentes acciones por filas. Estas acciones dependerán de la pestaña/App que estemos consultando.</para>
 			</listitem>
 		</itemizedlist>
 		<para>Para comenzar con el proceso de instalación del Manager, seleccionar la opción <keycap>1</keycap> <literal>Install Manager (IPS o Flow):</literal> para comenzar el proceso de instalación del Manager redBorder Horama, a continuación se deberán realizar una serie de ajustes básicos.</para>
@@ -64,10 +76,10 @@
 				<imagedata scalefit="1" align="center" width="350" fileref="images/ch04_img002.png"/>
 			</imageobject>
 			<textobject>
-				<phrase>Estructura de la interfaz del administrador del manager redBorder Horama</phrase>
+				<phrase>Estructura de la interfaz del administrador del manager redBorder</phrase>
 			</textobject>
 			<caption>
-				<para>Estructura de la interfaz del administrador del manager redBorder Horama</para>
+				<para>Estructura de la interfaz del administrador del manager redBorder</para>
 			</caption>
 		</mediaobject>
 		<section>
