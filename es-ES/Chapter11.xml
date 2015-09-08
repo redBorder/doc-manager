@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE chapter PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd" [
+<!ENTITY % BOOK_ENTITIES SYSTEM "manual.ent">
+<!ENTITY PRODUCT "Documentation">
+<!ENTITY BOOKID "manual">
+<!ENTITY YEAR "2015">
+<!ENTITY HOLDER "Eneo Tecnología S.L. |">
+]>
+<chapter>
+	<title>Configuración: Sensores</title>
+	<para>Bienvenido a la sección de configuración de los sensores. Una vez que se ha realizado el registro de los sensores en el Manager desde el asistente de instalación, cualquier acción que desee realizar para la gestión y configuración de los sensores deberá realizarla desde la interfaz web del Manager.</para>
+	<para>Esta opción se encuentra disponible en el margen superior derecho del menú de cabecera, junto a la sección <emphasis role="bold">Tools</emphasis> y Administrator. Este área del menú de la interfaz web del Manager se identifica como menú de <emphasis role="bold">Configuración,</emphasis> ya que, a diferencia con las opciones disponibles en el margen izquierdo (Análisis), estas permiten la gestión y configuración completa del Manager y los sensores a través del establecimiento de las políticas de firmas que se van a aplicar, la configuración de alarmas, del cluster o la gestión de usuarios, entre otras acciones.</para>
+	<section>
+		<title>Sensors: menú y opciones</title>
+		<para>La organización de esta sección es muy similar, en cuanto a estructura, a la de otras partes de la web. En este caso, encontraremos:</para>
+		<itemizedlist mark="bullet">
+			<listitem>
+				<para>Submenú de la sección: en la que se encuentran las opciones disponibles para la configuración y gestión de los sensores.</para>
+				<para>-Opciones</para>
+				<para>-Añadir sensor</para>
+				<para>-Añadir dominio</para>
+				<para>-Vista</para>
+			</listitem>
+			<listitem>
+				<para>Área principal: vista de la infraestructura de sensores ordenada por dependencia y jerarquía.</para>
+				<para>Existen tres vistas disponibles para visualizar la infraestructura de sensores de nuestra red:</para>
+				<para>-Árbol (es la que se muestra por defecto).</para>
+				<para>-Mapa: muestra la geolocalización de los senores sobre un mapa.</para>
+				<para>-Sensores: muestra en formato de tabla una lista de los sensores y la información asociada a ellos.</para>
+			</listitem>		
+		</itemizedlist>
+		<mediaobject>
+			<imageobject>
+				<imagedata scalefit="1" align="center" width="350" fileref="images/ch11_img001.png"/>
+			</imageobject>
+			<caption>
+				<para>Vista general de la sección Sensors</para>
+			</caption>
+		</mediaobject>
+		<note>
+			<title>Nota</title>
+			<para>Procedemos a explicar el menú de la opción <emphasis role="bold">Vistas</emphasis> del que dependerán el resto de las opciones contenidas en el submenú de opciones.</para>
+			<para>La Vista Mapa no presenta opciones disponibles.</para>
+			<para>Las acciones que se pueden realizar desde las opciones <emphasis role="bold">Options</emphasis> como <emphasis role="bold">Add sensor</emphasis> y <emphasis role="bold">Add domain</emphasis> variarán dependiendo de si nos encontramos en la vista "Tree" o "Sensors". Por ello, incluiremos su explicación en el apartado correspondiente a cada una de estas dos vistas.</para>
+		</note>		
+	</section>
+	<section>
+		<title>Menú vista</title>
+		<para>Nada más acceder a la sección Sensors, el usuario encuentra un listado (vista de árbol) en el que aparecen todos los sensores registrados en el Manager organizados según diferentes criterios de jerarquía y dependencia.</para>
+		<para>Como se ha comentado anteriormente, existen tres opciones disponibles en el menú de vistas: </para>
+		<itemizedlist mark="circle">
+			<listitem>
+				<para>Árbol: es la vista que se visualiza por defecto. Este listado aparece en modo "persiana" de manaera que podemos colapsar o mostrar los elementos que definen la jerarquía definida para la infraestructura de sensores tan solo con desplegar </para>
+			</listitem>
+			<listitem>
+				<para>Mapa: muestra la localización de los sensores y el número de sensores que se encuentran en una determinada zona. Esta información se "clusteriza" o agrupa, de manera que, para obtener un mayor detalle de los sensores, tendremos que aplicar zoom al mapa.</para>
+			</listitem>
+			<listitem>
+				<para>Sensores: en el menú desplegable de la opción Vistas, se visualizan de manera independiente, cada uno de los sensores por App que han sido asociados al Manager. (Ej. Flow Sensors). Desde estas opciones accederemos a la interfaz en la que aparece información detallada sobre la configuración de los sensores. </para>
+			</listitem>
+		</itemizedlist>
+		<mediaobject>
+			<imageobject>
+				<imagedata scalefit="1" align="center" width="350" fileref="images/ch11_img005.png"/>
+			</imageobject>
+			<caption>
+				<para>Opciones menú Vista</para>
+			</caption>
+		</mediaobject>
+	</section>
+	<section>
+			<title>Organización y opciones de configuración de los sensores para las vistas de árbol y de sensores (Tree/Sensors)</title>
+			<para>En esta sección vamos a describir brevemente las interfaces correspondientes a la vista de árbol y de sensores, así como las opciones que nos ofrecen para la configuración de los sensores.</para>
+		<section>
+			<title>Vista árbol</title>
+			<para>Existen dos niveles de organización general en redBorder:</para>
+			<itemizedlist mark="bullet">
+				<listitem>
+					<para>Sensores</para>
+					<para>A el nivel de sensores se muestra la siguiente información: nombre del sensor, IP, política aplicada, último chequeo y versión. Es posible añadir una descripción al sensor.</para>
+				</listitem>
+				<listitem override="circle">
+					<para>Grupo de sensores y bindings</para>
+					<para>Existen la posibilidad de crear un grupo de sensores subdividido a su vez en diferentes segmentos o bindings a los que se puede aplicar una política concreta independientemente de la que se haya aplicado al sensor del que dependen.</para>
+				</listitem>
+				<listitem>
+					<para>Dominio</para>
+					<para>El nivel "dominio" nos muestra el nombre del dominio y nos permite agregar una descripción. Es posible clasificarlas según su naturaleza (organizacional, espacial, etc.); cada tipo de dominio tendrá un icono específico:</para>
+				</listitem>
+				<listitem override="circle">
+					<para>Genérico</para>
+				</listitem>
+				<listitem override="circle">
+					<para>Organización: es posible añadir más secciones para clasificar el sensor en la organización:</para>
+					<para>-Detalles de la organización</para>
+					<para>-Oficina Central</para>
+					<para>-Facturación</para>
+					<para>-Contabilidad</para>
+				</listitem>
+				<listitem override="circle">
+					<para>Mercado</para>
+				</listitem>
+				<listitem override="circle">
+					<para>Campus</para>
+				</listitem>
+				<listitem override="circle">
+					<para>Edificio</para>
+				</listitem>
+				<listitem override="circle">
+					<para>Planta</para>
+				</listitem>
+			</itemizedlist>
+			<mediaobject>
+				<imageobject>
+					<imagedata scalefit="1" align="center" width="350" fileref="images/ch11_img001a.png"/>
+				</imageobject>
+				<caption>
+					<para>Detalle de niveles de organización en una infraestructura de sensores</para>
+				</caption>
+			</mediaobject>
+		</section>
+		<section>
+			<title>Vista sensores</title>
+			<para>La vista de sensores nos ofrece la posibilidad de conocer en un solo vistazo qué sensores de cada App están asociados al Manager. Por ello, para acceder a esta vista el usuario tendrá que seleccionar el tipo de sensores que se encuentran disponibles y que desea consultar. </para>
+			<para>redBorder permite la asociación de seis tipos de sensores:</para>
+			<itemizedlist mark="bullet">
+				<listitem>
+					<para>Sensores Flow</para>
+				</listitem>
+				<listitem>
+					<para>Sensores IPS</para>
+				</listitem>
+				<listitem>
+					<para>Sensores MSE</para>
+				</listitem>
+				<listitem>
+					<para>Sensores Meraki</para>
+				</listitem>
+				<listitem>
+					<para>Sensores Gateway</para>
+				</listitem>
+				<listitem>
+					<para>Sensores Social</para>
+				</listitem>
+			</itemizedlist>
+			<mediaobject>
+				<imageobject>
+					<imagedata scalefit="1" align="center" width="350" fileref="images/ch11_img005a.png"/>
+				</imageobject>
+				<caption>
+					<para>Vista de sensores: detalle de tipos de sensores disponibles para consulta</para>
+				</caption>
+			</mediaobject>
+			<para>Para la consulta de los sensores el usuario puede realizar una búsqueda o bien, navegar alfabéticamente por el listado de sensores. </para>
+			<para>Una vez que haya accedido al sensor o grupo de sensores que desea consultar, visualizará un listado en el que se muestra diferente información según el tipo de sensor:</para>
+			<itemizedlist mark="bullet">
+				<listitem>
+					<para>Sensores Flow</para>
+					<mediaobject>
+						<imageobject>
+							<imagedata scalefit="1" align="center" width="350" fileref="images/ch11_img038.png"/>
+						</imageobject>
+						<caption>
+							<para>Vista Sensores Flow: información disponible</para>
+						</caption>
+					</mediaobject>
+				</listitem>
+				<listitem>
+				<para>Sensores IPS</para>
+					<mediaobject>
+						<imageobject>
+							<imagedata scalefit="1" align="center" width="350" fileref="images/ch11_img035.png"/>
+						</imageobject>
+						<caption>
+							<para>Vista Sensores IPS: información disponible</para>
+						</caption>
+					</mediaobject>
+				</listitem>
+				<listitem>
+					<para>Sensores MSE</para>
+					<mediaobject>
+						<imageobject>
+							<imagedata scalefit="1" align="center" width="350" fileref="images/ch11_img036.png"/>
+						</imageobject>
+						<caption>
+							<para>Vista Sensores MSE: información disponible</para>
+						</caption>
+					</mediaobject>
+				</listitem>
+				<listitem>
+					<para>Sensores Meraki</para>
+					<mediaobject>
+						<imageobject>
+							<imagedata scalefit="1" align="center" width="350" fileref="images/ch11_img039.png"/>
+						</imageobject>
+						<caption>
+								<para>Vista Sensores Meraki: información disponible</para>
+						</caption>
+					</mediaobject>
+				</listitem>
+				<listitem>
+					<para>Sensores Gateway</para>
+					<mediaobject>
+						<imageobject>
+							<imagedata scalefit="1" align="center" width="350" fileref="images/ch11_img040.png"/>
+						</imageobject>
+						<caption>
+							<para>Vista Sensores Gateway: información disponible</para>
+						</caption>
+					</mediaobject>
+				</listitem>
+				<listitem>
+					<para>Sensores Social</para>
+						<mediaobject>
+							<imageobject>
+								<imagedata scalefit="1" align="center" width="350" fileref="images/ch11_img041.png"/>
+							</imageobject>
+							<caption>
+								<para>Vista Sensores Social: información disponible</para>
+							</caption>
+						</mediaobject>
+				</listitem>		
+			</itemizedlist>
+			<para>A continuación se explican las opciones que se encuentran disponibles en las interfaces para la vista de árbol y de sensores. El listado de sensores en ambas vistas permite el acceso directo a un menú de configuración mediante el siguiente icono:</para>
+			<mediaobject>
+				<imageobject>
+					<imagedata scalefit="1" align="center" width="350" fileref="images/ch11_img042.png"/>
+				</imageobject>
+				<caption>
+					<para>Icono de menú configuración de sensores</para>
+				</caption>
+			</mediaobject>
+			<note>
+				<title>Nota</title>
+				<para>Las opciones disponibles en el menú de configuración variarán dependiendo de que nos encontremos a nivel de dominio o sensores (o subniveles de grupo de sensores o segmentos).</para>
+			</note>
+		</section>
+	</section>
+		
+	
+
+</chapter>
