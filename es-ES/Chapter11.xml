@@ -230,10 +230,10 @@
 						</mediaobject>
 				</listitem>		
 			</itemizedlist>
-			<para>A continuación se explican las opciones que se encuentran disponibles en las interfaces para la vista de árbol y de sensores. El listado de sensores en ambas vistas permite el acceso directo a un menú de configuración mediante el siguiente icono:</para>
+			<para>A continuación se explican las opciones que se encuentran disponibles en las interfaces para la vista de árbol y de sensores. El listado de sensores en ambas vistas permite el acceso directo a un <emphasis role="bold"> menú de configuración mediante el siguiente icono: </emphasis></para>
 			<mediaobject>
 				<imageobject>
-					<imagedata scalefit="1" align="center" width="350" fileref="images/ch11_img042.png"/>
+					<imagedata scalefit="1" align="center" width="350" fileref="images/ch11_img012.png"/>
 				</imageobject>
 				<caption>
 					<para>Icono de menú configuración de sensores</para>
@@ -246,7 +246,7 @@
 			<para>Desde ambas vistas también se pueden eliminar los sensores de manera directa tan solo con clicar sobre el siguiente icono:</para>
 			<mediaobject>
 				<imageobject>
-					<imagedata scalefit="1" align="center" width="350" fileref="images/ch11_img043.png"/>
+					<imagedata scalefit="1" align="center" width="350" fileref="images/ch11_img013.png"/>
 				</imageobject>
 				<caption>
 					<para>Icono eliminar sensor</para>
@@ -255,12 +255,20 @@
 			<note>
 				<title>Nota</title>
 				<para>Algunos sensores no pueden ser eliminados. En este caso, el icono "eliminar sensor" aparecerá sombrado en gris, lo que indica que esta opción se encuentra inhabilitada.</para>
-				<para>Antes de que un dominio o sensor sea eliminado, el sistema le mostrará una pantalla de confirmación avisándole de que todos los usuarios asignados a ese dominio y sus descendientes serán desactivados y asignados a los padres del dominio. Un usuario con rol de administrador deberá volver a habilitarles desde Tools>Users.</para>
+				<para>Antes de que un dominio o sensor sea eliminado, el sistema le mostrará una pantalla de confirmación avisándole de que todos los usuarios asignados a ese dominio y sus descendientes serán desactivados y asignados a los padres del dominio. Un usuario con rol de administrador deberá volver a habilitarles desde Tools>Users.</para>	
 			</note>
+			<mediaobject>
+				<imageobject>
+					<imagedata scalefit="1" align="center" width="350" fileref="images/ch11_img019.png"/>
+				</imageobject>
+				<caption>
+					<para>Confirmar eliminación de sensor</para>
+				</caption>
+			</mediaobject>
 			<para>En la <emphasis role="bold">Vista árbol</emphasis> encontramos también un icono que indica el tipo de política que rige cada sensor o grupo de sensores. Al hacer clic sobre él, accederemos de manera directa a una interfaz en la que se muestran las firmas que componen esa política y desde la que podemos realizar diferentes acciones que serán explicadas con detalle en el punto referente a <emphasis>Policy rules.</emphasis></para>
 			<mediaobject>
 				<imageobject>
-					<imagedata scalefit="1" align="center" width="350" fileref="images/ch11_img043.png"/>
+					<imagedata scalefit="1" align="center" width="350" fileref="images/ch11_img014.png"/>
 				</imageobject>
 				<caption>
 					<para>Icono políticas</para>
@@ -274,7 +282,7 @@
 		<important>
 			<title>Importante</title>
 			<para>En el momento en el que se registra un sensor en el Manager, este pasa, por defecto, a colocarse como raíz, por encima del nivel de dominio.</para>
-			<para>El usuario puede organizar su infraestructura de sensores en cualqieor momento, arrastrando y soltando el sensor hacia el dominio del que se quiera hacer depender.</para>
+			<para>El usuario puede organizar su infraestructura de sensores en cualquier momento, arrastrando y soltando el sensor hacia el dominio del que se quiera hacer depender.</para>
 			<para>El sensor heredará de manera automática las propiedades del dominio raíz (políticas, modo de operación, variables Snort, etc.).</para>
 		</important>
 		<para>Las diferentes opciones que aparecen en el submenú situado bajo la cabecera o menú principal nos posibilitan realizar acciones a nivel global. Para la configuración independiente de un sensor o dominio existe la posibilidad de realizarla directamente sobre la fila correspondiente en el listado.</para>
@@ -315,6 +323,11 @@
 				<para>Revise el capítulo 12 para saber maś acerca de la configuración y de la gestión de las políticas. </para>
 			</caption>
 		</mediaobject>	
+		<mediaobject>
+			<imageobject>
+				<imagedata scalefit="1" align="center" width="350" fileref="images/ch11_img049b.png"/>
+			</imageobject>
+		</mediaobject>	
 		<section>
 			<title>Importar árbol</title>
 			<para>Esta opción permite importar un nuevo árbol o infraestructura de sensores mediante la subida de un archivo a redBorder.</para>
@@ -337,7 +350,7 @@
 			</orderedlist>
 			<mediaobject>
 				<imageobject>
-					<imagedata scalefit="1" align="center" width="350" fileref="images/ch11_img044.png"/>
+					<imagedata scalefit="1" align="center" width="350" fileref="images/ch11_img016.png"/>
 				</imageobject>
 				<caption>
 					<para>Importar árbol desde el menú <literal>Options</literal></para>
@@ -345,7 +358,7 @@
 			</mediaobject>	
 			<mediaobject>
 				<imageobject>
-					<imagedata scalefit="1" align="center" width="350" fileref="images/ch11_img045.png"/>
+					<imagedata scalefit="1" align="center" width="350" fileref="images/ch11_img017.png"/>
 				</imageobject>
 				<caption>
 					<para>Importar árbol desde el menú de configuración a nivel de dominio</para>
@@ -356,13 +369,13 @@
 			<title>Exportar árbol</title>
 			<para>Esta opción permite exportar un árbol y de este modo, tenerlo disponible para su uso en otras aplicaciones. El usuario se descargará un archivo comprimido que podrá guardar en su equipo.</para>
 			<mediaobject>
-			<imageobject>
-				<imagedata scalefit="1" align="center" width="350" fileref="images/ch11_img011.png"/>
-			</imageobject>
-			<caption>
-				<para>Exportar árbol</para>
-			</caption>
-		</mediaobject>	
+				<imageobject>
+					<imagedata scalefit="1" align="center" width="350" fileref="images/ch11_img011.png"/>
+				</imageobject>
+				<caption>
+					<para>Exportar árbol</para>
+				</caption>
+			</mediaobject>	
 			<para>Existen dos maneras de realizar la exportación de un árbol:</para>
 			<orderedlist numeration="arabic">
 				<listitem>
@@ -374,7 +387,7 @@
 			</orderedlist>
 			<mediaobject>
 				<imageobject>
-					<imagedata scalefit="1" align="center" width="350" fileref="images/ch11_img046.png"/>
+					<imagedata scalefit="1" align="center" width="350" fileref="images/ch11_img018.png"/>
 				</imageobject>
 				<caption>
 					<para>Exportar árbol desde el menú <literal>Options</literal></para>
@@ -382,7 +395,7 @@
 			</mediaobject>	
 			<mediaobject>
 				<imageobject>
-					<imagedata scalefit="1" align="center" width="350" fileref="images/ch11_img047.png"/>
+					<imagedata scalefit="1" align="center" width="350" fileref="images/ch11_img020.png"/>
 				</imageobject>
 				<caption>
 					<para>Exportar árbol desde el menú de configuración a nivel de dominio</para>
@@ -390,10 +403,182 @@
 			</mediaobject>	
 		</section>
 		<section>
-			<title>Editar sensor</title>
+			<title>Editar sensor y/o dominio</title>
+			<para>En  cualquier momento podemos editar la información asociada a un sensor o un dominio seleccionando esta opción en el menú que se despliega al hacer clic sobre el siguiente icono:</para>
+			<mediaobject>
+				<imageobject>
+					<imagedata scalefit="1" align="center" width="350" fileref="images/ch11_img012.png"/>
+				</imageobject>
+			</mediaobject>
+			<mediaobject>
+				<imageobject>
+					<imagedata scalefit="1" align="center" width="350" fileref="images/ch11_img008.png"/>
+				</imageobject>
+				<caption>
+					<para>Editar sensor desde el menú de configuración</para>
+				</caption>
+			</mediaobject>	
+			<para>Desde la interfaz de edición del sensor el usuario puede realizar nuevas configuraciones o actualizar la información relativa al sensor o al dominio. Ambos niveles comparten apartados, por este motivo se abarcan ambos casos en la misma sección. </para>
+			<para>Los parámetros que son configurables a nivel de sensor son más amplios que los disponibles a nivel de dominio. Por este motivo, primero realizaremos una enumeración de los elementos correspondientes a cada uno de los niveles, y posteriormente, los abarcaremos de manera conjunta</para>
+			<para>Los datos que puede modificar a nivel de sensor son los siguientes:</para>
+			<itemizedlist mark="bullet">
+				<listitem>
+					<para>General: muestra información general del sensor. IP, versión-parámetros no editables desde la web-y descripción.</para>
+				</listitem>
+				<listitem>
+					<para>Configuración IPS/IDS</para>
+				</listitem>
+				<listitem>
+					<para>Servidores</para>
+				</listitem>
+				<listitem>
+					<para>Trap servers</para>
+				</listitem>
+				<listitem>
+					<para>Segmentos</para>
+				</listitem>
+				<listitem>
+					<para>Rutas de red</para>
+				</listitem>
+				<listitem>
+					<para>Localización</para>
+				</listitem>
+				<listitem>
+					<para>IP Variables</para>
+				</listitem>
+				<listitem>
+					<para>Variables de puertos</para>
+				</listitem>
+				<listitem>
+					<para>Grupos</para>
+				</listitem>
+			</itemizedlist>
+			<mediaobject>
+				<imageobject>
+					<imagedata scalefit="1" align="center" width="350" fileref="images/ch11_img024.png"/>
+				</imageobject>
+				<caption>
+					<para>Opciones de edición de los sensores</para>
+				</caption>
+			</mediaobject>
+			<para>Los datos modificables a nivel de dominio son los siguientes:</para>	
+			<itemizedlist mark="bullet">
+				<listitem>
+					<para>General: muestra información general del sensor. Nombre (no editable desde la web), tipo de dominio-seleccionar el tipo de dominio en el desplegable) y descripción.</para>
+					<para>Es posible añadir más información acerca del dominio completando los siguientes campos:</para>
+				</listitem>
+				<listitem override="circle">
+					<para>Detalles de la organización</para>
+				</listitem>
+				<listitem override="circle">
+					<para>Oficinas centrales</para>
+				</listitem>
+				<listitem override="circle">
+					<para>Facturación</para>
+				</listitem>
+				<listitem override="circle">
+					<para>Administrador</para>
+				</listitem>
+				<listitem>
+					<para>Servidores</para>
+				</listitem>
+				<listitem>
+					<para>IP Variables</para>
+				</listitem>
+				<listitem>
+					<para>Variables de puertos</para>
+				</listitem>
+				<listitem>
+					<para>Localización</para>
+				</listitem>
+			</itemizedlist>		
+			<mediaobject>
+				<imageobject>
+					<imagedata scalefit="1" align="center" width="350" fileref="images/ch11_img025.png"/>
+				</imageobject>
+				<caption>
+					<para>Opciones de edición a nivel de dominio</para>
+				</caption>
+			</mediaobject>
+			<para>A continuación procedemos a una descripción detallada de los parámetros editables desde la interfaz web del Manager, y que son comunes en algunos casos, tanto a nivel de sensor como de dominio:</para>
+			<para><emphasis role="bold">Configuración IPS/IDS</emphasis></para>
+			<para>En este apartado encontramos las opciones disponibles para configurar el comportamiento de Snort y PF_RING.</para>
+			<note>
+				<title>Nota</title>
+				<para>Las opciones disponibles en el apartado <literal>IPS/IDS Settings</literal> aplican a nivel de dominio y a nivel de sensor.</para>
+			</note>
+			<mediaobject>
+				<imageobject>
+					<imagedata scalefit="1" align="center" width="350" fileref="images/ch11_img026.png"/>
+				</imageobject>
+				<caption>
+					<para>Campos editables para la configuración IPS/IDS</para>
+				</caption>
+			</mediaobject>
+			<para><literal>Sensor mode</literal></para>
+			<para>"Inherited (IDS forwarding)" en esta casilla aparecerá el modo que se haya heredado del dominio o sensor del que depende el que estamos consultando. Cuando un modo ha sido heredado desde el inicio indica que ese modo ha sido heredado directamente del nivel superior.</para>
+			<para>En este campo, el usuario podrá elegir entre 4 opciones diferentes:</para>		
+			<orderedlist mark="bullet">
+				<listitem>
+					<para>IDS forwarding: trabaja como un puente; el sensor realiza una copia de los paquetes de tráfico que es analizada posteriormente por Snort.</para>
+				</listitem>
+				<listitem>
+					<para>IDS span: en este caso, otros dispositivos (ej. un switch) realiza la copia que luego será analizada por Snort.</para>
+				</listitem>
+				<listitem>
+					<para>IPS test mode: el IPS no paraliza el tráfico a pesar de la acción que se haya configurado en la regla, pero enviará una alerta notificando del caso en que debería haber parado o bloqueado el tráfico.</para>
+				</listitem>
+				<listitem>
+					<para>IPS: esta es la opción más común en entornos de producción. Snort analiza el tráfico y deja pasar o bloquea el tráfico dependiendo de las acciones de la regla en la política activa del sensor.</para>
+				</listitem>			
+			</orderedlist>
+			<para><literal>PF_RING Watermark</literal></para>
+			<para>Indica el número mínimo de paquetes entrantes para la función poll.</para>
+			<para>Un valor bajo de watermark como 1 reduce la latencia de la función poll, pero puede incrementar el número de llamadas que la función poll realiza.</para>
+			<para>Un valor alto de watermark (nunca debe exceder del 50% del tamaño del anillo o de lo contrario el módulo kernel de PF_RING aumentará este valor) reduce el número de llamadas que realiza el poll pero aumenta ligeramente la latencia de paquete.</para>
+			<para><literal>PF_RING Clustermode</literal></para>
+			<para>Indica el número de parámetros usados para determinar el hash y el balanceo del tráfico del mismo proceso Snort. Dependiendo del número de tuplas seleccionadas se incluirán más o menos datos de resumen del tráfico:</para>
+			<itemizedlist mark="bullet">
+				<listitem>
+					<para>2 tuple flow: IP de origen+IP de destino</para>
+				</listitem>
+				<listitem>
+					<para>4 tuple flow: IP de origen:puerto+IP de destino:Puerto</para>
+				</listitem>
+				<listitem>
+					<para>5 tuple flow: IP de origen:puerto+IP de destino:Puerto+protocolo</para>
+				</listitem>
+				<listitem>
+					<para>6 tuple flow: IP de origen:puerto+IP de destino:Puerto+protocolo+Vlan</para>
+				</listitem>
+			</itemizedlist>
+			<para><literal>Bypass controlled by Snort</literal></para>
+			<para>Cuando la máquina arranca Snort puede tomar el control de los bypass automáticamente. Esta acción puede provocar un flapping indeseado del firewall para evitar que Snort esté habilitado para el control de los bypass.</para>
+			<para><literal>Threshold Count</literal></para>
+			<para>Número mínimo de ocurrencias para que se envíe un evento.</para>
+			<para><literal>Threshold Seconds</literal></para>
+			<para>Tiempo mínimo (en segundos) que tiene que pasar para enviar un evento.</para>
+			<note>
+				<title>Nota</title>
+				<para>En escenarios donde existe una sobrecarga en el tráfico es posible realizar una configuración que permita mantener la conectividad por encima del análisis de los paquetes.</para>
+				<para>Las opciones de <literal>Best effort Configuration</literal> y <literal>Software Bypass Configuration</literal> se utilizan para priorizar el reenvío de información sobre el análisis de la misma.</para>
+			</note>
+			<para><emphasis>Best effort Configuration</emphasis></para>
+			<para>Esta configuración solo aplica en el modo <emphasis role="bold">IDS.</emphasis></para>
+			<para>Al habilitar esta opción, todos los paquetes serán reenviados y hasta que la cola no se haya vaciado, no se procederá al análisis de los mismos.</para>
+			<para><emphasis>Software Bypass Configuration</emphasis></para>
+			<para>Esta configuración solo aplica en el modo <emphasis role="bold">IPS.</emphasis></para>
+			<para>Al habilitar esta opción, se paraliza el análisis en caso de que la cola esté muy llena para proceder al reenvío de los paquetes. En este caso, se perderá el análisis de parte de ese tráfico en beneficio del manteniemiento de la conectividad.</para>
+			<important>
+				<title>Importante</title>
+				<para>Esta configuración del bypass de IPS se realiza a nivel de software. Para determinar la configuración de los bypass a nivel de hardware, consultar el apartado <literal>Segments.</literal></para>			
+			</important>		
 		</section>
 		<section>
-			<title>Editar dominio</title>
+			<title>Añadir sensor</title>
+		</section>
+		<section>
+			<title>Añadir dominio</title>
 		</section>
 		<section>
 			<title>Monitores</title>
@@ -401,8 +586,8 @@
 				<title>Nota</title>
 				<para>Esta opción solo se encuentra disponible en el menú de configuración a nivel de sensor.</para>
 			</note>
-			<para>Esta opción se encuentra en el menú de configuración disponible a nivel de sensor. Al clicar sobre ella, accederemos a una pantalla en la que se visualiza de forma gráfica cuál es el estado del hardware en el que está registado el sensor. </para>
-			<para> La información que encontramos en este listado se refier al nombre de la máquina (Monitor), la descripción, el tipo de tecnología, la categoría y el impacto o uso de la misma. </para>
+			<para>Al hacer clic sobre icono del menú de configuración de un sensor, visualizaremos la opción <literal>Monitor</literal>. A continuación, accederemos a una pantalla en la que se visualiza de forma gráfica cuál es el estado del hardware en el que está registado el sensor. </para>
+			<para>La información que encontramos en este listado se refier al nombre de la máquina (Monitor), la descripción, el tipo de tecnología, la categoría y el impacto o uso de la misma. </para>
 			<para>La columna <literal>Technology</literal> indica el origen desde el que se están recogiendo los datos.</para>
 			<mediaobject>
 				<imageobject>
@@ -418,19 +603,19 @@
 			<para>Es posible eliminar cualquiera de los monitores que aparecen en el listado clicando el siguiente icono:</para>
 			<mediaobject>
 				<imageobject>
-					<imagedata scalefit="1" align="center" width="350" fileref="images/ch11_img043.png"/>
+					<imagedata scalefit="1" align="center" width="350" fileref="images/ch11_img013.png"/>
 				</imageobject>
 				<caption>
 					<para>Eliminar monitor</para>
 				</caption>
 			</mediaobject>
-			<para>El sitema le pedirá confirmación a través de una ventana emergente:</para>
+			<para>El sistema le pedirá confirmación a través de una ventana emergente:</para>
 			<mediaobject>
 				<imageobject>
 					<imagedata scalefit="1" align="center" width="350" fileref="images/ch11_img051.png"/>
 				</imageobject>
 				<caption>
-					<para>Exportar árbol desde el menú de configuración a nivel de dominio</para>
+					<para>Chequeo del estado de los monitores</para>
 				</caption>
 			</mediaobject>					
 		</section>
@@ -440,7 +625,19 @@
 				<title>Nota</title>
 				<para>Esta opción solo se encuentra disponible en el menú de configuración a nivel de dominio</para>
 			</note>
+			<para>En el menú de configuración que se despliega a nivel de dominio, podemos encontrar la opción vista o <literal>View,</literal> que incluye las mismas opciones que la sección Vista del submenú de cabecera. En este caso, tendremos acceso a la vista de mapa, Access Points y sensores que se incluyen en el dominio u organización seleccionado.</para>
+			<mediaobject>
+				<imageobject>
+					<imagedata scalefit="1" align="center" width="350" fileref="images/ch11_img007.png"/>
+				</imageobject>
+				<caption>
+					<para>Submenú <literal>View</literal> a nivel de dominio</para>
+				</caption>
+			</mediaobject>
 		</section>
+	</section>
+	<section>
+		<title>Vista sensores: opciones de configuración de los sensores</title>
 	</section>
 		
 	
