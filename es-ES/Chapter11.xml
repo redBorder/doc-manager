@@ -23,9 +23,10 @@
 			</listitem>
 			<listitem>
 				<para>Área principal: vista de la infraestructura de sensores ordenada por dependencia y jerarquía.</para>
-				<para>Existen tres vistas disponibles para visualizar la infraestructura de sensores de nuestra red:</para>
+				<para>Existen cuatro vistas disponibles para visualizar la infraestructura de sensores de nuestra red:</para>
 				<para>-Árbol (es la que se muestra por defecto).</para>
 				<para>-Mapa: muestra la geolocalización de los senores sobre un mapa.</para>
+				<para>-Access Points: nos ofrece acceso directo a la visualización de los Access Points por dominio vinculados a los sensores Flow.</para>
 				<para>-Sensores: muestra en formato de tabla una lista de los sensores y la información asociada a ellos.</para>
 			</listitem>		
 		</itemizedlist>
@@ -47,18 +48,6 @@
 	<section>
 		<title>Menú vista</title>
 		<para>Nada más acceder a la sección Sensors, el usuario encuentra un listado (vista de árbol) en el que aparecen todos los sensores registrados en el Manager organizados según diferentes criterios de jerarquía y dependencia.</para>
-		<para>Como se ha comentado anteriormente, existen tres opciones disponibles en el menú de vistas: </para>
-		<itemizedlist mark="circle">
-			<listitem>
-				<para>Árbol: es la vista que se visualiza por defecto. Este listado aparece en modo "persiana" de manaera que podemos colapsar o mostrar los elementos que definen la jerarquía definida para la infraestructura de sensores tan solo con desplegar </para>
-			</listitem>
-			<listitem>
-				<para>Mapa: muestra la localización de los sensores y el número de sensores que se encuentran en una determinada zona. Esta información se "clusteriza" o agrupa, de manera que, para obtener un mayor detalle de los sensores, tendremos que aplicar zoom al mapa.</para>
-			</listitem>
-			<listitem>
-				<para>Sensores: en el menú desplegable de la opción Vistas, se visualizan de manera independiente, cada uno de los sensores por App que han sido asociados al Manager. (Ej. Flow Sensors). Desde estas opciones accederemos a la interfaz en la que aparece información detallada sobre la configuración de los sensores. </para>
-			</listitem>
-		</itemizedlist>
 		<mediaobject>
 			<imageobject>
 				<imagedata scalefit="1" align="center" width="350" fileref="images/ch11_img005.png"/>
@@ -67,6 +56,53 @@
 				<para>Opciones menú Vista</para>
 			</caption>
 		</mediaobject>
+		<para>Como se ha comentado anteriormente, existen tres opciones disponibles en el menú de vistas: </para>
+		<itemizedlist mark="circle">
+			<listitem>
+				<para>Árbol: es la vista que se visualiza por defecto. Este listado aparece en modo "persiana" de manera que podemos colapsar o mostrar los elementos que definen la jerarquía definida para la infraestructura de sensores tan solo con desplegar </para>
+				<mediaobject>
+					<imageobject>
+						<imagedata scalefit="1" align="center" width="350" fileref="images/ch11_img001.png"/>
+					</imageobject>
+					<caption>
+						<para>Vista <literal>Tree</literal></para>
+					</caption>
+				</mediaobject>
+			</listitem>
+			<listitem>
+				<para>Mapa: muestra la localización de los sensores y el número de sensores que se encuentran en una determinada zona. Esta información se "clusteriza" o agrupa, de manera que, para obtener un mayor detalle de los sensores, tendremos que aplicar zoom al mapa.</para>
+				<mediaobject>
+					<imageobject>
+						<imagedata scalefit="1" align="center" width="350" fileref="images/ch11_img056.png"/>
+					</imageobject>
+					<caption>
+						<para>Vista <literal>Map</literal></para>
+					</caption>
+				</mediaobject>
+			</listitem>
+			<listitem>
+				<para>Access Points: se trata de una vista paralela a la de árbol que nos muetsra los Access Points que se encuentran por debajo de la estructura de dominio. Desde esta vista podemos, además, ver y añadir Zonas, añadir sensores y dominios, eliminar Access Points o exportar la infraestructura de sensores organizada opr Access Points. </para>
+				<mediaobject>
+					<imageobject>
+						<imagedata scalefit="1" align="center" width="350" fileref="images/ch11_img034b.png"/>
+					</imageobject>
+					<caption>
+						<para>Vista <literal>Access Points</literal></para>
+					</caption>
+				</mediaobject>
+			</listitem>
+			<listitem>
+				<para>Sensores: en el menú desplegable de la opción Vistas, se visualizan de manera independiente, cada uno de los sensores por App que han sido asociados al Manager. (Ej. Flow Sensors). Desde estas opciones accederemos a la interfaz en la que aparece información detallada sobre la configuración de los sensores. </para>
+				<mediaobject>
+					<imageobject>
+						<imagedata scalefit="1" align="center" width="350" fileref="images/ch11_img035b.png"/>
+					</imageobject>
+					<caption>
+						<para>Vista de sensores (IPS)</para>
+					</caption>
+				</mediaobject>
+			</listitem>
+		</itemizedlist>
 	</section>
 	<section>
 		<title>Organización de los sensores para las vistas de árbol y de sensores (Tree/Sensors)</title>
@@ -76,15 +112,15 @@
 			<para>Existen dos niveles de organización general en redBorder:</para>
 			<itemizedlist mark="bullet">
 				<listitem>
-					<para>Sensores</para>
+					<para><emphasis role="bold">Sensores:</emphasis> nodos finales que se corresponden con elementos físicos colocados en la red (switches, routers, IPS, etc.).</para>
 					<para>A el nivel de sensores se muestra la siguiente información: nombre del sensor, IP, política aplicada, último chequeo y versión. Es posible añadir una descripción al sensor.</para>
 				</listitem>
 				<listitem override="circle">
-					<para>Grupo de sensores y bindings</para>
+					<para>Grupo de segmentos y bindings</para>
 					<para>Existen la posibilidad de crear un grupo de sensores subdividido a su vez en diferentes segmentos o bindings a los que se puede aplicar una política concreta independientemente de la que se haya aplicado al sensor del que dependen.</para>
 				</listitem>
 				<listitem>
-					<para>Dominio</para>
+					<para><emphasis role="bold">Dominio:</emphasis> se trata de contenedores que pueden incluir sensores, grupos de sensores, etc.</para>
 					<para>El nivel "dominio" nos muestra el nombre del dominio y nos permite agregar una descripción. Es posible clasificarlas según su naturaleza (organizacional, espacial, etc.); cada tipo de dominio tendrá un icono específico:</para>
 				</listitem>
 				<listitem override="circle">
@@ -175,7 +211,7 @@
 					</mediaobject>
 				</listitem>
 				<listitem>
-				<para>Sensores IPS</para>
+					<para>Sensores IPS</para>
 					<mediaobject>
 						<imageobject>
 							<imagedata scalefit="1" align="center" width="350" fileref="images/ch11_img035.png"/>
@@ -363,7 +399,7 @@
 				<para>Submenú <literal>Options</literal> de la vista árbol</para>
 			</caption>
 		</mediaobject>	
-		<para>Dependiendo de si se trata de un dominio, sensor, grupo de sensores o segmento (binding) se visualizan unas opciones u otras.</para>
+		<para>Dependiendo de si se trata de un dominio, sensor, grupo de sensores o binding se visualizan unas opciones u otras.</para>
 		<mediaobject>
 			<imageobject>
 				<imagedata scalefit="1" align="center" width="350" fileref="images/ch11_img006.png"/>
@@ -399,7 +435,7 @@
 		</mediaobject>	
 		<note>
 			<title>Nota</title>
-			<para>Las opciones <literal>Import tree</literal></para><!-- indicar qué partes son comunes a sensor y árbol-->
+			<para>Las opciones <literal>Import tree</literal>y <literal>Export tree</literal> son exclusivas de la vista árbol.</para>
 		</note>
 		<section>
 			<title>Importar árbol</title>
@@ -493,11 +529,11 @@
 			</mediaobject>	
 			<important>
 				<title>Importante</title>
-				<para>Esta sección del manual es aplicable a la configuración de los sensores IPS, Gateway, Meraki, Social y MSE. Esta opción es accesible desde la vista de cada uno de los sensores.</para>
-				<para>La configuración y edición de los sensores Flow se abordará en una sección diferente. </para>
+				<para>Esta sección del manual es aplicable a la configuración de los sensores IPS. Esta opción es accesible desde la vista de cada uno de los sensores.</para>
+				<para>La configuración y edición de los sensores Flow se abordará en una sección diferente.</para>
 			</important>
 			<para>Desde la interfaz de edición del sensor el usuario puede realizar nuevas configuraciones o actualizar la información relativa al sensor o al dominio. Ambos niveles comparten apartados, por este motivo se abarcan ambos casos en la misma sección. </para>
-			<para>Los parámetros que son configurables a nivel de sensor son más amplios que los disponibles a nivel de dominio. Por este motivo, primero realizaremos una enumeración de los elementos correspondientes a cada uno de los niveles, y posteriormente, los abarcaremos de manera conjunta</para>
+			<para>Los parámetros que son configurables a nivel de sensor son más amplios que los disponibles a nivel de dominio. Por este motivo, primero realizaremos una enumeración de los elementos correspondientes a cada uno de los niveles, y posteriormente, los abarcaremos de manera conjunta.</para>
 			<para>Los datos que puede modificar a nivel de sensor son los siguientes:</para><!--Insertar los dos botones de Stop Autoapply y OPtions-->
 			<itemizedlist mark="bullet">
 				<listitem>
@@ -578,7 +614,16 @@
 					<para>Opciones de edición a nivel de dominio</para>
 				</caption>
 			</mediaobject>
-			<para>A continuación procedemos a una descripción detallada de los parámetros editables desde la interfaz web del Manager, y que son comunes en algunos casos, tanto a nivel de sensor como de dominio:</para>
+			<para><emphasis role="bold">Stop Auto-Apply</emphasis></para>
+			<para>En el margen superior derecho de la pantalla, bajo el menú de cabecera, encontramos la opción <literal>Stop Auto-Apply</literal> que evita que Chef aplique de manera automática los cambios que refresca y aplica cada 5 minutos.</para>
+			<para>El sistema abrirá una ventana emergente de confirmación para asegurarse de que esta es la acción que desea realizar el usuario.</para>
+			<para><emphasis role="bold">Recreate Private Key</emphasis></para>
+			<para>En el margen superior derecho de la pantalla, bajo el menú de cabecera, encontramos el menú <literal>Options.</literal> Una de las opciones disponibles es la de <literal>Recreate Private Key.</literal></para>
+			<para>Esta opción regenera la clave privada de sincronización del sensor IPS con el Manager. Una vez que se haya confirmado dicha restauración, el usuario deberá actualizar dicha clave desde la interfaz de edición del sensor en el menú <literal>Options.</literal></para>
+			<warning>
+				<title>Advertencia</title>
+				<para>La acción de restauración de la clave privada es muy sensible puesto que piede dejar sin comunicación al sensor con el Manager.</para>
+			</warning>
 			<section>
 				<title>Configuración IPS/IDS</title>
 				<para>En este apartado encontramos las opciones disponibles para configurar el comportamiento de Snort y PF_RING.</para>
@@ -830,7 +875,7 @@
 					<para>Editar valores de las Variables de puertos Snort</para>
 				</caption>
 			</mediaobject>
-			<para>Es posible Exportar e importar variables de puertos desde las pestañas <literal>Export</literal> e <literal>Import.</literal>El formato de archivo usado en la importación y exportación debe ser .csv</para>
+			<para>Es posible Exportar e importar variables de puertos desde las pestañas <literal>Export</literal> e <literal>Import.</literal> El formato de archivo usado en la importación y exportación debe ser .csv</para>
 			<para>La opción de importación de variables ofrece la posibilidad de Añadir variables o reemplazar las existentes.</para>
 			<warning>
 				<title>Advertencia</title>
@@ -853,8 +898,24 @@
 				<title>Nota</title>
 				<para>Gracias a los grupos de sensores, con una sola máquina, el usuario puede crear numerosos entornos para aplicar diferentes reglas.</para>
 			</note>
+			<para>Antes de proceder a explicar las diferentes acciones que se pueden realizar sobre un grupo de segmentos se deben tener en cuenta las siguientes consideraciones:</para>
+			<itemizedlist mark="bullet">
+				<listitem>
+					<para>No es posible que dos grupos compartan los mismos segmentos.</para>
+				</listitem>
+				<listitem>
+					<para>Sensores IPS: solo pueden colgar de ellos sus propios grupos y bindings.</para>
+				</listitem>
+				<listitem>
+					<para>Los grupos y los bindigs pueden moverse y hacerlos depender de dominios. Sin embargo estos, tan solo pueden ser devueltos al sensor IPS al que pertenecían antes de moverlos.</para>
+				</listitem>
+			</itemizedlist>
 			<para>La información que se muestra en este partado es la siguiente: nombre del sensor, modo del sensor (es posible cambiar el modo directamente en este apartado o bien en IPS/IDS), segmentos y CPUs asignadas.</para>
 			<para>En cualquier momento se puede borrar un grupo mediante el icono "Eliminar". El sistema mostrará un mensaje de confirmación. </para>
+			<important>
+				<title>Importante</title>
+				<para>En caso de que un grupo tuviera asignada una serie de políticas, al eliminar el grupo, estas dejarán de aplicarse en este grupo de segmentos. Los segmentos quedarán libres para su integración en otro grupo. </para>
+			</important>
 			<mediaobject>
 				<imageobject>
 					<imagedata scalefit="1" align="center" width="350" fileref="images/ch11_img048.png"/>
@@ -890,15 +951,14 @@
 				</caption>
 			</mediaobject>
 			</section>
-		</section>	
+		</section>
 		<section>
 			<title>Monitores</title>
 			<note>
 				<title>Nota</title>
 				<para>Esta opción solo se encuentra disponible en el menú de configuración a nivel de sensor.</para>
 			</note>
-			<para>Al hacer clic sobre icono del menú de configuración de un sensor, visualizaremos la opción <literal>Monitor</literal>. A continuación, accederemos a una pantalla en la que se visualiza de forma gráfica cuál es el estado del hardware en el que está registado el sensor. </para>
-			<para>La información que encontramos en este listado se refier al nombre de la máquina (Monitor), la descripción, el tipo de tecnología, la categoría y el impacto o uso de la misma. </para>
+			<para>Al hacer clic sobre icono del menú de configuración de un sensor, aparece la opción <literal>Monitor</literal>. A continuación, accederemos a una pantalla en la que se visualiza un listado con las métricas de monitorización que queremos aplicarle al sensor.</para>
 			<para>La columna <literal>Technology</literal> indica el origen desde el que se están recogiendo los datos.</para>
 			<mediaobject>
 				<imageobject>
@@ -908,27 +968,17 @@
 					<para>Monitors</para>
 				</caption>
 			</mediaobject>	
-			<para><emphasis role="bold">Restaurar predeterminado</emphasis></para>
-			<para><emphasis role="bold">Añadir monitor</emphasis></para>
-			<para><emphasis role="bold">Eliminar monitor</emphasis></para>
-			<para>Es posible eliminar cualquiera de los monitores que aparecen en el listado clicando el siguiente icono:</para>
+			<para><emphasis role="bold">Restaurar predeterminado:</emphasis> aplica las métricas predeterminadas que se inlcuyen en la creación de los sensores.</para>
+			<para><emphasis role="bold">Añadir monitor:</emphasis> muestra las métricas que se encuentran disponibles para su aplicación.</para>
+			<para><emphasis role="bold">Eliminar monitor:</emphasis> elimina la métrica aplicada.</para>	
 			<mediaobject>
 				<imageobject>
-					<imagedata scalefit="1" align="center" width="350" fileref="images/ch11_img013.png"/>
+					<imagedata scalefit="1" align="center" width="350" fileref="images/ch11_img055.png"/>
 				</imageobject>
 				<caption>
-					<para>Eliminar monitor</para>
-				</caption>
-			</mediaobject>
-			<para>El sistema le pedirá confirmación a través de una ventana emergente:</para>
-			<mediaobject>
-				<imageobject>
-					<imagedata scalefit="1" align="center" width="350" fileref="images/ch11_img051.png"/>
-				</imageobject>
-				<caption>
-					<para>Chequeo del estado de los monitores</para>
-				</caption>
-			</mediaobject>					
+					<para>Añadir Monitor: métricas disponibles</para>
+				</caption>	
+			</mediaobject>		
 		</section>
 		<section>
 			<title>Vista</title>
