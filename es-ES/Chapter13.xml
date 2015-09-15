@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE chapter PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd" [
+<!ENTITY % BOOK_ENTITIES SYSTEM "manual.ent">
+<!ENTITY PRODUCT "Documentation">
+<!ENTITY BOOKID "manual">
+<!ENTITY YEAR "2015">
+<!ENTITY HOLDER "Eneo Tecnología S.L. |">
+]>
+<chapter>
+	<title>Herramientas</title>
+	<para>En el margen derecho de la barra de menú, junto al menú <literal>Sensors</literal> encontramos la sección de "herramientas" o <literal>Tools</literal> en la que se encuentran las opciones para la configuración de la plataforma web redBorder.</para>
+	<mediaobject>
+		<imageobject>
+			<imagedata scalefit="1" align="center" width="350" fileref="images/ch13_img001.png"/>
+		</imageobject>
+		<caption>
+			<para><literal>Tools:</literal> opciones disponibles para la configuración de la plataforma redBorder</para>
+		</caption>
+	</mediaobject>
+	<para>Desde este menú es posible establecer las condiciones que han de cumplirse para que el usuario sea notificado mediante una alarma, realizar un seguimiento de la actividad de los usuarios de la plataforma, dar de alta a nuevos usuarios o gestionar la configuración del cluster, sensores y servidores, entre otras acciones.</para>
+	<para>Estas son las opcioens que se eneucentran disponibles en el menú herramientas:</para>
+	<itemizedlist mark="bullet">
+		<listitem>
+			<para>Alarmas: establecimiento de las condiciones para la activación de una notificación al usuario.</para>
+		</listitem>
+		<listitem>
+			<para>Auditoría: permite realizar el seguimiento de la actividad de los usuarios mediante log.</para>
+		</listitem>
+		<listitem>
+			<para>Configuración del cluster: nos muestra la configurqación que se ha establecido para el cluster en el proceso de instalación del Manager.</para>
+		</listitem>
+		<listitem>
+			<para>Configuración General: el usuario puede establecer la configuración de los parámetros generales del Manager tales como </para>
+		</listitem>
+		<listitem>
+			<para>Licencias: listado de las licencias bajo las que funcionan los diferentes módulos d ela plataforma redBorder.</para>
+		</listitem>
+		<listitem>
+			<para>Fuentes de actualización: listado de las URL de los servicios web de consulta de datos de red.</para>
+		</listitem>
+		<listitem>
+			<para>Objetos: objetos de red definidos en la plataforma redBorder.</para>
+		</listitem>
+		<listitem>
+			<para>Overlay Maps</para>
+		</listitem>
+		<listitem>
+			<para>Usuarios: gestión de perfil y permisos de los usuarios.</para>
+		</listitem>
+		<listitem>
+			<para>Políticas Yara</para>
+		</listitem>
+		<listitem>
+			<para>Cola de trabajos</para>
+		</listitem>
+		<listitem>
+			<para>Versiones de las reglas <para><footnote>Estas tres últimas opciones (Yara Policies, Worker and Job Queue y Rule's Versions se han abordado de manera independiente en el capítulo 12.</footnote></para></para>
+		</listitem>
+	</itemizedlist>
+	<section>
+		<title>Alarmas</title>
+		<para>Una alarma es una notificación que se activa cuando se cumple una o más condiciones establecidas por el usuario.</para>
+		<para>Al acceder a esta opción se visualizan el listado de alarmas que se han dado de alta.</para>
+		<section>
+			<title>Crear nueva alarma</title>
+				<para>Haciendo clic en el botón <literal>+New Alarm</literal> accedemos al formulario en el que se establecerán las condiciones que debe cumplir la alarma para activar una notificación y el grado de severidad definida para dicha alarma.</para>
+				<para>Este formulario está compuesto por tres secciones:</para>
+				<orderedlist numeration="arabic">
+					<listitem>
+						<para>Opciones generales</para>
+					</listitem>
+					<listitem>
+						<para>Notificaciones</para>
+					</listitem>
+					<listitem>
+						<para>Condiciones</para>
+					</listitem>
+				</orderedlist>
+				<para><emphasis role="bold">Opciones generales</emphasis></para>
+				<table xml:id="ejemplotabla">
+					<caption>Eejmplo tabla</caption>
+					<thead>
+						<tr>
+							<td>Fila 1</td>
+							<td>Fila 2</td>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>cuerpo 1</td>
+							<td>cuerpo 2</td>
+						</tr>
+					</tbody>
+				</table>
+		</section>
+	</section>
+	
+</chapter>
