@@ -581,17 +581,17 @@
 					<para>General: muestra información general del sensor. Nombre (no editable desde la web), tipo de dominio-seleccionar el tipo de dominio en el desplegable) y descripción.</para>
 					<para>Es posible añadir más información acerca del dominio completando los siguientes campos:</para>
 				</listitem>
-				<listitem override="circle">
-					<para>Detalles de la organización</para>
+				<listitem>
+					<para>-Detalles de la organización</para>
 				</listitem>
-				<listitem override="circle">
-					<para>Oficinas centrales</para>
+				<listitem>
+					<para>-Oficinas centrales</para>
 				</listitem>
-				<listitem override="circle">
-					<para>Facturación</para>
+				<listitem>
+					<para>-Facturación</para>
 				</listitem>
-				<listitem override="circle">
-					<para>Administrador</para>
+				<listitem>
+					<para>-Administrador</para>
 				</listitem>
 				<listitem>
 					<para>Servidores</para>
@@ -1005,28 +1005,28 @@
 			<listitem>
 				<para>General</para>
 			</listitem>
-			<listitem override="circle">
-				<para>Descripción</para>
+			<listitem>
+				<para>-Descripción</para>
 			</listitem>
-			<listitem override="circle">
-				<para>IP</para>
+			<listitem>
+				<para>-IP</para>
 			</listitem>
-			<listitem override="circle">
-				<para>Versión</para>
+			<listitem>
+				<para>-Versión</para>
 			</listitem>
-			<listitem override="circle">
-				<para>Activar SNMP</para>
+			<listitem>
+				<para>-Activar SNMP</para>
 			</listitem>
-			<listitem override="circle">
-				<para>Habilitar puerto SPAN</para>
+			<listitem>
+				<para>-Habilitar puerto SPAN</para>
 			</listitem>
 			<listitem>
 				<para>SNMP</para>
 			</listitem>
-			<listitem override="circle">
-				<para>Comunidad</para>
+			<listitem>
+				<para>-Comunidad</para>
 			</listitem>
-			<listitem override="circle">
+			<listitem>
 				<para>Versión:</para>
 				<para>-1</para>
 				<para>-2c</para>
@@ -1034,11 +1034,11 @@
 			<listitem>
 				<para>Telnet</para>
 			</listitem>
-			<listitem override="circle">
-				<para>User</para>
+			<listitem>
+				<para>-User</para>
 			</listitem>
-			<listitem override="circle">
-				<para>Password</para>
+			<listitem>
+				<para>-Password</para>
 			</listitem>
 			<listitem>
 				<para>Location</para>

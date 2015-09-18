@@ -3,7 +3,7 @@
 <!ENTITY % BOOK_ENTITIES SYSTEM "manual.ent">
 <!ENTITY PRODUCT "Documentation">
 <!ENTITY BOOKID "manual">
-<!ENTITY YEAR "2015">
+<!ENTITY YEAR "2014">
 <!ENTITY HOLDER "Eneo Tecnología S.L. |">
 ]>
 <preface id="pref-manual-Preface">
@@ -11,7 +11,7 @@
   <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="Common_Content/Conventions.xml"/>
   <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="Feedback.xml">
   </xi:include>
-   <section>
+    <section>
 		<title>Bienvenidos a redBorder</title>
 		<para>Muchas gracias por descargar o adquirir la versión 3.x de redBorder.</para>
         <para>Nos complace poder presentarle esta nueva versión de redBorder. Se trata de una potente plataforma de seguridad y monitorización de redes que combina las capacidades del <emphasis role="bold">redBorder IPS</emphasis> y la visibilidad que ofrece <emphasis role="bold">redBorder Flow</emphasis>.</para>
@@ -20,21 +20,21 @@
     </section>
     <section>
 		<title>Conociendo la Guía Oficial de Instalación de redBorder</title>
-		<para>Esta guía contiene información muy útil que le ayudará a realizar una correcta instalación del Manager redBorder.</para>
+		<para>Esta guía contiene información muy útil que le ayudará a realizar una correcta instalación y configuración del Manager redBorder.</para>
 		<para>Este capítulo explica detenidamente cómo moverse por el asistente de instalación del Manager o ISO y es válido tanto si dispone de DVD de instalación como si ha realizado la descarga directa de la ISO.</para>
         <itemizedlist mark="bullet">
 			<listitem>
-				<para>Configuración del Manager</para>
+				<para>Instalación y configuración del Manager</para>
 			</listitem>
             <listitem>
-				<para>Configuración de los sensores IPS</para>
+				<para>Configuración de las redBorder Apps</para>
             </listitem>
         </itemizedlist>
-		<para>Este manual ha sido diseñado para la implantación de la solución redBorder IPS a partir de la descarga del archivo que contiene la ISO de instalación. Este documento es ideal tanto para los usuarios que deseen reemplazar la antigua versión, como aquellos que instalen por primera vez la versión 3 redBorder.</para>
-        <para>Si es un usuario con experiencia y ya ha realizado la instalación del Manager redBorder en otras ocasiones, puede pasar directamente a los capítulos 2 y 3 correspondientes a la instalación del Manager y de la instalación y registro de los sensores IPS, respectivamente.</para>
+		<para>El segundo capítulo de este manual explica en detalle la instalación de un Manager a partir de la descarga del archivo que contiene la ISO de instalación. Este documento es ideal tanto para los usuarios que deseen reemplazar la antigua versión, como aquellos que instalen por primera vez la versión 3 redBorder.</para>
+        <para>Si es un usuario con experiencia y ya ha realizado la instalación del Manager redBorder y/o de los sensores en otras ocasiones, puede pasar directamente al capítulo 3 en el que aprenderá a moverse por la plataforma web redBorder.</para>
     </section>
     <section>
-		<title>Requisitos para la implantación de redBorder IPS</title>
+		<title>Requisitos para la implantación de redBorder</title>
 		<para>La plataforma redBorder se puede instalar mediante dos infraestructuras posibles:</para>
 		<itemizedlist mark="bullet">
 			<listitem>
