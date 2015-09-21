@@ -33,10 +33,10 @@
 				<imagedata scalefit="1" align="center" width="350" fileref="images/ch07_img000.png"/>
 			</imageobject>
 			<textobject>
-				<phrase>Estructura de la interfaz del administrador del manager redBorder IPS</phrase>
+				<phrase>Estructura de la interfaz del administrador del Manager redBorder IPS</phrase>
 			</textobject>
 			<caption>
-				<para>Estructura de la interfaz del administrador del manager redBorder IPS</para>
+				<para>Estructura de la interfaz del administrador del Manager redBorder IPS</para>
 			</caption>
 		</mediaobject>
 		<note>
@@ -296,8 +296,8 @@
 				</caption>
 			</mediaobject>
 			<para><emphasis role="bold">Basic Source Lookup:</emphasis> es posible obtener un resumen completo de la información asociada a las IPs consultadas. Al seleccionar esta opción aparecerá una ventana emergente con dos pestañas: </para>
-			<para>Whois: muestra el resultado de la consulta del manager a whois en la que se obtiene, entre otra información, a quién pertenece dicha IP, reputación, etc.</para> 
-			<para>DNS: el manager realiza una resolución inversa que nos permite conocer el DNS asociado a la IP consultada.</para>
+			<para>Whois: muestra el resultado de la consulta del Manager a whois en la que se obtiene, entre otra información, a quién pertenece dicha IP, reputación, etc.</para> 
+			<para>DNS: el Manager realiza una resolución inversa que nos permite conocer el DNS asociado a la IP consultada.</para>
 			<mediaobject>
 				<imageobject>
 					<imagedata scalefit="1" align="center" width="350" fileref="images/ch07_img024.png"/>

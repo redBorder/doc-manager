@@ -16,7 +16,7 @@
 			<para><literal>Install Manager:</literal> lanza el menú de instalación del Manager.</para>
 		</listitem>
 		<listitem>
-			<para><literal>Install Sensor:</literal> esta opción le permite realizar la instalación y configuración del sensor que corresponda para su posterior registro en el Manager redBorder. <footnote><para>Dependiendo de la solución que haya adquirido aparecerán en el menú las diferentes opciones para la instalación y registro de los sensores en el Manager: IPS, Malware, Gateway o Proxy to Cloud.</para></footnote>.</para>
+			<para><literal>Install Sensor:</literal> esta opción le permite realizar la instalación y configuración del sensor que corresponda para su posterior registro en el Manager de redBorder. <footnote><para>Dependiendo de la solución que haya adquirido aparecerán en el menú las diferentes opciones para la instalación y registro de los sensores de las diferentes Apps en el Manager.</para></footnote>.</para>
 		</listitem>
 		<listitem>
 			<para><literal>Rescue installed system:</literal> modalidad de inicio de rescate para los casos en que existan problemas de inicio de su máquina (modo avanzado). Además, permite iniciar el procedimiento de resolución del problema o cambiar la contraseña del usuario en caso de pérdida.</para>
@@ -37,7 +37,7 @@
 			<imagedata scalefit="1" align="center" width="350" fileref="images/ch02_img001.png"/>
 		</imageobject>
 		<textobject>
-			<phrase>Pantalla principal del asistente de instalación del Manager redBorder</phrase>
+			<phrase>Pantalla principal del asistente de instalación del Manager de redBorder</phrase>
 		</textobject>
 			<caption>
 				<para>Pantalla principal del asistente de instalación del Manager redBorder</para>
@@ -92,7 +92,7 @@
         <para> Si lo desea, puede insertar una contraseña más fuerte o bien, guardar la contraseña actual y cambiarla en otro momento seleccionando la opción <keycap>3)</keycap> <literal>Password</literal>, accesible desde el menú del Panel de Administración del Manager.</para>    
         <note>
 			<title>Nota</title>
-			<para>Recuerde que la contraseña que haya seleccionado en este paso, será la que utilice para acceder al Panel de Administración del Manager redBorder.</para>
+			<para>Recuerde que la contraseña que haya seleccionado en este paso, será la que utilice para acceder a la plataforma web redBorder.</para>
         </note>
         <para>Una vez que haya introducido su Password y haya pulsado la opción <literal>OK</literal>, el sistema procederá a crear las particiones y a realizar la instalación de los paquetes del asistente en su disco duro.</para>
         <mediaobject>
@@ -124,7 +124,7 @@
 		<para>Una vez instalados los paquetes, el programa arranca los últimos scripts para finalizar esta etapa. A continuación, deberá aparecer una pantalla emergente en la que se solicita el reinicio del sistema para finalizar la primera parte de la instalación. Hacer clic en <literal>Reboot</literal>.</para>		
 	</section>
     <section>
-		<title>Finalización de la instalación del Manager redBorder: redBorder Configuration menu</title>
+		<title>Finalización de la instalación del Manager de redBorder: <literal>redBorder Configuration menu</literal></title>
 		<para>Tras el reinicio automático del sistema, visualizaremos la siguiente pantalla:</para>	
 		<mediaobject>
 			<imageobject>
@@ -155,7 +155,7 @@
 			<para>Para realizar la instalación del Manager es necesario registrarse con el usuario que tiene mayores permisos: <emphasis>root.</emphasis></para>
 		</note>		
 		<para>Para mayor seguridad, le recomendamos que asigne tres niveles de usuarios/permisos entre las personas que se vayan a encargar de la gestión del Manager.</para>
-		<para><emphasis role="bold">Niveles de usuarios para el  Manager redBorder</emphasis></para>
+		<para><emphasis role="bold">Niveles de usuarios para el Manager de redBorder</emphasis></para>
 			<orderedlist numeration="arabic">
 				<listitem>
 					<para><emphasis role="bold">root:</emphasis> posee todos los permisos. Es el superadministrador del sistema.</para>
@@ -183,7 +183,7 @@
 				</caption>
 		</mediaobject>	
 		<para><emphasis role="bold">Instertar comando <literal>rb_sysconf</literal></emphasis></para>
-		<para>Insertar comando <literal>rb_sysconf</literal> para lanzar el redBorder Configuration menu.</para>
+		<para>Insertar comando <literal>rb_sysconf</literal> para lanzar el <literal>redBorder Configuration menu.</literal> (En adelante: menú de configuración redBorder).</para>
 		<mediaobject>
 			<imageobject>
 				<imagedata scalefit="1" align="center" width="350" fileref="images/ch02_img002f.png"/>
@@ -217,21 +217,21 @@
 				<imagedata scalefit="1" align="center" width="350" fileref="images/ch02_img003.png"/>
 		    </imageobject>
 		    <textobject>
-					<phrase>Pantalla principal del asistente de instalación del redBorder configuration menu</phrase>
+					<phrase>Pantalla principal del asistente de instalación del menú de configuración redBorder</phrase>
 				</textobject>
 				<caption>
-					<para>Pantalla principal del asistente de instalación del redBorder configuration menu</para>
+					<para>Pantalla principal del asistente de instalación del menú de configuración redBorder</para>
 				</caption>
 		</mediaobject>
 	</section>
 	<section>
-		<title>Instalación del Manager redBorder mediante Simple wizard</title>
-		<para>Para realizar la instalación automática del Manager, es necesario seleccionar la opción <keycap>w)</keycap><literal>start simple wizard</literal> que se encuentra en el submenú del redBorder Configuration menu.</para>
+		<title>Instalación del Manager de redBorder mediante Simple wizard</title>
+		<para>Para realizar la instalación automática del Manager, es necesario seleccionar la opción <keycap>w)</keycap><literal>start simple wizard</literal> que se encuentra en el submenú del menú de configuración redBorder</para>
 		<important>
 			<title>Importante</title>
 			<para>Los pasos que aquí se van a seguir son los que corresponden a la instalación de un Manager desde cero al que se le va a unir otro Manager en cluster.</para>
 			<para>En caso de que ya haya instalado un Manager, no será necesario repetir la puesta en red del mismo. </para>
-			<para>Tan solo tendrá que realizar la puesta en red del nuevo Manager que se va a unir al cluster. El usuario podrá realizar de manera manual la configuración del resto de parámetros del sistema mediante la selección de la opción <keycap>1)</keycap><literal>System configuration</literal> en el redBorder Configuration menu.</para>
+			<para>Tan solo tendrá que realizar la puesta en red del nuevo Manager que se va a unir al cluster. El usuario podrá realizar de manera manual la configuración del resto de parámetros del sistema mediante la selección de la opción <keycap>1)</keycap><literal>System configuration</literal> en el menú de configuración redBorder.</para>
 		</important>
 		<para>Como podrá comprobar, existen una serie de opciones definidas por defecto. Para aceptarlas tan solo tiene que pulsar<keycap> Enter.</keycap> No obstante, puede modificarlas manualmente en cualquier momento del proceso de instalación.</para>
 		<para><emphasis role="bold">Mode, Hostname y DNS</emphasis></para>
@@ -341,7 +341,7 @@
 				<para>Opciones de bases de datos</para>
 			</caption>
 		</mediaobject>
-		<para>A partir de este momento, se efectuará la instalación de los servicios. Este proceso puede llevar unos minutos. Una vez se haya realizado esta instalación, el asistente le devolverá a la pantalla principal del <emphasis role="bold">redBorder Configuration menu.</emphasis></para>
+		<para>A partir de este momento, se efectuará la instalación de los servicios. Este proceso puede llevar unos minutos. Una vez se haya realizado esta instalación, el asistente le devolverá a la pantalla principal del menú de configuración redBorder.</para>
 		<para>Para salir del asistente, seleccionar la opción <keycap>q)</keycap> <literal>quit.</literal></para>
 		<para>Para la instalación de un nuevo Manager y su unión a un cluster, seleccionar la opción <keycap>w)</keycap> para lanzar de nuevo el asistente de instalación.</para>	
 	</section>
@@ -362,7 +362,7 @@
 				<para>Pantalla principal del asistente de instalación del Manager redBorder</para>
 			</caption>
 		</mediaobject>
-		<para>Tras realizar los ajustes básicos e instalación de los paquetes, el sistema se reiniciará de manera automática. A continuación, hacer Login, insertar Password e introducir el comando <literal>rb_sysconf</literal> para acceder a la pantalla principal del <emphasis role="bold"> redBorder Configuration menu.</emphasis></para>		
+		<para>Tras realizar los ajustes básicos e instalación de los paquetes, el sistema se reiniciará de manera automática. A continuación, hacer Login, insertar Password e introducir el comando <literal>rb_sysconf</literal> para acceder a la pantalla principal del menú de configuración redBorder.</para>		
 		<note>
 			<title>Nota</title>
 			<para>La password que seleccione en este caso puede ser diferente de la indicada para el primer Manager. No obstante, se aconseja unificar las contraseñas para evitar confusiones.</para>
@@ -466,7 +466,6 @@
 			<para>En caso de no seleccionar ninguna opción, el sistema atribuirá al nuevo Manager la opción <literal>1) slave</literal> por defecto.</para>
 			<para>Se recomienda seleccionar el rol de esclavo al nuevo Manager ya que, de este modo, ambos Managers se reparten los servicios.</para>
 		</note>	
-		<para>¡Enhorabuena! Ha instalado correctamente el Manager redBorder Enterprise Version. Puede acceder a él mediante el <emphasis role="bold">Panel de administración del Manager redBorder.</emphasis></para>
-		<para>El último paso que queda para poner en funcionamiento redBorder IPS es el <emphasis role="bold"> registro de los sensores en el Manager.</emphasis></para>	
+		<para>¡Enhorabuena! Ha instalado correctamente el Manager redBorder Enterprise Version. A partir de este momento, puede realizar la configuración y gestión del Manager, de las Apps y sus sensores desde la plataforma web redBorder.</para>
 	</section>
 </chapter>

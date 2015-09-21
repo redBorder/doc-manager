@@ -8,11 +8,11 @@
 ]>
 <chapter>
 	<title>Eventos: Flow</title>
-	<para>redBorder le ofrece la máxima visibilidad de red gracias a las múltiples opciones de visaulización de datos que se encuentran disponibles en la sección flow.</para>
+	<para>redBorder le ofrece la máxima visibilidad de red gracias a las múltiples opciones de visaulización de datos que se encuentran disponibles en la sección Flow.</para>
 	<para>El usuario puede diseñar sus propios dashboards combinando filtros, diferentes tipos de métricas y múltiples atributos y dimensiones para eliminar el ruido y así poder optimizar el rendimiento de sus redes. Con un flujo de datos en tiempo real, Flow es una App imprescindible para obtener verdaderos "insights" que le permiten tomar las mejores decisiones basadas en el análisis Big Data.</para>
 	<section>
 		<title>Flow: menú y opciones</title>
-		<para>En el área de análisis de la barra de menú, encontramos diferentes opciones para visualizar la información recibida por las diferentes Apps que tengamos instaladas en el ecosistema Horama. En la versión Enterprise, usted encontrará por defecto la sección <emphasis role="bold">Flow</emphasis> en la que podrá consultar todos los eventos recogidos por los sensores en tiempo real.</para>
+		<para>En el área de análisis de la barra de menú, encontramos diferentes opciones para visualizar la información recibida por las diferentes Apps integradas en la plataforma redBorder. En la versión Enterprise, usted encontrará por defecto la sección <emphasis role="bold">Flow</emphasis> en la que podrá consultar todos los eventos recogidos por los sensores en tiempo real.</para>
 		<para>Las métricas configuradas por defecto para esta App son las siguientes:</para>
 		<para>-Actividad de los sensores desplegados en su instalación de red. </para>
 		<para>-IP de origen y de destino que se encuentran interactuando con su red.</para>
@@ -273,7 +273,7 @@
 		</section>
 		<section>
 			<title>Otras acciones de filtrado de eventos</title>
-			<para>Además de poder realizar filtros para la visualización de aquellos datos que más le interesen del tráfico de su red, Horama le ofrece la posibilidad de guardar estos filtros, programar alarmas según determinadas condiciones o insertar los datos filtrados como parte de un informe.</para>
+			<para>Además de poder realizar filtros para la visualización de aquellos datos que más le interesen del tráfico de su red, redBorder le ofrece la posibilidad de guardar estos filtros, programar alarmas según determinadas condiciones o insertar los datos filtrados como parte de un informe.</para>
 			<para>Como se aprecia en la imagen, al clicar sobre la opción <literal>Filters</literal> situada en la barra de submenú de sección, aparecen las diferentes opciones que se encuentran disponibles. <footnote><para>Omitimos la explicación sobre cómo realizar una búsqueda avanzada ya que esta ha sido incluida en la sección "¿Es posible filtrar solo los eventos de un periodo determinado?</para></footnote></para>
 			<itemizedlist mark="circle">
 				<listitem>
@@ -541,7 +541,7 @@
 	</section>
 	<section>
 		<title>Granularidad</title>
-		<para>Llamamos granularidad al grado de detalle con el que podemos visualizar los eventos en Horama. Se trata de saltos temporales que van desde 1 hasta 30 minutos. Con esta vista el usuario puede analizar el tráfico de red en tiempo real.</para>
+		<para>Llamamos granularidad al grado de detalle con el que podemos visualizar los eventos en redBorder. Se trata de saltos temporales que van desde 1 hasta 30 minutos. Con esta vista el usuario puede analizar el tráfico de red en tiempo real.</para>
 		<para>Como se observa en la imagen, según el lapso de tiempo seleccionado, el usuario puede conocer el detalle del tráfico, por ejemplo, por sensor en lapsos de dos minutos.</para>
 		<mediaobject>
 			<imageobject>
@@ -573,7 +573,7 @@
 	<section>
 		<title>Area: escoge el tipo de gráfica para aplicar a tus métricas</title>
 		<para>Tal y comos se ha visto en el <emphasis role="bold">capítulo 5, Dashboards</emphasis> es posible seleccionar el tipo de gráfica con el que se desean visualizar los datos ofrecidos en las métricas. Las opciones son muy similares a las que se encuentran disponibles en el proceso de creación de widgets personalizados.</para>
-		<para>Las gráficas que se encuentran disponibles en cada momento, dependerán de la vista seleccionada. Esta opción no aparece, por ejemplo, al aplicar la vista Map a los datos, puesto que los datos se representarán en esta vista, sobre un mapa. Estas son las posibilidades gráficas que ofrece Horama para la visualización de las métricas de tráfico de red:</para>
+		<para>Las gráficas que se encuentran disponibles en cada momento, dependerán de la vista seleccionada. Esta opción no aparece, por ejemplo, al aplicar la vista Map a los datos, puesto que los datos se representarán en esta vista, sobre un mapa. Estas son las posibilidades gráficas que ofrece la plataforma redBorder para la visualización de las métricas de tráfico de red:</para>
 		<para><emphasis role="bold">Stacked:</emphasis> muestra de manera comparativa en una misma gráfica los datos correspondientes a cada una de los atributos seleccionados. (En la imagen, comparativa de tráfico por sensores).</para>
 		<mediaobject>
 			<imageobject>
