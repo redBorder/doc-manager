@@ -7,76 +7,130 @@
 <!ENTITY HOLDER "Eneo Tecnología S.L. |">
 ]>
 <chapter>
-	<title>What is redBorder?</title> <!--Capítulos 1 y 2 incluyen malware-->
-	<para><emphasis role = "bold"> redBorder horama </emphasis> is a unified security monitoring platform, combining the possibilities offered by the total network visibility thanks to the App, redBorder Flow, together with network security control by redBorder IPS and malware protection systems. </para>
-	<para><emphasis role = "bold"> sensors </emphasis> Linux systems with a distribution fully focused on the acquisition  and / or intrusions in the segments of the network where they are located or, in the detection of any abnormality or variation in the flow of your network. </para>
-	<blockquote><para> "Its new Big Data backend inaugurates a new era in the management of events using Open Source technology, through a combination of Hadoop for mass storage (Raw) with an OLAP engine to slice and dice data for analysis. In addition, it channels Real-time events for enrichment, correlation and data mining." </para></blockquote>
-	<para>redBorder offers a fully scalable ecosystem and Cloud-ready to support the largest deployments.</para> 
-	<section>
-		<title>Basic scenario for installing redBorder Horama</title>
-		<para>A typical basic scenario proposed for the solution consists of a set of sensors arranged in different sensitive points of the organizational network that will connect with a manager or managers to cluster management and monitoring.</para>
-		<para>These points are formed by network links, called segments, which will circulate sensitive traffic and the sensor will analyze in a more or less transparent way, depending on the mode set operation (IPS / IDS).</para>
-		<para>For the planning of the installation of sensor equipment, you should consider some fundamental aspects:</para> 
-		<itemizedlist mark="circle">
+	    <title> What is redBorder?</title>
+	    <para> <emphasis role = "bold"> redBorder</emphasis> is an active security intelligence and absolute visibility open platform. </para>
+		<para> This platform is composed of a series of apps that provide data to the platform for analysis and active management of network security according to the configuration that was made by the redBorder user. </para>
+		<para> As can be seen later on, depending on the applications that are integrated into the platform, the user will see one of these options in the menu bar. </para>
+		<para> Apps that are available in this new version of redBorder are as follows: </para>
+		<itemizedlist mark = "bullet">
 			<listitem>
-				<para><emphasis role="bold">The bypass segments</emphasis> The bypass segments (specific network interfaces paired, usually with support bypass) will be lodged in traffic to analyze.</para>
+				<para>Flow</para>
 			</listitem>
 			<listitem>
-				<para><emphasis role="bold">Management interfaces</emphasis> (in the form of bonding) for remote access for both normal systems as well as from the Manager. </para>
+				<para>IPS</para>
 			</listitem>
 			<listitem>
-				<para><emphasis role="bold">The IPMI access interfaces for remote management of hardware</emphasis> (SOL connection or Serial Over Lan, iKVM and ipmi command as start, restart and shutdown).</para>
+				<para>Social</para>
+			</listitem>
+			<listitem>
+				<para>Malware</para>
 			</listitem>
 		</itemizedlist>
-		<para>For the <emphasis role="bold">Manager,</emphasis> a specific hardware will not be necessary. The only condition is <emphasis role="bold">the existence of one or more network interfaces.</emphasis></para>
-		<para> In this way it allows the creation of a bonding for the management and connection of with sensors and other bonding (optional) for their communications to other networks. Both systems support the standard 802.1q virtual LAN (optional when set).</para>
-		<warning>
-			<title>Warning</title>
-			<para>It is VERY IMPORTANT that the Manager configuration is done first (or manager clusters) before configuring the sensors.</para>
-			<para>The Manager must be operational and in a network accessible to the sensors.Some of the sensor configuration processes depend on the access to Manager.<footnote><para>The redBorder Manager installation scenario is the same regardless of the sensors to be installed and registered in the Manager (IPS, Flow, Malware (beta) or Vault (beta).</para></footnote>.</para>
-		</warning>
+    <section>
+		<title> Basic scenario for installing redBorder </title>
+        <para> A typical basic proposed scenario for the solution consists of a set of sensors arranged in different sensitive points of the network organization, that will connect with a Manager or cluster of managers for its management and monitoring. </para>
+        <para> These points are formed by network links, called segments, which circulate sensitive traffic in which the sensor will analyze in a more or less transparent way, depending on the mode set (IPS/IDS or Flow). </para>
+        <para> For the planning of the installation of sensors, you should consider some fundamental aspects: </para>
+        <itemizedlist mark="circle">
+            <listitem>
+                <para><emphasis role="bold">The bypass segments</emphasis> (specific interfaces of semi-detached networks, normally with bypass support) will intervene in the middle of traffic for analysis. </para>
+            </listitem>
+            <listitem>
+                <para><emphasis role="bold">The management interfaces </emphasis> (in the form of bonding) for remote access as much from regular host as from the Manager. </para>
+            </listitem>
+            <listitem>
+                <para><emphasis role="bold"> The IPMI access interfaces for hardware remote management </emphasis> (SOL connection or Serial Over LAN, iKVM and ipmi commands like start, restart and shutdown). </para>
+            </listitem>
+        </itemizedlist>
+        <para> For the <emphasis role="bold"> Manager </emphasis> a specific hardware will not be necessary, the only condition is <emphasis role="bold"> the existence of one or more network interfaces. </emphasis> </para>
+        <note>
+            <title> Note </title>
+            <para> If you have created a <emphasis role="bold"> cluster </emphasis> two network interfaces are required: one for the management network (Management IP Address) and one for network synchronization (Sync IP address). </para>
+        </note>
+        <para> In this way it allows for the creation of a bonding for the management and connection with sensors, and another bonding (optional) for communications to other networks. Both systems support the 802.1q standard for virtual LAN (optional to the configuration time). </para>
+        <warning>
+            <title> Warning </title>
+            <para> It is VERY IMPORTANT that the configuration of the Manager (or cluster of managers) is performed before configuring the sensors. </para>
+            <para> The Manager must be operational and in a network accessible to the sensors. Some of the sensor configuration processes depend on the access to the Manager. <footnote><para> The redBorder Manager installation scenario is the same regardless of the sensors that are installed and registered (IPS, Flow, Malware (beta) or Vault (beta) </para> </footnote> . </para>
+        </warning>
+        <mediaobject>
+            <imageobject>
+                <imagedata scalefit = "1" align = "center" width = "350" fileref ="images/ch01_img001.png"/>
+            </imageobject>
+            <textobject>
+				<phrase> Basic scenario for installing the Manager</phrase>
+            </textobject>
+            <caption>
+                <para> Basic scenario for installing the Manager </para>
+            </caption>
+        </mediaobject>
+    </section>
+    <section>
+		<title>User interface structure of the installation program menu</title>
+		<para><emphasis role="bold">Menu, submenu and line commands</emphasis></para>
 		<mediaobject>
 			<imageobject>
-				<imagedata scalefit="1" align="center" width="350" fileref="images/ch01_img001.png"/>
-			</imageobject>
-			<textobject>
-					<phrase>Basic scenario for installing the Manager</phrase>
+				<imagedata scalefit="1" align="center" width="350" fileref="images/pre_img001.png"/>
+            </imageobject>
+            <textobject>
+					<phrase>User interface structure of the installation program menu </phrase>
 				</textobject>
 				<caption>
-					<para>Basic scenario for installing the Manager</para>
+					<para>User interface structure of the installation program menu </para>
 				</caption>
-		</mediaobject>		    
-	</section>
-	<section>
-		<title>Installation Requirements of redBorder Manager</title>
-		<para>redBorder manager can be installed by two Possible infrastructure:</para>
-		<itemizedlist mark="bullet">
-			<listitem>
-				<para><emphasis role="bold">Physical machine:</emphasis> local disk of your computer (Hardware).</para>
-			</listitem>
-			<listitem>
-				<para><emphasis role="bold">VM:</emphasis> virtualization and cloud structure.</para>
-			</listitem>
-		</itemizedlist>
-		<important>
-			<title>Important</title>
-			<para>Installation Requirements for redBorder Manager on a physical computer:</para>
-			<para>Memory and storage.<emphasis role= "bold"> 100GB hard drive and a minimum of 16GB of RAM </emphasis>.(This figure depends on the number of sensors assigned, OS images assigned and the size of them).</para>
-			<para><emphasis role="bold">Two network interfaces</emphasis> for operating the Manager.</para>
-		</important>
-		<note>
-			<title><emphasis role="bold">Compatible Cloud Solutions:</emphasis></title>
+            </mediaobject>
+			<para><emphasis>Menu</emphasis></para>
+			<para>On the left side of the screen is a list of available options. To select any of them, just enter the line where you see  <literal>Selection</literal>, the number or letter corresponding to the option you want to choose.</para>
+			<para><emphasis>Submenu</emphasis></para>
+			<para>In the case that your selected option is able to perform different options, a submenu will appear on the right side of the screen.</para>
+			<para><emphasis>Line commands/ program selector options</emphasis></para>
+			<para>In the upper margin, and graphically separated from the menu and submenu, we find the area in which it should indicate the selections in the line where you see <literal>Selection</literal> and enter the commands or information that is requested to execute the relevant actions. In this space we will see the system’s date and time (UTC by default).</para>
+		<section>
+			<title>Selection of options</title>
+			<para><emphasis role="bold">Predetermined options</emphasis></para>
+			<para>In some cases, the system displays a series of defaults. If this is the answer to a question, the default option set will be displayed in capital letters.</para>
+			<mediaobject>
+				<imageobject>
+					<imagedata scalefit="1" align="center" width="350" fileref="images/pre_img002.png"/>
+				</imageobject>
+				<textobject>
+					<phrase>Selection of predetermined options</phrase>
+				</textobject>
+				<caption>
+					<para>Selection of predetermined options</para>
+				</caption>
+			</mediaobject>
+			<para><emphasis role="bold">Available options in the redBorder installer menu</emphasis></para>
 			<itemizedlist mark="bullet">
 				<listitem>
-					<para>VMWare</para>
+					<para>Default selection option: press<keycap>Enter.</keycap></para>
 				</listitem>
 				<listitem>
-					<para>Open Stack</para>
+					<para>Other options: enter the corresponding letter or command. </para>
 				</listitem>
 				<listitem>
-					<para>Amazon Web Services (AWS)</para>
+					<para>Exit: when you want to exit a screen to go back the initial menu, select the <literal>quit</literal>, option by typing the letter <keycap>q.</keycap></para>
+				</listitem>
+				<listitem>
+					<para>Apply changes: to save the modifications performed and apply the changes, select the option <literal>apply</literal> by typing the letter <keycap>a.</keycap></para>
 				</listitem>
 			</itemizedlist>
-		</note>
+			<mediaobject>
+				<imageobject>
+						<imagedata scalefit="1" align="center" width="350" fileref="images/pre_img003.png"/>
+				</imageobject>
+				<textobject>
+					<phrase> Available options in the redBorder installer wizard</phrase>
+				</textobject>
+				<caption>
+					<para>Available options in the redBorder installer wizard</para>
+				</caption>
+			</mediaobject>
+			<warning>
+				<title>Warning</title>
+				<para><literal>Need to "apply" to activate changes</literal></para>
+				<para>If you see this message then you must select the <keycap>a</keycap>.  option. Otherwise the system will not save or apply the changes. </para>
+			</warning>
+		</section>
 	</section>
 </chapter>
