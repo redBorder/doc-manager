@@ -6,6 +6,7 @@
 <!ENTITY YEAR "2015">
 <!ENTITY HOLDER "Eneo Tecnología S.L. |">
 ]>
+
 <chapter>
 	<title>Configuración: Sensores</title>
 	<para>Bienvenido a la sección de configuración de los sensores. Una vez que se ha realizado el registro de los sensores en el Manager desde el asistente de instalación, cualquier acción que desee realizar para la gestión y configuración de los sensores deberá realizarla desde la interfaz web del Manager.</para>
@@ -642,7 +643,7 @@
 				<para><literal>Sensor mode</literal></para>
 				<para>"Inherited (IDS forwarding)" en esta casilla aparecerá el modo que se haya heredado del dominio o sensor del que depende el que estamos consultando. Cuando un modo ha sido heredado desde el inicio indica que ese modo ha sido heredado directamente del nivel superior.</para>
 				<para>En este campo, el usuario podrá elegir entre 4 opciones diferentes:</para>		
-				<orderedlist mark="bullet">
+				<orderedlist>
 					<listitem>
 						<para>IDS forwarding: trabaja como un puente; el sensor realiza una copia de los paquetes de tráfico que es analizada posteriormente por Snort.</para>
 					</listitem>
