@@ -54,7 +54,7 @@
 			<para>Cola de trabajos <literal>(Worker and Job Queue)</literal></para>
 		</listitem>
 		<listitem>
-			<para>Versiones de las reglas <literal>(Rule's versions)</literal><para><footnote>Estas tres últimas opciones (Yara Policies, Worker and Job Queue y Rule's Versions se han abordado con detalle de en el capítulo 12.</footnote></para></para>
+			<para>Versiones de las reglas <literal>(Rule's versions)</literal><footnote><para>Estas tres últimas opciones (Yara Policies, Worker and Job Queue y Rule's Versions se han abordado con detalle de en el capítulo 12.</para></footnote></para>
 		</listitem>
 	</itemizedlist>
 	<section>
