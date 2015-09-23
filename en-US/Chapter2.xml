@@ -251,7 +251,6 @@
 					<title>Note</title>
 					<para>It is important that different names are used for each Manager who is going to join the cluster. It is best to follow a consecutive numbering (eg. rbmanager01, rbmanager02) or, a name identifying their role (eg .: rbmanagermaster, rbmanagerslave01, rbmanagerslave02). </para>
 				</note>
-				</listitem>
 				<listitem>
 					<para><literal>Insert domain: [redborder.cluster].</literal> Domain defined by default. </para>
 				</listitem>

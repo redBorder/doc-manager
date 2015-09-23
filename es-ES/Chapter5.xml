@@ -8,7 +8,7 @@
 ]>
 <chapter>
 	<title>Dashboard</title>
-	dasboard<section>
+	<section>
 		<title>Opciones de dashboard</title>
 		<para>La primera opción que encontramos en la barra de menú en el área de análisis es la de Dashboard. Esta es la opción que se encuentra seleccionada por defecto nada más ingresar al administrador del Manager redBorder:</para>
 		<mediaobject>
@@ -52,7 +52,6 @@
 				<para>Máquina del tiempo (<literal>Time machine</literal>): permite "viajar en el tiempo" y visualizar los resultados de las métricas de un día y hora determinados por el usuario a modo de histórico. </para>
 			</listitem>
 		</itemizedlist>
-		<para><footnote><para> En la captura adjunta se muestran tres dashboards (Monitor, Overall Traffic, Security). El usuario visualizará en esa sección tantos dashboards como haya creado.</para></footnote></para>
 		<mediaobject>
 			<imageobject>
 				<imagedata scalefit="1" align="center" width="350" fileref="images/ch05_img003.png"/>
