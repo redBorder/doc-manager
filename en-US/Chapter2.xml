@@ -10,13 +10,13 @@
 	<title>Installing redBorder Manager Enterprise</title>
 	<para>Thanks to the installation wizard you can leave the manager configured and ready quickly and easily without having the need for special programming skills in Linux.</para> 
 	<para>To install the Manager, you have an ISO image that you can save to your local disk or, burn it to a DVD or USB for installation on a physical machine. In any case, once the first phase of the installation is completed, the system will reboot and start from the set default option: <literal>Select from local disk.</literal></para>
-	<para>When starting the installation wizard you will have access to a menu where you will find the following:</para>
+	<para>To restart the installation wizard, you will have access to a menu where you will find the following options:</para>
 	<itemizedlist mark="bullet">
 		<listitem>
-			<para><literal>Install Manager Horama:</literal> launches the Manager installation menu.</para>
+			<para><literal>Install Manager:</literal> launches the Manager installation menu.</para>
 		</listitem>
 		<listitem>
-			<para><literal>Install Sensor:</literal> this option allows you to install and sensor configuration appropriate for subsequent registration in the Manager. <footnote><para>Depending on the solution you purchased, different options will appear on the menu for the installation and registration of the sensors in the Manager (IPS, Malware, Gateway or Proxy to Cloud).</para></footnote>.</para>
+			<para><literal>Install Sensor:</literal> this option allows you to perform the installation and configuration of the appropriate sensor for subsequent registration in redBorder Manager. <footnote><para>Depending on the solution you purchased, different options will appear on the menu for the installation and registration of the sensors in the Manager (IPS, Malware, Gateway or Proxy to Cloud).</para></footnote>.</para>
 		</listitem>
 		<listitem>
 			<para><literal>Install Manager Horama+malware (beta):</literal> This option allows you to install and configure the appropriate sensor for subsequent registration in the Horama Manager.</para>
@@ -56,7 +56,7 @@
 			<para>b) System configuration</para>
 		</listitem>
 	</itemizedlist>   
-    <para>To begin the Manager installation process, select the first menu option: <literal>Install Manager Horama+malware (beta)</literal>. Then we will proceed to carry out a series of basic settings.</para>
+    <para>Select<literal>Install Manager</literal>. to start the Manager installation process. Next we’ll proceed by performing a series of basic settings.</para>
     <section>
 		<title>Manager Installation Process: basic settings</title>
 		<para><emphasis role="bold">a) Select Language</emphasis></para>
@@ -72,7 +72,7 @@
 					<para>Basic settings: Language selection</para>
 				</caption>
 		</mediaobject>
-		<para><emphasis role="bold">b) Keyboards selection</emphasis></para>
+		<para><emphasis role="bold">b) Keyboard selection</emphasis></para>
 		<para>Choose the type of keyboard you want to use during the process. Because its broad compatibility it will be highlighted by the US keyboard default option [US].</para>
 		<mediaobject>
 			<imageobject>
@@ -90,6 +90,10 @@
         <para><emphasis>2) Confirm password.</emphasis> Re-enter password to verify that it’s correct and free of typographical error. If the password is weak or low strength, the program will notify you with a pop-up window. </para>
         <para>If desired, you can insert a stronger password, or save the current password and change it later by selecting option <keycap>3)</keycap> <literal>Password</literal>,in the redBorder Configuration Menu. </para>    
         <para>Once you have entered your password and have pressed the <literal>OK</literal> option, he system will proceed to create partitions and install the wizard packages on your hard drive.</para>
+        <note>
+			<title>Note</title>
+			<para>Remember that the password you selected in this step will be the one you use to access the redBorder platform. </para>
+        </note>
         <mediaobject>
 			<imageobject>
 				<imagedata scalefit="1" align="center" width="350" fileref="images/ch02_img002c.png"/>
@@ -101,10 +105,9 @@
 					<para>Basic settings: password</para>
 				</caption>
 		</mediaobject>
-        <para><emphasis role= "bold">Installing packages and reboot</emphasis></para>
+        <para><emphasis role= "bold">Installing packages and system reboot</emphasis></para>
 		<para>Once you have inserted the password, proceed to the installation of software installation packages on the hard drive.</para>
-		<para>Wait until the progress bar tells you that the installation was 100% complete. This process can take several minutes.</para>
-		<para>Do not press any buttons or perform any action while the process is being finalized.</para>
+		<para>Wait until the progress bar tells you that the installation was 100% complete. This process can take several minutes. Do not press any buttons or perform any action while the process is being finalized.</para>
 		<mediaobject>
 			<imageobject>
 				<imagedata scalefit="1" align="center" width="350" fileref="images/ch02_img002d.png"/>
@@ -116,7 +119,7 @@
 					<para>Wizard Package Installation</para>
 				</caption>
 		</mediaobject>
-		<para>Once the packages are installed, the program starts the last scripts to finish this stage. Next, an emerging window should appear in which a reboot is required to complete the first part of the installation. Click on <literal>Reboot</literal>. In a few seconds the following screens will be displayed.</para>		
+		<para>Once the packages are installed, the program starts the last scripts to finish this stage. Next, an emerging window should appear in which a reboot is required to complete the first part of the installation. Click on <literal>Reboot</literal>.</para>		
 	</section>
     <section>
 		<title>Completing the Installation of redBorder Manager: redBorder Configuration menu</title>
@@ -141,7 +144,7 @@
 				<para>Password</para>
 			</listitem>
 			<listitem>
-				<para>Comando rb_sysconf</para>
+				<para>Command rb_sysconf</para>
 			</listitem>
 		</itemizedlist>	
 		<para><emphasis role="bold">1) Login</emphasis></para>
@@ -149,8 +152,8 @@
 			<title>Note</title>
 			<para>To install the manager it is required to register with the user with the greatest permissions: <emphasis>root.</emphasis></para>
 		</note>		
-		<para>For better security, we recommend assigning three levels of users / permissions among people who are going to take responsibility for the management of the manager.</para>
-		<para><emphasis role="bold">Niveles de usuarios para el  Manager redBorder Horama </emphasis></para>
+		<para>For better security, we recommend assigning three levels of users/permissions among people who are going to take responsibility for the management of the Manager.</para>
+		<para><emphasis role="bold">User Levels for redBorder Manager</emphasis></para>
 		<orderedlist numeration="arabic">
 			<listitem>
 				<para>root: has all permissions. It is the super administrator of the system. </para>
@@ -159,9 +162,9 @@
 				<para>admin: user who only has access to the system configuration menu, but does not have permission to modify files. </para> 
 			</listitem>
 			<listitem>
-				<para>redborder: This user has a different meaning for the manager than the sensors. </para>
-				<para><emphasis>manager:</emphasis> user used to register the sensors. </para>
-				<para><emphasis>sensor:</emphasis>  user used when the manager wants to communicate with the sensors.</para>
+				<para>redborder: This user has a different meaning for the Manager than the sensors. </para>
+				<para><emphasis>Manager:</emphasis> user used to register the sensors. </para>
+				<para><emphasis>Sensor:</emphasis>  user used when the Manager wants to communicate with the sensors.</para>
 			</listitem>	
         </orderedlist>
         <para><emphasis role="bold">Password</emphasis></para>
@@ -198,14 +201,14 @@
 				<para><literal>Network Configuration:</literal> Configuration of bonds, segments, DNS, routing and IPMI. Remember, to operate the Manager  at least <emphasis role="bold">two network connection is required.</emphasis></para>
 			</listitem>
 			<listitem>
-				<para><literal>Passwords:</literal> access this option if you want to change passwords you have defined for each user role.</para>
+				<para><literal>Passwords:</literal> Access this option if you want to change passwords you have defined for each user role.</para>
 			</listitem>
 			<listitem>
 				<para><literal>Backup System:</literal> Creating a recovery file, possibility to restore the machine through the backup and display from a list of available backups, and uploading these files to an FTP server.</para>
 			</listitem>			
 		</orderedlist>
-		<para><literal>w) start simple wizard:</literal> starts a wizard that will allow to install and configure the Horama Manager in a fast and easy way. </para>
-		<para><literal>q) quit:</literal> Quit. We return to the main configuration system screen.</para>
+		<para><literal>w) start simple wizard:</literal> starts a wizard that will allow to install and configure the Manager in a fast and easy way. </para>
+		<para><literal>q) quit:</literal> Quit. Back to the redBorder configuration menu.</para>
 		<mediaobject>
 			<imageobject>
 				<imagedata scalefit="1" align="center" width="350" fileref="images/ch02_img003.png"/>
@@ -219,11 +222,11 @@
 		</mediaobject>
 		<section>
 			<title>redBorder Manager installation by Simple wizard</title>
-			<para>To perform automatic installation of Horama Manager, it’s necessary select the option <keycap>w)</keycap><literal>start simple wizard</literal> ound in the submenu of the redBorder Configuration menu.</para>
+			<para>To perform automatic installation of Horama Manager, it’s necessary select the option <keycap>w)</keycap><literal>start simple wizard</literal> found in the submenu of the redBorder Configuration menu.</para>
 			<important>
 				<title>Important</title>
 				<para>The following steps correspond to the installation of a Manager from scratch to which it will join another Manager in a cluster.</para>
-				<para>If you have already installed a Manager, it won’t be necessary to repeat the networking setting. Only the new manager who will join the cluster. The user will be able to manually perform the configuration from the other parameters of the system by selecting option <keycap>1)</keycap><literal>System configuration</literal> in the redBorder configuration menu.</para>
+				<para>If you have already installed a Manager, it won’t be necessary to repeat the networking setting. Only the new manager who will join the cluster. You only have to make sure that the network setting of the new manager joins a cluster. The user can manually perform the configuration of other system parameters by selecting option <keycap>1)</keycap><literal>System configuration</literal> in the redBorder Configuration menu.</para>
 			</important>
 			<para>As you can see, there are a number of options defined by defect. To accept you only have to press <keycap>Enter.</keycap> However, you can modify them manually at any time during the installation.</para>
 			<para><emphasis role="bold">Mode, Hostname y DNS</emphasis></para>
@@ -238,33 +241,45 @@
 					<para>Installing with simple wizard</para>
 				</caption>
 			</mediaobject>
-			<para>1) Select the cluster mode to join more than one Manager.</para>
-			<para>2) <literal>Insert Hostname [rbmanager].</literal> The option defined by default is <literal>rbmanager01.</literal>  This is a name that clearly and easily identifies the Manager and its position within the cluster.</para>
-			<note>
-				<title>Note</title>
-				<para>It is important that different names are used for each Manager who is going to join the cluster. It is best to follow a consecutive numbering (eg. rbmanager01, rbmanager02) or, a name identifying their role (eg .: rbmanagermaster, rbmanagerslave01, rbmanagerslave02). </para>
-			</note>
-			<para>3) <literal>Insert domain: [redborder.cluster].</literal> Domain defined by default. </para>
-			<para>4) <literal>Insert DNS Primary.</literal>  Defined by default. The user can change to indicate the DNS server that provides their network and which is associated with the Manager.</para>
-			<para>5) <literal>Insert DNS Secondary (optional).</literal>  Indicate a secondary DNS in an optional way. It is advisable to introduce an alternative DNS to replace the DNS if the primary server fails.</para>
+			<orderedlist numeration="arabic">
+				<listitem>
+					<para><literal>Selected Mode: cluster.</literal> Select the cluster mode to join more than one Manager.</para>
+				</listitem>
+				<listitem>
+					<para><literal>Insert Hostname [rbmanager].</literal> The option defined by default is <literal>rbmanager.</literal>  This is a name that clearly and easily identifies the Manager and its position within the cluster.</para>
+				<note>
+					<title>Note</title>
+					<para>It is important that different names are used for each Manager who is going to join the cluster. It is best to follow a consecutive numbering (eg. rbmanager01, rbmanager02) or, a name identifying their role (eg .: rbmanagermaster, rbmanagerslave01, rbmanagerslave02). </para>
+				</note>
+				</listitem>
+				<listitem>
+					<para><literal>Insert domain: [redborder.cluster].</literal> Domain defined by default. </para>
+				</listitem>
+				<listitem>
+					<para><literal>Insert DNS Primary.</literal>  Defined by default. The user can change to indicate the DNS server that provides their network and which is associated with the Manager.</para>
+				</listitem>
+				<listitem>
+					<para><literal>Insert DNS Secondary (optional).</literal>  Indicate a secondary DNS in an optional way. It is advisable to introduce an alternative DNS to replace the DNS if the primary server fails.</para>
+				</listitem>
+			</orderedlist>
 			<para>After entering these values, the system will warn you that the changes have been applied successfully with the following message labeled in green: <literal>DNS and domain settings applied successfully.</literal></para>
-			<para><emphasis role="bold">Creación de bonding</emphasis></para>
-			<para> The next step is to insert the following information:  <literal> NTP server [pool.ntp.org]:</literal> If there is an NTP server on your network, you must indicate it. Otherwise, one will be assigned by default. </para>
+			<para><emphasis role="bold">Creating bonding</emphasis></para>
+			<para>The next step is to insert the following information: <literal> NTP server [pool.ntp.org]:</literal> If there is an NTP server on your network, you must indicate it. Otherwise, one will be assigned by default. </para>
 			<para>Then, the system will prompt you to enter the management IP: <literal>Insert managment IP address:</literal></para>
 			<mediaobject>
 				<imageobject>
 				  <imagedata scalefit="1" align="center" width="350" fileref="images/ch02_img005.png"/>
 		        </imageobject>
 		         <textobject>
-					<phrase>Creating bonding</phrase>
+					<phrase>Insert managment IP address</phrase>
 				</textobject>
 				<caption>
-					<para>Creating bonding</para>
+					<para>Insert managment IP address</para>
 				</caption>
 			</mediaobject>
 			<warning>
 				<title>Warning</title>
-				<para>To create a cluster it is necessary that you reserve two bondings: one for the management network<emphasis role="bold">(Managment IP address)</emphasis> and one for network synchronization <emphasis role="bold">(Sync IP address).</emphasis></para>
+				<para>To create a cluster it is necessary that you reserve two bondings: one for the management network<literal>(Managment IP address)</literal> and one for network synchronization <literal>(Sync IP address).</literal></para>
 			</warning>
 			<para>To create a bonding you must specify the elements below. To accept the defined values by default just press the <keycap>Enter.</keycap> Otherwise introduce the new values manually.</para>
 			<itemizedlist mark="bullet">
@@ -297,28 +312,28 @@
 				</caption>
 			</mediaobject>
 			<para><emphasis role="bold">Creation of a new bonding</emphasis></para>
-			<para>To create a new bonding we must indicate the IP and mask synchronization and indicate whether you want to insert a route for the new bonding to create.</para>
+			<para>To create a new bonding, we must indicate the IP and mask synchronization and indicate a route for the new bonding.</para>
 			<para> Once you have entered these values, the system will alert you that the new bonding has been created successfully with the following message in green: <literal>Bonding 1 created successfully.</literal></para>
 			<para>The next question appears: <literal>Would you like to join to other cluster (y/N)?</literal></para>
 			<warning>
 				<title>Warning</title>
-				<para>During installation of the first Manager, the question <literal> Would you like to join to other cluster (y/N)?</literal> does not apply, so the N option <keycap>N</keycap> option will appear defined by default.</para>
+				<para>During installation of the first Manager, the question <literal> Would you like to join to other cluster (y/N)?</literal> does not apply, so the <keycap>N</keycap> option will appear defined by default.</para>
 			</warning>
 			<mediaobject>
 				<imageobject>
 				  <imagedata scalefit="1" align="center" width="350" fileref="images/ch02_img007.png"/>
 		        </imageobject>
 		        <textobject>
-					<phrase>Create new bonding</phrase>
+					<phrase>Creating sync bonding to join a Manager to the cluster</phrase>
 				</textobject>
 				<caption>
-					<para>Create new bonding</para>
+					<para>Creating sync bonding to join a Manager to the cluster</para>
 				</caption>
 			</mediaobject>
 			<para><emphasis role="bold">Synchronization with databases and storage</emphasis></para>
 			<para>At this point we must tell the system how they will manage the databases and data storage of Manager. As we will see in the screenshot, in all cases the <keycap>N</keycap> option will appear defined by default. It is therefore advisable to be the Manager who performs this management. Otherwise, select the option<keycap>y</keycap> for the following cases:</para>
-			<para><literal>Would you like to use remote S3 storage? (y/N).</literal> Indicar en caso de que se use el protocolo de Amazon Web Services (AWS) para transferencia de ficheros.</para>
-			<para><literal>Would you like to use remote memcached? (y/N).</literal> Seleccionar en caso de que se desee realizar el cacheo de las peticiones a bases de datos. </para>
+			<para><literal>Would you like to use remote S3 storage? (y/N).</literal> Indicate if the case that the protocol Amazon Web Services (AWS) is used to transfer files.</para>
+			<para><literal>Would you like to use remote memcached? (y/N).</literal> Select if youwant to search for requests in the databases.</para>
 			<para><literal>Would you like to use remote postgresql database? (y/N).</literal> Manage withpostgresql database.</para>
 			<para>Once you have specified the option chosen, you must confirm that you want to apply the settings that we have made. <literal>Are you sure you want to apply this configuration? (y/N)</literal></para>
 			<para>Select the option <keycap>y</keycap>.</para>
@@ -333,16 +348,16 @@
 					<para>Database options</para>
 				</caption>
 			</mediaobject>
-			<para>From this moment, installation services will be performed. This process can take several minutes. Once you have completed this installation, the wizard will return to the main screen of the <emphasis role="bold">redBorder configuration menu.</emphasis></para>
+			<para>From this moment, installation services will be performed. This process can take several minutes. Once you have completed this installation, the wizard will return to the main screen of the <emphasis role="bold">redBorder Configuration menu.</emphasis></para>
 			<para>To exit the wizard, select the option <keycap>q)</keycap> <literal>quit</literal></para>
 			<para>To install a new Manager and its attachment to a cluster, select <keycap>w)</keycap> option to launch the installation wizard again.</para>	
 		</section>
 		<section>
-			<title>Installation and joining a new manager to a cluster</title>
-			<para>For the installation of a second manager (if it is performed in a different moment to the installation of the master manager) the user will get an ISO image obtained via download or through DVD facilitated by redBorder.</para>
+			<title>Installation and joining a new Manager to a cluster</title>
+			<para>For the installation of a second Manager (if it is performed in a different moment to the installation of the master Manager) the user will get an ISO image obtained via download or through DVD facilitated by redBorder.</para>
 			<para>If the image is obtained by downloading, you can save it to your local disk or record it to a DVD or USB for installation on physical machine. In any case, once the first phase of the installation is completed, the system will restart and reboot from the set default option<literal>Select from local disk.</literal></para>
-			<para>On the home screen installation wizard Manager find the <literal>Memory Test</literal>, advisable to check the status of the memory of the machine before installing the second Manager.</para>
-			<para>Select <literal>Install Manager Horama</literal> to begin the process of installation.</para>
+			<para>On the home screen installation wizard Manager find the <literal>Memory Test</literal> option. It is advisable to check the status of the memory of the machine before installing the second Manager.</para>
+			<para>Select <literal>Install Manager</literal> to begin the installation process.</para>
 			<mediaobject>
 				<imageobject>
 					<imagedata scalefit="1" align="center" width="350" fileref="images/ch02_img002.png"/>
@@ -354,7 +369,7 @@
 					<para>Main Screen Manager installation wizard redBorder</para>
 				</caption>
 			</mediaobject>
-			<para>After completing the basic settings and installing the packages, the system will reboot automatically. Then go to login, insert your password, and enter the <literal>rb_sysconf</literal>  command to access the <emphasis role="bold"> redBorder configuration menu.</emphasis></para>		
+			<para>After completing the basic settings and installing the packages, the system will reboot automatically. Then go to login, insert your password, and enter the <literal>rb_sysconf</literal>  command to access the redBorder Configuration menu.</para>		
 			<note>
 				<title>Note</title>
 				<para>The password you choose in this case may be different from the one indicated for the first Manager. However, it is advisable to unify the Passwords to avoid confusion.</para>
@@ -372,7 +387,6 @@
 			</mediaobject>
 			<para>Select the option <keycap>w)</keycap><literal>start simple wizard</literal> to begin the process of installing the second Manager. It is recommended to leave selected the default option <literal>Selected Mode: cluster.</literal></para>
 			<para>The installation process of this second Manager is identical to that used  for the Manager master installation. On the following screens you will notice that the same key elements are configured: <emphasis role="bold">Hostname, Domain, primary DNS (may be different from the first Manager) and secondary and NTP server.</emphasis></para>
-			<!--Revisar conceptos master/esclavo-->
 			<important>
 				<title>Important</title>
 				<para>It is important that different names are used for each Manager that joins the cluster. It is best to follow a consecutive numbering (eg. rbmanager01, rbmanager02) or, a name to identify their role (eg .: rbmanagermaster, rbmanagerslave01, rbmanagerslave02).</para> 
@@ -386,10 +400,10 @@
 					<para>(Managment/sync) Netmask</para>
 				</listitem>
 				<listitem>
-					<para>Default gateway</para>
+					<para>Default gateway: <literal>Default gateway for this management interface (Y/n)?:</literal></para>
 				</listitem>
 				<listitem>
-					<para>Route for bonding</para>
+					<para>Route for bonding: <literal>Insert a route for this bonding (y/N)?:</literal></para>
 				</listitem>
 			</itemizedlist>
 			<para>Once these values ​​are entered, the wizard will confirm with the following message labeled in green that bonding 0 and 1 have been successfully created: <literal>Bonding created successfully.</literal></para>
@@ -409,7 +423,7 @@
 				</caption>
 			</mediaobject>
 			<para>In the case you see the question <literal>Would you like to join other cluster? (y/N);</literal> select the <keycap>y</keycap> option.</para>
-			<para>The next piece of information you have to enter is the IP synchronism of the cluster:  <literal>Cluster SYNC IP Adress (bond1):</literal> which corresponds to the IP synchronism (or bonding 1) of the first manager or Master. </para>
+			<para>The next piece of information you have to enter is the IP synchronism of the cluster:  <literal>Cluster SYNC IP Address (bond1):</literal> which corresponds to the IP synchronism (or bonding 1) of the first Manager or Master. </para>
 			<mediaobject>
 				<imageobject>
 				  <imagedata scalefit="1" align="center" width="350" fileref="images/ch02_img011.png"/>
@@ -431,10 +445,10 @@
 				  <imagedata scalefit="1" align="center" width="350" fileref="images/ch02_img012.png"/>
 		        </imageobject>
 		        <textobject>
-					<phrase>Select services for each of the managers</phrase>
+					<phrase>Insert the  SYNC IP Adress to join the cluster</phrase>
 				</textobject>
 				<caption>
-					<para>Select services for each of the managers</para>
+					<para>Insert the  SYNC IP Adress to join the cluster</para>
 				</caption>
 			</mediaobject>
 			<note>

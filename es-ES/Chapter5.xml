@@ -8,7 +8,7 @@
 ]>
 <chapter>
 	<title>Dashboard</title>
-	<section>
+	dasboard<section>
 		<title>Opciones de dashboard</title>
 		<para>La primera opción que encontramos en la barra de menú en el área de análisis es la de Dashboard. Esta es la opción que se encuentra seleccionada por defecto nada más ingresar al administrador del Manager redBorder:</para>
 		<mediaobject>
@@ -147,10 +147,10 @@
 		</section>
 		<section>
 			<title>Añadir dashboard</title>
-			<para>Los dashboards permiten tener un resumen visual que incluye los principales KPIs que son necesarios para el análisis de una infraestructura de red. El usuario puede combinar una serie de widgets que le permitan, una sola mirada, obtener información muy valiosa sobre las tendencias, cambios y expecepciones asociadas al tráfico que se produce o pasa por su red.<footnote><para> (En la versión Community, el límite de creación de dashboards es de uno).</para></footnote></para>
+			<para>Los dashboards permiten tener un resumen visual que incluye los principales KPIs que son necesarios para el análisis de una infraestructura de red. El usuario puede combinar una serie de widgets que le permitan, una sola mirada, obtener información muy valiosa sobre las tendencias, cambios y excepciones asociadas al tráfico que se produce o pasa por su red.<footnote><para> (En la versión Community, el límite de creación de dashboards es de uno).</para></footnote></para>
 			<para>Para crear un nuevo dashboard es necesario seleccionar la opción <literal>Add dashboard.</literal> A continuación, introducir una serie de datos de configuración general y guardar los cambios mediante el botón <literal>Create dashboard.</literal></para>
 			<para>El primer paso para crear un dashboard personalizado es la creación de un panel en blanco al que, posteriormente, se le añadirán aquellos widgets que cumplan con nuestras necesidades de visualización.</para>
-			<para>Para crear un nuevo dasboard debemos indicar una serie de preferencias en la interfaz de Configuración general (General Settings), anteriormente descrita para la edición de dashboards.</para>
+			<para>Para crear un nuevo dashboard debemos indicar una serie de preferencias en la interfaz de Configuración general (General Settings), anteriormente descrita para la edición de dashboards.</para>
 			<mediaobject>
 				<imageobject>
 					<imagedata scalefit="1" align="center" width="350" fileref="images/ch05_img007.png"/>
@@ -165,7 +165,7 @@
 		</section>
 		<section>
 			<title>Importar dashboard</title>
-			<para>La opción <literal>Importar dashboard</literal> es muy útil en el caso de que queramos compartir dashboards con otros usuarios, o incorporar a redBorder información obtenida de otras apliaciones compatibles.</para><!--revisar-->
+			<para>La opción <literal>Importar dashboard</literal> es muy útil en el caso de que queramos compartir dashboards con otros usuarios, o incorporar a redBorder información obtenida de otras aplicaciones compatibles.</para><!--revisar-->
 			<note>
 				<title>Nota</title>
 				<para>Para importar un dashboard, es necesario que este, previamente, haya sido exportado como fichero comprimido y se encuentre disponible entre nuestros archivos.</para>
@@ -196,7 +196,7 @@
 					<para>-Social</para>					
 				</listitem>
 				<listitem>
-					<para><emhasis role="bold">Estado:</emhasis> visualización de la configuración y estado de las máquinas e infraestructura de la red.</para>
+					<para><emphasis role="bold">Estado:</emphasis> visualización de la configuración y estado de las máquinas e infraestructura de la red.</para>
 					<para>-Infraestructure</para>
 				</listitem>
 				<listitem>

@@ -246,15 +246,27 @@
 				<para>Instalación mediante simple wizard</para>
 			</caption>
 		</mediaobject>
-		<para>1) Seleccionar el modo cluster para unir más de un Manager.</para>
-		<para>2) <literal>Insert Hostname [rbmanager].</literal> La opción que viene definida por defecto es la de <literal>rbmanager.</literal> Este es un nombre que identifica de manera clara y sencilla al Manager y su posición dentro del cluster.</para>
-		<note>
-			<title>Nota</title>
-			<para>Es importante que se utilicen diferentes nombres para cada uno de los Managers que se van a unir al cluster. Lo más aconsejable es seguir una numeración consecutiva (ej.:rbmanager01, rbmanager02) o bien, algún nombre que identifique su rol (ej.: rbmanagermaster, rbmanagerslave01, rbmanagerslave02).</para>
-		</note>
-		<para>3) <literal>Insert domain: [redborder.cluster]</literal> Dominio definido por defecto. </para>
-		<para>4) <literal>Insert DNS Primary.</literal> Definido por defecto. El usuario podrá cambiarlo para indicar el servidor que provee DNS a su red y al que estará asociado el Manager.</para>
-		<para>5) <literal>Insert DNS Secondary (optional).</literal> Indicar DNS secundario de manera opcional. Se aconseja introducir un DNS alternativo que sustituya al DNS primario en caso de fallo del servidor.</para>
+		<orderedlist numeration="arabic">
+				<listitem>
+					<para><literal>Selected Mode: cluster.</literal> Seleccionar el modo cluster para unir más de un Manager.</para>
+				</listitem>
+				<listitem>
+					<para><literal>Insert Hostname [rbmanager].</literal> La opción que viene definida por defecto es la de <literal>rbmanager.</literal> Este es un nombre que identifica de manera clara y sencilla al Manager y su posición dentro del cluster.</para>
+				<note>
+					<title>Nota</title>
+					<para>Es importante que se utilicen diferentes nombres para cada uno de los Managers que se van a unir al cluster. Lo más aconsejable es seguir una numeración consecutiva (ej.:rbmanager01, rbmanager02) o bien, algún nombre que identifique su rol (ej.: rbmanagermaster, rbmanagerslave01, rbmanagerslave02).</para>
+				</note>
+				</listitem>
+				<listitem>
+					<para><literal>Insert domain: [redborder.cluster].</literal> Dominio definido por defecto.</para>
+				</listitem>
+				<listitem>
+					<para><literal>Insert DNS Primary.</literal> Definido por defecto. El usuario podrá cambiarlo para indicar el servidor que provee DNS a su red y al que estará asociado el Manager.</para>
+				</listitem>
+				<listitem>
+					<para><literal>Insert DNS Secondary (optional).</literal>  Indicar DNS secundario de manera opcional. Se aconseja introducir un DNS alternativo que sustituya al DNS primario en caso de fallo del servidor</para>
+				</listitem>
+		</orderedlist>
 		<para>Una vez introducidos estos valores, el sistema le avisará de que los cambios han sido aplicados con éxito mediante el siguiente mensaje rotulado en verde: <literal>DNS and domain settings applied successfully.</literal></para>
 		<para><emphasis role="bold">Creación de bonding</emphasis></para>
 		<para> El siguiente paso es indicar el servidor de hora: <literal> NTP server [pool.ntp.org]:</literal> Si existe algún NTP server en su red, se debe indicar. En caso contrario, se asignará uno por defecto.</para>
@@ -410,10 +422,10 @@
 				<para>(Management/sync) Netmask</para>
 			</listitem>
 			<listitem>
-				<para>Default gateway</para>
+				<para>Pasarela para la interfaz de gestión (<literal>Default gateway for this management interface (Y/n)?:</literal>)</para>
 			</listitem>
 			<listitem>
-				<para>Ruta para el bonding</para>
+				<para>Ruta para el bonding (<literal>Insert a route for this bonding (y/N)?:</literal>)</para>
 			</listitem>
 		</itemizedlist>
 		<para>Una vez que se hayan introducido estos valores, el asistente confirmará que los bonding 0 y 1 han sido creados con éxito: <literal>Bonding created successfully.</literal></para>
