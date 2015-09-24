@@ -238,7 +238,7 @@
 		<section>
 			<title>Reputación y seguimiento IP's</title>
 			<para>Los atributos fuente y destino del tráfico (SRC Address/DST Address) permiten realizar las siguientes acciones con el objetivo de facilitar un análisis más exhaustivo sobre el origen y el destino del tráfico que pasa por nuestra red:</para>
-			<para><emphasis role="bold">Create object:</emphasis> permite poner un nombre y/o descripción más intuitios que permiten la localización de un elemento de manera más rápida y sencilla. Por ejemplo, si conocemos la máquina asociada a una determinada dirección IP, esta opción nos permite renombrarla para facilitar su identificación. </para>
+			<para><emphasis role="bold">Create object:</emphasis> permite poner un nombre y/o descripción más intuitivos que permiten la localización de un elemento de manera más rápida y sencilla. Por ejemplo, si conocemos la máquina asociada a una determinada dirección IP, esta opción nos permite renombrarla para facilitar su identificación. </para>
 			<mediaobject>
 				<imageobject>
 					<imagedata scalefit="1" align="center" width="350" fileref="images/ch07_img020.png"/>
@@ -313,11 +313,11 @@
 	</section>
 	<section>
 		<title>Eventos</title>
-		<para>En el submenú de cabecera encontramos la sección <emphasis>Events</emphasis> que nos permite seleccionar diferentes opciones para el análisis de evetos recogidos por los sensores IPS.</para>
+		<para>En el submenú de cabecera encontramos la sección <emphasis>Events</emphasis> que nos permite seleccionar diferentes opciones para el análisis de eventos recogidos por los sensores IPS.</para>
 		<para>El usuario podrá visualizar en detalle eventos, eventos por segundo y firmas que se han aplicado para la gestión de dichos eventos.</para>
 		<note>
 			<title>Nota</title>
-			<para>Estas opciones aplican para la vistas Tops y Compare. En el caso de la vista UNique, no aplica y para la vista Raw se incluyen otras opciones que se detallarán a continuación.</para>
+			<para>Estas opciones aplican para la vistas Tops y Compare. En el caso de la vista Unique, no aplica y para la vista Raw se incluyen otras opciones que se detallarán a continuación.</para>
 		</note>
 		<para><emphasis role="bold">Events:</emphasis> la opción "Events" nos muestra los eventos que se han registrado por cada sensor en un periodo de tiempo determinado. Al posar el ratón encima de la métrica es posible visualizar la fecha y hora exactas y el número de eventos totales que se han registrado en ese periodo de tiempo para el sensor elegido.</para>
 		<mediaobject>
@@ -385,7 +385,7 @@
 			<para>La tabla de datos nos muestra varias columnas que incluyen nueva información de los eventos y sobre la que podemos realizar diferentes acciones:</para>
 			<itemizedlist mark="bullet">
 				<listitem>
-					<para>Sensor: indica el nombre del sensor implicado.</para>
+					<para>Sensor: indica el nombre del sensor implicado.</para><!--Atributo seleccionado, tantas columnas como atributos-->
 				</listitem>
 				<listitem>
 					<para>Signature: muestra la descripción o firmas de la alerta recibidas por sensor.</para>

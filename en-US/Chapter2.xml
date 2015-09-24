@@ -16,7 +16,7 @@
 			<para><literal>Install Manager:</literal> launches the Manager installation menu.</para>
 		</listitem>
 		<listitem>
-			<para><literal>Install Sensor:</literal> this option allows you to perform the installation and configuration of the appropriate sensor for subsequent registration in redBorder Manager. <footnote><para>Depending on the solution you purchased, different options will appear on the menu for the installation and registration of the sensors in the Manager (IPS, Malware, Gateway or Proxy to Cloud).</para></footnote>.</para>
+			<para><literal>Install Sensor:</literal> this option allows you to perform the installation and configuration of the appropriate sensor for subsequent registration in redBorder Manager. <footnote><para>Depending on the solution you purchased, different options will appear on the menu for the installation and registration of the sensors in the Manager (IPS (App IPS), Instagram or Twitter (App Social), MailGateway, Endpoint or ProxyHTTP (Malware App)).</para></footnote>.</para>
 		</listitem>
 		<listitem>
 			<para><literal>Install Manager Horama+malware (beta):</literal> This option allows you to install and configure the appropriate sensor for subsequent registration in the Horama Manager.</para>
@@ -247,10 +247,7 @@
 				</listitem>
 				<listitem>
 					<para><literal>Insert Hostname [rbmanager].</literal> The option defined by default is <literal>rbmanager.</literal>  This is a name that clearly and easily identifies the Manager and its position within the cluster.</para>
-				<note>
-					<title>Note</title>
-					<para>It is important that different names are used for each Manager who is going to join the cluster. It is best to follow a consecutive numbering (eg. rbmanager01, rbmanager02) or, a name identifying their role (eg .: rbmanagermaster, rbmanagerslave01, rbmanagerslave02). </para>
-				</note>
+				</listitem>
 				<listitem>
 					<para><literal>Insert domain: [redborder.cluster].</literal> Domain defined by default. </para>
 				</listitem>
@@ -261,6 +258,10 @@
 					<para><literal>Insert DNS Secondary (optional).</literal>  Indicate a secondary DNS in an optional way. It is advisable to introduce an alternative DNS to replace the DNS if the primary server fails.</para>
 				</listitem>
 			</orderedlist>
+			<note>
+				<title>Note</title>
+				<para>It is important that different names are used for each Manager who is going to join the cluster. It is best to follow a consecutive numbering (eg. rbmanager01, rbmanager02) or, a name identifying their role (eg .: rbmanagermaster, rbmanagerslave01, rbmanagerslave02). </para>
+			</note>
 			<para>After entering these values, the system will warn you that the changes have been applied successfully with the following message labeled in green: <literal>DNS and domain settings applied successfully.</literal></para>
 			<para><emphasis role="bold">Creating bonding</emphasis></para>
 			<para>The next step is to insert the following information: <literal> NTP server [pool.ntp.org]:</literal> If there is an NTP server on your network, you must indicate it. Otherwise, one will be assigned by default. </para>

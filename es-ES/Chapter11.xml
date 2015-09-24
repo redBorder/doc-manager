@@ -519,6 +519,9 @@
 				<imageobject>
 					<imagedata scalefit="1" align="center" width="350" fileref="images/ch11_img012.png"/>
 				</imageobject>
+				<caption>
+					<para>Icono "Editar"</para>
+				</caption>
 			</mediaobject>
 			<mediaobject>
 				<imageobject>
@@ -1001,7 +1004,7 @@
 	<section>
 		<title>Opciones de configuración y edición de los sensores Flow</title>
 		<para>La configuración y edición de los sensores Flow es posible de dos maneras diferentes: seleccionando <literal>View>Flow sensors</literal> o bien, mediante el icono de configuración que se encuentra en la fila correspondiente al sensor Flow en la vista árbol. </para>
-		<para>Al seleccionar en ambos casos la opción de configuración, el susuario accede a una pantalla en la que puede editar la siguiente información:</para>
+		<para>Al seleccionar en ambos casos la opción de configuración, el usuario accede a una pantalla en la que puede editar la siguiente información:</para>
 		<itemizedlist mark="bullet">
 			<listitem>
 				<para>General</para>

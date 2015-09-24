@@ -16,7 +16,7 @@
 			<para><literal>Install Manager:</literal> lanza el menú de instalación del Manager.</para>
 		</listitem>
 		<listitem>
-			<para><literal>Install Sensor:</literal> esta opción le permite realizar la instalación y configuración del sensor que corresponda para su posterior registro en el Manager de redBorder. <footnote><para>Dependiendo de la solución que haya adquirido aparecerán en el menú las diferentes opciones para la instalación y registro de los sensores de las diferentes Apps en el Manager.</para></footnote>.</para>
+			<para><literal>Install Sensor:</literal> esta opción le permite realizar la instalación y configuración del sensor que corresponda para su posterior registro en el Manager de redBorder. <footnote><para>Dependiendo de la solución que haya adquirido aparecerán en el menú las diferentes opciones para la instalación y registro de los sensores de las diferentes Apps en el Manager: IPS (App IPS), Instagram or Twitter (App Social), MailGateway, Endpoint or ProxyHTTP (Malware App)</para></footnote>.</para>
 		</listitem>
 		<listitem>
 			<para><literal>Rescue installed system:</literal> modalidad de inicio de rescate para los casos en que existan problemas de inicio de su máquina (modo avanzado). Además, permite iniciar el procedimiento de resolución del problema o cambiar la contraseña del usuario en caso de pérdida.</para>
@@ -252,10 +252,6 @@
 				</listitem>
 				<listitem>
 					<para><literal>Insert Hostname [rbmanager].</literal> La opción que viene definida por defecto es la de <literal>rbmanager.</literal> Este es un nombre que identifica de manera clara y sencilla al Manager y su posición dentro del cluster.</para>
-				<note>
-					<title>Nota</title>
-					<para>Es importante que se utilicen diferentes nombres para cada uno de los Managers que se van a unir al cluster. Lo más aconsejable es seguir una numeración consecutiva (ej.:rbmanager01, rbmanager02) o bien, algún nombre que identifique su rol (ej.: rbmanagermaster, rbmanagerslave01, rbmanagerslave02).</para>
-				</note>
 				</listitem>
 				<listitem>
 					<para><literal>Insert domain: [redborder.cluster].</literal> Dominio definido por defecto.</para>
@@ -267,6 +263,10 @@
 					<para><literal>Insert DNS Secondary (optional).</literal>  Indicar DNS secundario de manera opcional. Se aconseja introducir un DNS alternativo que sustituya al DNS primario en caso de fallo del servidor</para>
 				</listitem>
 		</orderedlist>
+		<note>
+			<title>Nota</title>
+			<para>Es importante que se utilicen diferentes nombres para cada uno de los Managers que se van a unir al cluster. Lo más aconsejable es seguir una numeración consecutiva (ej.:rbmanager01, rbmanager02) o bien, algún nombre que identifique su rol (ej.: rbmanagermaster, rbmanagerslave01, rbmanagerslave02).</para>
+		</note>
 		<para>Una vez introducidos estos valores, el sistema le avisará de que los cambios han sido aplicados con éxito mediante el siguiente mensaje rotulado en verde: <literal>DNS and domain settings applied successfully.</literal></para>
 		<para><emphasis role="bold">Creación de bonding</emphasis></para>
 		<para> El siguiente paso es indicar el servidor de hora: <literal> NTP server [pool.ntp.org]:</literal> Si existe algún NTP server en su red, se debe indicar. En caso contrario, se asignará uno por defecto.</para>
