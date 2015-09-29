@@ -9,14 +9,6 @@
 <book>
   <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="Book_Info.xml"/>
   <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="Preface.xml"/>
-  <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="Chapter1.xml"/>
-  <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="Chapter2.xml"/>
-  <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="Chapter3.xml"/>
-  <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="Chapter4.xml"/>
-  <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="Chapter5.xml"/>
-  <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="Chapter6.xml"/>
-  <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="Chapter7.xml"/>
-  <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="Chapter11.xml"/>
   <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="Chapter13.xml"/>
   <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="Revision_History.xml"/>
 </book>

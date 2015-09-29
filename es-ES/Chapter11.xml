@@ -8,27 +8,27 @@
 ]>
 
 <chapter>
-	<title>Configuración: Sensores</title>
-	<para>Bienvenido a la sección de configuración de los sensores. Una vez que se ha realizado el registro de los sensores en el Manager desde el asistente de instalación, cualquier acción que desee realizar para la gestión y configuración de los sensores deberá realizarla desde la interfaz web del Manager.</para>
-	<para>Esta opción se encuentra disponible en el margen superior derecho del menú de cabecera, junto a la sección <emphasis role="bold">Tools</emphasis> y Administrator. Este área del menú de la interfaz web del Manager se identifica como menú de <emphasis role="bold">Configuración,</emphasis> ya que, a diferencia con las opciones disponibles en el margen izquierdo (Análisis), estas permiten la gestión y configuración completa del Manager y los sensores a través del establecimiento de las políticas de firmas que se van a aplicar, la configuración de alarmas, del cluster o la gestión de usuarios, entre otras acciones.</para>
+	<title>Sensores</title>
+	<para>En esta sección el usuario puede realizar la consulta, gestión y configuración de la infraestructura de red: dominios y sensores. Para ello, dispone de varias vistas desde las que puede visualizar los elementos que componen su infraestructura de red y acceder a ellos para la realización de diferentes acciones. </para>
+	 <para>Una vez que se ha realizado el registro de los sensores en el Manager desde el asistente de instalación, cualquier acción que desee realizar para la gestión y configuración de los sensores deberá realizarla desde la interfaz web del Manager.</para>
+	<para>Sensores (<literal>Sensors</literal>) se encuentra disponible en el margen superior derecho del menú de cabecera, junto a la sección <emphasis role="bold">Tools</emphasis> y Administrator. Este área del menú de la interfaz web del Manager se identifica como menú de <emphasis role="bold">Configuración,</emphasis> ya que, a diferencia con las opciones disponibles en el margen izquierdo (Análisis), estas permiten la gestión y configuración completa del Manager y los sensores a través del establecimiento de las políticas de firmas que se van a aplicar, la configuración de alarmas, del cluster o la gestión de usuarios, entre otras acciones.</para>
 	<section>
 		<title>Sensors: menú y opciones</title>
 		<para>La organización de esta sección es muy similar, en cuanto a estructura, a la de otras partes de la web. En este caso, encontraremos:</para>
 		<itemizedlist mark="bullet">
 			<listitem>
 				<para>Submenú de la sección: en la que se encuentran las opciones disponibles para la configuración y gestión de los sensores.</para>
-				<para>-Opciones</para>
-				<para>-Añadir sensor</para>
-				<para>-Añadir dominio</para>
-				<para>-Vista</para>
+				<para>-Opciones (<literal>Options</literal>)</para>
+				<para>-Añadir sensor (<literal>+Add sensor</literal>)</para>
+				<para>-Añadir dominio (<literal>+Add Domain</literal>)</para>
+				<para>-Vista (<literal>View</literal>)</para>
 			</listitem>
 			<listitem>
-				<para>Área principal: vista de la infraestructura de sensores ordenada por dependencia y jerarquía.</para>
-				<para>Existen cuatro vistas disponibles para visualizar la infraestructura de sensores de nuestra red:</para>
-				<para>-Árbol (es la que se muestra por defecto).</para>
-				<para>-Mapa: muestra la geolocalización de los senores sobre un mapa.</para>
-				<para>-Access Points: nos ofrece acceso directo a la visualización de los Access Points por dominio vinculados a los sensores Flow.</para>
-				<para>-Sensores: muestra en formato de tabla una lista de los sensores y la información asociada a ellos.</para>
+				<para>Área principal: vista de la infraestructura de sensores ordenada por dependencia y jerarquía. Existen cuatro vistas disponibles para visualizar la infraestructura de sensores de nuestra red:</para>
+				<para>-Árbol (<literal>Tree</literal>): es la que se muestra por defecto.</para>
+				<para>-Mapa (<literal>Map</literal>): muestra la geolocalización de los senores sobre un mapa.</para>
+				<para>-Puntos de acceso (<literal>Access Points</literal>): nos ofrece acceso directo a la visualización de los Access Points por dominio vinculados a los sensores Flow.</para><!--comprobar-->
+				<para>-Sensores: muestra en formato de tabla una lista de los sensores y la información asociada a ellos. (En el listado aparecerán los sensores que se hayan registrado en el Manager para las diferentes Apps: p. ej., Flow-Flow sensors, Meraki sensors, Malware-Gateway sensors, etc.).</para>
 			</listitem>		
 		</itemizedlist>
 		<mediaobject>
@@ -47,7 +47,7 @@
 		</note>
 	</section>
 	<section>
-		<title>Menú vista</title>
+		<title>Vista (<literal>View</literal>)</title>
 		<para>Nada más acceder a la sección Sensors, el usuario encuentra un listado (vista de árbol) en el que aparecen todos los sensores registrados en el Manager organizados según diferentes criterios de jerarquía y dependencia.</para>
 		<mediaobject>
 			<imageobject>
@@ -60,7 +60,7 @@
 		<para>Como se ha comentado anteriormente, existen tres opciones disponibles en el menú de vistas: </para>
 		<itemizedlist mark="circle">
 			<listitem>
-				<para>Árbol: es la vista que se visualiza por defecto. Este listado aparece en modo "persiana" de manera que podemos colapsar o mostrar los elementos que definen la jerarquía definida para la infraestructura de sensores tan solo con desplegar </para>
+				<para>Árbol: es la vista que se visualiza por defecto. Este listado aparece en modo "persiana" de manera que podemos colapsar o mostrar los elementos que definen la jerarquía definida para la infraestructura de nuestra red. </para>
 				<mediaobject>
 					<imageobject>
 						<imagedata scalefit="1" align="center" width="350" fileref="images/ch11_img001.png"/>
@@ -71,7 +71,7 @@
 				</mediaobject>
 			</listitem>
 			<listitem>
-				<para>Mapa: muestra la localización de los sensores y el número de sensores que se encuentran en una determinada zona. Esta información se "clusteriza" o agrupa, de manera que, para obtener un mayor detalle de los sensores, tendremos que aplicar zoom al mapa.</para>
+				<para>Mapa: muestra la localización de los sensores y el número de sensores que se encuentran en una determinada zona. Para obtener un mayor detalle de los sensores, tendremos que aplicar zoom al mapa.</para><!--revisar-->
 				<mediaobject>
 					<imageobject>
 						<imagedata scalefit="1" align="center" width="350" fileref="images/ch11_img056.png"/>
@@ -93,7 +93,7 @@
 				</mediaobject>
 			</listitem>
 			<listitem>
-				<para>Sensores: en el menú desplegable de la opción Vistas, se visualizan de manera independiente, cada uno de los sensores por App que han sido asociados al Manager. (Ej. Flow Sensors). Desde estas opciones accederemos a la interfaz en la que aparece información detallada sobre la configuración de los sensores. </para>
+				<para>Sensores: en el menú desplegable de la opción Vistas, se visualizan, de manera independiente, cada uno de los sensores por App que han sido asociados al Manager. (Ej. Flow Sensors). Desde estas opciones accederemos a la interfaz en la que aparece información detallada sobre la configuración de los sensores. </para>
 				<mediaobject>
 					<imageobject>
 						<imagedata scalefit="1" align="center" width="350" fileref="images/ch11_img035b.png"/>
@@ -122,7 +122,7 @@
 				</listitem>
 				<listitem>
 					<para><emphasis role="bold">Dominio:</emphasis> se trata de contenedores que pueden incluir sensores, grupos de sensores, etc.</para>
-					<para>El nivel "dominio" nos muestra el nombre del dominio y nos permite agregar una descripción. Es posible clasificarlas según su naturaleza (organizacional, espacial, etc.); cada tipo de dominio tendrá un icono específico:</para>
+					<para>El nivel "dominio" nos muestra el nombre del dominio y nos permite agregar una descripción. Es posible clasificarlos según su naturaleza (organizacional, espacial, etc.); cada tipo de dominio tendrá un icono específico:</para>
 				</listitem>
 				<listitem override="circle">
 					<para>Genérico</para>
@@ -158,7 +158,7 @@
 			</itemizedlist>
 			<mediaobject>
 				<imageobject>
-					<imagedata scalefit="1" align="center" width="350" fileref="images/ch11_img001a.png"/>
+					<imagedata scalefit="1" align="center" width="350" fileref="images/ch11_img001.png"/>
 				</imageobject>
 				<caption>
 					<para>Detalle de niveles de organización en una infraestructura de sensores</para>
@@ -168,122 +168,50 @@
 		<section>
 			<title>Vista sensores</title>
 			<para>La vista de sensores nos ofrece la posibilidad de conocer en un solo vistazo qué sensores de cada App están asociados al Manager. Por ello, para acceder a esta vista el usuario tendrá que seleccionar el tipo de sensores que se encuentran disponibles y que desea consultar. </para>
-			<para>redBorder permite la asociación de seis tipos de sensores:</para>
-			<itemizedlist mark="bullet">
-				<listitem>
-					<para>Sensores Flow</para>
-				</listitem>
-				<listitem>
-					<para>Sensores IPS</para>
-				</listitem>
-				<listitem>
-					<para>Sensores MSE</para>
-				</listitem>
-				<listitem>
-					<para>Sensores Meraki</para>
-				</listitem>
-				<listitem>
-					<para>Sensores Gateway</para>
-				</listitem>
-				<listitem>
-					<para>Sensores Social</para>
-				</listitem>
-			</itemizedlist>
+			<para>Dependiendo de las Apps y de los sensores registrados, el usuario visualizará unas opciones u otras.</para>
 			<mediaobject>
 				<imageobject>
-					<imagedata scalefit="1" align="center" width="350" fileref="images/ch11_img005a.png"/>
+					<imagedata scalefit="1" align="center" width="350" fileref="images/ch11_img005.png"/>
 				</imageobject>
 				<caption>
 					<para>Vista de sensores: detalle de tipos de sensores disponibles para consulta</para>
 				</caption>
 			</mediaobject>
 			<para>Para la consulta de los sensores el usuario puede realizar una búsqueda o bien, navegar alfabéticamente por el listado de sensores. </para>
-			<para>Una vez que haya accedido al sensor o grupo de sensores que desea consultar, visualizará un listado en el que se muestra diferente información según el tipo de sensor:</para>
-			<itemizedlist mark="bullet">
-				<listitem>
-					<para>Sensores Flow</para>
-					<mediaobject>
-						<imageobject>
-							<imagedata scalefit="1" align="center" width="350" fileref="images/ch11_img038.png"/>
-						</imageobject>
-						<caption>
-							<para>Vista Sensores Flow: información disponible</para>
-						</caption>
-					</mediaobject>
-				</listitem>
-				<listitem>
-					<para>Sensores IPS</para>
-					<mediaobject>
-						<imageobject>
-							<imagedata scalefit="1" align="center" width="350" fileref="images/ch11_img035.png"/>
-						</imageobject>
-						<caption>
-							<para>Vista Sensores IPS: información disponible</para>
-						</caption>
-					</mediaobject>
-				</listitem>
-				<listitem>
-					<para>Sensores MSE</para>
-					<mediaobject>
-						<imageobject>
-							<imagedata scalefit="1" align="center" width="350" fileref="images/ch11_img036.png"/>
-						</imageobject>
-						<caption>
-							<para>Vista Sensores MSE: información disponible</para>
-						</caption>
-					</mediaobject>
-				</listitem>
-				<listitem>
-					<para>Sensores Meraki</para>
-					<mediaobject>
-						<imageobject>
-							<imagedata scalefit="1" align="center" width="350" fileref="images/ch11_img039.png"/>
-						</imageobject>
-						<caption>
-								<para>Vista Sensores Meraki: información disponible</para>
-						</caption>
-					</mediaobject>
-				</listitem>
-				<listitem>
-					<para>Sensores Gateway</para>
-					<mediaobject>
-						<imageobject>
-							<imagedata scalefit="1" align="center" width="350" fileref="images/ch11_img040.png"/>
-						</imageobject>
-						<caption>
-							<para>Vista Sensores Gateway: información disponible</para>
-						</caption>
-					</mediaobject>
-				</listitem>
-				<listitem>
-					<para>Sensores Social</para>
-						<mediaobject>
-							<imageobject>
-								<imagedata scalefit="1" align="center" width="350" fileref="images/ch11_img041.png"/>
-							</imageobject>
-							<caption>
-								<para>Vista Sensores Social: información disponible</para>
-							</caption>
-						</mediaobject>
-				</listitem>		
-			</itemizedlist>
-			<para>A continuación se explican las opciones que se encuentran disponibles en las interfaces para la vista de árbol y de sensores. El listado de sensores en ambas vistas permite el acceso directo a un <emphasis role="bold"> menú de configuración mediante el siguiente icono: </emphasis></para>
+			<para>Una vez que haya accedido al sensor o grupo de sensores que desea consultar, visualizará un listado en el que se muestra diferente información según el tipo de sensor. A continuación se muestran dos ejemplos de la información disponible para los sensores de las Apps Flow e IPS.</para>		
 			<mediaobject>
 				<imageobject>
-					<imagedata scalefit="1" align="center" width="350" fileref="images/ch11_img012.png"/>
+					<imagedata scalefit="1" align="center" width="350" fileref="images/ch11_img038.png"/>
 				</imageobject>
 				<caption>
-					<para>Icono Configuración</para>
+					<para>Vista Sensores Flow: información disponible</para>
+				</caption>
+			</mediaobject>
+			<mediaobject>
+				<imageobject>
+					<imagedata scalefit="1" align="center" width="350" fileref="images/ch11_img035.png"/>
+				</imageobject>
+				<caption>
+					<para>Vista Sensores IPS: información disponible</para>
+				</caption>
+			</mediaobject>
+			<para>A continuación se explican las opciones que se encuentran disponibles en las interfaces para la vista de árbol y de sensores. El listado de sensores en ambas vistas permite el acceso directo a un menú  en el que editar la configuración del sensor. Hacer clic en el siguiente icono:</para>
+			<mediaobject>
+				<imageobject>
+					<imagedata scalefit="1" align="center" width="50" fileref="images/ch11_img012.png"/>
+				</imageobject>
+				<caption>
+					<para>Icono Edición</para>
 				</caption>
 			</mediaobject>
 			<note>
 				<title>Nota</title>
-				<para>Las opciones disponibles en el menú de configuración variarán dependiendo de que nos encontremos a nivel de dominio o sensores (o subniveles de grupo de sensores o segmentos).</para>
+				<para>Las opciones disponibles en el menú de configuración variarán dependiendo de que nos encontremos a nivel de dominio o sensores.</para>
 			</note>
-			<para>Desde ambas vistas también se pueden eliminar los sensores de manera directa tan solo con clicar sobre el siguiente icono:</para>
+			<para>Desde ambas vistas también se pueden eliminar los sensores. Hacer clic en el siguiente icono:</para>
 			<mediaobject>
 				<imageobject>
-					<imagedata scalefit="1" align="center" width="350" fileref="images/ch11_img013.png"/>
+					<imagedata scalefit="1" align="center" width="50" fileref="images/ch11_img013.png"/>
 				</imageobject>
 				<caption>
 					<para>Icono Eliminar</para>
@@ -291,8 +219,8 @@
 			</mediaobject>
 			<note>
 				<title>Nota</title>
-				<para>Algunos sensores no pueden ser eliminados. En este caso, el icono "eliminar sensor" aparecerá sombrado en gris, lo que indica que esta opción se encuentra inhabilitada.</para>
-				<para>Antes de que un dominio o sensor sea eliminado, el sistema le mostrará una pantalla de confirmación avisándole de que todos los usuarios asignados a ese dominio y sus descendientes serán desactivados y asignados a los padres del dominio. Un usuario con rol de administrador deberá volver a habilitarles desde Tools>Users.</para>	
+				<para>Algunos sensores no pueden ser eliminados. En este caso, el icono "eliminar" aparecerá sombrado en gris, lo que indica que esta opción se encuentra inhabilitada.</para>
+				<para>Antes de que un dominio o sensor sea eliminado, el sistema le mostrará una pantalla de confirmación avisándole de que todos los usuarios asignados a ese dominio y sus descendientes serán desactivados y asignados a los padres del dominio. Un usuario con rol de administrador deberá volver a habilitarles desde la sección <literal>Tools>Users.</literal></para>	
 			</note>
 			<mediaobject>
 				<imageobject>
@@ -302,21 +230,21 @@
 					<para>Confirmar eliminación de sensor</para>
 				</caption>
 			</mediaobject>
-			<para>En la <emphasis role="bold">Vista árbol</emphasis> encontramos también un icono que indica el tipo de política que rige cada sensor o grupo de sensores. Al hacer clic sobre él, accederemos de manera directa a una interfaz en la que se muestran las firmas que componen esa política y desde la que podemos realizar diferentes acciones que serán explicadas con detalle en el punto referente a <emphasis>Policy rules.</emphasis></para>
+			<para>En la <emphasis role="bold">Vista árbol</emphasis> encontramos también un boón que indica el tipo de política que rige cada sensor o grupo de sensores. Al hacer clic sobre él, accederemos a una interfaz en la que se muestran las firmas que componen esa política y desde la que podemos realizar diferentes acciones que serán explicadas con detalle en el capítulo en el que se abordan las <emphasis>Policy rules.</emphasis></para>
 			<mediaobject>
 				<imageobject>
-					<imagedata scalefit="1" align="center" width="350" fileref="images/ch11_img014.png"/>
+					<imagedata scalefit="1" align="center" width="50" fileref="images/ch11_img014.png"/>
 				</imageobject>
 				<caption>
-					<para>Icono políticas</para>
+					<para>Icono Políticas</para>
 				</caption>
 			</mediaobject>		
 		</section>
 	</section>
 	<section>
 		<title>Añadir sensor</title>
-		<para>Entre las opciones del submenú encontramos la de <literal>+Add Sensor.</literal> En el menú desplegable encontrará los diferentes tipos de sensores que se encuentran disponibles para su adición a la infraestructura. </para>
-		<para>Para añadir un sensor, basta con seleccionar el tipo desde el menú desplegable y a continuación, completar la información que se solicita.</para>
+		<para>Entre las opciones del submenú encontramos la de <literal>+Add Sensor.</literal> En el menú desplegable se muestran los diferentes tipos de sensores disponibles para su adición a la infraestructura de red.</para>
+		<para>Seleccione el tipo de sensor en el menú desplegable y a continuación, complete la información que se solicita.</para>
 		<para>A partir de este momento, podrá configurar el resto de información asociada al sensor desde las diferentes opciones de edición y configuración que se explican más abajo y que, están disponibles desde las vistas árbol y sensor.</para>
 		<para>Recuerde que para gestionar la jerarquía de los sensores y los dominios solo es necesario dirigirse a la vista árbol y mediante la acción de "selección y arrastre" situar el sensor recién creado en nivel que se desee. </para>
 		<mediaobject>
@@ -327,7 +255,7 @@
 				<para>Añadir sensor</para>
 			</caption>
 		</mediaobject>
-		<para>En las siguientes imágenes se muestran los tipos de sensores que se pueden añadir a la infraestructura y la información que el sistema solicita para su creación.</para>
+		<para>En las siguientes imágenes se muestran algunos  ejemplos de los tipos de sensores que se pueden añadir a la infraestructura y la información que el sistema solicita para su creación.</para>
 		<mediaobject>
 			<imageobject>
 				<imagedata scalefit="1" align="center" width="350" fileref="images/ch11_img023a.png"/>
@@ -349,7 +277,7 @@
 				<imagedata scalefit="1" align="center" width="350" fileref="images/ch11_img022.png"/>
 			</imageobject>
 			<caption>
-				<para>Añadir sensor Meraki</para>
+				<para>Añadir sensor Meraki</para><!--añadir sensor MSE-->
 			</caption>
 		</mediaobject>
 		<mediaobject>
@@ -371,8 +299,8 @@
 	</section>
 	<section>
 		<title>Añadir dominio</title>
-		<para>Para añadir un nuevo dominio es necesario desplegar el menú de opciones de la opción <literal>+Add Domain</literal>, seleccionar el tipo de dominio que deseamos añadir y completar la información solicitada (Nombre).</para>
-		<para>Al igual que los sensores, su posterior edición y configuración debe realizarse desde las opciones de configuración que veremos más adelante. Asimismo, para su colocación dentro de la infraestructura, basta dirigirse a la vista árbol y mediante la opción de "Selección y arrastre" colocar el dominio en el nivel que se desee.</para>
+		<para>Para añadir un nuevo dominio es necesario hacer clic en el botón <literal>+Add Domain</literal>, seleccionar el tipo de dominio que deseamos añadir y completar la información solicitada (Nombre).</para>
+		<para>Al igual que los sensores, la edición y configuración del dominio debe realizarse desde las opciones de configuración que veremos más adelante. Asimismo, para su colocación dentro de la infraestructura, basta dirigirse a la vista árbol y mediante la opción de "Selección y arrastre" colocar el dominio en el nivel que se desee.</para>
 		<mediaobject>
 			<imageobject>
 				<imagedata scalefit="1" align="center" width="350" fileref="images/ch11_img004.png"/>
@@ -385,13 +313,8 @@
 	<section>
 		<title>Opciones de configuración y edición de los sensores IPS</title>
 		<para>La vista que aparece por defecto al seleccionar la opción <emphasis role="bold">Sensors</emphasis> es la vista de árbol en la que se muestran las dependencias y jerarquías existentes en la infraestructura de sensores creada.</para>	
-		<important>
-			<title>Importante</title>
-			<para>En el momento en el que se registra un sensor en el Manager, este pasa, por defecto, a colocarse como raíz, por encima del nivel de dominio.</para>
-			<para>El usuario puede organizar su infraestructura de sensores en cualquier momento, arrastrando y soltando el sensor hacia el dominio del que se quiera hacer depender.</para>
-			<para>El sensor heredará de manera automática las propiedades del dominio raíz (políticas, modo de operación, variables Snort, etc.).</para>
-		</important>
-		<para>Las diferentes opciones que aparecen en el submenú situado bajo la cabecera o menú principal nos posibilitan realizar acciones a nivel global. Para la configuración independiente de un sensor o dominio existe la posibilidad de realizarla directamente sobre la fila correspondiente en el listado.</para>
+		<para>Acciones sobre los sensores a nivel de infraestructura: se encuentran localizadas en el submenú de <literal>Options</literal> situado bajo el menú principal.z</para>
+		<para>Acciones sobre un sensor o dominio: acceso directo haciendo clic en el botón "Editar", situado al lado del nombre del dominio o sensor. </para>
 		<mediaobject>
 			<imageobject>
 				<imagedata scalefit="1" align="center" width="350" fileref="images/ch11_img002.png"/>
@@ -400,7 +323,7 @@
 				<para>Submenú <literal>Options</literal> de la vista árbol</para>
 			</caption>
 		</mediaobject>	
-		<para>Dependiendo de si se trata de un dominio, sensor, grupo de sensores o binding se visualizan unas opciones u otras.</para>
+		<para>Las acciones que se muestran en el sunbmenú <literal>Options</literal> dependerán de si nos encontramos a nivel de dominio, sensor o binding. Dependiendo de si se trata de un dominio, sensor, grupo de sensores o binding se visualizarán unas opciones u otras.</para>
 		<mediaobject>
 			<imageobject>
 				<imagedata scalefit="1" align="center" width="350" fileref="images/ch11_img006.png"/>
@@ -419,31 +342,21 @@
 		</mediaobject>	
 		<important>
 			<title>Importante</title>
-			<para>Recordamos que la gestión de las políticas será abordada en un capítulo independiente.</para>
+			<para>En el momento en el que se registra un sensor en el Manager, este pasa, por defecto, a colocarse como raíz, por encima del nivel de dominio.</para>
+			<para>El usuario puede organizar su infraestructura de sensores en cualquier momento, arrastrando y soltando el sensor en el nivel en el que se quiera colocar.</para>
+			<para>El sensor heredará de manera automática las propiedades del dominio raíz (políticas, modo de operación, variables Snort, etc.).</para>
 		</important>
-		<mediaobject>
-			<imageobject>
-				<imagedata scalefit="1" align="center" width="350" fileref="images/ch11_img049.png"/>
-			</imageobject>
-			<caption>
-				<para>Revise el capítulo 12 para saber maś acerca de la configuración y de la gestión de las políticas. </para>
-			</caption>
-		</mediaobject>	
-		<mediaobject>
-			<imageobject>
-				<imagedata scalefit="1" align="center" width="350" fileref="images/ch11_img049b.png"/>
-			</imageobject>
-		</mediaobject>	
 		<note>
 			<title>Nota</title>
 			<para>Las opciones <literal>Import tree</literal>y <literal>Export tree</literal> son exclusivas de la vista árbol.</para>
-		</note>
+			<para>Recordamos que la gestión de las políticas será abordada en un capítulo independiente.</para>
+		</note>	
 		<section>
 			<title>Importar árbol</title>
-			<para>Esta opción permite importar un nuevo árbol o infraestructura de sensores mediante la subida de un archivo a redBorder.</para>
+			<para>Esta opción permite importar su infraestructura de red mediante la subida de un archivo a redBorder. Esta se mostrará en la vista árbol.</para>
 			<mediaobject>
 				<imageobject>
-					<imagedata scalefit="1" align="center" width="350" fileref="images/ch11_img010.png"/>
+					<imagedata scalefit="1" align="center" width="150" fileref="images/ch11_img010.png"/>
 				</imageobject>
 				<caption>
 					<para>Importar árbol</para>
@@ -455,7 +368,7 @@
 					<para><literal>Options>Import tree</literal></para>
 				</listitem>
 				<listitem>
-					<para><literal>Menú de configuración a nivel de dominio</literal></para>
+					<para>Botón de edición (a nivel de dominio)</para>
 				</listitem>
 			</orderedlist>
 			<mediaobject>
@@ -471,13 +384,13 @@
 					<imagedata scalefit="1" align="center" width="350" fileref="images/ch11_img017.png"/>
 				</imageobject>
 				<caption>
-					<para>Importar árbol desde el menú de configuración a nivel de dominio</para>
+					<para>Importar árbol mediante el botón de edición (a nivel de dominio)</para>
 				</caption>
 			</mediaobject>	
 		</section>
 		<section>
 			<title>Exportar árbol</title>
-			<para>Esta opción permite exportar un árbol y de este modo, tenerlo disponible para su uso en otras aplicaciones. El usuario se descargará un archivo comprimido que podrá guardar en su equipo.</para>
+			<para>Esta opción permite exportar un árbol y así tenerlo disponible para su uso en otras aplicaciones. El usuario se descargará un archivo comprimido que podrá guardar en su equipo.</para>
 			<mediaobject>
 				<imageobject>
 					<imagedata scalefit="1" align="center" width="350" fileref="images/ch11_img011.png"/>
@@ -492,7 +405,7 @@
 					<para><literal>Options>	Export tree</literal></para>
 				</listitem>
 				<listitem>
-					<para><literal>Menú de configuración a nivel de dominio</literal></para>
+					<para>Botón de edición (a nivel de dominio)</para>
 				</listitem>
 			</orderedlist>
 			<mediaobject>
@@ -520,7 +433,7 @@
 					<imagedata scalefit="1" align="center" width="350" fileref="images/ch11_img012.png"/>
 				</imageobject>
 				<caption>
-					<para>Icono "Editar"</para>
+					<para>Icono Edición</para>
 				</caption>
 			</mediaobject>
 			<mediaobject>
@@ -528,58 +441,13 @@
 					<imagedata scalefit="1" align="center" width="350" fileref="images/ch11_img008.png"/>
 				</imageobject>
 				<caption>
-					<para>Editar sensor desde el menú de configuración</para>
+					<para>Editar sensor desde la vista de árbol</para>
 				</caption>
 			</mediaobject>	
-			<important>
-				<title>Importante</title>
-				<para>Esta sección del manual es aplicable a la configuración de los sensores IPS. Esta opción es accesible desde la vista de cada uno de los sensores.</para>
-				<para>La configuración y edición de los sensores Flow se abordará en una sección diferente.</para>
-			</important>
-			<para>Desde la interfaz de edición del sensor el usuario puede realizar nuevas configuraciones o actualizar la información relativa al sensor o al dominio. Ambos niveles comparten apartados, por este motivo se abarcan ambos casos en la misma sección. </para>
-			<para>Los parámetros que son configurables a nivel de sensor son más amplios que los disponibles a nivel de dominio. Por este motivo, primero realizaremos una enumeración de los elementos correspondientes a cada uno de los niveles, y posteriormente, los abarcaremos de manera conjunta.</para>
-			<para>Los datos que puede modificar a nivel de sensor son los siguientes:</para><!--Insertar los dos botones de Stop Autoapply y OPtions-->
-			<itemizedlist mark="bullet">
-				<listitem>
-					<para>General: muestra información general del sensor. IP, versión-parámetros no editables desde la web-y descripción.</para>
-				</listitem>
-				<listitem>
-					<para>Configuración IPS/IDS</para>
-				</listitem>
-				<listitem>
-					<para>Servidores</para>
-				</listitem>
-				<listitem>
-					<para>Trap servers</para>
-				</listitem>
-				<listitem>
-					<para>Segmentos</para>
-				</listitem>
-				<listitem>
-					<para>Network routes</para>
-				</listitem>
-				<listitem>
-					<para>Localización</para>
-				</listitem>
-				<listitem>
-					<para>IP Variables</para>
-				</listitem>
-				<listitem>
-					<para>Variables de puertos</para>
-				</listitem>
-				<listitem>
-					<para>Grupos</para>
-				</listitem>
-			</itemizedlist>
-			<mediaobject>
-				<imageobject>
-					<imagedata scalefit="1" align="center" width="350" fileref="images/ch11_img024.png"/>
-				</imageobject>
-				<caption>
-					<para>Opciones de edición de los sensores</para>
-				</caption>
-			</mediaobject>
-			<para>Los datos modificables a nivel de dominio son los siguientes:</para>	
+			
+			
+			<!--General settings y cómo heredan configuración: primero dominio y luego meterme con sensores flow-->
+			<para><emphasis role="bold">Campos para la edición de los dominios:</emphasis></para>	
 			<itemizedlist mark="bullet">
 				<listitem>
 					<para>General: muestra información general del sensor. Nombre (no editable desde la web), tipo de dominio-seleccionar el tipo de dominio en el desplegable) y descripción.</para>
@@ -615,346 +483,78 @@
 					<imagedata scalefit="1" align="center" width="350" fileref="images/ch11_img025.png"/>
 				</imageobject>
 				<caption>
-					<para>Opciones de edición a nivel de dominio</para>
+					<para>Campos para la edición de un dominio</para>
 				</caption>
 			</mediaobject>
-			<para><emphasis role="bold">Stop Auto-Apply</emphasis></para>
-			<para>En el margen superior derecho de la pantalla, bajo el menú de cabecera, encontramos la opción <literal>Stop Auto-Apply</literal> que evita que Chef aplique de manera automática los cambios que refresca y aplica cada 5 minutos.</para>
-			<para>El sistema abrirá una ventana emergente de confirmación para asegurarse de que esta es la acción que desea realizar el usuario.</para>
-			<para><emphasis role="bold">Recreate Private Key</emphasis></para>
-			<para>En el margen superior derecho de la pantalla, bajo el menú de cabecera, encontramos el menú <literal>Options.</literal> Una de las opciones disponibles es la de <literal>Recreate Private Key.</literal></para>
-			<para>Esta opción regenera la clave privada de sincronización del sensor IPS con el Manager. Una vez que se haya confirmado dicha restauración, el usuario deberá actualizar dicha clave desde la interfaz de edición del sensor en el menú <literal>Options.</literal></para>
-			<warning>
-				<title>Advertencia</title>
-				<para>La acción de restauración de la clave privada es muy sensible puesto que piede dejar sin comunicación al sensor con el Manager.</para>
-			</warning>
-			<section>
-				<title>Configuración IPS/IDS</title>
-				<para>En este apartado encontramos las opciones disponibles para configurar el comportamiento de Snort y PF_RING.</para>
-				<note>
-					<title>Nota</title>
-					<para>Las opciones disponibles en el apartado <literal>IPS/IDS Settings</literal> aplican a nivel de dominio y a nivel de sensor.</para>
-				</note>
-				<mediaobject>
-					<imageobject>
-						<imagedata scalefit="1" align="center" width="350" fileref="images/ch11_img026.png"/>
-					</imageobject>
-					<caption>
-						<para>Campos editables para la configuración IPS/IDS</para>
-					</caption>
-				</mediaobject>
-				<para><literal>Sensor mode</literal></para>
-				<para>"Inherited (IDS forwarding)" en esta casilla aparecerá el modo que se haya heredado del dominio o sensor del que depende el que estamos consultando. Cuando un modo ha sido heredado desde el inicio indica que ese modo ha sido heredado directamente del nivel superior.</para>
-				<para>En este campo, el usuario podrá elegir entre 4 opciones diferentes:</para>		
-				<orderedlist>
-					<listitem>
-						<para>IDS forwarding: trabaja como un puente; el sensor realiza una copia de los paquetes de tráfico que es analizada posteriormente por Snort.</para>
-					</listitem>
-					<listitem>
-						<para>IDS span: en este caso, otros dispositivos (ej. un switch) realiza la copia que luego será analizada por Snort.</para>
-					</listitem>
-					<listitem>
-						<para>IPS test mode: el IPS no paraliza el tráfico a pesar de la acción que se haya configurado en la regla, pero enviará una alerta notificando del caso en que debería haber parado o bloqueado el tráfico.</para>
-					</listitem>
-					<listitem>
-						<para>IPS: esta es la opción más común en entornos de producción. Snort analiza el tráfico y deja pasar o bloquea el tráfico dependiendo de las acciones de la regla en la política activa del sensor.</para>
-					</listitem>			
-				</orderedlist>
-				<para><literal>PF_RING Watermark</literal></para>
-				<para>Indica el número mínimo de paquetes entrantes para la función poll.</para>
-				<para>Un valor bajo de watermark como 1 reduce la latencia de la función poll, pero puede incrementar el número de llamadas que la función poll realiza.</para>
-				<para>Un valor alto de watermark (nunca debe exceder del 50% del tamaño del anillo o de lo contrario el módulo kernel de PF_RING aumentará este valor) reduce el número de llamadas que realiza el poll pero aumenta ligeramente la latencia de paquete.</para>
-				<para><literal>PF_RING Clustermode</literal></para>
-				<para>Indica el número de parámetros usados para determinar el hash y el balanceo del tráfico del mismo proceso Snort. Dependiendo del número de tuplas seleccionadas se incluirán más o menos datos de resumen del tráfico:</para>
+			
+			<section>	<!--Access Points-->
+				<title>Ver Access Points asociados a un dominio</title>
+				<para>Además de estos campos, esta interfaz muestra un botón complementario que le da acceso directo a visualizar los <literal>Access Points</literal> asociados a ese dominio y las zonas en las que se encuentran ubicado.</para> 
+				<para>El submenú de esta interfaz muestra una serie de botones similares a los de la pantalla principal de <literal>Sensors.</literal> Las acciones que puede realizar desde esta pantalla son las siguientes (estas pueden variar según el tipo de dominio que se está consultando):</para>
 				<itemizedlist mark="bullet">
 					<listitem>
-						<para>2 tuple flow: IP de origen+IP de destino</para>
+						<para>Mostrar en mapa (<literal>Show Map</literal>)</para>
 					</listitem>
 					<listitem>
-						<para>4 tuple flow: IP de origen:puerto+IP de destino:Puerto</para>
+						<para>Editar dominio</para>
 					</listitem>
 					<listitem>
-						<para>5 tuple flow: IP de origen:puerto+IP de destino:Puerto+protocolo</para>
+						<para>Opciones>Exportar Access Points/Borrar todos los Access Ponits (<literal>Options>Export Access Points/Delete All Access Points.</literal>)</para>
 					</listitem>
 					<listitem>
-						<para>6 tuple flow: IP de origen:puerto+IP de destino:Puerto+protocolo+Vlan</para>
+						<para>Añadir sensores (<literal>+Add sensors</literal>)</para>
+					</listitem>
+					<listitem>
+						<para>Añadir dominio (<literal>+Add Domain</literal>)</para>
+					</listitem>
+					<listitem>
+						<para>Vistas (<literal>View</literal>)</para>
 					</listitem>
 				</itemizedlist>
-				<para><literal>Bypass controlled by Snort</literal></para>
-				<para>Cuando la máquina arranca Snort puede tomar el control de los bypass automáticamente. Esta acción puede provocar un flapping indeseado del firewall para evitar que Snort esté habilitado para el control de los bypass.</para>
-				<para><literal>Threshold Count</literal></para>
-				<para>Número mínimo de ocurrencias para que se envíe un evento.</para>
-				<para><literal>Threshold Seconds</literal></para>
-				<para>Tiempo mínimo (en segundos) que tiene que pasar para enviar un evento.</para>
-				<note>
-					<title>Nota</title>
-					<para>En escenarios donde existe una sobrecarga en el tráfico es posible realizar una configuración que permita mantener la conectividad por encima del análisis de los paquetes.</para>
-					<para>Las opciones de <literal>Best effort Configuration</literal> y <literal>Software Bypass Configuration</literal> se utilizan para priorizar el reenvío de información sobre el análisis de la misma.</para>
-				</note>
-				<para><emphasis>Best effort Configuration</emphasis></para>
-				<para>Esta configuración solo aplica en el modo <emphasis role="bold">IDS.</emphasis></para>
-				<para>Al habilitar esta opción, todos los paquetes serán reenviados y hasta que la cola no se haya vaciado, no se procederá al análisis de los mismos.</para>
-				<para><emphasis>Software Bypass Configuration</emphasis></para>
-				<para>Esta configuración solo aplica en el modo <emphasis role="bold">IPS.</emphasis></para>
-				<para>Al habilitar esta opción, se paraliza el análisis en caso de que la cola esté muy llena para proceder al reenvío de los paquetes. En este caso, se perderá el análisis de parte de ese tráfico en beneficio del manteniemiento de la conectividad.</para>
-				<important>
-					<title>Importante</title>
-					<para>Esta configuración del bypass de IPS se realiza a nivel de software. Para determinar la configuración de los bypass a nivel de hardware, consultar el apartado <literal>Segments.</literal></para>			
-				</important>
-			</section>
-			<section>
-				<title>Servidores</title>
-				<para>En este apartado el usuario puede definir la configuración de los servidores Proxy y Syslog.</para>
 				<mediaobject>
 					<imageobject>
-						<imagedata scalefit="1" align="center" width="350" fileref="images/ch11_img027.png"/>
+						<imagedata scalefit="1" align="center" width="350" fileref="images/ch11_img034.png"/>
 					</imageobject>
 					<caption>
-						<para>Configuración servidores Proxy y Syslog</para>
+						<para>Interfaz de Access Points (a nivel de dominio)</para>
 					</caption>
 				</mediaobject>
-				<para>Este apartado mostrará todos sus campos con las opciones heredadas por el sensor. El usuario podrá determinar la siguiente información: </para>
-				<itemizedlist mark="bullet">
-					<listitem>
-						<para>Syslog Servers</para>
-					</listitem>
-					<listitem>
-						<para>Syslog protocol: UDP/TCP</para>
-					</listitem>
-					<listitem>
-						<para>syslog mode: Basic/Extended</para>
-					</listitem>
-					<listitem>
-						<para>Enable proxy: Yes/No</para>
-					</listitem>
-				</itemizedlist>
-			</section>
-			<section>
-				<title>Trap Servers</title>
-				<note>
-					<title>Nota</title>
-					<para>Esta sección aplica únicamente a nivel de sensor.</para>
-				</note>
-				<para>Esta sección permite realizar la configuración del SNMP de los trap servers.</para> 
 				<mediaobject>
 					<imageobject>
-						<imagedata scalefit="1" align="center" width="350" fileref="images/ch11_img028.png"/>
+						<imagedata scalefit="1" align="center" width="50" fileref="images/ch11_img034b.png"/>
 					</imageobject>
 					<caption>
-						<para>Listado de Trap Servers</para>
+						<para>Acciones que se pueden realizar desde la interfaz de Access Points</para>
 					</caption>
 				</mediaobject>
-				<para>Es posible añadir un nuevo Trap Server clicando sobre la pestaña <literal>+Add,</literal> a continuación, introducir la IP y la Comunidad SNMP a la que pertenece. <literal>Update</literal> para guardar los cambios introducidos.</para>		
-				<para>Eliminar Trap Server: clicar en el icono Eliminar que aparece junto a la información del Trap Server para descartarlo. </para>
 				<mediaobject>
 					<imageobject>
-						<imagedata scalefit="1" align="center" width="350" fileref="images/ch11_img029.png"/>
+						<imagedata scalefit="1" align="center" width="350" fileref="images/ch11_img034bc.png"/>
 					</imageobject>
 					<caption>
-						<para>Añadir nuevo Trap Server</para>
+						<para>Ejemplo de listado de Access Points (a nivel de dominio)</para>
 					</caption>
 				</mediaobject>
-			</section>
-			<section>
-				<title>Segmentos</title>
-				<note>
-					<title>Nota</title>
-					<para>Esta sección aplica únicamente a nivel de sensor.</para>
-				</note>
-				<para>En este apartado se muestra un listado con los segmentos que se han creado durante el proceso de registro de sensores en el Manager. La información que muestra es la siguiente: Segmento, interfaces, Bypass (check activado o desactivado), tipo de segmento y velocidad.</para>
-				<para>Desde esta sección se puede activar o desactivar la función bypass. </para>
 				<mediaobject>
 					<imageobject>
-						<imagedata scalefit="1" align="center" width="350" fileref="images/ch11_img030.png"/>
+						<imagedata scalefit="1" align="center" width="350" fileref="images/ch11_img034bd.png"/>
 					</imageobject>
 					<caption>
-						<para>Información sobre los segmentos de red asociados al sensor</para>
+						<para>Ejemplo de Zonas de ubicación de Access Points</para>
 					</caption>
 				</mediaobject>
-			</section>
-			<section>
-				<title>Network routes</title>
-				<note>
-					<title>Nota</title>
-					<para>Esta opción solo se encuentra disponible en el menú de configuración a nivel de dominio</para>
-				</note>
-				<para>Permite la configuración de rutas adicionales que complementan a la pasarela predeterminada.</para>
 				<mediaobject>
 					<imageobject>
-						<imagedata scalefit="1" align="center" width="350" fileref="images/ch11_img031.png"/>
-					</imageobject>
-					<caption>
-						<para>Rutas estáticas de red</para>
-					</caption>
-				</mediaobject>
-				<para> Es posible añadir una nueva ruta mediante la pestaña <literal>+Add Route.</literal> A continuación insertar red y pasarela de red.</para>
-				<mediaobject>
-					<imageobject>
-						<imagedata scalefit="1" align="center" width="350" fileref="images/ch11_img032.png"/>
-					</imageobject>
-					<caption>
-						<para>Añadir nueva ruta de red: <literal>Network Route</literal></para>
-					</caption>
-				</mediaobject>
-			</section>
-			<section>
-				<title>Location</title>
-				<para>Localiza el sensor o el dominio en un mapamundi.</para>
-				<para><emphasis role="bold">Añadir localización:</emphasis> para agregar una localización, el usuario puede hacerlo desde la pestaña <literal>+Add Location</literal> e introducir las coordenadas, o bien, añadir localización directamente en el mapa. Posar el ratón sobre la localización seleccionada y hacer clic en el botón derecho del ratón. Seleccionar "Add location" en el menú desplegable.</para>
-				<mediaobject>
-					<imageobject>
-						<imagedata scalefit="1" align="center" width="350" fileref="images/ch11_img033.png"/>
-					</imageobject>
-					<caption>
-						<para>Añadir localización del sensor</para>
-					</caption>
-				</mediaobject>
-				<warning>
-					<title>Advertencia</title>
-					<para>Para poder visualizar datos en la vista <literal>Maps</literal> es necesario añadir las localizaciones de los sensores en esta interfaz.</para>
-				</warning>
-			</section>
-			<section>
-				<title>IP Variables</title>
-				<para>En este apartado se muestran los valores para las variables IP Snort. Aquellas que sean heredadas de un nivel superior, aparecerán con un check en la casilla <literal> Inherited.</literal></para>
-				<mediaobject>
-					<imageobject>
-						<imagedata scalefit="1" align="center" width="350" fileref="images/ch11_img042.png"/>
-					</imageobject>
-					<caption>
-						<para>Variables IP</para>
-					</caption>
-				</mediaobject>
-				<para>En este apartado, el usuario puede editar la variable, haciendo clic en el icono de configuración; a continuación insertar el nombre de la variable y el valor.</para>
-				<para>También es posible eliminar una variable del listado mediante el icono "Eliminar" que aparece en cada una de las filas.</para>
-				<note>
-					<title>Nota</title>
-					<para>Para más información acerca de los valores de las variables IP consultar el siguiente enlace: http://manual.snort.org/node53.html</para>
-				</note>
-				<mediaobject>
-					<imageobject>
-						<imagedata scalefit="1" align="center" width="350" fileref="images/ch11_img043.png"/>
-					</imageobject>
-					<caption>
-						<para>Editar valores de las Variables IP</para>
-					</caption>
-				</mediaobject>
-				<para>Es posible Exportar e importar variables IP desde las pestañas <literal>Export</literal> e <literal>Import.</literal>El formato de archivo usado en la importación y exportación debe ser .csv</para>
-				<para>La opción de importación de variables ofrece la posibilidad de Añadir variables o reemplazar las existentes.</para>
-				<warning>
-					<title>Advertencia</title>
-					<para>En el caso de seleccionar la opción Importar variables><literal>Replace variables</literal> las nuevas variables anularán los valores que se muestran en la lista en caso de que la variable ya existiera y ésta, no fuera heredada.</para>
-				</warning>
-				<mediaobject>
-					<imageobject>
-					<imagedata scalefit="1" align="center" width="350" fileref="images/ch11_img044.png"/>
+						<imagedata scalefit="1" align="center" width="350" fileref="images/ch11_img034be.png"/>
 				</imageobject>
-				<caption>
-					<para>Importar variables IP</para>
-				</caption>
-				</mediaobject>
-			</section>
-			<section>
-				<title>Port variables</title>
-				<para>En este apartado se muestran los valores para las variables de los puertos Snort. Aquellas que sean heredadas de un nivel superior, aparecerán con un check en la casilla <literal> Inherited.</literal></para>
-				<mediaobject>
-					<imageobject>
-						<imagedata scalefit="1" align="center" width="350" fileref="images/ch11_img045.png"/>
-					</imageobject>
 					<caption>
-						<para>Port variables</para>
-					</caption>
-				</mediaobject>
-				<para>En este apartado, el usuario puede editar la variable, haciendo clic en el icono de configuración; a continuación insertar el nombre de la variable y el valor.</para>
-				<para>También es posible eliminar una variable del listado mediante el icono "Eliminar" que aparece en cada una de las filas.</para>
-				<note>
-					<title>Nota</title>
-					<para>Para más información acerca de los valores de las variables de puertos Snort consultar el siguiente enlace: http://manual.snort.org/node54.html</para>
-				</note>
-				<mediaobject>
-					<imageobject>
-						<imagedata scalefit="1" align="center" width="350" fileref="images/ch11_img046.png"/>
-					</imageobject>
-					<caption>
-						<para>Editar valores de las Variables de puertos Snort</para>
-					</caption>
-				</mediaobject>
-				<para>Es posible Exportar e importar variables de puertos desde las pestañas <literal>Export</literal> e <literal>Import.</literal> El formato de archivo usado en la importación y exportación debe ser .csv</para>
-				<para>La opción de importación de variables ofrece la posibilidad de Añadir variables o reemplazar las existentes.</para>
-				<warning>
-					<title>Advertencia</title>
-					<para>En el caso de seleccionar la opción Importar variables><literal>Replace variables</literal> las nuevas variables anularán los valores que se muestran en la lista en caso de que la variable ya existiera y ésta, no fuera heredada.</para>
-				</warning>
-				<mediaobject>
-					<imageobject>
-						<imagedata scalefit="1" align="center" width="350" fileref="images/ch11_img044.png"/>
-					</imageobject>
-					<caption>
-						<para>Importar variables de puertos Snort</para>
+						<para>Añadir una nueva zona de Access Points</para>
 					</caption>
 				</mediaobject>
 			</section>
-			<section>
-				<title>Grupos</title>
-				<para>Una de las nuevas funcionalidades de la web redBorder es la posibilidad de crear grupos de sensores. Esto aumenta la flexibilidad asociada al software, ya que, a diferencia de la anterior versión en la que una política debía aplicarse por completo para un sensor (independientemente de los segmentos creados), permite la formación de grupos de segmentos independientes.</para>
-				<para>De este modo, el usuario puede asignar una política y no otra, a cada grupo de segmentos, divididos a su vez, en subgrupos o bindings.</para>
-				<note>
-					<title>Nota</title>
-					<para>Gracias a los grupos de sensores, con una sola máquina, el usuario puede crear numerosos entornos para aplicar diferentes reglas.</para>
-				</note>
-				<para>Antes de proceder a explicar las diferentes acciones que se pueden realizar sobre un grupo de segmentos se deben tener en cuenta las siguientes consideraciones:</para>
-				<itemizedlist mark="bullet">
-					<listitem>
-						<para>No es posible que dos grupos compartan los mismos segmentos.</para>
-					</listitem>
-					<listitem>
-						<para>Sensores IPS: solo pueden colgar de ellos sus propios grupos y bindings.</para>
-					</listitem>
-					<listitem>
-						<para>Los grupos y los bindigs pueden moverse y hacerlos depender de dominios. Sin embargo estos, tan solo pueden ser devueltos al sensor IPS al que pertenecían antes de moverlos.</para>
-					</listitem>
-				</itemizedlist>
-				<para>La información que se muestra en este partado es la siguiente: nombre del sensor, modo del sensor (es posible cambiar el modo directamente en este apartado o bien en IPS/IDS), segmentos y CPUs asignadas.</para>
-				<para>En cualquier momento se puede borrar un grupo mediante el icono "Eliminar". El sistema mostrará un mensaje de confirmación. </para>
-				<important>
-					<title>Importante</title>
-					<para>En caso de que un grupo tuviera asignada una serie de políticas, al eliminar el grupo, estas dejarán de aplicarse en este grupo de segmentos. Los segmentos quedarán libres para su integración en otro grupo. </para>
-				</important>
-				<mediaobject>
-					<imageobject>
-						<imagedata scalefit="1" align="center" width="350" fileref="images/ch11_img048.png"/>
-					</imageobject>
-					<caption>
-						<para>Grupos de segmentos en sensores</para>
-					</caption>
-				</mediaobject>
-				<para><emphasis role="bold">Añadir/editar nuevo grupo</emphasis></para>
-				<para>Es posible tanto editar la configuración de los grupos ya creados como añadir nuevos grupos desde esta sección.</para>
-				<para>Para añadir un nuevo grupo basta con seleccionar la opción <literal>+Add Group.</literal></para>
-				<para>Para la edición de un grupo ya existente, hacer clic sobre el icono de configuración situado en la fila correpsondiente al grupo que se quiera editar.</para>
-				<para>Asimismo, es posible borrar los bindings en cualqueir momento mediante el icono "Eliminar".</para>
-				<para>En ambos casos, el usuario accederá a una pantalla desde la que podrá crear subgrupos o <emphasis>Bindings</emphasis> tal y como se muestra en la imagen siguiente:</para>
-				<mediaobject>
-					<imageobject>
-						<imagedata scalefit="1" align="center" width="350" fileref="images/ch11_img052.png"/>
-					</imageobject>
-					<caption>
-						<para>Añadir/editar grupo de segmentos</para>
-					</caption>
-				</mediaobject>
-				<para><emphasis>Añadir/editar bindings</emphasis></para>
-				<para>En el último apartado de la interfaz de edición de Grupos de segmentos se encuentra la opción de editar (mediante el icono situado en la fila correspondiente al binding o subgrupo que queramos editar) o añadir binding (<literal>+Add Binding.</literal>)</para>
-				<para>Cuando añadimos un nuevo binding el sistema nos solicita un nombre. A continuación, para que este binding sea tenido en cuentaa, hay que asignarle, al menos, una Vlan.</para>
-				<para>Para editar el binding basta con seleccionar el icono de configuración que se encuentra situado en la fila del binding que se desea editar. A continuación visualizará la siguiente pantalla:</para>
-				<mediaobject>
-					<imageobject>
-						<imagedata scalefit="1" align="center" width="350" fileref="images/ch11_img053.png"/>
-					</imageobject>
-					<caption>
-						<para>Editar bindings</para>
-					</caption>
-				</mediaobject>
-			</section>
+			
+			
+			
 		</section>
 		<section>
 			<title>Monitores</title>
@@ -1001,6 +601,8 @@
 			</mediaobject>
 		</section>
 	</section>
+	
+	<!--echar para arriba-->
 	<section>
 		<title>Opciones de configuración y edición de los sensores Flow</title>
 		<para>La configuración y edición de los sensores Flow es posible de dos maneras diferentes: seleccionando <literal>View>Flow sensors</literal> o bien, mediante el icono de configuración que se encuentra en la fila correspondiente al sensor Flow en la vista árbol. </para>

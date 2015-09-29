@@ -15,7 +15,7 @@
 		<title>Nota</title>
 		<para>En la siguiente imagen podemos observar que la sección IPS presenta una estructura similar a la interfaz de la sección de Flow. Es por este motivo que, para conocer la estructura y operativa de la sección, el usuario puede consultar el capítulo "Eventos: Flow". </para>
 	</note>
-	<para>En el caso de la App IPS, se introduce una nueva pestaña en el menú superior derecho: <literal>Events</literal> que nos permite visualizar y gestionar algunos elementos propios de los eventos IPS.</para>
+	<para>En el caso de la App IPS, las unidades de medida en las que se muestran los datos en la gráfica o agregación aprecen bajo el nombre <literal>Events</literal>.</para>
 		<mediaobject>
 			<imageobject>
 				<imagedata scalefit="1" align="center" width="350" fileref="images/ch07_img000.png"/>
@@ -29,7 +29,7 @@
 		</mediaobject>
 	<section>
 		<title>Eventos</title>
-		<para>En el submenú de cabecera encontramos la sección <emphasis>Events</emphasis> (entre las pestañas de Vista y granuralidad) que nos permite seleccionar las siguientes opciones para el análisis de eventos recogidos por los sensores IPS.</para>
+		<para>En el submenú de cabecera encontramos la sección <emphasis>Events</emphasis> (entre las pestañas de Vista y granuralidad) que nos permite seleccionar la agregación para visualizar los eventos IPS.</para>
 		<itemizedlist mark="bullet">
 			<listitem>
 				<para>Eventos (<literal>Events</literal>)</para>
@@ -39,9 +39,6 @@
 			</listitem>
 			<listitem>
 				<para>Firmas (<literal>Signature</literal>)</para>
-			</listitem>
-			<listitem>
-				<para>Riesgo (<literal>Risk</literal>)</para>
 			</listitem>
 		</itemizedlist>
 		<note>
@@ -116,23 +113,11 @@
 				</caption>
 			</mediaobject>
 		</section>
-		<section>
-			<title>Risk</title><!--Captura con datos-->
-			<para>Muestra la media del score que tienen las IPs involucradas en el tráfico que se está observando.</para>
-			<mediaobject>
-				<imageobject>
-					<imagedata scalefit="1" align="center" width="350" fileref="images/ch07_img031.png"/>
-				</imageobject>
-				<caption>
-					<para>Riesgo/SRC Address</para>
-				</caption>
-			</mediaobject>
-		</section>
 	</section>
 	<section>
 		<title>Gestión de eventos IPS en la vista Raw</title>
-		<para>La vista Raw nos permite visualizar todos los eventos recogidos por los sensores IPS en bruto, sin agregación ninguna. Combinado con el tipo de gráfica Stream nos permite, además, visualizar el flujo de datos que se está produciendo dentro de la red. </para>
-		<para>Cada columna de la tabla de datos nos muestra los valores que corresponden con los atributos seleccionados, así como el riesgo (<literal>Risk</literal>) y el intervalo de tiempo entre eventos (<literal>Timestamp</literal>).</para>
+		<para>La vista Raw nos permite visualizar todos los eventos recogidos por los sensores IPS por atributo y segmentados por franjas de tiempo. Combinado con el tipo de gráfica Stream nos permite, además, visualizar el flujo de datos que se está produciendo dentro de la red. </para>
+		<para>Cada columna de la tabla de datos nos muestra los valores que corresponden con los atributos seleccionados, así como el intervalo de tiempo entre eventos (<literal>Timestamp</literal>).</para>
 		<para>En esta tabla podemos realizar diferentes acciones:</para>
 		<itemizedlist mark="bullet">
 			<listitem>

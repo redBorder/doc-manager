@@ -40,7 +40,7 @@
 			</mediaobject>
 			<itemizedlist mark="bullet">
 				<listitem>
-					<para><emphasis role="bold">Filtros:</emphasis> permiten al usuario aislar una porción de información para conseguir mayor grado de detalle. En esta pestaña, el usuario podrá visualizar el número de filtros que se han aplicado y realizar acciones sobre los mismos: </para>
+					<para><emphasis role="bold">Filtros (<literal>Filters</literal>):</emphasis> permiten al usuario aislar una porción de información para conseguir mayor grado de detalle. En esta pestaña, el usuario podrá visualizar el número de filtros que se han aplicado y realizar acciones sobre los mismos: </para>
 					<para>-Crear un filtro avanzado (<literal>Advanced Search</literal>).</para>
 					<para>-Crear una alarma en base a las condiciones de los filtros aplicados (<literal>Create an alarm</literal>).</para>
 					<para>-Crear un widget basado en los filtros aplicados y aplicarlo en un dashboard o informe (<literal>Create a widget on</literal>).</para>
@@ -111,7 +111,7 @@
 				<listitem>
 					<para><emphasis role="bold">Opciones:</emphasis> en este apartado el usuario podrá realizar diferentes acciones para la gestión de los datos que se muestran en esta sección. Las opciones varían según el tipo de vista seleccionada.</para>
 					<para>-Mostrar Total (<literal>Show Total</literal>)</para>
-					<para>-Filtros guardados/Ocultar filtros (<literal>Saved Filters/Hide Total Filtered</literal>): muestra u oculta el total de filtros que han sido guardados.</para>
+					<para>-Filtros guardados/Ocultar filtros (<literal>Show total filtered/Hide Total Filtered</literal>): muestra u oculta la gráfica teniendo en cuenta los filtros seleccionados.</para>
 					<para>-Máquina del tiempo (<literal>Time Machine</literal>)</para>
 					<para>-Exportar a CSV (<literal>Export to CSV</literal>)</para>
 					<para>-Guardar pestañas como predeterminadas (<literal>Save tab as default</literal>)</para>
@@ -125,7 +125,7 @@
 					</mediaobject>
 				</listitem>
 				<listitem>
-					<para><emphasis role="bold">Atributos:</emphasis> Los eventos recibidos por el Manager están compuestos por duplas del tipo "columna:valor". Los valores que se indican en cada columna pueden entenerse como datos propios del evento que son los que realmente nos aportan información. Estos son llamados "atributos".</para>
+					<para><emphasis role="bold">Atributos:</emphasis> Los eventos recibidos por el Manager están compuestos por duplas del tipo "columna:valor". Los valores que se indican en cada columna pueden entenderse como datos propios del evento que son los que realmente nos aportan información. Estos son llamados "atributos".</para>
 					<para>Los atributos pueden mostrarse de varias maneras: en forma de pestañas o de columnas. <literal>(Add tabs/Columns)</literal> dependiendo de la vista que estemos consultando.</para>
 					<mediaobject>
 						<imageobject>
@@ -175,12 +175,12 @@
 		<section>
 			<title>Datos que se muestran en el pie_ resumen, buscador y tabla de datos</title>
 			<para><emphasis role="bold">Resumen:</emphasis> bajo el área de Vista se encuentra un resumen relativo a todos los datos cargados que aparecen tanto en la vista como en la tabla de datos. En este resumen se indican, por este orden, el valor total de la agregación de todos los datos cargados, el valor total de la agregación de todos los datos cargados y seleccionados, el número de filas de datos cargadas y el porcentaje del valor agregado de los datos cargados sobre el total de datos. </para>
-			<para><emphasis role="bold">Buscador: </emphasis> permite realizar una búsqueda por atributo. Las búsquedas pueden convertirse en filtros tal y como veremos más adelante.</para>
+			<para><emphasis role="bold">Buscador: </emphasis> permite realizar una búsqueda por atributo. Las búsquedas se convierten en filtros automáticamente tal y como veremos más adelante.</para>
 			<para><emphasis role="bold">Tabla de datos:</emphasis> muestra los valores clasificados por tipo de atributo seleccionado.  Por ejemplo, cada fila puede estar mostrando cada una de las IPs de origen (Columna/Atributo: SRC Adress) con el detalle del porcentaje de bytes (Agregación) que está consumiendo ese elemento dentro de la red.</para>
-			<para>Para el análisis aislado de uno o más elementos de esta barra (seleccionar como filtro), es necesario clicar sobre el elemento que desea filtrar. Para selección múltiple basta con mantener pulsadas las teclas <keycap>Ctrl</keycap> o <keycap>Shift</keycap>.</para>
+			<para>Para el análisis aislado de uno o más elementos de esta barra (seleccionar como filtro), es necesario clicar sobre el elemento que desea filtrar. Para selección múltiple basta con mantener pulsada la tecla <keycap>Shift</keycap>.</para>
 			<note>
 				<title>Nota</title>
-				<para>Al posicionar el ratón sobre cualquiera de los elementos de la tabla de datos, se muestra un menú que nos permite realizar directamente acciones sobre ese elemento: incluirlo o exluirlo como filtro, excluirlo de la gráfica o bien, copiar los datos asociados al portapapeles y así tenerlos disponibles para su uso en otras aplicaciones.</para>
+				<para>Al posicionar el ratón sobre cualquiera de los elementos de la tabla de datos visualizaremos un menú que muestra las diferentes acciones que se pueden realizar sobre ese elemento. Dependiendo del tipo de atributo, se mostrarán más o menos opciones en el menú contextual.</para>
 			</note>
 			<mediaobject>
 				<imageobject>
@@ -277,7 +277,7 @@
 				</caption>
 			</mediaobject>
 			<para><emphasis role="bold">Filter Zoom</emphasis></para>
-			<para>El usuario puede seleccionar un lapso de tiempo determinado de manera manual.  Para ello, hacer clic con el ratón en un punto determinado de la gráfica, arrastrar hasta el instante temporal deseado y soltar. De este modo, tendremos la vista para ese rango temporal y la tabla inferior mostrará tan solo los datos incluidos en esta franja. Este filtro se corresponde con <literal>Custom filter</literal> y <literal>Time Machine</literal> puesto que pone la máquina en el estado que tenía en ese periodo seleccionado. Al hacer clic en la opción del submenú <literal>Filters</literal> se indicará el tiempo de inicio (<literal>Start Time</literal>) y de finalización (<literal>End Time</literal>) indicados para ese filtro.</para>
+			<para>El usuario puede seleccionar un lapso de tiempo determinado de manera manual.  Para ello, hacer clic con el ratón en un punto determinado de la gráfica, arrastrar hasta el instante temporal deseado y soltar. De este modo, tendremos la vista para ese rango temporal y la tabla inferior mostrará tan solo los datos incluidos en esta franja. Al hacer clic en la opción del submenú <literal>Filters</literal> se indicará el tiempo de inicio (<literal>Start Time</literal>) y de finalización (<literal>End Time</literal>) indicados para ese filtro.</para>			  
 			<para>En el submenú de sección aparecerá indicado <literal>Filter Zoom.</literal></para>
 			<mediaobject>
 				<imageobject>
@@ -292,6 +292,10 @@
 			</mediaobject>
 			<para><emphasis role="bold">Filtro personalizado</emphasis> (<literal>Custom</literal>)</para>
 			<para>La pestaña <literal>Custom</literal> de la línea de filtrado por rango de tiempo permite realizar un filtrado personalizado. Arrastrando el ratón de un punto a otro en el mes que se quiera consultar, visualizaremos las fechas concretas que se tendrán en cuenta en el filtrado.</para>
+			<note>
+				<title>Nota</title>
+				<para>Al realizar un filtrado personalizado o <literal>Custom</literal> podremos aislar en la gráfica los datos correspondientes a un periodo. Para que estos datos se actualicen también en la tabla de datos es necesario realizar <literal>Filter Zoom.</literal></para>
+			</note>
 			<para>También es posible seleccionar el periodo directamente desde la barra temporal que aparece en el margen superior de esta opción.</para>
 			<para>Clicar en <literal>Submit</literal> para aplicar filtro.</para> 
 			<mediaobject>
@@ -451,7 +455,7 @@
 				<para>Tops: agregación de eventos en base a una unidad para mostrar los más destacados. Suma el total de datos de diferentes eventos para mostrarlo como uno único. </para>
 			</listitem>
 			<listitem>
-				<para>Raw: vista de la totalidad de datos de los eventos en bruto (sin agregación).</para>
+				<para>Raw: vista de la totalidad de datos de los eventos en bruto, clasificados por atributos y franjas de tiempo.</para>
 			</listitem>
 			<listitem>
 				<para>Map: mapa de calor en el que se muestran las IPs (clientes) y Access Points involucrados en el flujo de datos.</para>
@@ -499,7 +503,7 @@
 		</section>
 		<section>
 			<title>Raw</title>
-			<para>Esta vista nos ofrece los datos de los eventos en bruto, por tanto, visualizaremos la totalidad de eventos por atributo, agregación y granuralidad.</para>
+			<para>Esta vista nos ofrece los datos de los eventos en bruto, por tanto, visualizaremos la totalidad de eventos por atributosegmentados por franjas de tiempo.</para>
 			<para>En la tabla de datos recogerá, por tanto, todos los datos de los eventos clasificados por columnas. Los datos se muestran a nivel de pantalla, no obstante, si desea ver más, basta con hacer scroll y esperar a que se carguen más datos: <emphasis>Load more.</emphasis></para>
 			<mediaobject>
 				<imageobject>
@@ -519,7 +523,7 @@
 			</note>
 			<section>
 				<title>Gestión de eventos Flow en vista Raw</title>
-				<para>La vista Raw nos permite visualizar todos los eventos recogidos por los sensores del Flow en bruto, sin agregación ninguna. Combinado con el tipo de gráfica Stream nos permite, además, visualizar el flujo de datos que se está produciendo dentro de la red. </para>
+				<para>La vista Raw nos permite visualizar todos los eventos recogidos por los sensores del Flow en bruto, por atributos y segmentados por franjas de tiempo. Combinado con el tipo de gráfica Stream nos permite, además, visualizar el flujo de datos que se está produciendo dentro de la red. </para>
 				<para>Cada columna de la tabla de datos nos muestra los valores que corresponden con los atributos seleccionados. En esta tabla podemos realizar diferentes acciones:</para>
 				<itemizedlist mark="bullet">
 					<listitem>
@@ -682,7 +686,7 @@
 		</section>
 		<section>
 			<title>Unique</title>
-			<para>A través de la vista <literal>Unique,</literal> el usuario podrá obtener información acerca de los elementos que han interactuado una única vez con la red. Posando el ratón sobre cualquier punto de la gráfica, el usuario obtendrá el resultado total de elementos únicos para el lapso de tiempo seleccionado.</para>
+			<para>A través de la vista <literal>Unique,</literal> el usuario podrá obtener información acerca de los elementos diferentes que han interactuado, al menos, una vez con la red en un periodo de tiempo determinado. Posando el ratón sobre cualquier punto de la gráfica, el usuario obtendrá el resultado total de elementos únicos para el lapso de tiempo seleccionado.</para>
 			<para><literal>Group by</literal> (disponible solo en vista Unique): nos permite agrupar los datos que se muestran en la gráfica en base a un atributo determinado. Esta opción facilita el filtrado y clasificación de los elementos según los criterios de análisis que necesitemos.</para>
 			<mediaobject>
 				<imageobject>
@@ -727,8 +731,6 @@
 				<para>quality</para>
 			</listitem>
 			<listitem>
-				<para>risk</para>
-			</listitem><listitem>
 				<para>wireless stations</para>
 			</listitem>
 			<listitem>
@@ -768,7 +770,7 @@
 	</section>
 	<section>
 		<title>Granularidad</title>
-		<para>Llamamos granularidad al grado de detalle con el que podemos visualizar los eventos en redBorder. Se trata de saltos temporales que van desde 1 hasta 30 minutos. Con esta vista el usuario puede analizar el tráfico de red en tiempo real.</para>
+		<para>Llamamos granularidad al grado de detalle con el que podemos visualizar los eventos en redBorder. Las opcioens de granuralidad varían según el rango de tiempo que se esté mostrando (1h., 2h., last week, last month, etc.). Con esta vista el usuario puede analizar el tráfico de red en tiempo real.</para>
 		<para>Como se observa en la imagen, según el lapso de tiempo seleccionado, el usuario puede conocer el detalle del tráfico, por ejemplo, por sensor en lapsos de dos minutos.</para>
 		<mediaobject>
 			<imageobject>
@@ -783,7 +785,7 @@
 		</mediaobject>
 		<note>
 			<title>Nota</title>
-			<para>La vista <literal>Raw</literal> es la más indicada para aplicar granuralidad para observar los datos en detalle</para>
+			<para>La vista <literal>Raw</literal> es la más indicada para aplicar granuralidad para observar los datos en detalle.</para>
 		</note>
 		<mediaobject>
 			<imageobject>
