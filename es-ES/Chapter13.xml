@@ -293,7 +293,7 @@
 					<imagedata scalefit="1" align="center" width="350" fileref="images/ch11_img028.png"/>
 				</imageobject>
 				<caption>
-					<para> General Settings: Listado de Trap Servers</para>
+					<para>General Settings: Listado de Trap Servers</para>
 				</caption>
 			</mediaobject>
 			<para><emphasis role="bold">Añadir Trap Server:</emphasis> Es posible añadir un nuevo <literal>Trap Server</literal> clicando sobre la pestaña <literal>+Add,</literal> a continuación, introducir la IP y la Comunidad SNMP a la que pertenece. <literal>Update</literal> para guardar los cambios introducidos.</para>		
