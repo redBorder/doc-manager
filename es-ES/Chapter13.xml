@@ -211,8 +211,8 @@
 		</mediaobject>		
 	</section>
 	<section>
-		<title>Configuración general</title><!--detenerme-->
-		<para>La opción <literal>General Settings</literal> nos muestra una interfaz cuya edición va a ser determinante tanto para la configuración de la plataforma como de la infraestructura de red, tal y como se explicó en el capítulo dedicado a la sección sensores (<literal>Sensors.</literal>)</para>
+		<title>Configuración general</title>
+		<para>La opción <literal>General Settings</literal> nos muestra una interfaz cuya edición va a ser determinante tanto para la configuración de la plataforma como de la infraestructura de red, tal y como se mencionó en (<literal>Sensors>Vistas>Vista árbol</literal>)</para>
 		<mediaobject>
 			<imageobject>
 				<imagedata scalefit="1" align="center" width="350" fileref="images/ch13_img006.png"/>
@@ -306,9 +306,6 @@
 					<para>General Settings: Añadir nuevo Trap Server</para>
 				</caption>
 			</mediaobject>
-			<para><emphasis role="bold">Radius Accounting</emphasis></para><!--Falta consultar con Pablo-->
-			<para><emphasis role="bold">Radius Proxy Authentication</emphasis></para>
-			
 			<para><emphasis role="bold">White network</emphasis></para>
 			<para>En este apartado se indican las redes cuyo tráfico pasará sin inspección de los paquetes, debido a que las consideramos redes de reputación "fiable".</para>
 			<para>Añadir una nueva red: hacer clic en el botón <literal>+Add</literal> e indicar la IP de la red.</para>
@@ -377,7 +374,7 @@
 					<imagedata scalefit="1" align="center" width="350" fileref="images/ch13_img016.png"/>
 				</imageobject>
 				<caption>
-					<para><literal>General settings:</literal> Comnas predeteminadas-Location</para>
+					<para><literal>General settings:</literal> Columnas predeteminadas-Location</para>
 				</caption>
 			</mediaobject>
 	</section>
