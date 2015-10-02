@@ -67,7 +67,7 @@
 					<para>Vista <literal>Tree</literal></para>
 				</caption>
 			</mediaobject>
-			<para>Desde esta vista el usuario puede añadir un nuevo dominio o sensor, eliminar los ya existentes, acceder a otras vistas, importar y exportar el árbol así como realizar la edición directa de los dominios y sensores que se ecnuentran en el listado.</para>
+			<para>Desde esta vista el usuario puede añadir un nuevo dominio o sensor, eliminar los ya existentes, acceder a otras vistas, importar y exportar el árbol así como realizar la edición directa de los dominios y sensores que se encuentran en el listado.</para>
 			<para>Todos los elementos que se muestran en el árbol viene acompañados de dos iconos que permiten su edición o borrado (estos iconos aplican tanto para la vista árbol como para la de sensores):</para>
 			<mediaobject>
 				<imageobject>
@@ -94,7 +94,7 @@
 					<para>Confirmar eliminación de sensor</para>
 				</caption>
 			</mediaobject>
-			<para>En esta vista también encontramos un icono que indica el tipo de política que rige para cada dominio o sensor. Al hacer clic sobre él, accederemos a una interfaz en la que se muestran las firmas que componen esa política y desde la que podemos realizar diferentes acciones que serán explicadas con detalle en el capítulo en el que se abordan las <emphasis>Policy rules.</emphasis></para>
+			<para>En esta vista también encontramos un icono que indica el tipo de política que rige para cada dominio o sensor (de tipo ips). Al hacer clic sobre él, accederemos a una interfaz en la que se muestran las firmas que componen esa política y desde la que podemos realizar diferentes acciones que serán explicadas con detalle en el capítulo en el que se abordan las <emphasis>Policy rules.</emphasis></para>
 			<mediaobject>
 				<imageobject>
 					<imagedata scalefit="1" align="center" width="50" fileref="images/ch11_img014.png"/>
@@ -297,7 +297,7 @@
 					<imagedata scalefit="1" align="center" width="350" fileref="images/ch11_img033b.png"/>
 				</imageobject>
 				<caption>
-					<para>Definir coordenadas para añadir una locaclización para sensor o dominio</para>
+					<para>Definir coordenadas para añadir una localización para sensor o dominio</para>
 				</caption>
 			</mediaobject>			
 		</section>
@@ -400,7 +400,7 @@
 			<para>La vista de sensores nos ofrece la posibilidad de conocer en un solo vistazo qué sensores de cada App están asociados al Manager. Por ello, para acceder a esta vista el usuario tendrá que seleccionar el tipo de sensores que desea consultar. Una vez que ha accedido a esta vista, el usuario podrá ver un listado de todos los sensores de esa tipología. </para>
 			<para>Esta vista es muy útil para visualizar de manera conjunta todos los sensores según tipología y la información que disponemos de ellos.</para>
 			<para>Este listado se encuentra organizado alfabéticamente. Tanto las columnas de la tabla como las opciones disponibles variarán según el tipo de sensor elegido. </para>
-			<para>Desde esta vista es posible crear de manera directa un nuevo sensor de la tipo que se esté consultando. Este sensor aparecerá como dependiente al nivel superior o <literal>Root</literal> y heredará todas sus configuraciones. Para situarlo en otro nivel, incluirlo dentro de un dominio o determinar su dependencia, el usuario deberá hacerlo desde la vista Árbol</para>
+			<para>Desde esta vista es posible crear de manera directa un nuevo sensor deL tipo que se esté consultando. Este sensor aparecerá como dependiente al nivel superior o <literal>Root</literal> y heredará todas sus configuraciones. Para situarlo en otro nivel, incluirlo dentro de un dominio o determinar su dependencia, el usuario deberá hacerlo desde la vista Árbol</para>
 			<para>Para editar su configuración, hacer clic en el botón Editar.</para>
 			<mediaobject>
 				<imageobject>
@@ -587,7 +587,7 @@
 					<para>-Habilitar puerto SPAN: activar en caso de que los flujos del Flow provenientes de ese sensor se encuentren asociados a un puerto Span.</para>
 				</listitem>
 				<listitem>
-					<para>-Activar NSMP: esta opción aparecerá en el caso de los sensores WLC. A través de este protocolo, redBorder es capaz de detectar qué puntos de acceso están asociados a cada cliente y el estado de salud del controlador WLC. Activar el check de la opción que desee.</para>
+					<para>-Active NSMP: esta opción aparecerá en el caso de los sensores WLC. A través de este protocolo, redBorder es capaz de detectar qué puntos de acceso están asociados a cada cliente y el estado de salud del controlador WLC. Activar el check de la opción que desee.</para>
 				</listitem>
 				<listitem>
 					<para>-Active Radius: activar esta opción para que redBorder reciba la información del Radius Accounting de dicho sensor. Con esta información la plataforma es capaz de detectar el nombre de usuario asociado al cliente y también, el AP al qu está conectado el mismo. </para>

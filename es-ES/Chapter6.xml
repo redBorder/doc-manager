@@ -139,7 +139,7 @@
 			</itemizedlist>
 		</section>
 		<section>
-			<title>Datos que se muestran en el cuerpo de la pantalla: filtrado por rango de tiempo, pestañas de atributos y vistas</title>
+			<title>Cuerpo de la pantalla: filtrado por rango de tiempo, pestañas de atributos y vistas</title>
 			<para><emphasis role="bold">Filtrado por rango de tiempo:</emphasis> acceso directo a los eventos filtrados en base a un periodo de tiempo: última 1h., 2h., 3h., 12h., 24h., última semana, último mes, filtro personalizado.</para>
 			<para>Existe la posibilidad de seleccionar un rango de fechas diferente a las que se ofrecen por defecto. Dependiendo de las necesidades del usuario, podrá realizar una selección de tiempo personalizada a través de la opción <literal>Custom</literal>. Más adelante se especificará el procedimiento a seguir para realizar un filtro temporal personalizado.</para>
 			<para><emphasis role="bold">Pestañas de atributos:</emphasis> clasifican la información del tráfico de red por atributos. Navegando por cada una de las pestañas podemos conocer en detalle los valores asociados a los atributos que hayamos seleccionado.</para>
@@ -173,7 +173,7 @@
 			</mediaobject>
 		</section>
 		<section>
-			<title>Datos que se muestran en el pie_ resumen, buscador y tabla de datos</title>
+			<title>Resumen, buscador y tabla de datos</title>
 			<para><emphasis role="bold">Resumen:</emphasis> bajo el área de Vista se encuentra un resumen relativo a todos los datos cargados que aparecen tanto en la vista como en la tabla de datos. En este resumen se indican, por este orden, el valor total de la agregación de todos los datos cargados, el valor total de la agregación de todos los datos cargados y seleccionados, el número de filas de datos cargadas y el porcentaje del valor agregado de los datos cargados sobre el total de datos. </para>
 			<para><emphasis role="bold">Buscador: </emphasis> permite realizar una búsqueda por atributo. Las búsquedas se convierten en filtros automáticamente tal y como veremos más adelante.</para>
 			<para><emphasis role="bold">Tabla de datos:</emphasis> muestra los valores clasificados por tipo de atributo seleccionado.  Por ejemplo, cada fila puede estar mostrando cada una de las IPs de origen (Columna/Atributo: SRC Adress) con el detalle del porcentaje de bytes (Agregación) que está consumiendo ese elemento dentro de la red.</para>
