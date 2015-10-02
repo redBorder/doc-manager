@@ -343,7 +343,7 @@
 				</caption>
 			</mediaobject>
 			<para><emphasis role="bold">Geo IP</emphasis></para>
-			<para>Para habilitar la función de Geo Protección en necesario disponer de una base de datos de geolocalización actualizada para evitar errores con la geolocalizació de las IPs. redBorder ha sido configurada para soportar tan solo el formato de base de datos Maxmind.</para>
+			<para>Para habilitar la función de Geo Protección en necesario disponer de una base de datos de geolocalización actualizada para evitar errores con la geolocalización de las IPs. redBorder ha sido configurada para soportar tan solo el formato de base de datos Maxmind.</para>
 			<!--Nota sobre bbdd maxmind?-->
 			<para>Estos son los tipos de bases de datos que son admitidas para las versiones IPv4 y IPv6 (formato binario antiguo GeoIP):</para>
 			<itemizedlist mark="bullet">
@@ -367,7 +367,7 @@
 				</caption>
 			</mediaobject>
 			<para><emphasis role="bold">Columnas predeterminadas: flow, Location y Monitor</emphasis></para>
-			<para>Los apartados <literal>Default columns Flow,</literal> <literal>Default columns Location,</literal> <literal>Default columns Monitor</literal> permiten que el usuario personalice las columnas (atributos, elementos, agregación, etc.) que se muetsran por defecto en las tablas de cada una de las secciones mencionadas.</para>
+			<para>Los apartados <literal>Default columns Flow,</literal> <literal>Default columns Location,</literal> <literal>Default columns Monitor</literal> permiten que el usuario personalice las columnas (atributos, elementos, agregación, etc.) que se muestran por defecto en las tablas de cada una de las secciones mencionadas.</para>
 			<para>Para incluir o excluir una columna, seleccionar o deseleccionar el check correspondiente.</para>	
 			<mediaobject>
 				<imageobject>
@@ -394,7 +394,7 @@
 	</section>
 	<section>
 		<title>Lookup Sources</title>
-		<para>Listado de URLs de los servicios web que realizan las consultas de los datos de red. Desde esta pantalla es posible ñadir más servicios web, así como editar los ya existentes.</para>
+		<para>Listado de URLs de los servicios web que realizan las consultas de los datos de red. Desde esta pantalla es posible añadir más servicios web, así como editar los ya existentes.</para>
 		<para>Eliminar un servicio: clic en el botón "Eliminar".</para>
 		<para>Editar un servicio ya existente: hacer clic en el icono de "Edición":</para>
 		<mediaobject>
@@ -475,7 +475,7 @@
 	<section>
 		<title>Usuarios</title>
 		<para>El alta o modificación de los datos de los usuarios, la gestión de sus permisos o la creación de nuevos registros es posible desde la interfaz <literal>Users settings.</literal></para>
-		<para>Para buscar un usuari concreto es posible introducir sus datos en el buscador, o bien, navegar por el listado alfabético que se muetsra sobre el listado de usuairos dados de alta.</para>
+		<para>Para buscar un usuario concreto es posible introducir sus datos en el buscador, o bien, navegar por el listado alfabético que se muetsra sobre el listado de usuairos dados de alta.</para>
 		<para>Solo el usuario con el rol de Súperadministrador tiene habilitada esta función. El resto de usuarios solo podrá visualizar las diferentes secciones de la plataforma, pero no modificar su contenido (salvo en el caso de su propio perfil de usuario).</para>
 		<mediaobject>
 			<imageobject>
