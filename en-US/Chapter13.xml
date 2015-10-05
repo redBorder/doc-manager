@@ -536,12 +536,11 @@
 				<imagedata scalefit="1" align="center" width="350" fileref="images/ch13_img015.png"/>
 			</imageobject>
 			<caption>
-			 <para>User area</para>
-			</caption>
-		</mediaobject>
+				<para>User area</para>
+            </caption>
+        </mediaobject>
         <para><literal>Notifications</literal></para>
-        <para>To view a summary list of notifications simply click on
-		<literal>Administrator.</literal> To access a complete list of them, select the option <literal>View All</literal> or click on any of the notifications that appear in the summary; in this way you can access a new screen from which you can view the details of notifications, and remove all of them through the option <literal>Delete All</literal></para>
+        <para>To view a summary list of notifications simply click on <literal>User's area.</literal> To access a complete list of them, select the option <literal>View All</literal> or click on any of the notifications that appear in the summary; in this way you can access a new screen from which you can view the details of notifications, and remove all of them through the option <literal>Delete All</literal></para>
 		<mediaobject>
 			<imageobject>
 				<imagedata scalefit="1" align="center" width="350" fileref="images/ch13_img015b.png"/>

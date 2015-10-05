@@ -40,14 +40,14 @@
 		</mediaobject>
 		<note>
 			<title>Nota</title>
-			<para>Cada vista presenta su propio menú de opciones y las diferentes posibilidades de creación y edición de sensores o dominios a la infraestructura.</para>
+			<para>Cada vista presenta su propio menú de opciones y las diferentes posibilidades de creación y edición de sensores o dominios.</para>
 			<para>La Vista Mapa no presenta opciones disponibles.</para>
 			<para>La gestión de las políticas será abordada en un capítulo independiente.</para>
 		</note>
 	</section>
 	<section>
 		<title>Vista (<literal>View</literal>)</title>
-		<para>Nada más acceder a <literal></literal>Sensors, el usuario encuentra un listado (vista de árbol) en el que aparecen todos los dominios y sensores que componen su infraestructura de red. En este punto vamos a repasar cada una de las vistas disponibles y las acciones que podemos realizar desde las mismas.</para>
+		<para>Al acceder a la sección <literal>Sensors</literal>, el usuario encuentra un listado (vista de árbol) en el que aparecen todos los dominios y sensores que componen su infraestructura de red. En este punto vamos a repasar cada una de las vistas disponibles y las acciones que podemos realizar desde las mismas.</para>
 		<mediaobject>
 			<imageobject>
 				<imagedata scalefit="1" align="center" width="350" fileref="images/ch11_img005.png"/>
@@ -83,7 +83,7 @@
 			</note>
 			<note>
 				<title>Nota</title>
-				<para>Algunos sensores no pueden ser eliminados. En este caso, el icono "eliminar" aparecerá sombrado en gris, lo que indica que esta opción se encuentra inhabilitada.</para>
+				<para>Algunos sensores no pueden ser eliminados. En este caso, el icono "eliminar" aparecerá sombrado en gris.</para>
 				<para>Antes de que un dominio o sensor sea eliminado, el sistema le mostrará una pantalla de confirmación avisándole de que todos los usuarios asignados a ese dominio y sus descendientes serán desactivados y asignados a los padres del dominio. Un usuario con rol de administrador deberá volver a habilitarles desde la sección <literal>Tools>Users.</literal></para>	
 			</note>
 			<mediaobject>
@@ -94,7 +94,7 @@
 					<para>Confirmar eliminación de sensor</para>
 				</caption>
 			</mediaobject>
-			<para>En esta vista también encontramos un icono que indica el tipo de política que rige para cada dominio o sensor (de tipo ips). Al hacer clic sobre él, accederemos a una interfaz en la que se muestran las firmas que componen esa política y desde la que podemos realizar diferentes acciones que serán explicadas con detalle en el capítulo en el que se abordan las <emphasis>Policy rules.</emphasis></para>
+			<para>En esta vista también encontramos un icono que indica el tipo de política que rige para cada dominio o sensor IPS. Al hacer clic sobre él, accederemos a una interfaz en la que se muestran las firmas que componen esa política y desde la que podemos realizar diferentes acciones que serán explicadas con detalle en el capítulo en el que se abordan las <emphasis>Policy rules.</emphasis></para>
 			<mediaobject>
 				<imageobject>
 					<imagedata scalefit="1" align="center" width="50" fileref="images/ch11_img014.png"/>
@@ -143,7 +143,7 @@
 					</listitem>
 					<listitem>
 						<para><emphasis role="bold">Sensores:</emphasis> nodos finales que se corresponden con elementos físicos colocados en la red (switches, routers, IPS, etc.).</para>
-						<para>A el nivel de sensores se muestra la siguiente información: nombre del sensor, IP, política aplicada, último chequeo y versión. Es posible añadir una descripción al sensor.</para>
+						<para>A nivel de sensores se muestra la siguiente información: nombre del sensor, IP, política aplicada (sensores IPS), último chequeo y versión. Es posible añadir una descripción al sensor.</para>
 					</listitem>
 				</itemizedlist>
 				<note>
@@ -182,7 +182,7 @@
 						<para><literal>Options>Import tree</literal></para>
 					</listitem>
 					<listitem>
-						<para>Botón de edición (a nivel de dominio)</para>
+						<para>Icono de edición (a nivel de dominio)</para>
 					</listitem>
 				</orderedlist>
 				<mediaobject>
@@ -245,7 +245,7 @@
 					<title>Nota</title>
 					<para>Esta opción solo se encuentra disponible en el menú desplegado por el icono Editar a nivel de sensor.</para>
 				</note>
-				<para>Al hacer clic sobre icono del menú de configuración de un sensor, aparece la opción <literal>Monitor</literal>. A continuación, accederemos a una pantalla en la que se visualiza un listado con las métricas de monitorización que queremos aplicarle al sensor.</para>
+				<para>Al hacer clic sobre icono del icono Editar sensor, aparece la opción <literal>Monitor</literal>. A continuación, accederemos a una pantalla en la que se visualiza un listado con las métricas de monitorización que queremos aplicarle al sensor.</para>
 				<para>La columna <literal>Technology</literal> indica el origen desde el que se están recogiendo los datos.</para>
 				<mediaobject>
 					<imageobject>
