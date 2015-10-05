@@ -616,10 +616,10 @@
 					<para>Location: indicates the geographical location of the sensor.</para>
 				</listitem>
 				<listitem>
-					<para>Home Networks: add local networks of client for that sensor.  This way redBorder can directly detect the traffic and IP that belongs to the client. </para>
+					<para>Home Networks: add local networks of client for that sensor. This way redBorder can directly detect the traffic and IP that belongs to the client.</para>
 				</listitem>
 				<listitem>
-					<para>MAC Routers: works the same way as the <literal> Home Networks </literal>, but in this case at level 2 or by MAC address.</para>
+					<para>MAC Routers: works the same way as the <literal> Home Networks </literal> but in this case at level 2 or by MAC address.</para>
 				</listitem>
 			</itemizedlist>
 		</section>

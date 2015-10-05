@@ -422,7 +422,7 @@
 		</section>	
 	</section>
 	<section>
-	<title>Añadir y/o editar un dominio</title>	
+		<title>Añadir y/o editar un dominio</title>	
 		<para>redBorder le permite organizar su infraestructura de red en torno a una serie de dominios o contenedores que identifican la naturaleza, utilidad o localización de los sensores que forman parte de ella.</para>
 		<para>Como hemos visto anteriormente, existen diversos tipos de dominios identificados a través de un icono en la vista de árbol. El proceso de adición de un dominio es muy sencillo; la configuración deberá realizarse posteriormente mediante el botón de edición que encontramos en la vista árbol o <literal>Access Points</literal>.</para>
 		<section>
@@ -619,7 +619,7 @@
 					<para>Home Networks: añade redes locales del cliente para ese sensor. redBorder puede de este modo, detectar directamente el tráfico e IP que pertenece al cliente. </para>
 				</listitem>
 				<listitem>
-					<para>Routers MAC: funciona del mismo modo que las <literal>Home Networks</literal>, pero en este caso a nivel 2 o mediante direacción MAC.</para>
+					<para>Routers MAC: funciona del mismo modo que las <literal>Home Networks</literal> pero en este caso a nivel 2 o mediante dirección MAC.</para>
 				</listitem>
 			</itemizedlist>
 		</section>
