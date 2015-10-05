@@ -56,7 +56,7 @@
 			<para>b) System configuration</para>
 		</listitem>
 	</itemizedlist>   
-    <para>Select<literal>Install Manager</literal>. to start the Manager installation process. Next we’ll proceed by performing a series of basic settings.</para>
+    <para>Select <literal>Install Manager</literal>. to start the Manager installation process. Next we’ll proceed by performing a series of basic settings.</para>
     <section>
 		<title>Manager Installation Process: basic settings</title>
 		<para><emphasis role="bold">a) Select Language</emphasis></para>
@@ -264,7 +264,7 @@
 			</note>
 			<para>After entering these values, the system will warn you that the changes have been applied successfully with the following message labeled in green: <literal>DNS and domain settings applied successfully.</literal></para>
 			<para><emphasis role="bold">Creating bonding</emphasis></para>
-			<para>The next step is to insert the following information: <literal> NTP server [pool.ntp.org]:</literal> If there is an NTP server on your network, you must indicate it. Otherwise, one will be assigned by default. </para>
+			<para>The next step is to insert the following information: <literal>NTP server [pool.ntp.org]:</literal> If there is an NTP server on your network, you must indicate it. Otherwise, one will be assigned by default. </para>
 			<para>Then, the system will prompt you to enter the management IP: <literal>Insert managment IP address:</literal></para>
 			<mediaobject>
 				<imageobject>

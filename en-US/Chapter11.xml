@@ -400,7 +400,7 @@
 			<para>The sensor views provide us the possibility to know at a single glance which sensors of each App is associate with the Manager. Therefore, to access this view the user must select the type of sensors they want to query. Once they have agreed to this view, the user can view a list of all sensors of this type. </para>
 			<para>This view is very useful to display all of the sensors together, according to their type and the information they provide us.</para>
 			<para>This list is organized alphabetically. Both the amount table columns and available options will vary depending on the type of sensor that is chosen. </para>
-			<para>From this view it is possible to directly create a new sensor type you are consulting. This sensor will appear as dependent to the top level or <literal>Root</literal> and will inherit all your settings. To place it on another level, to include it within a domain or determine their dependence, you should do it from the tree view</para>
+			<para>From this view it is possible to directly create a new sensor type you are consulting. This sensor will appear as dependent to the top level or <literal>Root</literal> and will inherit all your settings. To place it on another level, to include it within a domain or determine their dependence, you should do it from the tree view.</para>
 			<para>To edit the settings, click on the Edit button.</para>
 			<mediaobject>
 				<imageobject>
@@ -410,7 +410,7 @@
 					<para>Sensor views: details of sensors that are available to consult </para>
 				</caption>
 			</mediaobject>
-			<para>To consult the sensors the user can perform a search, or alphabetically browse by the list of sensors. </para>	\
+			<para>To consult the sensors the user can perform a search, or alphabetically browse by the list of sensors. </para>	
 			<mediaobject>
 				<imageobject>
 					<imagedata scalefit="1" align="center" width="350" fileref="images/ch11_img038.png"/>
@@ -539,10 +539,10 @@
 			</mediaobject>
 			<important>
 				<title>Important</title>
-				<para>In the moment in which a redBorder sensor is created, by default it\'92s set as the root, above the domain level.</para>
+				<para>In the moment in which a redBorder sensor is created, by default it's set as the root, above the domain level.</para>
 				<para>The user can organize its sensor infrastructure in any moment, dragging and dropping the sensor in the level they want to place it in.</para>
 				<para>The sensor automatically inherits the properties of the root domain (political, operating mode, Snort variables, etc.).</para>
-			</important>			\
+			</important>			
 		</section>
 		<section>
 			<title>Edit a sensor: Flow</title>
@@ -594,7 +594,7 @@
 					<para>It is very important that you enter the shared secret key with the sensor; otherwise there will be no communication between the Radius Accounting and sensor.</para>
 				</listitem>
 				<listitem>
-					<para>SNMP: to activate the SNMP sensor, it\'92s necessary that the user indicates the community it has to connect with.</para>
+					<para>SNMP: to activate the SNMP sensor, it's necessary that the user indicates the community it has to connect with.</para>
 					<mediaobject>
 						<imageobject>
 							<imagedata scalefit="1" align="center" width="350" fileref="images/ch11_img054c.png"/>

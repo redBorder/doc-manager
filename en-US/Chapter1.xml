@@ -55,7 +55,7 @@
         </warning>
         <mediaobject>
             <imageobject>
-                <imagedata scalefit = "2" align = "center" width = "350" fileref ="images/ch01_img001.png"/>
+                <imagedata scalefit = "1" align = "center" width = "350" fileref ="images/ch01_img001.png"/>
             </imageobject>
             <textobject>
 				<phrase> Basic scenario for installing the Manager</phrase>
