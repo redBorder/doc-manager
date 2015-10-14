@@ -25,11 +25,11 @@
 		<para>The dashboard section presents multiple options:</para>
 		<itemizedlist mark="circle">
 			<listitem>
-				<para>List of dashboards available: the first part of the dashboard menu, the user will see the dashboards that have been created and are available for their profile.</para>
+				<para><emphasis role="bold">List of dashboards available:</emphasis> the first part of the dashboard menu, the user will see the dashboards that have been created and are available for their profile.</para>
 				<para>Next to each of the dashboards are two icons. The first, the wrench icon, allows us to see and edit the general configuration of the panel. The Copy icon to the right will allow us to clone the selected dashboard.</para>
 				<mediaobject>
 					<imageobject>
-						<imagedata scalefit="1" align="center" width="350" fileref="images/ch05_img002.png"/>
+						<imagedata scalefit="1" align="center" width="350" fileref="images/ch05_img004.png"/>
 					</imageobject>
 					<caption>
 						<para>Editing icons and dashboard cloning</para>
@@ -43,7 +43,7 @@
 				<para><literal>Add Widget</literal>: add that widgets that you want to fully customize your dashboards.</para>
 			</listitem>
 			<listitem>
-				<para>Update time: the data in the dashboards are updated every 5 minutes (300 seconds). You will see a countdown of the time remaining until the next update. You can reset the account by clicking on the figure shown. At that time, the word “Stopped” will appear. Click again to start the countdown from 300.</para>
+				<para><emphasis role="bold">Update time:</emphasis> the data in the dashboards are updated every 5 minutes (300 seconds). You will see a countdown of the time remaining until the next update. You can reset the account by clicking on the figure shown. At that time, the word “Stopped” will appear. Click again to start the countdown from 300.</para>
 			</listitem>
 			<listitem>
 				<para><literal>Unlocked</literal>: the user has the option to lock/unlock the dashboard that they are consulting so that no other user with permissions can edit the dashboard. </para>
@@ -134,7 +134,7 @@
 			<para><emphasis role="bold">Clone dashboard:</emphasis> It is possible to clone (copy) dashboards in order to have them available for different users, imports, etc. To do this, simply assign a name to the copied dashboard.</para>
 			<mediaobject>
 				<imageobject>
-					<imagedata scalefit="1" align="center" width="350" fileref="images/ch05_img006.png"/>
+					<imagedata scalefit="1" align="center" width="350" fileref="images/ch05_img007.png"/>
 				</imageobject>
 				<textobject>
 					<phrase>Clone dashboard</phrase>
@@ -152,7 +152,7 @@
 			<para>To create a new dashboard, we must indicate a number of preferences in the General Settings interface, as described above for editing dashboards.</para>
 			<mediaobject>
 				<imageobject>
-					<imagedata scalefit="1" align="center" width="350" fileref="images/ch05_img007.png"/>
+					<imagedata scalefit="1" align="center" width="350" fileref="images/ch05_img008.png"/>
 				</imageobject>
 				<textobject>
 					<phrase>Add dashboard</phrase>
@@ -172,7 +172,7 @@
 			<para>Select the file that you would like to import and then click on the option <literal>Import dashboard.</literal> Once we have done this import, we will find this new dashboard in the list of available dashboards.</para>
 			<mediaobject>
 				<imageobject>
-					<imagedata scalefit="1" align="center" width="350" fileref="images/ch05_img008.png"/>
+					<imagedata scalefit="1" align="center" width="350" fileref="images/ch05_img009.png"/>
 				</imageobject>
 				<textobject>
 					<phrase>Import dashboard</phrase>
@@ -205,7 +205,7 @@
 			</itemizedlist>
 			<mediaobject>
 				<imageobject>
-					<imagedata scalefit="1" align="center" width="350" fileref="images/ch05_img009.png"/>
+					<imagedata scalefit="1" align="center" width="350" fileref="images/ch05_img010.png"/>
 				</imageobject>		
 				<textobject>
 					<phrase>Select type of widget</phrase>
@@ -228,24 +228,13 @@
 			</itemizedlist>
 			<mediaobject>
 				<imageobject>
-					<imagedata scalefit="1" align="center" width="350" fileref="images/ch05_img010.png"/>
-				</imageobject>
-				<textobject>
-					<phrase>Preconfigured widget</phrase>
-				</textobject>
-				<caption>
-					<para>Preconfigured widget</para>
-				</caption>
-			</mediaobject>
-			<mediaobject>
-				<imageobject>
 					<imagedata scalefit="1" align="center" width="350" fileref="images/ch05_img011.png"/>
 				</imageobject>
 				<textobject>
-					<phrase>Semi-customized widget: complete general settings details</phrase>	
+					<phrase>Flow widgets</phrase>
 				</textobject>
 				<caption>
-					<para>Semi-customized widget: complete general settings details</para>
+					<para>Flow widgets</para>
 				</caption>
 			</mediaobject>
 			<mediaobject>
@@ -253,21 +242,21 @@
 					<imagedata scalefit="1" align="center" width="350" fileref="images/ch05_img012.png"/>
 				</imageobject>
 				<textobject>
-					<phrase>Custom widget: 100% customized</phrase>
-				</textobject>	
+					<phrase>Customize your widget: Complete general settings details</phrase>	
+				</textobject>
 				<caption>
-					<para>Custom widget: 100% customized</para>
+					<para>Customize your widget: Complete general settings details</para>
 				</caption>
 			</mediaobject>		
 			<section>
 				<title>Customize a product widget</title>
 				<para>Some of the widgets that the user finds available to add to the redBorder platform dashboard allow for a complete customization.</para>
-				<para>This is the case assigned to the App IPS widget. First, let's see what customization options are included in this type of widget.</para>
+				<para>First, let's see what customization options are included in this type of widget.</para>
 				<para>The first step to customize a widget is to select the data display mode or cardinality, that is, how we want to display the values or data in a particular column.</para>	
 				<note>	
 					<title>Note</title>
-					<para>Events received by the Manager consist of "column: value" pairs. The values given in each column can be understood as the event's own data, which can actually provide us with information.</para>
-					<para>Throughout this document there may be references to the concept of column as "attribute" or "dimension".</para>
+					<para>Events received by the Manager consist of <emphasis role="bold">"column: value" pairs.</emphasis> The values given in each column can be understood as the event's own data, which can actually provide us with information.</para>
+					<para>Throughout this document there may be references to the concept of column as <emphasis role="bold">attribute.</emphasis></para>
 					<para>The first step to customize a widget is to select the display mode of the data, and you can also choose, views in which the cardinality is represented.</para>
 				</note>
 				<mediaobject>
@@ -307,16 +296,16 @@
 						<imagedata scalefit="1" align="center" width="350" fileref="images/ch05_img015.png"/>
 					</imageobject>
 					<caption>
-						<para><emphasis role="bold">Compare View</emphasis></para>
+						<para>Compare View</para>
 					</caption>
 				</mediaobject>
 				<para><emphasis role="bold">Cardinality:</emphasis></para>
 				<itemizedlist mark="circle">
 					<listitem>
-						<para>Single Unique: with this option, occurrences or events of a column are isolated to a specific time. </para>
+						<para><emphasis role="bold">Single Unique:</emphasis> with this option, occurrences or events of a column are isolated to a specific time. </para>
 					</listitem>
 					<listitem>
-						<para>Group Unique: with this option, occurrences or events of a column are isolated to a specific time grouped according to the determined criteria.</para>
+						<para><emphasis role="bold">Grouped Unique:</emphasis> with this option, occurrences or events of a column are isolated to a specific time grouped according to the determined criteria.</para>
 					</listitem>	
 				</itemizedlist>
 				<mediaobject>
@@ -332,7 +321,7 @@
 						<imagedata scalefit="1" align="center" width="350" fileref="images/ch05_img017.png"/>
 					</imageobject>
 					<caption>
-						<para>Group Unique View</para>
+						<para>Grouped Unique View</para>
 					</caption>
 				</mediaobject>	
 				<para><emphasis role="bold">Graph:</emphasis> The user can choose between different graphic styles available depending on the selected display.</para>
@@ -362,7 +351,7 @@
 				</mediaobject> 
 				<mediaobject>
 					<imageobject>
-						<imagedata scalefit="1" align="center" width="350" fileref="images/ch05_img020.png"/>
+						<imagedata scalefit="1" align="center" width="350" fileref="images/ch05_img016.png"/>
 					</imageobject>
 					<caption>
 						<para>Value</para>
@@ -370,7 +359,7 @@
 				</mediaobject> 
 				<mediaobject>
 					<imageobject>
-						<imagedata scalefit="1" align="center" width="350" fileref="images/ch05_img021.png"/>
+						<imagedata scalefit="1" align="center" width="350" fileref="images/ch05_img020.png"/>
 					</imageobject>
 					<caption>
 						<para>Horizontal bar</para>
@@ -378,7 +367,7 @@
 				</mediaobject>
 				<mediaobject>
 					<imageobject>
-						<imagedata scalefit="1" align="center" width="350" fileref="images/ch05_img022.png"/>
+						<imagedata scalefit="1" align="center" width="350" fileref="images/ch05_img017.png"/>
 					</imageobject>
 					<caption>
 						<para>Vertical bar</para>
@@ -386,13 +375,13 @@
 				</mediaobject> 
 				<mediaobject>
 					<imageobject>
-						<imagedata scalefit="1" align="center" width="350" fileref="images/ch05_img023.png"/>
+						<imagedata scalefit="1" align="center" width="350" fileref="images/ch05_img022.png"/>
 					</imageobject>
 					<caption>
 						<para>Table</para>
 					</caption>
 				</mediaobject> 
-				<para><literal>Next step</literal>. Then enter the information requested on the form and press <literal>Create widget</literal>. At this time the new widget is added to your dashboard.</para>	
+				<para><literal>Next step:</literal> Then enter the information requested on the form and press <literal>Create widget</literal>. At this time the new widget is added to your dashboard.</para>	
 			</section>
 			<section>
 			<title>Customizing a status widget</title>
@@ -400,21 +389,21 @@
 			<para><emphasis role="bold">Infrastructure:</emphasis> this option allows you to select the mode that will display information about the configuration and the status of the network infrastructure.</para>
 			<orderedlist numeration="arabic">
 				<listitem>
-					<para>Sensor: Map/Tree</para>
+					<para><emphasis>Sensor:</emphasis> Map/Tree</para>
 				</listitem>
 				<listitem>
-					<para>Cluster: Diagram/Table</para>
+					<para><emphasis>Cluster:</emphasis> Diagram/Table</para>
 				</listitem>
 				<listitem>
-					<para>Alarm: insert configuration details in the form below.</para>
+					<para><emphasis>Alarm:</emphasis> insert configuration details in the form below.</para>
 				</listitem>
 				<listitem>
-					<para>Monitor: Serie/Value</para>
+					<para><emphasis>Monitor:</emphasis> Serie/Value</para>
 				</listitem>
 			</orderedlist>			
 			<mediaobject>
 				<imageobject>
-					<imagedata scalefit="1" align="center" width="350" fileref="images/ch05_img024.png"/>
+					<imagedata scalefit="1" align="center" width="350" fileref="images/ch05_img023.png"/>
 				</imageobject>
 				<caption>
 					<para>Options of status widgets</para>
@@ -426,7 +415,7 @@
 				<para><emphasis role="bold">Shapes:</emphasis> this option allows you to edit and insert auxiliary elements in your widgets such as text, image, widget shape and embed a custom URL.</para>
 				<mediaobject>
 					<imageobject>
-						<imagedata scalefit="1" align="center" width="350" fileref="images/ch05_img025.png"/>
+						<imagedata scalefit="1" align="center" width="350" fileref="images/ch05_img024.png"/>
 					</imageobject>
 					<caption>
 						<para>Options of format widgets</para>
@@ -435,7 +424,7 @@
 				<para>To enter any of these elements to the widgets, simply complete the form that appears in each case and apply the changes by <literal> option Create Widget.</literal></para>
 				<mediaobject>
 					<imageobject>
-						<imagedata scalefit="1" align="center" width="350" fileref="images/ch05_img026.png"/>
+						<imagedata scalefit="1" align="center" width="350" fileref="images/ch05_img025.png"/>
 					</imageobject>
 					<caption>
 						<para>Editing form of format widget</para>

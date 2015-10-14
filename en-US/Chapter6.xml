@@ -9,14 +9,14 @@
 <chapter>
 		<title>Events: Flow</title>
 	<para>In this section the user can display, analyze and manage events collected by Flow sensors.</para>
-	<para>redBorder offers maximum network visibility thanks to the many options of representation and visualization of data that our Flow App provides. Be sure to check the sections “Available options in the redBorder Flow submenu” and “Filter events” to discover the versatility to show only the information you want to analyze at a certain time and certain conditions. </para>
+	<para>redBorder offers maximum network visibility thanks to the many options of representation and visualization of data that our Flow App provides. Be sure to check the sections <emphasis>Available options in the redBorder Flow submenu</emphasis> and <emphasis>Filter events</emphasis> to discover the versatility to show only the information you want to analyze at a certain time and certain conditions. </para>
 	<section>
 		<title>Flow: menu and options</title>
 		<para>In the area of analysis of the menu bar (left side), we find different sections corresponding to the Apps that we have integrated into the redBorder platform.</para>
 		<para>Next we will see the different options for data visualization, chart types, granularity (maximum degree of temporal detail that consults events) and attributes that can be combined to obtain a completely customized network traffic viewer.</para>
 		<mediaobject>
 			<imageobject>
-				<imagedata scalefit="1" align="center" width="350" fileref="images/ch06_img000.png"/>
+				<imagedata scalefit="1" align="center" width="350" fileref="images/ch06_img001.png"/>
 			</imageobject>
 			<textobject>
 				<phrase>General view of Flow section</phrase>
@@ -29,7 +29,7 @@
 			<title>Available options in the Flow submenu</title>
 			<mediaobject>
 				<imageobject>
-					<imagedata scalefit="1" align="center" width="350" fileref="images/ch06_img001.png"/>
+					<imagedata scalefit="1" align="center" width="350" fileref="images/ch06_img002.png"/>
 				</imageobject>
 				<textobject>
 					<phrase>Flow: options in the Flow submenu</phrase>
@@ -41,12 +41,12 @@
 			<itemizedlist mark="bullet">
 				<listitem>
 					<para><emphasis role="bold"><literal>Filters</literal>:</emphasis> allow users to isolate a portion of information for more detail. In this tab, you can view the number of filters that have been applied and perform actions on them: </para>
-					<para> <literal>Advanced Search</literal>.</para>
+					<para>-<literal>Advanced Search</literal>.</para>
 					<para>-<literal>Create an alarm</literal>.</para>
 					<para>-<literal>Create a widget on</literal>.</para>
 					<mediaobject>
 						<imageobject>
-							<imagedata scalefit="1" align="center" width="350" fileref="images/ch06_img001b.png"/>
+							<imagedata scalefit="1" align="center" width="350" fileref="images/ch06_img003.png"/>
 						</imageobject>
 						<caption>
 							<para>Filters</para>
@@ -62,7 +62,7 @@
 					<para>-Maps: geolocation of customers, Access Points and bandwidth activity.</para>
 					<mediaobject>
 						<imageobject>
-							<imagedata scalefit="1" align="center" width="350" fileref="images/ch06_img001c.png"/>
+							<imagedata scalefit="1" align="center" width="350" fileref="images/ch06_img004.png"/>
 						</imageobject>
 						<caption>
 							<para>Views</para>
@@ -73,7 +73,7 @@
 					<para><emphasis role="bold">Aggregation:</emphasis> they are different values or units of measure in which the data can be displayed. For example, flows per second (flows/s) or bytes per second (bps).</para>
 					<mediaobject>
 						<imageobject>
-							<imagedata scalefit="1" align="center" width="350" fileref="images/ch06_img001d.png"/>
+							<imagedata scalefit="1" align="center" width="350" fileref="images/ch06_img005.png"/>
 						</imageobject>
 						<caption>
 							<para>Aggregation</para>
@@ -84,7 +84,7 @@
 					<para><emphasis role="bold">Granularity:</emphasis> indicates the degree of temporal detail that can display data. The minimum value is one minute granularity. </para>
 					<mediaobject>
 						<imageobject>
-							<imagedata scalefit="1" align="center" width="350" fileref="images/ch06_img001e.png"/>
+							<imagedata scalefit="1" align="center" width="350" fileref="images/ch06_img006.png"/>
 						</imageobject>
 						<caption>
 							<para>Granularity</para>
@@ -101,7 +101,7 @@
 					<para>-Stacked</para>
 					<mediaobject>
 						<imageobject>
-							<imagedata scalefit="1" align="center" width="350" fileref="images/ch06_img001f.png"/>
+							<imagedata scalefit="1" align="center" width="350" fileref="images/ch06_img007.png"/>
 						</imageobject>
 						<caption>
 							<para>Graph</para>
@@ -117,7 +117,7 @@
 					<para>-<literal>Save tab as default</literal></para>
 					<mediaobject>
 						<imageobject>
-							<imagedata scalefit="1" align="center" width="350" fileref="images/ch06_img001g.png"/>
+							<imagedata scalefit="1" align="center" width="350" fileref="images/ch06_img008.png"/>
 						</imageobject>
 						<caption>
 							<para>Options</para>
@@ -129,7 +129,7 @@
 					<para>The attributes can be displayed in several ways: as tabs or columns. <literal>Add tabs/Columns</literal> depending on the view that we are consulting.</para>
 					<mediaobject>
 						<imageobject>
-							<imagedata scalefit="1" align="center" width="350" fileref="images/ch06_img001h.png"/>
+							<imagedata scalefit="1" align="center" width="350" fileref="images/ch06_img009.png"/>
 						</imageobject>
 						<caption>
 							<para>Attributes</para>
@@ -150,7 +150,7 @@
 			</note>
 			<mediaobject>
 				<imageobject>
-					<imagedata scalefit="1" align="center" width="350" fileref="images/ch06_img002.png"/>
+					<imagedata scalefit="1" align="center" width="350" fileref="images/ch06_img010.png"/>
 				</imageobject>
 				<textobject>
 					<phrase>Filter by time range and tab attributes</phrase>
@@ -162,7 +162,7 @@
 			<para><emphasis role="bold">View:</emphasis> in this area the data is displayed according to the selected view and type of graphic. When positioning the cursor on any of the points that make up the graph, a dialog box displays in detail the information shown for that instant in time, aggregation and attribute.</para>
 			<mediaobject>
 				<imageobject>
-					<imagedata scalefit="1" align="center" width="350" fileref="images/ch06_img003.png"/>
+					<imagedata scalefit="1" align="center" width="350" fileref="images/ch06_img011.png"/>
 				</imageobject>
 				<textobject>
 					<phrase>View</phrase>
@@ -184,7 +184,7 @@
 			</note>
 			<mediaobject>
 				<imageobject>
-					<imagedata scalefit="1" align="center" width="350" fileref="images/ch06_img004.png"/>
+					<imagedata scalefit="1" align="center" width="350" fileref="images/ch06_img012.png"/>
 				</imageobject>
 				<textobject>
 					<phrase>Summary, search engine and data table</phrase>
@@ -220,10 +220,10 @@
 				<para><literal>Create an alarm</literal>: allows us to set an alarm based on the filters applied. This action will be seen in detail in the Tools chapter (<literal>Tools</literal>).</para>
 				<mediaobject>
 					<imageobject>
-						<imagedata scalefit="1" align="center" width="350" fileref="images/ch06_img005b.png"/>
+						<imagedata scalefit="1" align="center" width="350" fileref="images/ch06_img013.png"/>
 					</imageobject>
 					<caption>
-						<para>Summary, search engine and data table</para>
+						<para>Tools>Alarms</para>
 					</caption>
 				</mediaobject>
 			</listitem>
@@ -233,7 +233,7 @@
 		</itemizedlist>
 		<mediaobject>
 			<imageobject>
-				<imagedata scalefit="1" align="center" width="350" fileref="images/ch06_img005.png"/>
+				<imagedata scalefit="1" align="center" width="350" fileref="images/ch06_img014.png"/>
 			</imageobject>
 			<textobject>
 				<phrase>Events filtering options</phrase>
@@ -267,7 +267,7 @@
 			<para>A simple and quick way to view only the events corresponding to a specific period of time is to select some of the options that provide tabs timeline filtering:</para>
 			<mediaobject>
 				<imageobject>
-					<imagedata scalefit="1" align="center" width="350" fileref="images/ch06_img006.png"/>
+					<imagedata scalefit="1" align="center" width="350" fileref="images/ch06_img015.png"/>
 				</imageobject>
 				<textobject>
 					<phrase>Filtering events: timeline</phrase>
@@ -276,12 +276,12 @@
 					<para>Filtering events: timeline</para>
 				</caption>
 			</mediaobject>
-			<para><emphasis role="bold">Filter Zoom</emphasis></para>
-			<para>The user can select a period of time manually. To do this, click the mouse on a specific point on the graph, drag and drop to the desired time instant. Thus, we have the view for that time range and the table below show only the data contained in this strip. To do this click on the submenu<literal>Filters</literal> <literal>Start Time</literal> <literal>End Time</literal> indicated for this filter.</para>	 
+			<para><emphasis role="bold"></emphasis></para>
+			<para>The user can select a period of time manually. To do this, click the mouse on a specific point on the graph, drag and drop to the desired time instant. Ater that, you can see this period of time expanded in the graph.</para>	 
 			<para>In the indicated submenu you will see <literal>Filter Zoom.</literal></para>
 			<mediaobject>
 				<imageobject>
-					<imagedata scalefit="1" align="center" width="350" fileref="images/ch06_img007.png"/>
+					<imagedata scalefit="1" align="center" width="350" fileref="images/ch06_img015b.png"/>
 				</imageobject>
 				<textobject>
 					<phrase>Filter Zoom</phrase>
@@ -290,23 +290,23 @@
 					<para>Filtering of events: Filter Zoom</para>
 				</caption>
 			</mediaobject>
-			<para><emphasis role="bold">Custom filter</emphasis> <literal>Custom</literal></para>
-			<para>The tab <literal>Custom</literal> of line filtering time range allows a custom filter. By dragging the mouse from one point to another in the month you want to consult, we will see the specific dates to be taken into account in the filtrate.</para>
+			<para><emphasis role="bold">Filter by range of time or Custom filter</emphasis> <literal>Custom</literal></para>
+			<para>The tab <literal>Custom</literal> of line filtering time range allows a custom filter. By dragging the mouse from one point to another in the month you want to consult, we will see the specific dates to be taken into account in the filtrate.Thus, we have the view for that time range and the table below show only the data contained in this strip. To do this click on the submenu <literal>Filters</literal> <literal>Start Time</literal> <literal>End Time</literal> indicated for this filter.</para>
 			<note>
 				<title>Note</title>
-				<para>When you perform a custom filter or <literal>Custom</literal> we can isolate in the graphic data for a period of time. In order that this data is also updated in the data table it's necessary to perform <literal>Filter Zoom.</literal></para>
+				<para>When you perform a custom filter or <literal>Custom</literal> we can isolate in the graphic data for a period of time.</para>
 			</note>
 			<para>It's also possible to select the time period directly from the temporary bar that appears in the top margin.</para>
 			<para>Click on <literal>Submit</literal> to apply filter.</para> 
 			<mediaobject>
 				<imageobject>
-					<imagedata scalefit="1" align="center" width="350" fileref="images/ch06_img008.png"/>
+					<imagedata scalefit="1" align="center" width="350" fileref="images/ch06_img017.png"/>
 				</imageobject>
 				<textobject>
 					<phrase>Filtering events: custom filter</phrase>
 				</textobject>
 				<caption>
-					<para>Filtering events: custom filter</para>
+					<para>Filtering events by range of time: custom filter</para>
 				</caption>
 			</mediaobject>
 			<para><emphasis role="bold">Advanced search</emphasis> <literal>Advanced Search</literal></para>
@@ -315,17 +315,17 @@
 			<para>You can add as many filtering conditions as it deems necessary, just make sure to indicate the attribute, the start date and the end date you wish to consult.</para>
 			<itemizedlist mark="circle">
 				<listitem>
-					<para><emphasis>Add search rule:</emphasis> click <keycap>+</keycap></para>
+					<para><emphasis>Add search rule:</emphasis> click <keycap>(+)</keycap></para>
 				</listitem>
 				<listitem>
-					<para><emphasis>Delete search rule:</emphasis> click <keycap>-</keycap></para>
+					<para><emphasis>Delete search rule:</emphasis> click <keycap>(-)</keycap></para>
 				</listitem>
 			</itemizedlist>
 			<para>You can save this search settings as a filter, thus, it will be available to consult at any other time in both the option <literal>View Saved Filters</literal> as in <literal>Saved filters</literal> which you will find in the context menu of the filters.</para>
 			<para>To start this search, simply select the option <literal>Submit Search.</literal></para>
 			<mediaobject>
 				<imageobject>
-					<imagedata scalefit="1" align="center" width="350" fileref="images/ch06_img009.png"/>
+					<imagedata scalefit="1" align="center" width="350" fileref="images/ch06_img020.png"/>
 				</imageobject>
 				<textobject>
 					<phrase>Filtering events: advanced search</phrase>
@@ -336,13 +336,30 @@
 			</mediaobject>
 			<para><emphasis role="bold">Filter by attribute</emphasis> <literal>Filter Selected</literal></para>
 			<para>There are two ways to convert a value of an attribute in a filter:</para>
-			<para><emphasis role="bold">Search Engine:</emphasis> enter the attribute value you want to find and press <keycap>Enter.</keycap></para>
-			<para>The chosen filter will automatically be included. You can include as many filters as searches as are conducted. If you want to remove the filter, you must go to the tab<literal>Filters</literal> included in the submenu bar.</para>
-			<para><emphasis role="bold">Column selection in the table:</emphasis> you can select one or more rows of the table to isolate the data relating to such elements. For multiple selection, just press the left mouse button on the ranks of the different elements you wish to filter; if you want to deselect, click again on the elements. The user can also help by pressing <keycap>Shift</keycap>. </para>
-			<para>Once the rows are selected, there will be the option to include or exclude the graphical elements, as well as the data table. To go back to include them press the button <keycap>Filter Selected</keycap> located on top of the data table. To exclude them, it's necessary to press the button <keycap>Exclude Selected</keycap> located next to the previous button.</para>
+			<itemizedlist mark="bullet">
+				<listitem>
+					<para><emphasis role="bold">Search Engine:</emphasis> enter the attribute value you want to find and press <keycap>Enter.</keycap></para>
+					<para>The chosen filter will automatically be included. You can include as many filters as searches as are conducted. If you want to remove the filter, you must go to the tab <literal>Filters</literal> included in the submenu bar.</para>
+				</listitem>
+				<listitem>
+					<para><emphasis role="bold">Column selection in the table:</emphasis> you can select one or more rows of the table to isolate the data relating to such elements. For multiple selection, just press the left mouse button on the ranks of the different elements you wish to filter; if you want to deselect, click again on the elements. The user can also help by pressing <keycap>Shift</keycap>. </para>
+					<para>Once the rows are selected, there will be the option to include or exclude the graphical elements, as well as the data table. To go back to include them press the button <keycap>Filter Selected</keycap> located on top of the data table. To exclude them, it's necessary to press the button <keycap>Exclude Selected</keycap> located next to the previous button.</para>
+					<mediaobject>
+						<imageobject>
+							<imagedata scalefit="1" align="center" width="350" fileref="images/ch06_img020.png"/>
+						</imageobject>
+						<textobject>
+							<phrase>Include/exclude filter</phrase>
+						</textobject>
+						<caption>
+							<para>Include/exclude filter</para>
+						</caption>
+					</mediaobject>
+				</listitem>
+			</itemizedlist>
 			<para>In the case of an individual selection, its possible to perform the filter or exclusion more quickly:</para>
-			<para>a) By clicking on a name of a sensor data will be included in the view. In this moment, the label will display a color that corresponds to the line/area/stream/bar shown in the view. To exclude, click on it again.</para>
-			<para>b) Opening the drop-down next to each item in the table and contains the following options:</para>
+			<para><emphasis>a) By clicking on a name of a sensor data will be included in the view.</emphasis> In this moment, the label will display a color that corresponds to the line/area/stream/bar shown in the view. To exclude, click on it again.</para>
+			<para><emphasis>b) Opening the drop-down next to each item in the table and contains the following options:</emphasis></para>
 			<itemizedlist mark="circle">
 				<listitem>
 					<para><literal>Filter:</literal> adds the appropriate filter to include the element of the data presented.</para>
@@ -356,7 +373,7 @@
 			</itemizedlist>	
 			<mediaobject>
 				<imageobject>
-					<imagedata scalefit="1" align="center" width="350" fileref="images/ch06_img010.png"/>
+					<imagedata scalefit="1" align="center" width="350" fileref="images/ch06_img019.png"/>
 				</imageobject>
 				<textobject>
 					<phrase>Filtering events: Filter by attribute</phrase>
@@ -373,7 +390,7 @@
 		<para><emphasis role="bold">Create object:</emphasis> this allows to put a name and/or description allowing the location of an item more quickly and easily. For example, if we know the machine associated with a particular IP address, this option allows you to rename it for easier identification. </para>
 		<mediaobject>
 			<imageobject>
-				<imagedata scalefit="1" align="center" width="350" fileref="images/ch07_img020.png"/>
+				<imagedata scalefit="1" align="center" width="350" fileref="images/ch07_img021.png"/>
 			</imageobject>
 			<textobject>
 				<phrase>Renaming an IP: Create net object</phrase>
@@ -396,7 +413,7 @@
 		</itemizedlist>
 		<mediaobject>
 			<imageobject>
-				<imagedata scalefit="1" align="center" width="350" fileref="images/ch07_img021.png"/>
+				<imagedata scalefit="1" align="center" width="350" fileref="images/ch07_img022a.png"/>
 			</imageobject>
 			<textobject>
 				<phrase>uTrace</phrase>
@@ -407,7 +424,7 @@
 		</mediaobject>
 		<mediaobject>
 			<imageobject>
-				<imagedata scalefit="1" align="center" width="350" fileref="images/ch07_img022.png"/>
+				<imagedata scalefit="1" align="center" width="350" fileref="images/ch07_img022b.png"/>
 			</imageobject>
 			<textobject>
 				<phrase>Trusted Source</phrase>
@@ -418,7 +435,7 @@
 		</mediaobject>
 		<mediaobject>
 			<imageobject>
-				<imagedata scalefit="1" align="center" width="350" fileref="images/ch07_img023.png"/>
+				<imagedata scalefit="1" align="center" width="350" fileref="images/ch07_img022c.png"/>
 			</imageobject>
 			<textobject>
 				<phrase>Whois.sc</phrase>
@@ -428,11 +445,11 @@
 			</caption>
 		</mediaobject>
 		<para><emphasis role="bold">Basic Source Lookup:</emphasis> it is possible to obtain a complete summary of the information associated with the consulted IPs. By selecting this option a popup window will appear with two tabs: </para>
-		<para>Whois: shows the result of the Manager query to whois where they obtain, among other information, who owns that IP, reputation, etc.</para> 
-		<para>DNS: the Manager performs a reverse resolution that lets us know the DNS associated with the IP consulted.</para>
+		<para><emphasis>Whois:</emphasis> shows the result of the Manager query to whois where they obtain, among other information, who owns that IP, reputation, etc.</para> 
+		<para><emphasis>DNS:</emphasis> the Manager performs a reverse resolution that lets us know the DNS associated with the IP consulted.</para>
 		<mediaobject>
 			<imageobject>
-				<imagedata scalefit="1" align="center" width="350" fileref="images/ch07_img024.png"/>
+				<imagedata scalefit="1" align="center" width="350" fileref="images/ch07_img022d.png"/>
 			</imageobject>
 			<textobject>
 				<phrase>Basic Source Lookup: information query IP/DNS</phrase>
@@ -452,24 +469,24 @@
 		<para>The views that are available for Flow are: </para>
 		<itemizedlist mark="bullet">
 			<listitem>
-				<para>Tops: aggregation of events based on a unit to show the most prominent. The total sum of data from different events to display as one. </para>
+				<para><emphasis role="bold">Tops:</emphasis> aggregation of events based on a unit to show the most prominent. The total sum of data from different events to display as one. </para>
 			</listitem>
 			<listitem>
-				<para>Raw: view all raw data events, classified by attributes and time slots.</para>
+				<para><emphasis role="bold">Raw:</emphasis> view all raw data events, classified by attributes and time slots.</para>
 			</listitem>
 			<listitem>
-				<para>Map: heat map in which the IP (clients) are shown and access points involved in the data flow.</para>
+				<para><emphasis role="bold">Map:</emphasis> heat map in which the IP (clients) are shown and access points involved in the data flow.</para>
 			</listitem>
 			<listitem>
-				<para>Compare: comparing time intervals to analyze differences in network status.</para> 
+				<para><emphasis role="bold">Compare:</emphasis> comparing time intervals to analyze differences in network status.</para> 
 			</listitem>
 			<listitem>
-				<para>Unique: shows the different elements that have interacted with the network according to attribute.</para>
+				<para><emphasis role="bold">Unique:</emphasis> shows the different elements that have interacted with the network according to attribute.</para>
 			</listitem>
 		</itemizedlist>
 		<mediaobject>
 			<imageobject>
-				<imagedata scalefit="1" align="center" width="350" fileref="images/ch06_img001c.png"/>
+				<imagedata scalefit="1" align="center" width="350" fileref="images/ch06_img004.png"/>
 			</imageobject>
 			<textobject>
 				<phrase>Views</phrase>
@@ -491,7 +508,7 @@
 			<para>The Top view allows us to see what were the most prominent events as the time interval is selected. What we envision in the graph is the sum of all these events displayed as a single event. If we lay the mouse over each of these “peaks” or Tops, see the breakdown of the event by date, time and type of dimension or attribute you are checking.</para>
 			<mediaobject>
 				<imageobject>
-					<imagedata scalefit="1" align="center" width="350" fileref="images/ch06_img014.png"/>
+					<imagedata scalefit="1" align="center" width="350" fileref="images/ch06_img023.png"/>
 				</imageobject>
 				<textobject>
 					<phrase>Tops</phrase>
@@ -507,7 +524,7 @@
 			<para>In the data table we will therefore collect all event data classified by columns. Data will be shown on the screen, however, if you'd like to see more, simply scroll and wait for more data to load: <emphasis>Load more.</emphasis></para>
 			<mediaobject>
 				<imageobject>
-					<imagedata scalefit="1" align="center" width="350" fileref="images/ch06_img015.png"/>
+					<imagedata scalefit="1" align="center" width="350" fileref="images/ch06_img024.png"/>
 				</imageobject>
 				<textobject>
 					<phrase>Raw</phrase>
@@ -533,7 +550,7 @@
 						<para>Check event information: click on the icon “Edit” for greater granularity.</para>
 						<mediaobject>
 							<imageobject>
-								<imagedata scalefit="1" align="center" width="350" fileref="images/ch11_img012.png"/>
+								<imagedata scalefit="1" align="center" width="350" fileref="images/ch06_img025.png"/>
 							</imageobject>
 							<caption>
 								<para>Icon “Edit"</para>
@@ -542,7 +559,7 @@
 						<para>When you have reached the limit of granularity at which you can display events, this icon will transform the information:</para>
 						<mediaobject>
 							<imageobject>
-								<imagedata scalefit="1" align="center" width="350" fileref="images/ch011_img012b.png"/>
+								<imagedata scalefit="1" align="center" width="350" fileref="images/ch006_img026.png"/>
 							</imageobject>
 							<caption>
 								<para>Timestamp details: event information</para>
@@ -551,7 +568,7 @@
 						<para>Clicking on it we will access a screen that provides the complete information associated with each of the events set forth in that time interval.</para>
 						<mediaobject>
 							<imageobject>
-								<imagedata scalefit="1" align="center" width="350" fileref="images/ch06_img015b.png"/>
+								<imagedata scalefit="1" align="center" width="350" fileref="images/ch06_img028.png"/>
 							</imageobject>
 							<caption>
 								<para>Event information</para>
@@ -562,7 +579,7 @@
 						<para><literal>Create object</literal>: some of the attributes shown in the event information allow the possibility of converting into an Object. This means that these values can add a name and a description allowing the localization of an item more quickly and easily.</para>
 						<mediaobject>
 							<imageobject>
-								<imagedata scalefit="1" align="center" width="350" fileref="images/ch06_img015c.png"/>
+								<imagedata scalefit="1" align="center" width="350" fileref="images/ch06_img027.png"/>
 							</imageobject>
 							<caption>
 								<para>Create object</para>
@@ -602,13 +619,13 @@
 					</itemizedlist>
 					<mediaobject>
 						<imageobject>
-							<imagedata scalefit="1" align="center" width="350" fileref="images/ch06_img015d.png"/>
+							<imagedata scalefit="1" align="center" width="350" fileref="images/ch06_img028.png"/>
 						</imageobject>
 						<textobject>
 							<phrase>Detailed information about Flow</phrase>	
 						</textobject>
 						<caption>
-							<para>Detailed information about Flow</para>
+							<para>Detailed information about Flow: attributes</para>
 						</caption>
 					</mediaobject>
 				</section>	
@@ -620,7 +637,7 @@
 			<para>Option <literal>Map</literal> provides us a heat map that show the status of each Access Point (AP) of our network.</para>
 			<mediaobject>
 				<imageobject>
-					<imagedata scalefit="1" align="center" width="350" fileref="images/ch06_img016.png"/>
+					<imagedata scalefit="1" align="center" width="350" fileref="images/ch06_img029.png"/>
 				</imageobject>
 				<textobject>
 					<phrase>Map</phrase>
@@ -653,7 +670,7 @@
 				<para>This circle includes figures indicating the number of users who are associated with the AP. Furthermore, each circle will appear filled by different colors which indicate the status of each AP:</para>
 				<para><emphasis>Green:</emphasis> Up is the AP, ie, in perfect operation.</para>
 				<para><emphasis>Grey:</emphasis> AP status is unknown.</para>
-				<para><emphasis>Rojo:</emphasis> the AP is Down, i.e. it presents malfunctions.</para>
+				<para><emphasis>Red:</emphasis> the AP is Down, i.e. it presents malfunctions.</para>
 			</note>
 			<para>It also shows, through color-coding, traffic that is occurring in each Access Point. The gradation of color indicates the varying traffic in the AP as a heat map: red, yellow, green and blue. </para>
 			<para><emphasis role="bold">Additional information about Access Point</emphasis></para>
@@ -674,7 +691,7 @@
 			<para>In the data table which show those that correspond to the time interval selected.</para>
 			<mediaobject>
 				<imageobject>
-					<imagedata scalefit="1" align="center" width="350" fileref="images/ch06_img017.png"/>
+					<imagedata scalefit="1" align="center" width="350" fileref="images/ch06_img030.png"/>
 				</imageobject>
 				<textobject>
 					<phrase>Views: Compare</phrase>
@@ -690,7 +707,7 @@
 			<para><literal>Group by</literal> (only available in the Unique view): allows us to group the data shown in the graph on the basis of a given attribute. This option provides the filtering and sorting of items according to the analysis criteria we need.</para>
 			<mediaobject>
 				<imageobject>
-					<imagedata scalefit="1" align="center" width="350" fileref="images/ch06_img018.png"/>
+					<imagedata scalefit="1" align="center" width="350" fileref="images/ch06_img031.png"/>
 				</imageobject>
 				<textobject>
 					<phrase>Views: Unique</phrase>
@@ -758,7 +775,7 @@
 		</note>
 		<mediaobject>
 			<imageobject>
-				<imagedata scalefit="1" align="center" width="350" fileref="images/ch06_img019.png"/>
+				<imagedata scalefit="1" align="center" width="350" fileref="images/ch06_img005.png"/>
 			</imageobject>
 			<textobject>
 				<phrase>Selecting the type of aggregation</phrase>
@@ -774,7 +791,7 @@
 		<para>As shown in the image according to the selected time period, the user can know the traffic detail, for example, sensor lapse of two minutes.</para>
 		<mediaobject>
 			<imageobject>
-				<imagedata scalefit="1" align="center" width="350" fileref="images/ch06_img020.png"/>
+				<imagedata scalefit="1" align="center" width="350" fileref="images/ch06_img032.png"/>
 			</imageobject>
 			<textobject>
 				<phrase>Metric to which a granularity of 2 minutes is applied </phrase>
@@ -789,7 +806,7 @@
 		</note>
 		<mediaobject>
 			<imageobject>
-				<imagedata scalefit="1" align="center" width="350" fileref="images/ch06_img021.png"/>
+				<imagedata scalefit="1" align="center" width="350" fileref="images/ch06_img033.png"/>
 			</imageobject>
 			<textobject>
 				<phrase>Combining raw view for a selected time period (granularity)</phrase>
@@ -806,7 +823,7 @@
 		<para><emphasis role="bold">Stacked:</emphasis> comparatively show in the same graph the data for each of the selected attributes. (In the image comparing traffic sensors).</para>
 		<mediaobject>
 			<imageobject>
-				<imagedata scalefit="1" align="center" width="350" fileref="images/ch06_img022.png"/>
+				<imagedata scalefit="1" align="center" width="350" fileref="images/ch06_img034.png"/>
 			</imageobject>
 			<textobject>
 				<phrase>Stacked graph to view sensor Tops</phrase>
@@ -818,67 +835,67 @@
 		<para><emphasis role="bold">Area:</emphasis> graph that provides an overlap of the data to a group of elements that belong to the selected attribute, making the total traffic the sum of the traffic by attribute (in the image, by sensor).</para>
 		<mediaobject>
 			<imageobject>
-				<imagedata scalefit="1" align="center" width="350" fileref="images/ch06_img023.png"/>
+				<imagedata scalefit="1" align="center" width="350" fileref="images/ch06_img035.png"/>
 			</imageobject>
 			<textobject>
-				<phrase>Area for graphical view of Tops by SRC Address</phrase>
+				<phrase>Area for graphical view of Tops by SRC Address: multiple elements</phrase>
 			</textobject>
 			<caption>
-				<para>Area for graphical view of Tops by SRC Address</para>
+				<para>Area for graphical view of Tops by SRC Address: multiple elements</para>
 			</caption>
 		</mediaobject>
 		<para>If they want to display on a single graphical element, just click on any point on the graph thus isolating the selected item.</para>
 		<mediaobject>
 			<imageobject>
-				<imagedata scalefit="1" align="center" width="350" fileref="images/ch06_img024.png"/>
+				<imagedata scalefit="1" align="center" width="350" fileref="images/ch06_img036.png"/>
 			</imageobject>
 			<textobject>
-				<phrase>Area for graphical view of Tops by SRC Address: isolate traffic from one element</phrase>
+				<phrase>Area for graphical view of Tops by Sensor: single element </phrase>
 			</textobject>
 			<caption>
-				<para>Area for graphical view of Tops by SRC Address: isolate traffic from one element</para>
+				<para>Area for graphical view of Tops by Sensor: single element</para>
 			</caption>
 		</mediaobject>	
 		<para><emphasis role="bold">Line:</emphasis> graph that provides an overlap of the data to a group of elements that belong to the selected attribute; in this case the area is not displayed but the graph is represented by line.</para>
 		<mediaobject>
 			<imageobject>
-				<imagedata scalefit="1" align="center" width="350" fileref="images/ch06_img025.png"/>
+				<imagedata scalefit="1" align="center" width="350" fileref="images/ch06_img037.png"/>
 			</imageobject>
 			<textobject>
-				<phrase>Line graph to Unique view for DST Address</phrase>
+				<phrase>Line graph to Tops by Sensor</phrase>
 			</textobject>
 			<caption>
-				<para>Line graph to Unique view for DST Address</para>
+				<para>Line graph to Tops by Sensor</para>
 			</caption>
 		</mediaobject>	
 		<para><emphasis role="bold">Bars:</emphasis> provides an overlap of data to a group of elements that belong to the selected attribute, being the total, the value sum of each of those elements. In this case, the data is represented through bars</para>
 		<mediaobject>
 			<imageobject>
-				<imagedata scalefit="1" align="center" width="350" fileref="images/ch06_img026.png"/>
+				<imagedata scalefit="1" align="center" width="350" fileref="images/ch06_img038.png"/>
 			</imageobject>
 			<textobject>
-				<phrase>Bar graphs for Raw view</phrase>
+				<phrase>Bar graphs for Tops view</phrase>
 			</textobject>
 			<caption>
-				<para>Bar graphs for Raw view</para>
+				<para>Bar graphs for Tops view</para>
 			</caption>
 		</mediaobject>
 		<para><emphasis role="bold">SBars:</emphasis> or Stacked Bars, provides in the same graph the data obtained for each of the elements included in the selected attribute, so you can view the results of independent IP, sensor, etc., represented in bars.</para>
 		<mediaobject>
 			<imageobject>
-				<imagedata scalefit="1" align="center" width="350" fileref="images/ch06_img027.png"/>
+				<imagedata scalefit="1" align="center" width="350" fileref="images/ch06_img039.png"/>
 			</imageobject>
 			<textobject>
-				<phrase>SBar graphs for Tops view by DST Address</phrase>
+				<phrase>SBar graphs for Tops view by SRC Address</phrase>
 			</textobject>
 			<caption>
-				<para>SBar graphs for Tops view by DST Address</para>
+				<para>SBar graphs for Tops view by SRC Address</para>
 			</caption>
 		</mediaobject>	
 		<para><emphasis role="bold">Streams:</emphasis> graph only available by the Raw view. Shows traffic flow by sensor.</para>
 		<mediaobject>
 			<imageobject>
-				<imagedata scalefit="1" align="center" width="350" fileref="images/ch06_img028.png"/>
+				<imagedata scalefit="1" align="center" width="350" fileref="images/ch06_img040.png"/>
 			</imageobject>
 			<textobject>
 				<phrase>Stream graphs (only in Raw view)</phrase>
@@ -914,7 +931,7 @@
 		</itemizedlist>
 		<mediaobject>
 			<imageobject>
-				<imagedata scalefit="1" align="center" width="350" fileref="images/ch06_img029.png"/>
+				<imagedata scalefit="1" align="center" width="350" fileref="images/ch06_img040a.png"/>
 			</imageobject>
 			<textobject>
 				<phrase>Options: Show total</phrase>
@@ -925,7 +942,7 @@
 		</mediaobject>
 		<mediaobject>
 			<imageobject>
-				<imagedata scalefit="1" align="center" width="350" fileref="images/ch06_img030.png"/>
+				<imagedata scalefit="1" align="center" width="350" fileref="images/ch06_img041.png"/>
 			</imageobject>
 			<textobject>
 				<phrase>Options: Export to CSV</phrase>
@@ -936,7 +953,7 @@
 		</mediaobject>	
 		<mediaobject>
 			<imageobject>
-				<imagedata scalefit="1" align="center" width="350" fileref="images/ch06_img031.png"/>
+				<imagedata scalefit="1" align="center" width="350" fileref="images/ch06_img042.png"/>
 			</imageobject>
 			<textobject>
 				<phrase>Options: Time machine</phrase>
@@ -947,7 +964,7 @@
 		</mediaobject>	
 		<mediaobject>
 			<imageobject>
-				<imagedata scalefit="1" align="center" width="350" fileref="images/ch06_img032.png"/>
+				<imagedata scalefit="1" align="center" width="350" fileref="images/ch06_img043.png"/>
 			</imageobject>
 			<textobject>
 				<phrase>Options: Sort Columns</phrase>
@@ -955,34 +972,12 @@
 			<caption>
 				<para>Options: Sort Columns</para>
 			</caption>
-		</mediaobject>	
-		<mediaobject>
-			<imageobject>
-				<imagedata scalefit="1" align="center" width="350" fileref="images/ch06_img033.png"/>
-			</imageobject>
-			<textobject>
-				<phrase>Options: Start reloading</phrase>
-			</textobject>
-			<caption>
-				<para>Options: Start reloading</para>
-			</caption>
-		</mediaobject>	
+		</mediaobject>		
 	</section>
 	<section>
 		<title>Attributes: tabs and columns</title>
 		<para>The attributes help us carry out a comprehensive and personalized analysis for each of the elements involved in the flow of network traffic of our organization. These are organized into tabs or columns to the view that we are consulting. The options shown are common to all views except for the case of Compare (offers only comparability for weeks or months) and Maps, in which case this section is not shown. </para>
 		<para>We also stop at two useful options for locating IPs that generate more traffic: Scatter Plot and SRC/DST MAP.</para>
-		<mediaobject>
-			<imageobject>
-				<imagedata scalefit="1" align="center" width="350" fileref="images/ch06_img034.png"/>
-			</imageobject>
-			<textobject>
-				<phrase>Attributes: tabs or columns</phrase>
-			</textobject>
-			<caption>
-				<para>Attributes: tabs or columns</para>
-			</caption>
-		</mediaobject>	
 		<para>Next we list the attributes that the user has available and the different aspects that we can consult of each one:</para>
 		<itemizedlist mark="circle">
 			<listitem>
@@ -1067,7 +1062,7 @@
 		</note>
 		<mediaobject>
 			<imageobject>
-				<imagedata scalefit="1" align="center" width="350" fileref="images/ch06_img035.png"/>
+				<imagedata scalefit="1" align="center" width="350" fileref="images/ch06_img044.png"/>
 			</imageobject>
 			<textobject>
 				<phrase>Distribution of network traffic: Network>Scatter Plot</phrase>
@@ -1080,7 +1075,7 @@
 			<para>In the Location attribute menu we find the options SRC MAP and DST MAP. In both cases we offer the possibility to display the map which is the localization of the IP of origen (SRC MAP) and destination (DST MAP) that generates the most traffic.</para>
 			<mediaobject>
 				<imageobject>
-					<imagedata scalefit="1" align="center" width="350" fileref="images/ch06_img036.png"/>
+					<imagedata scalefit="1" align="center" width="350" fileref="images/ch06_img045.png"/>
 				</imageobject>
 				<textobject>
 					<phrase>Location of network traffic: Location>SRC/DST MAP</phrase>
@@ -1092,13 +1087,13 @@
 			<para>When there is more than one IP connected in the same geographical point, these are clustered and displayed as a point with the biggest size that includes a number. This number indicates the total number of IPs connected at that location. For the detail of the IPs, simply apply to the map or zoom, double click on the point you want to get more information. </para>
 			<mediaobject>
 				<imageobject>
-					<imagedata scalefit="1" align="center" width="350" fileref="images/ch06_img037.png"/>
+					<imagedata scalefit="1" align="center" width="350" fileref="images/ch06_img046.png"/>
 				</imageobject>
 				<textobject>
 					<phrase>Location of network traffic: connection details</phrase>
 				</textobject>
 				<caption>
-					<para>Distribution of network traffic: connection details</para>
+					<para>Location of network traffic: connection details</para>
 				</caption>
 			</mediaobject>	
 	</section>

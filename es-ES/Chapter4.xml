@@ -8,7 +8,7 @@
 ]>
 <chapter>
 	<title>Plataforma web redBorder</title>
-		<para>Una vez se ha finalizado el proceso de instalación del Manager, el usuario puede acceder a la plataforma web redBorder en la barra de direcciones de su navegador la IP de gestión asignada al Manager.</para>
+		<para>Una vez se ha finalizado el proceso de instalación del Manager, el usuario puede acceder a la plataforma web redBorder insertando en la barra de direcciones de su navegador la IP de gestión asignada al Manager.</para>
 		<para><screen>https://direccion-IP-manager</screen></para>
 		<mediaobject>
 			<imageobject>

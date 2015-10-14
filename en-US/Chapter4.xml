@@ -33,7 +33,7 @@
 	<para>This home screen is fully customizable. The user will be able to create as many dashboards per profile as deemed necessary.<footnote><para>In the case of the Community version, the number of customizable dashboards is limited to one per user profile.</para></footnote></para>
 	<mediaobject>
 		<imageobject>
-			<imagedata scalefit="1" align="center" width="350" fileref="images/ch04_img000.png"/>
+			<imagedata scalefit="1" align="center" width="350" fileref="images/ch04_img002.png"/>
 		</imageobject>
 		<textobject>
 			<phrase>Home screen administrator of the Manager: dashboard</phrase>
@@ -58,13 +58,13 @@
 				<para><emphasis role="bold">Main area:</emphasis> this is the content section. In this area the data is shown in different metrics and graphs that are completely customizable. </para>
 			</listitem>
 			<listitem>
-				<para>Summary: below the graph you will find a summary of the information shown in the metric, providing the total values.</para><!--review-->
+				<para><emphasis>Summary:</emphasis> below the graph you will find a summary of the information shown in the metric, providing the total values.</para><!--review-->
 			</listitem>	
 			<listitem>
-				<para>Search engine: allows to quickly search any feature in the data table with the attribute that is being consulted. You only have to enter the IP, sensor, client, etc. that you want to consult. In addition, the searches can become filters as we will see further ahead.</para>
+				<para><emphasis>Search engine:</emphasis> allows to quickly search any feature in the data table with the attribute that is being consulted. You only have to enter the IP, sensor, client, etc. that you want to consult. In addition, the searches can become filters as we will see further ahead.</para>
 			</listitem>
 			<listitem>
-				<para>Data table: provides details of the information displayed in the metric. Furthermore, they can perform different actions by rows. These actions depend on the tab/App we are consulting.</para>
+				<para><emphasis>Data table:</emphasis> provides details of the information displayed in the metric. Furthermore, they can perform different actions by rows. These actions depend on the tab/App we are consulting.</para>
 			</listitem>
 		</itemizedlist>
 		<section>
@@ -81,7 +81,7 @@
 					<para>Option details included in the menu bar</para>
 				</caption>
 			</mediaobject>
-			<para><emphasis role="bold">Analysis area</emphasis></para> <!-- Missing data screenshot-->
+			<para><emphasis role="bold">Analysis area</emphasis></para>
 			<mediaobject>
 				<imageobject>
 					<imagedata scalefit="1" align="center" width="350" fileref="images/ch04_img004.png"/>
@@ -96,7 +96,7 @@
 			<para><emphasis>Dashboard:</emphasis> Provides a summary of the events received by the sensors, displaying them in different metrics. This is the screen shown by default when you log into the redBorder platform.</para>
 			<mediaobject>
 				<imageobject>
-					<imagedata scalefit="1" align="center" width="350" fileref="images/ch04_img000.png"/>
+					<imagedata scalefit="1" align="center" width="350" fileref="images/ch04_img002.png"/>
 				</imageobject>
 				<textobject>
 					<phrase>Dashboard</phrase>
@@ -111,13 +111,13 @@
 					<imagedata scalefit="1" align="center" width="350" fileref="images/ch04_img005.png"/>
 				</imageobject>
 				<textobject>
-					<phrase>Sensors: view of IPS events</phrase>
+					<phrase>Sensors: view of flow events</phrase>
 				</textobject>
 				<caption>
-					<para>Sensors: view of IPS events</para>
+					<para>Sensors: view of Flow events</para>
 				</caption>
 			</mediaobject>
-			<para><emphasis>Monitor:</emphasis> in this sections they show the status of the cluster in data and graphics, hardware and system, as well as the network and other statistics collected by the IPS sensors.</para> 
+			<para><emphasis>Monitor:</emphasis> in this sections they show the status of the cluster in data and graphics, hardware and system, as well as the network and other statistics collected by the sensors.</para> 
 			<mediaobject>
 				<imageobject>
 					<imagedata scalefit="1" align="center" width="350" fileref="images/ch04_img006.png"/>
@@ -156,7 +156,7 @@
 			<para><emphasis role="bold">Configuration area</emphasis></para>
 			<mediaobject>
 				<imageobject>
-					<imagedata scalefit="1" align="center" width="350" fileref="images/ch04_img004b.png"/>
+					<imagedata scalefit="1" align="center" width="350" fileref="images/ch04_img009.png"/>
 				</imageobject>
 				<textobject>
 					<phrase>Menu bar detail: configuration area</phrase>
@@ -169,7 +169,7 @@
 				<para><emphasis>Sensors:</emphasis> Displays a list of the added sensors and the organization tree. It also contains global and local policies defined for each domain.</para>
 				<mediaobject>
 					<imageobject>
-						<imagedata scalefit="1" align="center" width="350" fileref="images/ch04_img009.png"/>
+						<imagedata scalefit="1" align="center" width="350" fileref="images/ch04_img010.png"/>
 					</imageobject>	
 					<textobject>
 						<phrase>List of sensors</phrase>
@@ -181,7 +181,7 @@
 				<para><emphasis>Tools:</emphasis> Provides a list of the configuration options that are available to the administrator profile and in read mode for the rest of the users.</para>
 				<mediaobject>
 					<imageobject>
-						<imagedata scalefit="1" align="center" width="350" fileref="images/ch04_img010.png"/>
+						<imagedata scalefit="1" align="center" width="350" fileref="images/ch04_img011.png"/>
 					</imageobject>
 					<textobject>
 						<phrase>Available options in Tools</phrase>
