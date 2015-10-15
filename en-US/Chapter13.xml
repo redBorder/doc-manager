@@ -295,7 +295,7 @@
 		</note>
 		<mediaobject>
 			<imageobject>
-				<imagedata scalefit="1" align="center" width="350" fileref="images/ch11_img007.png"/>
+				<imagedata scalefit="1" align="center" width="350" fileref="images/ch13_img007.png"/>
 			</imageobject>
 			<caption>
 				<para>General Settings: Monitoring and logs</para>
@@ -307,7 +307,7 @@
 		<para>If user wants to send their logs to this Amazon Service, required fields must be filled.</para>
 		<mediaobject>
 			<imageobject>
-				<imagedata scalefit="1" align="center" width="350" fileref="images/ch11_img007b.png"/>
+				<imagedata scalefit="1" align="center" width="350" fileref="images/ch13_img007b.png"/>
 			</imageobject>
 			<caption>
 				<para>General Settings: Amazon CloudWatch</para>
@@ -317,7 +317,7 @@
 		<para>It enables a backup of user's data in a remote server or database. For this, it is necessary to indicate Hostname, Bucket, and Access and Secret key. </para>
 		<mediaobject>
 			<imageobject>
-				<imagedata scalefit="1" align="center" width="350" fileref="images/ch11_img007c.png"/>
+				<imagedata scalefit="1" align="center" width="350" fileref="images/ch13_img007c.png"/>
 			</imageobject>
 			<caption>
 				<para>General Settings: Backup segments (Remote S3)</para>
@@ -474,14 +474,6 @@
 			</caption>
 		</mediaobject>
 		<para>In all cases when you are creating or editing an object, the system asks you for a name, a value for it and description.</para>
-		<mediaobject>
-			<imageobject>
-				<imagedata scalefit="1" align="center" width="350" fileref="images/ch13_img009b.png"/>
-			</imageobject>
-			<caption>
-				<para>Create a new net object</para>
-			</caption>
-		</mediaobject>
 		<para>In the top right margin an options submenu is shown. It allows user to import or export the data concerning these objects in .csv format.</para>
 		<note>
 			<title>Note</title>

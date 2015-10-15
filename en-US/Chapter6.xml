@@ -559,7 +559,7 @@
 						<para>When you have reached the limit of granularity at which you can display events, this icon will transform the information:</para>
 						<mediaobject>
 							<imageobject>
-								<imagedata scalefit="1" align="center" width="350" fileref="images/ch006_img026.png"/>
+								<imagedata scalefit="1" align="center" width="350" fileref="images/ch06_img026.png"/>
 							</imageobject>
 							<caption>
 								<para>Timestamp details: event information</para>
