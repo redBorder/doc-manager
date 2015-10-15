@@ -46,7 +46,7 @@
 		</note>
 	</section>
 	<section>
-		<title><literal>View</literal></title>
+		<title>View</title>
 		<para>When the user access to the <literal>Sensors</literal> section can find a list (Tree view) in which the domains and sensors that are a part of their network infrastructure are shown. In this point we are going to review each view and the actions available.</para>
 		<mediaobject>
 			<imageobject>

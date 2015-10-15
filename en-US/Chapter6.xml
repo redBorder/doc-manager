@@ -385,7 +385,7 @@
 		</section>
 	</section>
 	<section>
-		<title>Reputation and monitoring IP's</title>
+		<title>Reputation and monitoring IPs</title>
 		<para>Attributes source and traffic destination (SRC Address/DST Address) allows to perform the following actions in order to facilitate a more comprehensive analysis of the origin and destination of the traffic that passes through our network:</para>
 		<para><emphasis role="bold">Create object:</emphasis> this allows to put a name and/or description allowing the location of an item more quickly and easily. For example, if we know the machine associated with a particular IP address, this option allows you to rename it for easier identification. </para>
 		<mediaobject>
