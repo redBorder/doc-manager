@@ -390,7 +390,7 @@
 		<para><emphasis role="bold">Create object:</emphasis> this allows to put a name and/or description allowing the location of an item more quickly and easily. For example, if we know the machine associated with a particular IP address, this option allows you to rename it for easier identification. </para>
 		<mediaobject>
 			<imageobject>
-				<imagedata scalefit="1" align="center" width="350" fileref="images/ch07_img021.png"/>
+				<imagedata scalefit="1" align="center" width="350" fileref="images/ch06_img021.png"/>
 			</imageobject>
 			<textobject>
 				<phrase>Renaming an IP: Create net object</phrase>
@@ -413,7 +413,7 @@
 		</itemizedlist>
 		<mediaobject>
 			<imageobject>
-				<imagedata scalefit="1" align="center" width="350" fileref="images/ch07_img022a.png"/>
+				<imagedata scalefit="1" align="center" width="350" fileref="images/ch06_img022a.png"/>
 			</imageobject>
 			<textobject>
 				<phrase>uTrace</phrase>
@@ -424,7 +424,7 @@
 		</mediaobject>
 		<mediaobject>
 			<imageobject>
-				<imagedata scalefit="1" align="center" width="350" fileref="images/ch07_img022b.png"/>
+				<imagedata scalefit="1" align="center" width="350" fileref="images/ch06_img022b.png"/>
 			</imageobject>
 			<textobject>
 				<phrase>Trusted Source</phrase>
@@ -435,7 +435,7 @@
 		</mediaobject>
 		<mediaobject>
 			<imageobject>
-				<imagedata scalefit="1" align="center" width="350" fileref="images/ch07_img022c.png"/>
+				<imagedata scalefit="1" align="center" width="350" fileref="images/ch06_img022c.png"/>
 			</imageobject>
 			<textobject>
 				<phrase>Whois.sc</phrase>
@@ -449,7 +449,7 @@
 		<para><emphasis>DNS:</emphasis> the Manager performs a reverse resolution that lets us know the DNS associated with the IP consulted.</para>
 		<mediaobject>
 			<imageobject>
-				<imagedata scalefit="1" align="center" width="350" fileref="images/ch07_img022d.png"/>
+				<imagedata scalefit="1" align="center" width="350" fileref="images/ch06_img022d.png"/>
 			</imageobject>
 			<textobject>
 				<phrase>Basic Source Lookup: information query IP/DNS</phrase>
