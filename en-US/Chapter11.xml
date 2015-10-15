@@ -16,14 +16,14 @@
 		<para>The organization of this sections is very similar (in terms of structure) to the other parts of the web. We can find in this case:</para>
 		<itemizedlist mark="bullet">
 			<listitem>
-				<para>Section submenu: configuration and sensors'management options.</para>
+				<para><emphasis role="bold">Section submenu:</emphasis> configuration and sensors'management options.</para>
 				<para>-<literal>Options</literal></para>
 				<para>-<literal>+Add sensor</literal></para>
 				<para>-<literal>+Add Domain</literal></para>
 				<para>-<literal>View</literal></para>
 			</listitem>
 			<listitem>
-				<para>Main area: the information that is shown in this area depends on the selected <literal>View.</literal> There are four available views in order to visualize our network infrastructure:</para>
+				<para><emphasis role="bold">Main area:</emphasis> the information that is shown in this area depends on the selected <literal>View.</literal> There are four available views in order to visualize our network infrastructure:</para>
 				<para>-<literal>Tree</literal>: list with the different levels that compose the network infrastructure classified by dependency and hierarchy. Alongside each element are two icons for editing and deleting actions. This is the view that is displayed by default.</para>
 				<para>-<literal>Map</literal>: locate the domains and sensors over a map.</para>
 				<para>-<literal>Access Points</literal>: direct access to the visualization of the deployed Access Points.</para>
@@ -50,7 +50,7 @@
 		<para>When the user access to the <literal>Sensors</literal> section can find a list (Tree view) in which the domains and sensors that are a part of their network infrastructure are shown. In this point we are going to review each view and the actions available.</para>
 		<mediaobject>
 			<imageobject>
-				<imagedata scalefit="1" align="center" width="350" fileref="images/ch11_img005.png"/>
+				<imagedata scalefit="1" align="center" width="350" fileref="images/ch11_img002.png"/>
 			</imageobject>
 			<caption>
 				<para>View menu: options</para>
@@ -61,17 +61,17 @@
 			<para><literal>Tree</literal> view is shown by default in the Sensors section. It is a list with the different levels that compose the network infrastructure classified by dependency and hierarchy. </para>
 			<mediaobject>
 				<imageobject>
-					<imagedata scalefit="1" align="center" width="350" fileref="images/ch11_img001.png"/>
+					<imagedata scalefit="1" align="center" width="350" fileref="images/ch11_img004.png"/>
 				</imageobject>
 				<caption>
-					<para><literal>Tree</literal> view</para>
+					<para>Tree view</para>
 				</caption>
 			</mediaobject>
 			<para>From this view, the user can add a new domain or sensor, delete the existing, access to other views, import and export the tree as well as direct editing of all the domains and sensors that are a part of the list.</para>
 			<para>Every element that is shown in the tree has two icons: Edit and Delete. (The same icons work in tree and sensors view):</para>
 			<mediaobject>
 				<imageobject>
-					<imagedata scalefit="1" align="center" width="350" fileref="images/ch11_img012c.png"/>
+					<imagedata scalefit="1" align="center" width="350" fileref="images/ch11_img004b.png"/>
 				</imageobject>
 				<caption>
 					<para>"Edit" and "Delete" icons</para>
@@ -79,25 +79,25 @@
 			</mediaobject>
 			<note>
 				<title>Note</title>
-				<para>The options in the Edit menu can change depending on if we are consulting the infrastructure at domain or at sensor level.</para>
+				<para>The options in the <emphasis role="bold">Edit menu</emphasis> can change depending on if we are consulting the infrastructure at domain or at sensor level.</para>
 			</note>
 			<note>
 				<title>Note</title>
-				<para>Some sensors can't be deleted. In these cases, the "Delete" icon will appear colored in grey.</para>
+				<para><emphasis role="bold">Some sensors can't be deleted.</emphasis>  In these cases, the "Delete" icon will appear colored in grey.</para>
 				<para>Before the domain or sensor will be deleted, the system will show you a pop-up screen with a warning message. All the users and descendants assigned to this domain or sensor will be disable and assigned to the parents of this domain or root domain. The user with Administrator role should activate user's permissions from <literal>Tools>Users</literal> section.</para>
 			</note>
 			<mediaobject>
 				<imageobject>
-					<imagedata scalefit="1" align="center" width="350" fileref="images/ch11_img019.png"/>
+					<imagedata scalefit="1" align="center" width="350" fileref="images/ch11_img003.png"/>
 				</imageobject>
 				<caption>
 					<para>Confirm the deleting of the sensor</para>
 				</caption>
 			</mediaobject>
-			<para>In this view we can find also an icon that indicates the type of policy that regulate for each domain or IPS sensor. Click on this icon to access the interface for this policy and from which we can perform some different actions. We'll see that in detail in the <emphasis>Policy rules</emphasis> chapter.</para>
+			<para>In this view we can find also an icon that indicates the type of policy that regulate for each domain or (IPS) sensor. Click on this icon to access the interface for this policy and from which we can perform some different actions. We'll see that in detail in the <emphasis>Policy rules</emphasis> chapter.</para>
 			<mediaobject>
 				<imageobject>
-					<imagedata scalefit="1" align="center" width="50" fileref="images/ch11_img014.png"/>
+					<imagedata scalefit="1" align="center" width="50" fileref="images/ch11_img004c.png"/>
 				</imageobject>
 				<caption>
 					<para>Policy icon</para>
@@ -153,7 +153,7 @@
 				</note>
 				<mediaobject>
 					<imageobject>
-						<imagedata scalefit="1" align="center" width="350" fileref="images/ch11_img001.png"/>
+						<imagedata scalefit="1" align="center" width="350" fileref="images/ch11_img004.png"/>
 					</imageobject>
 					<caption>
 						<para>Detail of organization levels in a sensor infrastructures</para>
@@ -170,7 +170,7 @@
 				<para>This option allows to import your network infrastructure through the uploading of a file to redBorder platform. This will be shown in tree view.</para>
 				<mediaobject>
 					<imageobject>
-						<imagedata scalefit="1" align="center" width="150" fileref="images/ch11_img010.png"/>
+						<imagedata scalefit="1" align="center" width="150" fileref="images/ch11_img005.png"/>
 					</imageobject>
 					<caption>
 						<para>Import Tree</para>
@@ -187,18 +187,18 @@
 				</orderedlist>
 				<mediaobject>
 					<imageobject>
-						<imagedata scalefit="1" align="center" width="350" fileref="images/ch11_img016.png"/>
+						<imagedata scalefit="1" align="center" width="350" fileref="images/ch11_img006.png"/>
 					</imageobject>
 					<caption>
-						<para>Import tree from <literal>Options</literal> menu</para>
+						<para>Import/Export tree from <literal>Options</literal> menu</para>
 					</caption>
 				</mediaobject>
 				<mediaobject>
 					<imageobject>
-						<imagedata scalefit="1" align="center" width="350" fileref="images/ch11_img017.png"/>
+						<imagedata scalefit="1" align="center" width="350" fileref="images/ch11_img008.png"/>
 					</imageobject>
 					<caption>
-						<para>Import tree through Edit icon (domain level)</para>
+						<para>Import/Export tree through Edit icon (domain level)</para>
 					</caption>
 				</mediaobject>
 			</section>
@@ -207,7 +207,7 @@
 				<para>This option allows to export a tree and is within easy reach for other applications. User will download a zip file for storing then in their computer.</para>
 				<mediaobject>
 					<imageobject>
-						<imagedata scalefit="1" align="center" width="350" fileref="images/ch11_img011.png"/>
+						<imagedata scalefit="1" align="center" width="350" fileref="images/ch11_img007.png"/>
 					</imageobject>
 					<caption>
 						<para>Export Tree</para>
@@ -222,22 +222,6 @@
 						<para>Edit icon (domain level)</para>
 					</listitem>
 				</orderedlist>
-				<mediaobject>
-					<imageobject>
-						<imagedata scalefit="1" align="center" width="350" fileref="images/ch11_img018.png"/>
-					</imageobject>
-					<caption>
-						<para>Export a tree from <literal>Options</literal> menu</para>
-					</caption>
-				</mediaobject>
-				<mediaobject>
-					<imageobject>
-						<imagedata scalefit="1" align="center" width="350" fileref="images/ch11_img020.png"/>
-					</imageobject>
-					<caption>
-						<para>Export tree from configuration menu, domain level</para>
-					</caption>
-				</mediaobject>
 			</section>
 			<section>
 				<title>Monitors</title>
@@ -249,7 +233,7 @@
 				<para><literal>Technology</literal> column indicates the origin from where the data is collected.</para>
 				<mediaobject>
 					<imageobject>
-						<imagedata scalefit="1" align="center" width="350" fileref="images/ch11_img050.png"/>
+						<imagedata scalefit="1" align="center" width="350" fileref="images/ch11_img010.png"/>
 					</imageobject>
 					<caption>
 						<para>Monitors</para>
@@ -260,7 +244,7 @@
 				<para><emphasis role="bold">Delete monitor:</emphasis> delete the metric applied.</para>
 				<mediaobject>
 					<imageobject>
-						<imagedata scalefit="1" align="center" width="350" fileref="images/ch11_img055.png"/>
+						<imagedata scalefit="1" align="center" width="350" fileref="images/ch11_img011.png"/>
 					</imageobject>
 					<caption>
 						<para>Add Monitor: available metrics</para>
@@ -273,7 +257,7 @@
 			<para>In this view, the user can see where the domains and sensors are located. There aren't any options available here. However, it is possible to add a new location, both for a new domain/sensor and for an existing one.</para>
 			<mediaobject>
 				<imageobject>
-					<imagedata scalefit="1" align="center" width="350" fileref="images/ch11_img056.png"/>
+					<imagedata scalefit="1" align="center" width="350" fileref="images/ch11_img012.png"/>
 				</imageobject>
 				<caption>
 					<para><literal>Map</literal> view</para>
@@ -285,7 +269,7 @@
 			<para>In both cases you will find a paragraph called <literal>Location</literal> in which a Map is shown; you can find the desired location or point by clicking on the map. Then select <literal>+Add Location</literal> tab.</para>
 			<mediaobject>
 				<imageobject>
-					<imagedata scalefit="1" align="center" width="350" fileref="images/ch11_img033.png"/>
+					<imagedata scalefit="1" align="center" width="350" fileref="images/ch11_img014.png"/>
 				</imageobject>
 				<caption>
 					<para>Create/Edit sensor: Location</para>
@@ -294,7 +278,7 @@
 			<para>The coordinates fields will be filled, in case of, you previously point or search this location. Otherwise, insert Latitude and Longitude values manually.</para>
 			<mediaobject>
 				<imageobject>
-					<imagedata scalefit="1" align="center" width="350" fileref="images/ch11_img033b.png"/>
+					<imagedata scalefit="1" align="center" width="350" fileref="images/ch11_img013.png"/>
 				</imageobject>
 				<caption>
 					<para>Define coordinates to add a location for a sensor or domain</para>
@@ -304,13 +288,13 @@
 		<section>
 			<title>View Access Points</title>
 			<para>Access Points (AP) are access points of the network infrastructure which are associated with a location. The Access Points depend on the Flow App and apply to both the domain level, as well as the sensors.</para>
-			<para>This is another way to display your network infrastructure, through the distribution of the APs per domain. You can access the display or create access points in two different ways:</para>
+			<para>This is another way to display your network infrastructure, through the distribution of the APs per domain, and you can also view the status of each AP. You can access the display or create access points in two different ways:</para>
 			<itemizedlist mark="bullet">
 				<listitem>
 					<para>View>Access Points</para>
 					<mediaobject>
 						<imageobject>
-							<imagedata scalefit="1" align="center" width="350" fileref="images/ch11_img034b.png"/>
+							<imagedata scalefit="1" align="center" width="350" fileref="images/ch11_img016.png"/>
 						</imageobject>
 						<caption>
 							<para>View>Access Points</para>
@@ -321,7 +305,7 @@
 					<para>Edit icon to sensor/domain level>Edit: <literal>View Access Points</literal> (located in the submenu upper right side).</para>
 					<mediaobject>
 						<imageobject>
-							<imagedata scalefit="1" align="center" width="350" fileref="images/ch11_img034f.png"/>
+							<imagedata scalefit="1" align="center" width="350" fileref="images/ch11_img017.png"/>
 						</imageobject>
 						<caption>
 							<para>Edit domain/sensor>View Access Points</para>
@@ -342,7 +326,7 @@
 					<para>Edit (sensor name or domain): we return to the editing screen for the domain or sensor.</para>
 				</listitem>
 				<listitem>
-					<para>Options><literal>Options>Export Access Points/Delete All Access Points.</literal>: allows you to export all Access Points a a -csv file or delete all the Access Points defined for that localization. </para>
+					<para>Options><literal>Options>Export Access Points/Delete All Access Points.</literal>: allows you to export all Access Points a a .csv file or delete all the Access Points defined for that localization. </para>
 				</listitem>
 				<listitem>
 					<para><literal>+Add sensors</literal>: add sensors to the doman we are consulting. </para>
@@ -356,7 +340,7 @@
 			</itemizedlist>
 			<mediaobject>
 				<imageobject>
-					<imagedata scalefit="1" align="center" width="350" fileref="images/ch11_img034.png"/>
+					<imagedata scalefit="1" align="center" width="350" fileref="images/ch11_img018.png"/>
 				</imageobject>
 				<caption>
 					<para>Access Points interface (domain level)</para>
@@ -364,34 +348,10 @@
 			</mediaobject>
 			<mediaobject>
 				<imageobject>
-					<imagedata scalefit="1" align="center" width="50" fileref="images/ch11_img034b.png"/>
+					<imagedata scalefit="1" align="center" width="350" fileref="images/ch11_img019.png"/>
 				</imageobject>
 				<caption>
-					<para>Actions you can perform from the Access Points interface</para>
-				</caption>
-			</mediaobject>
-			<mediaobject>
-				<imageobject>
-					<imagedata scalefit="1" align="center" width="350" fileref="images/ch11_img034bc.png"/>
-				</imageobject>
-				<caption>
-					<para>Example of a list of Access Points (domain level)</para>
-				</caption>
-			</mediaobject>
-			<mediaobject>
-				<imageobject>
-					<imagedata scalefit="1" align="center" width="350" fileref="images/ch11_img034bd.png"/>
-				</imageobject>
-				<caption>
-					<para>Example Zone location of Access Points</para>
-				</caption>
-			</mediaobject>
-			<mediaobject>
-				<imageobject>
-					<imagedata scalefit="1" align="center" width="350" fileref="images/ch11_img034be.png"/>
-				</imageobject>
-				<caption>
-					<para>Add a new Access Point area</para>
+					<para>Add a new Access Point zone</para>
 				</caption>
 			</mediaobject>
 		</section>
@@ -404,7 +364,7 @@
 			<para>To edit the settings, click on the Edit button.</para>
 			<mediaobject>
 				<imageobject>
-					<imagedata scalefit="1" align="center" width="350" fileref="images/ch11_img005.png"/>
+					<imagedata scalefit="1" align="center" width="350" fileref="images/ch11_img016.png"/>
 				</imageobject>
 				<caption>
 					<para>Sensor views: details of sensors that are available to consult </para>
@@ -413,7 +373,7 @@
 			<para>To consult the sensors the user can perform a search, or alphabetically browse by the list of sensors. </para>	
 			<mediaobject>
 				<imageobject>
-					<imagedata scalefit="1" align="center" width="350" fileref="images/ch11_img038.png"/>
+					<imagedata scalefit="1" align="center" width="350" fileref="images/ch11_img020.png"/>
 				</imageobject>
 				<caption>
 					<para>Flow Sensor Views: available information</para>
@@ -430,7 +390,7 @@
 			<para>Select option <literal>+Add Domain</literal> which is located in the upper right submenu, choose the type of domain you want to add, and then fill out the required fields (these vary depending on the type of domain to be created).</para>
 			<mediaobject>
 				<imageobject>
-					<imagedata scalefit="1" align="center" width="350" fileref="images/ch11_img015.png"/>
+					<imagedata scalefit="1" align="center" width="350" fileref="images/ch11_img021.png"/>
 				</imageobject>
 				<caption>
 					<para>Add a domain: domain selection</para>
@@ -438,7 +398,7 @@
 			</mediaobject>
 			<mediaobject>
 				<imageobject>
-					<imagedata scalefit="1" align="center" width="350" fileref="images/ch11_img015b.png"/>
+					<imagedata scalefit="1" align="center" width="350" fileref="images/ch11_img022.png"/>
 				</imageobject>
 				<caption>
 					<para>Add a domain: fill in the data to create</para>
@@ -452,7 +412,7 @@
 			<para>To access this screen the user must click the edit button to the right of the domain you want to edit from the tree view or <literal>Access Points</literal> and select the option <literal>Edit.</literal></para>
 			<mediaobject>
 				<imageobject>
-					<imagedata scalefit="1" align="center" width="350" fileref="images/ch11_img025.png"/>
+					<imagedata scalefit="1" align="center" width="350" fileref="images/ch11_img023.png"/>
 				</imageobject>
 				<caption>
 					<para>Example of editing a domain</para>
@@ -467,32 +427,10 @@
 					<para><literal>Servers</literal>: In this section the user can define the configuration of the Proxy and Syslog servers. All values shown are inherited by default. Overwrite if necessary</para>
 					<mediaobject>
 						<imageobject>
-							<imagedata scalefit="1" align="center" width="350" fileref="images/ch11_img027.png"/>
+							<imagedata scalefit="1" align="center" width="350" fileref="images/ch11_img024.png"/>
 						</imageobject>
 						<caption>
 							<para>Configuring Proxy and Syslog servers</para>
-						</caption>
-					</mediaobject>
-				</listitem>
-				<listitem>
-					<para>IP Variables: In this section, they show the values for the Snort IP variables. Those that are inherited from a higher level, appear with a check in the box <literal> Inherited.</literal></para>
-					<mediaobject>
-						<imageobject>
-							<imagedata scalefit="1" align="center" width="350" fileref="images/ch11_img042.png"/>
-						</imageobject>
-						<caption>
-							<para>IP Variables</para>
-						</caption>
-					</mediaobject>
-				</listitem>
-				<listitem>
-					<para><literal>Port variables</literal>: In this section, they show the values for the variables of the snort ports. Those that are inherited from a higher level, appear with a check in the box <literal> Inherited.</literal></para>
-					<mediaobject>
-						<imageobject>
-							<imagedata scalefit="1" align="center" width="350" fileref="images/ch11_img045.png"/>
-						</imageobject>
-						<caption>
-							<para>Port variables</para>
 						</caption>
 					</mediaobject>
 				</listitem>
@@ -514,7 +452,7 @@
 			<para>Remember that to manage the hierarchy of sensors and domains, it is only necessary to go to the tree view and "select and drag"  move the recently created sensor to the level that you want. </para>
 			<mediaobject>
 				<imageobject>
-					<imagedata scalefit="1" align="center" width="350" fileref="images/ch11_img003.png"/>
+					<imagedata scalefit="1" align="center" width="350" fileref="images/ch11_img025.png"/>
 				</imageobject>
 				<caption>
 					<para>Add sensor</para>
@@ -523,7 +461,7 @@
 			<para>In the following images they show some examples of the sensors that can be added to the infrastructure (active in the Flow App) and the information that the system requests to create.</para>
 			<mediaobject>
 				<imageobject>
-					<imagedata scalefit="1" align="center" width="350" fileref="images/ch11_img023a.png"/>
+					<imagedata scalefit="1" align="center" width="350" fileref="images/ch11_img026.png"/>
 				</imageobject>
 				<caption>
 					<para>Add Flow sensor</para>
@@ -531,26 +469,34 @@
 			</mediaobject>
 			<mediaobject>
 				<imageobject>
-					<imagedata scalefit="1" align="center" width="350" fileref="images/ch11_img021.png"/>
+					<imagedata scalefit="1" align="center" width="350" fileref="images/ch11_img027.png"/>
 				</imageobject>
 				<caption>
 					<para>Add MSE sensor</para>
+				</caption>
+			</mediaobject>
+			<mediaobject>
+				<imageobject>
+					<imagedata scalefit="1" align="center" width="350" fileref="images/ch11_img027b.png"/>
+				</imageobject>
+				<caption>
+					<para>Add Meraki sensor</para>
 				</caption>
 			</mediaobject>
 			<important>
 				<title>Important</title>
 				<para>In the moment in which a redBorder sensor is created, by default it's set as the root, above the domain level.</para>
 				<para>The user can organize its sensor infrastructure in any moment, dragging and dropping the sensor in the level they want to place it in.</para>
-				<para>The sensor automatically inherits the properties of the root domain (political, operating mode, Snort variables, etc.).</para>
+				<para><emphasis role="bold">The sensor automatically inherits the properties of the root domain</emphasis> (policies, operating mode, Snort variables, etc.).</para>
 			</important>			
 		</section>
 		<section>
 			<title>Edit a sensor: Flow</title>
 			<para>The configuration and editing of Flow sensors is possible in two different ways: selecting <literal>View>Flow sensors</literal> or, through the setup icon found in the corresponding row to a Flow sensor in the tree view. </para>
-			<para>In both cases, by selecting the settings option, the user accesses a screen where you can edit the following information (these fields vary depending on whether consulting a ASR, WLC, Flow, MSE, etc. sensor):</para>
+			<para>In both cases, by selecting the settings option, the user accesses a screen where you can edit the following information (these fields vary depending on whether consulting a ASR, WLC, Flow, MSE, etc., sensor):</para>
 			<mediaobject>
 				<imageobject>
-					<imagedata scalefit="1" align="center" width="350" fileref="images/ch11_img054.png"/>
+					<imagedata scalefit="1" align="center" width="350" fileref="images/ch11_img028.png"/>
 				</imageobject>
 				<caption>
 					<para>Edit Flow sensor</para>
@@ -561,7 +507,7 @@
 					<para>General: allows you to enter general configuration data of the sensor.</para>
 					<mediaobject>
 						<imageobject>
-							<imagedata scalefit="1" align="center" width="350" fileref="images/ch11_img054b.png"/>
+							<imagedata scalefit="1" align="center" width="350" fileref="images/ch11_img029.png"/>
 						</imageobject>
 						<caption>
 							<para>Edit Flow sensor: General</para>
@@ -597,7 +543,7 @@
 					<para>SNMP: to activate the SNMP sensor, it's necessary that the user indicates the community it has to connect with.</para>
 					<mediaobject>
 						<imageobject>
-							<imagedata scalefit="1" align="center" width="350" fileref="images/ch11_img054c.png"/>
+							<imagedata scalefit="1" align="center" width="350" fileref="images/ch11_img030.png"/>
 						</imageobject>
 						<caption>
 							<para>Edit Flow sensor: SNMP</para>
@@ -617,9 +563,33 @@
 				</listitem>
 				<listitem>
 					<para>Home Networks: add local networks of client for that sensor. This way redBorder can directly detect the traffic and IP that belongs to the client.</para>
+					<mediaobject>
+						<imageobject>
+							<imagedata scalefit="1" align="center" width="350" fileref="images/ch11_img031.png"/>
+						</imageobject>
+						<caption>
+							<para>Edit Flow sensor: Home Networks</para>
+						</caption>
+					</mediaobject>
+					<mediaobject>
+						<imageobject>
+							<imagedata scalefit="1" align="center" width="350" fileref="images/ch11_img032.png"/>
+						</imageobject>
+						<caption>
+							<para>Edit Flow sensor: Add new Home Networks</para>
+						</caption>
+					</mediaobject>
 				</listitem>
 				<listitem>
-					<para>MAC Routers: works the same way as the <literal> Home Networks </literal> but in this case at level 2 or by MAC address.</para>
+					<para>MAC Routers: works the same way as the <literal> Home Networks </literal> but in this case at level 2 or by MAC address. You can also add a new Router MAC.</para>
+					<mediaobject>
+						<imageobject>
+							<imagedata scalefit="1" align="center" width="350" fileref="images/ch11_img033.png"/>
+						</imageobject>
+						<caption>
+							<para>Edit Flow sensor: Add new Router MAC</para>
+						</caption>
+					</mediaobject>
 				</listitem>
 			</itemizedlist>
 		</section>

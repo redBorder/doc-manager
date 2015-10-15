@@ -80,7 +80,7 @@
 			</orderedlist>
 			<mediaobject>
 				<imageobject>
-					<imagedata scalefit="1" align="center" width="350" fileref="images/ch13_img003.png"/>
+					<imagedata scalefit="1" align="center" width="350" fileref="images/ch06_img013.png"/>
 				</imageobject>
 				<caption>
 					<para>Create a new alarm</para>
@@ -131,10 +131,10 @@
 			<para> These are filters that are added to trigger an alarm.</para>
 			<mediaobject>
 				<imageobject>
-					<imagedata scalefit="1" align="center" width="350" fileref="images/ch13_img003b.png"/>
+					<imagedata scalefit="1" align="center" width="350" fileref="images/ch13_img003.png"/>
 				</imageobject>
 				<caption>
-					<para>Filters for creating conditions for an alarm</para>
+					<para>Conditions/Filters for creating conditions for an alarm</para>
 				</caption>
 			</mediaobject>
 		</section>
@@ -228,7 +228,7 @@
 		</note>
 		<mediaobject>
 			<imageobject>
-				<imagedata scalefit="1" align="center" width="350" fileref="images/ch13_img006a.png"/>
+				<imagedata scalefit="1" align="center" width="350" fileref="images/ch13_img008.png"/>
 			</imageobject>
 			<caption>
 				<para><literal>General settings:</literal> advanced options</para>
@@ -280,30 +280,47 @@
 		</note>
 		<mediaobject>
 			<imageobject>
-				<imagedata scalefit="1" align="center" width="350" fileref="images/ch13_img006d.png"/>
+				<imagedata scalefit="1" align="center" width="350" fileref="images/ch13_img009.png"/>
 			</imageobject>
 			<caption>
 				<para><literal>General settings:</literal> server configuration</para>
 			</caption>
 		</mediaobject>
-		<para><emphasis role="bold">Trap Servers</emphasis></para>
-		<para>This section allows you to enable SNMP connections. The user must specify the IP and the community at which redBorder must connect.</para>
+		<para><emphasis role="bold">Monitoring and Logs</emphasis></para>
+		<para>This section helps you to momitorize redBorder infrastructure. In the field <literal>Syslog Servers</literal> you have to indicate in which remote server, logs are going to be sent. </para>
+		<para>You must select which protocol and which Syslog mode you want to use for the sendings.</para>
+		<note>
+			<title>Note</title>
+			<para>TCP protocol is recommended in order to gguarantee a safe sending. Choose this option whenever possible.</para>
+		</note>
 		<mediaobject>
 			<imageobject>
-				<imagedata scalefit="1" align="center" width="350" fileref="images/ch11_img028.png"/>
+				<imagedata scalefit="1" align="center" width="350" fileref="images/ch11_img007.png"/>
 			</imageobject>
 			<caption>
-				<para>General Settings: List ofTrap Servers</para>
+				<para>General Settings: Monitoring and logs</para>
 			</caption>
 		</mediaobject>
-		<para><emphasis role="bold">Add Trap Server:</emphasis> You can add a new <literal>Trap Server</literal> by clicking the tab <literal>+Add,</literal> then entering the IP and SNMP community to which it belongs. <literal>Update</literal> to save changes.</para>	
-		<para><emphasis role="bold">Delete Trap Server:</emphasis> Click on the icon Delete which appears next to theTrap Server to remove it. </para>
+		<para>The section New Relic allows you to report to New Relic cloud. In this case, the user have to indicate the number of their New Relic License and if they have a Cluster group, write its name.</para>
+		<para>The activation of <literal>Enable Plugins</literal> check is optional because this is a payment service. Activate <literal> Enable APM</literal> in case of web monitoring.</para>
+		<para><emphasis role="bold">Amazon CloudWatch</emphasis></para>
+		<para>If user wants to send their logs to this Amazon Service, required fields must be filled.</para>
 		<mediaobject>
 			<imageobject>
-				<imagedata scalefit="1" align="center" width="350" fileref="images/ch11_img029.png"/>
+				<imagedata scalefit="1" align="center" width="350" fileref="images/ch11_img007b.png"/>
 			</imageobject>
 			<caption>
-				<para>General Settings: Add new Trap Server</para>
+				<para>General Settings: Amazon CloudWatch</para>
+			</caption>
+		</mediaobject>
+		<para><emphasis role="bold">Backup segments (Remote S3)</emphasis></para>
+		<para>It enables a backup of user's data in a remote server or database. For this, it is necessary to indicate Hostname, Bucket, and Access and Secret key. </para>
+		<mediaobject>
+			<imageobject>
+				<imagedata scalefit="1" align="center" width="350" fileref="images/ch11_img007c.png"/>
+			</imageobject>
+			<caption>
+				<para>General Settings: Backup segments (Remote S3)</para>
 			</caption>
 		</mediaobject>
 		<para><emphasis role="bold">White network</emphasis></para>
@@ -312,10 +329,10 @@
 		<para>Delete a network from the list: through the icon “Delete".</para>
 		<mediaobject>
 			<imageobject>
-				<imagedata scalefit="1" align="center" width="350" fileref="images/ch13_img006e.png"/>
+				<imagedata scalefit="1" align="center" width="350" fileref="images/ch13_img011.png"/>
 			</imageobject>
 			<caption>
-				<para><literal>General settings:</literal> list of White Networks</para>
+				<para><literal>General settings:</literal> Add a new White Network</para>
 			</caption>
 		</mediaobject>	
 		<para><emphasis role="bold">Black Networks</emphasis></para>
@@ -324,10 +341,10 @@
 		<para>Delete a network from the list: through the icon “Delete".</para>
 		<mediaobject>
 			<imageobject>
-				<imagedata scalefit="1" align="center" width="350" fileref="images/ch13_img006f.png"/>
+				<imagedata scalefit="1" align="center" width="350" fileref="images/ch13_img012.png"/>
 			</imageobject>
 			<caption>
-				<para><literal>General settings:</literal> list of Black Networks</para>
+				<para><literal>General settings:</literal> Add a new Black Network</para>
 			</caption>
 		</mediaobject>
 		<para><emphasis role="bold"><literal>Network Routes</literal></emphasis></para>
@@ -336,47 +353,54 @@
 		<para>Delete a network from the list: through the icon “Delete”.</para>
 		<mediaobject>
 			<imageobject>
-				<imagedata scalefit="1" align="center" width="350" fileref="images/ch13_img006f.png"/>
+				<imagedata scalefit="1" align="center" width="350" fileref="images/ch13_img013.png"/>
 			</imageobject>
 			<caption>
-				<para><literal>General settings:</literal> list of Black Networks</para>
+				<para><literal>General settings:</literal> list of Network Routes</para>
 			</caption>
 		</mediaobject>
 		<para><emphasis role="bold">Geo IP</emphasis></para>
 		<para>To enable Geo Protection function it is necessary to have an updated geolocalization database in order to avoid errors in IPs geolocalization. redBorder has been configured to support only Maxmind database format.</para>
-			<!--Nota sobre bbdd maxmind?-->
-			<para>These are the types of databases that are admitted for IPv4 and IPv6 versions (binary format of old GeoIp):</para>
-			<itemizedlist mark="bullet">
-				<listitem>
-					<para>Country: it determines the country of an Internet visitor based on their IP Address.</para>
-				</listitem>
-				<listitem>
-					<para>City: it indicates the country, subdivisions, city, postcode, latitude and longitude associated with IPv4 and IPv6  worldwide addresses.</para>
-				</listitem>
-				<listitem>
-					<para>ASN: GeoIP2 database of anonymous IP contains data about IP addresses of the networks that have been used in a various ways by anonymous. </para>
-				</listitem>
-			</itemizedlist>
-			<para>Download all the files from Maxmind website and unzip them. It is only possible to upload files with .dat format as we can see in the image below. For this, click on <literal>+Select File</literal></para>
-			<mediaobject>
-				<imageobject>
-					<imagedata scalefit="1" align="center" width="350" fileref="images/ch13_img006h.png"/>
-				</imageobject>
-				<caption>
-					<para><literal>General settings:</literal> GeoIP Protection</para>
-				</caption>
-			</mediaobject>
-			<para><emphasis role="bold">Default columns: Flow, Location and Monitor</emphasis></para>
-			<para>The sections <literal>Default columns Flow,</literal> <literal>Default columns Location,</literal> asn <literal>Default columns Monitor</literal> allow user to customize the columns (attributes, elements, aggregation, etc.) that are shown by default in the tables of each mentioned sections.</para>
-			<para>To include or exclude a column, just select/unselect the corresponding check.</para>	
-			<mediaobject>
-				<imageobject>
-					<imagedata scalefit="1" align="center" width="350" fileref="images/ch13_img016.png"/>
-				</imageobject>
-				<caption>
-					<para><literal>General settings:</literal> Default columns-Location</para>
-				</caption>
-			</mediaobject>
+		<para>These are the types of databases that are admitted for IPv4 and IPv6 versions (binary format of old GeoIp):</para>
+		<itemizedlist mark="bullet">
+			<listitem>
+				<para>Country: it determines the country of an Internet visitor based on their IP Address.</para>
+			</listitem>
+			<listitem>
+				<para>City: it indicates the country, subdivisions, city, postcode, latitude and longitude associated with IPv4 and IPv6  worldwide addresses.</para>
+			</listitem>
+			<listitem>
+				<para>ASN: GeoIP2 database of anonymous IP contains data about IP addresses of the networks that have been used in a various ways by anonymous. </para>
+			</listitem>
+		</itemizedlist>
+		<para>Download all the files from Maxmind website and unzip them. It is only possible to upload files with .dat format as we can see in the image below. For this, click on <literal>+Select File</literal></para>
+		<mediaobject>
+			<imageobject>
+				<imagedata scalefit="1" align="center" width="350" fileref="images/ch13_img014.png"/>
+			</imageobject>
+			<caption>
+				<para><literal>General settings:</literal> GeoIP Protection</para>
+			</caption>
+		</mediaobject>
+		<para><emphasis role="bold">Default columns: Flow, Location and Monitor</emphasis></para>
+		<para>The sections <literal>Default columns Flow,</literal> <literal>Default columns Location,</literal> asn <literal>Default columns Monitor</literal> allow user to customize the columns (attributes, elements, aggregation, etc.) that are shown by default in the tables of each mentioned sections.</para>
+		<para>To include or exclude a column, just select/unselect the corresponding check.</para>	
+		<mediaobject>
+			<imageobject>
+				<imagedata scalefit="1" align="center" width="350" fileref="images/ch13_img014b.png"/>
+			</imageobject>
+			<caption>
+				<para><literal>General settings:</literal> Default columns-Flow</para>
+			</caption>
+		</mediaobject>
+		<mediaobject>
+			<imageobject>
+				<imagedata scalefit="1" align="center" width="350" fileref="images/ch13_img014c.png"/>
+			</imageobject>
+			<caption>
+				<para><literal>General settings:</literal> Default columns-Monitor</para>
+			</caption>
+		</mediaobject>
 	</section>
 	<section>
 		<title>Licenses</title>
@@ -385,7 +409,7 @@
 		<para>To upload a file with a new redBorder license, click on <literal>Select file.</literal> To request a new license click on <literal>Request a license.</literal></para>
 		<mediaobject>
 			<imageobject>
-				<imagedata scalefit="1" align="center" width="350" fileref="images/ch13_img007.png"/>
+				<imagedata scalefit="1" align="center" width="350" fileref="images/ch13_img015.png"/>
 			</imageobject>
 			<caption>
 				<para><literal>Licenses:</literal> queries and updating of expired licenses</para>
@@ -399,7 +423,7 @@
 		<para>Edit an existing service: click on "Edit" button:</para>
 		<mediaobject>
 			<imageobject>
-				<imagedata scalefit="1" align="center" width="350" fileref="images/ch13_img008.png"/>
+				<imagedata scalefit="1" align="center" width="350" fileref="images/ch13_img016.png"/>
 			</imageobject>
 			<caption>
 				<para><literal>Lookup Sources:</literal> queries web services</para>
@@ -408,7 +432,7 @@
 		<para>Add new web service: click on the button <literal>+Add Lookup Source.</literal></para>
 		<mediaobject>
 			<imageobject>
-				<imagedata scalefit="1" align="center" width="350" fileref="images/ch13_img008b.png"/>
+				<imagedata scalefit="1" align="center" width="350" fileref="images/ch13_img017.png"/>
 			</imageobject>
 			<caption>
 				<para>Add a new <literal>Lookup Source</literal></para>
@@ -430,12 +454,20 @@
 				<para>VLAN</para>
 			</listitem>
 		</itemizedlist>
+		<mediaobject>
+			<imageobject>
+				<imagedata scalefit="1" align="center" width="350" fileref="images/ch13_img018.png"/>
+			</imageobject>
+			<caption>
+				<para><literal>Objects:</literal> list of objects</para>
+			</caption>
+		</mediaobject>
 		<para>Create a new object: click on <literal>New (Net, MAC, VLAN) Object</literal></para>
 		<para>Edit an existing object: click on "Edit" button.</para>
 		<para>Delete an object: click on the "Delete" icon.</para>
 		<mediaobject>
 			<imageobject>
-				<imagedata scalefit="1" align="center" width="350" fileref="images/ch13_img009.png"/>
+				<imagedata scalefit="1" align="center" width="350" fileref="images/ch13_img019.png"/>
 			</imageobject>
 			<caption>
 				<para><literal>Objects:</literal> create a new net object</para>
@@ -465,7 +497,7 @@
 		<para>Por último, subir la imagen desde su equipo en formato .jpg o .png.</para>
 		<mediaobject>
 			<imageobject>
-				<imagedata scalefit="1" align="center" width="350" fileref="images/ch13_img010.png"/><!--falta imagen-->
+				<imagedata scalefit="1" align="center" width="350" fileref="images/ch13_img020.png"/>
 			</imageobject>
 			<caption>
 				<para><literal>Overlay Map:</literal> overlay images over a world map</para>
@@ -479,7 +511,7 @@
 		<para>The only user that has permissions to do that is Superadministrator. The rest of the users can only visualize the sections of the platform (reading mode) but not modify its content (except in the case of its own user profile).</para>
 		<mediaobject>
 			<imageobject>
-				<imagedata scalefit="1" align="center" width="350" fileref="images/ch13_img011.png"/>
+				<imagedata scalefit="1" align="center" width="350" fileref="images/ch13_img021.png"/>
 			</imageobject>
 			<caption>
 				<para><literal>Users:</literal> management users'permissions interface</para>
@@ -489,7 +521,7 @@
 		<para>Clicking on the "Edit" button the user can modify the following information and visualize a summary of their state and activity within the platform: </para>
 		<mediaobject>
 			<imageobject>
-				<imagedata scalefit="1" align="center" width="350" fileref="images/ch13_img011b.png"/>
+				<imagedata scalefit="1" align="center" width="350" fileref="images/ch13_img022.png"/>
 			</imageobject>
 			<caption>
 				<para><literal>Users:</literal> user's profile edition</para>
@@ -500,6 +532,14 @@
 			<para>Every time that any data in a user's profile is modified, the current password should be introduced to confirm the changes.</para>
 		</important>
 		<para>Active a new user: to create a new user click on <literal>+New User.</literal> Complete the information required in the user's profile. Active <literal>Administrator</literal> check to obtain full permissions.</para>	
+		<mediaobject>
+			<imageobject>
+				<imagedata scalefit="1" align="center" width="350" fileref="images/ch13_img023.png"/>
+			</imageobject>
+			<caption>
+				<para><literal>Users:</literal> New user</para>
+			</caption>
+		</mediaobject>
 	</section>
 	<section>
         <title>Worker and job queue</title>
@@ -511,7 +551,7 @@
         </note>
 		<mediaobject>
 			<imageobject>
-				<imagedata scalefit="1" align="center" width="350" fileref="images/ch13_img012.png"/>
+				<imagedata scalefit="1" align="center" width="350" fileref="images/ch13_img024.png"/>
 			</imageobject>
 			<caption>
 				<para><literal>Worker and Job Queue:</literal> status list of worker and job queue</para>
@@ -521,10 +561,10 @@
         <para>This screen automatically reloads every 5 seconds.</para>
 		<mediaobject>
 			<imageobject>
-				<imagedata scalefit="1" align="center" width="350" fileref="images/ch13_img012b.png"/>
+				<imagedata scalefit="1" align="center" width="350" fileref="images/ch13_img025.png"/>
 			</imageobject>
 			<caption>
-				<para><literal>Worker and Job Queue:</literal> information of finished work</para>
+				<para><literal>Worker and Job Queue:</literal> information of the state of a work</para>
             </caption>
         </mediaobject>
     </section>
@@ -533,7 +573,7 @@
         <para>At the top right of the menu bar you find the user area, from which you can view notifications, check the profile, access context-sensitive help and exit the system.</para>
 		<mediaobject>
 			<imageobject>
-				<imagedata scalefit="1" align="center" width="350" fileref="images/ch13_img015.png"/>
+				<imagedata scalefit="1" align="center" width="350" fileref="images/ch13_img026.png"/>
 			</imageobject>
 			<caption>
 				<para>User area</para>
@@ -543,7 +583,7 @@
         <para>To view a summary list of notifications simply click on <literal>User's area.</literal> To access a complete list of them, select the option <literal>View All</literal> or click on any of the notifications that appear in the summary; in this way you can access a new screen from which you can view the details of notifications, and remove all of them through the option <literal>Delete All</literal></para>
 		<mediaobject>
 			<imageobject>
-				<imagedata scalefit="1" align="center" width="350" fileref="images/ch13_img015b.png"/>
+				<imagedata scalefit="1" align="center" width="350" fileref="images/ch13_img027.png"/>
 			</imageobject>
 			<caption>
 				   <para>User area: Notifications</para>
@@ -553,7 +593,7 @@
 		<para>This option allows direct access to the user profile and perform the same actions with the option <literal>Tools>Users</literal></para>
 		<mediaobject>
 			<imageobject>
-				<imagedata scalefit="1" align="center" width="350" fileref="images/ch13_img011b.png"/>
+				<imagedata scalefit="1" align="center" width="350" fileref="images/ch13_img028.png"/>
 			</imageobject>
 			<caption>
 				 <para><literal>Users:</literal> editing user profile</para>
@@ -563,7 +603,7 @@
 		<para>This option enables a context-sensitive help that facilitates navigation and usability of the platform.</para>
 		<mediaobject>
 			<imageobject>
-				<imagedata scalefit="1" align="center" width="350" fileref="images/ch13_img015c.png"/>
+				<imagedata scalefit="1" align="center" width="350" fileref="images/ch13_img029.png"/>
 			</imageobject>
 			<caption>
 				 <para>User area: Help</para>
@@ -573,7 +613,7 @@
 		<para>For safe disconnection of the platform, select the option <literal>Logout.</literal> The system will return to the login screen.</para>
 		<mediaobject>
 			<imageobject>
-				<imagedata scalefit="1" align="center" width="350" fileref="images/ch04_img001.png"/>
+				<imagedata scalefit="1" align="center" width="350" fileref="images/ch13_img030.png"/>
 			</imageobject>
 			<caption>
 				  <para>User area: login screen after Logout</para>
