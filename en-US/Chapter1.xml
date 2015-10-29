@@ -55,7 +55,7 @@
         </warning>
         <mediaobject>
             <imageobject>
-                <imagedata scalefit = "1" align = "center" width = "350" fileref ="images/ch01_img001.png"/>
+                <imagedata scalefit = "1" align = "center" width = "450" fileref ="images/ch01_img001.png"/>
             </imageobject>
             <textobject>
 				<phrase> Basic scenario for installing the Manager</phrase>
@@ -70,7 +70,7 @@
 		<para><emphasis role="bold">Menu, submenu and line commands</emphasis></para>
 		<mediaobject>
 			<imageobject>
-				<imagedata scalefit="1" align="center" width="350" fileref="images/pre_img001.png"/>
+				<imagedata scalefit="1" align="center" width="450" fileref="images/ch01_img002.png"/>
             </imageobject>
             <textobject>
 					<phrase>User interface structure of the installation program menu </phrase>
@@ -91,7 +91,7 @@
 			<para>In some cases, the system displays a series of defaults. If this is the answer to a question, the default option set will be displayed in capital letters.</para>
 			<mediaobject>
 				<imageobject>
-					<imagedata scalefit="1" align="center" width="350" fileref="images/pre_img002.png"/>
+					<imagedata scalefit="1" align="center" width="450" fileref="images/ch01_img003.png"/>
 				</imageobject>
 				<textobject>
 					<phrase>Selection of predetermined options</phrase>
@@ -117,7 +117,7 @@
 			</itemizedlist>
 			<mediaobject>
 				<imageobject>
-						<imagedata scalefit="1" align="center" width="350" fileref="images/pre_img003.png"/>
+						<imagedata scalefit="1" align="center" width="450" fileref="images/ch01_img004.png"/>
 				</imageobject>
 				<textobject>
 					<phrase> Available options in the redBorder installer wizard</phrase>

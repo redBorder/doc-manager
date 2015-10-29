@@ -12,7 +12,7 @@
 	<para><screen>https://IP-managerAddress</screen></para>
 	<mediaobject>
 		<imageobject>
-			<imagedata scalefit="1" align="center" width="350" fileref="images/ch04_img001.png"/>
+			<imagedata scale="60" align="center" fileref="images/ch04_img001.png"/>
 		</imageobject>
 		<textobject>
 			<phrase>Screen access to the redBorder platform: username and password</phrase>
@@ -33,7 +33,7 @@
 	<para>This home screen is fully customizable. The user will be able to create as many dashboards per profile as deemed necessary.<footnote><para>In the case of the Community version, the number of customizable dashboards is limited to one per user profile.</para></footnote></para>
 	<mediaobject>
 		<imageobject>
-			<imagedata scalefit="1" align="center" width="350" fileref="images/ch04_img002.png"/>
+			<imagedata scalefit="1" align="center" width="450"  fileref="images/ch04_img002.png"/>
 		</imageobject>
 		<textobject>
 			<phrase>Home screen administrator of the Manager: dashboard</phrase>
@@ -48,8 +48,8 @@
 		<itemizedlist mark="bullet">
 			<listitem>
 				<para><emphasis role="bold">Menu bar:</emphasis> here you will find direct access to all sections of the redBorder platform. It is subdivided into two different areas according to operability:</para>
-				<para>a) Analytical area (top left margin): in this area you will find all the data collected by the sensors shown in different metrics and reports.</para>
-				<para>b) Configuration area (top right margin): configuration options and management of the Apps and redBorder platform.</para>
+				<para><emphasis>a) Analytical area (top left margin):</emphasis> in this area you will find all the data collected by the sensors shown in different metrics and reports.</para>
+				<para><emphasis>b) Configuration area (top right margin):</emphasis> configuration options and management of the Apps and redBorder platform.</para>
 			</listitem>
 			<listitem>
 				<para><emphasis role="bold">Submenu:</emphasis> shows the available options according to the section you are consulting.</para>
@@ -72,10 +72,10 @@
 			<para>Let's do a quick overview of the options that can be found in the menu bar, in the area of analysis and configuration. In later sections functionality and configuration of these options will be analyzed.</para>
 			<mediaobject>
 				<imageobject>
-					<imagedata scalefit="1" align="center" width="350" fileref="images/ch04_img003.png"/>
+					<imagedata scalefit="1" align="center" width="450" fileref="images/ch04_img003.png"/>
 				</imageobject>
 				<textobject>
-					<phrase>Option details included in the menu bar</phrase>
+					<phrase>Options included in the menu bar</phrase>
 				</textobject>
 				<caption>
 					<para>Option details included in the menu bar</para>
@@ -84,7 +84,7 @@
 			<para><emphasis role="bold">Analysis area</emphasis></para>
 			<mediaobject>
 				<imageobject>
-					<imagedata scalefit="1" align="center" width="350" fileref="images/ch04_img004.png"/>
+					<imagedata scale="60" align="center" fileref="images/ch04_img004.png"/>
 				</imageobject>
 				<textobject>
 					<phrase>Menu bar detail: analysis area</phrase>
@@ -96,7 +96,7 @@
 			<para><emphasis>Dashboard:</emphasis> Provides a summary of the events received by the sensors, displaying them in different metrics. This is the screen shown by default when you log into the redBorder platform.</para>
 			<mediaobject>
 				<imageobject>
-					<imagedata scalefit="1" align="center" width="350" fileref="images/ch04_img002.png"/>
+					<imagedata scalefit="1" align="center" width="450" fileref="images/ch04_img002.png"/>
 				</imageobject>
 				<textobject>
 					<phrase>Dashboard</phrase>
@@ -108,7 +108,7 @@
 			<para><emphasis>Events/sensors:</emphasis> Next, the user will see the events in which the sensors registered in the Manager. In the attached screenshot: Flow, IPS and Malware.</para>
 			<mediaobject>
 				<imageobject>
-					<imagedata scalefit="1" align="center" width="350" fileref="images/ch04_img005.png"/>
+					<imagedata scalefit="1" align="center" width="450" fileref="images/ch04_img005.png"/>
 				</imageobject>
 				<textobject>
 					<phrase>Sensors: view of flow events</phrase>
@@ -120,7 +120,7 @@
 			<para><emphasis>Monitor:</emphasis> in this sections they show the status of the cluster in data and graphics, hardware and system, as well as the network and other statistics collected by the sensors.</para> 
 			<mediaobject>
 				<imageobject>
-					<imagedata scalefit="1" align="center" width="350" fileref="images/ch04_img006.png"/>
+					<imagedata scalefit="1" align="center" width="450" fileref="images/ch04_img006.png"/>
 				</imageobject>
 				<textobject>
 					<phrase>Monitor: Manager state of health</phrase>
@@ -132,7 +132,7 @@
 			<para><emphasis>Social:</emphasis> shows a summary of the users' activity maintained in a selected area with social networks (Twitter and Instagram).</para>
 			<mediaobject>
 				<imageobject>
-					<imagedata scalefit="1" align="center" width="350" fileref="images/ch04_img007.png"/>
+					<imagedata scalefit="1" align="center" width="450" fileref="images/ch04_img007.png"/>
 				</imageobject>
 				<textobject>
 					<phrase>Network user interaction with Social Media</phrase>
@@ -144,7 +144,7 @@
 			<para><emphasis>Reports:</emphasis> In this section the user will be able to see a list of all stored reports, import and export reports and create new customizable reports thanks to the widgets.</para>
 			<mediaobject>
 				<imageobject>
-					<imagedata scalefit="1" align="center" width="350" fileref="images/ch04_img008.png"/>
+					<imagedata scalefit="1" align="center" width="450" fileref="images/ch04_img008.png"/>
 				</imageobject>
 				<textobject>
 					<phrase>Reports</phrase>
@@ -156,7 +156,7 @@
 			<para><emphasis role="bold">Configuration area</emphasis></para>
 			<mediaobject>
 				<imageobject>
-					<imagedata scalefit="1" align="center" width="350" fileref="images/ch04_img009.png"/>
+					<imagedata scale="60" align="center" fileref="images/ch04_img009.png"/>
 				</imageobject>
 				<textobject>
 					<phrase>Menu bar detail: configuration area</phrase>
@@ -169,7 +169,7 @@
 				<para><emphasis>Sensors:</emphasis> Displays a list of the added sensors and the organization tree. It also contains global and local policies defined for each domain.</para>
 				<mediaobject>
 					<imageobject>
-						<imagedata scalefit="1" align="center" width="350" fileref="images/ch04_img010.png"/>
+						<imagedata scalefit="1" align="center" width="450" fileref="images/ch04_img010.png"/>
 					</imageobject>	
 					<textobject>
 						<phrase>List of sensors</phrase>
@@ -181,7 +181,7 @@
 				<para><emphasis>Tools:</emphasis> Provides a list of the configuration options that are available to the administrator profile and in read mode for the rest of the users.</para>
 				<mediaobject>
 					<imageobject>
-						<imagedata scalefit="1" align="center" width="350" fileref="images/ch04_img011.png"/>
+						<imagedata scalefit="1" align="center" width="450" fileref="images/ch04_img011.png"/>
 					</imageobject>
 					<textobject>
 						<phrase>Available options in Tools</phrase>
@@ -193,7 +193,7 @@
 				<para><emphasis>Administrator:</emphasis> this section shows a list of notifications, as well as the different options available for managing users, contextual help of the platform and the safe disconnect button: <literal>Logout.</literal></para>	
 				<mediaobject>
 					<imageobject>
-						<imagedata scalefit="1" align="center" width="350" fileref="images/ch04_img012.png"/>
+						<imagedata scale="60" align="center" fileref="images/ch04_img012.png"/>
 					</imageobject>
 					<caption>
 						<para>Available options in Administrator</para>
@@ -202,7 +202,7 @@
 				<para><emphasis>Show Help:</emphasis> Enabling this option will activate a pop-up window providing help during the Manager administrator navigation. It is identified with a question mark.</para>
 				<mediaobject>
 				<imageobject>
-					<imagedata scalefit="1" align="center" width="350" fileref="images/ch04_img013.png"/>
+					<imagedata scale="60" align="center" fileref="images/ch04_img013.png"/>
 				</imageobject>
 				<textobject>
 					<phrase>Help activation</phrase>
