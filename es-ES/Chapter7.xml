@@ -302,7 +302,7 @@
 							<para>Filtrar evento</para>
 						</caption>
 					</mediaobject>
-					<para>-Limit: limita el número de eventos que se muestran en un periodo de tiempo que hayamos indicado y que se encuentran bajo las formas selecionadas, ignorando los demás eventos que se rpeduzcan bajo la misma firma. </para>
+					<para>-Limit: limita el número de eventos que se muestran en un periodo de tiempo que hayamos indicado y que se encuentran bajo las formas seleccionadas, ignorando los demás eventos que se produzcan bajo la misma firma. </para>
 					<para>-Threshold: Selecciona el número de veces que tiene que ocurrir un evento en un periodo de tiempo determinado para que se muestre la alerta.</para>
 					<para>-Both: la alerta solo se muestra una vez por cada n veces que ha sucedido el evento en un periodo de tiempo determinado.</para>
 				</listitem>

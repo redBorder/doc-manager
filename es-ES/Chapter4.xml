@@ -61,10 +61,11 @@
 				<para>Resumen: bajo la gráfica se encuentra un resumen de la información mostrada en la métrica, ofreciendo los valores totales.</para><!--revisar-->
 			</listitem>
 			<listitem>
-				<para>Buscador: permite buscar rápidamente en la tabla de datos cualquier elemento relacionado con el atributo que se está consultando. Para ello basta con introducir la IP, sensor, cliente, etc. que se quiera consultar. Además, las búsquedas pueden convertirse en filtros tal y como veremos más adelante.</para>
+				<para>Buscador: permite buscar rápidamente en la tabla de datos cualquier elemento relacionado con el atributo que se está consultando. 
+				Para ello basta con introducir el atributo (la IP, sensor, cliente, etc.) que se quiera consultar. Además, las búsquedas pueden convertirse en filtros tal y como veremos más adelante.</para>
 			</listitem>
 			<listitem>
-				<para>Tabla de datos: ofrece el detalle de la información que se muestra en la métrica. Además, se pueden realizar diferentes acciones por filas. Estas acciones dependerán de la pestaña/App que estemos consultando.</para>
+				<para>Tabla de datos: ofrece el detalle de la información que se muestra en la métrica. Además, se pueden realizar diferentes acciones por filas. </para>
 			</listitem>
 		</itemizedlist>
 		<section>
@@ -105,16 +106,17 @@
 					<para>Dashboard</para>
 				</caption>
 			</mediaobject>
-			<para><emphasis>Eventos/sensores:</emphasis> A continuación, el usuario visualizará los eventos de aquellos sensores que tenga registrados en el Manager. En la captura adjunta: Flow, IPS y Malware.</para>
+			<para><emphasis>Eventos/Apps:</emphasis> A continuación, el usuario visualizará los eventos de aquellas Apps que se encuentren incluidas en su licencia y cuyos sensores (en caso de que fuera necesario)
+			han sido registrados en el Manager. En la captura adjunta: Flow, IPS y Malware.</para>
 			<mediaobject>
 				<imageobject>
 					<imagedata scalefit="1" align="center" width="350" fileref="images/ch04_img005.png"/>
 				</imageobject>
 				<textobject>
-					<phrase>Sensores: vista de eventos de IPS</phrase>
+					<phrase>Vista de eventos de IPS</phrase>
 				</textobject>
 				<caption>
-					<para>Sensores: vista de eventos IPS</para>
+					<para>Vista de eventos IPS</para>
 				</caption>
 			</mediaobject>
 			<para><emphasis>Monitor:</emphasis> en esta sección se muestran datos y gráficas del estado del cluster, hardware y sistema, así como de la red y de otras estadísticas recogidas por los sensores IPS.</para> 
@@ -127,18 +129,6 @@
 				</textobject>
 				<caption>
 					<para>Monitor: estado de salud del Manager</para>
-				</caption>
-			</mediaobject>
-			<para><emphasis>Social:</emphasis> muestra un resumen de la actividad que los usuarios de una zona seleccionada mantienen con las redes sociales (Twitter e Instagram).</para>
-			<mediaobject>
-				<imageobject>
-					<imagedata scalefit="1" align="center" width="350" fileref="images/ch04_img007.png"/>
-				</imageobject>
-				<textobject>
-					<phrase>Interacción usuarios de la red con Social Media</phrase>
-				</textobject>
-				<caption>
-					<para>Interacción usuarios de la red con Social Media</para>
 				</caption>
 			</mediaobject>
 			<para><emphasis>Reports:</emphasis> En esta sección el usuario podrá visualizar el listado de todos los informes almacenados, importar y exportar informes y crear nuevos informes personalizados gracias a los widgets.</para>
@@ -166,7 +156,8 @@
 				</caption>
 			</mediaobject>
 			<para><emphasis>Buscador:</emphasis> facilita la localización de elementos/valores de la plataforma según el término de búsqueda introducido por el usuario.</para>
-			<para><emphasis>Sensors:</emphasis> Muestra un listado de los sensores agregados y el árbol de organización de los mismos. Contiene también las políticas globales y locales definidas para cada dominio.</para>
+			<para><emphasis>Sensors:</emphasis> Muestra un listado de los sensores registrados en redBorder Manager organizado por criterios de jerarquía y dependencia. 
+			 Contiene también las políticas globales y locales definidas para cada dominio o sensor.</para>
 			<mediaobject>
 				<imageobject>
 					<imagedata scalefit="1" align="center" width="350" fileref="images/ch04_img009.png"/>
@@ -190,7 +181,8 @@
 					<para>Opciones disponibles en Tools</para>
 				</caption>
 			</mediaobject>
-			<para><emphasis>Zona de usuarios:</emphasis> esta sección nos muestra un listado de notificaciones así como las diferentes opciones disponibles para la gestión de usuarios, la ayuda contextual de la plataforma y el botón de desconexión de forma segura: <literal>Logout.</literal></para>		
+			<para><emphasis>Zona de usuarios:</emphasis> esta sección nos muestra un listado de notificaciones así como las diferentes opciones disponibles para la gestión de usuarios, 
+			la ayuda contextual de la plataforma y el botón de desconexión de forma segura: <literal>Logout.</literal></para>		
 			<mediaobject>
 				<imageobject>
 					<imagedata scalefit="1" align="center" width="350" fileref="images/ch04_img012.png"/>
