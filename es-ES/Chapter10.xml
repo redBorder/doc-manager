@@ -1,0 +1,1168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE chapter PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd" [
+<!ENTITY % BOOK_ENTITIES SYSTEM "manual.ent">
+<!ENTITY PRODUCT "Documentation">
+<!ENTITY BOOKID "manual">
+<!ENTITY YEAR "2016">
+<!ENTITY HOLDER "Eneo Tecnología S.L. |">
+]>
+<chapter>
+	<title>Eventos: IPS</title>
+	<para>La App IPS le garantiza una protección máxima de su red al tratarse de un sistema activo capaz de bloquear el tráfico procedente de una determinada IP o
+	 excluir un paquete para su análisis previo que resulte sospechoso o que cumpla con algunas de las reglas fijadas por el usuario.</para>
+	<para>Visibilidad para el análisis y seguridad para el control activo, esta es la combinación que hace que, redBorder sea la mejor plataforma de inteligencia operacional Open Source del mercado. </para>
+	<section>
+		<title>IPS: menú y opciones</title>
+		<para>En el área de análisis de la barra de menú (lateral izquierdo), encontramos las diferentes secciones que corresponden a las Apps que tengamos integradas en la plataforma redBorder.</para>
+		<para>A continuación veremos las diferentes opciones de visualización de datos, tipos de gráficas, granuralidad (máximo grado de detalle temporal con el que consultar eventos) 
+		y atributos que se pueden combinar para obtener un panel de análisis completamente personalizado.</para>
+		<mediaobject>
+			<imageobject>
+				<imagedata scalefit="1" align="center" width="450" fileref="images/ch10_img001.png"/>
+			</imageobject>
+			<caption>
+				<para>Vista general de la sección IPS</para>
+			</caption>
+		</mediaobject>
+		<section>
+			<title>Opciones disponibles en el submenú de la sección IPS</title>
+			<mediaobject>
+				<imageobject>
+					<imagedata scalefit="1" align="center" width="450" fileref="images/ch10_img001b.png"/>
+				</imageobject>
+				<caption>
+					<para>IPS: opciones del submenú de la sección IPS</para>
+				</caption>
+			</mediaobject>
+			<itemizedlist mark="bullet">
+				<listitem>
+					<para><emphasis role="bold">Filtros (<literal>Filters</literal>):</emphasis> permiten al usuario aislar una porción de información para conseguir mayor grado de detalle. 
+					En esta pestaña, el usuario podrá visualizar el número de filtros que se han aplicado y realizar acciones sobre los mismos: </para>
+					<para>-Crear un filtro avanzado (<literal>Advanced Search</literal>).</para>
+					<para>-Crear una alarma en base a las condiciones de los filtros aplicados (<literal>Create an alarm</literal>).</para>
+					<para>-Crear un widget basado en los filtros aplicados y aplicarlo en un dashboard o informe (<literal>Create a widget on</literal>).</para>
+					<mediaobject>
+						<imageobject>
+							<imagedata scalefit="1" align="center" width="150" fileref="images/ch10_img001c.png"/>
+						</imageobject>
+						<caption>
+							<para>Filtros</para>
+						</caption>
+					</mediaobject>
+				</listitem>
+				<listitem>
+					<para><emphasis role="bold">Vistas:</emphasis> ofrece diferentes opciones de visualización de la información.</para>
+					<para>-Raw</para>
+					<para>-Tops</para>
+					<para>-Compare</para>
+					<para>-Unique</para>
+					<mediaobject>
+						<imageobject>
+							<imagedata scalefit="1" align="center" width="150" fileref="images/ch10_img001d.png"/>
+						</imageobject>
+						<caption>
+							<para>Vistas</para>
+						</caption>
+					</mediaobject>
+				</listitem>
+				<listitem>
+					<para><emphasis role="bold">Agregación:</emphasis> son los diferentes valores o unidades de medida en las que se pueden mostrar los datos. </para>
+					<para>-Events</para>
+					<para>-Area</para>
+					<para>-Line</para>
+					<para>-Bars</para>
+					<mediaobject>
+						<imageobject>
+							<imagedata scalefit="1" align="center" width="150" fileref="images/ch10_img001e.png"/>
+						</imageobject>
+						<caption>
+							<para>Agregación</para>
+						</caption>
+					</mediaobject>
+				</listitem>
+				<listitem>
+					<para><emphasis role="bold">Granuralidad:</emphasis> indica el grado de detalle temporal con el que es posible visualizar los datos. El mínimo valor de granularidad es un minuto. </para>
+					<mediaobject>
+						<imageobject>
+							<imagedata scalefit="1" align="center" width="150" fileref="images/ch10_img001f.png"/>
+						</imageobject>
+						<caption>
+							<para>Granuralidad</para>
+						</caption>
+					</mediaobject>
+				</listitem>
+				<listitem>
+					<para><emphasis role="bold">Tipo de gŕafica:</emphasis> muestra los diferentes tipos de gráfica entre los que podemos elegir para mostrar los datos. Los tipos de gráficas disponibles varían según el tipo de vista seleccionada. Estos son los siguientes:</para>
+					<para>-Streams</para>
+					<para>-Area</para>
+					<para>-Line</para>
+					<para>-Bars</para>
+					<para>-SBars</para>
+					<para>-Stacked</para>
+					<mediaobject>
+						<imageobject>
+							<imagedata scalefit="1" align="center" width="150" fileref="images/ch10_img001g.png"/>
+						</imageobject>
+						<caption>
+							<para>Tipo de gráfica</para>
+						</caption>
+					</mediaobject>
+				</listitem>
+				<listitem>
+					<para><emphasis role="bold">Opciones:</emphasis> en este apartado el usuario podrá realizar diferentes acciones para la gestión de los datos que se muestran en esta sección. Las opciones varían según el tipo de vista seleccionada.</para>
+					<para>-Mostrar Total (<literal>Show Total</literal>)</para>
+					<para>-Filtros guardados/Ocultar filtros (<literal>Show total filtered/Hide Total Filtered</literal>): muestra u oculta la gráfica teniendo en cuenta los filtros seleccionados.</para>
+					<para>-Máquina del tiempo (<literal>Time Machine</literal>)</para>
+					<para>-Exportar a CSV (<literal>Export to CSV</literal>)</para>
+					<para>-Guardar pestañas como predeterminadas (<literal>Save tab as default</literal>)</para>
+					<mediaobject>
+						<imageobject>
+							<imagedata scalefit="1" align="center" width="150" fileref="images/ch10_img001h.png"/>
+						</imageobject>
+						<caption>
+							<para>Opciones</para>
+						</caption>
+					</mediaobject>
+				</listitem>
+				<listitem>
+					<para><emphasis role="bold">Atributos:</emphasis> Los eventos recibidos por el Manager están compuestos por duplas del tipo "columna:valor". 
+					Los valores que se indican en cada columna pueden entenderse como datos propios del evento que son los que realmente nos aportan información. Estos son llamados "atributos".</para>
+					<para>Los atributos pueden mostrarse de varias maneras: en forma de pestañas o de columnas. <literal>(Add tabs/Columns)</literal> dependiendo de la vista que estemos consultando.</para>
+					<mediaobject>
+						<imageobject>
+							<imagedata scalefit="1" align="center" width="150" fileref="images/ch10_img001i.png"/>
+						</imageobject>
+						<caption>
+							<para>Atributos</para>
+						</caption>
+					</mediaobject>
+				</listitem>
+			</itemizedlist>
+		</section>
+		<section>
+			<title>Cuerpo de la pantalla: filtrado por rango de tiempo, pestañas de atributos y vistas</title>
+			<para><emphasis role="bold">Filtrado por rango de tiempo:</emphasis> acceso directo a los eventos filtrados en base a un periodo de tiempo:
+			 última 1h., 2h., 3h., 12h., 24h., última semana, último mes, filtro personalizado.</para>
+			<para>Existe la posibilidad de seleccionar un rango de fechas diferente a las que se ofrecen por defecto. Dependiendo de las necesidades del usuario, podrá realizar una selección de tiempo personalizada a través de la opción <literal>Custom</literal>. Más adelante se especificará el procedimiento a seguir para realizar un filtro temporal personalizado.</para>
+			<para><emphasis role="bold">Pestañas de atributos:</emphasis> clasifican la información del tráfico de red por atributos. 
+			Navegando por cada una de las pestañas podemos conocer en detalle los valores asociados a los atributos que hayamos seleccionado.</para>
+			<note>
+				<title>Nota</title>
+				<para>El usuario puede variar el orden en el que se muestran las pestañas en cualquier momento. Para ello arrastrar la pestaña y soltar en la posición en la que se desea colocar.</para>
+				<para>Esta sección no se visualiza en la vista Raw.</para>
+			</note>
+			<mediaobject>
+				<imageobject>
+					<imagedata scalefit="1" align="center" width="450" fileref="images/ch10_img002b.png"/>
+				</imageobject>
+				<textobject>
+					<phrase>Filtrado por rango de tiempo y pestañas de atributos</phrase>
+				</textobject>
+				<caption>
+					<para>Filtrado por rango de tiempo y pestañas de atributos</para>
+				</caption>
+			</mediaobject>
+			<para><emphasis role="bold">Vista:</emphasis> en esta zona se muestran los datos según la vista y tipo de gráfica seleccionadas. Al posicionar el cursor sobre cualquiera de los puntos que componen la gráfica, aparece un cuadro de diálogo en el que se le muestra en detalle la información para ese instante de tiempo, agregación y atributo.</para>
+			<mediaobject>
+				<imageobject>
+					<imagedata scalefit="1" align="center" width="450" fileref="images/ch10_img002c.png"/>
+				</imageobject>
+				<textobject>
+					<phrase>Vista</phrase>
+				</textobject>
+				<caption>
+					<para>Vista</para>
+				</caption>
+			</mediaobject>
+		</section>
+		<section>
+			<title>Resumen, buscador y tabla de datos</title>
+			<para><emphasis role="bold">Resumen:</emphasis> bajo la gráfica, en algunas vistas, se encuentra un resumen relativo a todos los datos cargados que aparecen tanto en la vista como en la tabla de datos. </para>
+			<para>En este resumen se indican los siguientes datos:</para>
+			<itemizedlist mark="circle">
+				<listitem>
+					<para>Valor total de la agregación de todos los datos cargados</para>
+				</listitem>
+				<listitem>
+					<para>Valor total de la agregación de todos los datos cargados y seleccionados</para>
+				</listitem>
+				<listitem>
+					<para>Número de filas de datos cargadas </para>
+				</listitem>
+				<listitem>
+					<para>Porcentaje del valor agregado de los datos cargados sobre el total de datos.</para>
+				</listitem>
+			</itemizedlist>
+			<para><emphasis role="bold">Buscador: </emphasis> permite realizar una búsqueda por atributo. Las búsquedas se convierten en filtros automáticamente tal y como veremos más adelante.</para>
+			<para><emphasis role="bold">Tabla de datos:</emphasis> muestra los valores clasificados por tipo de atributo seleccionado. </para>
+			<para>Para el análisis aislado de uno o más elementos de esta barra (seleccionar como filtro), es necesario clicar sobre el elemento que desea filtrar. Para selección múltiple basta con mantener pulsada la tecla <keycap>Shift</keycap>.</para>
+			<note>
+				<title>Nota</title>
+				<para>Al posicionar el ratón sobre cualquiera de los elementos de la tabla de datos visualizaremos un menú que muestra las diferentes acciones que se pueden realizar sobre ese elemento. 
+				Dependiendo del tipo de atributo, se mostrarán más o menos opciones en el menú contextual.</para>
+			</note>
+			<mediaobject>
+				<imageobject>
+					<imagedata scalefit="1" align="center" width="450" fileref="images/ch10_img002d.png"/>
+				</imageobject>
+				<caption>
+					<para>Resumen y buscador</para>
+				</caption>
+			</mediaobject>
+			<mediaobject>
+				<imageobject>
+					<imagedata scalefit="1" align="center" width="450" fileref="images/ch10_img003b.png"/>
+				</imageobject>
+				<caption>
+					<para>Detalle de tabla de datos</para>
+				</caption>
+			</mediaobject>
+		</section>
+	</section>
+	<section>
+		<title>Filtrar eventos</title>
+			<para>En el submenú de la sección encontramos varias opciones que nos permiten visualizar los eventos según nuestras necesidades de análisis.</para>
+		<para>Una de estas opciones es <literal>Filters</literal> que permite el filtrado de eventos según criterios definidos por el usuario. Estos filtros pueden ser almacenados para ser usados posteriormente como plantilla para la visualización de los eventos.</para>
+		<para><emphasis role="bold">Opciones de filtrado:</emphasis></para>
+		<itemizedlist mark="circle">
+			<listitem>
+				<para><emphasis>Filter zoom:</emphasis> aisla gráficamente los eventos según un rango de tiempo.</para>
+			</listitem>
+			<listitem>
+				<para><emphasis>Filtrar por valor de atributo</emphasis> (<literal>Filter Selected</literal>): nos permite convertir en filtro a uno o más elementos presentes en la tabla.</para>
+			</listitem>
+			<listitem>
+				<para><emphasis>Búsqueda avanzada</emphasis> (<literal>Advanced Search</literal>): permite establecer condiciones para realizar una búsqueda avanzada que actúe a modo de filtro. 
+				Muy útil para aislar y analizar datos muy concretos.</para>
+			</listitem>
+		</itemizedlist>
+		<para><emphasis role="bold">Acciones para los filtros:</emphasis></para>
+		<itemizedlist mark="circle">
+			<listitem>
+				<para><emphasis>Filtros guardados:</emphasis>emphasis> muestra el listado de filtros almacenados.</para>
+			</listitem>
+			<listitem>
+				<para><emphasis>Crear alarmas</emphasis> (<literal>Create an alarm</literal>): nos permite configurar una alarma en base a los filtros aplicados.</para>
+				<mediaobject>
+				<imageobject>
+					<imagedata scalefit="1" align="center" width="450" fileref="images/ch10_img008.png"/>
+				</imageobject>
+				<caption>
+					<para>Nueva alarma</para>
+				</caption>
+			</mediaobject>
+			</listitem>
+			<listitem>
+				<para><emphasis>Crear un widget en</emphasis>emphasis> (<literal>Create a widget on</literal>): crea un widget a partir de los filtros aplicados que se puede incluir en dashboards o informes.</para>
+			</listitem>
+		</itemizedlist>
+		<mediaobject>
+			<imageobject>
+				<imagedata scalefit="1" align="center" width="150" fileref="images/ch10_img009.png"/>
+			</imageobject>
+			<textobject>
+				<phrase>Opciones de filtrado de eventos</phrase>
+			</textobject>
+			<caption>
+				<para>Opciones de filtrado de eventos y acciones disponibles</para>
+			</caption>
+		</mediaobject>
+		<section>
+			<title>¿Es posible filtrar solo los eventos de un periodo determinado?</title>
+			<para>Es posible aislar los eventos correspondientes a un periodo de tiempo determinado para analizar con mayor grado de detalle los datos vinculados al atributo seleccionado.</para>
+			<para>Existen cinco maneras de realizar un filtrado temporal: </para>
+			<itemizedlist mark="bullet">
+				<listitem>
+					<para>Filtrado por rango de tiempo</para>
+				</listitem>
+				<listitem>
+					<para>Filter Zoom</para>
+				</listitem>
+				<listitem>
+					<para>Filtro personalizado</para>
+				</listitem>
+				<listitem>
+					<para>Búsqueda avanzada</para>
+				</listitem>
+				<listitem>
+					<para>Filtrado por atributo</para>
+				</listitem>				
+			</itemizedlist>
+			<section>
+				<title>Filtrado por rango de tiempo</title>
+				<para>Una manera muy sencilla y rápida de visualizar tan solo los eventos correspondientes a un periodo de tiempo concreto es seleccionar algunas de las opciones que nos ofrecen las pestañas de la línea temporal de filtrado:</para>
+				<mediaobject>
+					<imageobject>
+						<imagedata scalefit="1" align="center" width="450" fileref="images/ch10_img010.png"/>
+					</imageobject>
+					<textobject>
+						<phrase>Filtrado de eventos: línea temporal</phrase>
+					</textobject>
+					<caption>
+						<para>Filtrado de eventos: línea temporal</para>
+					</caption>
+				</mediaobject>
+				<para><emphasis role="bold">Filter Zoom</emphasis></para>
+				<para>El usuario puede seleccionar un lapso de tiempo determinado de manera manual. 
+				Para ello, hacer clic con el ratón en un punto determinado de la gráfica, arrastrar hasta el instante temporal deseado y soltar. De este modo, tendremos la vista para ese rango temporal y la tabla inferior mostrará tan solo los datos incluidos en esta franja. Al hacer clic en la opción del submenú <literal>Filters</literal> se indicará el tiempo de inicio (<literal>Start Time</literal>) y de finalización (<literal>End Time</literal>) indicados para ese filtro.</para>			  
+				<para>En el submenú de sección aparecerá indicado <literal>Filter Zoom.</literal></para>
+				<mediaobject>
+					<imageobject>
+						<imagedata scalefit="1" align="center" width="450" fileref="images/ch10_img011.png"/>
+					</imageobject>
+					<textobject>
+						<phrase>Filter Zoom</phrase>
+					</textobject>
+					<caption>
+						<para>Filtrado de eventos: Filter Zoom</para>
+					</caption>
+				</mediaobject>
+				<para><emphasis role="bold">Filtro personalizado</emphasis> (<literal>Custom</literal>)</para>
+				<para>La pestaña <literal>Custom</literal> de la línea de filtrado por rango de tiempo permite realizar un filtrado personalizado. 
+				Arrastrando el ratón de un punto a otro en el mes que se quiera consultar, visualizaremos las fechas concretas que se tendrán en cuenta en el filtrado.</para>
+				<note>
+					<title>Nota</title>
+					<para>Al realizar un filtrado personalizado o <literal>Custom</literal> podremos aislar en la gráfica los datos correspondientes a un periodo. Para que estos datos se actualicen también en la tabla de datos es necesario realizar <literal>Filter Zoom.</literal></para>
+				</note>
+				<para>También es posible seleccionar el periodo directamente desde la barra temporal que aparece en el margen superior de esta opción.</para>
+				<para>Clicar en <literal>Submit</literal> para aplicar filtro.</para> 
+				<mediaobject>
+					<imageobject>
+						<imagedata scalefit="1" align="center" width="450" fileref="images/ch10_img012.png"/>
+						</imageobject>
+					<textobject>
+						<phrase>Filtrado de eventos: filtro personalizado</phrase>
+					</textobject>
+					<caption>
+						<para>Filtrado de eventos: filtro personalizado</para>
+					</caption>
+				</mediaobject>
+			</section>
+			<section>
+				<title>Búsqueda avanzada (<literal>Advanced Search</literal>)</title>
+				<para>Al hacer clic en la pestaña <literal>Filters</literal> se despliega un submenú en el que encontramos la opción <literal>Advanced Search.</literal> </para>
+				<para>Esta es la opción que permite mayor grado de detalle, puesto que es el propio usuario el que determina las condiciones de la búsqueda, y por tanto, del filtrado. Es posible elegir entre todos los atributos disponibles para esa App. </para>
+				<para>Es posible añadir tantas condiciones para el filtrado como crea necesarias, siendo tan solo obligatorio indicar el atributo, la fecha de inicio y la fecha de fin que deseamos consultar.</para>
+				<itemizedlist mark="circle">
+					<listitem>
+						<para><emphasis>Añadir regla de búsqueda:</emphasis> pinchar sobre el símbolo <keycap>+</keycap></para>
+					</listitem>
+					<listitem>
+						<para><emphasis>Eliminar regla de búsqueda:</emphasis> pinchar sobre el símbolo <keycap>-</keycap></para>
+					</listitem>
+				</itemizedlist>
+				<para>Es posible guardar la configuración de esta búsqueda como filtro, de este modo, estará disponible para su consulta en cualquier otro momento tanto en la opción <literal>View Saved Filters</literal> como en <literal>Saved filters</literal> que encontrará en el menú contextual de los filtros.</para>
+				<para>Para iniciar esta búsqueda basta con seleccionar la opción <literal>Submit Search.</literal></para>
+				<mediaobject>
+					<imageobject>
+						<imagedata scalefit="1" align="center" width="450" fileref="images/ch10_img013.png"/>
+					</imageobject>
+					<textobject>
+						<phrase>Filtrado de eventos: búsqueda avanzada</phrase>
+					</textobject>
+					<caption>
+						<para>Filtrado de eventos: búsqueda avanzada</para>
+					</caption>
+				</mediaobject>
+				<para><emphasis role="bold">Filtrar por atributo</emphasis> (<literal>Filter Selected</literal>)</para>
+				<para>Existen dos maneras de convertir un valor de un atributo en un filtro:</para>
+				<para><emphasis role="bold">Buscador:</emphasis> introducir el valor del atributo que se desea buscar y pulsar la tecla <keycap>Enter.</keycap></para>
+				<para>De manera automática se incluirá un filtro con el valor elegido. Se pueden incluir tantos filtros como búsquedas se realicen. Si se desea eliminar el filtro, se deberá ir a la pestaña <literal>Filters</literal> incluida en la barra de submenú.</para>
+				<para><emphasis role="bold">Selección filas de la tabla:</emphasis> es posible seleccionar una o más filas de la tabla para aislar los datos correspondientes a dichos elementos. 
+				Para selección múltiple, es suficiente pulsar con el botón izquierdo del ratón sobre las filas de los distintos elementos que se deseen filtrar; si se desea deseleccionarlos, hacer clic de nuevo sobre los elementos. El usuario también puede ayudarse mediante la tecla <keycap>Shift</keycap>. </para>
+				<para>Una vez seleccionadas las filas, existe la opción de inlcuir o exluir los elementos de la vista gráfica, así como de la tabla de datos.
+				 Para volver a incluirlos se debe pulsar el botón <keycap>Filter Selected</keycap> situado por encima de la tabla de datos. 
+				 Para excluirlos, es necesario pulsar el botón <keycap>Exclude Selected</keycap> situado junto al anterior botón.</para>
+				<para>En caso de tratarse de una selección individual, es posible realizar el filtrado o exclusión más rápidamente:</para>
+				<para>a) Haciendo clic sobre le nombre de un sensor se incluyen sus datos en la vista. En ese momento, su etiqueta mostrará un color que se corresponde con la línea/área/stream/barra que se muestra en la vista. Para excluirlo, hacer de nuevo clic sobre el mismo.</para>
+				<para>b) Abriendo el desplegable que aparece junto a cada elemento de la tabla y que contiene las siguientes opciones:</para>
+				<itemizedlist mark="circle">
+					<listitem>
+						<para><literal>Filter:</literal> añade el filtro correspondiente para incluir el elemento de los datos presentados.</para>
+					</listitem>
+					<listitem>
+						<para><literal>Exclude:</literal> añade el filtro correspondiente para excluir el elemento de los datos presentados.</para>
+					</listitem>
+					<listitem>
+						<para><literal>Copy to clipboard:</literal> el valor del elemento seleccionado se copia en el portapapeles para que estén disponibles para usos posteriores.</para>
+					</listitem>
+				</itemizedlist>		
+				<mediaobject>
+					<imageobject>
+						<imagedata scalefit="1" align="center" width="450" fileref="images/ch10_img014.png"/>
+					</imageobject>
+					<textobject>
+						<phrase>Filtrado de eventos: Filtrar por atributo</phrase>
+					</textobject>
+					<caption>
+							<para>Filtrado de eventos: Filtrar por atributo</para>
+					</caption>
+				</mediaobject>
+			</section>
+		</section>
+	</section>
+	<section>
+		<title>Reputación y seguimiento IP's</title>
+		<para>Los atributos fuente y destino del tráfico (SRC Address/DST Address) permiten realizar las siguientes acciones con 
+		el objetivo de facilitar un análisis más exhaustivo sobre el origen y el destino del tráfico que pasa por nuestra red:</para>
+		<mediaobject>
+			<imageobject>
+				<imagedata scalefit="1" align="center" width="150" fileref="images/ch10_img015.png"/>
+			</imageobject>
+			<caption>
+				<para>Reputación y seguimiento de IP</para>
+			</caption>
+		</mediaobject>
+		<para><emphasis role="bold">Create object:</emphasis> permite poner un nombre y/o descripción más intuitios que permiten la localización de un elemento de manera más rápida y sencilla. Por ejemplo, si conocemos la máquina asociada a una determinada dirección IP, esta opción nos permite renombrarla para facilitar su identificación. </para>
+		<mediaobject>
+			<imageobject>
+				<imagedata scalefit="1" align="center" width="450" fileref="images/ch10_img016.png"/>
+			</imageobject>
+			<textobject>
+				<phrase>Renombrar una IP: Create net object</phrase>
+			</textobject>
+			<caption>
+				<para>Renombrar una IP: Create net object</para>
+			</caption>
+		</mediaobject>
+		<para>Encontramos también, la opción de consultar fuentes externas que nos ayudan a identificar la localización y la reputación de las IP's consultadas.</para>
+		<itemizedlist mark="circle">
+			<listitem>
+				<para>uTrace</para> 
+			</listitem>
+			<listitem>
+				<para>Trusted Source</para> 
+			</listitem>
+			<listitem>
+				<para>Whois.sc</para> 
+			</listitem>
+		</itemizedlist>
+		<mediaobject>
+			<imageobject>
+				<imagedata scalefit="1" align="center" width="450" fileref="images/ch10_img017.png"/>
+			</imageobject>
+			<textobject>
+				<phrase>uTrace</phrase>
+			</textobject>
+			<caption>
+				<para>uTrace</para>
+			</caption>
+		</mediaobject>
+				<mediaobject>
+			<imageobject>
+				<imagedata scalefit="1" align="center" width="450" fileref="images/ch10_img018.png"/>
+			</imageobject>
+			<textobject>
+				<phrase>Trusted Source</phrase>
+			</textobject>
+			<caption>
+				<para>Trusted Source</para>
+			</caption>
+		</mediaobject>
+		<mediaobject>
+			<imageobject>
+				<imagedata scalefit="1" align="center" width="450" fileref="images/ch10_img019.png"/>
+			</imageobject>
+			<textobject>
+				<phrase>Whois.sc</phrase>
+			</textobject>
+			<caption>
+				<para>Whois.sc</para>
+			</caption>
+		</mediaobject>
+		<para><emphasis role="bold">Basic Source Lookup:</emphasis> es posible obtener un resumen completo de la información asociada a las IPs consultadas. 
+		Al seleccionar esta opción aparecerá una ventana emergente con dos pestañas: </para>
+		<para>Whois: muestra el resultado de la consulta del Manager a whois en la que se obtiene, entre otra información, a quién pertenece dicha IP, reputación, etc.</para> 
+		<para>DNS: el Manager realiza una resolución inversa que nos permite conocer el DNS asociado a la IP consultada.</para>
+		<mediaobject>
+			<imageobject>
+				<imagedata scalefit="1" align="center" width="350" fileref="images/ch10_img020.png"/>
+			</imageobject>
+			<textobject>
+				<phrase>Basic Source Lookup: consulta información IP/DNS</phrase>
+			</textobject>
+			<caption>
+				<para>Basic Source Lookup: consulta información IP/DNS</para>
+			</caption>
+		</mediaobject>
+	</section>
+	<section>
+		<title>Vistas: múltiples opciones para visualizar los datos</title>
+		<para>Las vistas ofrecen múltiples perspectivas para la visualización de los datos asociados al tráfico de red.</para>
+		<note>
+			<title>Nota</title>
+			<para>Recuerde que en la sección <literal>Dashboard</literal> puede crear widgets personalizados para cada tipo de App indicando un tipo de vista para la visualización de los eventos. </para>
+		</note>
+		<para>Las vistas que se encuentran disponibles para el IPS son las siguientes: </para>
+		<itemizedlist mark="bullet">
+			<listitem>
+				<para><emphasis role="bold">Tops:</emphasis> agregación de eventos en base a una unidad para mostrar los más destacados. Suma el total de datos de diferentes eventos para mostrarlo como uno único. </para>
+			</listitem>
+			<listitem>
+				<para><emphasis role="bold">Raw:</emphasis> vista de la totalidad de datos de los eventos en bruto, clasificados por atributos y franjas de tiempo.</para>
+			</listitem>
+			<listitem>
+				<para><emphasis role="bold">Compare:</emphasis> comparación de intervalos de tiempo para analizar diferencias en el estado de la red.</para> 
+			</listitem>
+			<listitem>
+				<para><emphasis role="bold">Unique:</emphasis> muestra los elementos diferentes que ha interactuado con la red según atributo.</para>
+			</listitem>
+		</itemizedlist>
+		<mediaobject>
+			<imageobject>
+				<imagedata scalefit="1" align="center" width="150" fileref="images/ch10_img021.png"/>
+			</imageobject>
+			<textobject>
+				<phrase>Vistas</phrase>
+			</textobject>
+			<caption>
+				<para>Vistas</para>
+			</caption>
+		</mediaobject>
+		<note>
+			<title>Nota</title>
+			<para>Las opciones que se muestran en la pestaña <literal>Options</literal> y los atributos <literal>Add tab/Columns</literal> variarán según el tipo de vista elegida.</para>
+		</note>
+		<important>
+			<title>Importante</title>
+			<para>No olvide combinar las vistas con los diferentes tipos de gráficas. De este modo obtendrá múltiples posibilidades de análisis de los datos.</para>
+		</important>
+		<section>
+			<title>Tops</title>
+			<para>La vista Top nos permite visualizar cuáles han sido los eventos más destacados según el intervalo de tiempo que se haya seleccionado. 
+			Lo que visualizamos en la gráfica es la suma del total de dichos eventos mostrados como un único evento.
+			 Si posamos el ratón por encima de cada uno de estos "picos" o Tops, veremos el desglose del evento por día, hora y tipo de dimensión o atributo que se esté consultando.</para>
+			<mediaobject>
+				<imageobject>
+					<imagedata scalefit="1" align="center" width="450" fileref="images/ch10_img022.png"/>
+				</imageobject>
+				<textobject>
+					<phrase>Tops</phrase>
+				</textobject>
+				<caption>
+					<para>Vistas: Tops</para>
+				</caption>
+			</mediaobject>
+		</section>
+		<section>
+			<title>Raw</title>
+			<para>Esta vista nos ofrece los datos de los eventos en bruto, por tanto, visualizaremos la totalidad de eventos por atributosegmentados por franjas de tiempo.</para>
+			<para>En la tabla de datos recogerá, por tanto, todos los datos de los eventos clasificados por columnas. 
+			Los datos se muestran a nivel de pantalla, no obstante, si desea ver más, basta con hacer scroll y esperar a que se carguen más datos: <emphasis>Load more.</emphasis></para>
+			<mediaobject>
+				<imageobject>
+					<imagedata scalefit="1" align="center" width="450" fileref="images/ch10_img023.png"/>
+				</imageobject>
+				<textobject>
+					<phrase>Raw</phrase>
+				</textobject>
+				<caption>
+					<para>Vistas: Raw</para>
+				</caption>
+			</mediaobject>
+			<note>
+				<title>Nota</title>
+				<para>Como se puede observar en la imagen, el tipo de gráfica ideal para la vista Raw es el de flujo de datos o <literal>Streams.</literal></para>
+				<para>En la vista Raw los atributos se muestran en columnas.</para>
+			</note>
+			<section>
+				<title>Gestión de eventos IPS en la vista Raw</title>
+				<para>La vista Raw nos permite visualizar todos los eventos recogidos por los sensores IPS por atributo y segmentados por franjas de tiempo.
+				 Combinado con el tipo de gráfica Stream nos permite, además, visualizar el flujo de datos que se está produciendo dentro de la red. </para>
+				<para>Cada columna de la tabla de datos nos muestra los valores que corresponden con los atributos seleccionados, así como el intervalo de tiempo entre eventos (<literal>Timestamp</literal>).</para>
+				<para>En esta tabla podemos realizar diferentes acciones:</para>
+				<itemizedlist mark="bullet">
+					<listitem>
+						<para>Intervalo de tiempo o <literal>Timestamp:</literal> podemos consultar el intervalo de tiempo que se toma como referencia para mostrar el número de eventos que se han producido en ese tiempo.</para>
+					</listitem>
+					<listitem>
+						<para>Consultar información del evento: haciendo clic sobre el icono de "Editar" para obtener una mayor granuralidad.</para>
+						<para>Cuando se ha llegado al límite de granuralidad en el que se pueden mostrar los eventos, este icono se transformará en el de información:</para>
+						<mediaobject>
+							<imageobject>
+								<imagedata scalefit="1" align="center" width="450" fileref="images/ch10_img024.png"/>
+							</imageobject>
+							<caption>
+								<para>Detalle Timestamp: información del evento</para>
+							</caption>
+						</mediaobject>
+						<para>Clicando sobre él accederemos a una pantalla en la que se nos proporciona la información completa asociada a cada uno de los eventos consignados en ese intervalo de tiempo.</para>
+						<mediaobject>
+							<imageobject>
+								<imagedata scalefit="1" align="center" width="450" fileref="images/ch10_img025.png"/>
+							</imageobject>
+							<caption>
+								<para>Información del evento</para>
+							</caption>
+						</mediaobject>
+					</listitem>
+					<listitem>
+						<para>Crear un objeto (<literal>Create object</literal>): algunos de los atributos que se muestran en la información del evento permiten la posibilidad de convertirlos en Objeto. Esto quiere decir, que a esos valores se les puede añadir un nombre y una descripción que permite la localización de un elemento de manera más rápida y sencilla.</para>
+						<mediaobject>
+							<imageobject>
+								<imagedata scalefit="1" align="center" width="450" fileref="images/ch10_img026.png"/>
+							</imageobject>
+							<caption>
+								<para>Crear un objeto</para>
+							</caption>
+						</mediaobject>
+					</listitem>
+				</itemizedlist>
+				<note>
+					<title>Nota</title>
+					<para>Recuerde que la máxima granuralidad disponible es de 1m.</para>
+				</note>
+			</section>
+			<section>
+				<title>Vista Raw: información del evento IPS</title>
+				<para>Cuando llegamos al máximo de granuralidad disponible para la consulta de los eventos registrados por el sensor, 
+				accedemos a una pantalla en la que visualizaremos una ficha que incluye el detalle de la información asociada a los siguientes parámetros:</para>
+				<itemizedlist mark="circle">
+					<listitem>
+						<para>Datalink</para>
+					</listitem>
+					<listitem>
+						<para>Archivo</para>
+					</listitem>
+					<listitem>
+						<para>IPS/IDS</para>
+					</listitem>
+					<listitem>
+						<para>Localización</para>
+					</listitem>
+					<listitem>
+						<para>Red</para>
+					</listitem>
+					<listitem>
+						<para>Transporte</para>
+					</listitem>
+				</itemizedlist>
+			</section>
+			<section>	
+				<title>Vista Raw: reglas, políticas y acciones sobre eventos</title>
+				<para>Además de la obtención de información detallada sobre cada uno de los eventos, es posible realizar acciones sobre
+				 los mismos que nos ayuden a gestionar su visualización para optimizar el análisis y monitorización de nuestras redes.</para>
+					<mediaobject>
+						<imageobject>
+							<imagedata scalefit="1" align="center" width="450" fileref="images/ch10_img027a.png"/>
+						</imageobject>
+						<textobject>
+							<phrase>Acciones para la visualización de eventos</phrase>
+					</textobject>
+					<caption>
+						<para>Acciones para la visualización de eventos</para>
+					</caption>
+				</mediaobject>
+				<para>Las acciones que se pueden realizar desde esta pantalla son las siguientes:</para>
+				<itemizedlist mark="circle">
+					<listitem>
+						<para><emphasis role="bold">References:</emphasis> nos permite consultar fuentes externas para obtener información sobre las vulnerabilidades conocidas.</para>
+					</listitem>
+					<listitem>
+						<para><emphasis role="bold">View rule:</emphasis> información detallada sobre la regla que ha lanzado el evento que estamos consultando.</para>
+						<mediaobject>
+							<imageobject>
+								<imagedata scalefit="1" align="center" width="350" fileref="images/ch10_img029.png"/>
+							</imageobject>
+							<textobject>
+								<phrase>Rule information</phrase>
+							</textobject>
+							<caption>
+								<para>Rule information</para>
+							</caption>
+						</mediaobject>
+					</listitem>
+					<listitem>
+						<para><emphasis role="bold">Policy rule:</emphasis> muestra la política en la que se incluye la regla que ha activado el evento se está consultando.
+						Esta opción incluye múltiples acciones sobre que se pueden realizar sobre las políticas y que se verán en el capítulo 8 "Creación de una Signature Policy".</para> 
+						<mediaobject>
+							<imageobject>
+								<imagedata scalefit="1" align="center" width="450" fileref="images/ch10_img030.png"/>
+							</imageobject>
+							<textobject>
+								<phrase>Policy rule</phrase>
+							</textobject>
+							<caption>
+								<para>Policy rule</para>
+							</caption>
+						</mediaobject>
+					</listitem>
+					<listitem>
+						<para><emphasis role="bold">View Raw:</emphasis> permite la visualización de los datos del evento en bruto.</para>
+						<mediaobject>
+							<imageobject>
+								<imagedata scalefit="1" align="center" width="350" fileref="images/ch10_img031.png"/>
+							</imageobject>
+							<textobject>
+								<phrase>View Raw</phrase>
+							</textobject>
+							<caption>
+								<para>View Raw</para>
+							</caption>
+						</mediaobject>
+					</listitem>
+					<listitem>
+						<para><emphasis role="bold">Event Supression:</emphasis> supresión de aquellos eventos recurrentes o de los que no necesitemos información.</para>
+						<mediaobject>
+							<imageobject>
+								<imagedata scalefit="1" align="center" width="350" fileref="images/ch10_img032.png"/>
+							</imageobject>
+							<textobject>
+								<phrase>Suprimir evento</phrase>
+							</textobject>
+							<caption>
+								<para>Suprimir evento</para>
+							</caption>
+						</mediaobject>
+					</listitem>
+					<listitem>
+						<para><emphasis role="bold">Event Filtering:</emphasis> existen tres tipos de filtros para la visualización de los eventos; 
+						el usuario también puede determinar si el seguimiento de los eventos se realiza por fuente o por destino.</para>
+						<mediaobject>
+							<imageobject>
+								<imagedata scalefit="1" align="center" width="350" fileref="images/ch10_img033.png"/>
+							</imageobject>
+							<textobject>
+								<phrase>Filtrar evento</phrase>
+							</textobject>
+							<caption>
+								<para>Filtrar evento</para>
+							</caption>
+						</mediaobject>
+						<para><emphasis>-Limit:</emphasis> limita el número de eventos que se muestran en un periodo de tiempo que hayamos indicado y que se encuentran bajo las formas seleccionadas, 
+						ignorando los demás eventos que se produzcan bajo la misma firma. </para>
+						<para><emphasis>-Threshold:</emphasis> selecciona el número de veces que tiene que ocurrir un evento en un periodo de tiempo determinado para que se muestre la alerta.</para>
+						<para><emphasis>-Both:</emphasis> la alerta solo se muestra una vez por cada n veces que ha sucedido el evento en un periodo de tiempo determinado.</para>
+					</listitem>
+				</itemizedlist>				
+			</section>
+		</section>
+		<section>
+			<title>Compare</title>
+			<para>Esta vista nos ofrece la evolución del uso de la red mediante la comparación de dos intervalos de tiempo. 
+			Esta comparativa se puede realizar por horas o por días con intervalos de 5 minutos, lo que garantiza un grado de detalle máximo. 
+			De este modo, el usuario puede identificar de forma rápida el momento de mayor uso de la red.</para>
+			<para>En la tabla de datos se mostrarán aquellos que correpsonden al intervalo temporal seleccionado.</para>
+			<mediaobject>
+				<imageobject>
+					<imagedata scalefit="1" align="center" width="450" fileref="images/ch10_img034.png"/>
+				</imageobject>
+				<textobject>
+					<phrase>Vistas: Compare</phrase>
+				</textobject>
+				<caption>
+					<para>Vistas: Compare</para>
+				</caption>
+			</mediaobject>
+		</section>
+		<section>
+			<title>Unique</title>
+			<para>A través de la vista <literal>Unique,</literal> el usuario podrá obtener información acerca de los elementos diferentes que han interactuado, 
+			al menos, una vez con la red en un periodo de tiempo determinado. Posando el ratón sobre cualquier punto de la gráfica, 
+			el usuario obtendrá el resultado total de elementos únicos para el lapso de tiempo seleccionado.</para>
+			<para><literal>Group by</literal> (disponible solo en vista Unique): nos permite agrupar los datos que se muestran en la gráfica en base a un atributo determinado. 
+			Esta opción facilita el filtrado y clasificación de los elementos según los criterios de análisis que necesitemos.</para>
+			<mediaobject>
+				<imageobject>
+					<imagedata scalefit="1" align="center" width="450" fileref="images/ch10_img035.png"/>
+				</imageobject>
+				<textobject>
+					<phrase>Vistas: Unique</phrase>
+				</textobject>
+				<caption>
+					<para>Vistas: Unique</para>
+				</caption>
+			</mediaobject>
+		</section>
+	</section>	
+	<section>
+		<title>Agregación</title>
+		<para>En el submenú de cabecera el usuario puede elegir el tipo de datos que desea visualizar para analizar el tráfico de su red: </para>
+	<itemizedlist mark="bullet">
+		<listitem>
+			<para>Eventos (<literal>Events</literal>)</para>
+		</listitem>
+		<listitem>
+			<para>Eventos por segundo (<literal>Events/s</literal>)</para>
+		</listitem>
+		<listitem>
+			<para>Firmas (<literal>Signature</literal>)</para>
+		</listitem>
+	</itemizedlist>
+	<note>
+		<title>Nota</title>
+		<para>Estas opciones aplican para la vistas Tops y Compare.</para>
+	</note>
+	<mediaobject>
+		<imageobject>
+			<imagedata scalefit="1" align="center" width="150" fileref="images/ch10_img002.png"/>
+		</imageobject>
+		<caption>
+			<para>Seleccionar tipo de datos o agregación</para>
+		</caption>
+	</mediaobject>
+		<section>
+			<title>Events</title> 
+			<para>En las vistas <literal>Tops</literal> y <literal>Compare</literal> esta opción permite visualizar el total de eventos que se han registrado en un periodo de tiempo determinado filtrados por atributo. </para> 
+			<para>Es posible, por tanto, obtener una gráfica que nos muestre el número de eventos registrados por sensor, por IP de origen, por destino, etc.</para> 
+			<para>Al posar el ratón encima de la vista gráfica es posible visualizar la fecha, hora exactas y el número de eventos totales .</para>
+			<mediaobject>
+				<imageobject>
+					<imagedata scalefit="1" align="center" width="450" fileref="images/ch10_img003.png"/>
+				</imageobject>
+				<caption>
+					<para>Eventos/sensor</para>
+				</caption>
+				</mediaobject>
+				<para>Recuerde que es posible un análisis más profundo añadiendo pestañas con atributos. Es posible añadir tantas pestañas como atributos se muestran en la sección <literal>+Add tab.</literal></para> 
+				<para>Por ejemplo, en las siguientes capturas observamos el total de firmas que se han recibido en un periodo de tiempo determinado 
+				o en el segundo caso, el total de eventos generados por las IPs de origen que han interactuado con la red.</para>
+			<mediaobject>
+				<imageobject>
+					<imagedata scalefit="1" align="center" width="450" fileref="images/ch10_img004.png"/>
+				</imageobject>	
+				<caption>
+					<para>Eventos/firmas</para>
+				</caption>
+			</mediaobject>
+			<mediaobject>
+				<imageobject>
+					<imagedata scalefit="1" align="center" width="450" fileref="images/ch10_img005.png"/>
+				</imageobject>
+				<caption>
+					<para>Eventos/DST Address</para>
+				</caption>
+			</mediaobject>
+		</section>
+		<section>
+			<title>Events/s</title> 
+			<para>Muestra el total de eventos que se han producido en un segundo para un atributo dado. Nos ofrece el máximo grado de granuralidad.</para> 
+			<mediaobject>
+				<imageobject>
+					<imagedata scalefit="1" align="center" width="450" fileref="images/ch10_img006.png"/>
+				</imageobject>
+				<caption>
+					<para>Eventos/s-firmas</para>
+				</caption>
+			</mediaobject>
+		</section>
+		<section>
+			<title>Signatures</title> 
+			<para>Al seleccionar <literal>Signatures</literal> el usuario puede visualizar el número de reglas que se han activado para el atributo o pestaña seleccionada. </para>
+			<para>En caso de que se haya añadido una pestaña con el atributo <literal>Signature</literal> se observará cómo la distribución de firmas por firma tiene, por lógica, un valor de 1. 
+			No obstante, el resumen nos aportará información muy útil. </para>
+			<mediaobject>
+				<imageobject>
+					<imagedata scalefit="1" align="center" width="450" fileref="images/ch10_img007.png"/>
+				</imageobject>
+				<textobject>
+					<phrase>Firmas/sensor</phrase>
+				</textobject>
+				<caption>
+					<para>Firmas/sensor</para>
+				</caption>
+			</mediaobject>
+		</section>
+	</section>
+	<section>
+		<title>Granularidad</title>
+		<para>Llamamos granularidad al grado de detalle con el que podemos visualizar los eventos en redBorder. 
+		Las opciones de granuralidad varían según el rango de tiempo que se esté mostrando (1h., 2h., last week, last month, etc.). Con esta vista el usuario puede analizar el tráfico de red en tiempo real.</para>
+		<para>Como se observa en la imagen, según el lapso de tiempo seleccionado, el usuario puede conocer el detalle del tráfico, por ejemplo, por sensor en lapsos de dos minutos.</para>
+		<mediaobject>
+			<imageobject>
+				<imagedata scalefit="1" align="center" width="450" fileref="images/ch10_img036.png"/>
+			</imageobject>
+			<caption>
+				<para>Métrica a la que se ha aplicado una granuralidad de 1 día</para>
+			</caption>
+		</mediaobject>
+		<note>
+			<title>Nota</title>
+			<para>La vista <literal>Raw</literal> es la más indicada para aplicar granuralidad para observar los datos en detalle.</para>
+		</note>
+		<mediaobject>
+			<imageobject>
+				<imagedata scalefit="1" align="center" width="450" fileref="images/ch10_img037.png"/>
+			</imageobject>
+			<textobject>
+				<phrase>Combinación de la vista raw para un lapso de tiempo seleccionado (granularidad)</phrase>
+			</textobject>
+			<caption>
+				<para>Combinación de la vista raw para un lapso de tiempo seleccionado (granularidad)</para>
+			</caption>
+		</mediaobject>	
+	</section>
+	<section>
+		<title>Tipo de gráfica</title>
+		<para>Es posible seleccionar el tipo de gráfica con el que se desean visualizar los datos ofrecidos en las diferentes vistas. 
+		Las opciones son muy similares a las que se encuentran disponibles en el proceso de creación de widgets personalizados.</para>
+		<para>Las gráficas que se encuentran disponibles en cada momento, dependerán de la vista seleccionada. 
+		Estas son las posibilidades gráficas que ofrece la plataforma redBorder para las vistas:</para>
+		<para><emphasis role="bold">Stacked:</emphasis> muestra de manera comparativa en una misma gráfica los datos correspondientes a cada una de los atributos seleccionados. 
+		(En la imagen, comparativa de tráfico por sensores).</para>
+		<mediaobject>
+			<imageobject>
+				<imagedata scalefit="1" align="center" width="450" fileref="images/ch10_img022.png"/>
+			</imageobject>
+			<textobject>
+				<phrase>Gráfica Stacked para vista de Tops por sensor</phrase>
+			</textobject>
+			<caption>
+				<para>Gráfica Stacked para vista de Tops por sensor</para>
+			</caption>
+		</mediaobject>	
+		<para><emphasis role="bold">Area:</emphasis> gráfica que ofrece de manera superpuesta los datos para un cojunto de elementos que pertenecen al atributo seleccionado, 
+		siendo el total del tráfico la suma del tráfico por atributo (en la imagen, por sensor).</para>
+		<mediaobject>
+			<imageobject>
+				<imagedata scalefit="1" align="center" width="450" fileref="images/ch10_img038.png"/>
+			</imageobject>
+			<textobject>
+				<phrase>Gráfica Area para vista de Tops por SRC Address</phrase>
+			</textobject>
+			<caption>
+				<para>Gráfica Area para vista de Tops por SRC Address</para>
+			</caption>
+		</mediaobject>
+		<para>En caso de que se quiera visualizar en la gráfica un único elemento, basta con clicar en cualquier punto de la gráfica, de este modo se aislará el elemento seleccionado.</para>
+		<mediaobject>
+			<imageobject>
+				<imagedata scalefit="1" align="center" width="450" fileref="images/ch10_img039.png"/>
+			</imageobject>
+			<textobject>
+				<phrase>Gráfica Area para vista de Tops por SRC Address: aislar tráfico de un solo elemento</phrase>
+			</textobject>
+			<caption>
+				<para>Gráfica Area para vista de Tops por SRC Address: aislar tráfico de un solo elemento</para>
+			</caption>
+		</mediaobject>	
+		<para><emphasis role="bold">Line:</emphasis> muestra de manera superpuesta los datos para un cojunto de elementos que pertenecen al atributo seleccionado; 
+		en este caso no se muestra el área sino que la gráfica viene representada por una línea.</para>
+		<mediaobject>
+			<imageobject>
+				<imagedata scalefit="1" align="center" width="450" fileref="images/ch10_img040.png"/>
+			</imageobject>
+			<textobject>
+				<phrase>Gráfica Line para vista Unique por DST Address</phrase>
+			</textobject>
+			<caption>
+				<para>Gráfica Line para vista Unique por DST Address</para>
+			</caption>
+		</mediaobject>	
+		<para><emphasis role="bold">Bars:</emphasis> ofrece los datos de manera superpuesta los datos para un cojunto de elementos que pertenecen al atributo seleccionado, siendo el total, 
+		la suma de todos los valores de cada uno de esos elementos. En este caso, los datos se representan gráficamente a través de barras.</para>
+		<mediaobject>
+			<imageobject>
+				<imagedata scalefit="1" align="center" width="450" fileref="images/ch10_img041.png"/>
+			</imageobject>
+			<textobject>
+				<phrase>Gráfica Bars para vista Raw</phrase>
+			</textobject>
+			<caption>
+				<para>Gráfica Bars para vista Raw</para>
+			</caption>
+		</mediaobject>
+		<para><emphasis role="bold">SBars:</emphasis> o Stacked Bars, ofrece en una misma gráfica los datos obtenidos para cada uno de los elementos incluidos en el atributo seleccionado,
+		 por lo que se pueden visualizar los resultados de manera independiente por IP, sensor, etc., representados gráficamente or barras.</para>
+		<mediaobject>
+			<imageobject>
+				<imagedata scalefit="1" align="center" width="450" fileref="images/ch10_img042.png"/>
+			</imageobject>
+			<textobject>
+				<phrase>Gráfica SBars para vista Tops por DST Address</phrase>
+			</textobject>
+			<caption>
+				<para>Gráfica SBars para vista Tops por DST Address</para>
+			</caption>
+		</mediaobject>	
+		<para><emphasis role="bold">Streams:</emphasis> gráfica solo disponible para la vista Raw. Muestra los flujos de tráfico por sensor.</para>
+		<mediaobject>
+			<imageobject>
+				<imagedata scalefit="1" align="center" width="450" fileref="images/ch10_img043.png"/>
+			</imageobject>
+			<textobject>
+				<phrase>Gráfica Streams (exclusiva de la vista Raw)</phrase>
+			</textobject>
+			<caption>
+				<para>Gráfica Streams (exclusiva de la vista Raw) </para>
+			</caption>
+		</mediaobject>	
+	</section>	
+	<section>
+		<title>Opciones</title>
+		<para>Cada una de las vistas presenta una serie de opciones que le permiten al usuario  tener los datos disponibles en diferentes formatos y realizar consultas históricas para su análisis.</para>
+		<para>A continuación se enumeran todas las opciones disponibles en esta pestaña. El usuario debe tener en cuenta que estas opciones variarán según la vista seleccionada previamente.</para>
+		<itemizedlist mark="bullet">
+			<listitem>
+				<para><emphasis role="bold">Mostrar total (Show Total):</emphasis> al seleccionar esta opción se muestra en la gráfica el valor del total del tráfico diferenciado del recibido
+				 o emitido por cada uno de los atributos que se estén consultando. Cuando esta opción se encuentra activa, en el listado de opciones aparecerá "Hide total". Disponible en las vistas Top y Unique. </para>
+			</listitem>
+			<listitem>
+				<para><emphasis role="bold">Exportar a CSV (Export to CSV):</emphasis> el usuario obtendrá un fichero de descarga en formato CSV que incluye los datos correspondientes 
+				al atributo que se seleccione, pudiendo fijar un límite de las filas que se incluirán en el archivo. Disponible solo para las vistas Tops y Unique.</para>
+			</listitem>
+			<listitem>
+				<para><emphasis role="bold">Máquina del tiempo (Time machine):</emphasis> regresa la máquina a un estado anterior. Al seleccionar esta opción el usuario podrá visualizar 
+				los datos tal y como si estuviera viéndolos en el día y hora del pasado que haya indicado. Disponible para todas las vistas menos para Raw.</para>
+			</listitem>
+			<listitem>
+				<para><emphasis role="bold">Guardar pestañas/columnas como predeterminadas (Save tabs/columns as default):</emphasis> al aplicar esta opción, las columnas 
+				o pestañas de datos que se hayan incluido para el análisis se mostrarán por defecto en las nuevas consultas que se realicen. Disponible para las vistas Raw, Unique y Tops.</para>
+			</listitem>
+			<listitem>
+				<para><emphasis role="bold">Orden de las columnas (Sort columns):</emphasis> mediante esta opción el usuario puede elegir el orden en el que se mostrarán
+				 las columnas o pestañas. Disponible para la vista de Raw.</para>
+			</listitem>
+			<listitem>
+				<para><emphasis role="bold">Recargar (Start reloading):</emphasis> activa la cuenta atrás para que se efectúe la recarga de los datos. 
+				En cualquier momento, el usuario puede detener esta recarga seleccionando Stop reloading (opción que sustituye a Start reloading una vez que se ha activado esta). 
+				En el extremo izquierdo de la barra de sección aparecerá una cuenta atrás indicándole el tiempo de espera hasta la recarga. Disponible para la vista Raw.</para>
+			</listitem>
+		</itemizedlist>
+		<mediaobject>
+			<imageobject>
+				<imagedata scalefit="1" align="center" width="350" fileref="images/ch10_img044.png"/>
+			</imageobject>
+			<textobject>
+				<phrase>Opciones: Mostrar total</phrase>
+			</textobject>
+			<caption>
+				<para>Opciones: Mostrar total</para>
+			</caption>
+		</mediaobject>
+		<mediaobject>
+			<imageobject>
+				<imagedata scalefit="1" align="center" width="350" fileref="images/ch10_img045.png"/>
+			</imageobject>
+			<textobject>
+				<phrase>Opciones: Export to CSV</phrase>
+			</textobject>
+			<caption>
+				<para>Opciones: Exportar a CSV</para>
+			</caption>
+		</mediaobject>	
+		<mediaobject>
+			<imageobject>
+				<imagedata scalefit="1" align="center" width="350" fileref="images/ch10_img047.png"/>
+			</imageobject>
+			<textobject>
+				<phrase>Opciones: Time machine</phrase>
+			</textobject>
+			<caption>
+				<para>Opciones: Máquina del tiempo</para>
+			</caption>
+		</mediaobject>	
+		<mediaobject>
+			<imageobject>
+				<imagedata scalefit="1" align="center" width="350" fileref="images/ch10_img046.png"/>
+			</imageobject>
+			<textobject>
+				<phrase>Opciones: Sort Columns</phrase>
+			</textobject>
+			<caption>
+				<para>Opciones: ordenar columnas</para>
+			</caption>
+		</mediaobject>	
+		<mediaobject>
+			<imageobject>
+				<imagedata scalefit="1" align="center" width="350" fileref="images/ch10_img048.png"/>
+			</imageobject>
+			<textobject>
+				<phrase>Opciones: Start reloading</phrase>
+			</textobject>
+			<caption>
+				<para>Opciones: Recarga</para>
+			</caption>
+		</mediaobject>				
+	</section>
+	<section>
+		<title>Atributos disponibles para IPS: pestañas y columnas</title>
+		<note>
+			<title>Nota</title>
+			<para>Las opciones que se muestran en la pestaña <literal>Add tab</literal> son los mismos para todas las vistas salvo en el caso de la vista Compare, 
+			que nos muestra como opciones la temporalidad con la que podemos consultar los eventos: semanal o mensual.</para>
+		</note>
+		<para>A continuación enumeramos los atributos que el usuario tiene disponibles para aplicar en el IPS y los diferentes aspectos que puede consultar de cada uno de ellos:</para>
+		<itemizedlist mark="circle">
+			<listitem>
+				<para>Datalink</para>
+				<para>-Ethelength</para>
+				<para>-ICMP Type</para>
+				<para>-SRC MAC</para>
+				<para>-SRC Vendor</para>
+				<para>-DST MAC</para>
+				<para>-DST Vendor</para>
+				<para>-TOS</para>
+				<para>-TTL</para>
+				<para>-VLAN ID</para>
+			</listitem>
+			<listitem>
+				<para>File</para>
+				<para>-SHA256</para>
+				<para>-File size</para>
+				<para>-File URI</para>
+				<para>-File hostname</para>
+			</listitem>
+			<listitem>
+				<para>IPS/IDS</para>
+				<para>-Action</para>
+				<para>-Classification</para>
+				<para>-Domain Name</para>
+				<para>-IPS Group</para>
+				<para>-GID</para>
+				<para>-Revision</para>
+				<para>-Severity</para>
+				<para>-SID</para>
+			</listitem>
+			<listitem>
+				<para>Flow</para>
+				<para>-Biflow direction</para>
+				<para>-Direction</para>
+			</listitem>
+			<listitem>
+				<para>Interface</para>
+				<para>-INPUT SNMP</para>
+				<para>-OUTPUT SNMP</para>
+				<para>-INPUT VRF</para>
+				<para>-OUTPUT VRF</para>
+				<para>-Wireless Starion</para>
+				<para>-Client RSSI</para>
+				<para>-Client RSSI Value</para>
+				<para>-Client SNR</para>
+				<para>-Client SNR Value</para>
+			</listitem>
+			<listitem>
+				<para>Location</para>
+				<para>-SRC Country</para>
+				<para>-SRC AS </para>
+				<para>-DST Country</para>
+				<para>-DST AS</para>
+				<para>-Service Provider</para>
+				<para>-Namespace</para>
+				<para>-Deployment</para>
+				<para>-Market</para>
+				<para>-Organization</para>
+			</listitem>
+			<listitem>
+				<para>Network</para>
+				<para>-IP lenght</para>
+				<para>-Protocol</para>
+				<para>-Sensor Type</para>
+				<para>-SRC NET Address</para>
+				<para>-DST NET Address</para>
+			</listitem>
+			<listitem>
+				<para>Transport</para>
+				<para>-SRC Port</para>
+				<para>-DST Port</para>
+			</listitem>
+		</itemizedlist>
+		<important>
+			<title>Importante</title>
+			<para>Gracias a la opción IPS Group, el usuario puede crear grupos con diferentes segmentos IPS. 
+			Esto le permite aplicar diferentes políticas a diferentes grupos de segmentos, a diferencia de lo que sucedía en versiones anteriores.</para>
+			<para>Con una única máquina se pueden crear numerosos entornos en los que aplicar diferentes reglas.</para>
+		</important>
+	</section>
+</chapter>

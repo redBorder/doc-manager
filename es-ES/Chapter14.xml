@@ -11,7 +11,7 @@
 	<para>En el margen derecho de la barra de menú, junto al menú <literal>Sensors</literal> encontramos la sección de "herramientas" o <literal>Tools</literal> en la que se encuentran las opciones para la configuración de la plataforma web redBorder.</para>
 	<mediaobject>
 		<imageobject>
-			<imagedata scalefit="1" align="center" width="350" fileref="images/ch14_img001.png"/>
+			<imagedata scalefit="1" align="center" width="150" fileref="images/ch14_img001.png"/>
 		</imageobject>
 		<caption>
 			<para><literal>Tools:</literal> opciones disponibles para la configuración de la plataforma redBorder</para>
@@ -55,14 +55,6 @@
 		<title>Alarmas</title>
 		<para>Una alarma es una notificación que se activa cuando se cumple una o más condiciones establecidas por el usuario.</para>
 		<para>Al acceder a esta opción se visualizan el listado de alarmas que se han dado de alta.</para>
-		<mediaobject>
-			<imageobject>
-				<imagedata scalefit="1" align="center" width="350" fileref="images/ch14_img002.png"/><!--falta captura-->
-			</imageobject>
-			<caption>
-				<para>Listado de alarmas activas</para>
-			</caption>
-		</mediaobject>
 		<section>
 			<title>Crear nueva alarma</title>
 				<para>Haciendo clic en el botón <literal>+New Alarm</literal> accedemos al formulario en el que se establecerán las condiciones que debe cumplir la alarma para activar una notificación y el grado de severidad definida para dicha alarma.</para>
@@ -80,7 +72,7 @@
 				</orderedlist>
 				<mediaobject>
 					<imageobject>
-						<imagedata scalefit="1" align="center" width="350" fileref="images/ch14_img003.png"/>
+						<imagedata scalefit="1" align="center" width="450" fileref="images/ch14_img003.png"/>
 					</imageobject>
 					<caption>
 						<para>Crear una nueva alarma</para>
@@ -93,13 +85,15 @@
 						<para>Nombre (<literal>Name</literal>): nombre de la alarma.</para>
 					</listitem>
 					<listitem>
-						<para>INtervalo de tiempo (<literal>Time window:</literal>) intervalo de tiempo en el que se debe superar por exceso o por defecto los valores indicados en <literal>upper/botton limit</literal> para que la alarma se active.</para>
+						<para>Intervalo de tiempo (<literal>Time window:</literal>) intervalo de tiempo en el que se debe superar por exceso o por defecto los valores indicados en 
+						<literal>upper/botton limit</literal> para que la alarma se active.</para>
 					</listitem>
 					<listitem>
 						<para> Notificar cada (<literal>Notify every:</literal>): fijar secuencia de tiempo para la notificación.</para>
 					</listitem>
 					<listitem>
-						<para> Límite por exceso/defecto(<literal>Upper/ Bottom limits:</literal>) indica el número de eventos (máximos/mínimos) que deben cumplir las condiciones de la alarma para que se active la notificación.</para>
+						<para> Límite por exceso/defecto(<literal>Upper/ Bottom limits:</literal>) indica el número de eventos (máximos/mínimos)
+						 que deben cumplir las condiciones de la alarma para que se active la notificación.</para>
 					</listitem>
 					<listitem>
 						<para>Tipo de producto (<literal>Product type</literal>): seleccionar el tipo de App/elemento para el que se ha definido la alarma. <footnote><para>El usuario visualizará en este campo aquellas opciones que se incluyan en su licencia.</para></footnote></para>
@@ -131,7 +125,7 @@
 				<para> Se trata de filtros que se añaden para activar una alarma.</para>
 				<mediaobject>
 					<imageobject>
-						<imagedata scalefit="1" align="center" width="350" fileref="images/ch14_img003b.png"/>
+						<imagedata scalefit="1" align="center" width="450" fileref="images/ch14_img004.png"/>
 					</imageobject>
 					<caption>
 						<para>Filtros para la creación de condiciones para una alarma</para>
@@ -141,7 +135,9 @@
 	</section>
 	<section>
 		<title>Auditorías</title>
-		<para>La opción <literal>Audits</literal>En esta opción se muestra un listado de registros de actividad de los usuarios en la plataforma redBorder ordenados, por defecto, de manera cronológica. No obstante, el usuario puede ordenar la tabla de manera ascendente o descendente por cada una de las columnas. Puede utilizar la caja de búsqueda que se encuentra en el margen superior derecho para realizar un filtrado de la información que desee consultar. Las columnas que se muestran en esta tabla son la siguientes: </para>
+		<para>La opción <literal>Audits</literal>En esta opción se muestra un listado de registros de actividad de los usuarios en la plataforma redBorder ordenados, por defecto, de manera cronológica. 
+		No obstante, el usuario puede ordenar la tabla de manera ascendente o descendente por cada una de las columnas. 
+		Puede utilizar la caja de búsqueda que se encuentra en el margen superior derecho para realizar un filtrado de la información que desee consultar. Las columnas que se muestran en esta tabla son la siguientes: </para>
 		<itemizedlist>
 			<listitem>
 				<para>Usuario (<literal>User</literal>)</para>
@@ -161,7 +157,7 @@
 		</itemizedlist>
 		<mediaobject>
 			<imageobject>
-				<imagedata scalefit="1" align="center" width="350" fileref="images/ch14_img004.png"/>
+				<imagedata scalefit="1" align="center" width="450" fileref="images/ch14_img004a.png"/>
 			</imageobject>
 			<caption>
 				<para><literal>Audits:</literal> registro de la actividad de usuario</para>
@@ -203,7 +199,7 @@
 		</itemizedlist>
 		<mediaobject>
 			<imageobject>
-				<imagedata scalefit="1" align="center" width="350" fileref="images/ch14_img005.png"/>
+				<imagedata scalefit="1" align="center" width="450" fileref="images/ch14_img005.png"/>
 			</imageobject>
 			<caption>
 				<para><literal>Cluster settings:</literal> estado y configuración del cluster</para>
@@ -212,10 +208,11 @@
 	</section>
 	<section>
 		<title>Configuración general</title>
-		<para>La opción <literal>General Settings</literal> nos muestra una interfaz cuya edición va a ser determinante tanto para la configuración de la plataforma como de la infraestructura de red, tal y como se mencionó en (<literal>Sensors>Vistas>Vista árbol</literal>)</para>
+		<para>La opción <literal>General Settings</literal> nos muestra una interfaz cuya edición va a ser determinante tanto para la configuración de la plataforma como de la infraestructura de red, 
+		tal y como se mencionó en (<literal>Sensors>Vistas>Vista árbol</literal>)</para>
 		<mediaobject>
 			<imageobject>
-				<imagedata scalefit="1" align="center" width="350" fileref="images/ch14_img006.png"/>
+				<imagedata scalefit="1" align="center" width="450" fileref="images/ch14_img006.png"/>
 			</imageobject>
 			<caption>
 				<para><literal>General settings:</literal> configuración de opciones generales del Manager redBorder</para>
@@ -228,7 +225,7 @@
 		</note>
 		<mediaobject>
 			<imageobject>
-				<imagedata scalefit="1" align="center" width="350" fileref="images/ch14_img006a.png"/>
+				<imagedata scalefit="1" align="center" width="450" fileref="images/ch14_img006a.png"/>
 			</imageobject>
 			<caption>
 				<para><literal>General settings:</literal> opciones avanzadas</para>
@@ -251,18 +248,18 @@
 					<para>Tiempo de recarga automática para la vista Raw (<literal> Autoreload raw time (seconds)</literal>)</para>
 				</listitem>
 				<listitem>
-					<para>URL de consulta de las reglas (<literal> Signature Lookup url</literal>)</para>
+					<para>URL de consulta de las reglas (<literal>Signature Lookup url</literal>)</para>
 				</listitem>
 				<listitem>
 					<para>Periodicidad de actualización de las reglas (<literal>Rule Update Job Periodicity</literal>)</para>
 				</listitem>
 				<listitem>
-					<para>Tiempo de actualización de las reglas (<literal>Rule Uodate Job Periodicity</literal>)</para>
+					<para>Tiempo de actualización de las reglas (<literal>Rule Update Job Periodicity</literal>)</para>
 				</listitem>
-			</itemizedlist><!-- falta RSAkey que es de IPS-->
+			</itemizedlist>
 			<mediaobject>
 				<imageobject>
-					<imagedata scalefit="1" align="center" width="350" fileref="images/ch14_img006.png"/>
+					<imagedata scalefit="1" align="center" width="450" fileref="images/ch14_img006.png"/>
 				</imageobject>
 				<caption>
 					<para><literal>General settings:</literal> edición de parámetros generales</para>
@@ -280,7 +277,7 @@
 			</note>
 			<mediaobject>
 				<imageobject>
-					<imagedata scalefit="1" align="center" width="350" fileref="images/ch14_img006d.png"/>
+					<imagedata scalefit="1" align="center" width="450" fileref="images/ch14_img006d.png"/>
 				</imageobject>
 				<caption>
 					<para><literal>General settings:</literal> configuración de servidores</para>
@@ -288,31 +285,15 @@
 			</mediaobject>
 			<para><emphasis role="bold">Trap Servers</emphasis></para>
 			<para>Este apartado permite activar las conexiones SNMP. El usuario debe indicar la IP y la comunidad a la que redBorder debe conectarse.</para>
-			<mediaobject>
-				<imageobject>
-					<imagedata scalefit="1" align="center" width="350" fileref="images/ch14_img028.png"/>
-				</imageobject>
-				<caption>
-					<para>General Settings: Listado de Trap Servers</para>
-				</caption>
-			</mediaobject>
 			<para><emphasis role="bold">Añadir Trap Server:</emphasis> Es posible añadir un nuevo <literal>Trap Server</literal> clicando sobre la pestaña <literal>+Add,</literal> a continuación, introducir la IP y la Comunidad SNMP a la que pertenece. <literal>Update</literal> para guardar los cambios introducidos.</para>		
 			<para><emphasis role="bold">Eliminar Trap Server:</emphasis> Clicar en el icono Eliminar que aparece junto a la información del Trap Server para descartarlo. </para>
-			<mediaobject>
-				<imageobject>
-					<imagedata scalefit="1" align="center" width="350" fileref="images/ch14_img029.png"/>
-				</imageobject>
-				<caption>
-					<para>General Settings: Añadir nuevo Trap Server</para>
-				</caption>
-			</mediaobject>
 			<para><emphasis role="bold">White network</emphasis></para>
 			<para>En este apartado se indican las redes cuyo tráfico pasará sin inspección de los paquetes, debido a que las consideramos redes de reputación "fiable".</para>
 			<para>Añadir una nueva red: hacer clic en el botón <literal>+Add</literal> e indicar la IP de la red.</para>
 			<para>Eliminar una red del listado: mediante el icono "Eliminar".</para>
 			<mediaobject>
 				<imageobject>
-					<imagedata scalefit="1" align="center" width="350" fileref="images/ch14_img006e.png"/>
+					<imagedata scalefit="1" align="center" width="450" fileref="images/ch14_img006e.png"/>
 				</imageobject>
 				<caption>
 					<para><literal>General settings:</literal> listado de White Networks</para>
@@ -324,7 +305,7 @@
 			<para>Eliminar una red del listado: mediante el icono "Eliminar".</para>
 			<mediaobject>
 				<imageobject>
-					<imagedata scalefit="1" align="center" width="350" fileref="images/ch14_img006f.png"/>
+					<imagedata scalefit="1" align="center" width="450" fileref="images/ch14_img006f.png"/>
 				</imageobject>
 				<caption>
 					<para><literal>General settings:</literal> listado de Black Networks</para>
@@ -334,17 +315,9 @@
 			<para>En este apartado el usuario definirá las rutas de red para el Manager. </para>
 			<para>Añadir una nueva red: hacer clic en el botón <literal>+Add</literal> e indicar la IP de la ruta de red.</para>
 			<para>Eliminar una red del listado: mediante el icono "Eliminar".</para>
-			<mediaobject>
-				<imageobject>
-					<imagedata scalefit="1" align="center" width="350" fileref="images/ch14_img006f.png"/><!--imagen-->
-				</imageobject>
-				<caption>
-					<para><literal>General settings:</literal> listado de Black Networks</para>
-				</caption>
-			</mediaobject>
 			<para><emphasis role="bold">Geo IP</emphasis></para>
-			<para>Para habilitar la función de Geo Protección en necesario disponer de una base de datos de geolocalización actualizada para evitar errores con la geolocalización de las IPs. redBorder ha sido configurada para soportar tan solo el formato de base de datos Maxmind.</para>
-			<!--Nota sobre bbdd maxmind?-->
+			<para>Para habilitar la función de Geo Protección en necesario disponer de una base de datos de geolocalización actualizada para evitar errores con la geolocalización de las IPs. 
+			redBorder ha sido configurada para soportar tan solo el formato de base de datos Maxmind.</para>
 			<para>Estos son los tipos de bases de datos que son admitidas para las versiones IPv4 y IPv6 (formato binario antiguo GeoIP):</para>
 			<itemizedlist mark="bullet">
 				<listitem>
@@ -360,7 +333,7 @@
 			<para>Descargue los archivos desde la web de Maxmind y descomprímalos. Solo es posible subir archivos con formato .dat, tal y como se comprueba en la siguiente imagen. Para ello, hacer clic en <literal>+Select File</literal></para>
 			<mediaobject>
 				<imageobject>
-					<imagedata scalefit="1" align="center" width="350" fileref="images/ch14_img006h.png"/>
+					<imagedata scalefit="1" align="center" width="450" fileref="images/ch14_img006h.png"/>
 				</imageobject>
 				<caption>
 					<para><literal>General settings:</literal> Geo Protección IP</para>
@@ -371,7 +344,7 @@
 			<para>Para incluir o excluir una columna, seleccionar o deseleccionar el check correspondiente.</para>	
 			<mediaobject>
 				<imageobject>
-					<imagedata scalefit="1" align="center" width="350" fileref="images/ch14_img016.png"/>
+					<imagedata scalefit="1" align="center" width="450" fileref="images/ch14_img016.png"/>
 				</imageobject>
 				<caption>
 					<para><literal>General settings:</literal> Columnas predeteminadas-Location</para>
@@ -385,7 +358,7 @@
 		<para>Para subir un archivo con la licencia proporcionada por redBorder hacer clic en <literal>Select file.</literal> Para solicitar una nueva licencia hacer clic en <literal>Request a license.</literal></para>
 		<mediaobject>
 			<imageobject>
-				<imagedata scalefit="1" align="center" width="350" fileref="images/ch14_img007.png"/>
+				<imagedata scalefit="1" align="center" width="450" fileref="images/ch14_img007.png"/>
 			</imageobject>
 			<caption>
 				<para><literal>Licenses:</literal> consulta y actualización de licencias expiradas</para>
@@ -435,10 +408,10 @@
 		<para>Borrar un objeto: hacer clic en el icono "Eliminar".</para>
 		<mediaobject>
 			<imageobject>
-				<imagedata scalefit="1" align="center" width="350" fileref="images/ch14_img009.png"/>
+				<imagedata scalefit="1" align="center" width="450" fileref="images/ch14_img009.png"/>
 			</imageobject>
 			<caption>
-				<para><literal>Objects:</literal> crear un nuevo objeto de red</para>
+				<para><literal>Objects</literal></para>
 			</caption>
 		</mediaobject>
 		<para>En todos los casos, al crear o editar un objeto, el sistema le requerirá un nombre, un valor para el mismo y una descripción.</para>
@@ -465,10 +438,10 @@
 		<para>Por último, subir la imagen desde su equipo en formato .jpg o .png.</para>
 		<mediaobject>
 			<imageobject>
-				<imagedata scalefit="1" align="center" width="350" fileref="images/ch14_img010.png"/><!--falta imagen-->
+				<imagedata scalefit="1" align="center" width="450" fileref="images/ch14_img010.png"/>
 			</imageobject>
 			<caption>
-				<para><literal>Overlay Map:</literal> superposición de imágenes sobre mapamundi</para>
+				<para>Añadir nuevo Overlay Map</para>
 			</caption>
 		</mediaobject>	
 	</section>
@@ -476,10 +449,11 @@
 		<title>Usuarios</title>
 		<para>El alta o modificación de los datos de los usuarios, la gestión de sus permisos o la creación de nuevos registros es posible desde la interfaz <literal>Users settings.</literal></para>
 		<para>Para buscar un usuario concreto es posible introducir sus datos en el buscador, o bien, navegar por el listado alfabético que se muetsra sobre el listado de usuairos dados de alta.</para>
-		<para>Solo el usuario con el rol de Súperadministrador tiene habilitada esta función. El resto de usuarios solo podrá visualizar las diferentes secciones de la plataforma, pero no modificar su contenido (salvo en el caso de su propio perfil de usuario).</para>
+		<para>Solo el usuario con el rol de Súperadministrador tiene habilitada esta función. 
+		El resto de usuarios solo podrá visualizar las diferentes secciones de la plataforma, pero no modificar su contenido (salvo en el caso de su propio perfil de usuario).</para>
 		<mediaobject>
 			<imageobject>
-				<imagedata scalefit="1" align="center" width="350" fileref="images/ch14_img011.png"/>
+				<imagedata scalefit="1" align="center" width="450" fileref="images/ch14_img011.png"/>
 			</imageobject>
 			<caption>
 				<para><literal>Users:</literal> interfaz de administración de permisos de usuarios</para>
@@ -489,7 +463,7 @@
 		<para>Haciendo clic en el botón de "configuración" el usuario puede modificar los siguientes datos y visualizar un resumen de su estado y actividad dentro de la plataforma: </para>
 		<mediaobject>
 			<imageobject>
-				<imagedata scalefit="1" align="center" width="350" fileref="images/ch14_img011b.png"/>
+				<imagedata scalefit="1" align="center" width="450" fileref="images/ch14_img011b.png"/>
 			</imageobject>
 			<caption>
 				<para><literal>Users:</literal> edición de perfil de usuario</para>
@@ -499,11 +473,13 @@
 			<title>Importante</title>
 			<para>Cada vez que se modifique cualquier dato en la ficha del usuario, se deberá introducir la contraseña actual para confirmar el cambio.</para>
 		</important>
-		<para>Alta de nuevo usuario: para crear un nuevo usuario, hacer clic en <literal>+New User.</literal> Completar en la ficha los datos requeridos. Al marcar el check en la casilla <literal>Administrator</literal> el usuario obtendrá todos los permisos.</para>	
+		<para>Alta de nuevo usuario: para crear un nuevo usuario, hacer clic en <literal>+New User.</literal> Completar en la ficha los datos requeridos. Al marcar el check en la casilla 
+		<literal>Administrator</literal> el usuario obtendrá todos los permisos.</para>	
 	</section>
 	<section>
 		<title>Cola de trabajos</title>
-		<para>En esta opción el usuario puede consultar el estado de los trabajos <literal>(Worker)</literal> y servicios <literal>(Job)</literal> que se están ejecutando en segundo plano. También es posible comprobar cuáles de esas tareas han finalizado.</para>
+		<para>En esta opción el usuario puede consultar el estado de los trabajos <literal>(Workers)</literal> y servicios <literal>(Jobs)</literal>
+		 que se están ejecutando en segundo plano. También es posible comprobar cuáles de esas tareas han finalizado <literal>(Stored Jobs)</literal>.</para>
 		<note>
 			<title>Nota</title>
 			<para>Llamamos <literal>Worker</literal> a los programas que se están ejecutando en segundo plano de manera constante.</para>
@@ -511,13 +487,14 @@
 		</note>
 		<mediaobject>
 			<imageobject>
-				<imagedata scalefit="1" align="center" width="350" fileref="images/ch14_img012.png"/>
+				<imagedata scalefit="1" align="center" width="450" fileref="images/ch14_img012.png"/>
 			</imageobject>
 			<caption>
 				<para><literal>Worker and Job Queue:</literal> listado del estado de trabajos y servicios</para>
 			</caption>
 		</mediaobject>
-		<para>En el apartado de trabajos almacenados <literal>(Stored Jobs)</literal> se muestra el listado de servicios finalizados. Puede conocer el estado de cada uno de ellos mediante el icono "Información", o bien eliminarlos del listado mediante el icono "Eliminar".</para>
+		<para>En el apartado de trabajos almacenados <literal>(Stored Jobs)</literal> se muestra el listado de servicios finalizados. 
+		Puede conocer el estado de cada uno de ellos mediante el icono "Información", o bien eliminarlos del listado mediante el icono "Eliminar".</para>
 		<para>Esta pantalla se recarga de manera automática cada 5 segundos.</para>
 		<mediaobject>
 			<imageobject>
@@ -527,6 +504,33 @@
 				<para><literal>Worker and Job Queue:</literal> información de trabajos finalizados</para>
 			</caption>
 		</mediaobject>
+	</section>
+	<section>
+		<title>Rule Versions</title>
+		<para>Las reglas son patrones de detección de anomalías por parte de Snort. 
+		La plataforma redBorder nos permite realizar la gestión de las reglas de Snort con una interfaz gráfica y de fácil manejo: desde su descarga hasta la aplicación en los sensores. </para>
+		<para>Para acceder al panel de gestión de fuentes de reglas y versiones hay que dirigirse a la sección <literal>Tools</literal> y seleccionar la opción <literal>Rule Versions.</literal></para>
+		<para>En esta interzfaz el usuario visualiza dos secciones diferenciadas:</para>
+		<itemizedlist mark="bullet">
+			<listitem>
+				<para><emphasis role="bold">Sources:</emphasis> en este apartado se administran las fuentes de reglas u origen desde el que se obtienen las reglas.</para>	
+			</listitem>
+			<listitem>
+				<para><emphasis role="bold">Versions:</emphasis> conjunto de reglas descargadas desde una fuente (source) en un momento determinado.</para>
+			</listitem>
+		</itemizedlist>
+		<mediaobject>
+			<imageobject>
+				<imagedata scalefit="1" align="center" width="450" fileref="images/ch14_img013.png"/>		
+			</imageobject>
+			<caption>
+				<para>Panel de administración de reglas: Tools->Rule Versions</para>
+			</caption>
+		</mediaobject>
+		<warning>
+			<title>Advertencia</title>
+			<para>Esta sección solo aparecerá en el caso de que su licencia incluya las Apps IPS o Malware.</para>
+		</warning>
 	</section>
 	<section>
 		<title>Zona de usuario</title>
@@ -543,7 +547,7 @@
 		<para>Para visualizar un resumen del listado de notificaciones basta con hacer clic en <literal>Administrator.</literal> Para acceder a un listado completo de las mismas, seleccionar la opción <literal>View All</literal> o bien, hacer clic sobre cualquiera de las notificaciones que aparecen en el resumen; de este modo se accede a una nueva pantalla desde la cual puede consultar el detalle de las notificaciones y eliminarlas en bloque mediante la opción <literal>Delete All</literal></para>
 		<mediaobject>
 			<imageobject>
-				<imagedata scalefit="1" align="center" width="350" fileref="images/ch14_img015b.png"/>
+				<imagedata scalefit="1" align="center" width="150" fileref="images/ch14_img015b.png"/>
 			</imageobject>
 			<caption>
 				<para>Zona de usuario: Notificaciones</para>
@@ -553,7 +557,7 @@
 		<para>Esta opción permite acceder directamente al perfil de usuario y realizar las mismas acciones que con la opción <literal>Tools>Users</literal></para>
 		<mediaobject>
 			<imageobject>
-				<imagedata scalefit="1" align="center" width="350" fileref="images/ch14_img011b.png"/>
+				<imagedata scalefit="1" align="center" width="450" fileref="images/ch14_img011b.png"/>
 			</imageobject>
 			<caption>
 				<para><literal>Users:</literal> edición de perfil de usuario</para>
@@ -563,7 +567,7 @@
 		<para>Esta opción activa una ayuda contextual que facilita la navegación y la usabilidad de la plataforma.</para>
 		<mediaobject>
 			<imageobject>
-				<imagedata scalefit="1" align="center" width="350" fileref="images/ch14_img015c.png"/>
+				<imagedata scalefit="1" align="center" width="150" fileref="images/ch14_img015c.png"/>
 			</imageobject>
 			<caption>
 				<para>Zona de usuario: Ayuda</para>
@@ -571,13 +575,5 @@
 		</mediaobject>
 		<para><literal>Logout</literal></para>
 		<para>Para una desconexión segura de la plataforma, seleccionar la opción <literal>Logout.</literal> El sistema le devolverá a la pantalla de inicio de sesión.</para>
-		<mediaobject>
-			<imageobject>
-				<imagedata scalefit="1" align="center" width="350" fileref="images/ch04_img001.png"/>
-			</imageobject>
-			<caption>
-				<para>Zona de usuario: pantalla de inicio de sesión tras Logout</para>
-			</caption>
-		</mediaobject>
 	</section>		
 </chapter>
