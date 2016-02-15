@@ -29,7 +29,7 @@
 			<title>Opciones disponibles en el submenú de la sección Flow</title>
 			<mediaobject>
 				<imageobject>
-					<imagedata scalefit="1" align="center" width="350" fileref="images/ch06_img001.png"/>
+					<imagedata scalefit="1" align="center" width="450" fileref="images/ch06_img001.png"/>
 				</imageobject>
 				<textobject>
 					<phrase>Flow: opciones del submenú de la sección Flow</phrase>
@@ -228,7 +228,7 @@
 				<imagedata scalefit="1" align="center" width="350" fileref="images/ch06_img004d.png"/>
 			</imageobject>
 			<caption>
-				<para>CMenú Filters</para>
+				<para>Menú Filters</para>
 			</caption>
 		</mediaobject>
 		<itemizedlist mark="circle">

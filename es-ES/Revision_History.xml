@@ -8,15 +8,15 @@
 	<simpara>
 		<revhistory>
 			<revision>
-				<revnumber>0.1-0</revnumber>
-				<date>Octubre de 2015</date>
+				<revnumber>0.2-0</revnumber>
+				<date>Enero de 2016</date>
 				<author>
 					<firstname>Eneo Tecnología</firstname>
 					<email>info@redborder.net</email>
 				</author>
 				<revdescription>
 					<simplelist>
-						<member>Creación inicial de la documentación.</member>
+						<member>Revisión de la documentación.</member>
 					</simplelist>
 				</revdescription>
 			</revision>

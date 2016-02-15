@@ -29,7 +29,7 @@
 				<para>Al lado de cada uno de los dashboards se encuentran dos iconos. El primero, con forma de llave inglesa nos permite visualizar y editar la configuración general del panel. A la derecha el icono de Copiar que nos permitirá clonar el dashboard seleccionado.</para>
 				<mediaobject>
 			<imageobject>
-				<imagedata scalefit="1" align="center" width="150" fileref="images/ch05_img002.png"/>
+				<imagedata scalefit="1" align="center" width="150" fileref="images/ch05_img002b.png"/>
 			</imageobject>
 			<caption>
 				<para>Iconos de edición y clonación dashboard</para>
