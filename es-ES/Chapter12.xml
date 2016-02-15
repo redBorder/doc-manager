@@ -8,11 +8,11 @@
 ]>
 
 <chapter>
-	<title>Sensores: Configuración de los sensores Flow </title>
+	<title>Configuración de los sensores Flow </title>
 	<para>Existen tres modos de acceder a la edición de los sensores Flow para la configuración de sus parámetros de funcionamiento:</para>
 	<itemizedlist mark="bullet">
 		<listitem>
-			<para>Vista árbol: en la vista árbol el usuario puede ver los sensores Flow que se han creado diferenciados por un icono identificativo. 
+			<para><emphasis role="bold">Vista árbol:</emphasis> en la vista árbol el usuario puede ver los sensores Flow que se han creado diferenciados por un icono identificativo. 
 			Para acceder a su edición hacer clic sobre el nombre del sensor o bien, en "Editar-><literal>Edit".</literal></para>
 			<mediaobject>
 				<imageobject>
@@ -24,7 +24,7 @@
 			</mediaobject>
 		</listitem>
 		<listitem>
-			<para>Vista Access Points: la vista de Access Points muestra un listado con los puntos de acceso a la red que se han definido . 
+			<para><emphasis role="bold">Vista Access Points:</emphasis> la vista de Access Points muestra un listado con los puntos de acceso a la red que se han definido . 
 			Haciendo clic sobre cada uno de ellos accedemos a la interfaz de configuración de los parámetros generales del sensor. </para>
 			<mediaobject>
 				<imageobject>
@@ -36,7 +36,7 @@
 			</mediaobject>
 		</listitem>
 		<listitem>
-			<para>Vista específica de tipo de sensor: en la opción <literal>View</literal> se encuentran vistas específicas para cada tipo de sensor.
+			<para><emphasis role="bold">Vista específica de tipo de sensor:</emphasis> en la opción <literal>View</literal> se encuentran vistas específicas para cada tipo de sensor.
 			Seleccionar <literal>Flow sensors</literal> para acceder al listado alfabético de los sensores Flow. Hacer clic en el icono Editar</para>
 			<mediaobject>
 				<imageobject>
@@ -72,7 +72,7 @@
 					</mediaobject>
 				</listitem>
 				<listitem>
-					<para>-Descripción</para>
+					<para>Descripción</para>
 				</listitem>
 				<listitem>
 					<para>IP: indicar la IP de la cual provienen los sensores.</para>
@@ -110,7 +110,7 @@
 					</mediaobject>
 				</listitem>
 				<listitem>
-					<para>-Comunidad</para>
+					<para>Comunidad</para>
 				</listitem>
 				<listitem>
 					<para>Versión:</para>

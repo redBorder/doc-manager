@@ -13,11 +13,10 @@
   <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="Chapter2.xml"/>
   <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="Chapter4.xml"/>
   <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="Chapter5.xml"/>
-  <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="Chapter6.xml"/>
-  <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="Chapter7.xml"/>
   <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="Chapter11.xml"/>
   <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="Chapter12.xml"/>
-  <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="Chapter13.xml"/>
+  <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="Chapter6.xml"/>
+  <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="Chapter10.xml"/>
   <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="Chapter14.xml"/>
   <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="Revision_History.xml"/>
 </book>

@@ -366,15 +366,21 @@
 				</mediaobject>
 				<para><emphasis role="bold">Filtrar por atributo</emphasis> (<literal>Filter Selected</literal>)</para>
 				<para>Existen dos maneras de convertir un valor de un atributo en un filtro:</para>
-				<para><emphasis role="bold">Buscador:</emphasis> introducir el valor del atributo que se desea buscar y pulsar la tecla <keycap>Enter.</keycap></para>
-				<para>De manera automática se incluirá un filtro con el valor elegido. Se pueden incluir tantos filtros como búsquedas se realicen. Si se desea eliminar el filtro, se deberá ir a la pestaña <literal>Filters</literal> incluida en la barra de submenú.</para>
-				<para><emphasis role="bold">Selección filas de la tabla:</emphasis> es posible seleccionar una o más filas de la tabla para aislar los datos correspondientes a dichos elementos. 
-				Para selección múltiple, es suficiente pulsar con el botón izquierdo del ratón sobre las filas de los distintos elementos que se deseen filtrar; si se desea deseleccionarlos, hacer clic de nuevo sobre los elementos. El usuario también puede ayudarse mediante la tecla <keycap>Shift</keycap>. </para>
-				<para>Una vez seleccionadas las filas, existe la opción de inlcuir o exluir los elementos de la vista gráfica, así como de la tabla de datos.
-				 Para volver a incluirlos se debe pulsar el botón <keycap>Filter Selected</keycap> situado por encima de la tabla de datos. 
-				 Para excluirlos, es necesario pulsar el botón <keycap>Exclude Selected</keycap> situado junto al anterior botón.</para>
-				<para>En caso de tratarse de una selección individual, es posible realizar el filtrado o exclusión más rápidamente:</para>
-				<para>a) Haciendo clic sobre le nombre de un sensor se incluyen sus datos en la vista. En ese momento, su etiqueta mostrará un color que se corresponde con la línea/área/stream/barra que se muestra en la vista. Para excluirlo, hacer de nuevo clic sobre el mismo.</para>
+				<orderedlist numeration="arabic">
+					<listitem>
+						<para><emphasis role="bold">Buscador:</emphasis> introducir el valor del atributo que se desea buscar y pulsar la tecla <keycap>Enter.</keycap></para>
+				<para>De manera automática se incluirá un filtro con el valor elegido. Se pueden incluir tantos filtros como búsquedas se realicen. Si desea eliminar el filtro, 
+			 deberá ir a la pestaña <literal>Filters</literal> incluida en la barra de submenú.</para>
+					</listitem>
+					<listitem>
+						<para><emphasis role="bold">Selección filas de la tabla:</emphasis> es posible seleccionar una o más filas de la tabla para aislar los datos correspondientes a dichos elementos. 
+						Para selección múltiple, es suficiente pulsar con el botón izquierdo del ratón sobre las filas de los distintos elementos que se deseen filtrar; si se desea deseleccionarlos, hacer clic de nuevo sobre los elementos. El usuario también puede ayudarse mediante la tecla <keycap>Shift</keycap>. </para>
+						<para>Una vez seleccionadas las filas, existe la opción de inlcuir o exluir los elementos de la vista gráfica, así como de la tabla de datos.
+						Para volver a incluirlos se debe pulsar el botón <keycap>Filter Selected</keycap> situado por encima de la tabla de datos. 
+						Para excluirlos, es necesario pulsar el botón <keycap>Exclude Selected</keycap> situado junto al anterior botón.</para>
+						<para>En caso de tratarse de una selección individual, es posible realizar el filtrado o exclusión más rápidamente:</para>
+				<para>a) Haciendo clic sobre le nombre de un sensor se incluyen sus datos en la vista. En ese momento, su etiqueta mostrará 
+				un color que se corresponde con la línea/área/stream/barra que se muestra en la vista. Para excluirlo, hacer de nuevo clic sobre el mismo.</para>
 				<para>b) Abriendo el desplegable que aparece junto a cada elemento de la tabla y que contiene las siguientes opciones:</para>
 				<itemizedlist mark="circle">
 					<listitem>
@@ -387,6 +393,8 @@
 						<para><literal>Copy to clipboard:</literal> el valor del elemento seleccionado se copia en el portapapeles para que estén disponibles para usos posteriores.</para>
 					</listitem>
 				</itemizedlist>		
+					</listitem>
+				</orderedlist>		
 				<mediaobject>
 					<imageobject>
 						<imagedata scalefit="1" align="center" width="450" fileref="images/ch10_img014.png"/>
@@ -416,7 +424,7 @@
 		<para><emphasis role="bold">Create object:</emphasis> permite poner un nombre y/o descripción más intuitios que permiten la localización de un elemento de manera más rápida y sencilla. Por ejemplo, si conocemos la máquina asociada a una determinada dirección IP, esta opción nos permite renombrarla para facilitar su identificación. </para>
 		<mediaobject>
 			<imageobject>
-				<imagedata scalefit="1" align="center" width="450" fileref="images/ch10_img016.png"/>
+				<imagedata scalefit="1" align="center" width="350" fileref="images/ch10_img016.png"/>
 			</imageobject>
 			<textobject>
 				<phrase>Renombrar una IP: Create net object</phrase>
@@ -576,7 +584,7 @@
 						<para>Intervalo de tiempo o <literal>Timestamp:</literal> podemos consultar el intervalo de tiempo que se toma como referencia para mostrar el número de eventos que se han producido en ese tiempo.</para>
 					</listitem>
 					<listitem>
-						<para>Consultar información del evento: haciendo clic sobre el icono de "Editar" para obtener una mayor granuralidad.</para>
+						<para><emphasis role="bold">Consultar información del evento:</emphasis>  haciendo clic sobre el icono de "Editar" para obtener una mayor granuralidad.</para>
 						<para>Cuando se ha llegado al límite de granuralidad en el que se pueden mostrar los eventos, este icono se transformará en el de información:</para>
 						<mediaobject>
 							<imageobject>
@@ -586,7 +594,7 @@
 								<para>Detalle Timestamp: información del evento</para>
 							</caption>
 						</mediaobject>
-						<para>Clicando sobre él accederemos a una pantalla en la que se nos proporciona la información completa asociada a cada uno de los eventos consignados en ese intervalo de tiempo.</para>
+						<para>Al hacer clic sobre él accederemos a una pantalla en la que se nos proporciona la información completa asociada a cada uno de los eventos consignados en ese intervalo de tiempo.</para>
 						<mediaobject>
 							<imageobject>
 								<imagedata scalefit="1" align="center" width="450" fileref="images/ch10_img025.png"/>
@@ -1160,7 +1168,7 @@
 		</itemizedlist>
 		<important>
 			<title>Importante</title>
-			<para>Gracias a la opción IPS Group, el usuario puede crear grupos con diferentes segmentos IPS. 
+			<para>Gracias a la opción IPS Group, el usuario puede <emphasis role="bold">crear grupos con diferentes segmentos IPS.</emphasis> 
 			Esto le permite aplicar diferentes políticas a diferentes grupos de segmentos, a diferencia de lo que sucedía en versiones anteriores.</para>
 			<para>Con una única máquina se pueden crear numerosos entornos en los que aplicar diferentes reglas.</para>
 		</important>
