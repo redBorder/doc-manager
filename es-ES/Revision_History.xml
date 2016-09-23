@@ -22,5 +22,23 @@
 			</revision>
 		</revhistory>
 	</simpara>
+	
+	<simpara>
+		<revhistory>
+			<revision>
+				<revnumber>1.0-0</revnumber>
+				<date>Septiembre de 2016</date>
+				<author>
+					<firstname>Eneo Tecnología</firstname>
+					<email>info@redborder.net</email>
+				</author>
+				<revdescription>
+					<simplelist>
+						<member>Adición capítulos configuración sensores IPS</member>
+					</simplelist>
+				</revdescription>
+			</revision>
+		</revhistory>
+	</simpara>
 </appendix>
 

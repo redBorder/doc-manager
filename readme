@@ -1,0 +1,32 @@
+
+
+# Manager Installation
+
+Este manual de usuario corresponde a la última versión de la plataforma redborder. En él se detallan los pasos que se deben seguir para realizar una correcta instalación del Manager, así como se ofrece información general sobre la plataforma web, cómo moverse por ella, configuración de sensores y visualización de eventos por cada App. 
+
+Esta es la versión más actualizada de la documentación, no obstante, si encuentras algún error o echas en 
+falta alguna información te animamos a que reportes errores o contribuyas al proyecto creando nueva documentación.
+
+Para ello deberás leer los siguientes archivos:
+
++ CONTRIBUTING.md
++ Código de conducta redborder
+
+En este repositorio podrás encontrar todos los archivos necesarios para obtener la información completa de la guía.
+Puedes ponerte en contacto con nosotros a través de la sección *Contact Us* de nuestra página web: 
+https://redborder.com/ o mediante la dirección de correo electrónico info@redborder.com.
+
+Best order for compiling this guide. Check out Installation Guide:
+
+<book>
+  <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="Book_Info.xml"/>
+  <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="Preface.xml"/>
+  <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="Chapter1.xml"/>
+  <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="Chapter2.xml"/>
+  <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="Chapter4.xml"/>
+  <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="Chapter5.xml"/>
+  <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="Chapter6.xml"/>
+  <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="Chapter11.xml"/>
+  <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="Chapter13.xml"/>
+  <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="Revision_History.xml"/>
+</book>

@@ -17,6 +17,10 @@
   <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="Chapter12.xml"/>
   <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="Chapter6.xml"/>
   <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="Chapter10.xml"/>
+  <xi:include condition="ips" xmlns:xi="http://www.w3.org/2001/XInclude" href="Chapter15.xml"/>
+  <xi:include condition="ips" xmlns:xi="http://www.w3.org/2001/XInclude" href="Chapter16.xml"/>
+  <xi:include condition="ips" xmlns:xi="http://www.w3.org/2001/XInclude" href="Chapter17.xml"/>
+  <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="Chapter13.xml"/>
   <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="Chapter14.xml"/>
   <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="Revision_History.xml"/>
 </book>
