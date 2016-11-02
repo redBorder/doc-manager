@@ -170,7 +170,7 @@
 				</note>		
 				<mediaobject>
 					<imageobject>
-						<imagedata scalefit="1" align="center" width="150" fileref="images/ch05_img004a.png"/>
+						<imagedata scalefit="1" align="center" width="150" fileref="images/niveles_de_un_sensor_ips_sensor_grupo_binding.png"/>
 					</imageobject>
 					<caption>
 						<para>Niveles de un sensor IPS: sensor, grupo, binding.</para>
