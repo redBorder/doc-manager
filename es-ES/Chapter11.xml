@@ -168,6 +168,14 @@
 					Sensors le permite editar y sobreescribir los parámetros que hayan heredado de la Configuración General: <literal>Tools->General Settings</literal></para>
 					<para>Para el resto de Apps, la creación de sensores debe realizarse desde esta sección.</para>
 				</note>		
+				<mediaobject>
+					<imageobject>
+						<imagedata scalefit="1" align="center" width="150" fileref="images/ch05_img004a.png"/>
+					</imageobject>
+					<caption>
+						<para>Niveles de un sensor IPS: sensor, grupo, binding.</para>
+					</caption>
+				</mediaobject>
 				<para><emphasis role="bold">Herencia de configuración: Tools->General Settings</emphasis></para>
 				<para>Este es el máximo nivel de configuración (es como si se tratara del dominio <emphasis role="bold">root.</emphasis>) 
 				por lo que las propiedades que aquí se definan serán heredadas por el resto de dominios y sensores que se encuentren por debajo de este nivel.</para>
@@ -316,22 +324,22 @@
 			en el que se muestra un mapa en el que puede buscar la localización deseada o indicarla haciendo clic sobre el mapa. A continuación, seleccionar la pestaña <literal>+Add Location.</literal></para>
 			<mediaobject>
 				<imageobject>
-					<imagedata scalefit="1" align="center" width="350" fileref="images/ch11_img013.png"/>
-				</imageobject>
-				<caption>
-					<para>Definir coordenadas para añadir una localización para sensor o dominio</para>
-				</caption>
-			</mediaobject>	
-			<para>Los campos con las coordenadas aparecerán rellenos en caso de que, previamente haya buscado o señalado con el ratón esa localización. 
-			En caso contrario, insertar manualmente los valores de Latitud y Longitud.</para>
-			<mediaobject>
-				<imageobject>
 					<imagedata scalefit="1" align="center" width="400" fileref="images/ch11_img014.png"/>
 				</imageobject>
 				<caption>
 					<para>Vista Map: Location</para>
 				</caption>
 			</mediaobject>			
+			<para>Los campos con las coordenadas aparecerán rellenos en caso de que, previamente haya buscado o señalado con el ratón esa localización. 
+			En caso contrario, insertar manualmente los valores de Latitud y Longitud.</para>
+			<mediaobject>
+				<imageobject>
+					<imagedata scalefit="1" align="center" width="350" fileref="images/ch11_img013.png"/>
+				</imageobject>
+				<caption>
+					<para>Definir coordenadas para añadir una localización para sensor o dominio</para>
+				</caption>
+			</mediaobject>	
 		</section>
 		<section>
 			<title>Vista Access Points</title>
