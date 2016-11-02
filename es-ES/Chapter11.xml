@@ -368,22 +368,6 @@
 				<para>Para saber a qué nivel nos encontramos, puede consultar la ruta de navegación situada en el margen superior izquierdo. 
 				Puede navegar por las diferentes pantallas haciendo clic sobre alguno de los elementos de la ruta.</para>
 			</note>
-			<mediaobject>
-				<imageobject>
-					<imagedata scalefit="1" align="center" width="350" fileref="images/ch11_img011.png"/>
-				</imageobject>
-				<caption>
-					<para>Interfaz de Access Points (a nivel de dominio)</para>
-				</caption>
-			</mediaobject>
-			<mediaobject>
-				<imageobject>
-					<imagedata scale="50" align="center" fileref="images/ch11_img018b.png"/>
-				</imageobject>
-				<caption>
-					<para>Detalle información Access Points</para>
-				</caption>
-			</mediaobject>
 			<para>El submenú de esta interfaz muestra una serie de botones similares a los de la pantalla principal de <literal>Sensors.</literal> 
 			Las acciones que puede realizar desde esta pantalla son las siguientes (estas pueden variar según si se está consultando a nivel de dominio o sensor):</para>
 			<itemizedlist mark="bullet">
@@ -414,6 +398,22 @@
 					<para>Añadir Zonas</para>
 				</listitem>
 			</itemizedlist>		
+			<mediaobject>
+				<imageobject>
+					<imagedata scalefit="1" align="center" width="350" fileref="images/ch11_img011.png"/>
+				</imageobject>
+				<caption>
+					<para>Interfaz de Access Points (a nivel de dominio)</para>
+				</caption>
+			</mediaobject>
+			<mediaobject>
+				<imageobject>
+					<imagedata scale="50" align="center" fileref="images/ch11_img018b.png"/>
+				</imageobject>
+				<caption>
+					<para>Detalle información Access Points</para>
+				</caption>
+			</mediaobject>
 			<mediaobject>
 				<imageobject>
 					<imagedata scalefit="1" align="center" width="350" fileref="images/ch11_img011b.png"/>
