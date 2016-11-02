@@ -409,7 +409,12 @@
 				</listitem>
 				<listitem>
 					<para>Añadir Access Points</para>
-					<mediaobject>
+				</listitem>
+				<listitem>
+					<para>Añadir Zonas</para>
+				</listitem>
+			</itemizedlist>		
+			<mediaobject>
 				<imageobject>
 					<imagedata scalefit="1" align="center" width="350" fileref="images/ch11_img011b.png"/>
 			</imageobject>
@@ -417,10 +422,7 @@
 					<para>Añadir un nuevo Access Point</para>
 				</caption>
 			</mediaobject>
-				</listitem>
-				<listitem>
-					<para>Añadir Zonas</para>
-					<mediaobject>
+			<mediaobject>
 				<imageobject>
 					<imagedata scalefit="1" align="center" width="350" fileref="images/ch11_img018d.png"/>
 			</imageobject>
@@ -436,8 +438,6 @@
 					<para>Añadir una nueva zona de Access Points</para>
 				</caption>
 			</mediaobject>
-				</listitem>
-			</itemizedlist>		
 		</section>	
 	</section>
 	<section>
