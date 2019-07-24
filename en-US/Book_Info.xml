@@ -3,7 +3,7 @@
 <!ENTITY % BOOK_ENTITIES SYSTEM "manual.ent">
 <!ENTITY PRODUCT "Documentation">
 <!ENTITY BOOKID "manual">
-<!ENTITY YEAR "2016">
+<!ENTITY YEAR "2019">
 <!ENTITY HOLDER "Eneo Tecnología S.L. |">
 ]>
 <bookinfo id="book-manual-manual">
@@ -32,8 +32,8 @@
         <title>ENEO Tecnología S.L.</title>
         <address>
           <street>Parque Tecnológico de Bizkaia, Building 500 - Floor 1.</street>
-          <city>Derio</city>
-          <state>Bizkaia</state>
+          <city>Bilbao</city>
+          <state>Derio (Bizkaia)</state>
           <postcode>48160</postcode>
           <phone>+34 607 407 404</phone>
           <country>Spain</country>
