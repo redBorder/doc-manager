@@ -18,15 +18,7 @@
 		<section>
 			<title>Knowing the Official Manager Installation Guide</title>
 			<para>This guide contains very useful information that will help you accurately perform the installation of redBorder Manager.</para>
-			<para>It explains in detail how to navigate through the Manager Installation Wizard and is just as valid if you got a DVD installation as if performed the download directly from the ISO. The actions that can be performed using the installation wizard Manager are: </para>
-			<itemizedlist mark="bullet">
-				<listitem>
-					<para>Manager Configuration </para>
-				</listitem>
-				<listitem>
-					<para>redBorder Apps Configuration</para>
-				</listitem>
-			</itemizedlist>
+			<para>It explains in detail how to navigate through the Manager Installation Wizard and is just as valid if you got a DVD installation as if performed the download directly from the ISO. Thanks to the configuration wizard you can configure the manager. </para>
 			<para>his document is just as ideal for users who want to replace the the old version, as it is for those who are installing redBorder version 3 for the first time. </para>
 			<para>If you’re an experienced user and have already performed the installation of redBorder on other occasions, you can skip directly to chapter 3, in which you learn how to move in redBorder web platform.</para>
 		</section>

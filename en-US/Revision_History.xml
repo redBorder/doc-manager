@@ -12,11 +12,24 @@
 				<date>June 2015</date>
 				<author>
 					<firstname>Eneo Tecnología</firstname>
-					<email>info@redborder.net</email>
+					<email>spain@redborder.com</email>
 				</author>
 				<revdescription>
 					<simplelist>
 						<member>Initial creation of documentation.</member>
+					</simplelist>
+				</revdescription>
+			</revision>
+			<revision>
+				<revnumber>0.2-0</revnumber>
+				<date>July 2019</date>
+				<author>
+					<firstname>Eneo Tecnología</firstname>
+					<email>spain@redborder.com</email>
+				</author>
+				<revdescription>
+					<simplelist>
+						<member>Content update.</member>
 					</simplelist>
 				</revdescription>
 			</revision>
