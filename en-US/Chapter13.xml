@@ -435,31 +435,24 @@
 		<para>Download all the files from Maxmind website and unzip them. It is only possible to upload files with .dat format as we can see in the image below. For this, click on <literal>+Select File</literal></para>
 		<mediaobject>
 			<imageobject>
-				<imagedata scale="30" align="center" fileref="images/ch13_img014.png"/>
+				<imagedata scale="30" align="center" fileref="images/ch13_img009_m.png"/>
 			</imageobject>
 			<caption>
 				<para>General settings: GeoIP Protection</para>
 			</caption>
 		</mediaobject>
-		<para><emphasis role="bold">Default columns: Flow, Location and Monitor</emphasis></para>
-		<para>The sections <literal>Default columns Flow,</literal> <literal>Default columns Location,</literal> asn <literal>Default columns Monitor</literal> allow user to customize the columns (attributes, elements, aggregation, etc.) that are shown by default in the tables of each mentioned sections.</para>
-		<para>To include or exclude a column, just select/unselect the corresponding check.</para>	
+	</section>
+	<section>
+		<title>Infrastructure Monitor</title>
+		<para>Through this option the user can check the current status of the infrastrucure. It shows information such as the CPU usage, the Memory load, and other information from the hardware. </para>
 		<mediaobject>
 			<imageobject>
-				<imagedata scalefit="1" align="center" width="450" fileref="images/ch13_img014b.png"/>
+				<imagedata scale="30" align="center" fileref="images/ch13_img015.png"/>
 			</imageobject>
 			<caption>
-				<para>General settings: Default columns-Flow</para>
+				<para>Infrastructure Monitor</para>
 			</caption>
-		</mediaobject>
-		<mediaobject>
-			<imageobject>
-				<imagedata scale="30" align="center" fileref="images/ch13_img014c.png"/>
-			</imageobject>
-			<caption>
-				<para>General settings: Default columns-Monitor</para>
-			</caption>
-		</mediaobject>
+		</mediaobject>	
 	</section>
 	<section>
 		<title>Licenses</title>
