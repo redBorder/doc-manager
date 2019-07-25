@@ -81,7 +81,6 @@
 					<para>Option details included in the menu bar</para>
 				</caption>
 			</mediaobject>
-			</mediaobject>
 			<para><emphasis>Dashboard:</emphasis> Provides a summary of the events received by the sensors, displaying them in different metrics. This is the screen shown by default when you log into the redBorder platform.</para>
 			<mediaobject>
 				<imageobject>
