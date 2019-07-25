@@ -447,13 +447,26 @@
 		<para>Through this option the user can check the current status of the infrastrucure. It shows information such as the CPU usage, the Memory load, and other information from the hardware. </para>
 		<mediaobject>
 			<imageobject>
-				<imagedata scale="30" align="center" fileref="images/ch13_img015.png"/>
+				<imagedata scale="30" align="center" fileref="images/ch13_img013.png"/>
 			</imageobject>
 			<caption>
 				<para>Infrastructure Monitor</para>
 			</caption>
 		</mediaobject>	
 	</section>
+	<section>
+		<title>Correlation Engine Rules</title>
+		<para>Here the use can see all the rules for the correlation engine. It is possible to edit the existing rules and also create new ones. </para>
+		<para>To have a </para>
+		<mediaobject>
+			<imageobject>
+				<imagedata scale="30" align="center" fileref="images/ch13_img014.png"/>
+			</imageobject>
+			<caption>
+				<para>Correlator Engine Rules</para>
+			</caption>
+		</mediaobject>	
+	</section>	
 	<section>
 		<title>Licenses</title>
 		<para>Through this option the user can check which nodes have their liceses expired. In the same, it is possible to upload a new license or request for a new one.</para>
@@ -549,13 +562,59 @@
 		</mediaobject>	
 	</section>
 	<section>
+		<title>Platform Alerts</title>
+		<para>Here the user can see the alerts from the platform. All the alerts are shown to every user.</para>
+		<mediaobject>
+			<imageobject>
+				<imagedata scalefit="1" align="center" width="450" fileref="images/ch13_img021_a.png"/>
+			</imageobject>
+			<caption>
+				<para><literal>Platform Alerts</literal></para>
+			</caption>
+		</mediaobject>
+		<para>Is possible to create alerts for the platform using the New Alert button. Is necessary to select the alert level, and the message of the alert.</para>
+		<mediaobject>
+			<imageobject>
+				<imagedata scalefit="1" align="center" width="450" fileref="images/ch13_img021_b.png"/>
+			</imageobject>
+			<caption>
+				<para><literal>Platform Alerts: New Alert</literal></para>
+			</caption>
+		</mediaobject>	
+	</section>
+	</section>
+	<section>
+		<title>Rule Versions</title>
+		<para>The user can manage the sources for the rules of the platform. It is possible to add or upload new sources and also enable the chosen ones.</para>
+		<mediaobject>
+			<imageobject>
+				<imagedata scalefit="1" align="center" width="450" fileref="images/ch13_img022.png"/>
+			</imageobject>
+			<caption>
+				<para><literal>Rule Versions</literal></para>
+			</caption>
+		</mediaobject>	
+	</section>
+	<section>
+		<title>Support Center</title>
+		<para>The user can use the Support Center in order to solve any question or problem regarding the platform. It is necessary to be registered in the Support Center</para>
+		<mediaobject>
+			<imageobject>
+				<imagedata scalefit="1" align="center" width="450" fileref="images/ch13_img023.png"/>
+			</imageobject>
+			<caption>
+				<para><literal>Support Center</literal></para>
+			</caption>
+		</mediaobject>	
+	</section>
+	<section>
 		<title>Users</title>
 		<para>The activation or modification of users' data, services management or the creation of new registers is possible from the <literal>Users settings </literal> interface.</para>
 		<para>To search a specific user, introduce their data in the browser. You can also navigate through the alphabetic list that is located on top of users list.</para>
 		<para>The only user that has permissions to do that is Superadministrator. The rest of the users can only visualize the sections of the platform (reading mode) but not modify its content (except in the case of its own user profile).</para>
 		<mediaobject>
 			<imageobject>
-				<imagedata scale="30" align="center" fileref="images/ch13_img021.png"/>
+				<imagedata scale="30" align="center" fileref="images/ch13_img024_a.png"/>
 			</imageobject>
 			<caption>
 				<para>Users: management users'permissions interface</para>
@@ -565,7 +624,7 @@
 		<para>Clicking on the "Edit" button the user can modify the following information and visualize a summary of their state and activity within the platform: </para>
 		<mediaobject>
 			<imageobject>
-				<imagedata scalefit="1" align="center" width="450" fileref="images/ch13_img022.png"/>
+				<imagedata scalefit="1" align="center" width="450" fileref="images/ch13_img024_b.png"/>
 			</imageobject>
 			<caption>
 				<para>Users: user's profile edition</para>
@@ -578,7 +637,7 @@
 		<para>Active a new user: to create a new user click on <literal>+New User.</literal> Complete the information required in the user's profile. Active <literal>Administrator</literal> check to obtain full permissions.</para>	
 		<mediaobject>
 			<imageobject>
-				<imagedata scalefit="1" align="center" width="450" fileref="images/ch13_img023.png"/>
+				<imagedata scalefit="1" align="center" width="450" fileref="images/ch13_img024_c.png"/>
 			</imageobject>
 			<caption>
 				<para>Users: New user</para>
@@ -595,7 +654,7 @@
         </note>
 		<mediaobject>
 			<imageobject>
-				<imagedata scalefit="1" align="center" width="450" fileref="images/ch13_img024.png"/>
+				<imagedata scalefit="1" align="center" width="450" fileref="images/ch13_img025_a.png"/>
 			</imageobject>
 			<caption>
 				<para>¡Worker and Job Queue: status list of worker and job queue</para>
@@ -605,7 +664,7 @@
         <para>This screen automatically reloads every 5 seconds.</para>
 		<mediaobject>
 			<imageobject>
-				<imagedata scalefit="1" align="center" width="450" fileref="images/ch13_img025.png"/>
+				<imagedata scalefit="1" align="center" width="450" fileref="images/ch13_img025_b.png"/>
 			</imageobject>
 			<caption>
 				<para>Worker and Job Queue: information of the state of a work</para>
@@ -637,7 +696,7 @@
 		<para>This option allows direct access to the user profile and perform the same actions with the option <literal>Tools>Users</literal></para>
 		<mediaobject>
 			<imageobject>
-				<imagedata scalefit="1" align="center" width="450" fileref="images/ch13_img028.png"/>
+				<imagedata scalefit="1" align="center" width="450" fileref="images/ch13_img024_b.png"/>
 			</imageobject>
 			<caption>
 				 <para>Users: editing user profile</para>
