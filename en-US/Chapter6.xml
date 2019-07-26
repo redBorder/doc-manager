@@ -961,7 +961,7 @@
 				<para><literal>Save tabs/columns as default</literal>: to apply this option, columns or tabs data have been included for analysis are displayed by default in the new consultations performed. Available for Raw, Unique and Tops views.</para>
 			</listitem>
 			<listitem>
-				<para><literal>Sort columns</literal>: through this option, the user can choose the order in which the columns or tabs are displayed. Available for Raw view.</para>
+				<para><literal>Sort aggregations</literal>: through this option, the user can choose the order in which the columns or tabs are displayed. Available for Raw view.</para>
 			</listitem>
 			<listitem>
 					<para><literal>Start reloading</literal>: activates the countdown to the data reload. At any time, the user can stop this by selecting Stop reloading (Start option replaces reloading once this is enabled). At the left end of the section bar appears a countdown indicating the time out to reload. Available for Raw view.</para>
@@ -1005,10 +1005,10 @@
 				<imagedata scale="60" align="center" fileref="images/ch06_img043.png"/>
 			</imageobject>
 			<textobject>
-				<phrase>Options: Sort Columns</phrase>
+				<phrase>Options: Sort Aggregations</phrase>
 			</textobject>
 			<caption>
-				<para>Options: Sort Columns</para>
+				<para>Options: Sort Aggregations</para>
 			</caption>
 		</mediaobject>		
 	</section>
