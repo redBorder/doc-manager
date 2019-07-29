@@ -3,7 +3,7 @@
 <!ENTITY % BOOK_ENTITIES SYSTEM "manual.ent">
 <!ENTITY PRODUCT "Documentation">
 <!ENTITY BOOKID "manual">
-<!ENTITY YEAR "2016">
+<!ENTITY YEAR "2019">
 <!ENTITY HOLDER "Eneo Tecnología S.L. |">
 ]>
 <chapter>
@@ -79,18 +79,6 @@
 				</textobject>
 				<caption>
 					<para>Option details included in the menu bar</para>
-				</caption>
-			</mediaobject>
-			<para><emphasis role="bold">Analysis area</emphasis></para>
-			<mediaobject>
-				<imageobject>
-					<imagedata scale="60" align="center" fileref="images/ch04_img004.png"/>
-				</imageobject>
-				<textobject>
-					<phrase>Menu bar detail: analysis area</phrase>
-				</textobject>
-				<caption>
-					<para>Menu bar detail: analysis area</para>
 				</caption>
 			</mediaobject>
 			<para><emphasis>Dashboard:</emphasis> Provides a summary of the events received by the sensors, displaying them in different metrics. This is the screen shown by default when you log into the redBorder platform.</para>

@@ -3,7 +3,7 @@
 <!ENTITY % BOOK_ENTITIES SYSTEM "manual.ent">
 <!ENTITY PRODUCT "Documentation">
 <!ENTITY BOOKID "manual">
-<!ENTITY YEAR "2016">
+<!ENTITY YEAR "2019">
 <!ENTITY HOLDER "Eneo Tecnología S.L. |">
 ]>
 <chapter>
@@ -184,15 +184,16 @@
 		</section>
 		<section>
 			<title>Add widget: Customize dashboards</title>
-			<para>The user can create and add widgets to their dashboards in order to fully customize the display of data obtained by different Apps. It is possible to incorporate both preconfigured widgets, as well as create 100% customized widgets.</para>
+			<para>The user can create and add widgets to their dashboards in order to fully customize the display of data obtained by different Modules. It is possible to incorporate both preconfigured widgets, as well as create 100% customized widgets.</para>
 			<para>The first step is to select the type of widget you want to add. There are two types of widgets, depending on the type of information you want displayed: </para>
 			<itemizedlist mark="bullet">
 				<listitem>
-					<para><emphasis role="bold">Apps:</emphasis> data display received by the different Apps.</para>
-					<para>-Flow</para>
-					<para>-IPS</para>
-					<para>-Location</para>
-					<para>-Social</para>			
+					<para><emphasis role="bold">Modules:</emphasis> data display received by the different Modules.</para>
+					<para>-Traffic</para>
+					<para>-Intrusion</para>
+					<para>-Social</para>
+					<para>-Vault</para>
+					<para>-Mobility</para>					
 				</listitem>
 				<listitem>
 					<para><emphasis role="bold">Status:</emphasis> display the configuration and status of the machines and network infrastructure.</para>
