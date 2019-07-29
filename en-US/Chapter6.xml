@@ -3,15 +3,59 @@
 <!ENTITY % BOOK_ENTITIES SYSTEM "manual.ent">
 <!ENTITY PRODUCT "Documentation">
 <!ENTITY BOOKID "manual">
+<<<<<<< HEAD
+<!ENTITY YEAR "2015">
+=======
 <!ENTITY YEAR "2019">
+>>>>>>> origin/development
 <!ENTITY HOLDER "Eneo Tecnología S.L. |">
 ]>
 <chapter>
-		<title>Events: Flow</title>
-	<para>In this section the user can display, analyze and manage events collected by Flow sensors.</para>
-	<para>redBorder offers maximum network visibility thanks to the many options of representation and visualization of data that our Flow App provides. Be sure to check the sections <emphasis>Available options in the redBorder Flow submenu</emphasis> and <emphasis>Filter events</emphasis> to discover the versatility to show only the information you want to analyze at a certain time and certain conditions. </para>
+		<title>Events</title>
+	<para>In this section the user can display, analyze and manage events collected by sensors.</para>
+	<para>redBorder offers maximum network visibility thanks to the many options of representation and visualization of data that our App provides. Be sure to check the sections <emphasis>Available options in the redBorder submenu</emphasis> and <emphasis>Filter events</emphasis> to discover the versatility to show only the information you want to analyze at a certain time and certain conditions. </para>
+	
 	<section>
-		<title>Flow: menu and options</title>
+		<title>Modules</title>
+		<para>Redborder has a module for each main functionality. Each one uses different technologies and has an independent interface. All modules need a sensor that provides the module the data.
+
+		</para>
+		<mediaobject>
+			<imageobject>
+				<imagedata scalefit="1" align="center" width="450" fileref="images/ch06_img000_a.png"/>
+			</imageobject>
+			<textobject>
+				<phrase>Redborder Modules</phrase>
+			</textobject>
+			<caption>
+				<para>Redborder Modules</para>
+			</caption>
+		</mediaobject>
+
+		<section>
+			<title>Traffic</title>
+			<para>Traffic module uses netflow data to extract information about all the traffic from the sensor. The module provides information as IPs, protocols, locations and much more.</para>
+		</section>
+		<section>
+			<title>Intrusion</title>
+			<para>Intrusion modules uses data from IPS sensor to show intrusion events based on Snort signatures. It can show events such as DDoS or MITM attacks.</para>
+		</section>
+		<section>
+			<title>Social</title>
+			<para>Social modules uses data from Twitter sensor to show information from that social network. It can be used to show the behaviour of the social info about a topic.</para>
+		</section>
+		<section>
+			<title>Vault</title>
+			<para>Vault module uses syslog data to provide information about events from different origins, like the category, target, event action and more.</para>
+			<para>It is also possible to expand the capabilities of the Vault module through the extensions that add compatibility with other manufacturers.</para>
+		</section>
+		<section>
+			<title>Mobility</title>
+			<para>Mobility module provides location information from sensors from the network APs. It can be used to show how the people is moving in a bulding.</para>
+		</section>
+	</section>
+	<section>
+		<title>Modules: menu and options</title>
 		<para>In the area of analysis of the menu bar (left side), we find different sections corresponding to the Apps that we have integrated into the redBorder platform.</para>
 		<para>Next we will see the different options for data visualization, chart types, granularity (maximum degree of temporal detail that consults events) and attributes that can be combined to obtain a completely customized network traffic viewer.</para>
 		<mediaobject>
@@ -19,23 +63,23 @@
 				<imagedata scalefit="1" align="center" width="450" fileref="images/ch06_img001.png"/>
 			</imageobject>
 			<textobject>
-				<phrase>General view of Flow section</phrase>
+				<phrase>General view of module section</phrase>
 			</textobject>
 			<caption>
-				<para>General view of Flow section</para>
+				<para>General view of module section</para>
 			</caption>
 		</mediaobject>
 		<section>
-			<title>Available options in the Flow submenu</title>
+			<title>Available options in the submenu</title>
 			<mediaobject>
 				<imageobject>
 					<imagedata scalefit="1" align="center" width="350" fileref="images/ch06_img002.png"/>
 				</imageobject>
 				<textobject>
-					<phrase>Flow: options in the Flow submenu</phrase>
+					<phrase>Options in the submenu</phrase>
 				</textobject>
 				<caption>
-					<para>Flow: options in the Flow submenu</para>
+					<para>Options in the submenu</para>
 				</caption>
 			</mediaobject>
 			<itemizedlist mark="bullet">
@@ -59,7 +103,6 @@
 					<para>-Tops: the total sum of data from different events to display as one. </para>
 					<para>-Compare: comparison of events within a period of time.</para>
 					<para>-Unique: shows events that happened only once.</para>
-					<para>-Maps: geolocation of customers, Access Points and bandwidth activity.</para>
 					<mediaobject>
 						<imageobject>
 							<imagedata scalefit="60" align="center" fileref="images/ch06_img004.png"/>
@@ -93,7 +136,6 @@
 				</listitem>
 				<listitem>
 					<para><emphasis role="bold">Graph:</emphasis> shows the different types of graphics from which we can choose to display the data. The types of charts available vary depending on the selected view. These are as follows:</para>
-					<para>-Streams</para>
 					<para>-Area</para>
 					<para>-Line</para>
 					<para>-Bars</para>
@@ -923,7 +965,7 @@
 				<para><literal>Save tabs/columns as default</literal>: to apply this option, columns or tabs data have been included for analysis are displayed by default in the new consultations performed. Available for Raw, Unique and Tops views.</para>
 			</listitem>
 			<listitem>
-				<para><literal>Sort columns</literal>: through this option, the user can choose the order in which the columns or tabs are displayed. Available for Raw view.</para>
+				<para><literal>Sort aggregations</literal>: through this option, the user can choose the order in which the columns or tabs are displayed. Available for Raw view.</para>
 			</listitem>
 			<listitem>
 					<para><literal>Start reloading</literal>: activates the countdown to the data reload. At any time, the user can stop this by selecting Stop reloading (Start option replaces reloading once this is enabled). At the left end of the section bar appears a countdown indicating the time out to reload. Available for Raw view.</para>
@@ -967,10 +1009,10 @@
 				<imagedata scale="60" align="center" fileref="images/ch06_img043.png"/>
 			</imageobject>
 			<textobject>
-				<phrase>Options: Sort Columns</phrase>
+				<phrase>Options: Sort Aggregations</phrase>
 			</textobject>
 			<caption>
-				<para>Options: Sort Columns</para>
+				<para>Options: Sort Aggregations</para>
 			</caption>
 		</mediaobject>		
 	</section>
