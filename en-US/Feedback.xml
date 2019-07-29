@@ -3,21 +3,21 @@
     <section>
 		<title>We would like to know your opinion</title>
 		<para>If you find any errors in this manual, we welcome your suggestions. In the case of a typographical or concept error, you can submit it by mail including the  following information: </para>  
-        <para>Manual's identifier:<emphasis>Installation_rBManager_Enterprise-v.3 [EN](201509)</emphasis>, chapter or section and page number in which there is an error, and the part of text that contains that error.</para>
+        <para>Manual's identifier:<emphasis>Installation_rBManager_Enterprise-v.3 [EN](201909)</emphasis>, chapter or section and page number in which there is an error, and the part of text that contains that error.</para>
         <para>This information allows us to easily locate the error and correct it in order to improve the documentation accompanying our products.</para>
         <para>We also appreciate any suggestions regarding the mode exhibition or organization of information to help us optimize our manuals.</para>
         <para>Always check the latest version of the documentation available at <emphasis role="bold">http://support.redborder.net</emphasis></para>
         <para>You can send your comments to the email address: <email>info@redborder.net</email></para>
         <important>
 			<title>ENEO Tecnología S.L.</title>
-			<address>
-				<street>Plaza de las Naciones s/n, Torre Norte (Edificio Aljarafe Center). Planta 12.</street>
-				<city>Mairena del Aljarafe</city>
-                <state>Sevilla</state>
-                <postcode>41927</postcode>
-                <phone> +34 955 60 11 60</phone>
-                <country>Spain</country>
-                <email>info@redborder.net</email> 
-            </address>
-        </important>
+				<address>
+				  <street>Parque Tecnológico de Bizkaia, Building 500 - Floor 1.</street>
+				  <city>Bilbao</city>
+				  <state>Derio (Bizkaia)</state>
+				  <postcode>48160</postcode>
+				  <phone>+34 607 407 404</phone>
+				  <country>Spain</country>
+				  <email>info@redborder.net</email> 
+				</address>
+      </important>
     </section>

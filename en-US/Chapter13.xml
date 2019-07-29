@@ -3,7 +3,7 @@
 <!ENTITY % BOOK_ENTITIES SYSTEM "manual.ent">
 <!ENTITY PRODUCT "Documentation">
 <!ENTITY BOOKID "manual">
-<!ENTITY YEAR "2016">
+<!ENTITY YEAR "2019">
 <!ENTITY HOLDER "Eneo Tecnología S.L. |">
 ]>
 <chapter>
@@ -33,6 +33,12 @@
 			<para><literal>General Settings</literal>: the user can establish the general parameter settings of the Manager, as well as the Apps they have registered. </para>
 		</listitem>
 		<listitem>
+			<para><literal>Infrastructure Monitor</literal>: show us information from the system and the hardware, such as CPU Load, Memory Used and much more.</para>
+		</listitem>
+		<listitem>
+			<para><literal>Correlation Engine Rules</literal>: provides the list of the cep rules. Here we can also check the existing rules and create new ones.</para>
+		</listitem>
+		<listitem>
 			<para><literal>Licenses</literal>: list of the licenses under those that operate the different modules of the redBorder platform.</para>
 		</listitem>
 		<listitem>
@@ -42,13 +48,22 @@
 			<para><literal>Objects</literal>: network objects defined in the redBorder platform.</para>
 		</listitem>
 		<listitem>
-			<para><literal>Overlay Maps:</literal> images that can be superimposed on a map with the latitude and longitude indicated.</para>
+			<para><literal>Overlay Maps</literal>: images that can be superimposed on a map with the latitude and longitude indicated.</para>
+		</listitem>
+		<listitem>
+			<para><literal>Platform Alerts</literal>: shows the current platform alert to every user.</para>
+		</listitem>
+		<listitem>
+			<para><literal>Rule Versions</literal>: list of the licenses under those that operate the different modules of the redBorder platform.</para>
+		</listitem>
+		<listitem>
+			<para><literal>Support Center</literal>: direct access to support center. It is necessary to be registered in support page.</para>
 		</listitem>
 		<listitem>
 			<para><literal>Users</literal>: profile management and user permissions.</para>
 		</listitem>
 		<listitem>
-			<para><literal>Worker and Job Queue</literal></para>
+			<para><literal>Worker and Job Queue</literal>: show the current active and stored workers and jobs on Redborder manager</para>
 		</listitem>
 	</itemizedlist>
 	<section>
@@ -69,7 +84,7 @@
 			<para>This form consists of three sections:</para>
 			<orderedlist numeration="arabic">
 				<listitem>
-					<para>General options</para>
+					<para>General settings</para>
 				</listitem>
 				<listitem>
 					<para>Notifications</para>
@@ -86,29 +101,28 @@
 					<para>Create a new alarm</para>
 				</caption>
 			</mediaobject>
-			<para><emphasis role="bold">General options</emphasis></para>
+			<para><emphasis role="bold">General settings</emphasis></para>
 			<para>In this section, the user must complete the following data:</para>
 			<itemizedlist mark="bullet">
 				<listitem>
 					<para><literal>Name</literal>: alarm name.</para>
 				</listitem>
 				<listitem>
-					<para><literal>Time window:</literal> time interval that must be overcome by excess or default values given in <literal>upper/bottom limit</literal> so that the alarm is active.</para>
+					<para><literal>Time window</literal>: time interval that must be overcome by excess or default values given in <literal>upper/bottom limit</literal> so that the alarm is active.</para>
 				</listitem>
 				<listitem>
-					<para><literal>Notify every:</literal>: set time sequence for notification.</para>
+					<para><literal>Notify every</literal>: set time sequence for notification.</para>
 				</listitem>
 				<listitem>
-					<para><literal>Upper/ Bottom limits:</literal> indicates the number of events (maximum/minimum) that must meet the conditions of the alarm to activate the notification.</para>
+					<para><literal>Upper/ Bottom limits</literal>: indicates the number of events (maximum/minimum) that must meet the conditions of the alarm to activate the notification.</para>
 				</listitem>
 				<listitem>
 					<para><literal>Product type</literal>: select the type of App/item for which the alarm has defined. <footnote><para>The user will see in this field options that are included in their license.</para></footnote></para>
-					<para>-Flow</para>
-					<para>-IPS</para>
-					<para>-Location</para>
-					<para>-Malware</para>
+					<para>-Traffic</para>
+					<para>-Intrussion</para>
 					<para>-Monitor</para>
 					<para>-Social</para>
+					<para>-Vault</para>
 				</listitem>
 				<listitem>
 					<para><literal>Severity:</literal> the user must define the severity level that's given to the alarm. Depending on the conditions you have defined for the alarm will imply a very low risk, low, medium, high, very high or critical. This gradation of severity is also indicated on a color scale. </para>
@@ -122,9 +136,6 @@
 				</listitem>
 				<listitem>
 					<para><literal>Notify to email</literal></para>
-				</listitem>
-				<listitem>
-					<para><literal>Notify to mobile</literal></para>
 				</listitem>
 			</itemizedlist>
 			<para><emphasis role="bold"><literal>Conditions</literal></emphasis></para>
@@ -141,22 +152,22 @@
 	</section>
 	<section>
 		<title>Audits</title>
-		<para>Option <literal>Audits</literal>This option shows a list of the recorded user activity in the redBorder platform, chronologically ordered, by default.. However, the user can sort the table in an ascending or descending way for each of the columns. You can use the search box located on the top right to filter the information you want to see. The columns displayed in this table are the following: </para>
+		<para>Option <literal>Audits</literal>This option shows a list of the recorded user activity in the redBorder platform, chronologically ordered, by default.. However, the user can sort the table in an ascending or descending way for each of the columns. You can use the search box located on the top to filter the information you want to see. The columns displayed in this table are the following: </para>
 		<itemizedlist>
 			<listitem>
-				<para><literal>User</literal></para>
+				<para><literal>User</literal>: user that did the action</para>
 			</listitem>
 			<listitem>
-				<para><literal>Resource:</literal> item that has been created, modified, or deleted. </para>
+				<para><literal>Resource</literal>: item that has been created, modified, or deleted. </para>
 			</listitem>
 			<listitem>
-				<para><literal>Action:</literal> action that has been carried out (creating, editing, deleting).</para>
+				<para><literal>Action</literal>: action that has been carried out (creating, editing, deleting).</para>
 			</listitem>
 			<listitem>
-				<para><literal>Message:</literal> brief description of what has been audited.</para>
+				<para><literal>Message</literal>: brief description of what has been audited.</para>
 			</listitem>
 			<listitem>
-				<para>Date <literal>Timestamp:</literal> date and time of the activity record.</para>
+				<para><literal>Timestamp</literal>: date and time of the activity record.</para>
 			</listitem>
 		</itemizedlist>
 		<mediaobject>
@@ -169,12 +180,12 @@
 		</mediaobject>
 	</section>
 	<section>
-		<title>Cluster settings</title>
+		<title>Cluster Settings</title>
 		<para>Option <literal>Cluster Settings</literal> allows us to check the status and cluster settings, set the cluster creation process during the Manager installation process.</para>
 		<para>You can modify these values by editing through the unlock button <literal>Unlock.</literal> The information can be changed with the following parameters:</para>
 		<itemizedlist mark="bullet">
 			<listitem>
-				<para>Cluster status</para>
+				<para>Cluster Status</para>
 			</listitem>
 			<listitem>
 				<para>Virtual IP Addresses</para>
@@ -183,22 +194,7 @@
 				<para>Historical Nodes</para>
 			</listitem>
 			<listitem>
-				<para>PSQL Nodes</para>
-			</listitem>
-			<listitem>
-				<para>Zookeeper Nodes</para>
-			</listitem>
-			<listitem>
-				<para>Cluster synchronization</para>
-			</listitem>
-			<listitem>
-				<para>Segments</para>
-			</listitem>
-			<listitem>
-				<para>Diagram</para>
-			</listitem>
-			<listitem>
-				<para>Hardware</para>
+				<para>Historical Rules</para>
 			</listitem>
 		</itemizedlist>
 		<mediaobject>
@@ -206,24 +202,24 @@
 				<imagedata scale="30" align="center" fileref="images/ch13_img005.png"/>
 			</imageobject>
 			<caption>
-				<para>Cluster settings: status and cluster settings</para>
+				<para>Cluster Settings: status and cluster settings</para>
 			</caption>
 		</mediaobject>	
 	</section>
 	<section>
 		<title>General settings</title>
-		<para>Option <literal>General Settings</literal> shows us an interface whose editing will be determined for both the platform configuration, as well as the network infrastructure, as it was explained in the chapter about sensors (<literal>Sensors.</literal>)</para>
+		<para>Option <literal>General Settings</literal> shows us an interface whose editing will be determined for both the platform configuration, as well as the network infrastructure, as it was explained in the chapter about sensors.</para>
 		<mediaobject>
 			<imageobject>
 				<imagedata scale="30" align="center" fileref="images/ch13_img006.png"/>
 			</imageobject>
 			<caption>
-				<para>General settings: general settings for redBorder Manager</para>
+				<para>General Settings: general settings for redBorder Manager</para>
 			</caption>
 		</mediaobject>	
 		<note>
 			<title>Note</title>
-			<para>To view all sections, it's advised to enable the option <literal>Show Advanced Options</literal> located on the top right of the screen in general settings.</para>
+			<para>To view all sections, it's advised to enable the option <literal>Show advanced options</literal> located on the top right of the screen in general settings.</para>
 			<para>In this screen you can edit the parameters of both the Manager and the Apps that have been registered. Therefore, the sections displayed will depend on the Apps that are integrated into the redBorder platform.</para>
 		</note>
 		<mediaobject>
@@ -231,7 +227,7 @@
 				<imagedata scale="30" align="center" fileref="images/ch13_img008.png"/>
 			</imageobject>
 			<caption>
-				<para>General settings: advanced options</para>
+				<para>General Settings: advanced options</para>
 			</caption>
 		</mediaobject>	
 		<para>To perform a basic configuration in Manager, the user can edit general parameters, characteristics of the Apps, server configuration, network, routes and geolocation of the IPs. </para>
@@ -239,25 +235,25 @@
 		<para>In this section the user can change the following elements:</para>
 		<itemizedlist mark="circle">
 			<listitem>
-				<para><literal> Company name</literal></para>
+				<para><literal> Company name</literal>: Name of the company using Redborder</para>
 			</listitem>
 			<listitem>
-				<para><literal>Company email</literal></para>
+				<para><literal>Company email</literal>: Company email. Will be used as the report sender and license management</para>
 			</listitem>
 			<listitem>
-				<para>Automatic recharging time of the dashboards (in seconds) (<literal>Autoreload dashboard time (seconds)</literal>)</para>
+				<para><literal>Web URL</literal>: Interface URL</para>
 			</listitem>
 			<listitem>
-				<para>Automatic recharging time for the Raw view (<literal> Autoreload raw time (seconds)</literal>)</para>
+				<para><literal>Autoreload dashboard time</literal>: Refresh period for the dashboards (seconds)</para>
 			</listitem>
 			<listitem>
-				<para><literal> Signature Lookup url</literal></para>
+				<para><literal>Autoreload raw time</literal>: Refresh period for the interface (seconds)</para>
 			</listitem>
 			<listitem>
-				<para><literal>Rule Update Job Periodicity</literal></para>
+				<para><literal>Rule Update Job Periodicity</literal>: Periodicity for updating the Rules</para>
 			</listitem>
 			<listitem>
-				<para><literal>Rule Update Job Periodicity</literal></para>
+				<para><literal>Rule Update Job Time</literal> UTC time when the Rule Update Job will be executed</para>
 			</listitem>
 		</itemizedlist>
 		<mediaobject>
@@ -272,6 +268,26 @@
 			<title>Important</title>
 			<para>All parameters defined in this interface are inherited by those elements that are found on lower levels in a dependent state (domains, sensors). To modify this information, the user must write or edit it, as described in the chapter about editing sensors and configuration <literal>Sensors.</literal></para>
 		</important>	
+		<para><emphasis role="bold">IPS/IDS Settings</emphasis></para>
+		<para>Here we can set in Redborder the IPS/IDS physical setup and configuration.</para>
+		<mediaobject>
+			<imageobject>
+				<imagedata scale="30" align="center" fileref="images/ch13_img009_a.png"/>
+			</imageobject>
+			<caption>
+				<para>General settings: IPS/IDS Settings</para>
+			</caption>
+		</mediaobject>
+		<para><emphasis role="bold">HTTP SSL Certificates</emphasis></para>
+		<para>Allows to set a SSL certificate for secure communications.</para>
+		<mediaobject>
+			<imageobject>
+				<imagedata scale="30" align="center" fileref="images/ch13_img009_b.png"/>
+			</imageobject>
+			<caption>
+				<para>General settings: IPS/IDS Settings</para>
+			</caption>
+		</mediaobject>
 		<para><emphasis role="bold">Servers</emphasis></para>
 		<para>Configuration of servers Syslog, MTA, NTP and enable proxy settings.</para>
 		<note>
@@ -280,10 +296,30 @@
 		</note>
 		<mediaobject>
 			<imageobject>
-				<imagedata scale="30" align="center" fileref="images/ch13_img009.png"/>
+				<imagedata scale="30" align="center" fileref="images/ch13_img009_c.png"/>
 			</imageobject>
 			<caption>
 				<para>General settings: server configuration</para>
+			</caption>
+		</mediaobject>
+		<para><emphasis role="bold">Default Rules</emphasis></para>
+		<para>Configuration of Default Rules for loading or dropping data.</para>
+		<mediaobject>
+			<imageobject>
+				<imagedata scale="30" align="center" fileref="images/ch13_img009_d.png"/>
+			</imageobject>
+			<caption>
+				<para>General settings: Default Rules</para>
+			</caption>
+		</mediaobject>
+		<para><emphasis role="bold">Default Rules</emphasis></para>
+		<para>Configuration of Default Rules for loading or dropping data.</para>
+		<mediaobject>
+			<imageobject>
+				<imagedata scale="30" align="center" fileref="images/ch13_img009_d.png"/>
+			</imageobject>
+			<caption>
+				<para>General settings: Default Rules</para>
 			</caption>
 		</mediaobject>
 		<para><emphasis role="bold">Monitoring and Logs</emphasis></para>
@@ -295,7 +331,7 @@
 		</note>
 		<mediaobject>
 			<imageobject>
-				<imagedata scale="30" align="center" fileref="images/ch13_img007.png"/>
+				<imagedata scale="30" align="center" fileref="images/ch13_img009_e.png"/>
 			</imageobject>
 			<caption>
 				<para>General Settings: Monitoring and logs</para>
@@ -303,21 +339,32 @@
 		</mediaobject>
 		<para>The section New Relic allows you to report to New Relic cloud. In this case, the user have to indicate the number of their New Relic License and if they have a Cluster group, write its name.</para>
 		<para>The activation of <literal>Enable Plugins</literal> check is optional because this is a payment service. Activate <literal> Enable APM</literal> in case of web monitoring.</para>
+
 		<para><emphasis role="bold">Amazon CloudWatch</emphasis></para>
 		<para>If user wants to send their logs to this Amazon Service, required fields must be filled.</para>
 		<mediaobject>
 			<imageobject>
-				<imagedata scale="30" align="center" fileref="images/ch13_img007b.png"/>
+				<imagedata scale="30" align="center" fileref="images/ch13_img009_f.png"/>
 			</imageobject>
 			<caption>
 				<para>General Settings: Amazon CloudWatch</para>
+			</caption>
+		</mediaobject>
+		<para><emphasis role="bold">Google Maps API</emphasis></para>
+		<para>Is possible to link Redborder with Google Maps API to get better location information.</para>
+		<mediaobject>
+			<imageobject>
+				<imagedata scale="30" align="center" fileref="images/ch13_img009_g.png"/>
+			</imageobject>
+			<caption>
+				<para>General Settings: Google Maps API</para>
 			</caption>
 		</mediaobject>
 		<para><emphasis role="bold">Backup segments (Remote S3)</emphasis></para>
 		<para>It enables a backup of user's data in a remote server or database. For this, it is necessary to indicate Hostname, Bucket, and Access and Secret key. </para>
 		<mediaobject>
 			<imageobject>
-				<imagedata scalefit="1" align="center" width="450" fileref="images/ch13_img007c.png"/>
+				<imagedata scalefit="1" align="center" width="450" fileref="images/ch13_img009_h.png"/>
 			</imageobject>
 			<caption>
 				<para>General Settings: Backup segments (Remote S3)</para>
@@ -329,7 +376,7 @@
 		<para>Delete a network from the list: through the icon “Delete".</para>
 		<mediaobject>
 			<imageobject>
-				<imagedata scale="60" align="center" fileref="images/ch13_img011.png"/>
+				<imagedata scale="60" align="center" fileref="images/ch13_img009_i.png"/>
 			</imageobject>
 			<caption>
 				<para>General settings: Add a new White Network</para>
@@ -341,7 +388,7 @@
 		<para>Delete a network from the list: through the icon “Delete".</para>
 		<mediaobject>
 			<imageobject>
-				<imagedata scale="60" align="center" fileref="images/ch13_img012.png"/>
+				<imagedata scale="60" align="center" fileref="images/ch13_img009_j.png"/>
 			</imageobject>
 			<caption>
 				<para>General settings: Add a new Black Network</para>
@@ -353,7 +400,19 @@
 		<para>Delete a network from the list: through the icon “Delete”.</para>
 		<mediaobject>
 			<imageobject>
-				<imagedata scale="30" align="center" fileref="images/ch13_img013.png"/>
+				<imagedata scale="30" align="center" fileref="images/ch13_img009_k.png"/>
+			</imageobject>
+			<caption>
+				<para>General settings: list of Network Routes</para>
+			</caption>
+		</mediaobject>
+		<para><emphasis role="bold"><literal>Fixed Hosts</literal></emphasis></para>
+		<para>In this section the user will define the network routes for Manager. </para>
+		<para>Add a new network: click on the button <literal>+Add</literal> and indicate the network IP route.</para>
+		<para>Delete a network from the list: through the icon “Delete”.</para>
+		<mediaobject>
+			<imageobject>
+				<imagedata scale="30" align="center" fileref="images/ch13_img009_l.png"/>
 			</imageobject>
 			<caption>
 				<para>General settings: list of Network Routes</para>
@@ -376,32 +435,38 @@
 		<para>Download all the files from Maxmind website and unzip them. It is only possible to upload files with .dat format as we can see in the image below. For this, click on <literal>+Select File</literal></para>
 		<mediaobject>
 			<imageobject>
-				<imagedata scale="30" align="center" fileref="images/ch13_img014.png"/>
+				<imagedata scale="30" align="center" fileref="images/ch13_img009_m.png"/>
 			</imageobject>
 			<caption>
 				<para>General settings: GeoIP Protection</para>
 			</caption>
 		</mediaobject>
-		<para><emphasis role="bold">Default columns: Flow, Location and Monitor</emphasis></para>
-		<para>The sections <literal>Default columns Flow,</literal> <literal>Default columns Location,</literal> asn <literal>Default columns Monitor</literal> allow user to customize the columns (attributes, elements, aggregation, etc.) that are shown by default in the tables of each mentioned sections.</para>
-		<para>To include or exclude a column, just select/unselect the corresponding check.</para>	
-		<mediaobject>
-			<imageobject>
-				<imagedata scalefit="1" align="center" width="450" fileref="images/ch13_img014b.png"/>
-			</imageobject>
-			<caption>
-				<para>General settings: Default columns-Flow</para>
-			</caption>
-		</mediaobject>
-		<mediaobject>
-			<imageobject>
-				<imagedata scale="30" align="center" fileref="images/ch13_img014c.png"/>
-			</imageobject>
-			<caption>
-				<para>General settings: Default columns-Monitor</para>
-			</caption>
-		</mediaobject>
 	</section>
+	<section>
+		<title>Infrastructure Monitor</title>
+		<para>Through this option the user can check the current status of the infrastrucure. It shows information such as the CPU usage, the Memory load, and other information from the hardware. </para>
+		<mediaobject>
+			<imageobject>
+				<imagedata scale="30" align="center" fileref="images/ch13_img013.png"/>
+			</imageobject>
+			<caption>
+				<para>Infrastructure Monitor</para>
+			</caption>
+		</mediaobject>	
+	</section>
+	<section>
+		<title>Correlation Engine Rules</title>
+		<para>Here the use can see all the rules for the correlation engine. It is possible to edit the existing rules and also create new ones. </para>
+		<para>To have a </para>
+		<mediaobject>
+			<imageobject>
+				<imagedata scale="30" align="center" fileref="images/ch13_img014.png"/>
+			</imageobject>
+			<caption>
+				<para>Correlator Engine Rules</para>
+			</caption>
+		</mediaobject>	
+	</section>	
 	<section>
 		<title>Licenses</title>
 		<para>Through this option the user can check which nodes have their liceses expired. In the same, it is possible to upload a new license or request for a new one.</para>
@@ -497,13 +562,58 @@
 		</mediaobject>	
 	</section>
 	<section>
+		<title>Platform Alerts</title>
+		<para>Here the user can see the alerts from the platform. All the alerts are shown to every user.</para>
+		<mediaobject>
+			<imageobject>
+				<imagedata scalefit="1" align="center" width="450" fileref="images/ch13_img021_a.png"/>
+			</imageobject>
+			<caption>
+				<para><literal>Platform Alerts</literal></para>
+			</caption>
+		</mediaobject>
+		<para>Is possible to create alerts for the platform using the New Alert button. Is necessary to select the alert level, and the message of the alert.</para>
+		<mediaobject>
+			<imageobject>
+				<imagedata scalefit="1" align="center" width="450" fileref="images/ch13_img021_b.png"/>
+			</imageobject>
+			<caption>
+				<para><literal>Platform Alerts: New Alert</literal></para>
+			</caption>
+		</mediaobject>	
+	</section>
+	<section>
+		<title>Rule Versions</title>
+		<para>The user can manage the sources for the rules of the platform. It is possible to add or upload new sources and also enable the chosen ones.</para>
+		<mediaobject>
+			<imageobject>
+				<imagedata scalefit="1" align="center" width="450" fileref="images/ch13_img022.png"/>
+			</imageobject>
+			<caption>
+				<para><literal>Rule Versions</literal></para>
+			</caption>
+		</mediaobject>	
+	</section>
+	<section>
+		<title>Support Center</title>
+		<para>The user can use the Support Center in order to solve any question or problem regarding the platform. It is necessary to be registered in the Support Center</para>
+		<mediaobject>
+			<imageobject>
+				<imagedata scalefit="1" align="center" width="450" fileref="images/ch13_img023.png"/>
+			</imageobject>
+			<caption>
+				<para><literal>Support Center</literal></para>
+			</caption>
+		</mediaobject>	
+	</section>
+	<section>
 		<title>Users</title>
 		<para>The activation or modification of users' data, services management or the creation of new registers is possible from the <literal>Users settings </literal> interface.</para>
 		<para>To search a specific user, introduce their data in the browser. You can also navigate through the alphabetic list that is located on top of users list.</para>
 		<para>The only user that has permissions to do that is Superadministrator. The rest of the users can only visualize the sections of the platform (reading mode) but not modify its content (except in the case of its own user profile).</para>
 		<mediaobject>
 			<imageobject>
-				<imagedata scale="30" align="center" fileref="images/ch13_img021.png"/>
+				<imagedata scale="30" align="center" fileref="images/ch13_img024_a.png"/>
 			</imageobject>
 			<caption>
 				<para>Users: management users'permissions interface</para>
@@ -513,7 +623,7 @@
 		<para>Clicking on the "Edit" button the user can modify the following information and visualize a summary of their state and activity within the platform: </para>
 		<mediaobject>
 			<imageobject>
-				<imagedata scalefit="1" align="center" width="450" fileref="images/ch13_img022.png"/>
+				<imagedata scalefit="1" align="center" width="450" fileref="images/ch13_img024_b.png"/>
 			</imageobject>
 			<caption>
 				<para>Users: user's profile edition</para>
@@ -526,7 +636,7 @@
 		<para>Active a new user: to create a new user click on <literal>+New User.</literal> Complete the information required in the user's profile. Active <literal>Administrator</literal> check to obtain full permissions.</para>	
 		<mediaobject>
 			<imageobject>
-				<imagedata scalefit="1" align="center" width="450" fileref="images/ch13_img023.png"/>
+				<imagedata scalefit="1" align="center" width="450" fileref="images/ch13_img024_c.png"/>
 			</imageobject>
 			<caption>
 				<para>Users: New user</para>
@@ -543,7 +653,7 @@
         </note>
 		<mediaobject>
 			<imageobject>
-				<imagedata scalefit="1" align="center" width="450" fileref="images/ch13_img024.png"/>
+				<imagedata scalefit="1" align="center" width="450" fileref="images/ch13_img025_a.png"/>
 			</imageobject>
 			<caption>
 				<para>¡Worker and Job Queue: status list of worker and job queue</para>
@@ -553,7 +663,7 @@
         <para>This screen automatically reloads every 5 seconds.</para>
 		<mediaobject>
 			<imageobject>
-				<imagedata scalefit="1" align="center" width="450" fileref="images/ch13_img025.png"/>
+				<imagedata scalefit="1" align="center" width="450" fileref="images/ch13_img025_b.png"/>
 			</imageobject>
 			<caption>
 				<para>Worker and Job Queue: information of the state of a work</para>
@@ -585,7 +695,7 @@
 		<para>This option allows direct access to the user profile and perform the same actions with the option <literal>Tools>Users</literal></para>
 		<mediaobject>
 			<imageobject>
-				<imagedata scalefit="1" align="center" width="450" fileref="images/ch13_img028.png"/>
+				<imagedata scalefit="1" align="center" width="450" fileref="images/ch13_img024_b.png"/>
 			</imageobject>
 			<caption>
 				 <para>Users: editing user profile</para>
