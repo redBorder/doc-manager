@@ -3,14 +3,13 @@
 <!ENTITY % BOOK_ENTITIES SYSTEM "manual.ent">
 <!ENTITY PRODUCT "Documentation">
 <!ENTITY BOOKID "manual">
-<!ENTITY YEAR "2019">
+<!ENTITY YEAR "2016">
 <!ENTITY HOLDER "Eneo Tecnología S.L. |">
 ]>
 <bookinfo id="book-manual-manual">
   <copyright>
     <year>2015</year>
     <year>2016</year>
-	<year>2019</year>
     <holder>Eneo Tecnología S.L.</holder>
   </copyright>
   <title>Installation Guide</title>
@@ -31,11 +30,11 @@
       <important>
         <title>ENEO Tecnología S.L.</title>
         <address>
-          <street>Parque Tecnológico de Bizkaia, Building 500 - Floor 1.</street>
-          <city>Bilbao</city>
-          <state>Derio (Bizkaia)</state>
-          <postcode>48160</postcode>
-          <phone>+34 607 407 404</phone>
+          <street>Plaza de las Naciones s/n, Torre Norte (Edificio Aljarafe Center). 12th floor.</street>
+          <city>Mairena del Aljarafe</city>
+          <state>Seville</state>
+          <postcode>41927</postcode>
+          <phone> +34 955 60 11 60</phone>
           <country>Spain</country>
           <email>info@redborder.net</email> 
         </address>

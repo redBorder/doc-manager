@@ -3,35 +3,27 @@
 <!ENTITY % BOOK_ENTITIES SYSTEM "manual.ent">
 <!ENTITY PRODUCT "Documentation">
 <!ENTITY BOOKID "manual">
-<!ENTITY YEAR "2019">
+<!ENTITY YEAR "2016">
 <!ENTITY HOLDER "Eneo Tecnología S.L. |">
 ]>
 <chapter>
 	    <title> What is redBorder?</title>
-	    <para> <emphasis role = "bold"> redBorder</emphasis> is the ultimate open, active and scale out Cybersecurity Platform and real time Network Traffic Analysis (NTA). It´s based on Big Data technology for enterprise and service providers. </para>
-		<para> It´s capacity for ingesting, analyzing and reporting large amounts of data has been developed and tested in very high demand environments such as Network Traffic Analysis, Cybersecurity or the analysis and reporting of connections through wireless networks in venues. </para>
-		<para> The platform unifies the different data sources provided by the Apps and the probes. In addition, it includes a series of common features: dashboards and customizable reports, correlation, analysis engines, user management and layered storage. </para>
-		<para> Apps live inside the platform and are installable as if they were plugins. These focus on digesting new types of data.</para>
-		<para> The probes live off the platform, but are managed from it and their function is the creation of new types of data and inspection capabilities.</para>
-		<para> Depending on the Apps that are integrated in the platform, the user will see one or other options in the menu bar. The Apps that are available in this new version of redborder are the following:</para>
+	    <para> <emphasis role = "bold"> redBorder</emphasis> is an active security intelligence and absolute visibility open platform. </para>
+		<para> This platform is composed of a series of apps that provide data to the platform for analysis and active management of network security according to the configuration that was made by the redBorder user. </para>
+		<para> As can be seen later on, depending on the applications that are integrated into the platform, the user will see one of these options in the menu bar. </para>
+		<para> Apps that are available in this new version of redBorder are as follows: </para>
 		<itemizedlist mark = "bullet">
 			<listitem>
-				<para>Traffic</para>
+				<para>Flow</para>
 			</listitem>
 			<listitem>
-				<para>Mobility</para>
-			</listitem>
-			<listitem>
-				<para>Intrusion</para>
-			</listitem>
-			<listitem>
-				<para>Vault</para>
+				<para>IPS</para>
 			</listitem>
 			<listitem>
 				<para>Social</para>
 			</listitem>
 			<listitem>
-				<para>Monitor</para>
+				<para>Malware</para>
 			</listitem>
 		</itemizedlist>
     <section>
