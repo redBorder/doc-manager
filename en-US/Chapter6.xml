@@ -37,6 +37,10 @@
 			<para>Intrusion modules uses data from IPS sensor to show intrusion events based on Snort signatures. It can show events such as DDoS or MITM attacks.</para>
 		</section>
 		<section>
+			<title>Monitor</title>
+			<para>Monitor modules uses data from SNMP protocol to show the status of the infrastructure.</para>
+		</section>
+		<section>
 			<title>Social</title>
 			<para>Social modules uses data from Twitter sensor to show information from that social network. It can be used to show the behaviour of the social info about a topic.</para>
 		</section>
@@ -48,6 +52,10 @@
 		<section>
 			<title>Mobility</title>
 			<para>Mobility module provides location information from sensors from the network APs. It can be used to show how the people is moving in a bulding.</para>
+		<section>
+			<title>Reports</title>
+			<para>Reports module provides location information from sensors from the network APs. It can be used to show how the people is moving in a bulding.</para>
+		</section>
 		</section>
 	</section>
 	<section>
@@ -1134,5 +1142,46 @@
 					<para>Location of network traffic: connection details</para>
 				</caption>
 			</mediaobject>	
+	</section>
+	<section>
+		<title>Reports</title>
+		<para>Reports module is closely relationated with events. It allows the user to get customizated reports showing the information about his system.</para>
+		<mediaobject>
+			<imageobject>
+				<imagedata scalefit="1" align="center" width="450" fileref="images/ch06_img047.png"/>
+			</imageobject>
+			<textobject>
+				<phrase>Reports</phrase>
+			</textobject>
+			<caption>
+				<para>Reports</para>
+			</caption>
+		</mediaobject>
+		<para>To create a new report we will click on New Report button and will fill all the fields. Here we can select parameters like schedule type, sharing users or sharing domains. Once the report is created it will be shown in the report list seen before.</para>
+		<mediaobject>
+			<imageobject>
+				<imagedata scalefit="1" align="center" width="450" fileref="images/ch06_img048.png"/>
+			</imageobject>
+			<textobject>
+				<phrase>Reports</phrase>
+			</textobject>
+			<caption>
+				<para>Reports</para>
+			</caption>
+		</mediaobject>
+		<para>Is also possible to import a report from a file using Import Report button.</para>
+		<mediaobject>
+			<imageobject>
+				<imagedata scalefit="1" align="center" width="450" fileref="images/ch06_img049.png"/>
+			</imageobject>
+			<textobject>
+				<phrase>Reports</phrase>
+			</textobject>
+			<caption>
+				<para>Reports</para>
+			</caption>
+		</mediaobject>
+		<para>In the report list we have the possibility to edit an existing report or also generate it in PDF or send it by email, all this options are in the edit button in the right of the list.</para>
+		<para>The blocks of the report can be also modified choosing the block edit option in the report list, where the user will be able to add, move and delete any kind of block for the report.</para>
 	</section>
 </chapter>
