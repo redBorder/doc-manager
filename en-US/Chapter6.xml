@@ -266,7 +266,7 @@
 				</mediaobject>
 			</listitem>
 			<listitem>
-				<para><literal>Create a widget on</literal>: creates a widget based on the search criteria that can be included in dashboards or reports.</para>
+				<para><literal>Create a widget on</literal>: creates a widget based on the search criteria that can be included in dashboards or reports. However, not all widgets can be applied to reports.</para>
 			</listitem>
 		</itemizedlist>
 		<mediaobject>
