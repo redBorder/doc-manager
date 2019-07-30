@@ -520,21 +520,24 @@
 		<title>Add a sensor</title>
 		<para>Among the submenu options, we find <literal>+Add Sensor.</literal> In the dropdown menu they show the different
 		sensors available to add to the network infrastructure.</para>
-		<para>Select the type of sensor in the drop-down menu, and then complete the information requested.</para>
-		<warning>
-			<title>Warning</title>
-			<para><emphasis role="bold"> In this section you can only edit and configure IPS/IDS sensors. </emphasis></para>
-			<para>IPS, IDS and Mail Gateway sensors are created during sensor registration proccess after Manager installation and Network configuration.</para>
-			<para><emphasis role="bold">From this section you can only create directlu Flow sensors.</emphasis></para>
-		</warning>
 		<mediaobject>
 			<imageobject>
-				<imagedata scalefit="1" align="center" width="350" fileref="images/ch11_img020.png"/>
+				<imagedata scalefit="1" align="center" width="450" fileref="images/ch11_img034.png"/>
 			</imageobject>
 			<caption>
-				<para>Add Flow sensor</para>
+				<para>Add a sensor: sensor selection</para>
 			</caption>
 		</mediaobject>
+		<para>Select the type of sensor in the drop-down menu, and then complete the information requested.</para>
+		<mediaobject>
+			<imageobject>
+				<imagedata scalefit="1" align="center" width="450" fileref="images/ch11_img035.png"/>
+			</imageobject>
+			<caption>
+				<para>Example of editing a sensor</para>
+			</caption>
+		</mediaobject>
+		<para>Click on Save to create the sensor. If these actions have been carried out correctly, we have registered our sensor and the platform will be ready to collect and visualize the data incoming from the exporter.</para>
 		<important>
 			<title>Important</title>
 			<para>In the moment in which a redBorder sensor is created, by default it's set as the root, above the domain level.</para>
