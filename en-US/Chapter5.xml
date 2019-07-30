@@ -78,7 +78,7 @@
 			</mediaobject>
 			<para><emphasis role="bold"> Edit dashboard: General Settings</emphasis></para> 
 			<para>The user may at any time modify the information associated with each of the available dashboards by selecting General Settings, by clicking on the tool icon.</para>
-			<para>Edible information in the general settings of the dashboard:</para>
+			<para>Editable information in the general settings of the dashboard:</para>
 			<itemizedlist mark="bullet">	
 				<listitem>
 					<para>Name</para>
@@ -191,6 +191,7 @@
 					<para><emphasis role="bold">Modules:</emphasis> data display received by the different Modules.</para>
 					<para>-Traffic</para>
 					<para>-Intrusion</para>
+					<para>-Monitor</para>
 					<para>-Social</para>
 					<para>-Vault</para>
 					<para>-Mobility</para>					

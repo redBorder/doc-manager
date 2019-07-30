@@ -44,7 +44,7 @@
 	</mediaobject>
 	<section>
 		<title>Interface structure of the redBorder platform</title>
-		<para>There is a structure that is repeated for all interfaces in the redBorder web platform. Knowing these features will help navigate the web in a convenient and easy way. <footnote><para>The attached image corresponds to a redBorder installation with the active Apps of Flow, IPS and Malware. The structure will be the same for any redBorder installation that is performed, depending only on which Apps are available in the top menu bar, and whether or not they are activated.</para></footnote></para>
+		<para>There is a structure that is repeated for all interfaces in the redBorder web platform. Knowing these features will help navigate the web in a convenient and easy way. <footnote><para>The attached image corresponds to a redBorder installation with the active Apps of Traffic, Intrusion and Mobility. The structure will be the same for any redBorder installation that is performed, depending only on which Apps are available in the top menu bar, and whether or not they are activated.</para></footnote></para>
 		<itemizedlist mark="bullet">
 			<listitem>
 				<para><emphasis role="bold">Menu bar:</emphasis> here you will find direct access to all sections of the redBorder platform. It is subdivided into two different areas according to operability:</para>
@@ -93,52 +93,17 @@
 					<para>Dashboard</para>
 				</caption>
 			</mediaobject>
-			<para><emphasis>Events/sensors:</emphasis> Next, the user will see the events in which the sensors registered in the Manager. In the attached screenshot: Flow, IPS and Malware.</para>
+			<para><emphasis>Events:</emphasis> Next, the user will be able to see events whose information comes from the sensors registered in their corresponding section. Later, it will be explained in detail what function each one has, and how these sensors are registered. In
+			the attached screenshot: Traffic</para>
 			<mediaobject>
 				<imageobject>
 					<imagedata scalefit="1" align="center" width="450" fileref="images/ch04_img005.png"/>
 				</imageobject>
 				<textobject>
-					<phrase>Sensors: view of flow events</phrase>
+					<phrase>Events</phrase>
 				</textobject>
 				<caption>
-					<para>Sensors: view of Flow events</para>
-				</caption>
-			</mediaobject>
-			<para><emphasis>Monitor:</emphasis> in this sections they show the status of the cluster in data and graphics, hardware and system, as well as the network and other statistics collected by the sensors.</para> 
-			<mediaobject>
-				<imageobject>
-					<imagedata scalefit="1" align="center" width="450" fileref="images/ch04_img006.png"/>
-				</imageobject>
-				<textobject>
-					<phrase>Monitor: Manager state of health</phrase>
-				</textobject>
-				<caption>
-					<para>Monitor: Manager state of health</para>
-				</caption>
-			</mediaobject>
-			<para><emphasis>Social:</emphasis> shows a summary of the users' activity maintained in a selected area with social networks (Twitter and Instagram).</para>
-			<mediaobject>
-				<imageobject>
-					<imagedata scalefit="1" align="center" width="450" fileref="images/ch04_img007.png"/>
-				</imageobject>
-				<textobject>
-					<phrase>Network user interaction with Social Media</phrase>
-				</textobject>
-				<caption>
-					<para>Network user interaction with Social Media</para>		
-				</caption>
-			</mediaobject>
-			<para><emphasis>Reports:</emphasis> In this section the user will be able to see a list of all stored reports, import and export reports and create new customizable reports thanks to the widgets.</para>
-			<mediaobject>
-				<imageobject>
-					<imagedata scalefit="1" align="center" width="450" fileref="images/ch04_img008.png"/>
-				</imageobject>
-				<textobject>
-					<phrase>Reports</phrase>
-				</textobject>
-				<caption>
-					<para>Reports</para>
+					<para>Events</para>
 				</caption>
 			</mediaobject>
 			<para><emphasis role="bold">Configuration area</emphasis></para>
