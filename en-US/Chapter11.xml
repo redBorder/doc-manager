@@ -522,7 +522,7 @@
 		sensors available to add to the network infrastructure.</para>
 		<mediaobject>
 			<imageobject>
-				<imagedata scalefit="1" align="center" width="450" fileref="images/ch11_img034.png"/>
+				<imagedata scalefit="1" align="center" width="150" fileref="images/ch11_img034.png"/>
 			</imageobject>
 			<caption>
 				<para>Add a sensor: sensor selection</para>
@@ -531,7 +531,7 @@
 		<para>Select the type of sensor in the drop-down menu, and then complete the information requested.</para>
 		<mediaobject>
 			<imageobject>
-				<imagedata scalefit="1" align="center" width="450" fileref="images/ch11_img035.png"/>
+				<imagedata scalefit="1" align="center" width="350" fileref="images/ch11_img035.png"/>
 			</imageobject>
 			<caption>
 				<para>Example of editing a sensor</para>
