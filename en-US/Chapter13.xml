@@ -33,10 +33,10 @@
 			<para><literal>General Settings</literal>: the user can establish the general parameter settings of the Manager, as well as the Apps they have registered. </para>
 		</listitem>
 		<listitem>
-			<para><literal>Infrastructure Monitor</literal>: show us information from the system and the hardware, such as CPU Load, Memory Used and much more.</para>
+			<para><literal>Correlation Engine Rules</literal>: provides the list of the cep rules. Here we can also check the existing rules and create new ones.</para>
 		</listitem>
 		<listitem>
-			<para><literal>Correlation Engine Rules</literal>: provides the list of the cep rules. Here we can also check the existing rules and create new ones.</para>
+			<para><literal>Monitor Categories</literal>: shows the current categories being used from snmp and allows the creation of new ones.</para>
 		</listitem>
 		<listitem>
 			<para><literal>Licenses</literal>: list of the licenses under those that operate the different modules of the redBorder platform.</para>
@@ -132,10 +132,10 @@
 			<para>In this section, the user will select the means by which the alarm is notified and will introduce the data for the method chosen. Activate the check option you want for the notification:</para>
 			<itemizedlist mark="bullet">
 				<listitem>
-					<para><literal>Notify to Syslog</literal></para>
+					<para><literal>Notify to Syslog</literal>: check that to export the notifications to an external syslog server</para>
 				</listitem>
 				<listitem>
-					<para><literal>Notify to email</literal></para>
+					<para><literal>Notify to email</literal>: check that to receive an email when a alarm is raised.</para>
 				</listitem>
 			</itemizedlist>
 			<para><emphasis role="bold"><literal>Conditions</literal></emphasis></para>
@@ -443,18 +443,6 @@
 		</mediaobject>
 	</section>
 	<section>
-		<title>Infrastructure Monitor</title>
-		<para>Through this option the user can check the current status of the infrastrucure. It shows information such as the CPU usage, the Memory load, and other information from the hardware. </para>
-		<mediaobject>
-			<imageobject>
-				<imagedata scale="30" align="center" fileref="images/ch13_img013.png"/>
-			</imageobject>
-			<caption>
-				<para>Infrastructure Monitor</para>
-			</caption>
-		</mediaobject>	
-	</section>
-	<section>
 		<title>Correlation Engine Rules</title>
 		<para>Here the use can see all the rules for the correlation engine. It is possible to edit the existing rules and also create new ones. </para>
 		<para>To have a </para>
@@ -466,6 +454,28 @@
 				<para>Correlator Engine Rules</para>
 			</caption>
 		</mediaobject>	
+	</section>
+	<section>
+		<title>Monitor Categories</title>
+		<para>Here we can add a new category to monitorize the hardware. The categories use technologies such as SNMP, Redfish or IPMI to provide information about the system and its functioning</para>
+		<mediaobject>
+			<imageobject>
+				<imagedata scale="30" align="center" fileref="images/ch13_img013.png"/>
+			</imageobject>
+			<caption>
+				<para>Monitor Categories</para>
+			</caption>
+		</mediaobject>
+		<para>To add a new monitor category we must use the top right button. Then we will fill the fields selecting the correct technology allowing Redborder to receive the data.</para>
+		<mediaobject>
+			<imageobject>
+				<imagedata scale="30" align="center" fileref="images/ch13_img013_b.png"/>
+			</imageobject>
+			<caption>
+				<para>Infrastructure Monitor</para>
+			</caption>
+		</mediaobject>
+
 	</section>	
 	<section>
 		<title>Licenses</title>
@@ -584,7 +594,7 @@
 	</section>
 	<section>
 		<title>Rule Versions</title>
-		<para>The user can manage the sources for the rules of the platform. It is possible to add or upload new sources and also enable the chosen ones.</para>
+		<para>The user can manage the sources for the rules of the platform. It is possible to add or upload new sources and also enable the chosen ones. The rules are used for Snort probe, which is used by traffic module.</para>
 		<mediaobject>
 			<imageobject>
 				<imagedata scalefit="1" align="center" width="450" fileref="images/ch13_img022.png"/>
@@ -593,6 +603,8 @@
 				<para><literal>Rule Versions</literal></para>
 			</caption>
 		</mediaobject>	
+		<para>It is possible to upload rules for a particular IPS using the option Upload Source, where the user can select the file to upload.</para>
+		<para>It is also possible to add sources for downloading new rules from the internet that are updated periodically. If it is necessary the user can use the Force Rule Update to be sure that all the rules are updated</para>
 	</section>
 	<section>
 		<title>Support Center</title>
