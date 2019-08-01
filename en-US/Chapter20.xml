@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE chapter PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd" [
+<!ENTITY % BOOK_ENTITIES SYSTEM "manual.ent">
+<!ENTITY PRODUCT "Documentation">
+<!ENTITY BOOKID "manual">
+<!ENTITY YEAR "2019">
+<!ENTITY HOLDER "Eneo Tecnología S.L. |">
+]>
+
+<chapter>
+	<title>Advanced</title>
+	<para>In this chapter we will show some advanced settings and tools for Redborder configuration and administration.</para>
+	<para>.</para>
+	<section>
+		<title>Architecture</title>
+		<para>Redborder has an open source based architecture, using technologies like Snort, Kafka or Logstash.</para>
+		<para>All these technologies are orquested by Zookeeper and Chef, so it is important to have those services running for the good functioning of Redborder.</para>
+		<mediaobject>
+			<imageobject>
+				<imagedata scalefit="1" align="center" width="450" fileref="images/ch20_img001.png"/>
+			</imageobject>
+			<caption>
+				<para>Architecture of Redborder</para>
+			</caption>
+		</mediaobject>
+	<para>Redborder is configured by default for not to use Hadoop, because of the resources consumption of that service, but is possible to enable it following the this steps:</para>
+	</section>
+	<section>
+		<title>Operations</title>
+		<para>There are some important operations that must be executed in order to do advanced settings in Redborder.</para>
+		<itemizedlist mark="circle">
+					<listitem>
+						<para><emphasis role="bold">motd</emphasis>: Motd shows general info about node and cluster</para>
+						<mediaobject>
+							<imageobject>
+								<imagedata scalefit="1" align="center" width="450" fileref="images/ch20_img002.png"/>
+							</imageobject>
+							<caption>
+								<para>Motd: output</para>
+							</caption>
+						</mediaobject>
+					</listitem>
+					<listitem>
+						<para><emphasis role="bold">rb_get_managers.rb</emphasis>: Shows information about nodes on the cluster</para>
+						<mediaobject>
+							<imageobject>
+								<imagedata scalefit="1" align="center" width="450" fileref="images/ch20_img003.png"/>
+							</imageobject>
+							<caption>
+								<para>rb_get_managers.rb: output</para>
+							</caption>
+						</mediaobject>
+					</listitem>
+					<listitem>
+						<para><emphasis role="bold">rb_get_services.sh</emphasis>: Get all the services status on the node. Used with option all shows information for all nodes.</para>
+						<mediaobject>
+							<imageobject>
+								<imagedata scalefit="1" align="center" width="450" fileref="images/ch20_img004.png"/>
+							</imageobject>
+							<caption>
+								<para>rb_get_services.sh: output</para>
+							</caption>
+						</mediaobject>
+					</listitem>
+					<listitem>
+						<para><emphasis role="bold">rb_set_service.rb</emphasis>: Allows to enable or disable a service.</para>
+						<mediaobject>
+							<imageobject>
+								<imagedata scalefit="1" align="center" width="450" fileref="images/ch20_img005.png"/>
+							</imageobject>
+							<caption>
+								<para>rb_set_service.rb: usage</para>
+							</caption>
+						</mediaobject>
+					</listitem>
+					<listitem>
+						<para><emphasis role="bold">rb_service</emphasis>: Allows to work with a service.</para>
+						<mediaobject>
+							<imageobject>
+								<imagedata scalefit="1" align="center" width="450" fileref="images/ch20_img006.png"/>
+							</imageobject>
+							<caption>
+								<para>rb_service: usage</para>
+							</caption>
+						</mediaobject>
+					</listitem>
+					<listitem>
+						<para><emphasis role="bold">rb_set_topics.rb</emphasis>: It is used to change enrichment mode.</para>
+						<mediaobject>
+							<imageobject>
+								<imagedata scalefit="1" align="center" width="450" fileref="images/ch20_img007.png"/>
+							</imageobject>
+							<caption>
+								<para>rb_set_topics.rb: usage</para>
+							</caption>
+						</mediaobject>
+					</listitem>
+
+
+		</itemizedlist>
+
+	</section>
+
+
+</chapter>

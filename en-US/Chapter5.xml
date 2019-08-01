@@ -38,7 +38,7 @@
 		</section>
 		<section>
 			<title>Monitor</title>
-			<para>Monitor modules uses data from SNMP protocol to show the status of the infrastructure.</para>
+			<para>Monitor modules uses data from SNMP, Redfish and Ipmi protocols to show the status of the infrastructure.</para>
 		</section>
 		<section>
 			<title>Social</title>
@@ -54,7 +54,7 @@
 			<para>Mobility module provides location information from sensors from the network APs. It can be used to show how the people is moving in a bulding.</para>
 		<section>
 			<title>Reports</title>
-			<para>Reports module provides location information from sensors from the network APs. It can be used to show how the people is moving in a bulding.</para>
+			<para>Reports module allows the user to have periodical reports with information about Redborder platform.</para>
 		</section>
 		</section>
 	</section>
@@ -568,6 +568,7 @@
 			<title>Raw</title>
 			<para>This view provides raw data events, thus, we will see the total of events by segmented attributes by time slots.</para>
 			<para>In the data table we will therefore collect all event data classified by columns. Data will be shown on the screen, however, if you'd like to see more, simply scroll and wait for more data to load: <emphasis>Load more.</emphasis></para>
+			<para>Because of load consumption, Raw view is only available for the last hour of data.</para>
 			<mediaobject>
 				<imageobject>
 					<imagedata scalefit="1" align="center" width="450" fileref="images/ch06_img024.png"/>
