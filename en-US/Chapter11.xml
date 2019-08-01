@@ -520,29 +520,86 @@
 		<title>Add a sensor</title>
 		<para>Among the submenu options, we find <literal>+Add Sensor.</literal> In the dropdown menu they show the different
 		sensors available to add to the network infrastructure.</para>
-		<mediaobject>
-			<imageobject>
-				<imagedata scalefit="1" align="center" width="150" fileref="images/ch11_img034.png"/>
-			</imageobject>
-			<caption>
-				<para>Add a sensor: sensor selection</para>
-			</caption>
-		</mediaobject>
 		<para>Select the type of sensor in the drop-down menu, and then complete the information requested.</para>
+		<warning>
+			<title>Warning</title>
+			<para><emphasis role="bold"> In this section you can only edit and configure IPS/IDS sensors. </emphasis></para>
+			<para>IPS, IDS and Mail Gateway sensors are created during sensor registration proccess after Manager installation and Network configuration.</para>
+			<para><emphasis role="bold">From this section you can only create directlu Flow sensors.</emphasis></para>
+		</warning>
 		<mediaobject>
 			<imageobject>
-				<imagedata scalefit="1" align="center" width="350" fileref="images/ch11_img035.png"/>
+				<imagedata scalefit="1" align="center" width="350" fileref="images/ch11_img020.png"/>
 			</imageobject>
 			<caption>
-				<para>Example of editing a sensor</para>
+				<para>Add Flow sensor</para>
 			</caption>
 		</mediaobject>
-		<para>Click on Save to create the sensor. If these actions have been carried out correctly, we have registered our sensor and the platform will be ready to collect and visualize the data incoming from the exporter.</para>
 		<important>
 			<title>Important</title>
 			<para>In the moment in which a redBorder sensor is created, by default it's set as the root, above the domain level.</para>
 			<para>The user can organize its sensor infrastructure in any moment, dragging and dropping the sensor in the level they want to place it in.</para>
 			<para><emphasis role="bold">The sensor automatically inherits the properties of the root domain</emphasis> (policies, operating mode, Snort variables, etc.).</para>
 		</important>
-	</section>		
+	</section>	
+	<section>
+		<title>Sensor types and Monitor device configuration</title>
+		<para>In the sensor section of a redBorder manager, the user can find the different types of sensors, each one performs a different function:</para>
+		<itemizedlist mark="bullet">
+			<listitem>
+				<para><literal>Flow</literal></para>			
+			</listitem>
+			<listitem>
+				<para><literal>MSE</literal></para>			
+			</listitem>
+			<listitem>
+				<para><literal>Meraki</literal></para>			
+			</listitem>
+			<listitem>
+				<para><literal>Aruba ALE</literal></para>			
+			</listitem>
+			<listitem>
+				<para><literal>Monitor device</literal></para>			
+			</listitem>
+			<listitem>
+				<para><literal>Twitter</literal></para>			
+			</listitem>
+			<listitem>
+				<para><literal>Vault</literal></para>			
+			</listitem>
+		</itemizedlist>
+		<para>The monitor device sensor is one of the latest developments that comes with the 80-6 version of redBorder. It can be used to monitor any device with an ip address that supports snmp, redfish or ipmi. When creating or updating the monitor device sensor the credentials for the corresponding protocols needs to be defined. In case no community string for snmp is defined, the default ‘public’ will be used.</para>
+		<para>Once the user are logged in into the manager dashboard, the sensor can be added using the menu <literal>‘Sensors > Add sensor’</literal> and then clicking on <literal>‘Monitor device’.</literal></para>
+		<para>It can be prompted for some required and optional parameters.</para>
+		<itemizedlist mark="bullet">
+			<listitem>
+				<para>A unique name</para>
+			</listitem>
+			<listitem>	
+				<para>The ip address of the machine the user want to monitor</para>
+			</listitem>
+			<listitem>	
+				<para>The protocol the user will use to monitor</para>
+			</listitem>
+			<listitem>	
+				<para>The credentials of the machine to access the selected protocol</para>
+			</listitem>
+			<listitem>	
+				<para>The community string in case the user will use snmp protocol</para>		
+			</listitem>
+			</itemizedlist>
+			<mediaobject>
+				<imageobject>
+					<imagedata scalefit="1" align="center" width="350" fileref="images/ch11_img037.png"/>
+				</imageobject>
+				<caption>
+					<para>Press on the ‘Save’ button to apply the configuration</para>
+				</caption>
+			</mediaobject>
+		<note>
+			<title>Note</title>
+			<para>Different sensor configuration guides can be found on the reBorder support page:</para>
+			<para><emphasis role="bold">https://support.redborder.com</emphasis></para>
+		</note>	
+	</section>
 </chapter>
