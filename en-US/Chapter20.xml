@@ -95,7 +95,72 @@
 							</caption>
 						</mediaobject>
 					</listitem>
-
+					<listitem>
+						<para><emphasis role="bold">rb_cluster_configure.rb</emphasis>: Get all services status for all nodes. Allows to change the configuration for the whole cluster.</para>
+						<mediaobject>
+							<imageobject>
+								<imagedata scalefit="1" align="center" width="450" fileref="images/ch20_img008.png"/>
+							</imageobject>
+							<caption>
+								<para>rb_cluster_configure.rb: usage</para>
+							</caption>
+						</mediaobject>
+					</listitem>
+					<listitem>
+						<para><emphasis role="bold">rb_manager_ssh.sh</emphasis>: This command is used to move or execute another command on other node.</para>
+						<mediaobject>
+							<imageobject>
+								<imagedata scalefit="1" align="center" width="450" fileref="images/ch20_img008.png"/>
+							</imageobject>
+							<caption>
+								<para>rb_manager_ssh.sh: usage</para>
+							</caption>
+						</mediaobject>
+					</listitem>
+					<listitem>
+						<para><emphasis role="bold">rb_manager_scp.sh</emphasis>: It is used to change enrichment mode.</para>
+						<mediaobject>
+							<imageobject>
+								<imagedata scalefit="1" align="center" width="450" fileref="images/ch20_img010.png"/>
+							</imageobject>
+							<caption>
+								<para>rb_manager_scp.sh: usage</para>
+							</caption>
+						</mediaobject>
+					</listitem>
+					<listitem>
+						<para><emphasis role="bold">rb_cluster_reboot.sh</emphasis>: Order the reboot for all cluster nodes.</para>
+						<mediaobject>
+							<imageobject>
+								<imagedata scalefit="1" align="center" width="450" fileref="images/ch20_img011.png"/>
+							</imageobject>
+							<caption>
+								<para>rb_cluster_regboot.sh: usage</para>
+							</caption>
+						</mediaobject>
+					</listitem>
+					<listitem>
+						<para><emphasis role="bold">rb_cluster_update.sh</emphasis>: It is used to change enrichment mode.</para>
+						<mediaobject>
+							<imageobject>
+								<imagedata scalefit="1" align="center" width="450" fileref="images/ch20_img012.png"/>
+							</imageobject>
+							<caption>
+								<para>rb_set_topics.rb: usage</para>
+							</caption>
+						</mediaobject>
+					</listitem>
+					<listitem>
+						<para><emphasis role="bold">rb_get_tasks.rb</emphasis>: Gets information about indexing service.</para>
+						<mediaobject>
+							<imageobject>
+								<imagedata scalefit="1" align="center" width="450" fileref="images/ch20_img0013.png"/>
+							</imageobject>
+							<caption>
+								<para>rb_get_tasks.rb: usage</para>
+							</caption>
+						</mediaobject>
+					</listitem>
 
 		</itemizedlist>
 
