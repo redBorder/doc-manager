@@ -568,6 +568,8 @@
 				<para><literal>Vault</literal></para>			
 			</listitem>
 		</itemizedlist>
+		<section>
+		<title>Monitor device</title>
 		<para>The monitor device sensor is one of the latest developments that comes with the 80-6 version of redBorder. It can be used to monitor any device with an ip address that supports snmp, redfish or ipmi. When creating or updating the monitor device sensor the credentials for the corresponding protocols needs to be defined. In case no community string for snmp is defined, the default ‘public’ will be used.</para>
 		<para>Once the user are logged in into the manager dashboard, the sensor can be added using the menu <literal>‘Sensors > Add sensor’</literal> and then clicking on <literal>‘Monitor device’.</literal></para>
 		<para>It can be prompted for some required and optional parameters.</para>
@@ -600,6 +602,7 @@
 			<title>Note</title>
 			<para>Different sensor configuration guides can be found on the reBorder support page:</para>
 			<para><emphasis role="bold">https://support.redborder.com</emphasis></para>
-		</note>	
+		</note>
+	</section>
 	</section>
 </chapter>

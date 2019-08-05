@@ -59,7 +59,7 @@
         <warning>
             <title> Warning </title>
             <para> It is VERY IMPORTANT that the configuration of the Manager (or cluster of managers) is performed before configuring the sensors. </para>
-            <para> The Manager must be operational and in a network accessible to the sensors. Some of the sensor configuration processes depend on the access to the Manager. <footnote><para> The redBorder Manager installation scenario is the same regardless of the sensors that are installed and registered (IPS, Flow, Malware (beta) or Vault (beta) </para> </footnote> . </para>
+            <para> The Manager must be operational and in a network accessible to the sensors. Some of the sensor configuration processes depend on the access to the Manager. </para>
         </warning>
         <mediaobject>
             <imageobject>
