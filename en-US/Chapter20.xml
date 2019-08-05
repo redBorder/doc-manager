@@ -10,7 +10,6 @@
 <chapter>
 	<title>Advanced</title>
 	<para>In this chapter we will show some advanced settings and tools for Redborder configuration and administration.</para>
-	<para>.</para>
 	<section>
 		<title>Architecture</title>
 		<para>Redborder has an open source based architecture, using technologies like Snort, Kafka or Logstash.</para>
@@ -161,7 +160,6 @@
 							</caption>
 						</mediaobject>
 					</listitem>
-
 		</itemizedlist>
-	</section>
+	</section>	
 </chapter>
