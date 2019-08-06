@@ -9,7 +9,7 @@
 
 <chapter>
 	<title>Uses Cases/title>
-	<para>In this chapter we will show some uses cases of Redborder. Some of them </para>
+	<para>In this chapter we will show some uses cases of Redborder. Some of them: </para>
 	<section>
 		<title>Use Case: Tracking an IP with Redborder</title>
 		<para>We can use Redborder to track a suspicious IP. Its possible to learn about its behaviour using Traffic module</para>
@@ -68,5 +68,46 @@
 			</caption>
 		</mediaobject>
 		<para>With this use case we can see how Redborder is able to filter the traffic for one or more IP so the user can detect bad behaviours for particular ip's, being able to track ip's with only a few clicks.</para>
+	</section>
+	<section>
+	<title>Use Case: Brute force authentication attack alert</title>
+	<para>We can use Redborder to alert of possible brute force attacks thanks to the use of its correlation engine and the rules that are established.</para>
+	<para>First, we must go to the Correlation Engine Rules section located in the Tools part.</para>
+	<mediaobject>
+			<imageobject>
+				<imagedata scalefit="1" align="center" width="450" fileref="images/ch30_img002_a.png"/>
+			</imageobject>
+			<caption>
+				<para>CEP rules</para>
+			</caption>
+	</mediaobject>
+	<para>Then we will activate the rule we want to use. In this case: SSH Brute Force Authentication. Finally, we must apply the changes.</para>
+	<mediaobject>
+			<imageobject>
+				<imagedata scalefit="1" align="center" width="450" fileref="images/ch30_img002_b.png"/>
+			</imageobject>
+			<caption>
+				<para>CEP rules</para>
+			</caption>
+	</mediaobject>
+	<para>This rule is capable of generating an alert when 200 unsuccessful log-in attempts occur in a 20 minute time window on a Linux machine via SSH protocol. For this, it is necessary to have the corresponding vault sensor created previously by referring to the IP of the machine which we want to protect.</para>
+	<para>Once this is done, in case of receiving a brute force attack, we could visualize the corresponding alert by accessing the Vault module. To be able to view it easily, we can add a sensor tab and filter by CEP.</para>
+	<mediaobject>
+			<imageobject>
+				<imagedata scalefit="1" align="center" width="450" fileref="images/ch30_img002_c.png"/>
+			</imageobject>
+			<caption>
+				<para>Vault module: Brute force attack alert.</para>
+			</caption>
+	</mediaobject>
+	<para>We can also display the alert message if we switch to the message tab.</para>
+	<mediaobject>
+			<imageobject>
+				<imagedata scalefit="1" align="center" width="450" fileref="images/ch30_img002_d.png"/>
+			</imageobject>
+			<caption>
+				<para>Vault module: Brute force attack alert message.</para>
+			</caption>
+	</mediaobject>
 	</section>
 </chapter>
