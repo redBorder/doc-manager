@@ -17,5 +17,6 @@
   <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="Chapter11.xml"/>
   <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="Chapter13.xml"/>
   <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="Chapter20.xml"/>
+  <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="Chapter30.xml"/>
   <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="Revision_History.xml"/>
 </book>

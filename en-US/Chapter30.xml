@@ -8,7 +8,7 @@
 ]>
 
 <chapter>
-	<title>Uses Cases/title>
+	<title>Uses Cases</title>
 	<para>In this chapter we will show some uses cases of Redborder. Some of them: </para>
 	<section>
 		<title>Use Case: Tracking an IP with Redborder</title>
@@ -109,5 +109,10 @@
 				<para>Vault module: Brute force attack alert message.</para>
 			</caption>
 	</mediaobject>
+	<note>
+			<title>Note</title>
+			<para>To expand the use cases, we can access the following link where the advanced use cases are located:</para>
+			<para><emphasis role="bold">https://support.redborder.com/hc/en-us/sections/360000254677-eXperience</emphasis></para>
+	</note>
 	</section>
 </chapter>
