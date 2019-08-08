@@ -574,6 +574,8 @@
 	<section>
 		<title>Platform Alerts</title>
 		<para>Here the user can see the alerts from the platform. All the alerts are shown to every user.</para>
+		<para>There are three levels for the alerts: info, warning and danger. Each level has its own colour so the alerts can be differenced</para>
+
 		<mediaobject>
 			<imageobject>
 				<imagedata scalefit="1" align="center" width="450" fileref="images/ch13_img021_a.png"/>
@@ -590,7 +592,9 @@
 			<caption>
 				<para><literal>Platform Alerts: New Alert</literal></para>
 			</caption>
-		</mediaobject>	
+		</mediaobject>
+		<para>If the alert message is clicked by the user, it won't be shown again until the user logs in again.</para>
+		<para>Is possible to remove the alert by clicking on the cross in the message. After that the alert message won't be shown anymore.</para>	
 	</section>
 	<section>
 		<title>Rule Versions</title>
