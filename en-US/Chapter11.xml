@@ -13,16 +13,16 @@
 	infrastructure through the creation and edition of domains and sensors. There are many views that
 	offer the possibility to make different actions on their network elements.</para>
 	<para><literal>Sensors</literal> is available in the top right margin of the header menu, next to <emphasis role="bold">Tools</emphasis> section and User's
-	Area. This menu area is named as <emphasis role="bold">Configuration zone,</emphasis> because unlike the options available in the
-	top left margin (Analysis), these allow the complete management and configuration of the Manager
+	Area. This menu area is named as <emphasis role="bold">Configuration zone,</emphasis> because unlike the options available in the top left margin (Analysis), these allow the complete management and configuration of the Manager
 	and sensors: rules policies, alarms, cluster configuration or user's management, among other actions.</para>
 	<section>
 		<title>Sensors: menu and options</title>
-		<para>The organization of this sections is very similar (in terms of structure) to the other parts of the web. We
-        can find in this case:</para>
+		<para>The organization of this sections is very similar (in terms of structure) to the other parts of the web. We can find in this case:</para>
 		<itemizedlist mark="bullet">
 			<listitem>
 				<para><emphasis role="bold">Section submenu:</emphasis> configuration and sensors'management options.</para>
+				<para><literal>Expand all</literal>: It fully expands the sensor tree.</para>
+				<para><literal>Collapse all</literal>: It fully collapse the sensor tree.</para>
 				<para><literal>Options</literal></para>
 				<para><literal>+Add sensor</literal></para>
 				<para><literal>+Add Domain</literal></para>
@@ -55,6 +55,84 @@
 			sensors or domains.</para>
 			<para>Map view hasn't any available option.</para>
 		</note>
+	</section>
+	<section>
+		<title>Options</title>
+		<para>Here are the options available in the Sensors section. They can be selected from the <emphasis role="bold">Options</emphasis> and from the options shown by clicking "Edit"both domain level and sensor level.</para>
+		<itemizedlist>
+			<listitem><para>Import Tree</para>
+				<para>This option allows to import your network infrastructure through the uploading of a file to redBorder
+					platform. This will be shown in tree view.</para>
+				<mediaobject>
+					<imageobject>
+						<imagedata scalefit="1" align="center" width="150" fileref="images/ch11_img006.png"/>
+					</imageobject>
+					<caption>
+						<para>Import Tree</para>
+					</caption>
+				</mediaobject>	
+				<para>There are two ways to import tree:</para>
+				<orderedlist numeration="arabic">
+					<listitem>
+						<para><literal>Options->Import tree</literal></para>
+					</listitem>
+					<listitem>
+						<para>Edit icon (domain level)</para>
+					</listitem>
+				</orderedlist>
+				<mediaobject>
+					<imageobject>
+						<imagedata scalefit="1" align="center" width="350" fileref="images/ch11_img005.png"/>
+					</imageobject>
+					<caption>
+						<para>Import/Export tree from Options menu</para>
+					</caption>
+				</mediaobject>	
+				<mediaobject>
+					<imageobject>
+						<imagedata scalefit="1" align="center" width="450" fileref="images/ch11_img017.png"/>
+					</imageobject>
+					<caption>
+						<para>Import/Export tree through Edit icon (domain level)</para>
+					</caption>
+				</mediaobject>	
+			</listitem>
+			<listitem><para>Export Tree</para>
+				<para>This option allows to export a tree and is within easy reach for other applications. User will download a
+					zip file for storing then in their computer.</para>
+				<para>There are two ways to export a tree:</para>
+				<orderedlist numeration="arabic">
+					<listitem><para><literal>Options->Export tree</literal></para></listitem>
+					<listitem><para>Edit icon (domain level)</para></listitem>
+				</orderedlist>
+				<mediaobject>
+					<imageobject>
+						<imagedata scalefit="1" align="center" width="350" fileref="images/ch11_img007.png"/>
+					</imageobject>
+					<caption>
+						<para>Export Tree</para>
+					</caption>
+				</mediaobject>	
+				<mediaobject>
+					<imageobject>
+						<imagedata scalefit="1" align="center" width="450" fileref="images/ch11_img017.png"/>
+					</imageobject>
+					<caption>
+						<para>Import/Export tree through Edit icon (domain level)</para>
+					</caption>
+				</mediaobject>		
+			</listitem>
+			<listitem><para>Wakeup Chef Cluster</para></listitem>
+			<listitem><para>Cluster data</para>
+				<itemizedlist>
+					<listitem><para>Indexed data: Show indexed data statistics for the cluster</para></listitem>
+					<listitem><para>Historicals: Show information about the historical data of the cluster</para>
+					</listitem>
+					<listitem><para>Realtime: Shows information about Realtime process</para>
+					</listitem>
+				</itemizedlist>
+			</listitem>
+		</itemizedlist>		
 	</section>
 	<section>
 		<title>View</title>
@@ -206,78 +284,6 @@
 				<para>The domains and sensors that fall below the level of the element overwritten, inherit again, the
 				properties applied to this element.</para>
 			</section>
-			<section>
-				<title>Options</title>
-				<para>Here are the options available in the Sensors section. They can be selected from the <emphasis role="bold">Options</emphasis> and from the options shown by clicking 
-				"Edit"both domain level and sensor level.</para>
-				<section>
-					<title>Import Tree</title>
-					<para>This option allows to import your network infrastructure through the uploading of a file to redBorder
-					platform. This will be shown in tree view.</para>
-					<mediaobject>
-						<imageobject>
-							<imagedata scalefit="1" align="center" width="150" fileref="images/ch11_img006.png"/>
-						</imageobject>
-						<caption>
-						<para>Import Tree</para>
-						</caption>
-					</mediaobject>	
-					<para>There are two ways to import tree:</para>
-					<orderedlist numeration="arabic">
-						<listitem>
-							<para><literal>Options->Import tree</literal></para>
-						</listitem>
-						<listitem>
-							<para>Edit icon (domain level)</para>
-						</listitem>
-					</orderedlist>
-					<mediaobject>
-						<imageobject>
-							<imagedata scalefit="1" align="center" width="350" fileref="images/ch11_img005.png"/>
-						</imageobject>
-						<caption>
-							<para>Import/Export tree from Options menu</para>
-						</caption>
-					</mediaobject>	
-					<mediaobject>
-						<imageobject>
-							<imagedata scalefit="1" align="center" width="450" fileref="images/ch11_img017.png"/>
-						</imageobject>
-						<caption>
-							<para>Import/Export tree through Edit icon (domain level)</para>
-						</caption>
-					</mediaobject>	
-				</section>
-				<section>
-					<title>Export Tree</title>
-					<para>This option allows to export a tree and is within easy reach for other applications. User will download a
-					zip file for storing then in their computer.</para>
-					<para>There are two ways to export a tree:</para>
-					<orderedlist numeration="arabic">
-						<listitem>
-							<para><literal>Options->Export tree</literal></para>
-						</listitem>
-						<listitem>
-							<para>Edit icon (domain level)</para>
-						</listitem>
-					</orderedlist>
-					<mediaobject>
-						<imageobject>
-							<imagedata scalefit="1" align="center" width="350" fileref="images/ch11_img007.png"/>
-						</imageobject>
-						<caption>
-							<para>Export Tree</para>
-						</caption>
-					</mediaobject>	
-					<mediaobject>
-						<imageobject>
-							<imagedata scalefit="1" align="center" width="450" fileref="images/ch11_img017.png"/>
-						</imageobject>
-						<caption>
-							<para>Import/Export tree through Edit icon (domain level)</para>
-						</caption>
-					</mediaobject>		
-				</section>
 				<section>
 					<title>Monitors</title>
 					<note>
@@ -300,7 +306,7 @@
 							<para><emphasis role="bold">Restore default:</emphasis> applies default metrics that are included in sensors creation.</para>
 						</listitem>
 						<listitem>
-							<para><emphasis role="bold">Add monitor:</emphasis> shows available metrics. (<literal>+Add Monitor</literal></para>
+							<para><emphasis role="bold">Add monitor:</emphasis> shows available metrics. (<literal>+Add Monitor</literal>)</para>
 						</listitem>
 						<listitem>
 							<para><emphasis role="bold">Delete monitor:</emphasis> delete the metric applied.</para>
@@ -322,7 +328,6 @@
 							<para>Add Monitor: available metrics</para>
 						</caption>	
 					</mediaobject>	
-				</section>
 			</section>
 		</section>
 	</section>

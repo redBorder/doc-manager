@@ -51,7 +51,7 @@
 						</mediaobject>
 					</listitem>
 					<listitem>
-						<para><emphasis role="bold">rb_get_services.sh</emphasis>: Get all the services status on the node. Used with option all shows information for all nodes.</para>
+						<para><emphasis role="bold">rb_get_services.sh</emphasis>: Get all the services status on the node. Used with option all shows information for all nodes. If optional the service is added too, only the status of this service is shown</para>
 						<mediaobject>
 							<imageobject>
 								<imagedata scalefit="1" align="center" width="450" fileref="images/ch20_img004.png"/>
@@ -139,7 +139,7 @@
 						</mediaobject>
 					</listitem>
 					<listitem>
-						<para><emphasis role="bold">rb_cluster_update.sh</emphasis>: It is used to change enrichment mode.</para>
+						<para><emphasis role="bold">rb_cluster_update.sh</emphasis>: It is used to upgrade the manager to a new released version.</para>
 						<mediaobject>
 							<imageobject>
 								<imagedata scalefit="1" align="center" width="450" fileref="images/ch20_img012.png"/>
@@ -160,6 +160,17 @@
 							</caption>
 						</mediaobject>
 					</listitem>
+					<listitem>
+						<para><emphasis role="bold">rb_wakeup_chef</emphasis>: Starts the chef-client in all the nodes.</para>
+						<mediaobject>
+							<imageobject>
+								<imagedata scalefit="1" align="center" width="450" fileref="images/ch20_img014.png"/>
+							</imageobject>
+							<caption>
+								<para>rb_wakeup_chef: usage</para>
+							</caption>
+						</mediaobject>
+					</listitem>					
 		</itemizedlist>
 	</section>
 	<section>

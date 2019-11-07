@@ -475,6 +475,56 @@
 				<para>Infrastructure Monitor</para>
 			</caption>
 		</mediaobject>
+		<section>
+			<title>SNMP Operation</title>
+			<para>In this chapter we are going to explain the new features, snmp operation and monitor import/export, added to monitor categories.</para>
+		<mediaobject>
+			<imageobject>
+				<imagedata scale="30" align="center" fileref="images/ch13_img013_b.png"/>
+			</imageobject>
+			<caption>
+				<para>Infrastructure Monitor</para>
+			</caption>
+		</mediaobject>			
+			<para>To explain the feature snmp operation we will use an example, monitor memory usage. When we create a new monitor category using the New Monitor Category button from the Monitor Categories page, we will see the following popup</para>
+		<mediaobject>
+			<imageobject>
+				<imagedata scale="30" align="center" fileref="images/ch13_img013_c.png"/>
+			</imageobject>
+			<caption>
+				<para>Initial creation of a monitor category</para>
+			</caption>
+		</mediaobject>	
+		<para>This is the formula to calculate the memory usage of a device:</para>
+		<mediaobject>
+			<imageobject>
+				<imagedata scale="30" align="center" fileref="images/ch13_img013_d.png"/>
+			</imageobject>
+		</mediaobject>	
+		<para>The result is a combination of different snmp values. Now, if we want to create a monitor as the one in this example, we must choose SNMP Operation in the technology dropdown. Now our form will change to the following:</para>
+		<mediaobject>
+			<imageobject>
+				<imagedata scale="30" align="center" fileref="images/ch13_img013_d.png"/>
+			</imageobject>
+			<caption>
+				<para>Create monitor with SNMP Operation</para>
+			</caption>
+		</mediaobject>
+		<para>Under the OID field, now there is a button called Add new variable, which adds another field so we can enter more snmp OIDs. Also, at the bottom, there is an OIDs Operation field, in which we will introduce the operation we want to do with the OIDs previously entered</para>
+		<mediaobject>
+			<imageobject>
+				<imagedata scale="30" align="center" fileref="images/ch13_img013_e.png"/>
+			</imageobject>
+			<caption>
+				<para>Example monitor</para>
+			</caption>
+		</mediaobject>
+		<para>For every OID the output is going to be stored on a varaible which we will later used in the OIDs operation.</para>
+		<para>Once at this point, we just have to create the monitor by pressing the create button.</para>
+		<para>To add the new monitor to a sensor device we will create a new sensor in Sensor tab, selecting Monitor Device.</para>
+
+
+		</section>
 
 	</section>	
 	<section>
