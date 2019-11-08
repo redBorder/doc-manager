@@ -63,13 +63,13 @@
 				<para>Apache Zookeeper 3.4.6</para>
 			</listitem>
 			<listitem>
-				<para>Apache Kafka 0.8.2</para>
+				<para>Apache Kafka 0.10.0.1</para>
 			</listitem>
 			<listitem>
-				<para>druid 0.1.8</para>
+				<para>druid 0.12.3</para>
 			</listitem>
 			<listitem>
-				<para>postgreSQL 9.2.9</para>
+				<para>postgreSQL 9.2.10</para>
 			</listitem>
 			<listitem>
 				<para>chef 11.14.6</para>

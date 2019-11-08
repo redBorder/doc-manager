@@ -377,14 +377,6 @@
 				</caption>
 			</mediaobject>
 			<para>You can save this search settings as a filter, thus, it will be available to consult at any other time in both the option <literal>View Saved Filters</literal> as in <literal>Saved filters</literal> which you will find in the context menu of the filters.</para>
-			<mediaobject>
-				<imageobject>
-					<imagedata scalefit="1" align="center" width="350" fileref="images/ch06_img020_b.png"/>
-				</imageobject>
-				<caption>
-					<para>Filtering events: saving filter</para>
-				</caption>
-			</mediaobject>			
 			<para>To load a saved test you can use View Saved Filters button, selecting the filter and clicking in Add Filter button.</para>
 			<mediaobject>
 				<imageobject>
@@ -576,7 +568,7 @@
 			<title>Raw</title>
 			<para>This view provides raw data events, thus, we will see the total of events by segmented attributes by time slots.</para>
 			<para>In the data table we will therefore collect all event data classified by columns. Data will be shown on the screen, however, if you'd like to see more, simply scroll and wait for more data to load: <emphasis>Load more.</emphasis></para>
-			<para>Because of load consumption, Raw view is only available for the last hour of data.</para>
+			<para>Raw view can provide graphics in periods of 3, 5, 15 or 30 minutes.</para>
 			<mediaobject>
 				<imageobject>
 					<imagedata scalefit="1" align="center" width="450" fileref="images/ch06_img024.png"/>
@@ -873,7 +865,7 @@
 	</section>
 	<section>
 		<title>Graph type</title>
-		<para>As we have seen in <emphasis role="bold">capítulo 5, Dashboards</emphasis> you can select the type of graph you want to display the data provided in the different views. The options are very similar to those that are available in the process of creating custom widgets.</para>
+		<para>As we will see in <emphasis role="bold">Chapter 5, Dashboards</emphasis> you can select the type of graph you want to display the data provided in the different views. The options are very similar to those that are available in the process of creating custom widgets.</para>
 		<para>The charts that are available at all times, will depend on the selected view. This option does not appear, for example, by applying the Map view of the data, since the data is represented in this view, on a map. These are the graphical possibilities of redBorder platform for views:</para>
 		<para><emphasis role="bold">Stacked:</emphasis> comparatively show in the same graph the data for each of the selected attributes. (In the image comparing traffic sensors).</para>
 		<mediaobject>

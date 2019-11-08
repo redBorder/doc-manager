@@ -327,7 +327,7 @@
 		<para>You must select which protocol and which Syslog mode you want to use for the sendings.</para>
 		<note>
 			<title>Note</title>
-			<para>TCP protocol is recommended in order to gguarantee a safe sending. Choose this option whenever possible.</para>
+			<para>TCP protocol is recommended in order to guarantee a safe sending. Choose this option whenever possible.</para>
 		</note>
 		<mediaobject>
 			<imageobject>
@@ -476,16 +476,7 @@
 			</caption>
 		</mediaobject>
 		<section>
-			<title>SNMP Operation</title>
-			<para>In this chapter we are going to explain the new features, snmp operation and monitor import/export, added to monitor categories.</para>
-		<mediaobject>
-			<imageobject>
-				<imagedata scale="30" align="center" fileref="images/ch13_img013_b.png"/>
-			</imageobject>
-			<caption>
-				<para>Infrastructure Monitor</para>
-			</caption>
-		</mediaobject>			
+			<title>SNMP Operation</title>			
 			<para>To explain the feature snmp operation we will use an example, monitor memory usage. When we create a new monitor category using the New Monitor Category button from the Monitor Categories page, we will see the following popup</para>
 		<mediaobject>
 			<imageobject>

@@ -430,14 +430,6 @@
 		</itemizedlist>
 		<mediaobject>
 			<imageobject>
-				<imagedata scalefit="1" align="center" width="350" fileref="images/ch11_img011.png"/>
-			</imageobject>
-			<caption>
-				<para>Access Points interface (domain level)</para>
-			</caption>
-		</mediaobject>
-		<mediaobject>
-			<imageobject>
 				<imagedata scale="50" align="center" fileref="images/ch11_img018b.png"/>
 			</imageobject>
 			<caption>
