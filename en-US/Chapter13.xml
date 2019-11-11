@@ -95,7 +95,7 @@
 			</orderedlist>
 			<mediaobject>
 				<imageobject>
-					<imagedata scale="30" align="center" fileref="images/ch06_img013.png"/>
+					<imagedata scalefit="1" width="450" align="center" fileref="images/ch06_img013.png"/>
 				</imageobject>
 				<caption>
 					<para>Create a new alarm</para>
