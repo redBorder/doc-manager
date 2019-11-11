@@ -11,7 +11,7 @@
 	<para>On the right side of the menu bar, next to the menu <literal>Sensors</literal> we find the “tools” section or <literal>Tools</literal> where you can find the options for the configuration of the redBorder platform.</para>
 	<mediaobject>
 		<imageobject>
-			<imagedata scale="60" align="center" fileref="images/ch13_img001.png"/>
+			<imagedata scalefit="1" width="450" align="center" fileref="images/ch13_img001.png"/>
 		</imageobject>
 		<caption>
 			<para><literal>Tools:</literal> available options for configuring the redBorder platform </para>
@@ -138,16 +138,6 @@
 					<para><literal>Notify to email</literal>: check that to receive an email when a alarm is raised.</para>
 				</listitem>
 			</itemizedlist>
-			<para><emphasis role="bold"><literal>Conditions</literal></emphasis></para>
-			<para> These are filters that are added to trigger an alarm.</para>
-			<mediaobject>
-				<imageobject>
-					<imagedata scale="30" align="center" fileref="images/ch13_img003.png"/>
-				</imageobject>
-				<caption>
-					<para>Conditions/Filters for creating conditions for an alarm</para>
-				</caption>
-			</mediaobject>
 		</section>
 	</section>
 	<section>
@@ -272,7 +262,7 @@
 		<para>Here we can set in Redborder the IPS/IDS physical setup and configuration.</para>
 		<mediaobject>
 			<imageobject>
-				<imagedata scale="30" align="center" fileref="images/ch13_img009_a.png"/>
+				<imagedata scalefit="1" width="450" align="center" fileref="images/ch13_img009_a.png"/>
 			</imageobject>
 			<caption>
 				<para>General settings: IPS/IDS Settings</para>
@@ -282,7 +272,7 @@
 		<para>Allows to set a SSL certificate for secure communications.</para>
 		<mediaobject>
 			<imageobject>
-				<imagedata scale="30" align="center" fileref="images/ch13_img009_b.png"/>
+				<imagedata scalefit="1" width="450" align="center" fileref="images/ch13_img009_b.png"/>
 			</imageobject>
 			<caption>
 				<para>General settings: IPS/IDS Settings</para>
@@ -296,7 +286,7 @@
 		</note>
 		<mediaobject>
 			<imageobject>
-				<imagedata scale="30" align="center" fileref="images/ch13_img009_c.png"/>
+				<imagedata scalefit="1" width="450" align="center" fileref="images/ch13_img009_c.png"/>
 			</imageobject>
 			<caption>
 				<para>General settings: server configuration</para>
@@ -306,17 +296,7 @@
 		<para>Configuration of Default Rules for loading or dropping data.</para>
 		<mediaobject>
 			<imageobject>
-				<imagedata scale="30" align="center" fileref="images/ch13_img009_d.png"/>
-			</imageobject>
-			<caption>
-				<para>General settings: Default Rules</para>
-			</caption>
-		</mediaobject>
-		<para><emphasis role="bold">Default Rules</emphasis></para>
-		<para>Configuration of Default Rules for loading or dropping data.</para>
-		<mediaobject>
-			<imageobject>
-				<imagedata scale="30" align="center" fileref="images/ch13_img009_d.png"/>
+				<imagedata scalefit="1" width="450" align="center" fileref="images/ch13_img009_d.png"/>
 			</imageobject>
 			<caption>
 				<para>General settings: Default Rules</para>
@@ -331,7 +311,7 @@
 		</note>
 		<mediaobject>
 			<imageobject>
-				<imagedata scale="30" align="center" fileref="images/ch13_img009_e.png"/>
+				<imagedata scalefit="1" width="450" align="center" fileref="images/ch13_img009_e.png"/>
 			</imageobject>
 			<caption>
 				<para>General Settings: Monitoring and logs</para>
@@ -344,7 +324,7 @@
 		<para>If user wants to send their logs to this Amazon Service, required fields must be filled.</para>
 		<mediaobject>
 			<imageobject>
-				<imagedata scale="30" align="center" fileref="images/ch13_img009_f.png"/>
+				<imagedata scalefit="1" width="450" align="center" fileref="images/ch13_img009_f.png"/>
 			</imageobject>
 			<caption>
 				<para>General Settings: Amazon CloudWatch</para>
@@ -354,7 +334,7 @@
 		<para>Is possible to link Redborder with Google Maps API to get better location information.</para>
 		<mediaobject>
 			<imageobject>
-				<imagedata scale="30" align="center" fileref="images/ch13_img009_g.png"/>
+				<imagedata scalefit="1" width="450" align="center" fileref="images/ch13_img009_g.png"/>
 			</imageobject>
 			<caption>
 				<para>General Settings: Google Maps API</para>
@@ -376,7 +356,7 @@
 		<para>Delete a network from the list: through the icon “Delete".</para>
 		<mediaobject>
 			<imageobject>
-				<imagedata scale="60" align="center" fileref="images/ch13_img009_i.png"/>
+				<imagedata scalefit="1" width="450" align="center" fileref="images/ch13_img009_i.png"/>
 			</imageobject>
 			<caption>
 				<para>General settings: Add a new White Network</para>
@@ -388,7 +368,7 @@
 		<para>Delete a network from the list: through the icon “Delete".</para>
 		<mediaobject>
 			<imageobject>
-				<imagedata scale="60" align="center" fileref="images/ch13_img009_j.png"/>
+				<imagedata scalefit="1" width="450" align="center" fileref="images/ch13_img009_j.png"/>
 			</imageobject>
 			<caption>
 				<para>General settings: Add a new Black Network</para>
@@ -400,7 +380,7 @@
 		<para>Delete a network from the list: through the icon “Delete”.</para>
 		<mediaobject>
 			<imageobject>
-				<imagedata scale="30" align="center" fileref="images/ch13_img009_k.png"/>
+				<imagedata scalefit="1" width="450" align="center" fileref="images/ch13_img009_k.png"/>
 			</imageobject>
 			<caption>
 				<para>General settings: list of Network Routes</para>
@@ -412,7 +392,7 @@
 		<para>Delete a network from the list: through the icon “Delete”.</para>
 		<mediaobject>
 			<imageobject>
-				<imagedata scale="30" align="center" fileref="images/ch13_img009_l.png"/>
+				<imagedata scalefit="1" width="450" align="center" fileref="images/ch13_img009_l.png"/>
 			</imageobject>
 			<caption>
 				<para>General settings: list of Network Routes</para>
@@ -435,7 +415,7 @@
 		<para>Download all the files from Maxmind website and unzip them. It is only possible to upload files with .dat format as we can see in the image below. For this, click on <literal>+Select File</literal></para>
 		<mediaobject>
 			<imageobject>
-				<imagedata scale="30" align="center" fileref="images/ch13_img009_m.png"/>
+				<imagedata scalefit="1" width="450" align="center" fileref="images/ch13_img009_m.png"/>
 			</imageobject>
 			<caption>
 				<para>General settings: GeoIP Protection</para>
@@ -448,7 +428,7 @@
 		<para>To have a </para>
 		<mediaobject>
 			<imageobject>
-				<imagedata scale="30" align="center" fileref="images/ch13_img014.png"/>
+				<imagedata scalefit="1" width="450" align="center" fileref="images/ch13_img014.png"/>
 			</imageobject>
 			<caption>
 				<para>Correlator Engine Rules</para>
@@ -460,7 +440,7 @@
 		<para>Here we can add a new category to monitorize the hardware. The categories use technologies such as SNMP, Redfish or IPMI to provide information about the system and its functioning</para>
 		<mediaobject>
 			<imageobject>
-				<imagedata scale="30" align="center" fileref="images/ch13_img013.png"/>
+				<imagedata scalefit="1" width="450" align="center" fileref="images/ch13_img013.png"/>
 			</imageobject>
 			<caption>
 				<para>Monitor Categories</para>
@@ -469,7 +449,7 @@
 		<para>To add a new monitor category we must use the top right button. Then we will fill the fields selecting the correct technology allowing Redborder to receive the data.</para>
 		<mediaobject>
 			<imageobject>
-				<imagedata scale="30" align="center" fileref="images/ch13_img013_b.png"/>
+				<imagedata scalefit="1" width="450" align="center" fileref="images/ch13_img013_b.png"/>
 			</imageobject>
 			<caption>
 				<para>Infrastructure Monitor</para>
@@ -480,7 +460,7 @@
 			<para>To explain the feature snmp operation we will use an example, monitor memory usage. When we create a new monitor category using the New Monitor Category button from the Monitor Categories page, we will see the following popup</para>
 		<mediaobject>
 			<imageobject>
-				<imagedata scale="30" align="center" fileref="images/ch13_img013_c.png"/>
+				<imagedata scalefit="1" width="450" align="center" fileref="images/ch13_img013_c.png"/>
 			</imageobject>
 			<caption>
 				<para>Initial creation of a monitor category</para>
@@ -504,7 +484,7 @@
 		<para>Under the OID field, now there is a button called Add new variable, which adds another field so we can enter more snmp OIDs. Also, at the bottom, there is an OIDs Operation field, in which we will introduce the operation we want to do with the OIDs previously entered</para>
 		<mediaobject>
 			<imageobject>
-				<imagedata scale="30" align="center" fileref="images/ch13_img013_e.png"/>
+				<imagedata scalefit="1" width="450" align="center" fileref="images/ch13_img013_e.png"/>
 			</imageobject>
 			<caption>
 				<para>Example monitor</para>
@@ -525,7 +505,7 @@
 		<para>To upload a file with a new redBorder license, click on <literal>Select file.</literal> To request a new license click on <literal>Request a license.</literal></para>
 		<mediaobject>
 			<imageobject>
-				<imagedata scale="30" align="center" fileref="images/ch13_img015.png"/>
+				<imagedata scalefit="1" width="450" align="center" fileref="images/ch13_img015.png"/>
 			</imageobject>
 			<caption>
 				<para>Licenses: queries and updating of expired licenses</para>
@@ -539,7 +519,7 @@
 		<para>Edit an existing service: click on "Edit" button:</para>
 		<mediaobject>
 			<imageobject>
-				<imagedata scale="30" align="center" fileref="images/ch13_img016.png"/>
+				<imagedata scalefit="1" width="450" align="center" fileref="images/ch13_img016.png"/>
 			</imageobject>
 			<caption>
 				<para>Lookup Sources: queries web services</para>
@@ -548,7 +528,7 @@
 		<para>Add new web service: click on the button <literal>+Add Lookup Source.</literal></para>
 		<mediaobject>
 			<imageobject>
-				<imagedata scale="60" align="center" fileref="images/ch13_img017.png"/>
+				<imagedata scalefit="1" width="450" align="center" fileref="images/ch13_img017.png"/>
 			</imageobject>
 			<caption>
 				<para>Add a new Lookup Source</para>
@@ -572,7 +552,7 @@
 		</itemizedlist>
 		<mediaobject>
 			<imageobject>
-				<imagedata scale="30" align="center" fileref="images/ch13_img018.png"/>
+				<imagedata scalefit="1" width="450" align="center" fileref="images/ch13_img018.png"/>
 			</imageobject>
 			<caption>
 				<para>Objects: list of objects</para>
@@ -583,7 +563,7 @@
 		<para>Delete an object: click on the "Delete" icon.</para>
 		<mediaobject>
 			<imageobject>
-				<imagedata scale="60" align="center" fileref="images/ch13_img019.png"/>
+				<imagedata scalefit="1" width="450" align="center" fileref="images/ch13_img019.png"/>
 			</imageobject>
 			<caption>
 				<para>Objects: create a new net object</para>
@@ -670,7 +650,7 @@
 		<para>The only user that has permissions to do that is Superadministrator. The rest of the users can only visualize the sections of the platform (reading mode) but not modify its content (except in the case of its own user profile).</para>
 		<mediaobject>
 			<imageobject>
-				<imagedata scale="30" align="center" fileref="images/ch13_img024_a.png"/>
+				<imagedata scalefit="1" width="450" align="center" fileref="images/ch13_img024_a.png"/>
 			</imageobject>
 			<caption>
 				<para>Users: management users'permissions interface</para>
@@ -732,7 +712,7 @@
         <para>At the top right of the menu bar you find the user area, from which you can view notifications, check the profile, access context-sensitive help and exit the system.</para>
 		<mediaobject>
 			<imageobject>
-				<imagedata scale="60" align="center" fileref="images/ch13_img026.png"/>
+				<imagedata scalefit="1" width="450" align="center" fileref="images/ch13_img026.png"/>
 			</imageobject>
 			<caption>
 				<para>User area</para>
@@ -742,7 +722,7 @@
         <para>To view a summary list of notifications simply click on <literal>User's area.</literal> To access a complete list of them, select the option <literal>View All</literal> or click on any of the notifications that appear in the summary; in this way you can access a new screen from which you can view the details of notifications, and remove all of them through the option <literal>Delete All</literal></para>
 		<mediaobject>
 			<imageobject>
-				<imagedata scale="30" align="center" fileref="images/ch13_img027.png"/>
+				<imagedata scalefit="1" width="450" align="center" fileref="images/ch13_img027.png"/>
 			</imageobject>
 			<caption>
 				   <para>User area: Notifications</para>
@@ -762,7 +742,7 @@
 		<para>This option enables a context-sensitive help that facilitates navigation and usability of the platform.</para>
 		<mediaobject>
 			<imageobject>
-				<imagedata scale="60" align="center" fileref="images/ch13_img029.png"/>
+				<imagedata scalefit="1" width="450" align="center" fileref="images/ch13_img029.png"/>
 			</imageobject>
 			<caption>
 				 <para>User area: Help</para>
@@ -772,7 +752,7 @@
 		<para>For safe disconnection of the platform, select the option <literal>Logout.</literal> The system will return to the login screen.</para>
 		<mediaobject>
 			<imageobject>
-				<imagedata scale="60" align="center" fileref="images/ch13_img030.png"/>
+				<imagedata scalefit="1" width="450" align="center" fileref="images/ch13_img030.png"/>
 			</imageobject>
 			<caption>
 				  <para>User area: login screen after Logout</para>
