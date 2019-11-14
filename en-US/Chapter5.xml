@@ -952,7 +952,7 @@
 		</mediaobject>	
 		<mediaobject>
 			<imageobject>
-				<imagedata scale="60" align="center" fileref="images/ch06_img042.png"/>
+				<imagedata scalefit="1" width="450" align="center" fileref="images/ch06_img042.png"/>
 			</imageobject>
 			<textobject>
 				<phrase>Options: Time machine</phrase>
@@ -963,7 +963,7 @@
 		</mediaobject>	
 		<mediaobject>
 			<imageobject>
-				<imagedata scale="60" align="center" fileref="images/ch06_img043.png"/>
+				<imagedata scalefit="1" width="450" align="center" fileref="images/ch06_img043.png"/>
 			</imageobject>
 			<textobject>
 				<phrase>Options: Sort Aggregations</phrase>

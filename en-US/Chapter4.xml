@@ -70,17 +70,6 @@
 		<section>
 			<title>Included options in the menu bar</title>
 			<para>Let's do a quick overview of the options that can be found in the menu bar, in the area of analysis and configuration. In later sections functionality and configuration of these options will be analyzed.</para>
-			<mediaobject>
-				<imageobject>
-					<imagedata scalefit="1" align="center" width="450" fileref="images/ch04_img003.png"/>
-				</imageobject>
-				<textobject>
-					<phrase>Options included in the menu bar</phrase>
-				</textobject>
-				<caption>
-					<para>Option details included in the menu bar</para>
-				</caption>
-			</mediaobject>
 			<para><emphasis>Dashboard:</emphasis> Provides a summary of the events received by the sensors, displaying them in different metrics. This is the screen shown by default when you log into the redBorder platform.</para>
 			<mediaobject>
 				<imageobject>
