@@ -94,7 +94,7 @@
 					<para>-<literal>Create a widget on</literal>.</para>
 					<mediaobject>
 						<imageobject>
-							<imagedata scale="60" align="center" fileref="images/ch06_img003.png"/>
+							<imagedata scalefit="1" width="450" align="center" fileref="images/ch06_img003.png"/>
 						</imageobject>
 						<caption>
 							<para>Filters</para>
@@ -109,7 +109,7 @@
 					<para>-Unique: shows events that happened only once.</para>
 					<mediaobject>
 						<imageobject>
-							<imagedata scalefit="60" align="center" fileref="images/ch06_img004.png"/>
+							<imagedata scalefit="1" width="450" align="center" fileref="images/ch06_img004.png"/>
 						</imageobject>
 						<caption>
 							<para>Views</para>
@@ -117,10 +117,10 @@
 					</mediaobject>
 				</listitem>
 				<listitem>
-					<para><emphasis role="bold">Aggregation:</emphasis> they are different values or units of measure in which the data can be displayed. For example, flows per second (flows/s) or bytes per second (bps).</para>
+					<para><emphasis role="bold">Aggregation:</emphasis> there are different values or units of measure in which the data can be displayed. For example, flows per second (flows/s) or bytes per second (bps). Note that each module has its own aggregation choices.</para>
 					<mediaobject>
 						<imageobject>
-							<imagedata scale="60" align="center" fileref="images/ch06_img005.png"/>
+							<imagedata scalefit="1" width="450" align="center" fileref="images/ch06_img005.png"/>
 						</imageobject>
 						<caption>
 							<para>Aggregation</para>
@@ -131,7 +131,7 @@
 					<para><emphasis role="bold">Granularity:</emphasis> indicates the degree of temporal detail that can display data. The minimum value is one minute granularity. </para>
 					<mediaobject>
 						<imageobject>
-							<imagedata scale="60" align="center" fileref="images/ch06_img006.png"/>
+							<imagedata scalefit="1" width="450" align="center" fileref="images/ch06_img006.png"/>
 						</imageobject>
 						<caption>
 							<para>Granularity</para>
@@ -147,7 +147,7 @@
 					<para>-Stacked</para>
 					<mediaobject>
 						<imageobject>
-							<imagedata scale="60" align="center" fileref="images/ch06_img007.png"/>
+							<imagedata scalefit="1" width="450" align="center" fileref="images/ch06_img007.png"/>
 						</imageobject>
 						<caption>
 							<para>Graph</para>
@@ -163,7 +163,7 @@
 					<para>-<literal>Save tab as default</literal></para>
 					<mediaobject>
 						<imageobject>
-							<imagedata scale="60" align="center" fileref="images/ch06_img008.png"/>
+							<imagedata scalefit="1" width="450" align="center" fileref="images/ch06_img008.png"/>
 						</imageobject>
 						<caption>
 							<para>Options</para>
@@ -175,7 +175,7 @@
 					<para>The attributes can be displayed in several ways: as tabs or columns. <literal>Add tabs/Columns</literal> depending on the view that we are consulting.</para>
 					<mediaobject>
 						<imageobject>
-							<imagedata scale="60" align="center" fileref="images/ch06_img009.png"/>
+							<imagedata scalefit="1" width="450" align="center" fileref="images/ch06_img009.png"/>
 						</imageobject>
 						<caption>
 							<para>Attributes</para>
@@ -194,17 +194,6 @@
 				<para>The user can change the order in which the tabs are displayed at any time. To do this drag and drop the tab on the position where you want to put it.</para>
 				<para>This section is not displayed on the Raw view.</para>
 			</note>
-			<mediaobject>
-				<imageobject>
-					<imagedata scalefit="1" align="center" width="450" fileref="images/ch06_img010.png"/>
-				</imageobject>
-				<textobject>
-					<phrase>Filter by time range and tab attributes</phrase>
-				</textobject>
-				<caption>
-					<para>Filter by time range and tab attributes</para>
-				</caption>
-			</mediaobject>
 			<para><emphasis role="bold">View:</emphasis> in this area the data is displayed according to the selected view and type of graphic. When positioning the cursor on any of the points that make up the graph, a dialog box displays in detail the information shown for that instant in time, aggregation and attribute.</para>
 			<mediaobject>
 				<imageobject>
@@ -370,7 +359,7 @@
 			<para>To start this search, simply select the option <literal>Submit Search.</literal></para>
 			<mediaobject>
 				<imageobject>
-					<imagedata scalefit="1" align="center" width="350" fileref="images/ch06_img020.png"/>
+					<imagedata scalefit="1" align="center" width="450" fileref="images/ch06_img020.png"/>
 				</imageobject>
 				<caption>
 					<para>Filtering events: advanced search</para>
@@ -380,7 +369,7 @@
 			<para>To load a saved test you can use View Saved Filters button, selecting the filter and clicking in Add Filter button.</para>
 			<mediaobject>
 				<imageobject>
-					<imagedata scalefit="1" align="center" width="350" fileref="images/ch06_img020_c.png"/>
+					<imagedata scalefit="1" align="center" width="450" fileref="images/ch06_img020_c.png"/>
 				</imageobject>
 				<caption>
 					<para>Filtering events: saving filter</para>
@@ -398,7 +387,7 @@
 					<para>Once the rows are selected, there will be the option to include or exclude the graphical elements, as well as the data table. To go back to include them press the button <keycap>Filter Selected</keycap> located on top of the data table. To exclude them, it's necessary to press the button <keycap>Exclude Selected</keycap> located next to the previous button.</para>
 					<mediaobject>
 						<imageobject>
-							<imagedata scalefit="1" align="center" width="350" fileref="images/ch06_img020_a.png"/>
+							<imagedata scalefit="1" align="center" width="450" fileref="images/ch06_img020_a.png"/>
 						</imageobject>
 						<caption>
 							<para>Include/exclude filter</para>
@@ -417,7 +406,7 @@
 					<para><literal>Exclude:</literal> adds the appropriate filter to exclude the element of the data presented.</para>
 				</listitem>
 				<listitem>
-					<para><literal>Copy to clipboard:</literal> the value of the selected item is copied to the clipboard so that they are available for future use.</para>
+					<para><literal>Copy to clipboard:</literal> the value of the selected item is copied to the clipboard so it is available for future use.</para>
 				</listitem>
 			</itemizedlist>	
 			<mediaobject>
@@ -436,7 +425,7 @@
 		<para><emphasis role="bold">Create object:</emphasis> this allows to put a name and/or description allowing the location of an item more quickly and easily. For example, if we know the machine associated with a particular IP address, this option allows you to rename it for easier identification. </para>
 		<mediaobject>
 			<imageobject>
-				<imagedata scale="60" align="center" fileref="images/ch06_img021.png"/>
+				<imagedata scalefit="1" width="450" align="center" fileref="images/ch06_img021.png"/>
 			</imageobject>
 			<textobject>
 				<phrase>Renaming an IP: Create net object</phrase>
@@ -532,7 +521,7 @@
 		</itemizedlist>
 		<mediaobject>
 			<imageobject>
-				<imagedata scale="60" align="center" fileref="images/ch06_img004.png"/>
+				<imagedata scalefit="1" width="450" align="center" fileref="images/ch06_img004.png"/>
 			</imageobject>
 			<textobject>
 				<phrase>Views</phrase>
@@ -606,7 +595,7 @@
 						<para>When you have reached the limit of granularity at which you can display events, this icon will transform the information:</para>
 						<mediaobject>
 							<imageobject>
-								<imagedata scale="60" align="center" fileref="images/ch06_img026.png"/>
+								<imagedata scalefit="1" width="450" align="center" fileref="images/ch06_img026.png"/>
 							</imageobject>
 							<caption>
 								<para>Timestamp details: event information</para>
@@ -621,6 +610,7 @@
 								<para>Event information</para>
 							</caption>
 						</mediaobject>
+
 					</listitem>
 					<listitem>
 						<para><literal>Create object</literal>: some of the attributes shown in the event information allow the possibility of converting into an Object. This means that these values can add a name and a description allowing the localization of an item more quickly and easily.</para>
@@ -637,45 +627,7 @@
 				<note>
 					<title>Note</title>
 					<para>Remember that the maximum granularity available is 1m.</para>
-				</note>
-				<section>
-					<title>Raw view: Flow information</title>
-					<para>When we get to the maximum amount of granularity available to check the registered events by sensor, we access a screen that will display a tab that includes the detailed information associated with the following parameters:</para>
-					<itemizedlist mark="circle">
-						<listitem>
-							<para>Application</para>
-						</listitem>
-						<listitem>
-							<para>Datalink</para>
-						</listitem>
-						<listitem>
-							<para>Flow</para>
-						</listitem>
-						<listitem>
-							<para>Interface</para>
-						</listitem>
-						<listitem>
-							<para>Location</para>
-						</listitem>
-						<listitem>
-							<para>Network</para>
-						</listitem>
-						<listitem>
-							<para>Transport</para>
-						</listitem>
-					</itemizedlist>
-					<mediaobject>
-						<imageobject>
-							<imagedata scalefit="1" align="center" width="450" fileref="images/ch06_img028b.png"/>
-						</imageobject>
-						<textobject>
-							<phrase>Detailed information about Flow</phrase>	
-						</textobject>
-						<caption>
-							<para>Detailed information about Flow: attributes</para>
-						</caption>
-					</mediaobject>
-				</section>	
+				</note>	
 			</section>
 		</section>
 		<section>	
@@ -822,7 +774,7 @@
 		</note>
 		<mediaobject>
 			<imageobject>
-				<imagedata scale="60" align="center" fileref="images/ch06_img005.png"/>
+				<imagedata scalefit="1" width="450" align="center" fileref="images/ch06_img005.png"/>
 			</imageobject>
 			<textobject>
 				<phrase>Selecting the type of aggregation</phrase>
@@ -989,7 +941,7 @@
 		</mediaobject>
 		<mediaobject>
 			<imageobject>
-				<imagedata scale="60" align="center" fileref="images/ch06_img041.png"/>
+				<imagedata scalefit="1" width="450" align="center" fileref="images/ch06_img041.png"/>
 			</imageobject>
 			<textobject>
 				<phrase>Options: Export to CSV</phrase>

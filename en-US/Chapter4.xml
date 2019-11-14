@@ -12,7 +12,7 @@
 	<para><screen>https://IP-managerAddress</screen></para>
 	<mediaobject>
 		<imageobject>
-			<imagedata scale="60" align="center" fileref="images/ch04_img001.png"/>
+			<imagedata scalefit="1" width="450" align="center" fileref="images/ch04_img001.png"/>
 		</imageobject>
 		<textobject>
 			<phrase>Screen access to the redBorder platform: username and password</phrase>
@@ -107,17 +107,6 @@
 				</caption>
 			</mediaobject>
 			<para><emphasis role="bold">Configuration area</emphasis></para>
-			<mediaobject>
-				<imageobject>
-					<imagedata scale="60" align="center" fileref="images/ch04_img009.png"/>
-				</imageobject>
-				<textobject>
-					<phrase>Menu bar detail: configuration area</phrase>
-				</textobject>
-				<caption>
-					<para>Menu bar detail: configuration area</para>
-				</caption>
-				</mediaobject>
 				<para><emphasis>Search engine:</emphasis> facilitates locating elements/values of the platform according to the search engine term entered by the user.</para>
 				<para><emphasis>Sensors:</emphasis> Displays a list of the added sensors and the organization tree. It also contains global and local policies defined for each domain.</para>
 				<mediaobject>
@@ -146,7 +135,7 @@
 				<para><emphasis>Administrator:</emphasis> this section shows a list of notifications, as well as the different options available for managing users, contextual help of the platform and the safe disconnect button: <literal>Logout.</literal></para>	
 				<mediaobject>
 					<imageobject>
-						<imagedata scale="60" align="center" fileref="images/ch04_img012.png"/>
+						<imagedata scalefit="1" width="450" align="center" fileref="images/ch04_img012.png"/>
 					</imageobject>
 					<caption>
 						<para>Available options in Administrator</para>
@@ -155,7 +144,7 @@
 				<para><emphasis>Show Help:</emphasis> Enabling this option will activate a pop-up window providing help during the Manager administrator navigation. It is identified with a question mark.</para>
 				<mediaobject>
 				<imageobject>
-					<imagedata scale="60" align="center" fileref="images/ch04_img013.png"/>
+					<imagedata scalefit="1" width="450" align="center" fileref="images/ch04_img013.png"/>
 				</imageobject>
 				<textobject>
 					<phrase>Help activation</phrase>
