@@ -14,7 +14,6 @@
 	<section>
 		<title>Modules</title>
 		<para>Redborder has a module for each main functionality. Each one uses different technologies and has an independent interface. All modules need a sensor that provides the module the data.
-
 		</para>
 		<mediaobject>
 			<imageobject>
@@ -186,7 +185,7 @@
 		</section>
 		<section>
 			<title>Body of the screen: filtering by time range, attribute tabs and views</title>
-			<para><emphasis role="bold">Filter by time range:</emphasis> direct access to filtered events based on a period of time. Last 1h, 2h, 3h, 12h, 24h, last week, last month, custom filter....</para>
+			<para><emphasis role="bold">Filter by time range:</emphasis> direct access to filtered events based on a period of time. Last 1h, 2h, 3h, 12h, 24h, last week, last month, custom filter...</para>
 			<para>There is the possibility to select a different date range to those offered by default. Depending on user requirements, you can make a selection of personalized time through option <literal>Custom</literal>. Later it specifies the procedure to follow to perform a customized temporary filter.</para>
 			<para><emphasis role="bold">Attribute tabs:</emphasis> classified network traffic information by attributes. Navigating through each of the tabs we can know in detail the values associated with the attributes that have been selected.</para>
 			<note>

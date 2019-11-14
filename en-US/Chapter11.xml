@@ -87,15 +87,7 @@
 					<caption>
 						<para>Import/Export tree from Options menu</para>
 					</caption>
-				</mediaobject>	
-				<mediaobject>
-					<imageobject>
-						<imagedata scalefit="1" align="center" width="450" fileref="images/ch11_img017.png"/>
-					</imageobject>
-					<caption>
-						<para>Import/Export tree through Edit icon (domain level)</para>
-					</caption>
-				</mediaobject>	
+				</mediaobject>		
 			</listitem>
 			<listitem><para>Export Tree</para>
 				<para>This option allows to export a tree and is within easy reach for other applications. User will download a
@@ -112,15 +104,7 @@
 					<caption>
 						<para>Export Tree</para>
 					</caption>
-				</mediaobject>	
-				<mediaobject>
-					<imageobject>
-						<imagedata scalefit="1" align="center" width="450" fileref="images/ch11_img017.png"/>
-					</imageobject>
-					<caption>
-						<para>Import/Export tree through Edit icon (domain level)</para>
-					</caption>
-				</mediaobject>		
+				</mediaobject>			
 			</listitem>
 			<listitem><para>Wakeup Chef Cluster</para></listitem>
 			<listitem><para>Cluster data</para>
@@ -272,7 +256,7 @@
 					<para>Note that to create IPS sensors you must do that through the registration of the sensors in the
 					Manager in the Manager Installation process. From this section you can edit and overwrite the
 					parameters that they have inherited from <literal>Tools->General Settings</literal></para>
-					<para>The sensors of the rest of the Apps can be created from <literal>Sensors section.</literal></para>
+					<para>The sensors of the rest of the Apps can be created from <literal>Sensors section</literal>.</para>
 				</note>		
 				<para><emphasis role="bold">Configuration inheritance</emphasis></para>
 				<para>In <emphasis role="bold">Tools</emphasis> section we find General Settings option from which the user can define general parameters of the Manager and Apps.</para>
@@ -482,13 +466,13 @@
 			</caption>
 		</mediaobject>
 		<para>From this moment, the rest of the information associated with the domain will need to be modified by
-		clicking the edit button to the right of each domain in the tree view, or <literal>Access Points</literal> and selecting the option <literal>Edit.</literal></para>
+		clicking the edit button to the right of each domain in the tree view, or <literal>Access Points</literal> and selecting the option <literal>Edit</literal>.</para>
 	</section>
 	<section>
 		<title>Edit a domain</title>
 		<para>From this interface you can modify the settings of an existing domain, and enter the information of a newly created domain.</para>
 		<para>To access this screen the user must click the edit button to the right of the domain you want to edit from the tree view or <literal>Access Points</literal> 
-		and select the option<literal>Edit.</literal></para>
+		and select the option<literal>Edit</literal>.</para>
 		<mediaobject>
 			<imageobject>
 				<imagedata scalefit="1" align="center" width="450" fileref="images/ch11_img023.png"/>
@@ -505,7 +489,7 @@
 			</listitem>
 			<listitem>
 				<para><emphasis role="bold">Servers:</emphasis> In this section the user can define the configuration of the Proxy and Syslog servers. All
-				values shown are inherited by default. Overwrite if necessary</para>	
+				values shown are inherited by default. Overwrite if necessary.</para>	
 			</listitem>
 			<listitem>
 				<para><emphasis role="bold">Location:</emphasis> Locate the sensor/domain on a world map. This location will be displayed in the view
@@ -568,7 +552,7 @@
 		<section>
 		<title>Monitor device</title>
 		<para>The monitor device sensor is one of the latest developments that comes with the 80-6 version of redBorder. It can be used to monitor any device with an ip address that supports snmp, redfish or ipmi. When creating or updating the monitor device sensor the credentials for the corresponding protocols needs to be defined. In case no community string for snmp is defined, the default ‘public’ will be used.</para>
-		<para>Once the user are logged in into the manager dashboard, the sensor can be added using the menu <literal>‘Sensors > Add sensor’</literal> and then clicking on <literal>‘Monitor device’.</literal></para>
+		<para>Once the user are logged in into the manager dashboard, the sensor can be added using the menu <literal>‘Sensors > Add sensor’</literal> and then clicking on <literal>‘Monitor device’</literal>.</para>
 		<para>It can be prompted for some required and optional parameters.</para>
 		<itemizedlist mark="bullet">
 			<listitem>
