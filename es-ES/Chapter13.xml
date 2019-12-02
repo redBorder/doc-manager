@@ -3,895 +3,528 @@
 <!ENTITY % BOOK_ENTITIES SYSTEM "manual.ent">
 <!ENTITY PRODUCT "Documentation">
 <!ENTITY BOOKID "manual">
-<!ENTITY YEAR "2015">
+<!ENTITY YEAR "2019">
 <!ENTITY HOLDER "Eneo Tecnología S.L. |">
 ]>
 <chapter>
-	<title>Herramientas y Administración</title>
-	<para>En el margen derecho de la barra de menú, junto al menú <literal>Sensors</literal> encontramos la sección de "herramientas" o <literal>Tools</literal> en la que se encuentran las opciones para la configuración de la plataforma web redborder.</para>
+	<title>Herramientas y administración</title>
+	<para>En el margen derecho de la barra de menú, cerca de <literal>Sensores</literal> podemos encontrar la sección <literal>Herramientas</literal> donde puede encontrar las opciones para la configuración de la plataforma Redborder.</para>
 	<mediaobject>
 		<imageobject>
-			<imagedata scalefit="1" align="center" width="100" fileref="images/ch13_img001.png"/>
+			<imagedata scalefit="1" width="450" align="center" fileref="images/ch13_img001.png"/>
 		</imageobject>
 		<caption>
-			<para><literal>Tools:</literal> opciones disponibles para la configuración de la plataforma redborder</para>
+			<para><literal>Herramientas:</literal> opciones disponibles para configurar la plataforma Redborder </para>
 		</caption>
 	</mediaobject>
-	<para>Desde este menú es posible establecer las condiciones que han de cumplirse para que el usuario sea notificado mediante una alarma, realizar un seguimiento de la actividad de los usuarios de la plataforma, dar de alta a nuevos usuarios o gestionar la configuración del cluster, sensores y servidores, entre otras acciones.</para>
-	<para>Estas son las opciones que se encuentran disponibles en el menú herramientas:</para>
+	<para>Desde este menú puede establecer las condiciones que deben cumplirse para que el usuario sea notificado por una alarma, realizar un seguimiento de las actividades de los usuarios de la plataforma, registrar nuevos usuarios o gestionar la configuración del clúster, sensores y servidores, entre otras acciones.</para>
+	<para>Estas son las opciones que se encuentran en el menú de herramientas:</para>
 	<itemizedlist mark="bullet">
 		<listitem>
-			<para>Alarmas <literal>(Alarms)</literal>: creación de condiciones para la activación de notificaciónes al usuario.</para>
+			<para><literal>Alarmas</literal>: establece las condiciones para activar una notificación de usuario.</para>
 		</listitem>
 		<listitem>
-			<para>Auditoría <literal>(Audits)</literal>: permite realizar el seguimiento de la actividad de los usuarios mediante log.</para>
+			<para><literal>Auditorías</literal>: permite el seguimiento de la actividad del usuario mediante el registro.</para>
 		</listitem>
 		<listitem>
-			<para>Configuración del cluster <literal>(Cluster Settings)</literal>: nos muestra la configuración que se ha generado para el cluster en el proceso de instalación del Manager.</para>
+			<para><literal>Configuración del clúster</literal>: nos muestra la configuración establecida para el clúster en el proceso de instalación del Manager.</para>
 		</listitem>
 		<listitem>
-			<para>Configuración General <literal>(General Settings)</literal>: el usuario puede establecer la configuración de los parámetros generales del Manager, así como de las Apps que tenga registradas. </para>
+			<para><literal>Configuración General</literal>: el usuario puede establecer la configuración general de parámetros del Manager, así como las Aplicaciones que ha registrado.</para>
 		</listitem>
 		<listitem>
-			<para>Configuración de Malware <literal>(Malware Settings)</literal>: panel de configuración general de los parámetros relacionados con Malware.</para>
+			<para><literal>Reglas del Motor de Correlación</literal>: proporciona la lista de las reglas del cep. Aquí también podemos verificar las reglas existentes y crear otras nuevas.</para>
 		</listitem>
 		<listitem>
-			<para>Licencias <literal>(Licenses)</literal>: listado de las licencias bajo las que funcionan los diferentes módulos de la plataforma redborder.</para>
+			<para><literal>Categorías de Monitor</literal>: muestra las categorías actuales que se utilizan desde snmp y permite la creación de otras nuevas.</para>
 		</listitem>
 		<listitem>
-			<para>Fuentes de actualización <literal>(Lookup Sources)</literal>: listado de las URL de los servicios web de consulta de datos de red.</para>
+			<para><literal>Licencias</literal>: lista de las licencias bajo las que operan los diferentes módulos de la plataforma Redborder.</para>
 		</listitem>
 		<listitem>
-			<para>Objetos <literal>(Objects)</literal>: objetos de red definidos en la plataforma redborder.</para>
+			<para><literal>Fuentes de búsqueda</literal>: lista de URLs de servicios web de consulta de datos de red.</para>
 		</listitem>
 		<listitem>
-			<para>Superposición de mapas <literal>(Overlay Maps):</literal> imágenes que se pueden superponer sobre un mapa posicionadas en la latitud y logitud que se indique.</para>
+			<para><literal>Objetos</literal>: objetos de red definidos en la plataforma Redborder.</para>
 		</listitem>
 		<listitem>
-			<para>Alertas de la Plataforma <literal>(Platform Alerts):</literal> panel para la creación y mantenimiento de alertas de usuarios de la plataforma web.</para>
+			<para><literal>Mapas superpuestos</literal>: imágenes que pueden superponerse en un mapa con la latitud y la longitud indicadas.</para>
 		</listitem>
 		<listitem>
-			<para>Versiones de reglas <literal>(Rules Versions):</literal> panel de gestión de grupos de reglas de snort.</para>
+			<para><literal>Alertas de Plataforma</literal>: muestra la alerta de plataforma actual a cada usuario.</para>
 		</listitem>
 		<listitem>
-			<para>Centro de Soporte <literal>(Support Center):</literal> panel de acceso a la web de soporte de redborder.</para>
+			<para><literal>Version de Reglas</literal>: lista de las licencias bajo las que operan los diferentes módulos de la plataforma Redborder.</para>
 		</listitem>
 		<listitem>
-			<para>Usuarios <literal>(Users)</literal>: gestión de perfil y permisos de los usuarios.</para>
+			<para><literal>Centro de Soporte</literal>: Acceso directo al centro de soporte. Es necesario estar registrado en la página de soporte.</para>
 		</listitem>
 		<listitem>
-			<para>Politicas de Yara <literal>(Yara Policies)</literal>: panel de gestión de políticas de reglas para el motor Yara.</para>
+			<para><literal>Usuarios</literal>: gestión de perfiles y permisos de usuario.</para>
 		</listitem>
 		<listitem>
-			<para>Cola de trabajos <literal>(Worker and Job Queue)</literal> panel de gestión de tareas de la plataforma redborder</para>
+			<para><literal>Worker y cola de trabajo</literal>: mostrar los workers y trabajos activos y almacenados actuales en el Manager de Redborder.</para>
 		</listitem>
 	</itemizedlist>
 	<section>
 		<title>Alarmas</title>
-		<para>Una alarma es una notificación que se activa cuando se cumple una o más condiciones establecidas por el usuario.</para>
-		<para>Al acceder a esta opción se visualizan el listado de alarmas que se han dado de alta.</para>
-		<para><emphasis>Crear nueva alarma</emphasis></para>
-		<para>Haciendo clic en el botón <literal>+New Alarm</literal> accedemos al formulario en el que se establecerán las condiciones que debe cumplir la alarma para activar una notificación y el grado de severidad definida para dicha alarma.</para>
-		<para>Este formulario está compuesto por tres secciones:</para>
-		<orderedlist numeration="arabic">
-			<listitem>
-				<para>Opciones generales</para>
-			</listitem>
-			<listitem>
-				<para>Notificaciones</para>
-			</listitem>
-			<listitem>
-				<para>Condiciones</para>
-			</listitem>
-		</orderedlist>
+		<para>Una alarma es una notificación que se activa cuando el usuario cumple una o más condiciones.</para>
+		<para>Al acceder a esta opción, se muestra la lista de alarmas que se han registrado.</para>
 		<mediaobject>
 			<imageobject>
-				<imagedata scalefit="1" align="center" width="450" fileref="images/ch13_img003.png"/>
+				<imagedata scale="30" align="center" fileref="images/ch13_img002.png"/>
 			</imageobject>
 			<caption>
-				<para>Crear una nueva alarma</para>
+				<para>Lista de alarmas activas</para>
 			</caption>
 		</mediaobject>
-		<para><emphasis role="bold">Opciones generales</emphasis></para>
-		<para>En este apartado el usuario deberá completar los siguientes datos:</para>
-		<itemizedlist mark="bullet">
-			<listitem>
-				<para>Nombre (<literal>Name</literal>): nombre de la alarma.</para>
-			</listitem>
-			<listitem>
-				<para>Intervalo de tiempo (<literal>Time window:</literal>) intervalo de tiempo en el que se debe superar por exceso o por defecto los valores indicados en 
-				<literal>upper/botton limit</literal> para que la alarma se active.</para>
-			</listitem>
-			<listitem>
-				<para> Notificar cada (<literal>Notify every:</literal>): fijar secuencia de tiempo para la notificación.</para>
-			</listitem>
-			<listitem>
-				<para> Límite por exceso/defecto(<literal>Upper/ Bottom limits:</literal>) indica el número de eventos (máximos/mínimos)
-				 que deben cumplir las condiciones de la alarma para que se active la notificación.</para>
-			</listitem>
-			<listitem>
-				<para>Tipo de producto (<literal>Product type</literal>): seleccionar el tipo de App/elemento para el que se ha definido la alarma. <footnote><para>El usuario visualizará en este campo aquellas opciones que se incluyan en su licencia.</para></footnote></para>
-				<para>-Flow</para>
-				<para>-IPS</para>
-				<para>-Location</para>
-				<para>-Malware</para>
-				<para>-Monitor</para>
-				<para>-Social</para>
-			</listitem>
-			<listitem>
-				<para> Severidad (<literal>Severity:</literal>) el usuario debe definir el nivel de severidad que se le otorga a la alarma. Dependiendo de las condiciones que haya definido la alarma implicará un riesgo muy bajo, bajo, medio, alto, muy alto o crítico. Esta graduación de la severidad viene indicada también por una escala de colores. </para>
-			</listitem>
-		</itemizedlist>
-		<para><emphasis role="bold">Notificaciones</emphasis></para>
-		<para>En este apartado, el usuario seleccionará el medio por el cual quiere que la alarma le sea notificada ei introducirá los datos correspondientes al método elegido. Activar el check de la opción que desea para la notificación:</para>
-		<itemizedlist mark="bullet">
-			<listitem>
-				<para> Notificar a través de Syslog (<literal>Notify to Syslog</literal>)</para>
-			</listitem>
-			<listitem>
-				<para> Notificar mediante email (<literal>Notify to email</literal>)</para>
-			</listitem>
-			<listitem>
-				<para>Notificar mediante móvil (<literal>Notify to mobile</literal>)</para>
-			</listitem>
-		</itemizedlist>
-		<para><emphasis role="bold">Condiciones (<literal>Conditions</literal>)</emphasis></para>
-		<para> Se trata de filtros que se añaden para activar una alarma.</para>
-		<mediaobject>
-			<imageobject>
-				<imagedata scalefit="1" align="center" width="450" fileref="images/ch13_img004.png"/>
-			</imageobject>
-			<caption>
-				<para>Filtros para la creación de condiciones para una alarma</para>
-			</caption>
-		</mediaobject>
+		<section>
+			<title>Crear una nueva alarma</title>
+			<para>Haciendo click en el botón <literal>+Nueva Alarma</literal> accedemos al formulario, en el que se establecerán las condiciones que debe cumplir la alarma para activar una notificación, y el grado de gravedad definido para esa alarma.</para>
+			<para>Este formulario consta de tres secciones.:</para>
+			<orderedlist numeration="arabic">
+				<listitem>
+					<para>Configuración General</para>
+				</listitem>
+				<listitem>
+					<para>Notificaciones</para>
+				</listitem>
+				<listitem>
+					<para>Condiciones</para>
+				</listitem>
+			</orderedlist>
+			<mediaobject>
+				<imageobject>
+					<imagedata scalefit="1" width="450" align="center" fileref="images/ch06_img013.png"/>
+				</imageobject>
+				<caption>
+					<para>Crear una nueva alarma</para>
+				</caption>
+			</mediaobject>
+			<para><emphasis role="bold">Configuración General</emphasis></para>
+			<para>En esta sección, el usuario debe completar los siguientes datos:</para>
+			<itemizedlist mark="bullet">
+				<listitem>
+					<para><literal>Nombre</literal>: nombre de la alarma.</para>
+				</listitem>
+				<listitem>
+					<para><literal>Ventana de tiempo</literal>: intervalo de tiempo que debe superarse por exceso o valores predeterminados dados en <literal>límite superior / inferior</literal> para que la alarma esté activa.</para>
+				</listitem>
+				<listitem>
+					<para><literal>Notificar a cada</literal>: establece la secuencia de tiempo para notificación.</para>
+				</listitem>
+				<listitem>
+					<para><literal>Límites superior / inferior</literal>: indica el número de eventos (máximo / mínimo) que deben cumplir las condiciones de la alarma para activar la notificación.</para>
+				</listitem>
+				<listitem>
+					<para><literal>Tipo de elemento</literal>: seleccione el tipo de aplicación / elemento para el que se ha definido la alarma. <footnote><para>El usuario verá en este campo las opciones que se incluyen en su licencia.</para></footnote></para>
+					<para>-Trafico</para>
+					<para>-Intrusión</para>
+					<para>-Monitor</para>
+					<para>-Social</para>
+					<para>-Vault</para>
+				</listitem>
+				<listitem>
+					<para><literal>Gravedad:</literal> el usuario debe definir el nivel de gravedad que se le da a la alarma. Dependiendo de las condiciones que haya definido para la alarma, implicará un riesgo muy bajo, bajo, medio, alto, muy alto o crítico. Esta gradación de gravedad también se indica en una escala de colores.</para>
+				</listitem>
+			</itemizedlist>
+			<para><emphasis role="bold">Notificaciones</emphasis></para>
+			<para>En esta sección, el usuario seleccionará los medios por los cuales se notifica la alarma e introducirá los datos para el método elegido. Active la opción de verificación que desea para la notificación:</para>
+			<itemizedlist mark="bullet">
+				<listitem>
+					<para><literal>Notificar por Syslog</literal>: marque esto para exportar las notificaciones a un servidor syslog externo.</para>
+				</listitem>
+				<listitem>
+					<para><literal>Notificar por email</literal>: marque esto para recibir un correo electrónico cuando se active una alarma.</para>
+				</listitem>
+			</itemizedlist>
+		</section>
 	</section>
 	<section>
-		<title>Auditorías</title>
-		<para>En la opción <literal>Audits</literal> se muestra un listado de registros de actividad de los usuarios en la plataforma redborder ordenados, por defecto, de manera cronológica. 
-		No obstante, el usuario puede ordenar la tabla de manera ascendente o descendente por cada una de las columnas. 
-		Puede utilizar la caja de búsqueda que se encuentra en el margen superior derecho para realizar un filtrado de la información que desee consultar. Las columnas que se muestran en esta tabla son la siguientes: </para>
+		<title>Auditorias</title>
+		<para>La opción <literal>Auditorias</literal>Esta opción muestra una lista de la actividad del usuario registrada en la plataforma Redborder, ordenada cronológicamente, de manera predeterminada. Sin embargo, el usuario puede ordenar la tabla de forma ascendente o descendente para cada una de las columnas. Puede usar el cuadro de búsqueda ubicado en la parte superior para filtrar la información que desea ver. Las columnas que se muestran en esta tabla son las siguientes:</para>
 		<itemizedlist>
 			<listitem>
-				<para>Usuario (<literal>User:</literal>) usuario que ha realizado la acción.</para>
+				<para><literal>Usuario</literal>: usuario que realizó la acción</para>
 			</listitem>
 			<listitem>
-				<para>Recurso (<literal>Resource:</literal>) elemento afectado. </para>
+				<para><literal>Recurso</literal>: elemento que se ha creado, modificado o eliminado.</para>
 			</listitem>
 			<listitem>
-				<para>Acción (<literal>Action:</literal>) acción que se ha llevado a cabo (creación, edición, eliminación).</para>
+				<para><literal>Acción</literal>: acción que se ha llevado a cabo (creación, edición, eliminación).</para>
 			</listitem>
 			<listitem>
-				<para>Mensaje (<literal>Message:</literal>) breve descripción de lo que se ha auditado.</para>
+				<para><literal>Mensaje</literal>: breve descripción de lo que ha sido auditado.</para>
 			</listitem>
 			<listitem>
-				<para>Fecha <literal>Timestamp:</literal> fecha y hora del registro de actividad.</para>
+				<para><literal>Timestamp</literal>: fecha y hora del registro de actividad.</para>
 			</listitem>
 		</itemizedlist>
 		<mediaobject>
 			<imageobject>
-				<imagedata scalefit="1" align="center" width="450" fileref="images/ch13_img004a.png"/>
+				<imagedata scale="30" align="center" fileref="images/ch13_img004.png"/>
 			</imageobject>
 			<caption>
-				<para><literal>Audits:</literal> registro de la actividad de usuario</para>
+				<para>Auditorias: registro de actividad del usuario</para>
 			</caption>
 		</mediaobject>
 	</section>
 	<section>
-		<title>Configuración del cluster</title>
-		<para>La opción <literal>Cluster Settings</literal> nos permite comprobar el estado y configuraciones del cluster, fijadas en el proceso de creación del cluster durante el proceso de instalación del Manager.</para>
-		<para>Es posible modificar estos valores desbloqueando la edición mediante el botón <literal>Unlock.</literal> La información que se puede modificar corresponde a los siguientes parámetros:</para>
+		<title>Configuración del clúster</title>
+		<para>La opción <literal>Configuración del clúster</literal> nos permite verificar el estado y la configuración del clúster, establecer el proceso de creación del clúster durante el proceso de instalación del Manager.</para>
+		<para>Puede modificar estos valores editando a través del botón de desbloqueo <literal> Desbloquear.</literal> La información se puede cambiar con los siguientes parámetros:</para>
 		<itemizedlist mark="bullet">
 			<listitem>
-				<para>Estado del cluster <literal>(Cluster status)</literal>: muestra un listado de los nodos que pertenecen al cluster.</para>
-				<mediaobject>
-					<imageobject>
-						<imagedata scalefit="1" align="center" width="450" fileref="images/ch13_img005.png"/>
-					</imageobject>
-					<caption>
-						<para>Cluster settings: estado y configuración del cluster</para>
-					</caption>
-				</mediaobject>
-			</listitem>	
-			<listitem>
-				<para>Direcciones Ip virtuales <literal>(Virtual IP Addresses)</literal>: panel de gestión de las direcciones IP virtuales del cluster.</para>
-				<mediaobject>
-					<imageobject>
-						<imagedata scalefit="1" align="center" width="450" fileref="images/ch13_img017.png"/>
-					</imageobject>
-					<caption>
-						<para>Virtual IP Addresses: estado y configuración del cluster</para>
-					</caption>
-				</mediaobject>
+				<para>Estado del clúster</para>
 			</listitem>
 			<listitem>
-				<para>Nodos de históricos <literal>(Historical Nodes)</literal>: muestra los nodos de los segmentos historicos. Permite gestionar la configuración de los nodos históricos dependiendo de si requiere una
-				configuración por defecto en el nodo o por el contrario es de tipo hot.</para>
-				<mediaobject>
-					<imageobject>
-						<imagedata scalefit="1" align="center" width="450" fileref="images/ch13_img018.png"/>
-					</imageobject>
-					<caption>
-						<para>Historical Nodes: configuración de los nodos de históricos</para>
-					</caption>
-				</mediaobject>
+				<para>Direcciones IP virtuales</para>
 			</listitem>
 			<listitem>
-				<para>Reglas de históricos <literal>(Historical Rules)</literal>: panel de definición de los datos que se cargan en los nodos de historicos.</para>
-				<mediaobject>
-					<imageobject>
-						<imagedata scalefit="1" align="center" width="450" fileref="images/ch13_img019.png"/>
-					</imageobject>
-					<caption>
-						<para>Historical Rules: configuración de los namespaces pertenecientes a los históricos</para>
-					</caption>
-				</mediaobject>
+				<para>Histórico de Nodos</para>
 			</listitem>
 			<listitem>
-				<para>Sincronización del cluster <literal>(Cluster Synchronization)</literal>: sirve para sincronización de los datos entre nodos.</para>
-				<mediaobject>
-					<imageobject>
-						<imagedata scalefit="1" align="center" width="450" fileref="images/ch13_img020.png"/>
-					</imageobject>
-					<caption>
-						<para>Cluster Synchronization: panel de sincronización de nodos.</para>
-					</caption>
-				</mediaobject>
+				<para>Histórico de Reglas</para>
 			</listitem>
-		</itemizedlist>	
-	</section>
-	<section>
-		<title>Configuración general</title>
-		<para>La opción <literal>General Settings</literal> nos muestra una interfaz cuya edición va a ser determinante tanto para la configuración de la plataforma como de la infraestructura de red, 
-		tal y como se mencionó en (<literal>Sensors -> Vistas -> Vista árbol</literal>)</para>
+		</itemizedlist>
 		<mediaobject>
 			<imageobject>
-				<imagedata scalefit="1" align="center" width="450" fileref="images/ch13_img006.png"/>
+				<imagedata scale="30" align="center" fileref="images/ch13_img005.png"/>
 			</imageobject>
 			<caption>
-				<para>General settings: configuración de opciones generales del Manager redborder</para>
+				<para>Configuración del clúster: Estado y configuración del clúster</para>
+			</caption>
+		</mediaobject>	
+	</section>
+	<section>
+		<title>Configuración General</title>
+		<para>La opción <literal>Configuración General</literal> nos muestra una interfaz cuya edición se determinará tanto para la configuración de la plataforma como para la infraestructura de la red, como se explicó en el capítulo sobre sensores.</para>
+		<mediaobject>
+			<imageobject>
+				<imagedata scale="30" align="center" fileref="images/ch13_img006.png"/>
+			</imageobject>
+			<caption>
+				<para>Configuración General: Configuración general del Manager de Redborder</para>
 			</caption>
 		</mediaobject>	
 		<note>
 			<title>Nota</title>
-			<para>Para visualizar todos los apartados se aconseja habilitar la opción <literal>Show Advanced Options</literal> situada en el margen superior derecho de la pantalla de configuración general.</para>
-			<para>En esta pantalla se pueden editar los parámetros tanto del Manager como de las Apps que hayan sido registradas en él. Por tanto, los apartados que se muestran dependerán de las Apps que se encuentren integradas en la plataforma redborder.</para>
+			<para>Para ver todas las secciones, se recomienda habilitar la opción <literal>Mostrar opciones avanzadas</literal> ubicado en la parte superior derecha de la pantalla en la configuración general.</para>
+			<para>En esta pantalla puede editar los parámetros tanto del Manager como de las Aplicaciones que se han registrado. Por lo tanto, las secciones que se muestran dependerán de las aplicaciones integradas en la plataforma Redborder.</para>
 		</note>
 		<mediaobject>
 			<imageobject>
-				<imagedata scalefit="1" align="center" width="450" fileref="images/ch13_img006a.png"/>
+				<imagedata scale="30" align="center" fileref="images/ch13_img008.png"/>
 			</imageobject>
 			<caption>
-				<para>General settings: opciones avanzadas</para>
+				<para>Configuración general: opciones avanzadas</para>
 			</caption>
 		</mediaobject>	
-		<para>Para realizar una configuración básica del Manager el usuario podrá editar parámetros generales, características de las Apps, configuración de servidores, redes, rutas y geolocalización de las IPs. </para>
-		<para><emphasis role="bold">Parámetros generales</emphasis></para>
-			<para>En este apartado el usuario puede modificar los siguientes elementos:</para>
-			<itemizedlist mark="circle">
-				<listitem>
-					<para>Nombre de la compañía (<literal>Company name</literal>)</para>
-				</listitem>
-				<listitem>
-					<para>email de la compañía (<literal>Company email</literal>)</para>
-				</listitem>
-				<listitem>
-					<para>Tiempo de recarga automática de los dashboards (en segundos) (<literal>Autoreload dashboard time (seconds)</literal>)</para>
-				</listitem>
-				<listitem>
-					<para>Tiempo de recarga automática para la vista Raw (<literal>Autoreload raw time (seconds)</literal>)</para>
-				</listitem>
-				<listitem>
-					<para>URL de consulta de las reglas (<literal>Signature Lookup url</literal>)</para>
-				</listitem>
-				<listitem>
-					<para>Periodicidad de actualización de las reglas (<literal>Rule Update Job Periodicity</literal>)</para>
-				</listitem>
-				<listitem>
-					<para>Tiempo de actualización de las reglas (<literal>Rule Update Job Periodicity</literal>)</para>
-				</listitem>
-			</itemizedlist>
-			<mediaobject>
-				<imageobject>
-					<imagedata scalefit="1" align="center" width="450" fileref="images/ch13_img006.png"/>
-				</imageobject>
-				<caption>
-					<para>General settings: edición de parámetros generales</para>
-				</caption>
-			</mediaobject>
-			<important>
-				<title>Importante</title>
-				<para>Todos los parámetros que se definen en esta interfaz son heredados por aquellos elementos que se encuentran en niveles inferiores en situación de dependecnia (dominios, sensores). Para modificar esta información, el usuario deberá sobreescribirla o editarla tal y como se ha descrito en el apartado destinado a la configuración y edición de los sensores del capítulo <literal>Sensors.</literal></para>
-			</important>	
-		<para><emphasis role="bold">IPS/IDS Settings</emphasis></para>
-			<para>En este apartado el usuario puede modificar los siguientes elementos:</para>
-			<itemizedlist mark="circle">
-				<listitem>
-					<para>Modo por defecto de funcionamiento del sensor <literal>(Default Sensor Mode)</literal>: modo de funcionamiento por defecto de los sensores IDS/IPS que se agregan al sistema.</para>
-				</listitem>
-				<listitem>
-					<para>Bypass controlado por snort <literal>(Default Bypass controlled by Snort)</literal></para>
-				</listitem>
-				<listitem>
-					<para><literal>PF_RING Watermark</literal>: Indica el número mínimo de paquetes entrantes para la función poll</para>
-				</listitem>
-				<listitem>
-					<para><literal>Threshold Count</literal>: Número máximo de ocurrencias en un rango de tiempo determinado para que un evento sea enviado.</para>
-				</listitem>
-				<listitem>
-					<para><literal>PF_RING Clustermode</literal>: Divide el tráfico entrante en varios anillos.</para>
-				</listitem>
-				<listitem>
-					<para><literal>Threshold Seconds</literal>: Tiempo mínimo (en segundos) que tiene que pasar para que un evento sea enviado.</para>
-				</listitem>
-				<listitem>
-					<para><literal>Best Effort Configuration</literal>: en esta sección podemos gestionar los parámetros de configuración best effort. Tenemos 2 parámetros para ello: PF_RING Best Effort y PF_RING Best Effort Min Slots</para>
-				</listitem>
-				<listitem>
-					<para><literal>PFSoftware Bypass Configuration</literal>: en esta sección podemos configurar el perfil de funcionamiento bypass mediante el parámetro Soft Bypass Profile.</para>
-				</listitem>
-			</itemizedlist>
-			<mediaobject>
-				<imageobject>
-					<imagedata scalefit="1" align="center" width="450" fileref="images/ch13_img021.png"/>
-				</imageobject>
-				<caption>
-					<para>General Settings: IPS/IDS Settings</para>
-				</caption>
-			</mediaobject>
+		<para>TPara realizar una configuración básica en Manager, el usuario puede editar parámetros generales, características de las aplicaciones, configuración del servidor, red, rutas y geolocalización de las IPs. </para>
+		<para><emphasis role="bold">Parametros generales</emphasis></para>
+		<para>En esta sección, el usuario puede cambiar los siguientes elementos:</para>
+		<itemizedlist mark="circle">
+			<listitem>
+				<para><literal> Company name</literal>: Nombre de la compañía que usa Redborder</para>
+			</listitem>
+			<listitem>
+				<para><literal>Correo electrónico de la empresa</literal>: Correo electrónico de la empresa. Se utilizará como remitente de informes y gestión de licencias.</para>
+			</listitem>
+			<listitem>
+				<para><literal>URL de la Web</literal>: Interfaz URL</para>
+			</listitem>
+			<listitem>
+				<para><literal>Tiempo de refresco del dashboard</literal>: Periodo del refresco del dashboard en segundos</para>
+			</listitem>
+			<listitem>
+				<para><literal>Tiempo bruto de recarga automática</literal>: Periodo de actualización para la interfaz en segundos</para>
+			</listitem>
+			<listitem>
+				<para><literal>Periodicidad de regla de actualización de trabajos</literal>: Periodicidad para actualizar las Reglas</para>
+			</listitem>
+			<listitem>
+				<para><literal>Hora de actualización de reglas</literal> Hora UTC en que se ejecutará el trabajo de actualización de reglas</para>
+			</listitem>
+		</itemizedlist>
+		<mediaobject>
+			<imageobject>
+				<imagedata scale="30" align="center" fileref="images/ch13_img006.png"/>
+			</imageobject>
+			<caption>
+				<para>Configuración general: edición de parámetros generales</para>
+			</caption>
+		</mediaobject>
+		<important>
+			<title>Importante</title>
+			<para>Todos los parámetros definidos en esta interfaz son heredados por aquellos elementos que se encuentran en niveles inferiores en un estado dependiente (dominios, sensores). Para modificar esta información, el usuario debe escribirla o editarla, como se describe en el capítulo sobre edición de sensores y configuración <literal>Sensores.</literal> </para>
+		</important>	
+		<para><emphasis role="bold">Ajustes IPS/IDS</emphasis></para>
+		<para>Aquí podemos establecer en Redborder la configuración y configuración física de IPS / IDS.</para>
+		<mediaobject>
+			<imageobject>
+				<imagedata scalefit="1" width="450" align="center" fileref="images/ch13_img009_a.png"/>
+			</imageobject>
+			<caption>
+				<para>Configuración general: Ajustes IPS/IDS</para>
+			</caption>
+		</mediaobject>
+		<para><emphasis role="bold">Certificados HTTP SSL</emphasis></para>
+		<para>Permite establecer un certificado SSL para comunicaciones seguras.</para>
+		<mediaobject>
+			<imageobject>
+				<imagedata scalefit="1" width="450" align="center" fileref="images/ch13_img009_b.png"/>
+			</imageobject>
+			<caption>
+				<para>Configuración general: Ajustes IPS/IDS</para>
+			</caption>
+		</mediaobject>
 		<para><emphasis role="bold">Servers</emphasis></para>
-			<para>Configuración de servidores MTA, NTP y habilitación de la configuración del proxy.</para>
-			<note>
-				<title>Nota</title>
-			<para>Un ejemplo de cómo realizar la configuración de los servidores se encuentra en el capítulo 11, en el apartado "Editar sensor y/o dominio."</para>
-			</note>
-			<itemizedlist mark="circle">
-				<listitem>
-					<para>mServidor MTA relay <literal>(MTA relay host)</literal></para>
-				</listitem>
-				<listitem>
-					<para>Servidores NTP <literal>(NTP servers)</literal></para>
-				</listitem>
-			</itemizedlist>
-			<mediaobject>
-				<imageobject>
-					<imagedata scalefit="1" align="center" width="450" fileref="images/ch13_img022.png"/>
-				</imageobject>
-				<caption>
-					<para>General Settings: servers</para>
-				</caption>
-			</mediaobject>
-		<para><emphasis role="bold">Trap Servers</emphasis></para>
-			<para>Este apartado permite activar las conexiones SNMP. El usuario debe indicar la IP y la comunidad a la que redborder debe conectarse.</para>
-			<itemizedlist mark="circle">
-				<listitem>
-					<para><emphasis role="bold">Añadir Trap Server:</emphasis> Es posible añadir un nuevo <literal>Trap Server</literal> clicando sobre la pestaña <literal>+Add,</literal> a continuación, introducir la IP y la Comunidad SNMP a la que pertenece. 
-					Pulse en <literal>Update</literal> para guardar los cambios introducidos.</para>		
-				</listitem>
-				<listitem>
-					<para><emphasis role="bold">Eliminar Trap Server:</emphasis> Clicar en el icono Eliminar que aparece junto a la información del Trap Server para descartarlo. </para>
-				</listitem>
-			</itemizedlist>
-			<mediaobject>
-				<imageobject>
-					<imagedata scalefit="1" align="center" width="450" fileref="images/ch13_img023.png"/>
-				</imageobject>
-				<caption>
-					<para>General Settings: Trap Servers</para>
-				</caption>
-			</mediaobject>
-		<para><emphasis role="bold">Radius Acounting</emphasis></para>
-			<para>Este apartado permite activar un servidor de autenticación Radius. El usuario debe indicar la IP del Host y contraseña.</para>
-			<itemizedlist mark="circle">
-				<listitem>
-					<para><emphasis role="bold">Añadir un servidor de Radius Accounting:</emphasis> Es posible añadir un nuevo <literal>Servidor Radius</literal> clicando sobre la pestaña <literal>+Add,</literal> a continuación, introducir la IP y 
-					la contraseña compartida. Pulse en <literal>Update</literal> para guardar los cambios introducidos.</para>		
-				</listitem>
-				<listitem>
-					<para><emphasis role="bold">Eliminar un servidor de Radius Accounting:</emphasis> Clicar en el icono Eliminar que aparece junto a la información del servidor Radius para descartarlo. </para>
-				</listitem>
-			</itemizedlist>
-			<mediaobject>
-				<imageobject>
-					<imagedata scalefit="1" align="center" width="450" fileref="images/ch13_img024.png"/>
-				</imageobject>
-				<caption>
-					<para>General Settings: Radius Accounting</para>
-				</caption>
-			</mediaobject>
-		<para><emphasis role="bold">Radius Proxy Authentication</emphasis></para>
-			<para>Este apartado permite activar un servidor proxy de autenticación Radius. El usuario debe indicar la IP del Host origen, la IP del Host destino y las contraseñas respectivas.</para>
-			<itemizedlist mark="circle">
-				<listitem>
-					<para><emphasis role="bold">Añadir un servidor proxy de autenticación Radius :</emphasis> Es posible añadir un nuevo <literal>Servidor Proxy de Radius</literal> clicando sobre la pestaña <literal>+Add,</literal> a continuación, introducir la IP
-					del Host origen, la IP del Host destino y las contraseñas respectivas. Pulse en <literal>Update</literal> para guardar los cambios introducidos.</para>		
-				</listitem>
-				<listitem>
-					<para><emphasis role="bold">Eliminar un servidor proxy de autenticación Radius:</emphasis> Clicar en el icono Eliminar que aparece junto a la información del servidor proxy para descartarlo. </para>
-				</listitem>
-			</itemizedlist>
-			<mediaobject>
-				<imageobject>
-					<imagedata scalefit="1" align="center" width="450" fileref="images/ch13_img025.png"/>
-				</imageobject>
-				<caption>
-					<para>General Settings: Radius Proxy Authentication</para>
-				</caption>
-			</mediaobject>	
-		<para><emphasis role="bold">Default Rules</emphasis></para>
-			<para>Este apartado permite crear reglas para datos de históricos que estarán activas por defecto y que cargarán en los Tier indicados los datos que se especifiquen.</para>
-			<mediaobject>
-				<imageobject>
-					<imagedata scalefit="1" align="center" width="450" fileref="images/ch13_img026.png"/>
-				</imageobject>
-				<caption>
-					<para>General Settings: Default Rules</para>
-				</caption>
-			</mediaobject>	
-		<para><emphasis role="bold">Monitoring and logs</emphasis></para>
-			<para>En este apartado el usuario puede modificar los siguientes elementos:</para>
-			<itemizedlist mark="circle">
-				<listitem>
-					<para>Servidores de Syslog <literal>(Syslog Servers)</literal>: adición de servidores remoto de syslog.</para>
-				</listitem>
-				<listitem>
-					<para><literal>Loggly</literal>: si se desea enviar los logs al servidor de la cloud loggly será necesario rellenar el token proporcionado en el servicio.</para>
-				</listitem>
-				<listitem>
-					<para>licencia de New Relic <literal>(New Relic License)</literal>: si se requiere el uso de los servicios de new relic será necesario rellenar los datos solicitados.</para>
-				</listitem>
-			</itemizedlist>
-			<mediaobject>
-				<imageobject>
-					<imagedata scalefit="1" align="center" width="450" fileref="images/ch13_img027.png"/>
-				</imageobject>
-				<caption>
-					<para>General Settings: Monitoring and logs</para>
-				</caption>
-			</mediaobject>	
-		<para><emphasis role="bold">Backup Segments (Remote S3)</emphasis></para>
-			<para>En este apartado el usuario puede introducir las credenciales de acceso a S3 de AWS y el bucket que quiere utilizar como backup.</para>
-			<mediaobject>
-				<imageobject>
-					<imagedata scalefit="1" align="center" width="450" fileref="images/ch13_img029.png"/>
-				</imageobject>
-				<caption>
-					<para>General Settings: Backup Segments (Remote S3)</para>
-				</caption>
-			</mediaobject>	
-		<para><emphasis role="bold">White network</emphasis></para>
-			<para>En este apartado se indican las redes cuyo tráfico pasará sin inspección de los paquetes, debido a que las consideramos redes de reputación "fiable".</para>
-			<para>Añadir una nueva red: hacer clic en el botón <literal>+Add</literal> e indicar la IP de la red.</para>
-			<para>Eliminar una red del listado: mediante el icono "Eliminar".</para>
-			<mediaobject>
-				<imageobject>
-					<imagedata scalefit="1" align="center" width="450" fileref="images/ch13_img006e.png"/>
-				</imageobject>
-				<caption>
-					<para>General settings: listado de White Networks</para>
-				</caption>
-			</mediaobject>	
-		<para><emphasis role="bold">Black Networks</emphasis></para>
-			<para>Listado de redes cuyo tráfico debe ser bloqueado debido a la mala reputación de las mismas.</para>
-			<para>Añadir una nueva red: basta con hacer clic en el botón <literal>+Add</literal> eindicar la IP de la red.</para>
-			<para>Eliminar una red del listado: mediante el icono "Eliminar".</para>
-			<mediaobject>
-				<imageobject>
-					<imagedata scalefit="1" align="center" width="450" fileref="images/ch13_img006f.png"/>
-				</imageobject>
-				<caption>
-					<para>General settings: listado de Black Networks</para>
-				</caption>
-			</mediaobject>
-		<para><emphasis role="bold">Rutas de red (<literal>Network Routes</literal>)</emphasis></para>
-			<para>En este apartado el usuario definirá las rutas de red para el Manager. </para>
-			<para>Añadir una nueva red: hacer clic en el botón <literal>+Add</literal> e indicar la IP de la ruta de red.</para>
-			<para>Eliminar una red del listado: mediante el icono "Eliminar".</para>
-			<mediaobject>
-				<imageobject>
-					<imagedata scalefit="1" align="center" width="450" fileref="images/ch13_img030.png"/>
-				</imageobject>
-				<caption>
-					<para>General Settings: Network Routes</para>
-				</caption>
-			</mediaobject>	
-		<para><emphasis role="bold">Fixed Hosts</emphasis></para>
-			<para>En este apartado el usuario puede identificar un nombre de host con una dirección IP para obtener visibilidad en el cluster.</para>
-			<mediaobject>
-				<imageobject>
-					<imagedata scalefit="1" align="center" width="450" fileref="images/ch13_img031.png"/>
-				</imageobject>
-				<caption>
-					<para>General Settings: Fixed Hosts</para>
-				</caption>
-			</mediaobject>	
-		<para><emphasis role="bold">IP Variables</emphasis></para>
-			<para>En este apartado el usuario puede administrar las direcciones IP generales pudiendo añadir, editar, importar y exportar las variables IP del cluster.</para>
-			<mediaobject>
-				<imageobject>
-					<imagedata scalefit="1" align="center" width="450" fileref="images/ch13_img032.png"/>
-				</imageobject>
-				<caption>
-					<para>General Settings: IP variables</para>
-				</caption>
-			</mediaobject>	
-		<para><emphasis role="bold">Ports Variables</emphasis></para>
-			<para>En este apartado el usuario puede administrar los puertos generales pudiendo añadir, editar, importar y exportar los puertos del cluster.</para>
-			<mediaobject>
-				<imageobject>
-					<imagedata scalefit="1" align="center" width="450" fileref="images/ch13_img033.png"/>
-				</imageobject>
-				<caption>
-					<para>General Settings: Ports Variables</para>
-				</caption>
-			</mediaobject>	
-		<para><emphasis role="bold">GeoIP</emphasis></para>
-			<para>Para habilitar la función de Geo Protección es necesario disponer de una base de datos de geolocalización actualizada para evitar errores con la geolocalización de las direcciones IP. 
-			redborder ha sido configurada para soportar tan solo el formato de base de datos Maxmind.</para>
-			<para>Estos son los tipos de bases de datos que son admitidas para las versiones IPv4 y IPv6 (formato binario antiguo GeoIP):</para>
-			<itemizedlist mark="bullet">
-				<listitem>
-					<para>País: determina el país de un visitante de Internet basándose en su dirección IP.</para>
-				</listitem>
-				<listitem>
-					<para>Ciudad: indica el país, subdivisiones, ciudad, código postal, latitud y longitud asociada con las direcciones mundiales IPv4 y IPv6.</para>
-				</listitem>
-				<listitem>
-					<para>ASN: la base de datos GeoIP2 de IP anónimas contiene datos sobre las direcciones IP de las redes que han sido utilizadas de diferentes maneras por anónimos. </para>
-				</listitem>
-			</itemizedlist>
-			<para>Descargue los archivos desde la web de Maxmind y descomprímalos. Solo es posible subir archivos con formato .dat, tal y como se comprueba en la siguiente imagen. Para ello, hacer clic en <literal>+Select File</literal></para>
-			<mediaobject>
-				<imageobject>
-					<imagedata scalefit="1" align="center" width="450" fileref="images/ch13_img006h.png"/>
-				</imageobject>
-				<caption>
-					<para>General settings: Geo Protección IP</para>
-				</caption>
-			</mediaobject>
-		<para><emphasis role="bold">Columnas predeterminadas: Flow, IPS, Location, Malware, Monitor y Social.</emphasis></para>
-			<para>Estos apartados permiten que el usuario personalice las columnas (atributos, elementos, agregación, etc.) que se muestran por defecto en las tablas de cada una de las secciones mencionadas.</para>
-			<para>Para incluir o excluir una columna, seleccionar o deseleccionar el check correspondiente.</para>	
-			<mediaobject>
-				<imageobject>
-					<imagedata scalefit="1" align="center" width="450" fileref="images/ch13_img016.png"/>
-				</imageobject>
-				<caption>
-					<para>General settings: Columnas predeteminadas - Location</para>
-				</caption>
-			</mediaobject>
-	</section>
-	<section>
-		<title>Configuración de Malware</title>
-		<para>La opción <literal>Malware Settings</literal> nos muestra una interfaz cuya edición va a ser determinante para la configuración y la detección de Malware en redborder.</para>
+		<para>Configuración de servidores Syslog, MTA, NTP y habilitar la configuración de proxy.</para>
+		<note>
+			<title>Nota</title>
+			<para>Un ejemplo de cómo configurar servidores se encuentra en el Capítulo 11, “Edición de sensor y / o dominio."</para>
+		</note>
 		<mediaobject>
 			<imageobject>
-				<imagedata scalefit="1" align="center" width="450" fileref="images/ch13_img034.png"/>
+				<imagedata scalefit="1" width="450" align="center" fileref="images/ch13_img009_c.png"/>
 			</imageobject>
 			<caption>
-				<para>Malware settings: configuración de opciones relacionadas con Malware del Manager de redborder</para>
+				<para>Configuración general: configuración del servidor</para>
+			</caption>
+		</mediaobject>
+		<para><emphasis role="bold">Reglas por defecto</emphasis></para>
+		<para>Configuración de reglas predeterminadas para cargar o soltar datos.</para>
+		<mediaobject>
+			<imageobject>
+				<imagedata scalefit="1" width="450" align="center" fileref="images/ch13_img009_d.png"/>
+			</imageobject>
+			<caption>
+				<para>Configuración general: Reglas por defecto</para>
+			</caption>
+		</mediaobject>
+		<para><emphasis role="bold">Monitoreo y registros</emphasis></para>
+		<para>Esta sección le ayuda a momificar la infraestructura de Redborder. En el campo <literal> Servidores Syslog </literal> debe indicar en qué servidor remoto se enviarán los registros. </para> <para> Debe seleccionar qué protocolo y qué modo Syslog desea utilizar para los envíos.</para>
+		<note>
+			<title>Nota</title>
+			<para>Se recomienda el protocolo TCP para garantizar un envío seguro. Elija esta opción siempre que sea posible.</para>
+		</note>
+		<mediaobject>
+			<imageobject>
+				<imagedata scalefit="1" width="450" align="center" fileref="images/ch13_img009_e.png"/>
+			</imageobject>
+			<caption>
+				<para>Configuración general: Monitorización y registros</para>
+			</caption>
+		</mediaobject>
+		<para>La sección New Relic le permite informar a la nube de New Relic. En este caso, el usuario debe indicar el número de su nueva licencia de reliquia y, si tiene un grupo de clúster, escriba su nombre. </para> <para> La activación de la verificación <literal> Habilitar complementos </literal> es opcional porque este es un servicio de pago. Active <literal> Habilitar APM </literal> en caso de monitoreo web.</para>
+		<para><emphasis role="bold">Amazon CloudWatch</emphasis></para>
+		<para>Si el usuario desea enviar sus registros a este servicio de Amazon, se deben completar los campos obligatorios.</para>
+		<mediaobject>
+			<imageobject>
+				<imagedata scalefit="1" width="450" align="center" fileref="images/ch13_img009_f.png"/>
+			</imageobject>
+			<caption>
+				<para>Configuración general: Amazon CloudWatch</para>
+			</caption>
+		</mediaobject>
+		<para><emphasis role="bold">Google Maps API</emphasis></para>
+		<para>Es posible vincular Redborder con la API de Google Maps para obtener mejor información de ubicación.</para>
+		<mediaobject>
+			<imageobject>
+				<imagedata scalefit="1" width="450" align="center" fileref="images/ch13_img009_g.png"/>
+			</imageobject>
+			<caption>
+				<para>Configuración general: Google Maps API</para>
+			</caption>
+		</mediaobject>
+		<para><emphasis role="bold">Segmentos de respaldo (Remote S3)</emphasis></para>
+		<para>Permite una copia de seguridad de los datos del usuario en un servidor remoto o base de datos. Para esto, es necesario indicar el nombre de host, el depósito y la clave de acceso secreta.</para>
+		<mediaobject>
+			<imageobject>
+				<imagedata scalefit="1" align="center" width="450" fileref="images/ch13_img009_h.png"/>
+			</imageobject>
+			<caption>
+				<para>Configuración general: Segmentos de respaldo (Remote S3)</para>
+			</caption>
+		</mediaobject>
+		<para><emphasis role="bold">Red blanca</emphasis></para>
+		<para>En esta sección, se indican las redes cuyo tráfico pasará sin inspección del paquete, porque las redes se consideran "fiables". </para> <para> Agregar una nueva red: haga clic en el botón <literal> + Agregar </literal> e indique la IP de la red. </para> <para> Eliminar una red de la lista: a través del icono "Eliminar".</para>
+		<mediaobject>
+			<imageobject>
+				<imagedata scalefit="1" width="450" align="center" fileref="images/ch13_img009_i.png"/>
+			</imageobject>
+			<caption>
+				<para>Configuración general: Añadir una red blanca</para>
 			</caption>
 		</mediaobject>	
-		<para><emphasis role="bold">General</emphasis></para>
-			<para>En este apartado el usuario puede modificar la variable <literal>Global Malware score threshold</literal> que, como su nombre indica, ejerce de score global aplicado mientras no se indique en el dominio del 
-			usuario ningún score a aplicar.</para>
-			<mediaobject>
-				<imageobject>
-					<imagedata scalefit="1" align="center" width="450" fileref="images/ch13_img035.png"/>
-				</imageobject>
-				<caption>
-					<para>Malware Settings: General</para>
-				</caption>
-			</mediaobject>
-		<para><emphasis role="bold">Cargadores (Loaders)</emphasis></para>
-			<para>En este apartado el usuario tiene acceso a los parámetros de configuración de malware. Se encuentra dividido en 3 secciones:</para>
-			 <itemizedlist mark="bullet">
-				<listitem>
-					<para>La primera sección es la que permite ponderar los pesos de los distintos procesos de detección de malware para formar un score final. Las ponderaciones se encuentran agrupadas tanto en fila como en columna,
-					de forma que la suma final de la fila o columna debe de ser la unidad. Así mismo, dependiendo del objeto que se analice en los sistemas de reputación, tenemos 3 pestañas:
-					    <orderedlist>
-							<listitem>
-								<para>HASH: ponderaciones de los cargadores para ficheros.</para>
-								<mediaobject>
-									<imageobject>
-										<imagedata scalefit="1" align="center" width="450" fileref="images/ch13_img036.png"/>
-									</imageobject>
-									<caption>
-										<para>Malware Settings: cargadores - HASH</para>
-									</caption>
-								</mediaobject>
-							</listitem>
-							<listitem>
-								<para>URL: ponderaciones de los cargadores para direcciones URL.</para>
-								<mediaobject>
-									<imageobject>
-										<imagedata scalefit="1" align="center" width="450" fileref="images/ch13_img037.png"/>
-									</imageobject>
-									<caption>
-										<para>Malware Settings: cargadores - URL</para>
-									</caption>
-								</mediaobject>
-							</listitem>
-							<listitem>
-								<para>IP: ponderaciones de los cargadores para direcciones IP.</para>
-								<mediaobject>
-									<imageobject>
-										<imagedata scalefit="1" align="center" width="450" fileref="images/ch13_img038.png"/>
-									</imageobject>
-									<caption>
-										<para>Malware Settings: cargadores - IP</para>
-									</caption>
-								</mediaobject>
-							</listitem>
-						</orderedlist>
-					</para>
-				</listitem>
-				<listitem>
-					<para>API Keys and Licenses: en esta sección se deberán introducir las licencias pertenecientes a la API de Viruscan, Metascan y Kapersky.</para>
-				</listitem>
-				<listitem>
-					<para>BrightCloud: en esta sección se deberán introducir los parámetros de la licencia de BrightCloud.</para>
-				</listitem>
-				<listitem>
-					<para>Cuckoo: este apartado permite marcar tipos de ficheros que no deseamos se envién a Cuckoo Sandbox para su análisis. </para>
-				</listitem>
-			</itemizedlist>
-			<note>
-				<title>Nota</title>
-			<para>En caso de no tener licencia, el cargador no funcionará y la plataforma de redborder malware verá mermada su capacidad de análisis. No obstante, al cargador que no tenga licencia se 
-			recomienda asignarle una ponderación de cero.</para>
-			<para>Se recomienda encarecidamente el uso de todas las licencias para un funcionamiento pleno de la plataforma Malware.</para>
-			</note>
-		<para><emphasis role="bold">Mail Gateway</emphasis></para>
-			<para>En este apartado el usuario puede modificar distintos parámetros asociados a la pasarela de correo. A continuación se describen los parámetros existentes:</para>
-			<itemizedlist mark="bullet">
-				<listitem>
-					<para><literal>Default Relay Domain</literal>: dominio que va a manejar la pasarela de correo.</para>
-				</listitem>
-				<listitem>
-					<para><literal>Relay Host</literal>: direcciín IP del servidor de correo final.</para>
-				</listitem>
-				<listitem>
-					<para><literal>Message Size Limit</literal>: tamaño máximo de mensaje. Los mensajes que superen este umbral serán descartados.</para>
-				</listitem>
-				<listitem>
-					<para><literal>Max Parallel Process</literal>: máximo número de procesos en paralelo.</para>
-				</listitem>
-				<listitem>
-					<para><literal>API timeout (seconds)</literal>: tiempo máximo por consulta a la API.</para>
-				</listitem>
-				<listitem>
-					<para><literal>Email detained timeout (seconds)</literal>: tiempo máximo de obtención de score a la API.</para>
-				</listitem>
-				<listitem>
-					<para><literal>Quarantine timeout (days)</literal>: tiempo de almacenamiento de un objeto en cuarentena.</para>
-				</listitem>
-				<listitem>
-					<para><literal>Cache sync (hours)</literal>: hora de la frecuencia de sincronización con la caché remota (formato CRON: hora) </para>
-				</listitem>
-				<listitem>
-					<para><literal>Cache sync (minutes)</literal>: minutos de la frecuencia de sincronización con la caché remota (formato CRON: minutos)</para>
-				</listitem>
-				<listitem>
-					<para><literal>Maximum number of stored log files</literal>: número máximo de ficheros almacenados tipo log.</para>
-				</listitem>
-			</itemizedlist>
-			<mediaobject>
-				<imageobject>
-					<imagedata scalefit="1" align="center" width="450" fileref="images/ch13_img039.png"/>
-				</imageobject>
-				<caption>
-					<para>Malware Settings: Mail Gateway</para>
-				</caption>
-			</mediaobject>
-		<para><emphasis role="bold">GRR Server</emphasis></para>
-			<para>En este apartado el usuario puede modificar distintos parámetros asociados a la pasarela de correo. Así mismo podemos arrancar o parar los servicios asociados a GRR. También tenemos la posibilidad de acceder al
-			panel de administración de GRR y de actualizar la contraseña de SSH mediante sendos botones. A continuación se describen los parámetros existentes:</para>
-			<itemizedlist mark="bullet">
-				<listitem>
-					<para>Dirección IP del Servidor GRR <literal>(GRR IP Server)</literal></para>
-				</listitem>	
-				<listitem>
-					<para>Usuario de la API de GRR <literal>(GRR API Username)</literal></para>
-				</listitem>	
-				<listitem>
-					<para>Contraseña de la API de GRR <literal>(GRR API Password)</literal></para>
-				</listitem>	
-				<listitem>
-					<para>Servicios GRR <literal>(GRR Services)</literal>: listado de los servicios asociados a GRR junto con su estado y PID.</para>
-				</listitem>					
-			</itemizedlist>
-			<mediaobject>
-				<imageobject>
-					<imagedata scalefit="1" align="center" width="450" fileref="images/ch13_img040.png"/>
-				</imageobject>
-				<caption>
-					<para>Malware Settings: Servidor GRR</para>
-				</caption>
-			</mediaobject>
-		<para><emphasis role="bold">EndPoints</emphasis></para>
-			<para></para>	
-			<mediaobject>
-				<imageobject>
-					<imagedata scalefit="1" align="center" width="450" fileref="images/ch13_img041.png"/>
-				</imageobject>
-				<caption>
-					<para>Malware Settings: EndPoints</para>
-				</caption>
-			</mediaobject>
-		<para><emphasis role="bold">ICAP</emphasis></para>
-			<para>En este apartado podemos configurar el tamaño máximo del fichero que se puede subir.</para>	
-			<mediaobject>
-				<imageobject>
-					<imagedata scalefit="1" align="center" width="450" fileref="images/ch13_img042.png"/>
-				</imageobject>
-				<caption>
-					<para>Malware Settings: ICAP</para>
-				</caption>
-			</mediaobject>	
-		<para><emphasis role="bold">Blacklist</emphasis></para>
-			<para>En este apartado se pueden añadir a la lista negra objetos de tipo HAST, URL, IP e EMAIL. A constinuación se muestran las distintas opciones:</para>
-			<itemizedlist mark="bullet">
-				<listitem>
-					<para>HASH</para>
-					<mediaobject>
-						<imageobject>
-							<imagedata scalefit="1" align="center" width="450" fileref="images/ch13_img043.png"/>
-						</imageobject>
-						<caption>
-							<para>Malware Settings: Blacklist - HASH</para>
-						</caption>
-					</mediaobject>	
-				</listitem>
-				<listitem>
-					<para>Direcciones URL</para>
-					<mediaobject>
-						<imageobject>
-							<imagedata scalefit="1" align="center" width="450" fileref="images/ch13_img044.png"/>
-						</imageobject>
-						<caption>
-							<para>Malware Settings: Blacklist - URL</para>
-						</caption>
-					</mediaobject>
-				</listitem>
-				<listitem>
-					<para>Direcciones IP</para>
-					<mediaobject>
-						<imageobject>
-							<imagedata scalefit="1" align="center" width="450" fileref="images/ch13_img045.png"/>
-						</imageobject>
-						<caption>
-							<para>Malware Settings: Blacklist - IP</para>
-						</caption>
-					</mediaobject>
-				</listitem>
-				<listitem>
-					<para>Direcciones de correo</para>
-					<mediaobject>
-						<imageobject>
-							<imagedata scalefit="1" align="center" width="450" fileref="images/ch13_img046.png"/>
-						</imageobject>
-						<caption>
-							<para>Malware Settings: Blacklist - EMAIL</para>
-						</caption>
-					</mediaobject>
-				</listitem>
-			</itemizedlist>
-		<para><emphasis role="bold">Whitelist</emphasis></para>
-			<para>En este apartado se pueden añadir a la lista blanca objetos de tipo HAST, URL, IP e EMAIL. A constinuación se muestran las distintas opciones:</para>
-			<itemizedlist mark="bullet">
-				<listitem>
-					<para>HASH</para>
-					<mediaobject>
-						<imageobject>
-							<imagedata scalefit="1" align="center" width="450" fileref="images/ch13_img047.png"/>
-						</imageobject>
-						<caption>
-							<para>Malware Settings: Whitelist - HASH</para>
-						</caption>
-					</mediaobject>	
-				</listitem>
-				<listitem>
-					<para>Direcciones URL</para>
-					<mediaobject>
-						<imageobject>
-							<imagedata scalefit="1" align="center" width="450" fileref="images/ch13_img048.png"/>
-						</imageobject>
-						<caption>
-							<para>Malware Settings: Whitelist - URL</para>
-						</caption>
-					</mediaobject>
-				</listitem>
-				<listitem>
-					<para>Direcciones IP</para>
-					<mediaobject>
-						<imageobject>
-							<imagedata scalefit="1" align="center" width="450" fileref="images/ch13_img049.png"/>
-						</imageobject>
-						<caption>
-							<para>Malware Settings: Whitelist - IP</para>
-						</caption>
-					</mediaobject>
-				</listitem>
-				<listitem>
-					<para>Direcciones de correo</para>
-					<mediaobject>
-						<imageobject>
-							<imagedata scalefit="1" align="center" width="450" fileref="images/ch13_img050.png"/>
-						</imageobject>
-						<caption>
-							<para>Malware Settings: Whitelist - EMAIL</para>
-						</caption>
-					</mediaobject>
-				</listitem>
-			</itemizedlist>
+		<para><emphasis role="bold">Red negra</emphasis></para>
+		<para>Lista de redes cuyo tráfico debe bloquearse debido a la mala reputación.</para>
+		<para>Agregue una nueva red: simplemente haga clic en el botón <literal> + Agregar </literal> e indique la IP de la red. </para> <para> Eliminar una red de la lista: a través del icono "Eliminar".</para>
+		<mediaobject>
+			<imageobject>
+				<imagedata scalefit="1" width="450" align="center" fileref="images/ch13_img009_j.png"/>
+			</imageobject>
+			<caption>
+				<para>Configuración general: Añadir una red negra</para>
+			</caption>
+		</mediaobject>
+		<para><emphasis role="bold"><literal>Rutas de red</literal></emphasis></para>
+		<para>En esta sección, el usuario definirá las rutas de red para el Manager. </para> <para> Agregar una nueva red: haga clic en el botón <literal> + Agregar </literal> e indique la ruta IP de la red. </para> <para> Eliminar una red de la lista: a través del icono " Borrar".</para>
+		<mediaobject>
+			<imageobject>
+				<imagedata scalefit="1" width="450" align="center" fileref="images/ch13_img009_k.png"/>
+			</imageobject>
+			<caption>
+				<para>Configuración general: lista de rutas de red</para>
+			</caption>
+		</mediaobject>
+		<para><emphasis role="bold"><literal>Hosts fijos</literal></emphasis></para>
+		<para>En esta sección, el usuario definirá las rutas de red para el Manager. </para> <para> Agregar una nueva red: haga clic en el botón <literal> + Agregar </literal> e indique la ruta IP de la red. </para> <para> Eliminar una red de la lista: a través del icono "Borrar".</para>
+		<mediaobject>
+			<imageobject>
+				<imagedata scalefit="1" width="450" align="center" fileref="images/ch13_img009_l.png"/>
+			</imageobject>
+			<caption>
+				<para>Configuración general: lista de rutas de red</para>
+			</caption>
+		</mediaobject>
+		<para><emphasis role="bold">Geo IP</emphasis></para>
+		<para>Para habilitar la función Geo Protection es necesario tener una base de datos de geolocalización actualizada para evitar errores en la geolocalización de IP. Redborder se ha configurado para admitir solo el formato de base de datos Maxmind. </para> <para> Estos son los tipos de bases de datos que se admiten para las versiones IPv4 e IPv6 (formato binario de GeoIp antiguo):</para>
+		<itemizedlist mark="bullet">
+			<listitem>
+				<para>País: determina el país de un visitante de Internet en función de su dirección IP.</para>
+			</listitem>
+			<listitem>
+				<para>Ciudad: indica el país, subdivisiones, ciudad, código postal, latitud y longitud asociados con las direcciones mundiales IPv4 e IPv6.</para>
+			</listitem>
+			<listitem>
+				<para>ASN: la base de datos GeoIP2 de IP anónima contiene datos sobre las direcciones IP de las redes que anónimo ha utilizado de diversas maneras.</para>
+			</listitem>
+		</itemizedlist>
+		<para>Descargue todos los archivos del sitio web de Maxmind y descomprímalos. Solo es posible cargar archivos con formato .dat como podemos ver en la imagen a continuación. Para esto, haga clic en <literal>+Seleccionar archivo</literal></para>
+		<mediaobject>
+			<imageobject>
+				<imagedata scalefit="1" width="450" align="center" fileref="images/ch13_img009_m.png"/>
+			</imageobject>
+			<caption>
+				<para>Configuración general: GeoIP Protection</para>
+			</caption>
+		</mediaobject>
 	</section>
 	<section>
-		<title>Motor de reglas de correlación</title>
-		<para>Mediante la opción <literal>Correlation Engine Rules</literal> el usuario puede comprobar qué nodos tienen la licencia caducada y desde la misma interfaz, subir una nueva licencia o solicitarla al equipo de redborder.</para>
-		<para>En el margen superior de la pantalla se encuentran indicadas el número de licencias disponibles, los módulos que se pueden usar bajo esas licencias y el número de nodos expirados. En el centro de la pantalla, se muestra un listado con los nodos que necesitan renovar la licencia y las acciones disponibles.</para>
+		<title>Reglas del motor de correlación</title>
+		<para>Aquí el uso puede ver todas las reglas para el motor de correlación. Es posible editar las reglas existentes y también crear otras nuevas.</para>
 		<mediaobject>
 			<imageobject>
-				<imagedata scalefit="1" align="center" width="450" fileref="images/ch13_img053.png"/>
+				<imagedata scalefit="1" width="450" align="center" fileref="images/ch13_img014.png"/>
 			</imageobject>
 			<caption>
-				<para>Correlation Engine Rules</para>
+				<para>Reglas del motor de correlación</para>
 			</caption>
-		</mediaobject>
-		<para>Para una nueva regla al motor de correlación hay que hacer clic en <literal>New Rule</literal>. Una vez creada la regla podemos aplicarla haciendo clic en <literal>Apply Rules</literal>.</para>
-		<mediaobject>
-			<imageobject>
-				<imagedata scalefit="1" align="center" width="450" fileref="images/ch13_img054.png"/>
-			</imageobject>
-			<caption>
-				<para>Correlation Engine Rules: creación de nueva regla</para>
-			</caption>
-		</mediaobject>
+		</mediaobject>	
 	</section>
+	<section>
+		<title>Categorías de Monitor</title>
+		<para>Aquí podemos agregar una nueva categoría para monitorizar el hardware. Las categorías utilizan tecnologías como SNMP, Redfish o IPMI para proporcionar información sobre el sistema y su funcionamiento.</para>
+		<mediaobject>
+			<imageobject>
+				<imagedata scalefit="1" width="450" align="center" fileref="images/ch13_img013.png"/>
+			</imageobject>
+			<caption>
+				<para>Categorías de Monitor</para>
+			</caption>
+		</mediaobject>
+		<para>Para agregar una nueva categoría de monitor debemos usar el botón superior derecho. Luego rellenaremos los campos seleccionando la tecnología correcta que permita a Redborder recibir los datos.</para>
+		<mediaobject>
+			<imageobject>
+				<imagedata scalefit="1" width="450" align="center" fileref="images/ch13_img013_b.png"/>
+			</imageobject>
+			<caption>
+				<para>Monitor de infraestructura</para>
+			</caption>
+		</mediaobject>
+		<section>
+			<title>Operationes SNMP</title>			
+			<para>Para explicar la operación de la función snmp usaremos un ejemplo, monitorear el uso de memoria. Cuando creamos una nueva categoría de monitor con el botón Nueva categoría de monitor de la página Categorías de monitor, veremos la siguiente ventana emergente.</para>
+		<mediaobject>
+			<imageobject>
+				<imagedata scalefit="1" width="450" align="center" fileref="images/ch13_img013_c.png"/>
+			</imageobject>
+			<caption>
+				<para>Creación inicial de una categoría de monitor</para>
+			</caption>
+		</mediaobject>	
+		<para>Esta es la fórmula para calcular el uso de memoria de un dispositivo.:</para>
+		<mediaobject>
+			<imageobject>
+				<imagedata scale="30" align="center" fileref="images/ch13_img013_d.png"/>
+			</imageobject>
+		</mediaobject>	
+		<para>El resultado es una combinación de diferentes valores snmp. Ahora, si queremos crear un monitor como el de este ejemplo, debemos elegir Operación SNMP en el menú desplegable de tecnología. Ahora nuestro formulario cambiará a lo siguiente:</para>
+		<mediaobject>
+			<imageobject>
+				<imagedata scale="30" align="center" fileref="images/ch13_img013_d.png"/>
+			</imageobject>
+			<caption>
+				<para>Crear monitor con operación SNMP</para>
+			</caption>
+		</mediaobject>
+		<para>Debajo del campo OID, ahora hay un botón llamado Añadir nueva variable, que agrega otro campo para que podamos ingresar más OID snmp. Además, en la parte inferior, hay un campo Operación de OID, en el que presentaremos la operación que queremos hacer con los OID ingresados previamente.</para>
+		<mediaobject>
+			<imageobject>
+				<imagedata scalefit="1" width="450" align="center" fileref="images/ch13_img013_e.png"/>
+			</imageobject>
+			<caption>
+				<para>Monitor de ejemplo</para>
+			</caption>
+		</mediaobject>
+		<para>Para cada OID, la salida se almacenará en una variable que luego usaremos en la operación de OID. </para> <para> Una vez en este punto, solo tenemos que crear el monitor presionando el botón Crear. </para> <para> Para agregar el nuevo monitor a un dispositivo sensor, crearemos un nuevo sensor en la pestaña Sensor, seleccionando Monitor Device.</para>
+		</section>
+	</section>	
 	<section>
 		<title>Licencias</title>
-		<para>Mediante esta opción el usuario puede comprobar qué nodos tienen la licencia caducada y desde la misma interfaz, subir una nueva licencia o solicitarla al equipo de redborder.</para>
-		<para>En el margen superior de la pantalla se encuentran indicadas el número de licencias disponibles, los módulos que se pueden usar bajo esas licencias y el número de nodos expirados. En el centro de la pantalla, se muestra un listado con los nodos que necesitan renovar la licencia y las acciones disponibles.</para>
-		<para>Para subir un archivo con la licencia proporcionada por redborder hacer clic en <literal>Select file.</literal> Para solicitar una nueva licencia hacer clic en <literal>Request a license.</literal></para>
+		<para>A través de esta opción, el usuario puede verificar qué nodos tienen sus licencias vencidas. Del mismo modo, es posible cargar una nueva licencia o solicitar una nueva..</para>
+		<para>En el borde superior de la pantalla se indica la cantidad de licencias disponibles, las aplicaciones que se pueden usar con estas licencias y la cantidad de nodos caducados. Hay una lista de nodos caducados que necesitan renovar sus licencias en el centro de la pantalla. También hay una lista de las acciones disponibles..</para>
+		<para>Para cargar un archivo con una nueva licencia de Redborder, haga clic en <literal> Seleccionar archivo</literal>. Para solicitar una nueva licencia, haga clic en <literal> Solicitar una licencia</literal>.</para>
 		<mediaobject>
 			<imageobject>
-				<imagedata scalefit="1" align="center" width="450" fileref="images/ch13_img007.png"/>
+				<imagedata scalefit="1" width="450" align="center" fileref="images/ch13_img015.png"/>
 			</imageobject>
 			<caption>
-				<para>Licenses: consulta y actualización de licencias expiradas</para>
+				<para>Licencias: consultas y actualización de licencias caducadas</para>
 			</caption>
 		</mediaobject>	
 	</section>
 	<section>
-		<title>Lookup Sources</title>
-		<para>Listado de URLs de los servicios web que realizan las consultas de los datos de red. Desde esta pantalla es posible añadir más servicios web, así como editar los ya existentes.</para>
-		<para>Eliminar un servicio: clic en el botón "Eliminar".</para>
-		<para>Editar un servicio ya existente: hacer clic en el icono de "Edición":</para>
+		<title>Fuentes de búsqueda</title>
+		<para>Lista de las URL de servicios web que realizan las consultas de datos de red. Desde esta pantalla es posible agregar más servicios web, así como editar los existentes.</para>
+		<para>Eliminar un servicio: haga clic en el botón "Eliminar".</para>
+		<para>Editar un servicio existente: haga clic en el botón "Editar":</para>
 		<mediaobject>
 			<imageobject>
-				<imagedata scalefit="1" align="center" width="350" fileref="images/ch13_img008.png"/>
+				<imagedata scalefit="1" width="450" align="center" fileref="images/ch13_img016.png"/>
 			</imageobject>
 			<caption>
-				<para>Lookup Sources: servicios web de consultas</para>
+				<para>Fuentes de búsqueda: consultas de servicios web</para>
 			</caption>
 		</mediaobject>
-		<para>Añadir un nuevo servicio web: hacer clic en el botón <literal>+ Add Lookup Source.</literal></para>
+		<para>Añadir nuevo servicio web: haga clic en el botón <literal> + Agregar fuente de búsqueda.</literal></para>
 		<mediaobject>
 			<imageobject>
-				<imagedata scalefit="1" align="center" width="350" fileref="images/ch13_img008b.png"/>
+				<imagedata scalefit="1" width="450" align="center" fileref="images/ch13_img017.png"/>
 			</imageobject>
 			<caption>
-				<para>Crear una nueva Lookup Source</para>
+				<para>Añadir una nueva fuente de búsqueda</para>
 			</caption>
 		</mediaobject>
 	</section>
 	<section>
 		<title>Objetos</title>
-		<para>La opción <literal>Objects</literal> permite la creación y/o edición directa de Objetos. El usuario puede navegar por las diferentes pestañas que corresponden a los tipos de objetos que se pueden crear, o bien, usar el buscador para una localización más eficaz.</para>
+		<para>La opción <literal> Objetos </literal> permite la creación y edición directa de Objetos. El usuario puede navegar a través de diferentes pestañas que corresponden a los tipos de objetos que se pueden crear. Si desea ubicar los objetos de una manera más eficiente, puede usar el navegador.</para>
 		<para>Se pueden crear tres tipos de objetos:</para>
 		<itemizedlist mark="circle">
 			<listitem>
-				<para>Red <literal>(Net)</literal></para>
+				<para>Red</para>
 			</listitem>
 			<listitem>
 				<para>MAC</para>
@@ -900,177 +533,202 @@
 				<para>VLAN</para>
 			</listitem>
 		</itemizedlist>
-		<para>Crear un nuevo objeto: hacer clic en <literal>New (Net, MAC, VLAN) Object</literal></para>
-		<para>Editar un objeto ya existente: hacer clic en el botón de "Edición".</para>
-		<para>Borrar un objeto: hacer clic en el icono "Eliminar".</para>
 		<mediaobject>
 			<imageobject>
-				<imagedata scalefit="1" align="center" width="450" fileref="images/ch13_img009.png"/>
+				<imagedata scalefit="1" width="450" align="center" fileref="images/ch13_img018.png"/>
 			</imageobject>
 			<caption>
-				<para><literal>Objects</literal></para>
+				<para>Objetos: lista de objetos.</para>
 			</caption>
 		</mediaobject>
-		<para>En todos los casos, al crear o editar un objeto, el sistema le requerirá un nombre, un valor para el mismo y una descripción.</para>
+		<para>Cree un nuevo objeto: haga clic en <literal> Nuevo objeto (Red, MAC, VLAN)</literal></para>
+		<para>Editar un objeto existente: haga clic en el botón "Editar".</para>
+		<para>Eliminar un objeto: haga clic en el icono "Eliminar".</para>
 		<mediaobject>
 			<imageobject>
-				<imagedata scalefit="1" align="center" width="350" fileref="images/ch13_img009b.png"/>
+				<imagedata scalefit="1" width="450" align="center" fileref="images/ch13_img019.png"/>
 			</imageobject>
 			<caption>
-				<para>Crear un nuevo objeto de red</para>
+				<para>Objetos: crea un nuevo objeto de red</para>
 			</caption>
 		</mediaobject>
-		<para>En el margen superior derecho se muestra un submenú de opciones que le permite al usuario importar o exportar los datos relativos a los objetos en formato .csv.</para>
+		<para>En todos los casos, cuando crea o edita un objeto, el sistema le solicita un nombre, un valor y una descripción. </para> <para> En el margen superior derecho se muestra un submenú de opciones. Permite al usuario importar o exportar los datos relacionados con estos objetos en formato .csv.</para>
 		<note>
 			<title>Nota</title>
-			<para>Es posible crear un objeto directamente desde los atributos que se muestran en las tablas tanto en la App Flow como por el IPS para poder identificarlas de un modo más sencillo. Para ello, basta con hacer clic en la flecha invertida que aparece cada vez que posamos el ratón por un atributo como IP., MAC o VLAN. </para>
+			<para>Es posible crear un objeto directamente a partir de los atributos que se muestran en las tablas, como en la aplicación Flow como IPS. Para esto, haga clic en el estrecho invertido que aparece cuando pasamos el ratón sobre un atributo como IP, MAC o VLAN. </para>
 		</note>
 	</section>
 	<section>
-		<title>Overlay Maps</title>
-		<para>Esta opción permite superponer una imagen sobre un mapa de Google para conseguir mayor personalización y exactitud.</para>
-		<para>Editar Mapa: hacer clic sobre el botón de "Edición" situado al lado del nombre en el listado de mapas existentes.</para>
-		<para>Añadir un nuevo mapa: hacer clic en (<literal>+New Overlay Map.</literal>)</para>
-		<para>En ambos casos, se indicará el nombre del mapa, la latitud y longitud en la que debe ir colocada la imagen (esquina superior derecha e inferior izquierda respectivamente) para indicar el lugar exacto en el que irá colocada la imagen. </para>
+		<title>Mapas superpuestos</title>
+		<para>Esta opción permite superponer una imagen sobre un mapa de Google para obtener más personalización. </para> <para> Editar mapa: haga clic en el botón "Editar" situado junto a la lista de mapas existente.</para> <para> Agregar nuevo mapa: haga clic en <literal> + Nuevo mapa de superposición. </literal> </para> <para> En ambos casos, se indicará el nombre del mapa, la latitud y la longitud en el lugar donde se debe ubicar la imagen.</para>
 		<para>Por último, subir la imagen desde su equipo en formato .jpg o .png.</para>
 		<mediaobject>
 			<imageobject>
-				<imagedata scalefit="1" align="center" width="450" fileref="images/ch13_img010.png"/>
+				<imagedata scalefit="1" align="center" width="450" fileref="images/ch13_img020.png"/>
 			</imageobject>
 			<caption>
-				<para>Añadir nuevo Overlay Map</para>
+				<para><literal>Mapas superpuestos</literal>: superponer imágenes sobre un mapa mundial</para>
 			</caption>
 		</mediaobject>	
-	</section>
-		<section>
-		<title>Gestor de politicas de bloqueo de conectividad de red</title>
-		<para>Es un servicio de aplicación de políticas de bloqueo de red en tiempo real.</para>
-		<note>
-			<title>Nota</title>
-			<para>Esta opción no se encuentra disponible para la versión de Malware.</para>
-		</note>
 	</section>
 	<section>
 		<title>Alertas de plataforma</title>
-		<para>La opción <literal>Platform Alerts</literal> permite crear alertas que hará que los usuarios que ingresen en la plataforma web de redborder reciban notificaciones.</para>
-				<mediaobject>
-			<imageobject>
-				<imagedata scalefit="1" align="center" width="450" fileref="images/ch13_img051.png"/>
-			</imageobject>
-			<caption>
-				<para>Alertas de la plataforma</para>
-			</caption>
-		</mediaobject>	
-		<para>Para añadir una nueva alerta hacer clic en <literal>(+ New Alert)</literal>. Aparecerá un desplegable donde debemos seleccionar el nivel de alerta, el cuerpo del mensaje y el intervalo de tiempo en el 
-		que queremos que la notificación sea mostrada a los usuarios que ingresen en la plataforma web de redborder.</para>
-				<mediaobject>
-			<imageobject>
-				<imagedata scalefit="1" align="center" width="450" fileref="images/ch13_img052.png"/>
-			</imageobject>
-			<caption>
-				<para>Alertas de la plataforma: añadir nueva regla</para>
-			</caption>
-		</mediaobject>	
-	</section>
-	<section>
-		<title>Versiones de Reglas</title>
-		<para>La opción <literal>Rule Versions</literal> permite gestionar conjuntos de reglas de Snort.</para>
-		<para>Para añadir un nuevo conjunto de reglas habría que hacer clic en <literal>Add Source</literal> y rellenar los campos que se indican en la ventana emergente.</para>
-		<para>Así mismo se puede forzar una actualización de los conjuntos de reglas marcados haciendo clic en <literal>Force Rule Update</literal>.</para>
+		<para>Aquí el usuario puede ver las alertas desde la plataforma. Todas las alertas se muestran a todos los usuarios. </para> <para> Hay tres niveles para las alertas: información, advertencia y peligro. Cada nivel tiene su propio color para que las alertas se puedan diferenciar. </para>
 		<mediaobject>
 			<imageobject>
-				<imagedata scalefit="1" align="center" width="450" fileref="images/ch13_img055.png"/>
+				<imagedata scalefit="1" align="center" width="450" fileref="images/ch13_img021_a.png"/>
 			</imageobject>
 			<caption>
-				<para>Versiones de reglas</para>
+				<para><literal>Alertas de plataforma</literal></para>
 			</caption>
-		</mediaobject>	
-	</section>
-	<section>
-		<title>Centro de Soporte</title>
-		<para>La opción <literal>Support Center</literal> permite acceder a la plataforma de soporte de redborder.</para>
-		<para>Para acceder basta con rellenar el usuario y la contraseña con los que se haya registrado.</para>
-		<para>En caso de no haberse registrado tiene la opción de hacerlo a partir del enlace <literal>+ Sign up</literal>.</para>
+		</mediaobject>
+		<para>Es posible crear alertas para la plataforma utilizando el botón Nueva alerta. Es necesario seleccionar el nivel de alerta y el mensaje de la alerta..</para>
 		<mediaobject>
 			<imageobject>
-				<imagedata scalefit="1" align="center" width="450" fileref="images/ch13_img056.png"/>
+				<imagedata scalefit="1" align="center" width="450" fileref="images/ch13_img021_b.png"/>
 			</imageobject>
 			<caption>
-				<para>Centro de Soporte</para>
+				<para><literal>Alerta de plataforma: Nueva alerta</literal></para>
 			</caption>
-		</mediaobject>	
+		</mediaobject>
+		<para>Si el usuario hace clic en el mensaje de alerta, no se volverá a mostrar hasta que el usuario inicie sesión nuevamente. </para> <para> Es posible eliminar la alerta haciendo clic en la cruz del mensaje. Después de eso, el mensaje de alerta ya no se mostrará.</para>	
 	</section>
 	<section>
-		<title>Políticas de Yara</title>
-		<para>La opción <literal>Yara Policies</literal> permite acceder al panel de gestión de políticas de reglas para el motor Yara.</para>
-		<para>Desde esta sección podemos aplicar y gestionar políticas de reglas para el motor de Yara.</para>
+		<title>Versión de reglas</title>
+		<para>El usuario puede administrar las fuentes de las reglas de la plataforma. Es posible agregar o cargar nuevas fuentes y también habilitar las elegidas. Las reglas se usan para la sonda Snort, que es utilizada por el módulo de tráfico.</para>
 		<mediaobject>
 			<imageobject>
-				<imagedata scalefit="1" align="center" width="450" fileref="images/ch13_img057.png"/>
+				<imagedata scalefit="1" align="center" width="450" fileref="images/ch13_img022.png"/>
 			</imageobject>
 			<caption>
-				<para>Políticas de Yara</para>
+				<para><literal>Versión de reglas</literal></para>
+			</caption>
+		</mediaobject>	
+		<para>Es posible cargar reglas para un IPS en particular usando la opción Cargar fuente, donde el usuario puede seleccionar el archivo para cargar. </para> <para> También es posible agregar fuentes para descargar nuevas reglas de Internet que se actualizan periódicamente Si es necesario, el usuario puede usar la actualización de la regla de fuerza para asegurarse de que todas las reglas estén actualizadas.</para>
+	</section>
+	<section>
+		<title>Centro de soporte</title>
+		<para>El usuario puede usar el Centro de soporte para resolver cualquier pregunta o problema relacionado con la plataforma. Es necesario estar registrado en el Centro de Soporte.</para>
+		<mediaobject>
+			<imageobject>
+				<imagedata scalefit="1" align="center" width="450" fileref="images/ch13_img023.png"/>
+			</imageobject>
+			<caption>
+				<para><literal>Centro de soporte</literal></para>
 			</caption>
 		</mediaobject>	
 	</section>
 	<section>
 		<title>Usuarios</title>
-		<para>El alta o modificación de los datos de los usuarios, la gestión de sus permisos o la creación de nuevos registros es posible desde la interfaz <literal>Users settings.</literal></para>
-		<para>Para buscar un usuario concreto es posible introducir sus datos en el buscador, o bien, navegar por el listado alfabético que se muetsra sobre el listado de usuairos dados de alta.</para>
-		<para>Solo el usuario con el rol de Súperadministrador tiene habilitada esta función. 
-		El resto de usuarios solo podrá visualizar las diferentes secciones de la plataforma, pero no modificar su contenido (salvo en el caso de su propio perfil de usuario).</para>
+		<para>La activación o modificación de los datos de los usuarios, la gestión de servicios o la creación de nuevos registros es posible desde la interfaz <literal> Configuración de usuarios </literal>. </para> <para> Para buscar un usuario específico, introduzca sus datos en el navegador. También puede navegar a través de la lista alfabética que se encuentra en la parte superior de la lista de usuarios. </para> <para> El único usuario que tiene permisos para hacerlo es Superadministrator. El resto de los usuarios solo pueden visualizar las secciones de la plataforma (modo de lectura) pero no pueden modificar su contenido (excepto en el caso de su propio perfil de usuario).</para>
 		<mediaobject>
 			<imageobject>
-				<imagedata scalefit="1" align="center" width="450" fileref="images/ch13_img011.png"/>
+				<imagedata scalefit="1" width="450" align="center" fileref="images/ch13_img024_a.png"/>
 			</imageobject>
 			<caption>
-				<para><literal>Users:</literal> interfaz de administración de permisos de usuarios</para>
+				<para>Users: management users'permissions interface</para>
 			</caption>
 		</mediaobject>
-		<para>En el cuerpo de la pantalla encontramos un listado de los usuarios dados de alta en la plataforma redborder, dirección de correo electrónico, Top Domain (máximo nivel al que tiene acceso el usuario), número de veces que ha hecho login, la IP y la hora desde las cuales realizó el último acceso.</para>
-		<para>Haciendo clic en el botón de "configuración" el usuario puede modificar los siguientes datos y visualizar un resumen de su estado y actividad dentro de la plataforma: </para>
+		<para>In the body of the screen we find a list that contains the active users in Redborder platform, email address, Top Domain (maximun level that the user has access), number of times that they have signed in, IP and hour from which they made their last access. </para>
+		<para>Clicking on the "Edit" button the user can modify the following information and visualize a summary of their state and activity within the platform: </para>
 		<mediaobject>
 			<imageobject>
-				<imagedata scalefit="1" align="center" width="450" fileref="images/ch13_img011b.png"/>
+				<imagedata scalefit="1" align="center" width="450" fileref="images/ch13_img024_b.png"/>
 			</imageobject>
 			<caption>
-				<para>Users: edición de perfil de usuario</para>
+				<para>Usuarios: edición del perfil del usuario</para>
 			</caption>
 		</mediaobject>
 		<important>
 			<title>Importante</title>
-			<para>Cada vez que se modifique cualquier dato en la ficha del usuario, se deberá introducir la contraseña actual para confirmar el cambio.</para>
+			<para>Cada vez que se modifique cualquier dato en el perfil de un usuario, se debe introducir la contraseña actual para confirmar los cambios.</para>
 		</important>
-		<para>Alta de nuevo usuario: para crear un nuevo usuario, hacer clic en <literal>+ New User</literal>. Completar en la ficha los datos requeridos. Al marcar el check en la casilla 
-		<literal>Administrator</literal> el usuario obtendrá todos los permisos.</para>	
+		<para>Active un nuevo usuario: para crear un nuevo usuario, haga clic en <literal> + Nuevo usuario. </literal> Complete la información requerida en el perfil del usuario. Active <literal> Administrador </literal> para obtener permisos completos.</para>	
+		<mediaobject>
+			<imageobject>
+				<imagedata scalefit="1" align="center" width="450" fileref="images/ch13_img024_c.png"/>
+			</imageobject>
+			<caption>
+				<para>Usuarios: Nuevo usuario</para>
+			</caption>
+		</mediaobject>
 	</section>
 	<section>
-		<title>Cola de trabajos</title>
-		<para>En esta opción el usuario puede consultar el estado de los trabajos <literal>(Workers)</literal> y servicios <literal>(Jobs)</literal>
-		 que se están ejecutando en segundo plano. También es posible comprobar cuáles de esas tareas han finalizado <literal>(Stored Jobs)</literal>.</para>
-		<note>
-			<title>Nota</title>
-			<para>Llamamos <literal>Worker</literal> a los programas que se están ejecutando en segundo plano de manera constante.</para>
-			<para>Un <literal>Job</literal> es un programa que se ejecuta de manera periódica o una única vez, pero que no se queda funcionando en segundo plano, sino que se ejecuta y se cierra.</para>
-		</note>
+        <title>Worker y cola de trabajo</title>
+        <para>En esta opción, el usuario puede verificar el estado del trabajo <literal> (Worker) </literal> y los servicios <literal> (Jobs) </literal> que se ejecutan en segundo plano. También puede verificar cuáles de estas tareas se han completado.</para>
+        <note>
+            <title>Nota</title>
+            <para>Llamamos <literal> Worker</literal> a los programas que se ejecutan constantemente en segundo plano..</para>
+            <para>Un <literal> Job </literal> es un programa que se ejecuta periódicamente o solo una vez, pero no permanece ejecutándose en segundo plano, sino que se ejecuta y se cierra.</para>
+        </note>
 		<mediaobject>
 			<imageobject>
-				<imagedata scalefit="1" align="center" width="450" fileref="images/ch13_img012.png"/>
+				<imagedata scalefit="1" align="center" width="450" fileref="images/ch13_img025_a.png"/>
 			</imageobject>
 			<caption>
-				<para>Worker and Job Queue: listado del estado de trabajos y servicios</para>
-			</caption>
-		</mediaobject>
-		<para>En el apartado de trabajos almacenados <literal>(Stored Jobs)</literal> se muestra el listado de servicios finalizados. 
-		Puede conocer el estado de cada uno de ellos mediante el icono "Información", o bien eliminarlos del listado mediante el icono "Eliminar".</para>
-		<para>Esta pantalla se recarga de manera automática cada 5 segundos.</para>
+				<para>Worker y cola de trabajo: estado de la lista de workers y cola de trabajo</para>
+            </caption>
+        </mediaobject>
+        <para><literal>Empleos almacenados</literal> muestra la lista de servicios terminados. Puede conocer el estado de cada uno a través del icono "Información", o eliminar de la lista utilizando el icono "Eliminar". </para> <para> Esta pantalla se recarga automáticamente cada 5 segundos.</para>
 		<mediaobject>
 			<imageobject>
-				<imagedata scalefit="1" align="center" width="350" fileref="images/ch13_img012b.png"/>
+				<imagedata scalefit="1" align="center" width="450" fileref="images/ch13_img025_b.png"/>
 			</imageobject>
 			<caption>
-				<para>Worker and Job Queue: información de trabajos finalizados</para>
+				<para>Worker y cola de trabajo: información del estado de un worker</para>
+            </caption>
+        </mediaobject>
+    </section>
+    <section>
+        <title>Área de usuario</title>
+        <para>En la parte superior derecha de la barra de menú, encontrará el área de usuario, desde la cual puede ver las notificaciones, verificar el perfil, acceder a la ayuda contextual y salir del sistema.</para>
+		<mediaobject>
+			<imageobject>
+				<imagedata scalefit="1" width="450" align="center" fileref="images/ch13_img026.png"/>
+			</imageobject>
+			<caption>
+				<para>Área de usuario</para>
+            </caption>
+        </mediaobject>
+        <para><literal>Notificaciones</literal></para>
+        <para>Para ver una lista resumida de notificaciones, simplemente haga clic en <literal> Área del usuario. </literal> Para acceder a una lista completa de ellas, seleccione la opción <literal> Ver todas </literal> o haga clic en cualquiera de las notificaciones que aparecen en el resumen; de esta forma puede acceder a una nueva pantalla desde la cual puede ver los detalles de las notificaciones y eliminarlas todas a través de la opción <literal>Borrar todos</literal>.</para>
+		<mediaobject>
+			<imageobject>
+				<imagedata scalefit="1" width="450" align="center" fileref="images/ch13_img027.png"/>
+			</imageobject>
+			<caption>
+				   <para>Área de usuarios: Notificaciones</para>
 			</caption>
 		</mediaobject>
-	</section>
+		<para><literal>Mi perfil</literal></para>
+		<para>Esta opción permite el acceso directo al perfil del usuario y realiza las mismas acciones con la opción <literal>Herramientas>Usuarios</literal>.</para>
+		<mediaobject>
+			<imageobject>
+				<imagedata scalefit="1" align="center" width="450" fileref="images/ch13_img024_b.png"/>
+			</imageobject>
+			<caption>
+				 <para>Usuarios: editando el perfil de usuario</para>
+			</caption>
+		</mediaobject>
+		<para><literal>Mostrar ayuda</literal></para>
+		<para>Esta opción permite una ayuda sensible al contexto que facilita la navegación y la usabilidad de la plataforma.</para>
+		<mediaobject>
+			<imageobject>
+				<imagedata scalefit="1" width="450" align="center" fileref="images/ch13_img029.png"/>
+			</imageobject>
+			<caption>
+				 <para>Área de usuario: Ayuda</para>
+			</caption>
+		</mediaobject>
+		<para><literal>Cerrar sesión</literal></para>
+		<para>Para una desconexión segura de la plataforma, seleccione la opción <literal> Cerrar sesión. </literal> El sistema volverá a la pantalla de inicio de sesión.</para>
+		<mediaobject>
+			<imageobject>
+				<imagedata scalefit="1" width="450" align="center" fileref="images/ch13_img030.png"/>
+			</imageobject>
+			<caption>
+				  <para>Área de usuario: pantalla de inicio de sesión después de cerrar sesión</para>
+			</caption>
+		</mediaobject>
+	</section>		
 </chapter>

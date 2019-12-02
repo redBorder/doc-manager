@@ -3,33 +3,44 @@
 <!ENTITY % BOOK_ENTITIES SYSTEM "manual.ent">
 <!ENTITY PRODUCT "Documentation">
 <!ENTITY BOOKID "manual">
-<!ENTITY YEAR "2016">
+<!ENTITY YEAR "2019">
 <!ENTITY HOLDER "Eneo Tecnología S.L. |">
 ]>
 <chapter>
-	<title>¿Qué es redBorder?</title>
-	<para><emphasis role="bold">redBorder</emphasis> es una plataforma abierta de inteligencia activa de seguridad y visibilidad absoluta.</para>
-	<para>Esta plataforma se encuentra integrada por una serie de Apps que recogen los datos-a través de sensores interpuestos en la red-  para su análisis o gestión activa de seguridad de la red a través de la plataforma web redBorder.</para>
-	<para>Como se verá más adelante, dependiendo de las aplicaciones que se encuentren integradas en la plataforma, el usuario visualizará una u otras opciones en la barra de menú.</para>
-	<para>Las Apps que se encuentran disponibles en esta nueva versión de redBorder son las siguientes:</para>
+	<title>¿Qué es Redborder?</title>
+	<para><emphasis role="bold">Redborder</emphasis> es la última plataforma abierta, activa y escalable de Ciberseguridad y Análisis en tiempo real de Tráfico de Red (NTA). Se basa en la tecnología Big Data para empresas y proveedores de servicios.</para>
+	<para> Su capacidad para ingerir, analizar e reportar grandes cantidades de datos se ha desarrollado y probado en entornos de muy alta demanda, como el Análisis de Tráfico de Red, la Ciberseguridad o el análisis e informe de conexiones a través de redes inalámbricas en lugares.</para>
+	<para> La plataforma unifica las diferentes fuentes de datos proporcionadas por las aplicaciones y las sondas. Además, incluye una serie de características comunes: paneles e informes personalizables, correlación, motores de análisis, gestión de usuarios y almacenamiento en capas.</para>
+	<para> Las aplicaciones viven dentro de la plataforma y se pueden instalar como si fueran complementos. Estos se centran en digerir nuevos tipos de datos.</para>
+	<para> Las sondas viven fuera de la plataforma, pero se gestionan desde ella y su función es la creación de nuevos tipos de datos y capacidades de inspección.</para>
+	<para> Dependiendo de las aplicaciones integradas en la plataforma, el usuario verá una u otras opciones en la barra de menú. Las aplicaciones que están disponibles en esta nueva versión de Redborder son las siguientes:</para>
 	<itemizedlist mark="bullet">
 		<listitem>
-			<para>Flow</para>
+			<para>Tráfico</para>
 		</listitem>
 		<listitem>
-			<para>IPS</para>
+			<para>Intrusión</para>
+		</listitem>
+		<listitem>
+			<para>Monitor</para>
 		</listitem>
 		<listitem>
 			<para>Social</para>
 		</listitem>
 		<listitem>
-			<para>Malware</para>
+			<para>Vault</para>
+		</listitem>
+		<listitem>
+			<para>Movilidad</para>
+		</listitem>
+		<listitem>
+			<para>Informes</para>
 		</listitem>
 	</itemizedlist>
 	<section>
-		<title>Escenario básico para la instalación de redBorder</title>
-		<para>Un escenario básico típico propuesto por la solución consiste en un conjunto de sensores dispuestos en diferentes puntos sensibles de la red de la organización que conectarán con un Manager o cluster de managers para su gestión y monitorización.</para>
-		<para>Dichos puntos están formados por enlaces de red, llamados segmentos, por los que circulará el tráfico sensible y que el sensor analizará de manera más o menos transparente, en función del modo de funcionamiento configurado (IPS/IDS o Flow).</para><!--duda-->
+		<title> Escenario básico para la instalación de Redborder</title>
+		<para> Un escenario básico típico propuesto por la solución consiste en un conjunto de sensores dispuestos en diferentes puntos sensibles de la red de la organización que conectarán con un Manager o clúster de managers para su gestión y monitorización.</para>
+		<para> Dichos puntos están formados por enlaces de red, llamados segmentos, por los que circulará el tráfico sensible y que el sensor analizará de manera más o menos transparente, en función del modo de funcionamiento configurado (IPS/IDS o Flow).</para>
 		<para>Para la planificación de la instalación de los sensores, se deberán tener en cuenta algunos aspectos fundamentales:</para> 
 		<itemizedlist mark="circle">
 			<listitem>
@@ -42,16 +53,16 @@
 				<para><emphasis role="bold">Las interfaces de acceso IPMI para la gestión remota del hardware</emphasis> (conexión SOL ó Serial Over Lan, iKVM y comandos IPMI como inicio, reinicio y apagado).</para>
 			</listitem>
 		</itemizedlist>
-		<para>Para el <emphasis role="bold">Manager,</emphasis> al no ser necesario un hardware específico, la única condición es <emphasis role="bold">la existencia de una o más interfaces de red. </emphasis></para>
+		<para>Para el <emphasis role="bold">Manager</emphasis> no es necesario un hardware específico, la única condición es <emphasis role="bold">la existencia de una o más interfaces de red. </emphasis></para>
 		<note>
 			<title>Nota</title>
-			<para>En caso de que se haya creado un <emphasis role="bold">cluster</emphasis> son necesarias dos interfaces de red: una para la red de gestión (Management IP Address) y otra para la red de sincronismo (Sync IP address).</para>
+			<para>En caso de que se haya creado un <emphasis role="bold">clúster</emphasis> son necesarias dos interfaces de red: una para la red de gestión (Management IP Address) y otra para la red de sincronismo (Sync IP address).</para>
 		</note>
-		<para>De esta manera se permite la creación de un bonding para la gestión y conexión con los sensores y otro bonding (opcional) para sus comunicaciones hacia otras redes. Ambos sistemas soportan el estándar 802.1q para virtual LAN (opcional a la hora de configurar).</para>
+		<para>De esta manera se permite la creación de un bonding para la gestión y conexión con los sensores y otro bonding (opcional) para sus comunicaciones hacia otras redes. Ambos sistemas soportan el estándar 802.1q para virtual LAN (opcional a la hora de configurar). </para>
 		<warning>
-			<title>Advertencia</title>
-			<para>Es MUY IMPORTANTE que primero se realice la configuración del Manager (o cluster de managers) antes de configurar los sensores.</para>
-			<para>El Manager debe estar operativo y en una red accesible a los sensores. Algunos de los procesos de configuración de los sensores dependen del acceso al Manager. <footnote><para>El escenario de instalación del Manager redBorder es el mismo independientemente de los sensores que se instalen y registren en el mismo (IPS, Flow, Malware (beta) o Vault (beta)</para></footnote>.</para>
+			<title> Advertencia</title>
+			<para> Es MUY IMPORTANTE que primero se realice la configuración del Manager (o clúster de managers) antes de configurar los sensores.</para>
+			<para> El Manager debe estar operativo y en una red accesible a los sensores. Algunos de los procesos de configuración de los sensores dependen del acceso al Manager. </para>
 		</warning>
 		<mediaobject>
 			<imageobject>
@@ -66,17 +77,17 @@
 		</mediaobject>		    
 	</section>
 	<section>
-		<title>Estructura y operativa de los menús del asistente de instalación redBorder</title>
+		<title>Estructura de la interfaz de usuario del menú de instalación</title>
 		<para><emphasis role="bold">Menú, submenú y línea de comandos</emphasis></para>
 		<mediaobject>
 			<imageobject>
 				<imagedata scalefit="1" align="center" width="350" fileref="images/pre_img001.png"/>
             </imageobject>
             <textobject>
-					<phrase>Estructura y operativa de los menús del asistente de instalación redBorder</phrase>
+					<phrase>Estructura de la interfaz de usuario del menú de instalación</phrase>
 				</textobject>
 				<caption>
-					<para>Estructura y operativa de los menús del asistente de instalación redBorder</para>
+					<para>Estructura de la interfaz de usuario del menú de instalación</para>
 				</caption>
             </mediaobject>
 			<para><emphasis>Menú</emphasis></para>
@@ -100,7 +111,7 @@
 					<para>Selección de opciones predeterminadas</para>
 				</caption>
 			</mediaobject>
-			<para><emphasis role="bold">Opciones disponibles en el menú del asistente de instalación de redBorder</emphasis></para>
+			<para><emphasis role="bold">Opciones disponibles en el menú del asistente de instalación de Redborder</emphasis></para>
 			<itemizedlist mark="bullet">
 				<listitem>
 					<para>Selección de opción por defecto: pulse <keycap>Enter.</keycap></para>
@@ -120,10 +131,10 @@
 						<imagedata scalefit="1" align="center" width="350" fileref="images/pre_img003.png"/>
 				</imageobject>
 				<textobject>
-					<phrase>Opciones disponibles en el menú del asistente de instalación de redBorder</phrase>
+					<phrase>Opciones disponibles en el menú del asistente de instalación de Redborder</phrase>
 				</textobject>
 				<caption>
-					<para>Opciones disponibles en el  menú del asistente de instalación de redBorder</para>
+					<para>Opciones disponibles en el  menú del asistente de instalación de Redborder</para>
 				</caption>
 			</mediaobject>
 			<warning>

@@ -1,0 +1,399 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE chapter PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd" [
+<!ENTITY % BOOK_ENTITIES SYSTEM "manual.ent">
+<!ENTITY PRODUCT "Documentation">
+<!ENTITY BOOKID "manual">
+<!ENTITY YEAR "2019">
+<!ENTITY HOLDER "Eneo Tecnología S.L. |">
+]>
+<chapter>
+		<title>Eventos: IPS</title>
+		<para>Gracias a Redborder, puede obtener un control activo sobre el tráfico de su red. El análisis es el primer paso para mantener una política de seguridad efectiva. Pero debe tener una manera de intervenir en los momentos más críticos y así evitar que las amenazas se conviertan en ataques.</para>
+		<para>La aplicación IPS garantiza la máxima protección de su red para ser un sistema activo capaz de bloquear el tráfico de una IP en particular, o excluir un paquete para análisis previo con resultados sospechosos, o que cumpla con algunas de las reglas establecidas por el usuario.</para>
+		<para>Visibilidad para el análisis y seguridad para el control activo. Esta es la combinación que convierte a Redborder en la mejor plataforma de inteligencia operativa de código abierto del mercado.</para>
+		<note>
+			<title>Nota</title>
+			<para>En la siguiente imagen podemos ver que la sección IPS presenta una estructura similar a la sección de interfaz Flow. Es por esta razón que para conocer la estructura y el funcionamiento de la sección, el usuario puede consultar el capítulo "Eventos: Flow". </para>
+		</note>
+		<para>In the case of the IPS App, the measurement units in which the data is shown in graphs or aggregation, appear under the name  <literal>Events</literal>.</para>
+		<mediaobject>
+			<imageobject>
+				<imagedata scalefit="1" align="center" width="350" fileref="images/ch07_img000.png"/>
+			</imageobject>
+			<textobject>
+				<phrase>Vista general del IPS</phrase>
+			</textobject>
+			<caption>
+				<para>Vista general del IPS</para>
+			</caption>
+		</mediaobject>
+	<section>
+		<title>Eventos</title>
+		<para>En el encabezado del submenú encontramos la sección <emphasis>Eventos</emphasis> (entre las pestañas Ver y granularidad) que nos permite seleccionar la agregación para mostrar los eventos IPS.</para>
+		<itemizedlist mark="bullet">
+			<listitem>
+				<para><literal>Eventos</literal></para>
+			</listitem>
+			<listitem>
+				<para><literal>Eventos/s</literal></para>
+			</listitem>
+			<listitem>
+				<para><literal>Firmas</literal></para>
+			</listitem>
+		</itemizedlist>
+		<note>
+			<title>Nota</title>
+			<para>Estas opciones se aplican a las vistas Tops y Comparar. En el caso de la vista Única, no se aplica; están incluidos en la vista Raw, así como otras opciones detalladas a continuación.</para>
+		</note>
+		<section>
+			<title>Eventos</title> 
+			<para>En las vistas <literal>Tops</literal> y <literal>Comparar</literal> esta opción nos permite ver el número total de eventos que han ocurrido como atributos. Al colocar el mouse sobre la vista, mostrará la fecha, la hora exacta y el número total de eventos que ocurrieron en ese período de tiempo para el atributo seleccionado.</para>
+			<mediaobject>
+				<imageobject>
+					<imagedata scalefit="1" align="center" width="350" fileref="images/ch07_img026.png"/>
+				</imageobject>
+				<textobject>
+					<phrase>Eventos/sensor</phrase>
+				</textobject>
+				<caption>
+					<para>Eventos/sensor</para>
+				</caption>
+			</mediaobject>
+			<para>Recuerde que es posible analizar más a fondo agregando pestañas de atributos. Por ejemplo, en la siguiente captura de pantalla vemos las firmas totales que se han recibido durante un período de tiempo, o en el segundo caso, el número total de eventos generados por las IP de origen que han interactuado con una red.</para>
+			<mediaobject>
+				<imageobject>
+					<imagedata scalefit="1" align="center" width="350" fileref="images/ch07_img027.png"/>
+				</imageobject>	
+				<textobject>
+					<phrase>Eventos/firmas</phrase>
+				</textobject>
+				<caption>
+					<para>Eventos/firmas</para>
+				</caption>
+			</mediaobject>
+			<mediaobject>
+				<imageobject>
+					<imagedata scalefit="1" align="center" width="350" fileref="images/ch07_img028.png"/>
+				</imageobject>
+				<textobject>
+					<phrase>Eventos/SRC</phrase>
+				</textobject>
+				<caption>
+					<para>Eventos/SRC</para>
+				</caption>
+			</mediaobject>
+		</section>
+		<section>
+			<title>Eventos/s</title> 
+			<para>Muestra el total de eventos que han ocurrido en un segundo para un atributo dado. Ofrece el más alto grado de granularidad.</para> 
+			<mediaobject>
+				<imageobject>
+					<imagedata scalefit="1" align="center" width="350" fileref="images/ch07_img029.png"/>
+				</imageobject>
+				<textobject>
+					<phrase>Eventos/s-firmas</phrase>
+				</textobject>
+				<caption>
+					<para>Eventos/s-firmas</para>
+				</caption>
+			</mediaobject>
+		</section>
+		<section>
+			<title>Firmas</title> 
+			<para>Con esta opción, el usuario puede ver en la tabla de datos el número total de firmas que se han ejecutado para un atributo dado: sensor, IP de origen, IP de destino, etc. Si se agrega una pestaña al atributo <literal>Firma</literal> veremos que la distribución de firma por firma tenía, lógicamente, un valor de 1. Sin embargo, el resumen proporcionará información muy útil.</para>
+			<mediaobject>
+				<imageobject>
+					<imagedata scalefit="1" align="center" width="350" fileref="images/ch07_img030.png"/>
+				</imageobject>
+				<textobject>
+					<phrase>Firmas/sensor</phrase>
+				</textobject>
+				<caption>
+					<para>Firmas/sensor</para>
+				</caption>
+			</mediaobject>
+		</section>
+	</section>
+	<section>
+		<title>Gestión de eventos IPS en la vista Raw</title>
+		<para>La vista RAW nos permite mostrar todos los eventos recopilados por los sensores IPS por atributo y segmentados por intervalo de tiempo. Combinado con el gráfico Stream, también nos permite mostrar el flujo de datos que ocurre dentro de la red.</para>
+		<para>Cada columna de la tabla de datos muestra los valores correspondientes a los atributos seleccionados y el intervalo de tiempo entre eventos <literal>Timestamp</literal>.</para>
+		<para>En esta tabla podemos realizar diferentes acciones:</para>
+		<itemizedlist mark="bullet">
+			<listitem>
+				<para>Intervalo de tiempo o  <literal>Timestamp:</literal> podemos verificar el intervalo de tiempo al que se hace referencia para mostrar la cantidad de eventos que han ocurrido en ese tiempo.</para>
+			</listitem>
+			<listitem>
+				<para>Verifique la información del evento: haga clic en el icono "Editar" para una mayor granularidad.</para>
+				<mediaobject>
+					<imageobject>
+						<imagedata scalefit="1" align="center" width="350" fileref="images/ch11_img012.png"/>
+					</imageobject>
+					<caption>
+						<para>Icono “Editar"</para>
+					</caption>
+				</mediaobject>
+				<para>Cuando haya alcanzado el límite de granularidad en el que puede mostrar eventos, este icono cambiará en la información:</para>
+				<mediaobject>
+					<imageobject>
+						<imagedata scalefit="1" align="center" width="350" fileref="images/ch11_img012.png"/>
+					</imageobject>
+					<caption>
+						<para>Detalles del Timestamp: información del evento</para>
+					</caption>
+				</mediaobject>
+				<para>Al hacer clic en él accederá a una pantalla que proporciona la información completa asociada con cada uno de los eventos consignados en ese intervalo de tiempo.</para>
+				<mediaobject>
+					<imageobject>
+						<imagedata scalefit="1" align="center" width="350" fileref="images/ch07_img012.png"/>
+					</imageobject>
+					<caption>
+						<para>Información del evento</para>
+					</caption>
+				</mediaobject>
+			</listitem>
+			<listitem>
+				<para><literal>Crear objeto</literal>: Algunos de los atributos que se muestran en la información del evento permiten la posibilidad de convertirlos en un Objeto. Esto significa que estos valores pueden agregarles un nombre y una descripción, lo que permite la ubicación de un elemento de manera más rápida y sencilla..</para>
+				<mediaobject>
+					<imageobject>
+						<imagedata scalefit="1" align="center" width="350" fileref="images/ch07_img013.png"/>
+					</imageobject>
+					<caption>
+						<para>Crear objeto</para>
+					</caption>
+				</mediaobject>
+			</listitem>
+		</itemizedlist>
+		<note>
+			<title>Nota</title>
+			<para>Recuerde que la granularidad máxima disponible es de 1 minuto.</para>
+		</note>	
+		<section>
+			<title>Vista Raw: Información del evento IPS</title>
+			<para>Cuando alcanzamos la máxima granularidad disponible para consultar los eventos registrados por el sensor, accedemos a una pantalla en la que veremos una pestaña que incluye los detalles de información asociados con los siguientes parámetros:</para>
+			<itemizedlist mark="circle">
+				<listitem>
+					<para>Enlace de datos</para>
+				</listitem>
+				<listitem>
+					<para>Archivo</para>
+				</listitem>
+				<listitem>
+					<para>IPS/IDS</para>
+				</listitem>
+				<listitem>
+					<para>Localización</para>
+				</listitem>
+				<listitem>
+					<para>Red</para>
+				</listitem>
+				<listitem>
+					<para>Transporte</para>
+				</listitem>
+			</itemizedlist>
+			<mediaobject>
+				<imageobject>
+					<imagedata scalefit="1" align="center" width="350" fileref="images/ch07_img034.png"/>
+				</imageobject>
+				<textobject>
+					<phrase>Detalles de información del evento</phrase>
+				</textobject>
+				<caption>
+					<para>Detalles de información del evento</para>
+				</caption>
+			</mediaobject>
+		</section>
+		<section>	
+			<title>Vista Raw: reglas de eventos, políticas y acciones</title>
+			<para>Además de obtener información detallada sobre cada uno de los eventos, puede realizar acciones en ellos para ayudar a administrar la pantalla, de modo que pueda optimizar el análisis y el monitoreo de sus redes.</para>
+			<mediaobject>
+				<imageobject>
+					<imagedata scalefit="1" align="center" width="350" fileref="images/ch07_img035.png"/>
+				</imageobject>
+				<textobject>
+					<phrase>Acciones para eventos mostrados</phrase>
+				</textobject>
+				<caption>
+					<para>Acciones para eventos mostrados</para>
+				</caption>
+			</mediaobject>
+			<para>Las acciones que puede realizar en esta pantalla son las siguientes:</para>
+			<itemizedlist mark="circle">
+				<listitem>
+					<para>Referencias: nos permite consultar fuentes externas para obtener información sobre vulnerabilidades conocidas.</para>
+					<mediaobject>
+						<imageobject>
+							<imagedata scalefit="1" align="center" width="350" fileref="images/ch07_img014.png"/>
+						</imageobject>
+						<textobject>
+							<phrase>Referencias: CVE</phrase>
+						</textobject>
+						<caption>
+							<para>Referencias: CVE</para>
+						</caption>
+					</mediaobject>
+				</listitem>
+				<listitem>
+					<para>Ver regla: información detallada sobre la regla asociada con el sensor.</para>
+					<mediaobject>
+						<imageobject>
+							<imagedata scalefit="1" align="center" width="350" fileref="images/ch07_img015.png"/>
+						</imageobject>
+						<textobject>
+							<phrase>Información de la regla</phrase>
+						</textobject>
+						<caption>
+							<para>Información de la regla</para>
+						</caption>
+					</mediaobject>
+				</listitem>
+				<listitem>
+					<para>Regla de política: muestra la política o políticas aplicadas para activar la alerta que se está consultando. Esta opción incluye muchas acciones que se pueden realizar en las políticas, y verá más en el capítulo "Configuración de políticas".</para> 
+					<mediaobject>
+						<imageobject>
+							<imagedata scalefit="1" align="center" width="350" fileref="images/ch07_img016.png"/>
+						</imageobject>
+						<textobject>
+							<phrase>Regla de política</phrase>
+						</textobject>
+						<caption>
+							<para>Regla de política</para>
+						</caption>
+					</mediaobject>
+				</listitem>
+				<listitem>
+					<para>Vista Raw: permite la visualización de eventos de datos sin procesar.</para>
+					<mediaobject>
+						<imageobject>
+							<imagedata scalefit="1" align="center" width="350" fileref="images/ch07_img017.png"/>
+						</imageobject>
+						<textobject>
+							<phrase>Vista Raw</phrase>
+						</textobject>
+						<caption>
+							<para>Vista Raw</para>
+						</caption>
+					</mediaobject>
+				</listitem>
+				<listitem>
+					<para>Supresión de eventos: supresión de eventos recurrentes, o aquellos que no necesitan información.</para>
+					<mediaobject>
+						<imageobject>
+							<imagedata scalefit="1" align="center" width="350" fileref="images/ch07_img018.png"/>
+						</imageobject>
+						<textobject>
+							<phrase>Eliminar evento</phrase>
+						</textobject>
+						<caption>
+							<para>Eliminar evento</para>
+						</caption>
+					</mediaobject>
+				</listitem>
+				<listitem>
+					<para>Filtrado de eventos: hay tres tipos de filtros para mostrar eventos; el usuario también puede determinar si el seguimiento de eventos se realiza por origen o destino.</para>
+					<mediaobject>
+						<imageobject>
+							<imagedata scalefit="1" align="center" width="350" fileref="images/ch07_img019.png"/>
+						</imageobject>
+						<textobject>
+							<phrase>Filtrar evento</phrase>
+						</textobject>
+						<caption>
+							<para>Filtrar evento</para>
+						</caption>
+					</mediaobject>
+					<para>-Límite: limita el número de eventos que se muestran en un período de tiempo que hemos indicado, y se encuentran debajo de las formas seleccionadas, ignorando el resto de los eventos bajo la misma firma.</para>
+					<para>-Umbral: selecciona el número de veces que debe ocurrir un evento en un cierto período de tiempo para que se muestre la alerta</para>
+					<para>-Ambos: la alerta se muestra solo una vez cada n veces que el evento ha sucedido en un período de tiempo.</para>
+				</listitem>
+			</itemizedlist>	
+		</section>
+	</section>
+	<section>
+		<title>Atributos disponibles para IPS</title>
+		<note>
+			<title>Nota</title>
+			<para>Las opciones mostradas en la pestaña <literal>Añadir pestaña</literal> son las mismas para todas las vistas, excepto la vista Comparar, que nos muestra como opciones de tiempo con las que podemos consultar los eventos: semanal o mensual.</para>
+		</note>
+		<para>Los siguientes son los atributos que el usuario tiene disponibles para aplicar al IPS y los diferentes aspectos que se refieren a cada uno:</para>
+		<itemizedlist mark="circle">
+			<listitem>
+				<para>Datalink</para>
+				<para>-Ethelength</para>
+				<para>-ICMP Type</para>
+				<para>-SRC MAC</para>
+				<para>-SRC Vendor</para>
+				<para>-DST MAC</para>
+				<para>-DST Vendor</para>
+				<para>-TOS</para>
+				<para>-TTL</para>
+				<para>-VLAN ID</para>
+			</listitem>
+			<listitem>
+				<para>File</para>
+				<para>-SHA256</para>
+				<para>-File size</para>
+				<para>-File URI</para>
+				<para>-File hostname</para>
+			</listitem>
+			<listitem>
+				<para>IPS/IDS</para>
+				<para>-Action</para>
+				<para>-Classification</para>
+				<para>-Domain Name</para>
+				<para>-IPS Group</para>
+				<para>-GID</para>
+				<para>-Revision</para>
+				<para>-Severity</para>
+				<para>-SID</para>
+			</listitem>
+			<listitem>
+				<para>Flow</para>
+				<para>-Biflow direction</para>
+				<para>-Direction</para>
+			</listitem>
+			<listitem>
+				<para>Interface</para>
+				<para>-INPUT SNMP</para>
+				<para>-OUTPUT SNMP</para>
+				<para>-INPUT VRF</para>
+				<para>-OUTPUT VRF</para>
+				<para>-Wireless Starion</para>
+				<para>-Client RSSI</para>
+				<para>-Client RSSI Value</para>
+				<para>-Client SNR</para>
+				<para>-Client SNR Value</para>
+			</listitem>
+			<listitem>
+				<para>Location</para>
+				<para>-SRC Country</para>
+				<para>-SRC AS </para>
+				<para>-DST Country</para>
+				<para>-DST AS</para>
+				<para>-Service Provider</para>
+				<para>-Namespace</para>
+				<para>-Deployment</para>
+				<para>-Market</para>
+				<para>-Organization</para>
+			</listitem>
+			<listitem>
+				<para>Network</para>
+				<para>-IP length</para>
+				<para>-Protocol</para>
+				<para>-Sensor Type</para>
+				<para>-SRC NET Address</para>
+				<para>-DST NET Address</para>
+			</listitem>
+			<listitem>
+				<para>Transport</para>
+				<para>-SRC Port</para>
+				<para>-DST Port</para>
+			</listitem>
+		</itemizedlist>
+		<important>
+			<title>Importante</title>
+			<para>Gracias a la opción Grupo IPS, el usuario puede crear grupos con diferentes segmentos IPS. Esto le permite aplicar diferentes políticas a diferentes grupos de segmentos, a diferencia de las versiones anteriores.</para>
+			<para>Con una sola máquina, puede crear muchos entornos donde se aplican diferentes reglas.</para>
+		</important>
+	</section>
+</chapter>

@@ -46,7 +46,7 @@
 			<title>Importante</title>
 			<para>Requisitos de instalación del Manager de redBorder en un equipo fí­sico:</para>
 			<para>Memoria y almacenamiento: <emphasis role= "bold"> 60GB de disco duro y un mí­nimo de 16GB de RAM. Siendo recomendables 32GB de RAM.</emphasis>(Esta cifra dependerá del número de sensores asignados).</para>
-			<para>En caso de que se haya creado un <emphasis role="bold">cluster</emphasis> son necesarias dos interfaces de red: una para la red de gestión (Management IP Address) y otra para la red de sincronismo (Sync IP address).</para>
+			<para>En caso de que se haya creado un <emphasis role="bold">clúster</emphasis> son necesarias dos interfaces de red: una para la red de gestión (Management IP Address) y otra para la red de sincronismo (Sync IP address).</para>
 		</important>
 		<note>
 			<title><emphasis role="bold">Soluciones Cloud compatibles:</emphasis></title>

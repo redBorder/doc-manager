@@ -1,0 +1,309 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE chapter PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd" [
+<!ENTITY % BOOK_ENTITIES SYSTEM "manual.ent">
+<!ENTITY PRODUCT "Documentation">
+<!ENTITY BOOKID "manual">
+<!ENTITY YEAR "2019">
+<!ENTITY HOLDER "Eneo Tecnología S.L. |">
+]>
+
+<chapter>
+	<title>Casos de uso</title>
+	<para>En este capítulo mostraremos algunos casos de uso de Redborder. Estos son algunos:</para>
+	<section>
+		<title>Caso de uso: Seguimiento de una IP con Redborder</title>
+		<para>Podemos usar Redborder para rastrear una IP sospechosa. Es posible aprender sobre su comportamiento utilizando el módulo de Tráfico.</para><para>Antes que nada debemos saber la IP que queremos rastrear. Una vez que tengamos la IP iremos al módulo de Tráfico.</para>
+		<mediaobject>
+			<imageobject>
+				<imagedata scalefit="1" align="center" width="450" fileref="images/ch30_img001_a.png"/>
+			</imageobject>
+			<caption>
+				<para>Seguimiento de una IP: módulo de tráfico</para>
+			</caption>
+		</mediaobject>
+		<para>Una vez en el módulo Tráfico, podemos usar el botón Búsqueda avanzada desde el filtro para ver solo el tráfico generado por esa ip.</para>
+		<mediaobject>
+			<imageobject>
+				<imagedata scalefit="1" align="center" width="450" fileref="images/ch30_img001_b.png"/>
+			</imageobject>
+			<caption>
+				<para>Seguimiento de una IP: Búsqueda avanzada en el módulo de Tráfico</para>
+			</caption>
+		</mediaobject>
+		<para>Aquí podemos configurar la IP sospechosa para filtrar todo el tráfico. Utilizaremos la métrica IP de LAN para ese propósito.</para>
+		<mediaobject>
+			<imageobject>
+				<imagedata scalefit="1" align="center" width="450" fileref="images/ch30_img001_c.png"/>
+			</imageobject>
+			<caption>
+				<para>Seguimiento de una IP: filtrado de IP</para>
+			</caption>
+		</mediaobject>
+		<para>Cuando apliquemos el filtro, solo veremos el tráfico de esa ip.</para>
+		<mediaobject>
+			<imageobject>
+				<imagedata scalefit="1" align="center" width="450" fileref="images/ch30_img001_d.png"/>
+			</imageobject>
+			<caption>
+				<para>Seguimiento de una IP: tráfico filtrado</para>
+			</caption>
+		</mediaobject>	
+		<para>Es posible agregar nuevas métricas para ver el comportamiento de la ip y lo que está haciendo en nuestra red.</para>
+		<mediaobject>
+			<imageobject>
+				<imagedata scalefit="1" align="center" width="450" fileref="images/ch30_img001_e.png"/>
+			</imageobject>
+			<caption>
+				<para>Seguimiento de una IP: añadir nuevas métricas</para>
+			</caption>
+		</mediaobject>
+		<para>Ahora podemos ver qué puertos está utilizando esta IP.</para>
+		<mediaobject>
+			<imageobject>
+				<imagedata scalefit="1" align="center" width="450" fileref="images/ch30_img001_f.png"/>
+			</imageobject>
+			<caption>
+				<para>Seguimiento de una IP: puertos utilizados por IP sospechosa</para>
+			</caption>
+		</mediaobject>
+		<para>Con este caso de uso, podemos ver cómo Redborder puede filtrar el tráfico de una o más IP para que el usuario pueda detectar comportamientos incorrectos para IP particulares, pudiendo rastrear las IP con solo unos pocos clics.</para>
+	</section>
+	<section>
+	<title>Caso de uso: Alerta de ataque de autenticación de fuerza bruta</title>
+	<para>Podemos utilizar Redborder para alertar sobre posibles ataques de fuerza bruta gracias al uso de su motor de correlación y las reglas establecidas.</para><para>Primero, debemos ir a la sección Reglas del motor de correlación ubicada en la parte Herramientas.</para>
+	<mediaobject>
+			<imageobject>
+				<imagedata scalefit="1" align="center" width="450" fileref="images/ch30_img002_a.png"/>
+			</imageobject>
+			<caption>
+				<para>Reglas del CEP</para>
+			</caption>
+	</mediaobject>
+	<para>Luego activaremos la regla que queremos usar. En este caso: Autenticación de fuerza bruta SSH. Finalmente, debemos aplicar los cambios.</para>
+	<mediaobject>
+			<imageobject>
+				<imagedata scalefit="1" align="center" width="450" fileref="images/ch30_img002_b.png"/>
+			</imageobject>
+			<caption>
+				<para>Reglas del CEP</para>
+			</caption>
+	</mediaobject>
+	<para>Esta regla es capaz de generar una alerta cuando ocurren 200 intentos fallidos de inicio de sesión en una ventana de tiempo de 20 minutos en una máquina Linux a través del protocolo SSH. Para esto, es necesario tener el sensor de bóveda correspondiente creado previamente haciendo referencia a la IP de la máquina que queremos proteger.</para><para>Una vez hecho esto, en caso de recibir un ataque de fuerza bruta, podríamos visualizar la alerta correspondiente accediendo al módulo Vault. Para poder verlo fácilmente, podemos agregar una pestaña de sensor y filtrar por CEP.</para>
+	<mediaobject>
+			<imageobject>
+				<imagedata scalefit="1" align="center" width="450" fileref="images/ch30_img002_c.png"/>
+			</imageobject>
+			<caption>
+				<para>Módulo de Vault: Alerta de ataque de fuerza bruta.</para>
+			</caption>
+	</mediaobject>
+	<para>También podemos mostrar el mensaje de alerta si cambiamos a la pestaña de mensajes.</para>
+	<mediaobject>
+			<imageobject>
+				<imagedata scalefit="1" align="center" width="450" fileref="images/ch30_img002_d.png"/>
+			</imageobject>
+			<caption>
+				<para>Módulo de Vault: Mensaje de alerta de ataque de fuerza bruta.</para>
+			</caption>
+	</mediaobject>
+	<note>
+			<title>Nota</title>
+			<para>Para expandir los casos de uso, podemos acceder al siguiente enlace donde se encuentran los casos de uso avanzados:</para>
+			<para><emphasis role="bold">https://support.Redborder.com/hc/en-us/sections/360000254677-eXperience</emphasis></para>
+	</note>
+	</section>
+	<section>
+		<title>Caso de uso: revisión de información remota desde Untangle</title>
+		<para>Redborder tiene la capacidad de recopilar información de otros fabricantes y usarla para monitorizar sistemas remotos.</para>
+		<para>En este caso de uso, mostraremos cómo es posible revisar un estado del sistema remoto que está siendo monitorizado por Untangle.</para>
+		<para>En primer lugar accederemos al módulo Vault.</para>
+		<mediaobject>
+			<imageobject>
+				<imagedata scalefit="1" align="center" width="450" fileref="images/ch30_img003_a.png"/>
+			</imageobject>
+			<caption>
+				<para>Módulo Vault: Vista general</para>
+			</caption>
+		</mediaobject>
+		<para>Seleccionaremos la métrica Clase de Untangle y filtraremos uno de ellos</para>
+		<mediaobject>
+			<imageobject>
+				<imagedata scalefit="1" align="center" width="450" fileref="images/ch30_img003_b.png"/>
+			</imageobject>
+			<caption>
+				<para>Módulo de Vault: Métrica Clase de Untangle</para>
+			</caption>
+		</mediaobject>
+		<para>Una vez que hayamos filtrado la clase, veremos la métrica del nombre de host que utiliza la clase filtrada.</para>
+		<mediaobject>
+			<imageobject>
+				<imagedata scalefit="1" align="center" width="450" fileref="images/ch30_img003_c.png"/>
+			</imageobject>
+			<caption>
+				<para>Módulo Vault: Vista del nombre del host</para>
+			</caption>
+		</mediaobject>
+		<para>Queremos saber qué protocolo está utilizando el nombre de host y la clase filtrada.</para>
+		<mediaobject>
+			<imageobject>
+				<imagedata scalefit="1" align="center" width="450" fileref="images/ch30_img003_d.png"/>
+			</imageobject>
+			<caption>
+				<para>Módulo Vault: Vista del filtro</para>
+			</caption>
+		</mediaobject>
+		<para>Usando la herramienta de filtro podemos ver que el protocolo utilizado por ese nombre de host en particular y esa clase en particular es UDP.</para>
+		<mediaobject>
+			<imageobject>
+				<imagedata scalefit="1" align="center" width="450" fileref="images/ch30_img003_e.png"/>
+			</imageobject>
+			<caption>
+				<para>Módulo Vault: Vista del nombre de protocolo</para>
+			</caption>
+		</mediaobject>
+	</section>
+	<section>
+		<title>Caso de uso: detectar un ataque de Eternalblue con Redborder</title>
+		<para>En este caso, veremos cómo Redborder puede usar las reglas de Snort para detectar un ataque de Eternalblue.</para>
+		<para>Todo comienza con un correo electrónico malicioso que contiene un dropper que instala un ransomware.</para>
+		<para>El ramsonware intentará utilizar un exploit conocido para tomar el control de todas las máquinas posibles.</para>
+		<mediaobject>
+			<imageobject>
+				<imagedata scalefit="1" align="center" width="450" fileref="images/ch30_img004_a.png"/>
+			</imageobject>
+			<caption>
+				<para>Ataque Eternalblue: Escenario</para>
+			</caption>
+		</mediaobject>
+		<para>Redborder puede usar las reglas de Snort para detectar la respuesta de eco del protocolo SMBv1 utilizada por el ransomware, por lo que podemos usar el módulo de intrusión para ver las firmas para identificar el ataque.</para>
+		<mediaobject>
+			<imageobject>
+				<imagedata scalefit="1" align="center" width="450" fileref="images/ch30_img004_b.png"/>
+			</imageobject>
+			<caption>
+				<para>Ataque Eternalblue: Intrusión</para>
+			</caption>
+		</mediaobject>
+		<para>Aquí podemos ver las firmas actuales recopiladas por Redborder.</para>
+		<mediaobject>
+			<imageobject>
+				<imagedata scalefit="1" align="center" width="450" fileref="images/ch30_img004_c.png"/>
+			</imageobject>
+			<caption>
+				<para>Ataque Eternalblue: Filtrando firmas</para>
+			</caption>
+		</mediaobject>
+		<para>Una vez que hayamos filtrado la firma de Eternalblue, podemos mostrar la métrica de la Dirección SRC para rastrear las IP involucradas en el ataque.</para>
+		<mediaobject>
+			<imageobject>
+				<imagedata scalefit="1" align="center" width="450" fileref="images/ch30_img004_d.png"/>
+			</imageobject>
+			<caption>
+				<para>Ataque Eternalblue: Selección de métrica de dirección SRC</para>
+			</caption>
+		</mediaobject>
+		<para>Ahora tenemos las IP de las máquinas involucradas, por lo que es posible tomar medidas para resolver el agujero de seguridad.</para>
+		<mediaobject>
+			<imageobject>
+				<imagedata scalefit="1" align="center" width="450" fileref="images/ch30_img004_e.png"/>
+			</imageobject>
+			<caption>
+				<para>Ataque Eternalblue: IPs envueltas en el ataque</para>
+			</caption>
+		</mediaobject>
+		<note>
+				<title>Nota</title>
+				<para>Es importante tener una versión actualizada de las reglas de Snort para detectar comportamientos extraños y tráfico con Redborder</para>
+		</note>
+	</section>
+	<section>
+		<title>Caso de uso: Ataques de fuerza bruta Ssh </title>
+		<para>En este caso, queremos proteger y monitorear un servidor ssh crítico, por lo que utilizaremos reglas siddhi para rastrear cualquier tipo de ataque de fuerza bruta.</para><para>Una vez que tenemos configurado el servidor ssh y ya hemos creado un sensor para él en Redborder, necesitamos habilitar el motor de correlación.</para>
+		<para>Para habilitar el motor de correlación, debemos introducir los siguientes comandos en la terminal del administrador.</para>
+		<mediaobject>
+			<imageobject>
+				<imagedata scalefit="1" align="center" width="450" fileref="images/ch30_img005_a.png"/>
+			</imageobject>
+			<caption>
+				<para>Ataque de fuerza bruta ssh: Habilitar el motor de correlación</para>
+			</caption>
+		</mediaobject>
+		<para>Después de eso tendremos que esperar unos minutos para asegurarnos de que cep se esté ejecutando. Podemos usar el script rb_get_services.sh para asegurarnos de ello.</para>
+		<mediaobject>
+			<imageobject>
+				<imagedata scalefit="1" align="center" width="450" fileref="images/ch30_img005_b.png"/>
+			</imageobject>
+			<caption>
+				<para>Ataque de fuerza bruta ssh: motor de correlación habilitado</para>
+			</caption>
+		</mediaobject>
+		<para>Después de eso, ahora podemos ir a las Reglas del motor de correlación desde el menú Herramientas.</para>
+		<para>Usaremos la regla siddhi de fuerza bruta Ssh.</para>
+		<mediaobject>
+			<imageobject>
+				<imagedata scalefit="1" align="center" width="450" fileref="images/ch30_img005_d.png"/>
+			</imageobject>
+			<caption>
+				<para>Ataque de fuerza bruta ssh: Reglas ssh</para>
+			</caption>
+		</mediaobject>
+		<para>Podemos ver la regla haciendo click en el botón de edición a la derecha.</para>
+		<mediaobject>
+			<imageobject>
+				<imagedata scalefit="1" align="center" width="450" fileref="images/ch30_img005_e.png"/>
+			</imageobject>
+			<caption>
+				<para>Ataque de fuerza bruta ssh: Edición de la regla ssh</para>
+			</caption>
+		</mediaobject>
+		<para>Vamos a cambiar el número máximo de intentos a 3.</para>
+		<mediaobject>
+			<imageobject>
+				<imagedata scalefit="1" align="center" width="450" fileref="images/ch30_img005_f.png"/>
+			</imageobject>
+			<caption>
+				<para>Ataque de fuerza bruta ssh: Editando la regla ssh</para>
+			</caption>
+		</mediaobject>
+		<para>Después de eso, debemos marcar la casilla de habilitación de la regla y aplicar todos los cambios..</para>
+		<mediaobject>
+			<imageobject>
+				<imagedata scalefit="1" align="center" width="450" fileref="images/ch30_img005_g.png"/>
+			</imageobject>
+			<caption>
+				<para>Ataque de fuerza bruta ssh: Aplicar cambios</para>
+			</caption>
+		</mediaobject>
+		<para>En el módulo Vault veremos el sensor CEP.</para>
+		<mediaobject>
+			<imageobject>
+				<imagedata scalefit="1" align="center" width="450" fileref="images/ch30_img005_h.png"/>
+			</imageobject>
+			<caption>
+				<para>Ataque de fuerza bruta ssh: Sensor CEP</para>
+			</caption>
+		</mediaobject>
+		<para>Podemos filtrar por sensor CEP para ver los mensajes.</para>
+		<mediaobject>
+			<imageobject>
+				<imagedata scalefit="1" align="center" width="450" fileref="images/ch30_img005_i.png"/>
+			</imageobject>
+			<caption>
+				<para>Ataque de fuerza bruta ssh: Sensor CEP filtrado</para>
+			</caption>
+		</mediaobject>
+		<para>En la pestaña de mensajes podemos ver los mensajes del sensor cep, que muestra está alertando de que se está realizando un ataque de fuerza bruta.</para>
+		<mediaobject>
+			<imageobject>
+				<imagedata scalefit="1" align="center" width="450" fileref="images/ch30_img005_i.png"/>
+			</imageobject>
+			<caption>
+				<para>Ataque de fuerza bruta ssh: Mensajes CEP</para>
+			</caption>
+		</mediaobject>
+		<note>
+				<title>Nota</title>
+				<para>El motor de correlación tiene un gran potencial debido a las reglas siddhi. Las reglas predeterminadas incluidas en el administrador se pueden editar para adaptarlas a sus propósitos o crear otras nuevas..</para>
+		</note>
+	</section>
+</chapter>
