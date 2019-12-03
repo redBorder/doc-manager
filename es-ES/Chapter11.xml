@@ -128,7 +128,7 @@
 					<imagedata scalefit="1" align="center" width="450" fileref="images/ch11_img003.png"/>
 				</imageobject>
 				<caption>
-					<para>Vista árbol</literal></para>
+					<para><literal>Vista árbol</literal></para>
 				</caption>
 			</mediaobject>
 			<para>Desde esta vista el usuario puede añadir un nuevo dominio o sensor, borrar los existentes, acceder a otras vistas, importar y exportar el arbol así como editar directamente todos los dominios y sensores que son parte del listado.</para>
@@ -229,7 +229,7 @@
 					<title>Nota</title>
 					<para>Recuerde que la creación de los sensores IPS o Gateway se debe realizar a través del registro de los sensores en el proceso de instalación del Manager. 
 					Sensors le permite editar y sobreescribir los parámetros que hayan heredado de la Configuración General: <literal>Herramientas->Configuración general</literal></para>
-					<para>Los sensores del resto de Apps pueden crearse desde la sección <literal>Sensores</ligeral>.</para>
+					<para>Los sensores del resto de Apps pueden crearse desde la sección <literal>Sensores</literal>.</para>
 				</note>		
 				<para><emphasis role="bold">Herencia de configuración</emphasis></para>
 				<para>En la sección <emphasis role="bold">Herramientas</emphasis> encontramos opciones de Configuración General a través de los cuales el usuario puede definir parámetros generales del Manager y de las Apps.</para>

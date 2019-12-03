@@ -3,7 +3,7 @@
 <!ENTITY % BOOK_ENTITIES SYSTEM "manual.ent">
 <!ENTITY PRODUCT "Documentation">
 <!ENTITY BOOKID "manual">
-<!ENTITY YEAR "2016">
+<!ENTITY YEAR "2019">
 <!ENTITY HOLDER "Eneo Tecnología S.L. |">
 ]>
 <book>
@@ -13,14 +13,10 @@
   <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="Chapter2.xml"/>
   <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="Chapter4.xml"/>
   <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="Chapter5.xml"/>
-  <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="Chapter11.xml"/>
-  <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="Chapter12.xml"/>
   <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="Chapter6.xml"/>
-  <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="Chapter10.xml"/>
-  <xi:include condition="ips" xmlns:xi="http://www.w3.org/2001/XInclude" href="Chapter15.xml"/>
-  <xi:include condition="ips" xmlns:xi="http://www.w3.org/2001/XInclude" href="Chapter16.xml"/>
-  <xi:include condition="ips" xmlns:xi="http://www.w3.org/2001/XInclude" href="Chapter17.xml"/>
+  <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="Chapter11.xml"/>
   <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="Chapter13.xml"/>
-  <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="Chapter14.xml"/>
+  <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="Chapter20.xml"/>
+  <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="Chapter30.xml"/>
   <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="Revision_History.xml"/>
 </book>
