@@ -15,45 +15,110 @@
 		<title>Modules</title>
 		<para>Redborder has a module for each main functionality. Each one uses different technologies and has an independent interface. All modules need a sensor that provides the module the data.
 		</para>
-		<mediaobject>
-			<imageobject>
-				<imagedata scalefit="1" align="center" width="450" fileref="images/ch06_img000_a.png"/>
-			</imageobject>
-			<textobject>
-				<phrase>Redborder Modules</phrase>
-			</textobject>
-			<caption>
-				<para>Redborder Modules</para>
-			</caption>
-		</mediaobject>
-
 		<section>
 			<title>Traffic</title>
 			<para>Traffic module uses netflow data to extract information about all the traffic from the sensor. The module provides information as IPs, protocols, locations and much more.</para>
+			<mediaobject>
+				<imageobject>
+					<imagedata scalefit="1" align="center" width="450" fileref="images/ch06_img050.png"/>
+				</imageobject>
+				<textobject>
+					<phrase>Traffic Module</phrase>
+				</textobject>
+				<caption>
+					<para>Traffic Module</para>
+				</caption>
+			</mediaobject>
 		</section>
 		<section>
 			<title>Intrusion</title>
 			<para>Intrusion modules uses data from IPS sensor to show intrusion events based on Snort signatures. It can show events such as DDoS or MITM attacks.</para>
+			<mediaobject>
+				<imageobject>
+					<imagedata scalefit="1" align="center" width="450" fileref="images/ch06_img051.png"/>
+				</imageobject>
+				<textobject>
+					<phrase>Intrusion Module</phrase>
+				</textobject>
+				<caption>
+					<para>Intrusion Module</para>
+				</caption>
+			</mediaobject>
 		</section>
 		<section>
 			<title>Monitor</title>
 			<para>Monitor modules uses data from SNMP, Redfish and Ipmi protocols to show the status of the infrastructure.</para>
+			<mediaobject>
+				<imageobject>
+					<imagedata scalefit="1" align="center" width="450" fileref="images/ch06_img052.png"/>
+				</imageobject>
+				<textobject>
+					<phrase>Monitor Module</phrase>
+				</textobject>
+				<caption>
+					<para>Monitor Module</para>
+				</caption>
+			</mediaobject>	
 		</section>
 		<section>
 			<title>Social</title>
 			<para>Social modules uses data from Twitter sensor to show information from that social network. It can be used to show the behaviour of the social info about a topic.</para>
+			<mediaobject>
+				<imageobject>
+					<imagedata scalefit="1" align="center" width="450" fileref="images/ch06_img053.png"/>
+				</imageobject>
+				<textobject>
+					<phrase>Twitter Module Dashboard</phrase>
+				</textobject>
+				<caption>
+					<para>Twitter Module Dashboard</para>
+				</caption>
+			</mediaobject>
 		</section>
 		<section>
 			<title>Vault</title>
 			<para>Vault module uses syslog data to provide information about events from different origins, like the category, target, event action and more.</para>
 			<para>It is also possible to expand the capabilities of the Vault module through the extensions that add compatibility with other manufacturers.</para>
+			<mediaobject>
+				<imageobject>
+					<imagedata scalefit="1" align="center" width="450" fileref="images/ch06_img054.png"/>
+				</imageobject>
+				<textobject>
+					<phrase>Vault Module</phrase>
+				</textobject>
+				<caption>
+					<para>Vault Module</para>
+				</caption>
+			</mediaobject>
 		</section>
 		<section>
 			<title>Mobility</title>
 			<para>Mobility module provides location information from sensors from the network APs. It can be used to show how the people is moving in a bulding.</para>
+			<mediaobject>
+				<imageobject>
+					<imagedata scalefit="1" align="center" width="450" fileref="images/ch06_img055.png"/>
+				</imageobject>
+				<textobject>
+					<phrase>Mobility Module</phrase>
+				</textobject>
+				<caption>
+					<para>Mobility Module</para>
+				</caption>
+			</mediaobject>
 		<section>
 			<title>Reports</title>
 			<para>Reports module allows the user to have periodical reports with information about Redborder platform.</para>
+			<mediaobject>
+				<imageobject>
+					<imagedata scalefit="1" align="center" width="450" fileref="images/ch06_img056.png"/>
+				</imageobject>
+				<textobject>
+					<phrase>Example of Reports</phrase>
+				</textobject>
+				<caption>
+					<para>Example of Reports</para>
+				</caption>
+			</mediaobject>
 		</section>
 		</section>
 	</section>
@@ -138,28 +203,55 @@
 					</mediaobject>
 				</listitem>
 				<listitem>
-					<para><emphasis role="bold">Graph:</emphasis> shows the different types of graphics from which we can choose to display the data. The types of charts available vary depending on the selected view. These are as follows:</para>
-					<para>-Area</para>
-					<para>-Line</para>
-					<para>-Bars</para>
-					<para>-SBars</para>
-					<para>-Stacked</para>
+					<para><emphasis role="bold">Graph:</emphasis> shows the different types of graphics from which we can choose to display the data. The types of charts available vary depending on the selected view. These are as follows:</para>					
 					<mediaobject>
 						<imageobject>
-							<imagedata scalefit="1" width="450" align="center" fileref="images/ch06_img007.png"/>
+							<imagedata scalefit="1" width="450" align="center" fileref="images/ch06_img057.png"/>
 						</imageobject>
 						<caption>
-							<para>Graph</para>
+							<para>Graph type: Area</para>
+						</caption>
+					</mediaobject>
+					<mediaobject>
+						<imageobject>
+							<imagedata scalefit="1" width="450" align="center" fileref="images/ch06_img058.png"/>
+						</imageobject>
+						<caption>
+							<para>Graph type: Line</para>
+						</caption>
+					</mediaobject>
+					<mediaobject>
+						<imageobject>
+							<imagedata scalefit="1" width="450" align="center" fileref="images/ch06_img059.png"/>
+						</imageobject>
+						<caption>
+							<para>Graph type: Bars</para>
+						</caption>
+					</mediaobject>
+					<mediaobject>
+						<imageobject>
+							<imagedata scalefit="1" width="450" align="center" fileref="images/ch06_img060.png"/>
+						</imageobject>
+						<caption>
+							<para>Graph type: SBars</para>
+						</caption>
+					</mediaobject>
+					<mediaobject>
+						<imageobject>
+							<imagedata scalefit="1" width="450" align="center" fileref="images/ch06_img061.png"/>
+						</imageobject>
+						<caption>
+							<para>Graph type: Stacked</para>
 						</caption>
 					</mediaobject>
 				</listitem>
 				<listitem>
 					<para><emphasis role="bold">Options:</emphasis> in this section the user can perform various actions to manage the data shown in this section. The options vary depending on the selected view.</para>
-					<para>-<literal>Show Total</literal></para>
 					<para>-<literal>Show total filtered/Hide Total Filtered</literal>: shows or hides the graph considering selected filters.</para>
-					<para>-<literal>Time Machine</literal></para>
-					<para>-<literal>Export to CSV</literal></para>
-					<para>-<literal>Save tab as default</literal></para>
+					<para>-<literal>Time Machine</literal>: It allows changing the date/time of the machine to be able to view all the information and events that have elapsed in that period of time.</para>
+					<para>-<literal>Sort aggregations</literal>: It allows changing the order of the aggregations shown in the module.</para>
+					<para>-<literal>Export to CSV</literal>: Provides the option to export to CSV a report of any field by selecting the event limit.</para>
+					<para>-<literal>Save tab as default</literal>: By selecting this option, the default tab layout can be modified.</para>
 					<mediaobject>
 						<imageobject>
 							<imagedata scalefit="1" width="450" align="center" fileref="images/ch06_img008.png"/>
@@ -701,7 +793,7 @@
 		</section>
 		<section>
 			<title>Unique</title>
-			<para>Through the view<literal>Unique,</literal> the user can obtain information about the different elements that have interacted, at least once with the network in a given time period. Laying the mouse on any point of the graph, the user will get the total result of unique items for the selected time period.</para>
+			<para>Through the view <literal>Unique,</literal> the user can obtain information about the different elements that have interacted, at least once with the network in a given time period. Laying the mouse on any point of the graph, the user will get the total result of unique items for the selected time period.</para>
 			<para><literal>Group by</literal> (only available in the Unique view): allows us to group the data shown in the graph on the basis of a given attribute. This option provides the filtering and sorting of items according to the analysis criteria we need.</para>
 			<mediaobject>
 				<imageobject>
