@@ -23,10 +23,10 @@
 					<imagedata scalefit="1" align="center" width="450" fileref="images/ch06_img050.png"/>
 				</imageobject>
 				<textobject>
-					<phrase>Traffic Module</phrase>
+					<phrase>Traffic Module: Show the traffic information of the 3 sensors.</phrase>
 				</textobject>
 				<caption>
-					<para>Traffic Module</para>
+					<para>Traffic Module: Show the traffic information of the 3 sensors.</para>
 				</caption>
 			</mediaobject>
 		</section>
@@ -38,10 +38,10 @@
 					<imagedata scalefit="1" align="center" width="450" fileref="images/ch06_img051.png"/>
 				</imageobject>
 				<textobject>
-					<phrase>Intrusion Module</phrase>
+					<phrase>Intrusion Module: Shows the number of signatures that have been triggered.</phrase>
 				</textobject>
 				<caption>
-					<para>Intrusion Module</para>
+					<para>Intrusion Module: Shows the number of signatures that have been triggered.</para>
 				</caption>
 			</mediaobject>
 		</section>
@@ -53,10 +53,10 @@
 					<imagedata scalefit="1" align="center" width="450" fileref="images/ch06_img052.png"/>
 				</imageobject>
 				<textobject>
-					<phrase>Monitor Module</phrase>
+					<phrase>Monitor Module: Displays the CPU usage of the manager</phrase>
 				</textobject>
 				<caption>
-					<para>Monitor Module</para>
+					<para>Monitor Module: Displays the CPU usage of the manager</para>
 				</caption>
 			</mediaobject>	
 		</section>
@@ -84,10 +84,10 @@
 					<imagedata scalefit="1" align="center" width="450" fileref="images/ch06_img054.png"/>
 				</imageobject>
 				<textobject>
-					<phrase>Vault Module</phrase>
+					<phrase>Vault Module: Displays the received syslog information.</phrase>
 				</textobject>
 				<caption>
-					<para>Vault Module</para>
+					<para>Vault Module: Displays the received syslog information.</para>
 				</caption>
 			</mediaobject>
 		</section>

@@ -174,28 +174,52 @@
 	</section>
 	<section>
 		<title>Redborder technologies</title>
-		<para>In this section we will explain the main technologies Redborder uses to manage and use all data it is provided.</para>
+		<para>In this section we will explain the <emphasis role="bold">main technologies</emphasis> Redborder uses to manage and use all data it is provided.</para>
 		<para>All main technologies used in Redborder are open source, which allows period updates and more quality.</para>
 			<section>
 				<title>Siddhi</title>
-				<para>Siddhi is an open source Complex Event Processor that Redborder uses in vault module to apply rules to incoming events. It allows us to create rules that can alert us from any kind of behaviour reflected in the events.</para>
+				<para>Siddhi is an <emphasis role="bold">open source Complex Event Processor</emphasis> that Redborder uses in vault module to apply rules to incoming events. It allows us to create rules that can alert us from any kind of behaviour reflected in the events.</para>
 				<para>Siddhi is used in Redborder to make it able to raise alarm when a determinate situation is present in the network.</para>
 				<para>Siddhi uses an SQL sentence structure, so it is possible to edit all rules included in Redborder by default.</para>
 				<para>It is necessary to have certain level of knowledge about Siddhi to create useful rules.</para>
-				<para>It is necessary to activate the correlation engine. This will use more machine resources, so it is necessary to be sure that the system has enought RAM memory.</para>
+				<para>It is necessary to <emphasis role="bold">activate the correlation engine</emphasis>. This will use more machine resources, so it is necessary to be sure that the system has enought RAM memory.</para>
+				<mediaobject>
+							<imageobject>
+								<imagedata scalefit="1" align="center" width="450" fileref="images/ch20_img015.png"/>
+							</imageobject>
+							<caption>
+								<para>Siddhi rules available in the manager correlation engine</para>
+							</caption>
+				</mediaobject>
 			</section>
 			<section>
 				<title>Snort</title>
-				<para>Snort is an open source network intrusion prevention system that process and analyzes real time traffic.</para>
-				<para>Redborder uses Snort in intrussion module to </para>
+				<para>Snort is an <emphasis role="bold">open source network intrusion prevention system</emphasis> that process and analyzes real time traffic.</para>
+				<para>Redborder uses Snort in intrussion module to configure multiple rule policies, as well as store and analyze the alterts generated.</para>
 				<para>Snort system is based in rules, which are partially provided by the community.</para>
 				<para>It is possible to update the rules manually, so it ensures that, with the lastest set of Snort rules, the traffic is being analyzed and monitorized.</para>
+				<mediaobject>
+							<imageobject>
+								<imagedata scalefit="1" align="center" width="450" fileref="images/ch20_img016.png"/>
+							</imageobject>
+							<caption>
+								<para>Table of IPS events</para>
+							</caption>
+				</mediaobject>
 			</section>
 			<section>
 				<title>Hadoop</title>
 				<para>Hadoop is an open source distributed processing framework that manages data processing and storage for big data applications running in clustered systems.</para>
-				<para>Hadoop is used by Redborder to provide real time traffic analysis of Big Data.</para>
-				<para>Hadoop is not enabled by default in a Redborder manager, because of its requirements of resources. It is very important to have strong resources to run Redborder using Hadoop, at least 64Gb.</para>
+				<para>It's used by Redborder to provide real time traffic analysis of Big Data.</para>
+				<para>Also, Hadoop is not enabled by default in a Redborder manager, because of its requirements of resources. It is very important to have strong resources to run Redborder using Hadoop, at least 64Gb.</para>
+				<mediaobject>
+							<imageobject>
+								<imagedata scalefit="1" align="center" width="450" fileref="images/ch20_img017.png"/>
+							</imageobject>
+							<caption>
+								<para>Hadoop for RAW Storage</para>
+							</caption>
+				</mediaobject>
 			</section>
 	</section>
 </chapter>

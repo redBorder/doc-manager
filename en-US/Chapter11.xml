@@ -523,25 +523,25 @@
 		<para>In the sensor section of a redBorder manager, the user can find the different types of sensors, each one performs a different function:</para>
 		<itemizedlist mark="bullet">
 			<listitem>
-				<para><literal>Flow</literal></para>			
+				<para><literal>Flow</literal>: For monitoring and supervision of the data traffic received.</para>			
 			</listitem>
 			<listitem>
-				<para><literal>MSE</literal></para>			
+				<para><literal>MSE</literal>: To provide services related to mobility</para>			
 			</listitem>
 			<listitem>
-				<para><literal>Meraki</literal></para>			
+				<para><literal>Meraki</literal>: Specific sensor desinged to integrate the Cisco Meraki solution.</para>			
 			</listitem>
 			<listitem>
-				<para><literal>Aruba ALE</literal></para>			
+				<para><literal>Aruba ALE</literal>: To collect data from Wi-Fi networks enabled mobile devices (protecting personal privacy).</para>			
 			</listitem>
 			<listitem>
-				<para><literal>Monitor device</literal></para>			
+				<para><literal>Monitor device</literal>: To maintain full control over the state of the infrastructure.</para>			
 			</listitem>
 			<listitem>
-				<para><literal>Twitter</literal></para>			
+				<para><literal>Twitter</literal>: Designed to collect activity from Twitter use.</para>			
 			</listitem>
 			<listitem>
-				<para><literal>Vault</literal></para>			
+				<para><literal>Vault</literal>: Allows to visualize and analyze the logs received from the different services and devices.</para>			
 			</listitem>
 		</itemizedlist>
 

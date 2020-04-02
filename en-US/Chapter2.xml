@@ -24,7 +24,7 @@
 		<para>The following requirements are related to a single node installation with light to moderate use. Please consider that if you run the platform in a virtual environment you should usually get the performance somehow decreased comparing to a similar physical machine deployment.</para>
 		<mediaobject>
 					<imageobject>
-						<imagedata scalefit="1" align="center" width="450" fileref="images/ch02_img001.png"/>
+						<imagedata scalefit="1" align="center" width="400" fileref="images/ch02_img001.png"/>
 					</imageobject>
 					<textobject>
 						<phrase>Redborder single node installation requirements</phrase>
@@ -84,10 +84,10 @@
 	<section>	
 		<title>Possible drawbacks during installation.</title>
 		<para>It is unlikely, but possible that errors may occur during the installation process. Some of them will be mentioned in this guide, and how to solve it.</para>
-		<note>
-		<title>Note</title>
+		<important>
+		<title>Important</title>
 		<para>Once the installation is complete with 100% reboot it's <emphasis role="bold">VERY IMPORTANT</emphasis> to remove the USB from the computer or it will recognize it as part of the HD structure, and then fail.</para>
-		</note>
+		</important>
 		<para><emphasis role="bold">Error Parsing Kickstart Config</emphasis></para>
 		<para>After partitioning the disk in the installation process, the partition will be named <emphasis role="bold">VolGroup</emphasis> by default. If you perform a second manager installation later (without renaming the group volume), you will get this error.</para>
 		<para>To fix it, it's as simple as <emphasis role="bold">removing the volgroup</emphasis>. You can use <emphasis role="bold">Gparted</emphasis> to perform this action.</para>
