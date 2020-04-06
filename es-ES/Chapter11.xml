@@ -3,7 +3,7 @@
 <!ENTITY % BOOK_ENTITIES SYSTEM "manual.ent">
 <!ENTITY PRODUCT "Documentation">
 <!ENTITY BOOKID "manual">
-<!ENTITY YEAR "2019">
+<!ENTITY YEAR "2020">
 <!ENTITY HOLDER "Eneo Tecnología S.L. |">
 ]>
 
@@ -113,7 +113,7 @@
 		<para>Cuando el usuario accede a la sección <literal>Sensores</literal> puede encontrar una lista (vista de árbol) en la que se muestran los dominios y sensores que forman parte de su infraestructura de red. En este punto vamos a revisar cada vista y las acciones disponibles.</para>
 		<mediaobject>
 			<imageobject>
-				<imagedata scale="50" align="center" fileref="images/ch11_img002.png"/>
+				<imagedata scalefit="1" align="center" width="450" fileref="images/ch11_img002.png"/>
 			</imageobject>
 			<caption>
 				<para>Opciones del menú Vista</para>
@@ -356,16 +356,16 @@
 					<para><literal>Opciones->Exportar Puntos de Acceso/Borrar todos los Puntos de Acceso):</literal> permite exportar todos los Access Points a un archivo .csv o eliminar todos los Puntos de Acceso definidos para esa localización. </para>
 				</listitem>
 				<listitem>
-					<para><literal>Añadir sensores</literal>: añade un nuevo sensor que se define como como un Punto de Acceso. </para>
+					<para><literal>+Añadir sensores</literal>: añade un nuevo sensor que se define como como un Punto de Acceso. </para>
 				</listitem>
 				<listitem>
-					<para><literal>Añadir dominio</literal></para>
+					<para><literal>+Añadir dominio</literal></para>
 				</listitem>
 				<listitem>
 					<para><literal>Vistas</literal>: menú que permite navegar a través de las diferentes vistas existentes.</para>
 				</listitem>
 				<listitem>
-					<para><literal>Añadir Puntos de Acceso</literal></para>
+					<para><literal>+Añadir Puntos de Acceso</literal></para>
 				</listitem>
 				<listitem>
 				<para><literal>+Añadir zonas</literal></para>
@@ -471,25 +471,25 @@
 		<para>En la sección de sensores de un administrador de Redborder, el usuario puede encontrar los diferentes tipos de sensores, cada uno realiza una función diferente:</para>
 		<itemizedlist mark="bullet">
 			<listitem>
-				<para><literal>Flow</literal></para>			
+				<para><literal>Flujo</literal>: Para el monitoreo y la supervisión de la información de tráfico recivida.</para>			
 			</listitem>
 			<listitem>
-				<para><literal>MSE</literal></para>			
+				<para><literal>MSE</literal>: Para proporcionar servicios relacionados con la movilidad.</para>			
 			</listitem>
 			<listitem>
-				<para><literal>Meraki</literal></para>			
+				<para><literal>Meraki</literal>: Sensor específico diseñado para integrar la solución de Meraki (Cisco).</para>			
 			</listitem>
 			<listitem>
-				<para><literal>Aruba ALE</literal></para>			
+				<para><literal>Aruba ALE</literal>: Para recopilar datos de dispositivos móviles habilitados para redes Wi-Fi (protegiendo la privacidad personal).</para>			
 			</listitem>
 			<listitem>
-				<para><literal>Monitor</literal></para>			
+				<para><literal>Dispositivo de monitor</literal>: Para mantener el control total sobre el estado de la infraestructura.</para>			
 			</listitem>
 			<listitem>
-				<para><literal>Twitter</literal></para>			
+				<para><literal>Twitter</literal>: Diseñado para recopilar actividad del uso de Twitter.</para>			
 			</listitem>
 			<listitem>
-				<para><literal>Vault</literal></para>			
+				<para><literal>Vault</literal>: Permite visualizar y analizar los logs recibidos de los diferentes servicios y dispositivos.</para>			
 			</listitem>
 		</itemizedlist>
 

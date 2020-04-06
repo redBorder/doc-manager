@@ -3,7 +3,7 @@
 <!ENTITY % BOOK_ENTITIES SYSTEM "manual.ent">
 <!ENTITY PRODUCT "Documentation">
 <!ENTITY BOOKID "manual">
-<!ENTITY YEAR "2019">
+<!ENTITY YEAR "2020">
 <!ENTITY HOLDER "Eneo Tecnología S.L. |">
 ]>
 <chapter>
@@ -246,8 +246,8 @@
 					</mediaobject>
 				</listitem>
 				<listitem>
-					<para><emphasis role="bold">Options:</emphasis> in this section the user can perform various actions to manage the data shown in this section. The options vary depending on the selected view.</para>
-					<para>-<literal>Show total filtered/Hide Total Filtered</literal>: shows or hides the graph considering selected filters.</para>
+					<para><emphasis role="bold">Options:</emphasis> In this section the user can perform various actions to manage the data shown. The options vary depending on the selected view.</para>
+					<para>-<literal>Show total filtered/Hide Total Filtered</literal>: Shows or hides the graph considering selected filters.</para>
 					<para>-<literal>Time Machine</literal>: It allows changing the date/time of the machine to be able to view all the information and events that have elapsed in that period of time.</para>
 					<para>-<literal>Sort aggregations</literal>: It allows changing the order of the aggregations shown in the module.</para>
 					<para>-<literal>Export to CSV</literal>: Provides the option to export to CSV a report of any field by selecting the event limit.</para>

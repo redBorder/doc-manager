@@ -3,12 +3,12 @@
 <!ENTITY % BOOK_ENTITIES SYSTEM "manual.ent">
 <!ENTITY PRODUCT "Documentation">
 <!ENTITY BOOKID "manual">
-<!ENTITY YEAR "2019">
+<!ENTITY YEAR "2020">
 <!ENTITY HOLDER "Eneo Tecnología S.L. |">
 ]>
 <chapter>
 	<title>Plataforma web Redborder</title>
-		<para>Una vez se ha finalizado el proceso de instalación del Manager, el usuario puede acceder a la plataforma web Redborder insertando en la barra de direcciones de su navegador la IP de gestión asignada al Manager.</para>
+		<para>Una vez se ha finalizado el proceso de instalación del Manager, el usuario puede acceder a la plataforma web de Redborder insertando en la barra de direcciones de su navegador la IP de gestión asignada al Manager.</para>
 		<para><screen>https://direccion-IP-manager</screen></para>
 		<mediaobject>
 			<imageobject>

@@ -3,7 +3,7 @@
 <!ENTITY % BOOK_ENTITIES SYSTEM "manual.ent">
 <!ENTITY PRODUCT "Documentation">
 <!ENTITY BOOKID "manual">
-<!ENTITY YEAR "2019">
+<!ENTITY YEAR "2020">
 <!ENTITY HOLDER "Eneo Tecnología S.L. |">
 ]>
 <chapter>
@@ -86,7 +86,7 @@
 		<para>It is unlikely, but possible that errors may occur during the installation process. Some of them will be mentioned in this guide, and how to solve it.</para>
 		<important>
 		<title>Important</title>
-		<para>Once the installation is complete with 100% reboot it's <emphasis role="bold">VERY IMPORTANT</emphasis> to remove the USB from the computer or it will recognize it as part of the HD structure, and then fail.</para>
+		<para>Once the installation is complete with 100%, before reboot it's <emphasis role="bold">VERY IMPORTANT</emphasis> to remove the USB from the computer or it will recognize it as part of the HD structure, and then fail.</para>
 		</important>
 		<para><emphasis role="bold">Error Parsing Kickstart Config</emphasis></para>
 		<para>After partitioning the disk in the installation process, the partition will be named <emphasis role="bold">VolGroup</emphasis> by default. If you perform a second manager installation later (without renaming the group volume), you will get this error.</para>

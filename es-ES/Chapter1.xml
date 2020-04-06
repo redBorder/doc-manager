@@ -3,7 +3,7 @@
 <!ENTITY % BOOK_ENTITIES SYSTEM "manual.ent">
 <!ENTITY PRODUCT "Documentation">
 <!ENTITY BOOKID "manual">
-<!ENTITY YEAR "2019">
+<!ENTITY YEAR "2020">
 <!ENTITY HOLDER "Eneo Tecnología S.L. |">
 ]>
 <chapter>
@@ -139,7 +139,7 @@
 			</mediaobject>
 			<warning>
 				<title>Advertencia</title>
-				<para><literal>Need to "apply" to activate changes</literal></para>
+				<para><literal>Es necesario "aplicar" para activar los cambios</literal></para>
 				<para>Si visualiza este mensaje deberá seleccionar la opción <keycap>a</keycap>. En caso contrario, el sistema no guardará ni aplicará las modificaciones realizadas.</para>
 			</warning>
 		</section>
