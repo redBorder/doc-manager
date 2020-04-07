@@ -83,7 +83,7 @@
 						</mediaobject>
 					</listitem>
 					<listitem>
-						<para><emphasis role="bold">rb_set_topics.rb</emphasis>: Asignar el destino del tema. que puede ser samza de tiempo real. Los servicios correspondientes deben iniciarse para mantener el funcionamiento correcto de la plataforma Redborder.</para>
+						<para><emphasis role="bold">rb_set_topics.rb</emphasis>: Asignar el destino del tema, que puede ser samza o realtime. Los servicios correspondientes deben iniciarse para mantener el funcionamiento correcto de la plataforma Redborder.</para>
 						<mediaobject>
 							<imageobject>
 								<imagedata scalefit="1" align="center" width="450" fileref="images/ch20_img007.png"/>
@@ -94,13 +94,13 @@
 						</mediaobject>
 					</listitem>
 					<listitem>
-						<para><emphasis role="bold">rb_clúster_configure.rb</emphasis>: Obtenga el estado de todos los servicios para todos los  nodos. Permite cambiar la configuración de todo el clúster.</para>
+						<para><emphasis role="bold">rb_cluster_configure.rb</emphasis>: Obtenga el estado de todos los servicios para todos los  nodos. Permite cambiar la configuración de todo el clúster.</para>
 						<mediaobject>
 							<imageobject>
 								<imagedata scalefit="1" align="center" width="450" fileref="images/ch20_img008.png"/>
 							</imageobject>
 							<caption>
-								<para>rb_clúster_configure.rb: uso</para>
+								<para>rb_cluster_configure.rb: uso</para>
 							</caption>
 						</mediaobject>
 					</listitem>
@@ -127,24 +127,24 @@
 						</mediaobject>
 					</listitem>
 					<listitem>
-						<para><emphasis role="bold">rb_clúster_reboot.sh</emphasis>: Solicita el reinicio de todos los nodos del clúster.</para>
+						<para><emphasis role="bold">rb_cluster_reboot.sh</emphasis>: Solicita el reinicio de todos los nodos del clúster.</para>
 						<mediaobject>
 							<imageobject>
 								<imagedata scalefit="1" align="center" width="450" fileref="images/ch20_img011.png"/>
 							</imageobject>
 							<caption>
-								<para>rb_clúster_reboot.sh: uso</para>
+								<para>rb_cluster_reboot.sh: uso</para>
 							</caption>
 						</mediaobject>
 					</listitem>
 					<listitem>
-						<para><emphasis role="bold">rb_clúster_update.sh</emphasis>: Se utiliza para actualizar el Manager a una nueva versión lanzada.</para>
+						<para><emphasis role="bold">rb_cluster_update.sh</emphasis>: Se utiliza para actualizar el Manager a una nueva versión lanzada.</para>
 						<mediaobject>
 							<imageobject>
 								<imagedata scalefit="1" align="center" width="450" fileref="images/ch20_img012.png"/>
 							</imageobject>
 							<caption>
-								<para>rb_clúster_update: uso</para>
+								<para>rb_cluster_update: uso</para>
 							</caption>
 						</mediaobject>
 					</listitem>
@@ -180,7 +180,7 @@
 				<para>Siddhi es un <emphasis role="bold">procesador de eventos complejos</emphasis> de código abierto que Redborder utiliza en el módulo de almacenamiento para aplicar reglas a los eventos entrantes. Nos permite crear reglas que pueden alertarnos de cualquier tipo de comportamiento reflejado en los eventos.</para>
 				<para>Siddhi se utiliza en Redborder para que pueda activar la alarma cuando hay una situación determinada en la red.</para>
 				<para>Siddhi usa una estructura de oración SQL, por lo que es posible editar todas las reglas incluidas en Redborder por defecto.</para>
-				<para>Es necesario tener cierto nivel de conocimiento sobre Siddhi para crear reglas útiles..</para>
+				<para>Es necesario tener cierto nivel de conocimiento sobre Siddhi para crear reglas útiles.</para>
 				<para>Es necesario <emphasis role="bold">activar el motor de correlación</emphasis>. Esto usará más recursos de la máquina, por lo que es necesario asegurarse de que el sistema tenga suficiente memoria RAM.</para>
 				<mediaobject>
 							<imageobject>

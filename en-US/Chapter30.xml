@@ -169,7 +169,7 @@
 		<title>Use Case: Detecting an Eternalblue attack with Redborder</title>
 		<para>In this case we will see how Redborder can use Snort rules to detect an Eternalblue attack.</para>
 		<para>All starts with a malicious pishing email which contains a dropper that installs a ransomware.</para>
-		<para>The ramsonware will try to use a known exploit to take control of all possible machines</para>
+		<para>The ramsomware will try to use a known exploit to take control of all possible machines</para>
 		<mediaobject>
 			<imageobject>
 				<imagedata scalefit="1" align="center" width="450" fileref="images/ch30_img004_a.png"/>

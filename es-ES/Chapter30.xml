@@ -166,7 +166,7 @@
 		<title>Caso de uso: detectar un ataque de Eternalblue con Redborder</title>
 		<para>En este caso, veremos cómo Redborder puede usar las reglas de Snort para detectar un ataque de Eternalblue.</para>
 		<para>Todo comienza con un correo electrónico malicioso que contiene un dropper que instala un ransomware.</para>
-		<para>El ramsonware intentará utilizar un exploit conocido para tomar el control de todas las máquinas posibles.</para>
+		<para>El ramsomware intentará utilizar un exploit conocido para tomar el control de todas las máquinas posibles.</para>
 		<mediaobject>
 			<imageobject>
 				<imagedata scalefit="1" align="center" width="450" fileref="images/ch30_img004_a.png"/>

@@ -573,7 +573,7 @@
 			</caption>
 		</mediaobject>
 		<para><emphasis role="bold">Búsqueda de fuente básica:</emphasis> es posible obtener un resumen completo de la información asociada con las IP consultadas. Al seleccionar esta opción, aparecerá una ventana emergente con dos pestañas: </para>
-		<para><emphasis>Whois:</emphasis> muestra el resultado de la consulta del Administrador a whois donde obtienen, entre otra información, quién posee esa IP, reputación, etc.</para> 
+		<para><emphasis>Whois:</emphasis> muestra el resultado de la consulta del Manager a whois, y de donde se obtiene. También muestra, entre otra información, quién posee esa IP, reputación, etc.</para> 
 		<para><emphasis>DNS:</emphasis> el Manager realiza una resolución inversa que nos permite conocer el DNS asociado con la IP consultada.</para>
 		<mediaobject>
 			<imageobject>

@@ -692,7 +692,7 @@
 				<imagedata scalefit="1" align="center" width="450" fileref="images/ch13_img025_a.png"/>
 			</imageobject>
 			<caption>
-				<para>¡Worker and Job Queue: status list of worker and job queue</para>
+				<para>¡Worker and Job Queue: status list of worker and job queue.</para>
             </caption>
         </mediaobject>
         <para><literal>Stored Jobs</literal> shows the list of finished services. You can know the status of each one through the “Information” icon, or delete from the list using the “Delete” icon.</para>

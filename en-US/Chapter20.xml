@@ -83,7 +83,7 @@
 						</mediaobject>
 					</listitem>
 					<listitem>
-						<para><emphasis role="bold">rb_set_topics.rb</emphasis>: Assign the destination of the topic. which can be samza of realtime. Corresponding services need to be started to keep the correct working of the redborder platform.</para>
+						<para><emphasis role="bold">rb_set_topics.rb</emphasis>: Assign the destination of the topic, which can be samza or realtime. Corresponding services need to be started to keep the correct working of the redborder platform.</para>
 						<mediaobject>
 							<imageobject>
 								<imagedata scalefit="1" align="center" width="450" fileref="images/ch20_img007.png"/>

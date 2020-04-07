@@ -118,7 +118,7 @@
 				</listitem>
 				<listitem>
 					<para><literal>Tipo de elemento</literal>: seleccione el tipo de aplicación / elemento para el que se ha definido la alarma. <footnote><para>El usuario verá en este campo las opciones que se incluyen en su licencia.</para></footnote></para>
-					<para>-Trafico</para>
+					<para>-Tráfico</para>
 					<para>-Intrusión</para>
 					<para>-Monitor</para>
 					<para>-Social</para>
@@ -626,11 +626,11 @@
 				<imagedata scalefit="1" width="450" align="center" fileref="images/ch13_img024_a.png"/>
 			</imageobject>
 			<caption>
-				<para>Users: management users'permissions interface</para>
+				<para>Usuarios: interfaz de gestión de permisos de los usuarios</para>
 			</caption>
 		</mediaobject>
-		<para>In the body of the screen we find a list that contains the active users in Redborder platform, email address, Top Domain (maximun level that the user has access), number of times that they have signed in, IP and hour from which they made their last access. </para>
-		<para>Clicking on the "Edit" button the user can modify the following information and visualize a summary of their state and activity within the platform: </para>
+		<para>En el cuerpo de la pantalla, encontramos una lista que contiene los usuarios activos en la plataforma Redborder, dirección de correo electrónico, Top Dominio (nivel máximo al que tiene acceso el usuario), número de veces que ha iniciado sesión, IP y hora desde la que realizó Su último acceso.</para>
+		<para>Al hacer clic en el botón "Editar", el usuario puede modificar la siguiente información y visualizar un resumen de su estado y actividad dentro de la plataforma:</para>
 		<mediaobject>
 			<imageobject>
 				<imagedata scalefit="1" align="center" width="450" fileref="images/ch13_img024_b.png"/>
@@ -666,7 +666,7 @@
 				<imagedata scalefit="1" align="center" width="450" fileref="images/ch13_img025_a.png"/>
 			</imageobject>
 			<caption>
-				<para>Worker y cola de trabajo: estado de la lista de workers y cola de trabajo</para>
+				<para>Worker y cola de trabajo: estado de la lista de workers y cola de trabajo.</para>
             </caption>
         </mediaobject>
         <para><literal>Empleos almacenados</literal> muestra la lista de servicios terminados. Puede conocer el estado de cada uno a través del icono "Información", o eliminar de la lista utilizando el icono "Eliminar". </para> <para> Esta pantalla se recarga automáticamente cada 5 segundos.</para>
@@ -675,7 +675,7 @@
 				<imagedata scalefit="1" align="center" width="450" fileref="images/ch13_img025_b.png"/>
 			</imageobject>
 			<caption>
-				<para>Worker y cola de trabajo: información del estado de un worker</para>
+				<para>Worker y cola de trabajo: información del estado de un worker.</para>
             </caption>
         </mediaobject>
     </section>

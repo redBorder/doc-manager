@@ -11,9 +11,9 @@
 	<title>Sensores</title>
 	<para>En la sección <literal>Sensors</literal> el usuario puede realizar la consulta, gestión y configuración de los sensores registrados en el Manager a través de la creación y edición de dominios y sensores. 
 	Para ello, dispone de varias vistas que le ofrecen la posibilidad de realizar diversas acciones sobre los sensores que haya registrado en el Manager.</para>
-	<para><literal>Sensors</literal> se encuentra disponible en el margen superior derecho del menú de cabecera, junto a la sección <emphasis role="bold">Tools</emphasis> y la zona de usuario. Este área del menú se llama <emphasis role="bold">Zona de configuración</emphasis>, porque a diferencia de las opciones disponibles en el margen superior izquierdo (Análisis), estas permiten la administración y configuración completas del Administrador y sensores: políticas de reglas, alarmas, configuración de clúster o gestión del usuario, entre otras acciones.</para>
+	<para><literal>Sensors</literal> se encuentra disponible en el margen superior derecho del menú de cabecera, junto a la sección <emphasis role="bold">Tools</emphasis> y la zona de usuario. Este área del menú se llama <emphasis role="bold">Zona de configuración</emphasis>, porque a diferencia de las opciones disponibles en el margen superior izquierdo (Análisis), estas permiten la administración y configuración completas del Manager y de los sensores: políticas de reglas, alarmas, configuración de clúster o gestión del usuario, entre otras acciones.</para>
 	<section>
-		<title>Sensors: menú y opciones</title>
+		<title>Sensores: menú y opciones</title>
 		<para>La organización de esta sección es muy similar, en cuanto a estructura, a la de otras partes de la web. En este caso, encontraremos:</para>
 		<itemizedlist mark="bullet">
 			<listitem>
@@ -51,9 +51,8 @@
 		<title>Opciones</title>
 		<para>Aquí se encuentran las opciones disponibles en la sección Sensores. Pueden ser seleccionadas desde el botón <emphasis role="bold">Opciones</emphasis> y desde las opciones que se muestran haciendo click en el botón "Editar" tanto en el nivel de dominio como en el de sensor.</para>
 		<itemizedlist>
-			<listitem><para>Import Tree</para>
-				<para>This option allows to import your network infrastructure through the uploading of a file to Redborder
-					platform. This will be shown in tree view.</para>
+			<listitem><para>Importar Árbol</para>
+				<para>Esta opción le permite importar su infraestructura de red mediante la carga de un archivo a la plataforma de Redborder. Esto se mostrará en la vista de árbol.</para>
 				<mediaobject>
 					<imageobject>
 						<imagedata scalefit="1" align="center" width="450" fileref="images/ch11_img006.png"/>
@@ -96,8 +95,8 @@
 					</caption>
 				</mediaobject>			
 			</listitem>
-			<listitem><para>Wakeup Chef clúster</para></listitem>
-			<listitem><para>clúster data</para>
+			<listitem><para>Levantar clúster del Chef</para></listitem>
+			<listitem><para>Datos del clúster</para>
 				<itemizedlist>
 					<listitem><para>Datos indexados: Muestra estadísticas de datos indexados del clúster</para></listitem>
 					<listitem><para>Históricos: Muestra información acerca del histórico de datos del clúster</para>
@@ -317,7 +316,7 @@
 			</mediaobject>			
 		</section>
 		<section>
-			<title>Vista Puntos de Acceso</title>
+			<title>Vista de Puntos de Acceso</title>
 			<para>Los Puntos de Acceso (AP) son los puntos de acceso de la infraestructura de red que están asociados a una localización. 
 			Los Access Points dependen de la App Flow y aplican tanto a nivel de dominio como de sensores.</para>
 			<para>Este es otro modo de visualizar su organización de sensores, a través de la distribución de los AP por dominio. 
@@ -468,7 +467,7 @@
 	</section>	
 	<section>
 		<title>Tipos de sensores y configuración de dispositivos Monitor</title>
-		<para>En la sección de sensores de un administrador de Redborder, el usuario puede encontrar los diferentes tipos de sensores, cada uno realiza una función diferente:</para>
+		<para>En la sección de sensores de un Manager de Redborder, el usuario puede encontrar los diferentes tipos de sensores, cada uno realiza una función diferente:</para>
 		<itemizedlist mark="bullet">
 			<listitem>
 				<para><literal>Flujo</literal>: Para el monitoreo y la supervisión de la información de tráfico recivida.</para>			
@@ -496,7 +495,7 @@
 		<section>
 		<title>Monitor</title>
 		<para>El sensor del dispositivo monitor es uno de los últimos desarrollos que viene con la versión 80-6 de Redborder. Se puede usar para monitorear cualquier dispositivo con una dirección IP que admita snmp, redfish o ipmi. Al crear o actualizar el sensor del dispositivo monitor, se deben definir las credenciales para los protocolos correspondientes. En caso de que no se defina una cadena de comunidad para snmp, se utilizará el "público" predeterminado.</para>
-		<para>Una vez que el usuario ha iniciado sesión en el tablero del administrador, el sensor se puede agregar usando el menú <literal>Sensores > Añadir un Sensor</literal> y luego haciendo clic en <literal>‘Monitor’</literal>.</para>
+		<para>Una vez que el usuario ha iniciado sesión en el dashboard del Manager el sensor se puede agregar usando el menú <literal>Sensores > Añadir un Sensor</literal> y luego haciendo clic en <literal>‘Monitor’</literal>.</para>
 		<para>Se le puede solicitar algunos parámetros obligatorios y opcionales..</para>
 		<itemizedlist mark="bullet">
 			<listitem>

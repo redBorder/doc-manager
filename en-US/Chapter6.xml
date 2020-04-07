@@ -10,7 +10,7 @@
 	<title>Dashboard</title>
 	<section>
 		<title>Dashboard options</title>
-		<para>The first option we find in the menu bar in the analysis area is the Dashboard. This is the selected option by default you will see as soon as you log in the redBorder Manager administrator:</para>
+		<para>The first option we find in the menu bar in the analysis area is the Dashboard. This is the selected option by default you will see as soon as you log in the redBorder Manager:</para>
 		<mediaobject>
 			<imageobject>
 				<imagedata scalefit="1" align="center" width="450" fileref="images/ch05_img001.png"/>
