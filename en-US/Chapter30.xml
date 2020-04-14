@@ -254,7 +254,7 @@
 		<para>We can see the rule clicking in the edit button on the right.</para>
 		<mediaobject>
 			<imageobject>
-				<imagedata scalefit="1" align="center" width="450" fileref="images/ch30_img005_e.png"/>
+				<imagedata scalefit="1" align="center" width="350" fileref="images/ch30_img005_e.png"/>
 			</imageobject>
 			<caption>
 				<para>Ssh brute-force attack: Editing ssh rule</para>
@@ -263,7 +263,7 @@
 		<para>We are going to change the maximum number of attempts to 3</para>
 		<mediaobject>
 			<imageobject>
-				<imagedata scalefit="1" align="center" width="450" fileref="images/ch30_img005_f.png"/>
+				<imagedata scalefit="1" align="center" width="350" fileref="images/ch30_img005_f.png"/>
 			</imageobject>
 			<caption>
 				<para>Ssh brute-force attack: Edifint ssh rule</para>

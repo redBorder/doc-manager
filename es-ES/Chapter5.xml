@@ -395,7 +395,7 @@
 			<para>Un modo simple y rápido para ver únicamente eventos correspondiente a un periodo específico de tiempo es seleccionar algunas de las opciones que proporcionan el filtro de la línea de tiempo de pestañas:</para>
 			<mediaobject>
 				<imageobject>
-					<imagedata scalefit="1" align="center" width="350" fileref="images/ch06_img015.png"/>
+					<imagedata scalefit="1" align="center" width="250" fileref="images/ch06_img015.png"/>
 				</imageobject>
 				<textobject>
 					<phrase>Filtrado de eventos: línea de tiempo</phrase>
@@ -760,9 +760,9 @@
 				<title>Código de color: estado del punto de acceso</title>
 				<para>Al acercarnos a cualquier zona del mapa de calor, podemos visualizar los diferentes AP que representa nuestra red mediante un círculo.</para>
 				<para>Este círculo incluye cifras que indican el número de usuarios que están asociados con el AP. Además, cada círculo aparecerá lleno de diferentes colores que indican el estado de cada AP:</para>
-				<para><emphasis role="bold">Verde:</emphasis> Arriba está el AP, es decir, en perfecto funcionamiento.</para>
+				<para><emphasis role="bold">Verde:</emphasis> El AP está activo, es decir, en perfecto funcionamiento.</para>
 				<para><emphasis role="bold">Gris:</emphasis> El estado de AP es desconocido.</para>
-				<para><emphasis role="bold">Rojo:</emphasis> el AP está abajo, es decir, presenta un mal funcionamiento.</para>
+				<para><emphasis role="bold">Rojo:</emphasis> El AP está caído, es decir, presenta un mal funcionamiento.</para>
 			</note>
 			<para>También muestra, a través de la codificación de colores, el tráfico que se produce en cada punto de acceso. La gradación de color indica el tráfico variable en el AP como un mapa de calor: rojo, amarillo, verde y azul. </para>
 			<para><emphasis role="bold">Información adicional sobre Access Point</emphasis></para>
@@ -1150,7 +1150,7 @@
 		<para>Al colocar el ratón sobre cada uno de los puntos en el gráfico, obtenemos la dirección IP asociada.</para>
 		<note>
 			<title>Nota</title>
-			<para>Recuerde que cada vez que pueda aislar una o más IP mediante la aplicación de filtros: ingrese el origen de IP y el destino de IP en el cuadro de búsqueda, o seleccione una o más filas de la tabla.</para>
+			<para>Recuerde que cada vez que pueda aislar una o más IP mediante la aplicación de filtros: ingrese la IP origen y la IP destino en el cuadro de búsqueda, o seleccione una o más filas de la tabla.</para>
 		</note>
 		<mediaobject>
 			<imageobject>
@@ -1164,7 +1164,7 @@
 			</caption>
 			</mediaobject>	
 			<para><emphasis role="bold">SRC/DST MAP</emphasis></para>
-			<para>En el menú de atributos de Ubicación encontramos las opciones SRC MAP y DST MAP. En ambos casos, ofrecemos la posibilidad de mostrar el mapa que es la localización de la IP de origen (SRC MAP) y destino (DST MAP) que genera la mayor cantidad de tráfico.</para>
+			<para>En el menú de atributos de Ubicación encontramos las opciones SRC MAP y DST MAP. En ambos casos, ofrecemos la posibilidad de mostrar el mapa que es la localización de la IP origen (SRC MAP) y destino (DST MAP) que genera la mayor cantidad de tráfico.</para>
 			<mediaobject>
 				<imageobject>
 					<imagedata scalefit="1" align="center" width="450" fileref="images/ch06_img045.png"/>

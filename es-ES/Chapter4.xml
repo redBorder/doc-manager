@@ -12,7 +12,7 @@
 		<para><screen>https://direccion-IP-manager</screen></para>
 		<mediaobject>
 			<imageobject>
-				<imagedata scalefit="1" align="center" width="350" fileref="images/ch04_img001.png"/>
+				<imagedata scalefit="1" align="center" width="450" fileref="images/ch04_img001.png"/>
 			</imageobject>
 			<textobject>
 				<phrase>Pantalla de acceso a la plataforma Redborder: Usuario y contraseña</phrase>
@@ -75,7 +75,7 @@
 			<para><emphasis>Dashboard:</emphasis> Proporciona un resumen de los eventos recibidos por un sensor, mostrandolos en diferentes métricas. Esta es la pantalla mostrada por defecto cuando se accede en la plataforma Redborder.</para>
 			<mediaobject>
 				<imageobject>
-					<imagedata scalefit="1" align="center" width="450" fileref="images/ch04_img002.png"/>
+					<imagedata scalefit="1" align="center" width="450" fileref="images/ch04_img003.png"/>
 				</imageobject>
 				<textobject>
 					<phrase>Dashboard</phrase>
@@ -113,7 +113,7 @@
 				<para><emphasis>Herramientas:</emphasis> Provee una lista de opciones de configuración que están disponibles para el perfil de administrador.</para>
 				<mediaobject>
 					<imageobject>
-						<imagedata scalefit="1" align="center" width="450" fileref="images/ch04_img011_2.png"/>
+						<imagedata scalefit="1" align="center" width="200" fileref="images/ch04_img011_2.png"/>
 					</imageobject>
 					<textobject>
 						<phrase>Opciones disponibles en Herramientas</phrase>
@@ -125,7 +125,7 @@
 				<para><emphasis>Administrador:</emphasis> esta sección muestra una lista de notificaciones, así como las diferentes opciones disponibles para la gestión de usuarios, información contextual de la plataforma y el botón de desconexión segura: <literal>Logout.</literal></para>	
 				<mediaobject>
 					<imageobject>
-						<imagedata scalefit="1" width="450" align="center" fileref="images/ch04_img012.png"/>
+						<imagedata scalefit="1" width="300" align="center" fileref="images/ch04_img012.png"/>
 					</imageobject>
 					<caption>
 						<para>Opciones disponibles en Administrador</para>

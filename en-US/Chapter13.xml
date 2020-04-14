@@ -350,7 +350,7 @@
 				<para>General Settings: Backup segments (Remote S3)</para>
 			</caption>
 		</mediaobject>
-		<para><emphasis role="bold">White network</emphasis></para>
+		<para><emphasis role="bold">White networks</emphasis></para>
 		<para>In this section the networks are indicated whose traffic will pass without package inspection, because the networks are considered “reliable.”</para>
 		<para>Add a new network: click the button <literal>+Add</literal> and indicate the network IP.</para>
 		<para>Delete a network from the list: through the icon “Delete".</para>

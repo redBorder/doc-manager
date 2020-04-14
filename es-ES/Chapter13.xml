@@ -347,7 +347,7 @@
 				<para>Configuración general: Segmentos de respaldo (Remote S3)</para>
 			</caption>
 		</mediaobject>
-		<para><emphasis role="bold">Red blanca</emphasis></para>
+		<para><emphasis role="bold">White networks</emphasis></para>
 		<para>En esta sección, se indican las redes cuyo tráfico pasará sin inspección del paquete, porque las redes se consideran "fiables". </para> <para> Agregar una nueva red: haga clic en el botón <literal> + Agregar </literal> e indique la IP de la red. </para> <para> Eliminar una red de la lista: a través del icono "Eliminar".</para>
 		<mediaobject>
 			<imageobject>
@@ -357,7 +357,7 @@
 				<para>Configuración general: Añadir una red blanca</para>
 			</caption>
 		</mediaobject>	
-		<para><emphasis role="bold">Red negra</emphasis></para>
+		<para><emphasis role="bold">Black Networks</emphasis></para>
 		<para>Lista de redes cuyo tráfico debe bloquearse debido a la mala reputación.</para>
 		<para>Agregue una nueva red: simplemente haga clic en el botón <literal> + Agregar </literal> e indique la IP de la red. </para> <para> Eliminar una red de la lista: a través del icono "Eliminar".</para>
 		<mediaobject>

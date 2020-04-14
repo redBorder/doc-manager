@@ -393,7 +393,7 @@
 			<para>A simple and quick way to view only the events corresponding to a specific period of time is to select some of the options that provide tabs timeline filtering:</para>
 			<mediaobject>
 				<imageobject>
-					<imagedata scalefit="1" align="center" width="350" fileref="images/ch06_img015.png"/>
+					<imagedata scalefit="1" align="center" width="250" fileref="images/ch06_img015.png"/>
 				</imageobject>
 				<textobject>
 					<phrase>Filtering events: timeline</phrase>
@@ -1162,7 +1162,7 @@
 			</caption>
 			</mediaobject>	
 			<para><emphasis role="bold">SRC/DST MAP</emphasis></para>
-			<para>In the Location attribute menu we find the options SRC MAP and DST MAP. In both cases we offer the possibility to display the map which is the localization of the IP of origen (SRC MAP) and destination (DST MAP) that generates the most traffic.</para>
+			<para>In the Location attribute menu we find the options SRC MAP and DST MAP. In both cases we offer the possibility to display the map which is the localization of the origin IP (SRC MAP) and destination (DST MAP) that generates the most traffic.</para>
 			<mediaobject>
 				<imageobject>
 					<imagedata scalefit="1" align="center" width="450" fileref="images/ch06_img045.png"/>

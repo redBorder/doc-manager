@@ -73,7 +73,7 @@
 			<para><emphasis>Dashboard:</emphasis> Provides a summary of the events received by the sensors, displaying them in different metrics. This is the screen shown by default when you log into the redBorder platform.</para>
 			<mediaobject>
 				<imageobject>
-					<imagedata scalefit="1" align="center" width="450" fileref="images/ch04_img002.png"/>
+					<imagedata scalefit="1" align="center" width="450" fileref="images/ch04_img003.png"/>
 				</imageobject>
 				<textobject>
 					<phrase>Dashboard</phrase>
@@ -112,7 +112,7 @@
 				<para><emphasis>Tools:</emphasis> Provides a list of the configuration options that are available to the administrator profile and in read mode for the rest of the users.</para>
 				<mediaobject>
 					<imageobject>
-						<imagedata scalefit="1" align="center" width="450" fileref="images/ch04_img011_2.png"/>
+						<imagedata scalefit="1" align="center" width="200" fileref="images/ch04_img011_2.png"/>
 					</imageobject>
 					<textobject>
 						<phrase>Available options in Tools</phrase>
@@ -124,7 +124,7 @@
 				<para><emphasis>Administrator:</emphasis> this section shows a list of notifications, as well as the different options available for managing users, contextual help of the platform and the safe disconnect button: <literal>Logout.</literal></para>	
 				<mediaobject>
 					<imageobject>
-						<imagedata scalefit="1" width="450" align="center" fileref="images/ch04_img012.png"/>
+						<imagedata scalefit="1" width="300" align="center" fileref="images/ch04_img012.png"/>
 					</imageobject>
 					<caption>
 						<para>Available options in Administrator</para>
