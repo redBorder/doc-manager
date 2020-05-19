@@ -24,7 +24,7 @@
 		<para>Los siguientes requisitos están relacionados con la instalación de un solo nodo con uso de ligero a moderado. Tenga en cuenta que si ejecuta la plataforma en un entorno virtual, generalmente debería disminuir el rendimiento de alguna manera en comparación con una implementación similar en una máquina física.</para>
 		<mediaobject>
 					<imageobject>
-						<imagedata scalefit="1" align="center" width="400" fileref="images/ch02_img001.png"/>
+						<imagedata scalefit="1" align="center" width="350" fileref="images/ch02_img001.png"/>
 					</imageobject>
 					<textobject>
 						<phrase>Requisitos de instalación de un solo nodo en redBorder</phrase>

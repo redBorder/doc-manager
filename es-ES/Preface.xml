@@ -13,8 +13,8 @@
   </xi:include>
     <section>
 		<title>Bienvenidos a redBorder</title>
-		<para>Muchas gracias por descargar o adquirir la versión 3 de redBorder.</para>
-        <para>Este manual va dirigido a aquellos usuarios que disponen de la versión <emphasis role="bold">Enterprise.</emphasis></para>
+		<para>Muchas gracias por descargar o adquirir la versión 3.1 de redBorder.</para>
+        <para>Este manual va dirigido a aquellos usuarios que disponen de la versión <emphasis role="bold">Enterprise</emphasis>, cuya última release es la 3.1.80-9.</para>
 		<section>
 			<title>Conociendo la Guía Oficial de Instalación de redBorder</title>
 			<para>Esta guía contiene información muy útil que le ayudará a realizar una correcta instalación y configuración del Manager redBorder.</para>
@@ -74,7 +74,10 @@
 				<para>Apache Kafka 0.8.2</para>
 			</listitem>
 			<listitem>
-				<para>druid 0.1.8</para>
+				<para>druid 0.12.3</para>
+			</listitem>
+			<listitem>
+				<para>logstash 7.4.2</para>
 			</listitem>
 			<listitem>
 				<para>postgreSQL 9.2.9</para>
@@ -84,6 +87,9 @@
 			</listitem>
 			<listitem>
 				<para>nginx 1.6.2</para>
+			</listitem>
+			<listitem>
+				<para>keepalived 2.0.18</para>
 			</listitem>
 		</itemizedlist>
 	</section>

@@ -421,6 +421,33 @@
 				<para>General settings: GeoIP Protection</para>
 			</caption>
 		</mediaobject>
+		<para><emphasis role="bold">Logstash Tunning</emphasis></para>
+		<para>In this section, the user can select from the web interface the different extra steps for data enrichment in logstash (available for the Traffic, Intrusion and Mobility module):</para>
+		<itemizedlist mark="bullet">
+			<listitem>
+				<para>MAC Scrambling: It allows to protect the sensor MAC, for this a hexadecimal encoded key is used that is combined with a fake MAC. This in turn allows obtaining the real MAC of the sensor and providing security so as not to compromise the service provided.</para>
+			</listitem>
+			<listitem>
+				<para>Geo IP: Allows to enable Geo Protection to discover information regarding the geographical position of a specific IP address.</para>
+			</listitem>
+			<listitem>
+				<para>MAC Vendor: The MAC translation process included in the event allow to obtain the name of the device manufacturer. This process is compared in a file stored within the system.</para>
+			</listitem>
+			<listitem>
+				<para>Darklist: Retrieve a list of IP's from Alienvault that is malicious and it's score. Allows to store this list into a file stored in the system.</para>
+			</listitem>
+			<listitem>
+				<para>Multi Enrichment: It Allows that the pipelines are forwarded to the pipelines that needs to be enriched. A filter plugin process the data by storing the information in a 'store' (hash) and cancels the event. This store information can be used to enrich the other incomind data.</para>
+			</listitem>
+		</itemizedlist>
+		<mediaobject>
+			<imageobject>
+				<imagedata scalefit="1" width="450" align="center" fileref="images/ch13_img009_n.png"/>
+			</imageobject>
+			<caption>
+				<para>General settings: Logstash Tunning</para>
+			</caption>
+		</mediaobject>
 	</section>
 	<section>
 		<title>Correlation Engine Rules</title>

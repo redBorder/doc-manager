@@ -306,7 +306,7 @@
 					</mediaobject>	
 					<mediaobject>
 						<imageobject>
-							<imagedata scalefit="1" align="center" width="450" fileref="images/ch11_img010b.png"/>
+							<imagedata scalefit="1" align="center" width="300" fileref="images/ch11_img010b.png"/>
 						</imageobject>
 						<caption>
 							<para>Add Monitor: available metrics</para>

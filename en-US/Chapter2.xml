@@ -24,7 +24,7 @@
 		<para>The following requirements are related to a single node installation with light to moderate use. Please consider that if you run the platform in a virtual environment you should usually get the performance somehow decreased comparing to a similar physical machine deployment.</para>
 		<mediaobject>
 					<imageobject>
-						<imagedata scalefit="1" align="center" width="400" fileref="images/ch02_img001.png"/>
+						<imagedata scalefit="1" align="center" width="350" fileref="images/ch02_img001.png"/>
 					</imageobject>
 					<textobject>
 						<phrase>Redborder single node installation requirements</phrase>

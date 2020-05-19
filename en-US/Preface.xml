@@ -13,8 +13,8 @@
   </xi:include>
     <section>
 		<title> Welcome to redBorder</title>
-		<para>Thank you very much for downloading or purchasing version 3 of redBorder.</para>
-		<para>This manual is intended for users who have the Enterprise version.</para>
+		<para>Thank you very much for downloading or purchasing version 3.1 of redBorder.</para>
+		<para>This manual is intended for users who have the <emphasis role="bold">Enterprise</emphasis> version, whose latest release is 3.1.80-9.</para>
 		<section>
 			<title>Knowing the Official Manager Installation Guide</title>
 			<para>This guide contains very useful information that will help you accurately perform the installation of redBorder Manager.</para>
@@ -69,6 +69,9 @@
 				<para>druid 0.12.3</para>
 			</listitem>
 			<listitem>
+				<para>logstash 7.4.2</para>
+			</listitem>
+			<listitem>
 				<para>postgreSQL 9.2.10</para>
 			</listitem>
 			<listitem>
@@ -76,6 +79,9 @@
 			</listitem>
 			<listitem>
 				<para>nginx 1.6.2</para>
+			</listitem>
+			<listitem>
+				<para>keepalived 2.0.18</para>
 			</listitem>
 		</itemizedlist>
 	</section>

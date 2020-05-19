@@ -410,6 +410,33 @@
 				<para>Configuración general: GeoIP Protection</para>
 			</caption>
 		</mediaobject>
+		<para><emphasis role="bold">Logstash Tunning</emphasis></para>
+		<para>En esta sección, el usuario puede seleccionar desde la interfaz web los diferentes pasos adicionales para el enriquecimiento de datos en logstash (disponible para el módulo Tráfico, Intrusión y Movilidad):</para>
+		<itemizedlist mark="bullet">
+			<listitem>
+				<para>MAC Scrambling: Permite proteger la MAC del sensor, para ello se utiliza una clave codificada hexadecimal que se combina con una MAC falsa. Esto permite a su vez obtener la MAC real del sensor y proporcionar seguridad para no comprometer el servicio que se presta.</para>
+			</listitem>
+			<listitem>
+				<para>Geo IP: Permite proteger la MAC del sensor, para esto se utiliza una clave codificada hexadecimal que se combina con una MAC falsa para obtener la MAC real de la misma.</para>
+			</listitem>
+			<listitem>
+				<para>MAC Vendor: El proceso de traducción de la MAC incluido en el evento permite obtener el nombre del fabricante del dispositivo. Este proceso se compara en un archivo almacenado dentro del sistema.</para>
+			</listitem>
+			<listitem>
+				<para>Darklist: Recupera una lista de IP de Alienvault que son maliciosas y su puntuación. Permite almacenar esta lista en un archivo almacenado en el sistema.</para>
+			</listitem>
+			<listitem>
+				<para>Multi Enrichment: Permite que los pipelines se envíen a pipelines que deben enriquecerse. Un plugin de filtro procesa los datos almacenando la información en un 'store' (hash) y cancela el evento. Esta información almacenada se puede utilizar para enriquecer los otros datos de entrada.</para>
+			</listitem>
+		</itemizedlist>
+		<mediaobject>
+			<imageobject>
+				<imagedata scalefit="1" width="450" align="center" fileref="images/ch13_img009_n.png"/>
+			</imageobject>
+			<caption>
+				<para>Configuración general: Logstash Tunning</para>
+			</caption>
+		</mediaobject>
 	</section>
 	<section>
 		<title>Reglas del motor de correlación</title>
