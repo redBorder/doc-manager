@@ -12,7 +12,7 @@
 	<para><screen>https://IP-managerAddress</screen></para>
 	<mediaobject>
 		<imageobject>
-			<imagedata scalefit="1" width="450" align="center" fileref="images/ch04_img001.png"/>
+			<imagedata scalefit="1" width="300" align="center" fileref="images/ch04_img001.png"/>
 		</imageobject>
 		<textobject>
 			<phrase>Screen access to the redBorder platform: username and password</phrase>

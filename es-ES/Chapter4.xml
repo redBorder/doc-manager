@@ -12,7 +12,7 @@
 		<para><screen>https://direccion-IP-manager</screen></para>
 		<mediaobject>
 			<imageobject>
-				<imagedata scalefit="1" align="center" width="450" fileref="images/ch04_img001.png"/>
+				<imagedata scalefit="1" align="center" width="300" fileref="images/ch04_img001.png"/>
 			</imageobject>
 			<textobject>
 				<phrase>Pantalla de acceso a la plataforma Redborder: Usuario y contraseña</phrase>
