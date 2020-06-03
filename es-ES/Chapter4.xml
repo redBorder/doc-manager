@@ -46,7 +46,7 @@
 		<title>Estructura de la interfaz de la plataforma Redborder</title>
 		<para>Existe una estructura que se repite en todas las interfaces de Redborder. 
 		Conocer estos elementos le ayudará a navegar por la web de un modo cómodo y sencillo. 
-		<footnote><para>La imagen adjunta corresponde a una instalación de Redborder con las Apps Flow, IPS y Malware activas. La estructura será la misma para cualquier instalación de Redborder que se realice, dependiendo solo de las aplicaciones que estén disponibles en la barra de menú superior y de si están activadas o no. </para></footnote></para>
+		<footnote><para>La imagen adjunta corresponde a una instalación de Redborder con las Apps de Tráfico, Intrusión y Movilidad activas. La estructura será la misma para cualquier instalación de Redborder que se realice, dependiendo solo de las aplicaciones que estén disponibles en la barra de menú superior y de si están activadas o no. </para></footnote></para>
         <itemizedlist mark="bullet">
 			<listitem>
 				<para><emphasis role="bold">Barra de menú:</emphasis> en ella encontrará el acceso directo a todas las secciones de la plataforma Redborder. Se encuentra subdividida en dos áreas diferenciadas según operatividad:</para>

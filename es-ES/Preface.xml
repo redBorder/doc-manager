@@ -27,13 +27,13 @@
 					<para>Configuración de las redBorder Apps</para>
 				</listitem>
 			</itemizedlist>
-			<para>Este documento es ideal tanto para los usuarios que deseen reemplazar la antigua versión, como aquellos que instalen por primera vez la versión 3 redBorder.</para>
-			<para>Si es un usuario con experiencia y ya ha realizado la instalación del Manager redBorder y/o de los sensores en otras ocasiones, puede pasar directamente al capítulo 3 en el que aprenderá a moverse por la plataforma web redBorder.</para>
+			<para>Este documento es ideal tanto para los usuarios que deseen reemplazar la antigua versión, como aquellos que instalen por primera vez la versión 3 de redBorder.</para>
+			<para>Si es un usuario con experiencia y ya ha realizado la instalación del Manager de redBorder y/o de los sensores en otras ocasiones, puede pasar directamente al capítulo 3 en el que aprenderá a moverse por la plataforma web.</para>
 		</section>
     </section>
     <section>
 		<title>Requisitos para la implantación de redBorder</title>
-		<para>La plataforma redBorder se puede instalar mediante dos infraestructuras posibles:</para>
+		<para>La plataforma de redBorder se puede instalar mediante dos infraestructuras posibles:</para>
 		<itemizedlist mark="bullet">
 			<listitem>
 				<para><emphasis role="bold">Máquina física:</emphasis> disco local de su equipo (Hardware).</para>

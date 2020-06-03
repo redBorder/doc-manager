@@ -9,7 +9,7 @@
 <chapter>
 		<title>Eventos</title>
 	<para>En esta sección el usuario puede mostrar, analizar y gestionar eventos recolectados por los sensores.</para>
-	<para>Redborder ofrece la máxima visibilidad de red gracias a las muchas opciones de representación y visualización de datos que nuestra App provee. Asegurate de revisar las secciones<emphasis>Opciones disponibles en el submenú de Redborder</emphasis> y <emphasis>filtros de eventos</emphasis> para descubrir la versatilidad de mostrar solamente la información que quiere analizar en un determinado momento y en unas determinadas condiciones. </para>
+	<para>Redborder ofrece la máxima visibilidad de red gracias a las muchas opciones de representación y visualización de datos que nuestra App provee. Asegurate de revisar las <emphasis>Opciones disponibles en el submenú de Redborder</emphasis> y <emphasis>filtros de eventos</emphasis> para descubrir la versatilidad de mostrar solamente la información que quiere analizar en un determinado momento y en unas determinadas condiciones. </para>
 	
 	<section>
 		<title>Módulos</title>
@@ -99,10 +99,10 @@
 					<imagedata scalefit="1" align="center" width="450" fileref="images/ch06_img055.png"/>
 				</imageobject>
 				<textobject>
-					<phrase>Mobility Module</phrase>
+					<phrase>Módulo de Movilidad</phrase>
 				</textobject>
 				<caption>
-					<para>Mobility Module</para>
+					<para>Módulo de Movilidad</para>
 				</caption>
 			</mediaobject>
 		<section>
@@ -113,10 +113,10 @@
 					<imagedata scalefit="1" align="center" width="450" fileref="images/ch06_img056.png"/>
 				</imageobject>
 				<textobject>
-					<phrase>Example of Reports</phrase>
+					<phrase>Ejemplo de Informes</phrase>
 				</textobject>
 				<caption>
-					<para>Example of Reports</para>
+					<para>Ejemplo de Informes</para>
 				</caption>
 			</mediaobject>
 		</section>
@@ -305,7 +305,7 @@
 			<para><emphasis role="bold">Resumen:</emphasis> bajo el area de la Vista hay un resumen relacionando todo los datos mostrados, tanto en la vista como en la tabla. En el siguiente orden, este resumen indica el valor de agregación total de todos los datos cargados, el valor de agregación total de todos los datos cargados y seleccionados, el número de filas de datos cargados y el porcentaje de valor agregado de los datos cargados del total de datos.</para>
 			<para><emphasis role="bold">Motor de búsqueda: </emphasis> permite realizar una búsqueda por atributo. Las búsquedas se convierten automáticamente en filtros, tal y como veremos un poco más tarde.</para>
 			<para><emphasis role="bold">Tabla de datos:</emphasis> muestra los valores clasificados por tipo de atributo seleccionado. Por ejemplo, cada fila podría mostrar cada una de las IPs de origen (Columna/Atributo: SRC Address) con el porcentaje de detalle bytes (agregación) que consume ese elemento dentro de la red.</para>
-			<para>Para el análisis aislado de uno o más elementos de esta barra (seleccionar como filtro), debe hacer clic en el elemento que desea filtrar. Para la selección múltiple, simplemente mantenga presionado<keycap>Shift</keycap>.</para>
+			<para>Para el análisis aislado de uno o más elementos de esta barra (seleccionar como filtro), debe hacer clic en el elemento que desea filtrar. Para la selección múltiple, simplemente mantenga presionado <keycap>Shift</keycap>.</para>
 			<note>
 				<title>Nota</title>
 				<para>Al posicionar el cursor sobre cualquiera de los elementos de la tabla de datos se mostrará un menú mostrando las diferentes acciones que pueden ser ejecutadas en ese elemento. Dependiendo del tipo de atributo, se mostrarán las opciones de ordenado en el menú contextual.</para>
@@ -514,7 +514,7 @@
 	</section>
 	<section>
 		<title>Reputación y monitoreo de IPs</title>
-		<para>El origen de los atributos y el destino del tráfico (Dirección SRC / Dirección DST) permite realizar las siguientes acciones para facilitar un análisis más completo del origen y destino del tráfico que pasa a través de nuestra red:</para>
+		<para>El origen de los atributos y el destino del tráfico (SRC Adress/DST SRC Adress) permite realizar las siguientes acciones para facilitar un análisis más completo del origen y destino del tráfico que pasa a través de nuestra red:</para>
 		<para><emphasis role="bold">Crear objeto:</emphasis> Esto permite poner un nombre y / o descripción que permite la ubicación de un artículo de manera más rápida y fácil. Por ejemplo, si conocemos la máquina asociada con una dirección IP particular, esta opción le permite cambiarle el nombre para facilitar su identificación.</para>
 		<mediaobject>
 			<imageobject>
@@ -594,16 +594,13 @@
 			<title>Nota</title>
 			<para>Recuerde que en la sección  <literal>Dashboard</literal> puede crear widgets personalizados para cada tipo de aplicación que indique un tipo de vista para mostrar eventos.</para>
 		</note>
-		<para>Las vistas disponibles para Flow son: </para>
+		<para>Las vistas disponibles para la App de Tráfico/Vault son: </para>
 		<itemizedlist mark="bullet">
 			<listitem>
 				<para><emphasis role="bold">Tops:</emphasis> agregación de eventos basada en una unidad para mostrar los más destacados. La suma total de datos de diferentes eventos para mostrarlos como uno. </para>
 			</listitem>
 			<listitem>
 				<para><emphasis role="bold">Raw:</emphasis> ver todos los eventos de datos sin procesar, clasificados por atributos y franjas horarias.</para>
-			</listitem>
-			<listitem>
-				<para><emphasis role="bold">Map:</emphasis> mapa de calor en el que se muestran las IPs (clientes) y los puntos de acceso involucrados en el flujo de datos.</para>
 			</listitem>
 			<listitem>
 				<para><emphasis role="bold">Comparar:</emphasis> comparar intervalos de tiempo para analizar diferencias en el estado de la red.</para> 
@@ -669,7 +666,7 @@
 			</note>
 			<section>
 				<title>Gestión de eventos de Flow en la vista Raw</title>
-				<para>La vista Raw permite mostrar todos los eventos recolectados por los sensores de Flow, por atributos y segmentados por slots de tiempo. Combinado con un gráfico de flujo, también muestran el flujo de datos que está ocurriendo en la red.</para>
+				<para>La vista Raw permite mostrar todos los eventos recolectados por los sensores de Flow/Vault, por atributos y segmentados por slots de tiempo. Combinado con un gráfico de flujo, también muestran el flujo de datos que está ocurriendo en la red.</para>
 				<para>Cada columna en la tabla de datos muestra los valores que corresponden con los atributos seleccionados. En esta tabla podemos realizar diferentes acciones:</para>
 				<itemizedlist mark="bullet">
 					<listitem>
@@ -722,60 +719,6 @@
 					<para>Recuerde que la máxima granularidad disponible es de 1 minuto.</para>
 				</note>	
 			</section>
-		</section>
-		<section>	
-			<title>Map</title>
-			<para>Esta es una de las opciones más visuales que encontramos en el menú Vista<footnote><para> Esta opción solo está disponible en el menú Flow y tiene menos opciones de filtrado y visualización de datos que otras vistas.</para></footnote></para>
-			<para>La opción <literal>Map</literal> nos proporciona un mapa de calor que muestra el estado de cada punto de acceso (AP) de nuestra red.</para>
-			<mediaobject>
-				<imageobject>
-					<imagedata scalefit="1" align="center" width="450" fileref="images/ch06_img029.png"/>
-				</imageobject>
-				<textobject>
-					<phrase>Map</phrase>
-				</textobject>
-				<caption>
-					<para>Map</para>
-				</caption>
-			</mediaobject>
-			<para>Como se muestra en la imagen, esta vista nos ofrece a través de la codificación de colores, información valiosa sobre el estado y el uso del punto de acceso, así como un resumen (lado derecho) que incluye los siguientes datos: </para>
-			<itemizedlist mark="circle">
-				<listitem>
-					<para>Seguimiento del cliente: haga clic en el botón para obtener información específica de un AP durante un período de tiempo. Ingrese el punto de acceso MAC desde el que desea realizar el seguimiento.</para>
-				</listitem>
-				<listitem>
-					<para>Total de clientes activos frente a partners</para>
-				</listitem>
-				<listitem>
-					<para>Total de afiliados frente a clientes detectados </para>
-				</listitem>
-				<listitem>
-					<para>AP activos frente a AP totales</para>
-				</listitem>
-				<listitem>
-					<para>Ancho de banda consumido en nuestra red</para>
-				</listitem>
-			</itemizedlist>
-			<note>
-				<title>Código de color: estado del punto de acceso</title>
-				<para>Al acercarnos a cualquier zona del mapa de calor, podemos visualizar los diferentes AP que representa nuestra red mediante un círculo.</para>
-				<para>Este círculo incluye cifras que indican el número de usuarios que están asociados con el AP. Además, cada círculo aparecerá lleno de diferentes colores que indican el estado de cada AP:</para>
-				<para><emphasis role="bold">Verde:</emphasis> El AP está activo, es decir, en perfecto funcionamiento.</para>
-				<para><emphasis role="bold">Gris:</emphasis> El estado de AP es desconocido.</para>
-				<para><emphasis role="bold">Rojo:</emphasis> El AP está caído, es decir, presenta un mal funcionamiento.</para>
-			</note>
-			<para>También muestra, a través de la codificación de colores, el tráfico que se produce en cada punto de acceso. La gradación de color indica el tráfico variable en el AP como un mapa de calor: rojo, amarillo, verde y azul. </para>
-			<para><emphasis role="bold">Información adicional sobre Access Point</emphasis></para>
-			<para>Haga clic en Punto de acceso y aparecerá un cuadro con la siguiente información:</para>
-			<para>-Nombre</para>
-			<para>-Dirección MAC</para>
-			<para>-Número de clientes</para>
-			<para>-Fecha de la última inspección</para>
-			<important>
-				<title>Importante</title>
-				<para>Es posible conocer el estado del punto de acceso desde la opción<literal>Sensores</literal> en el lado derecho de la barra de menú, en el área de configuración.</para>
-				<para>Seleccione el menú que desea consultar. Haga clic en el ícono y seleccione opciones <literal>Vista>Puntos de Acceso</literal></para>
-			</important>
 		</section>
 		<section>
 			<title>Comparar</title>
