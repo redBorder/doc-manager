@@ -739,7 +739,7 @@
 		<section>
 			<title>Único</title>
 			<para>Mediante la vista <literal>Único</literal> el usuario puede obtener información sobre los diferentes elementos que han interactuado, al menos una vez con la red en un período de tiempo determinado. Al colocar el mouse en cualquier punto del gráfico, el usuario obtendrá el resultado total de elementos únicos para el período de tiempo seleccionado.</para>
-			<para><literal>Agrupar por</literal> (solo disponible en la vista Única): nos permite agrupar los datos que se muestran en el gráfico en función de un atributo dado. Esta opción proporciona el filtrado y la clasificación de elementos de acuerdo con los criterios de análisis que necesitamos.</para>
+			<para><literal>Agrupar por</literal> (solo disponible en la vista Único): nos permite agrupar los datos que se muestran en el gráfico en función de un atributo dado. Esta opción proporciona el filtrado y la clasificación de elementos de acuerdo con los criterios de análisis que necesitamos.</para>
 			<mediaobject>
 				<imageobject>
 					<imagedata scalefit="1" align="center" width="450" fileref="images/ch06_img031.png"/>
@@ -855,7 +855,7 @@
 		<title>Tipo de gráfico</title>
 		<para>Como veremos en <emphasis role="bold">Capítulo 5, Dashboards</emphasis> puede seleccionar el tipo de gráfico que desea mostrar los datos proporcionados en las diferentes vistas. Las opciones son muy similares a las que están disponibles en el proceso de creación de widgets personalizados..</para>
 		<para>Los gráficos que están disponibles en todo momento dependerán de la vista seleccionada. Esta opción no aparece, por ejemplo, al aplicar la vista de mapa de los datos, ya que los datos se representan en esta vista, en un mapa. Estas son las posibilidades gráficas de la plataforma Redborder para vistas:</para>
-		<para><emphasis role="bold">Acumulado:</emphasis> muestra comparativamente en el mismo gráfico los datos para cada uno de los atributos seleccionados. (En la imagen que compara los sensores de tráfico).</para>
+		<para><emphasis role="bold">Acumulado:</emphasis> muestra comparativamente en el mismo gráfico los datos para cada uno de los atributos seleccionados. (En la imagen se comparan los distintos sensores de tráfico).</para>
 		<mediaobject>
 			<imageobject>
 				<imagedata scalefit="1" align="center" width="450" fileref="images/ch06_img034.png"/>
@@ -867,16 +867,16 @@
 				<para>Gráfico Acumulado para vistas de sensor</para>
 			</caption>
 		</mediaobject>	
-		<para><emphasis role="bold">Área:</emphasis> gráfico que proporciona una superposición de los datos a un grupo de elementos que pertenecen al atributo seleccionado, haciendo que el tráfico total sea la suma del tráfico por atributo (en la imagen, por sensor).</para>
+		<para><emphasis role="bold">Área:</emphasis> gráfico que proporciona una superposición de los datos a un grupo de elementos que pertenecen al atributo seleccionado, haciendo que el tráfico total sea la suma del tráfico por atributo (en la imagen, se muestra por cada sensor).</para>
 		<mediaobject>
 			<imageobject>
 				<imagedata scalefit="1" align="center" width="450" fileref="images/ch06_img035.png"/>
 			</imageobject>
 			<textobject>
-				<phrase>Área para vista gráfica de Tops por Dirección SRC: múltiples elementos</phrase>
+				<phrase>Área para la vista gráfica de Tops por Dirección SRC: múltiples elementos</phrase>
 			</textobject>
 			<caption>
-				<para>Área para vista gráfica de Tops por Dirección SRC: múltiples elementos</para>
+				<para>Área para la vista gráfica de Tops por Dirección SRC: múltiples elementos</para>
 			</caption>
 		</mediaobject>
 		<para>Si desean mostrar en un solo elemento gráfico, simplemente haga clic en cualquier punto del gráfico para aislar el elemento seleccionado.</para>
@@ -885,10 +885,10 @@
 				<imagedata scalefit="1" align="center" width="450" fileref="images/ch06_img036.png"/>
 			</imageobject>
 			<textobject>
-				<phrase>Área para vista gráfica de Tops por Sensor: elemento único</phrase>
+				<phrase>Área para lavista gráfica de Tops por Sensor: elemento único</phrase>
 			</textobject>
 			<caption>
-				<para>Área para vista gráfica de Tops por Sensor: elemento único</para>
+				<para>Área para la vista gráfica de Tops por Sensor: elemento único</para>
 			</caption>
 		</mediaobject>	
 		<para><emphasis role="bold">Línea:</emphasis> gráfico que proporciona una superposición de los datos a un grupo de elementos que pertenecen al atributo seleccionado; en este caso, el área no se muestra pero el gráfico está representado por una línea.</para>
@@ -897,10 +897,10 @@
 				<imagedata scalefit="1" align="center" width="450" fileref="images/ch06_img037.png"/>
 			</imageobject>
 			<textobject>
-				<phrase>Gráfico de líneas Top por sensor</phrase>
+				<phrase>Gráfico Top de líneas por sensor</phrase>
 			</textobject>
 			<caption>
-				<para>Gráfico de líneas Top por sensor</para>
+				<para>Gráfico Top de líneas por sensor</para>
 			</caption>
 		</mediaobject>	
 		<para><emphasis role="bold">Barras:</emphasis> proporciona una superposición de datos a un grupo de elementos que pertenecen al atributo seleccionado, siendo el total, la suma de valores de cada uno de esos elementos. En este caso, los datos se representan mediante barras.</para>
@@ -909,10 +909,10 @@
 				<imagedata scalefit="1" align="center" width="450" fileref="images/ch06_img038.png"/>
 			</imageobject>
 			<textobject>
-				<phrase>Gráfico de barras Top por sensor</phrase>
+				<phrase>Gráfico Top de barras por sensor</phrase>
 			</textobject>
 			<caption>
-				<para>Gráfico de barras Top por sensor</para>
+				<para>Gráfico Top de barras por sensor</para>
 			</caption>
 		</mediaobject>
 		<para><emphasis role="bold">SBarras:</emphasis> o Barras acumuladas, proporciona en el mismo gráfico los datos obtenidos para cada uno de los elementos incluidos en el atributo seleccionado, para que pueda ver los resultados de IP independiente, sensor, etc., representados en barras.</para>
