@@ -183,7 +183,8 @@
 					<para>-Monitor</para>
 					<para>-Social</para>
 					<para>-Vault</para>
-					<para>-Mobility</para>					
+					<para>-Mobility</para>
+					<para>-Combination</para>					
 				</listitem>
 				<listitem>
 					<para><emphasis role="bold">Status:</emphasis> display the configuration and status of the machines and network infrastructure.</para>
@@ -387,6 +388,12 @@
 				</listitem>
 				<listitem>
 					<para><emphasis>Alarm:</emphasis> insert configuration details in the form below.</para>
+				</listitem>
+				<listitem>
+					<para><emphasis>Hardware Info:</emphasis> insert configuration details in the form below (regarding the status of a selected device sensor). Displays information regarding the chassis, processor, pcie... of the device.</para>
+				</listitem>
+				<listitem>
+					<para><emphasis>Hardware Status:</emphasis> insert configuration details in the form below (regarding the status filter of a selected device sensor). Indicates whether the device is working correctly together with an identifying image of it.</para>
 				</listitem>
 				<listitem>
 					<para><emphasis>Monitor:</emphasis> Serie/Value</para>

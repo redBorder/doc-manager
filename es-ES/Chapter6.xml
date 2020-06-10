@@ -183,15 +183,16 @@
 					<para>-Monitor</para>
 					<para>-Social</para>
 					<para>-Vault</para>
-					<para>-Movilidad</para>					
+					<para>-Movilidad</para>	
+					<para>-Combinación</para>					
 				</listitem>
 				<listitem>
-					<para><emphasis role="bold">Estatus:</emphasis> mostrar la configuración y el estado de las máquinas y la infraestructura de red.</para>
+					<para><emphasis role="bold">Estado:</emphasis> mostrar la configuración y el estado de las máquinas y la infraestructura de red.</para>
 					<para>-Infraestructura</para>
 				</listitem>
 				<listitem>
-					<para><emphasis role="bold">Format:</emphasis>  configura el contenido y el formato de los widgets: texto, imágenes, URL, etc.</para>
-					<para>-Shapes</para>
+					<para><emphasis role="bold">Formato:</emphasis>  configura el contenido y el formato de los widgets: texto, imágenes, URL, etc.</para>
+					<para>-Formas</para>
 				</listitem>
 			</itemizedlist>
 			<mediaobject>
@@ -386,7 +387,13 @@
 					<para><emphasis>Clúster:</emphasis> Diagrama/Tabla</para>
 				</listitem>
 				<listitem>
-					<para><emphasis>Alarma:</emphasis> inserte los detalles de configuración en el siguiente formulario.</para>
+					<para><emphasis>Alarma:</emphasis> Permite insertar los detalles de configuración en el formulario correspondiente.</para>
+				</listitem>
+				<listitem>
+					<para><emphasis>Info Hardware:</emphasis> Permite insertar los detalles de configuración en el formulario correspondiente (con respecto al estado de un sensor de dispositivo seleccionado). Muestra información referente al dispositivo (chasis, procesador, pcie).</para>
+				</listitem>
+				<listitem>
+					<para><emphasis>Estado Hardware:</emphasis> Permite insertar los detalles de configuración en el formulario correspondiente (con respecto al filtro de estado de un sensor de dispositivo seleccionado). Indica si el funcionamiento del dispositivo es el correcto junto con una imágen identificativa del mismo.</para>
 				</listitem>
 				<listitem>
 					<para><emphasis>Monitor:</emphasis> Serie/Valor</para>
