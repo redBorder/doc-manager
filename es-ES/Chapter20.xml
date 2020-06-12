@@ -220,5 +220,47 @@
 							</caption>
 				</mediaobject>
 			</section>
+			<section>
+				<title>Radius</title>
+				<para>El servicio de autenticación remota telefónica de usuario (RADIUS) es un <emphasis role="bold">protocolo de red</emphasis> que opera en el puerto 1812, el cual proporciona administración centralizada de autenticación, autorización y contabilidad (AAA o Triple A) para los usuarios que se conectan y utilizan un servicio de red. La clase RadiusProcessor pertenece al módulo rb-Samza-bi.</para>
+				<para>RADIUS es un <emphasis role="bold">protocolo de cliente/servidor</emphasis> que se ejecuta en la capa de aplicación y puede usar TCP o UDP como transporte. Los servidores de acceso a la red, las puertas de enlace que controlan el acceso a una red, generalmente contienen un componente de cliente RADIUS que se comunica con el servidor RADIUS. RADIUS es a menudo el back-end de elección para la autenticación 802.1X también.</para>
+				<para>En un manager de redborder, al activar las opciones avanzadas en Configuración general, es posible acceder a una sección llamada Radius Accounting y Radius Proxy Authentication.</para>
+				<mediaobject>
+							<imageobject>
+								<imagedata scalefit="1" align="center" width="250" fileref="images/ch20_img018.png"/>
+							</imageobject>
+							<caption>
+								<para>Opciones Generales: sección de Radius Accounting y Radius Proxy Authentication</para>
+							</caption>
+				</mediaobject>
+				<section>
+					<title>Radius authentication server</title>
+					<para>Este apartado permite activar un servidor de autenticación Radius. El usuario debe indicar la IP del Host y contraseña.</para>
+					<para><emphasis role="bold">Añadir un servidor de Radius Accounting:</emphasis> Es posible añadir un nuevo Servidor Radius clicando sobre la pestaña <emphasis role="bold">+Add</emphasis>, a continuación, introducir la IP y la contraseña compartida. Pulse en Update para guardar los cambios introducidos.</para>
+					<para><emphasis role="bold">Eliminar un servidor de Radius Accounting:</emphasis> Clicar en el icono Eliminar que aparece junto a la información del servidor Radius para descartarlo.</para>
+					<mediaobject>
+							<imageobject>
+								<imagedata scalefit="1" align="center" width="350" fileref="images/ch20_img019.png"/>
+							</imageobject>
+							<caption>
+								<para>Opciones Generales: Radius Accounting</para>
+							</caption>
+					</mediaobject>
+				</section>
+				<section>
+					<title>Radius Proxy Authentication</title>
+					<para>Este apartado permite activar un servidor proxy de autenticación Radius. El usuario debe indicar la IP del Host origen, la IP del Host destino y las contraseñas respectivas.</para>
+					<para><emphasis role="bold">Añadir un servidor proxy de autenticación Radius:</emphasis> Es posible añadir un nuevo Servidor Proxy de Radius clicando sobre la pestaña <emphasis role="bold">+Add</emphasis>, a continuación, introducir la IP del Host origen, la IP del Host destino y las contraseñas respectivas. Pulse en Update para guardar los cambios introducidos.</para>
+					<para><emphasis role="bold">Eliminar un servidor proxy de autenticación Radius:</emphasis> Clicar en el icono Eliminar que aparece junto a la información del servidor proxy para descartarlo.</para>
+					<mediaobject>
+							<imageobject>
+								<imagedata scalefit="1" align="center" width="350" fileref="images/ch20_img020.png"/>
+							</imageobject>
+							<caption>
+								<para>Opciones Generales: Radius Proxy Authentication</para>
+							</caption>
+					</mediaobject>
+				</section>
+			</section>
 	</section>
 </chapter>

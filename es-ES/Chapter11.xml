@@ -498,6 +498,9 @@
 			<listitem>
 				<para><literal>Vault</literal>: Permite visualizar y analizar los logs recibidos de los diferentes servicios y dispositivos.</para>			
 			</listitem>
+			<listitem>
+				<para><literal>Claim Sensor</literal>: Permite vincular el manager con el client proxy, que es un software centralizado que recopila datos de petición realizada por un cliente y los envía al manager.</para>			
+			</listitem>
 		</itemizedlist>
 
 		<section>
