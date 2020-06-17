@@ -411,7 +411,7 @@
 			</caption>
 		</mediaobject>
 		<para><emphasis role="bold">Logstash Tunning</emphasis></para>
-		<para>En esta sección, el usuario puede seleccionar desde la interfaz web los diferentes pasos adicionales para el enriquecimiento de datos en logstash (disponible para el módulo Tráfico, Intrusión y Movilidad):</para>
+		<para>En esta sección, el usuario puede seleccionar desde la interfaz web los diferentes pasos adicionales para el enriquecimiento de datos en logstash (disponible para el módulo Tráfico, Intrusión y Movilidad).Desactivar estas opciones supondría una mejora en la gestión de recursos y rendimiento general, pero perdería las funcionalidades descritas a continuación. Es recomendable mantenerlas activas.</para>
 		<itemizedlist mark="bullet">
 			<listitem>
 				<para>MAC Scrambling: Permite proteger la MAC del sensor, para ello se utiliza una clave codificada hexadecimal que se combina con una MAC falsa. Esto permite a su vez obtener la MAC real del sensor y proporcionar seguridad para no comprometer el servicio que se presta.</para>
@@ -423,10 +423,7 @@
 				<para>MAC Vendor: El proceso de traducción de la MAC incluido en el evento permite obtener el nombre del fabricante del dispositivo. Este proceso se compara en un archivo almacenado dentro del sistema.</para>
 			</listitem>
 			<listitem>
-				<para>Darklist: Recupera una lista de IP de Alienvault que son maliciosas y su puntuación. Permite almacenar esta lista en un archivo almacenado en el sistema.</para>
-			</listitem>
-			<listitem>
-				<para>Multi Enrichment: Permite que los pipelines se envíen a pipelines que deben enriquecerse. Un plugin de filtro procesa los datos almacenando la información en un 'store' (hash) y cancela el evento. Esta información almacenada se puede utilizar para enriquecer los otros datos de entrada.</para>
+				<para>Darklist: Es un servicio que se encarga de recuperar una lista de IP que son maliciosas y almacenar múltiples valores como puntuación, tipo de amenaza, país, latitud, longitud... en el sistema, permitiendo así realizar operaciones de modificación en los campos del evento.  Los archivos se actualizan cada día.</para>
 			</listitem>
 		</itemizedlist>
 		<mediaobject>
