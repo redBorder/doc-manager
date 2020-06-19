@@ -28,7 +28,7 @@
 				<caption>
 					<para>Módulo de Tráfico: muestra la información de tráfico de los 3 sensores</para>
 				</caption>
-		</mediaobject>
+			</mediaobject>
 		</section>
 		<section>
 			<title>Intrusión</title>
@@ -274,6 +274,7 @@
 							<para>Atributos</para>
 						</caption>
 					</mediaobject>
+					<para>Todos los atributos tienen un significado y funcionalidad específica. Por ejemplo, en el módulo de Tráfico podemos observar atributos muy relevantes como Public IP, el cual muestra la dirección IP real de los dispositivos que se encuentran en la red, Public IP MAP, que indica su posición en el mapa, o Country Code, el cual indica el país al que pertenece.</para>
 				</listitem>
 			</itemizedlist>
 		</section>

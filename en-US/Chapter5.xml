@@ -272,6 +272,15 @@
 							<para>Attributes</para>
 						</caption>
 					</mediaobject>
+					<para>All attributes have specific meaning and functionality. For example, in the Traffic module we can observe very relevant attributes such as Public IP, which shows the real IP address of the devices found on the network, Public IP MAP, which indicates their position on the map, or Country Code, which indicates the country to which it belongs.</para>
+					<mediaobject>
+						<imageobject>
+							<imagedata scalefit="1" width="450" align="center" fileref="images/ch06_img09b.png"/>
+						</imageobject>
+						<caption>
+							<para>Attributes: General vision</para>
+						</caption>
+					</mediaobject>
 				</listitem>
 			</itemizedlist>
 		</section>
