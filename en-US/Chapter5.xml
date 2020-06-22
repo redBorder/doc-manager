@@ -790,6 +790,9 @@
 				<para>quality</para>
 			</listitem>
 			<listitem>
+				<para>risk</para>
+			</listitem>
+			<listitem>
 				<para>wireless stations</para>
 			</listitem>
 			<listitem>
@@ -797,6 +800,9 @@
 			</listitem>
 			<listitem>
 				<para>bps/client</para>
+			</listitem>
+			<listitem>
+				<para>bytes/client</para>
 			</listitem>
 			<listitem>
 				<para>flows/client</para>
@@ -1025,48 +1031,47 @@
 			<listitem>
 				<para>Application</para>
 				<para>-Application</para>
-				<para>-HTTP Host</para>
+				<para>-Engine</para>
+				<para>-HTTP User Agent</para>
+				<para>-Host</para>
+				<para>-Host L2</para>
+				<para>-Referer</para>
+				<para>-Referer L2</para>
+				<para>-Selector</para>
 			</listitem>
 			<listitem>
-				<para>-Darklist</para>
-				<para>-Darklist Category</para>
+				<para>Client Data</para>
+				<para>-Band</para>
+				<para>-Client Accounting Type</para>
+				<para>-Client ID</para>
+				<para>-Client MAC</para>
+				<para>-Client RSSI</para>
+				<para>-Client Status</para>
+				<para>-Client Vendor</para>
 			</listitem>
 			<listitem>
 				<para>Datalink</para>
-				<para>-Client vendor</para>
-				<para>-SRC Vlan</para>
-				<para>-DST Vlan</para>
-				<para>-TOS</para>
+				<para>-LAN VLAN</para>
+				<para>-WAN VLAN</para>
 				<para>-Wireless ID</para>
-				<para>-Client band</para>
-				<para>-Client ID</para>
-				<para>-Client Status</para>
 			</listitem>
 			<listitem>
 				<para>Flow</para>
-				<para>-Biflow direction</para>
 				<para>-Direction</para>
 			</listitem>
 			<listitem>
 				<para>Interface</para>
-				<para>-INPUT SNMP</para>
-				<para>-OUTPUT SNMP</para>
-				<para>-INPUT VRF</para>
-				<para>-OUTPUT VRF</para>
+				<para>-LAN Interface</para>
+				<para>-LAN Description</para>
+				<para>-WAN Interface</para>
+				<para>-WAN Description</para>
 				<para>-Wireless Starion</para>
-				<para>-Client RSSI</para>
-				<para>-Client RSSI Value</para>
-				<para>-Client SNR</para>
-				<para>-Client SNR Value</para>
 			</listitem>
 			<listitem>
 				<para>Location</para>
-				<para>-SRC Country</para>
-				<para>-SRC AS </para>
-				<para>-SRC MAP </para>
-				<para>-DST Country</para>
-				<para>-DST AS</para>
-				<para>-DST MAP</para>
+				<para>-Country Code</para>
+				<para>-WAN IP AS</para>
+				<para>-Public IP MAP</para>
 				<para>-Coordinates</para>
 				<para>-Coordinates Map</para>
 				<para>-Service Provider</para>
@@ -1082,17 +1087,33 @@
 			<listitem>
 				<para>Network</para>
 				<para>-Conversation</para>
+				<para>-LAN IP Name</para>
+				<para>-LAN Net Address</para>
+				<para>-WAN IP Name</para>
 				<para>-Protocol</para>
 				<para>-Protocol Version</para>
+				<para>-TOS</para>
 				<para>-Sensor Type</para>
 				<para>-Scatterplot</para>
-				<para>-SRC NET Address</para>
-				<para>-DST NET Address</para>
+				<para>-LAN L4 Port Name</para>
+				<para>-WAN L4 Port Name</para>
 			</listitem>
 			<listitem>
 				<para>Transport</para>
-				<para>-SRC Port</para>
-				<para>-DST Port</para>
+				<para>-LAN L4 Port</para>
+				<para>-LAN L4 Port</para>
+				<para>-TCP flags</para>
+			</listitem>
+			<listitem>
+				<para>UUIDs</para>
+				<para>-Service Provider UUID</para>
+				<para>-Namespace UUID</para>
+				<para>-Deployment UUID</para>
+				<para>-Market UUID</para>
+				<para>-Organization UUID</para>
+				<para>-Campus UUID</para>
+				<para>-Building UUID</para>
+				<para>-Floor UUID</para>
 			</listitem>
 		</itemizedlist>
 		<para><emphasis role="bold">Scatter Plot</emphasis></para>
