@@ -262,6 +262,20 @@
 							</caption>
 					</mediaobject>
 				</section>
+				<section>
+					<title>Bulkstats</title>
+					<para>Bulk statistics are <emphasis role="bold">statistics that are collected in a group or scheme</emphasis>, for example, system statistics, port statistics, or Radius statistics.</para>
+					<para>It's possible to display Bulkstats information in the redBorder manager, for this it is necessary to configure the client part in the Cisco device to activate the sending of information to the manager via ftp.</para>
+					<para>Once this is done, we can view all the information regarding Bulkstats in the redBorder manager by accessing its corresponding tab and selecting the desired fields within the Monitor module.</para>
+					<mediaobject>
+							<imageobject>
+								<imagedata scalefit="1" align="center" width="450" fileref="images/ch20_img021.png"/>
+							</imageobject>
+							<caption>
+								<para>Monitor Module: Bulkstats fields</para>
+							</caption>
+					</mediaobject>
+				</section>
 			</section>
 	</section>
 </chapter>
