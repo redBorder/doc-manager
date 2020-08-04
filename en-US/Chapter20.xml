@@ -228,7 +228,7 @@
 				<para>In a redborder manager, by activating the advanced options in General Settings, it is possible to access a section called Radius Accounting and Radius Proxy Authentication.</para>
 				<mediaobject>
 							<imageobject>
-								<imagedata scalefit="1" align="center" width="250" fileref="images/ch20_img018.png"/>
+								<imagedata scalefit="1" align="center" width="200" fileref="images/ch20_img018.png"/>
 							</imageobject>
 							<caption>
 								<para>General Settings: Radius Accounting and Radius Proxy Authentication section</para>
@@ -275,6 +275,75 @@
 								<para>Monitor Module: Bulkstats fields</para>
 							</caption>
 					</mediaobject>
+					<para>But... <emphasis role="bold">How to define a custom bulkstat monitor?</emphasis></para>
+					<para>To define custom Bulkstats monitor crafted specifically for a Bulkstats schema, it necessary that the user have a bulkstats schema in their network device. Once having this requirement,  then navigate to the <emphasis role="bold">Monitor Categories</emphasis> view.</para> 
+					<para>It's located in: <emphasis role="bold">Tools -> Monitor Categories</emphasis>.</para> 
+					<para>Before proceding to uploading it, the user must save the schema into a plan text file and give it a name for example: <emphasis role="bold">Bulkstats-Schema.txt</emphasis>.</para>
+					<para>The file created should be a <emphasis role="bold">plain txt file</emphasis> and must contain the bulkstats schema that is define in the network device. Normaly the bulkstats schemas looks like this:</para>
+					<mediaobject>
+							<imageobject>
+								<imagedata scalefit="1" align="center" width="450" fileref="images/ch20_img022.png"/>
+							</imageobject>
+							<caption>
+								<para>Bulkstats schemas: Plain txt file</para>
+							</caption>
+					</mediaobject>
+					<para>Then click on <emphasis role="bold">New Monitor Category</emphasis> button and a modal will be displayed:</para>
+					<mediaobject>
+							<imageobject>
+								<imagedata scalefit="1" align="center" width="450" fileref="images/ch20_img023.png"/>
+							</imageobject>
+							<caption>
+								<para>New Monitor Category: Modal displayed</para>
+							</caption>
+					</mediaobject>
+					<para>Inside the new monitor category formulary select Bulkstats under the Technology list. This will display the new option to put your bulkstats schema file that define the user configuration.</para>
+					<mediaobject>
+							<imageobject>
+								<imagedata scalefit="1" align="center" width="250" fileref="images/ch20_img024.png"/>
+							</imageobject>
+							<caption>
+								<para>New Monitor Category: Technolgy selection</para>
+							</caption>
+					</mediaobject>
+					<para>To assign the new monitor category to a device sensor, it's necessary to create a device monitor if the user don't have one yet from Sensor Tree view.</para>
+					<para>Click on the <emphasis role="bold">sensor menu</emphasis> and then click on <emphasis role="bold">Monitors</emphasis>.</para>
+					<mediaobject>
+							<imageobject>
+								<imagedata scalefit="1" align="center" width="450" fileref="images/ch20_img025.png"/>
+							</imageobject>
+							<caption>
+								<para>Sensors menu: Monitors</para>
+							</caption>
+					</mediaobject>
+					<para>Then click on the category <emphasis role="bold">+ Add Monitor</emphasis></para>
+					<mediaobject>
+							<imageobject>
+								<imagedata scalefit="1" align="center" width="450" fileref="images/ch20_img026.png"/>
+							</imageobject>
+							<caption>
+								<para>Monitors for Device: Add Monitor category</para>
+							</caption>
+					</mediaobject>
+					<para>Once this is done, the user must click on the <emphasis role="bold">+ Add</emphasis> button to add the monitor category described above.</para>
+					<mediaobject>
+							<imageobject>
+								<imagedata scalefit="1" align="center" width="450" fileref="images/ch20_img027.png"/>
+							</imageobject>
+							<caption>
+								<para>Monitors for Device: Add Monitors modal displayed</para>
+							</caption>
+					</mediaobject>
+					<para>Once added the monitor to the sensor, It would diplay the destination where need to configure the device to send.</para>
+					<mediaobject>
+							<imageobject>
+								<imagedata scalefit="1" align="center" width="450" fileref="images/ch20_img028.png"/>
+							</imageobject>
+							<caption>
+								<para>Monitors for Device: Destination path</para>
+							</caption>
+					</mediaobject>
+					<para>The url corresponds to the destination path. It is necessary to configure sftp protocol in the device network to send the information regarding the bulkstat schemes to the manager.</para>
 				</section>
 			</section>
 	</section>
