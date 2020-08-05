@@ -276,7 +276,15 @@
 					</mediaobject>
 					<para>Pero... <emphasis role="bold">Cómo se define un monitor bulkstat personalizado?</emphasis></para>
 					<para>Para definir un monitor Bulkstats personalizado diseñado específicamente para un esquema Bulkstats, es necesario que el usuario tenga un esquema de Bulkstat en su dispositivo de red. Una vez que tenga este requisito, debe navegar hasta la vista de <emphasis role="bold">Categorías Monitor</emphasis></para> 
-					<para>Está localizado en: <emphasis role="bold">Herramientas -> Categorías Monitor</emphasis>.</para> 
+					<para>Está localizado en: <emphasis role="bold">Herramientas -> Categorías Monitor</emphasis>.</para>
+					<mediaobject>
+							<imageobject>
+								<imagedata scalefit="1" align="center" width="450" fileref="images/ch20_img029.png"/>
+							</imageobject>
+							<caption>
+								<para>Sección de Herramientas: Categorías Monitor</para>
+							</caption>
+					</mediaobject> 
 					<para>Antes de proceder a cargarlo, el usuario debe guardar el esquema en un archivo de texto plano y darle un nombre, por ejemplo: <emphasis role="bold">Bulkstats-Schema.txt</emphasis>.</para>
 					<para>El archivo creado debe ser un <emphasis role="bold">archivo de texto plano</emphasis> y debe contener el esquema de bulkstats que se define en el dispositivo de red. Normalmente, los esquemas de bulkstats se ven así:</para>
 					<mediaobject>

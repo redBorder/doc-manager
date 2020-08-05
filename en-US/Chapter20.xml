@@ -277,7 +277,15 @@
 					</mediaobject>
 					<para>But... <emphasis role="bold">How to define a custom bulkstat monitor?</emphasis></para>
 					<para>To define custom Bulkstats monitor crafted specifically for a Bulkstats schema, it necessary that the user have a bulkstats schema in their network device. Once having this requirement,  then navigate to the <emphasis role="bold">Monitor Categories</emphasis> view.</para> 
-					<para>It's located in: <emphasis role="bold">Tools -> Monitor Categories</emphasis>.</para> 
+					<para>It's located in: <emphasis role="bold">Tools -> Monitor Categories</emphasis>.</para>
+					<mediaobject>
+							<imageobject>
+								<imagedata scalefit="1" align="center" width="450" fileref="images/ch20_img029.png"/>
+							</imageobject>
+							<caption>
+								<para>Tools section: Monitor Categories</para>
+							</caption>
+					</mediaobject> 
 					<para>Before proceding to uploading it, the user must save the schema into a plan text file and give it a name for example: <emphasis role="bold">Bulkstats-Schema.txt</emphasis>.</para>
 					<para>The file created should be a <emphasis role="bold">plain txt file</emphasis> and must contain the bulkstats schema that is define in the network device. Normaly the bulkstats schemas looks like this:</para>
 					<mediaobject>

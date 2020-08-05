@@ -34,15 +34,41 @@
 				</revdescription>
 			</revision>
 			<revision>
-				<revnumber>1.0</revnumber>
-				<date>April 2020</date>
+				<revnumber>0.4-0</revnumber>
+				<date>Marzo 2020</date>
 				<author>
 					<firstname>Eneo Tecnología</firstname>
 					<email>spain@redborder.com</email>
 				</author>
 				<revdescription>
 					<simplelist>
-						<member>Actualización de la traducción del documento.</member>
+						<member>Actualización a la versión 3.1.80-7 de redBorder.</member>
+					</simplelist>
+				</revdescription>
+			</revision>
+			<revision>
+				<revnumber>1.0-0</revnumber>
+				<date>Abril 2020</date>
+				<author>
+					<firstname>Eneo Tecnología</firstname>
+					<email>spain@redborder.com</email>
+				</author>
+				<revdescription>
+					<simplelist>
+						<member>Actualización a la versión 3.1.80-9 de redBorder y traducción del documento al Español.</member>
+					</simplelist>
+				</revdescription>
+			</revision>
+			<revision>
+				<revnumber>1.1-0</revnumber>
+				<date>Junio 2020</date>
+				<author>
+					<firstname>Eneo Tecnología</firstname>
+					<email>spain@redborder.com</email>
+				</author>
+				<revdescription>
+					<simplelist>
+						<member>Actualización a la versión 3.1.80-10 y añadidas nuevas funcionalidades.</member>
 					</simplelist>
 				</revdescription>
 			</revision>
