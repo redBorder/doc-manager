@@ -1,7 +1,5 @@
 # redborder Manager Installation and Managing guide
 
-[![logo](https://redborder.com/media/download/553)](https://redborder.com/trial)
-
 ## Descripción del proyecto
 
 Este es un manual de usuario que corresponde a la última versión del manager de redBorder, edición Enterprise. Se trata de la versión más actualizada de la documentación, no obstante, si encuentras algún error o echas en falta alguna información te animamos a que reportes errores o contribuyas al proyecto creando nueva documentación.
