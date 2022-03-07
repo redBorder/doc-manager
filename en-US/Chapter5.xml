@@ -17,7 +17,8 @@
 		</para>
 		<section>
 			<title>Business Intelligence</title>
-			<para>Business Intelligence module provides client information from BI sensors. It can be used to retrieve answers from rbmobility platform questionnaires (<emphasis role="bold">https://rbmobility.redborder.com</emphasis>). This module is disabled by default, to activate it run the following command from the console interface: <emphasis role="bold">rb_set_modules.rb bi:1; rb_run_chef_once.sh</emphasis></para>
+			<para>Business Intelligence module provides client information from BI sensors. It can be used to retrieve answers from rbmobility platform questionnaires (<emphasis role="bold">https://rbmobility.redborder.com</emphasis>).</para>
+                        <para>This module is disabled by default, to activate it run the following command from the console interface: <emphasis role="bold">rb_set_modules.rb bi:1; rb_run_chef_once.sh</emphasis></para>
 			<mediaobject>
 				<imageobject>
 					<imagedata scalefit="1" align="center" width="450" fileref="images/ch06_img062.png"/>

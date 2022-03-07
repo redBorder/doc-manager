@@ -17,7 +17,8 @@
 		</para>
 		<section>
 			<title>Business Intelligence</title>
-			<para>El módulo Business Intelligence utiliza la información de clientes a través de los sensores BI. Puede ser usado para obtener las respuestas de los cuestionarios definidos en la plataforma rbmobility (<emphasis role="bold">https://rbmobility.redborder.com</emphasis>). Este módulo viene desactivado por defecto, para activarlo ejecute el siguiente comando desde la consola: <emphasis role="bold">rb_set_modules.rb bi:1; rb_run_chef_once.sh</emphasis></para>
+			<para>El módulo Business Intelligence utiliza la información de clientes a través de los sensores BI. Puede ser usado para obtener las respuestas de los cuestionarios definidos en la plataforma rbmobility (<emphasis role="bold">https://rbmobility.redborder.com</emphasis>).</para>
+                        <para>Este módulo viene desactivado por defecto, para activarlo ejecute el siguiente comando desde la consola: <emphasis role="bold">rb_set_modules.rb bi:1; rb_run_chef_once.sh</emphasis></para>
 			<mediaobject>
 				<imageobject>
 					<imagedata scalefit="1" align="center" width="450" fileref="images/ch06_img062.png"/>
