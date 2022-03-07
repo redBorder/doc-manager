@@ -16,6 +16,21 @@
 		<para>Redborder has a module for each main functionality. Each one uses different technologies and has an independent interface. All modules need a sensor that provides the module the data.
 		</para>
 		<section>
+			<title>Business Intelligence</title>
+			<para>Business Intelligence module provides client information from BI sensors. It can be used to retrieve answers from rbmobility platform questionnaires (<emphasis role="bold">https://rbmobility.redborder.com</emphasis>). This module is disabled by default, to activate it run the following command from the console interface: <emphasis role="bold">rb_set_modules.rb bi:1; rb_run_chef_once.sh</emphasis></para>
+			<mediaobject>
+				<imageobject>
+					<imagedata scalefit="1" align="center" width="450" fileref="images/ch06_img062.png"/>
+				</imageobject>
+				<textobject>
+					<phrase>BI Module</phrase>
+				</textobject>
+				<caption>
+					<para>BI Module</para>
+				</caption>
+			</mediaobject>
+		</section>
+		<section>
 			<title>Traffic</title>
 			<para>Traffic module uses netflow data to extract information about all the traffic from the sensor. The module provides information as IPs, protocols, locations and much more.</para>
 			<mediaobject>
@@ -105,6 +120,7 @@
 					<para>Mobility Module</para>
 				</caption>
 			</mediaobject>
+		</section>
 		<section>
 			<title>Reports</title>
 			<para>Reports module allows the user to have periodical reports with information about Redborder platform.</para>
@@ -119,7 +135,6 @@
 					<para>Example of Reports</para>
 				</caption>
 			</mediaobject>
-		</section>
 		</section>
 	</section>
 	<section>

@@ -16,6 +16,21 @@
 		<para>Redborder tiene un módulo para cada funcionalidad. Cada una utiliza diferentes tecnologías y tiene una interfaz independiente. Todos los módulos necesitan un sensor que le provea de datos.
 		</para>
 		<section>
+			<title>Business Intelligence</title>
+			<para>El módulo Business Intelligence utiliza la información de clientes a través de los sensores BI. Puede ser usado para obtener las respuestas de los cuestionarios definidos en la plataforma rbmobility (<emphasis role="bold">https://rbmobility.redborder.com</emphasis>). Este módulo viene desactivado por defecto, para activarlo ejecute el siguiente comando desde la consola: <emphasis role="bold">rb_set_modules.rb bi:1; rb_run_chef_once.sh</emphasis></para>
+			<mediaobject>
+				<imageobject>
+					<imagedata scalefit="1" align="center" width="450" fileref="images/ch06_img062.png"/>
+				</imageobject>
+				<textobject>
+					<phrase>Módulo BI</phrase>
+				</textobject>
+				<caption>
+					<para>Módulo BI</para>
+				</caption>
+			</mediaobject>
+		</section>
+		<section>
 			<title>Tráfico</title>
 			<para>El módulo Tráfico utiliza netflow para extraer información sobre todo el tráfico del sensor. El módulo provee información como IPs, protocolos, localizaciones y mucho más.</para>
 			<mediaobject>
@@ -105,6 +120,7 @@
 					<para>Módulo de Movilidad</para>
 				</caption>
 			</mediaobject>
+		</section>
 		<section>
 			<title>Informes</title>
 			<para>El módulo de Informes permite al usuario tener informes periodicos con información sobre la plataforma Redborder.</para>
@@ -119,7 +135,6 @@
 					<para>Ejemplo de Informes</para>
 				</caption>
 			</mediaobject>
-		</section>
 		</section>
 	</section>
 	<section>
