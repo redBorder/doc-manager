@@ -113,6 +113,19 @@
 			</revision>
 			<revision>
 				<revnumber>1.1-3</revnumber>
+				<date>February 2022</date>
+				<author>
+					<firstname>Eneo Tecnología</firstname>
+					<email>spain@redborder.com</email>
+				</author>
+				<revdescription>
+					<simplelist>
+						<member>Update wrong picture.</member>
+					</simplelist>
+				</revdescription>
+			</revision>
+			<revision>
+				<revnumber>1.1-4</revnumber>
 				<date>March 2022</date>
 				<author>
 					<firstname>Eneo Tecnología</firstname>
@@ -120,7 +133,7 @@
 				</author>
 				<revdescription>
 					<simplelist>
-						<member>Some pictures updates and inclusion of Business Intelligence module.</member>
+						<member>Update picutres and add Business Intelligence module description.</member>
 					</simplelist>
 				</revdescription>
 			</revision>
