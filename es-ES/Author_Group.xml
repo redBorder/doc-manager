@@ -3,7 +3,7 @@
 <!ENTITY % BOOK_ENTITIES SYSTEM "manual.ent">
 <!ENTITY PRODUCT "Documentation">
 <!ENTITY BOOKID "manual">
-<!ENTITY YEAR "2019">
+<!ENTITY YEAR "2022">
 <!ENTITY HOLDER "Eneo Tecnología S.L. |">
 ]>
 <authorgroup>
@@ -12,6 +12,6 @@
       <orgname>Eneo Tecnología S.L.</orgname>
       <orgdiv/>
     </affiliation>
-    <email>info@redborder.net</email>
+    <email>info@redborder.com</email>
   </author>
 </authorgroup>
