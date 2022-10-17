@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><title>Capítulo 9. Casos de uso</title><link rel="stylesheet" type="text/css" href="Common_Content/css/default.css" /><link rel="stylesheet" media="print" href="Common_Content/css/print.css" type="text/css" /><meta name="generator" content="publican 3.2.0" /><meta name="package" content="redBorder_Manager-Guia_de_Usuario-3.1-es-ES-0.2-0" /><link rel="home" href="index.html" title="Guía de Usuario" /><link rel="up" href="index.html" title="Guía de Usuario" /><link rel="prev" href="ch08s03s04s03.html" title="8.3.4.3. Bulkstats" /><link rel="next" href="ch09s02.html" title="9.2. Caso de uso: Alerta de ataque de autenticación de fuerza bruta" /></head><body><p id="title"><a class="left" href="https://fedorahosted.org/publican"><img alt="Product Site" src="Common_Content/images//image_left.png" /></a><a class="right" href="https://fedorahosted.org/publican"><img alt="Documentation Site" src="Common_Content/images//image_right.png" /></a></p><ul class="docnav top"><li class="previous"><a accesskey="p" href="ch08s03s04s03.html"><strong>Anterior</strong></a></li><li class="home">Guía de Usuario</li><li class="next"><a accesskey="n" href="ch09s02.html"><strong>Siguiente</strong></a></li></ul><div class="chapter"><div class="titlepage"><div><div><h1 class="title"><a id="idm139774940032592"></a>Capítulo 9. Casos de uso</h1></div></div></div><div class="toc"><dl class="toc"><dt><span class="section"><a href="ch09.html#idm139774933435344">9.1. Caso de uso: Seguimiento de una IP con Redborder</a></span></dt><dt><span class="section"><a href="ch09s02.html">9.2. Caso de uso: Alerta de ataque de autenticación de fuerza bruta</a></span></dt><dt><span class="section"><a href="ch09s03.html">9.3. Caso de uso: revisión de información remota desde Untangle</a></span></dt><dt><span class="section"><a href="ch09s04.html">9.4. Caso de uso: detectar un ataque de Eternalblue con Redborder</a></span></dt><dt><span class="section"><a href="ch09s05.html">9.5. Caso de uso: Ataques de fuerza bruta Ssh </a></span></dt></dl></div><div class="para">
+		En este capítulo mostraremos algunos casos de uso de Redborder. Estos son algunos:
+	</div><div class="section"><div class="titlepage"><div><div><h2 class="title"><a id="idm139774933435344"></a>9.1. Caso de uso: Seguimiento de una IP con Redborder</h2></div></div></div><div class="para">
+			Podemos usar Redborder para rastrear una IP sospechosa. Es posible aprender sobre su comportamiento utilizando el módulo de Tráfico.
+		</div><div class="para">
+			Antes que nada debemos saber la IP que queremos rastrear. Una vez que tengamos la IP iremos al módulo de Tráfico.
+		</div><div class="mediaobject" align="center"><img src="images/ch30_img001_a.png" align="middle" width="450" /><div class="caption"><div class="para">
+				Seguimiento de una IP: módulo de tráfico
+			</div></div></div><div class="para">
+			Una vez en el módulo Tráfico, podemos usar el botón Búsqueda avanzada desde el filtro para ver solo el tráfico generado por esa ip.
+		</div><div class="mediaobject" align="center"><img src="images/ch30_img001_b.png" align="middle" width="450" /><div class="caption"><div class="para">
+				Seguimiento de una IP: Búsqueda avanzada en el módulo de Tráfico
+			</div></div></div><div class="para">
+			Aquí podemos configurar la IP sospechosa para filtrar todo el tráfico. Utilizaremos la métrica IP de LAN para ese propósito.
+		</div><div class="mediaobject" align="center"><img src="images/ch30_img001_c.png" align="middle" width="450" /><div class="caption"><div class="para">
+				Seguimiento de una IP: filtrado de IP
+			</div></div></div><div class="para">
+			Cuando apliquemos el filtro, solo veremos el tráfico de esa ip.
+		</div><div class="mediaobject" align="center"><img src="images/ch30_img001_d.png" align="middle" width="450" /><div class="caption"><div class="para">
+				Seguimiento de una IP: tráfico filtrado
+			</div></div></div><div class="para">
+			Es posible agregar nuevas métricas para ver el comportamiento de la ip y lo que está haciendo en nuestra red.
+		</div><div class="mediaobject" align="center"><img src="images/ch30_img001_e.png" align="middle" width="450" /><div class="caption"><div class="para">
+				Seguimiento de una IP: añadir nuevas métricas
+			</div></div></div><div class="para">
+			Ahora podemos ver qué puertos está utilizando esta IP.
+		</div><div class="mediaobject" align="center"><img src="images/ch30_img001_f.png" align="middle" width="450" /><div class="caption"><div class="para">
+				Seguimiento de una IP: puertos utilizados por IP sospechosa
+			</div></div></div><div class="para">
+			Con este caso de uso, podemos ver cómo Redborder puede filtrar el tráfico de una o más IP para que el usuario pueda detectar comportamientos incorrectos para IP particulares, pudiendo rastrear las IP con solo unos pocos clics.
+		</div></div></div><ul class="docnav"><li class="previous"><a accesskey="p" href="ch08s03s04s03.html"><strong>Anterior</strong>8.3.4.3. Bulkstats</a></li><li class="up"><a accesskey="u" href="#"><strong>Subir</strong></a></li><li class="home"><a accesskey="h" href="index.html"><strong>Inicio</strong></a></li><li class="next"><a accesskey="n" href="ch09s02.html"><strong>Siguiente</strong>9.2. Caso de uso: Alerta de ataque de autenticaci...</a></li></ul></body></html>

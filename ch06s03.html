@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><title>6.3. Vistas</title><link rel="stylesheet" type="text/css" href="Common_Content/css/default.css" /><link rel="stylesheet" media="print" href="Common_Content/css/print.css" type="text/css" /><meta name="generator" content="publican 3.2.0" /><meta name="package" content="redBorder_Manager-Guia_de_Usuario-3.1-es-ES-0.2-0" /><link rel="home" href="index.html" title="Guía de Usuario" /><link rel="up" href="ch06.html" title="Capítulo 6. Sensores" /><link rel="prev" href="ch06s02.html" title="6.2. Opciones" /><link rel="next" href="ch06s04.html" title="6.4. Vista Mapa" /></head><body><p id="title"><a class="left" href="https://fedorahosted.org/publican"><img alt="Product Site" src="Common_Content/images//image_left.png" /></a><a class="right" href="https://fedorahosted.org/publican"><img alt="Documentation Site" src="Common_Content/images//image_right.png" /></a></p><ul class="docnav top"><li class="previous"><a accesskey="p" href="ch06s02.html"><strong>Anterior</strong></a></li><li class="home">Guía de Usuario</li><li class="next"><a accesskey="n" href="ch06s04.html"><strong>Siguiente</strong></a></li></ul><div class="section"><div class="titlepage"><div><div><h2 class="title"><a id="idm139774938533760"></a>6.3. Vistas</h2></div></div></div><div class="para">
+			Cuando el usuario accede a la sección <code class="literal">Sensores</code> puede encontrar una lista (vista de árbol) en la que se muestran los dominios y sensores que forman parte de su infraestructura de red. En este punto vamos a revisar cada vista y las acciones disponibles.
+		</div><div class="mediaobject" align="center"><img src="images/ch11_img002.png" align="middle" width="450" /><div class="caption"><div class="para">
+				Opciones del menú Vista
+			</div></div></div><div class="section"><div class="titlepage"><div><div><h3 class="title"><a id="idm139774938528672"></a>6.3.1. Vista árbol</h3></div></div></div><div class="para">
+				La vista <code class="literal">árbol</code> es la que se muestra por defecto al acceder a <code class="literal">Sensores</code>. En ella se visualiza un listado en el que se muestra la organización de dominios y sensores según niveles de jerarquía y dependencia.
+			</div><div class="mediaobject" align="center"><img src="images/ch11_img003.png" align="middle" width="450" /><div class="caption"><div class="para">
+					<code class="literal">Vista árbol</code>
+				</div></div></div><div class="para">
+				Desde esta vista el usuario puede añadir un nuevo dominio o sensor, borrar los existentes, acceder a otras vistas, importar y exportar el arbol así como editar directamente todos los dominios y sensores que son parte del listado.
+			</div><div class="para">
+				Cada elemento que se muestra en el arbol tiene dos iconos: Editar y borrar. (Los mismos iconos funcionan en la vista árbol y en la vista sensor):
+			</div><div class="mediaobject" align="center"><img src="images/ch11_img004b.png" align="middle" /><div class="caption"><div class="para">
+					Iconos "Editar" y "Eliminar"
+				</div></div></div><div class="note"><div class="admonition_header"><p><strong>Nota</strong></p></div><div class="admonition"><div class="para">
+					Las opciones del menú desplegado por el icono <span class="bold bold"><strong>Editar</strong></span> variarán dependiendo de que si nos encontramos a nivel de dominio o sensores.
+				</div></div></div><div class="warning"><div class="admonition_header"><p><strong>Advertencia</strong></p></div><div class="admonition"><div class="para">
+					<span class="bold bold"><strong>Algunos sensores no pueden ser eliminados.</strong></span>
+				</div><div class="para">
+					En estos casos, el icono "Eliminar" aparecerá en color gris. Antes de que se elimine el dominio o el sensor, el sistema le mostrará una pantalla emergente con un mensaje de advertencia.
+				</div><div class="para">
+					Todos los usuarios y descendientes asignados a este dominio o sensor serán deshabilitados y asignados a los padres de este dominio o dominio raíz. El usuario con rol de administrador debe activar los permisos del usuario desde la sección<span class="emphasis"><em>Herramientas&gt;Usuarios</em></span>.
+				</div></div></div><div class="mediaobject" align="center"><img src="images/ch11_img004.png" align="middle" width="300" /><div class="caption"><div class="para">
+					Confirmar eliminación de sensor
+				</div></div></div><div class="para">
+				En caso de que se hayan registrado <span class="bold bold"><strong>sensores IPS/IDS</strong></span> se mostrará el tipo de política/s que se le hayan aplicado.
+			</div><div class="para">
+				Al hacer clic sobre él accedemos al panel de reglas incluidas en esa política. Para más información consulte el capítulo 8 <span class="bold bold"><strong>"Creación de políticas".</strong></span>
+			</div><div class="mediaobject" align="center"><img src="images/ch11_img004c.png" align="middle" /><div class="caption"><div class="para">
+					Icono Políticas
+				</div></div></div><div class="para">
+				<span class="bold bold"><strong>Opciones disponibles en la vista de Árbol</strong></span>
+			</div><div class="itemizedlist"><ul><li class="listitem"><div class="para">
+						Añadir un nuevo dominio o sensor
+					</div></li><li class="listitem"><div class="para">
+						Eliminar un dominio o sensor
+					</div></li><li class="listitem"><div class="para">
+						Acceder a otras vistas
+					</div></li><li class="listitem"><div class="para">
+						Importar y Exportar el árbol
+					</div></li><li class="listitem"><div class="para">
+						Editar un domninio o sensor
+					</div></li></ul></div><div class="section"><div class="titlepage"><div><div><h4 class="title"><a id="idm139774930688192"></a>6.3.1.1. Niveles de organización en Redborder Manager</h4></div></div></div><div class="itemizedlist"><ul><li class="listitem"><div class="para">
+							<span class="bold bold"><strong>Dominio:</strong></span> se trata de contenedores que pueden incluir sensores, grupos de sensores, etc. El nivel dominio nos muestra el nombre del dominio y nos permite agregar una descripción. Es posible clasificarlos según su naturaleza (organizacional, espacial, etc.); cada tipo de dominio tendrá un icono identificativo:
+						</div></li><li class="listitem"><div class="para">
+							<span class="emphasis"><em>Genérico</em></span>
+						</div></li><li class="listitem"><div class="para">
+							<span class="emphasis"><em>Proveedor de servicios</em></span>
+						</div></li><li class="listitem"><div class="para">
+							<span class="emphasis"><em>Organización</em></span>
+						</div></li><li class="listitem"><div class="para">
+							<span class="emphasis"><em>Mercado</em></span>
+						</div></li><li class="listitem"><div class="para">
+							<span class="emphasis"><em>Despliegue</em></span>
+						</div></li><li class="listitem"><div class="para">
+							<span class="emphasis"><em>Namespace</em></span>
+						</div></li><li class="listitem"><div class="para">
+							<span class="emphasis"><em>Campus</em></span>
+						</div></li><li class="listitem"><div class="para">
+							<span class="emphasis"><em>Edificio</em></span>
+						</div></li><li class="listitem"><div class="para">
+							<span class="emphasis"><em>Planta</em></span>
+						</div></li><li class="listitem"><div class="para">
+							<span class="bold bold"><strong>Sensores:</strong></span> nodos finales que se corresponden con elementos físicos colocados en la red (switches, routers, IPS, etc.).
+						</div><div class="para">
+							A nivel de sensores se muestra la siguiente información: nombre del sensor, IP, política aplicada (sensores IPS), último chequeo y versión. Es posible añadir una descripción al sensor.
+						</div></li></ul></div><div class="note"><div class="admonition_header"><p><strong>Nota</strong></p></div><div class="admonition"><div class="para">
+						Recuerde que la creación de los sensores IPS o Gateway se debe realizar a través del registro de los sensores en el proceso de instalación del Manager. Sensors le permite editar y sobreescribir los parámetros que hayan heredado de la Configuración General: <code class="literal">Herramientas-&gt;Configuración general</code>
+					</div><div class="para">
+						Los sensores del resto de Apps pueden crearse desde la sección <code class="literal">Sensores</code>.
+					</div></div></div><div class="para">
+					<span class="bold bold"><strong>Herencia de configuración</strong></span>
+				</div><div class="para">
+					En la sección <span class="bold bold"><strong>Herramientas</strong></span> encontramos opciones de Configuración General a través de los cuales el usuario puede definir parámetros generales del Manager y de las Apps.
+				</div><div class="para">
+					Este es el máximo nivel de configuración (actua como dominio root) por lo tanto, las propiedades definidas aquí serán heredadas por dominios y sensores que caen por debajo de este nivel.
+				</div><div class="para">
+					Cuando se crea un dominio o sensor o se edita por primera vez, podemos observar que algunos parámetros tienen la etiqueta "Heredado", lo que significa que han heredado los valores de la Configuración general. Sobrescriba esta información en caso de que quiera cambiarla.
+				</div><div class="para">
+					Los dominios y sensores que caen por debajo del nivel del elemento sobrescrito, heredan nuevamente las propiedades aplicadas a este elemento.
+				</div></div><div class="section"><div class="titlepage"><div><div><h4 class="title"><a id="idm139774935283904"></a>6.3.1.2. Monitores</h4></div></div></div><div class="note"><div class="admonition_header"><p><strong>Nota</strong></p></div><div class="admonition"><div class="para">
+						Esta opción solo se encuentra disponible en el menú desplegado por el icono "Editar" a nivel de sensor.
+					</div></div></div><div class="para">
+					Al hacer clic sobre icono del icono "Editar" sensor, aparece la opción <code class="literal">Monitor</code>. Luego, podemos ver una lista con las métricas de monitoreo que se utilizan para monitorear el estado del sensor en diferentes niveles. La columna de tecnología indica el origen desde donde se recopilan los datos.
+				</div><div class="mediaobject" align="center"><img src="images/ch11_img009.png" align="middle" width="150" /><div class="caption"><div class="para">
+						Icono editar-&gt;Monitores
+					</div></div></div><div class="para">
+					Estas son las acciones disponible para el control del estado del sensor:
+				</div><div class="itemizedlist"><ul><li class="listitem"><div class="para">
+							<span class="bold bold"><strong>Restaurar predeterminado:</strong></span> aplica las métricas predeterminadas que se incluyen en el momento de creación de los sensores.
+						</div></li><li class="listitem"><div class="para">
+							<span class="bold bold"><strong>Añadir monitor:</strong></span> muestra las métricas disponibles <code class="literal">+Añadir Monitor</code>
+						</div></li><li class="listitem"><div class="para">
+							<span class="bold bold"><strong>Eliminar monitor:</strong></span> elimina la métrica aplicada.
+						</div></li></ul></div><div class="mediaobject" align="center"><img src="images/ch11_img010.png" align="middle" width="450" /><div class="caption"><div class="para">
+						Monitores
+					</div></div></div><div class="mediaobject" align="center"><img src="images/ch11_img010b.png" align="middle" width="300" /><div class="caption"><div class="para">
+						Añadir monitor: Métricas disponibles
+					</div></div></div></div></div></div><ul class="docnav"><li class="previous"><a accesskey="p" href="ch06s02.html"><strong>Anterior</strong>6.2. Opciones</a></li><li class="up"><a accesskey="u" href="#"><strong>Subir</strong></a></li><li class="home"><a accesskey="h" href="index.html"><strong>Inicio</strong></a></li><li class="next"><a accesskey="n" href="ch06s04.html"><strong>Siguiente</strong>6.4. Vista Mapa</a></li></ul></body></html>

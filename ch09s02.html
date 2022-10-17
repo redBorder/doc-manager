@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><title>9.2. Caso de uso: Alerta de ataque de autenticación de fuerza bruta</title><link rel="stylesheet" type="text/css" href="Common_Content/css/default.css" /><link rel="stylesheet" media="print" href="Common_Content/css/print.css" type="text/css" /><meta name="generator" content="publican 3.2.0" /><meta name="package" content="redBorder_Manager-Guia_de_Usuario-3.1-es-ES-0.2-0" /><link rel="home" href="index.html" title="Guía de Usuario" /><link rel="up" href="ch09.html" title="Capítulo 9. Casos de uso" /><link rel="prev" href="ch09.html" title="Capítulo 9. Casos de uso" /><link rel="next" href="ch09s03.html" title="9.3. Caso de uso: revisión de información remota desde Untangle" /></head><body><p id="title"><a class="left" href="https://fedorahosted.org/publican"><img alt="Product Site" src="Common_Content/images//image_left.png" /></a><a class="right" href="https://fedorahosted.org/publican"><img alt="Documentation Site" src="Common_Content/images//image_right.png" /></a></p><ul class="docnav top"><li class="previous"><a accesskey="p" href="ch09.html"><strong>Anterior</strong></a></li><li class="home">Guía de Usuario</li><li class="next"><a accesskey="n" href="ch09s03.html"><strong>Siguiente</strong></a></li></ul><div class="section"><div class="titlepage"><div><div><h2 class="title"><a id="idm139774936615488"></a>9.2. Caso de uso: Alerta de ataque de autenticación de fuerza bruta</h2></div></div></div><div class="para">
+			Podemos utilizar Redborder para alertar sobre posibles ataques de fuerza bruta gracias al uso de su motor de correlación y las reglas establecidas.
+		</div><div class="para">
+			Primero, debemos ir a la sección Reglas del motor de correlación ubicada en la parte Herramientas.
+		</div><div class="mediaobject" align="center"><img src="images/ch30_img002_a.png" align="middle" width="450" /><div class="caption"><div class="para">
+				Reglas del CEP
+			</div></div></div><div class="para">
+			Luego activaremos la regla que queremos usar. En este caso: Autenticación de fuerza bruta SSH. Finalmente, debemos aplicar los cambios.
+		</div><div class="mediaobject" align="center"><img src="images/ch30_img002_b.png" align="middle" width="450" /><div class="caption"><div class="para">
+				Reglas del CEP
+			</div></div></div><div class="para">
+			Esta regla es capaz de generar una alerta cuando ocurren 200 intentos fallidos de inicio de sesión en una ventana de tiempo de 20 minutos en una máquina Linux a través del protocolo SSH. Para esto, es necesario tener el sensor de bóveda correspondiente creado previamente haciendo referencia a la IP de la máquina que queremos proteger.
+		</div><div class="para">
+			Una vez hecho esto, en caso de recibir un ataque de fuerza bruta, podríamos visualizar la alerta correspondiente accediendo al módulo Vault. Para poder verlo fácilmente, podemos agregar una pestaña de sensor y filtrar por CEP.
+		</div><div class="mediaobject" align="center"><img src="images/ch30_img002_c.png" align="middle" width="450" /><div class="caption"><div class="para">
+				Módulo de Vault: Alerta de ataque de fuerza bruta.
+			</div></div></div><div class="para">
+			También podemos mostrar el mensaje de alerta si cambiamos a la pestaña de mensajes.
+		</div><div class="mediaobject" align="center"><img src="images/ch30_img002_d.png" align="middle" width="450" /><div class="caption"><div class="para">
+				Módulo de Vault: Mensaje de alerta de ataque de fuerza bruta.
+			</div></div></div><div class="note"><div class="admonition_header"><p><strong>Nota</strong></p></div><div class="admonition"><div class="para">
+				Para expandir los casos de uso, podemos acceder al siguiente enlace donde se encuentran los casos de uso avanzados:
+			</div><div class="para">
+				<span class="bold bold"><strong>https://support.Redborder.com/hc/en-us/sections/360000254677-eXperience</strong></span>
+			</div></div></div></div><ul class="docnav"><li class="previous"><a accesskey="p" href="ch09.html"><strong>Anterior</strong>Capítulo 9. Casos de uso</a></li><li class="up"><a accesskey="u" href="#"><strong>Subir</strong></a></li><li class="home"><a accesskey="h" href="index.html"><strong>Inicio</strong></a></li><li class="next"><a accesskey="n" href="ch09s03.html"><strong>Siguiente</strong>9.3. Caso de uso: revisión de información remota ...</a></li></ul></body></html>

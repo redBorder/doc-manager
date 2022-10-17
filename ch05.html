@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><title>Capítulo 5. Dashboard</title><link rel="stylesheet" type="text/css" href="Common_Content/css/default.css" /><link rel="stylesheet" media="print" href="Common_Content/css/print.css" type="text/css" /><meta name="generator" content="publican 3.2.0" /><meta name="package" content="redBorder_Manager-Guia_de_Usuario-3.1-es-ES-0.2-0" /><link rel="home" href="index.html" title="Guía de Usuario" /><link rel="up" href="index.html" title="Guía de Usuario" /><link rel="prev" href="ch04s11.html" title="4.11. Informes" /><link rel="next" href="ch06.html" title="Capítulo 6. Sensores" /></head><body><p id="title"><a class="left" href="https://fedorahosted.org/publican"><img alt="Product Site" src="Common_Content/images//image_left.png" /></a><a class="right" href="https://fedorahosted.org/publican"><img alt="Documentation Site" src="Common_Content/images//image_right.png" /></a></p><ul class="docnav top"><li class="previous"><a accesskey="p" href="ch04s11.html"><strong>Anterior</strong></a></li><li class="home">Guía de Usuario</li><li class="next"><a accesskey="n" href="ch06.html"><strong>Siguiente</strong></a></li></ul><div class="chapter"><div class="titlepage"><div><div><h1 class="title"><a id="idm139774931161456"></a>Capítulo 5. Dashboard</h1></div></div></div><div class="toc"><dl class="toc"><dt><span class="section"><a href="ch05.html#idm139774938850160">5.1. Opciones de dashboard</a></span></dt><dd><dl><dt><span class="section"><a href="ch05.html#idm139774935198320">5.1.1. Editar y clonar dashboards disponibles</a></span></dt><dt><span class="section"><a href="ch05.html#idm139774931642944">5.1.2. Añadir dashboard</a></span></dt><dt><span class="section"><a href="ch05.html#idm139774931633440">5.1.3. Importar dashboard</a></span></dt><dt><span class="section"><a href="ch05.html#idm139774931081104">5.1.4. Añadir widget: Personalizar dashboards</a></span></dt><dt><span class="section"><a href="ch05.html#idm139774932558096">5.1.5. Máquina del tiempo</a></span></dt><dt><span class="section"><a href="ch05.html#idm139774932551216">5.1.6. Clonar, editar, recargar y eliminar widgets del dashboard</a></span></dt></dl></dd></dl></div><div class="section"><div class="titlepage"><div><div><h2 class="title"><a id="idm139774938850160"></a>5.1. Opciones de dashboard</h2></div></div></div><div class="para">
+			La primera opción que encontramos en la barra de menú en el área de análisis es el Dashboard. Esta es la opción seleccionada por defecto que verá tan pronto como inicie sesión en el Manager de Redborder:
+		</div><div class="mediaobject" align="center"><img src="images/ch05_img001.png" align="middle" width="450" alt="Vista general del dashboard" /><div class="caption"><div class="para">
+				Vista general del dashboard
+			</div></div></div><div class="para">
+			La sección de Dashboard presenta diferentes opciones:
+		</div><div class="itemizedlist"><ul><li class="listitem"><div class="para">
+					<span class="bold bold"><strong>Lista de dashboards disponibles:</strong></span> en la primera parte del menú del panel, el usuario verá los paneles que se han creado y están disponibles para su perfil.
+				</div><div class="para">
+					Al lado de cada uno de los dashboards hay dos iconos. El primero, el icono de llave inglesa, nos permite ver y editar la configuración general del panel. El ícono Copiar a la derecha nos permitirá clonar el dashboard seleccionado.
+				</div><div class="mediaobject" align="center"><img src="images/ch05_img004b.png" align="middle" width="324" /><div class="caption"><div class="para">
+						Iconos de editar y clonar dashboard
+					</div></div></div></li><li class="listitem"><div class="para">
+					<code class="literal">Añadir dashboard/</code><code class="literal">Importar dashboard</code>: Estas opciones le permiten añadir un nuevo panel de control personalizado e importar los que ya están creados, para compartirlos con otros usuarios o que estén disponibles para otros perfiles. El proceso de creación e importación del dashboard verá minuciosamente las líneas más adelante.
+				</div></li><li class="listitem"><div class="para">
+					<code class="literal">Añadir Widget</code>: añada los widgets que desea personalizar completamente sus paneles.
+				</div></li><li class="listitem"><div class="para">
+					<span class="bold bold"><strong>Tiempo de actualización:</strong></span> Los datos en los dashboard se actualizan cada 5 minutos (300 segundos). Verá una cuenta regresiva del tiempo restante hasta la próxima actualización. Puede restablecer la cuenta haciendo clic en la figura que se muestra. En ese momento, aparecerá la palabra "Detenido". Haga clic nuevamente para iniciar la cuenta regresiva desde 300.
+				</div></li><li class="listitem"><div class="para">
+					<code class="literal">Desbloquear</code>: El usuario tiene la opción de bloquear / desbloquear el dashboard que está consultando para que ningún otro usuario con permisos pueda editar el dashboard.
+				</div></li><li class="listitem"><div class="para">
+					<code class="literal">Máquina del tiempo</code>: Permite al usuario "viajar en el tiempo" y ver los resultados de las métricas de un día y hora en particular.
+				</div></li></ul></div><div class="mediaobject" align="center"><img src="images/ch05_img003.png" align="middle" width="450" alt="Detalles de la sección de opciones de Dashboard" /><div class="caption"><div class="para">
+				Detalles de la sección de opciones de Dashboard
+			</div></div></div><div class="section"><div class="titlepage"><div><div><h3 class="title"><a id="idm139774935198320"></a>5.1.1. Editar y clonar dashboards disponibles</h3></div></div></div><div class="para">
+				<span class="bold bold"><strong> Editar dashboard: Configuración general</strong></span>
+			</div><div class="para">
+				El usuario puede modificar en cualquier momento la información asociada con cada uno de los dashboard disponibles seleccionando Configuración general, haciendo clic en el icono de la herramienta.
+			</div><div class="para">
+				Información editable en la configuración general del dashboard:
+			</div><div class="itemizedlist"><ul><li class="listitem"><div class="para">
+						Nombre
+					</div></li><li class="listitem"><div class="para">
+						Establecer este dashboard por defecto
+					</div></li><li class="listitem"><div class="para">
+						Diseño
+					</div></li><li class="listitem"><div class="para">
+						Descripción
+					</div></li><li class="listitem"><div class="para">
+						Color de fondo
+					</div></li><li class="listitem"><div class="para">
+						Usuarios del dashboard: añadir y borrar
+					</div></li><li class="listitem"><div class="para">
+						Dominios del dashboard: añadir y borrar
+					</div></li></ul></div><div class="para">
+				Además, en la parte inferior de la pantalla, el usuario verá una serie de opciones disponibles:
+			</div><div class="itemizedlist"><ul><li class="listitem"><div class="para">
+						<code class="literal">Actualizar dashboard</code>
+					</div></li><li class="listitem"><div class="para">
+						<code class="literal">Cancelar</code>
+					</div></li><li class="listitem"><div class="para">
+						<code class="literal">Borrar</code>
+					</div></li><li class="listitem"><div class="para">
+						<code class="literal">Convertir en informe</code>
+					</div></li><li class="listitem"><div class="para">
+						<code class="literal">Exportar dashboard</code>: el sistema creará un archivo comprimido para la descarga; este es un paso necesario si quieres importar.
+					</div></li></ul></div><div class="mediaobject" align="center"><img src="images/ch05_img005.png" align="middle" width="450" alt="Editar dashboard" /><div class="caption"><div class="para">
+					Editar dashboard
+				</div></div></div><div class="para">
+				<span class="bold bold"><strong>Clonar dashboard:</strong></span> Es posible clonar (copiar) dashboards para tenerlos disponibles para diferentes usuarios, importaciones, etc. Para hacer esto, simplemente asigne un nombre al panel copiado.
+			</div><div class="mediaobject" align="center"><img src="images/ch05_img007.png" align="middle" width="450" alt="Clonar dashboard" /><div class="caption"><div class="para">
+					Clonar dashboard
+				</div></div></div></div><div class="section"><div class="titlepage"><div><div><h3 class="title"><a id="idm139774931642944"></a>5.1.2. Añadir dashboard</h3></div></div></div><div class="para">
+				Los dashboards le permiten tener un resumen visual que incluye los principales KPI que son necesarios para analizar la infraestructura de la red. El usuario puede combinar una serie de widgets que permiten, de un solo vistazo, obtener información valiosa sobre tendencias, cambios y excepciones asociadas al tráfico que ocurre en su red o que pasa por ella.<a id="idm139774931641472"></a><a href="#ftn.idm139774931641472" class="footnote"><sup class="footnote">[3]</sup></a>
+			</div><div class="para">
+				Para crear un nuevo dashboard debe seleccionar la opción <code class="literal">Añadir dashboard</code>. Luego ingrese una serie de datos de configuración general y guarde los cambios con el botón <code class="literal">Crear dashboard</code>.
+			</div><div class="para">
+				El primer paso para crear un panel personalizado es crear un panel en blanco, que luego, se pueden agregar los widgets que satisfagan nuestras necesidades de visualización.
+			</div><div class="para">
+				Para crear un nuevo dashboard, debemos indicar una serie de preferencias en la interfaz de Configuración general, como se describió anteriormente para editar dashboards.
+			</div><div class="mediaobject" align="center"><img src="images/ch05_img008.png" align="middle" width="450" alt="Añadir dashboard" /><div class="caption"><div class="para">
+					Añadir dashboard
+				</div></div></div></div><div class="section"><div class="titlepage"><div><div><h3 class="title"><a id="idm139774931633440"></a>5.1.3. Importar dashboard</h3></div></div></div><div class="para">
+				La opción <code class="literal">Importar dashboard</code> es muy útil en el caso de que desee compartir paneles con otros usuarios o incorporar información de Redborder de otras aplicaciones compatibles.
+			</div><div class="note"><div class="admonition_header"><p><strong>Nota</strong></p></div><div class="admonition"><div class="para">
+					Para importar un dashboard, es necesario que esto, previamente, haya sido exportado como un archivo comprimido y esté disponible entre nuestros archivos.
+				</div></div></div><div class="para">
+				Seleccione el archivo que desea importar y luego haga clic en la opción <code class="literal"> Importar dashboard. </code> Una vez que hayamos hecho esta importación, encontraremos este nuevo dashboard en la lista de dashboards disponibles.
+			</div><div class="mediaobject" align="center"><img src="images/ch05_img009.png" align="middle" width="450" alt="Importar dashboard" /><div class="caption"><div class="para">
+					Importar dashboard
+				</div></div></div></div><div class="section"><div class="titlepage"><div><div><h3 class="title"><a id="idm139774931081104"></a>5.1.4. Añadir widget: Personalizar dashboards</h3></div></div></div><div class="para">
+				El usuario puede crear y agregar widgets a sus dashboards para personalizar completamente la visualización de los datos obtenidos por diferentes módulos. Es posible incorporar ambos widgets preconfigurados, así como crear widgets 100% personalizados.
+			</div><div class="para">
+				El primer paso es seleccionar el tipo de widget que desea agregar. Existen dos tipos de widgets, según el tipo de información que desea mostrar:
+			</div><div class="itemizedlist"><ul><li class="listitem"><div class="para">
+						<span class="bold bold"><strong>Modulos:</strong></span> visualización de datos recibida por los diferentes módulos.
+					</div><div class="para">
+						-Tráfico
+					</div><div class="para">
+						-Intrusión
+					</div><div class="para">
+						-Monitor
+					</div><div class="para">
+						-Social
+					</div><div class="para">
+						-Vault
+					</div><div class="para">
+						-Movilidad
+					</div><div class="para">
+						-Combinación
+					</div></li><li class="listitem"><div class="para">
+						<span class="bold bold"><strong>Estado:</strong></span> mostrar la configuración y el estado de las máquinas y la infraestructura de red.
+					</div><div class="para">
+						-Infraestructura
+					</div></li><li class="listitem"><div class="para">
+						<span class="bold bold"><strong>Formato:</strong></span> configura el contenido y el formato de los widgets: texto, imágenes, URL, etc.
+					</div><div class="para">
+						-Formas
+					</div></li></ul></div><div class="mediaobject" align="center"><img src="images/ch05_img010.png" align="middle" width="450" alt="Seleccionar tipo de widget" /><div class="caption"><div class="para">
+					Seleccionar tipo de widget
+				</div></div></div><div class="para">
+				<span class="bold bold"><strong>Grado de personalización de widgets:</strong></span>
+			</div><div class="itemizedlist"><ul><li class="listitem"><div class="para">
+						Widgets preconfigurados: algunos de los widgets que el usuario puede seleccionar haciendo doble clic contienen información preconfigurada, que se puede agregar al dashboard en el que está trabajando.
+					</div></li><li class="listitem"><div class="para">
+						Widgets semi personalizados: algunos widgets contienen una cantidad de datos indicados por defecto, sin embargo, el usuario tendrá que completar algunos detalles de información general sobre el widget.
+					</div></li><li class="listitem"><div class="para">
+						Widgets personalizados: 100% personalizados. Esto significa que el usuario tendrá que definir toda la información contenida en el widget.
+					</div></li></ul></div><div class="mediaobject" align="center"><img src="images/ch05_img011.png" align="middle" width="450" alt="Widgets de Tráfico" /><div class="caption"><div class="para">
+					Widgets de Tráfico
+				</div></div></div><div class="mediaobject" align="center"><img src="images/ch05_img012.png" align="middle" width="450" alt="Personalice su widget: complete los detalles de la configuración general" /><div class="caption"><div class="para">
+					Personalice su widget: complete los detalles de la configuración general
+				</div></div></div><div class="section"><div class="titlepage"><div><div><h4 class="title"><a id="idm139774939034352"></a>5.1.4.1. Personalizar un widget de producto</h4></div></div></div><div class="para">
+					Algunos de los widgets que el usuario encuentra disponibles para agregar al dashboard de la plataforma Redborder permiten una personalización completa.
+				</div><div class="para">
+					Primero, veamos qué opciones de personalización se incluyen en este tipo de widget.
+				</div><div class="para">
+					El primer paso para personalizar un widget es seleccionar el modo de visualización de datos o la cardinalidad, es decir, cómo queremos mostrar los valores o datos en una columna en particular.
+				</div><div class="note"><div class="admonition_header"><p><strong>Nota</strong></p></div><div class="admonition"><div class="para">
+						Los eventos recibidos por el manager consisten en pares <span class="bold bold"><strong>"clave: valor"</strong></span>. Los valores dados en cada columna pueden entenderse como los propios datos del evento, que en realidad nos pueden proporcionar información.
+					</div><div class="para">
+						A lo largo de este documento puede haber referencias al concepto de columna como <span class="bold bold"><strong>atributo.</strong></span>
+					</div><div class="para">
+						El primer paso para personalizar un widget es seleccionar el modo de visualización de los datos, y también puede elegir vistas en las que se representa la cardinalidad..
+					</div></div></div><div class="mediaobject" align="center"><img src="images/ch05_img013.png" align="middle" width="450" alt="Opciones de personalización de widgets" /><div class="caption"><div class="para">
+						Opciones de personalización de widgets
+					</div></div></div><div class="para">
+					<span class="bold bold"><strong>Configurar widgets de acuerdo con las vistas de eventos:</strong></span>
+				</div><div class="para">
+					<span class="bold bold"><strong>Raw:</strong></span> muestra eventos Raw (sin agregación).
+				</div><div class="mediaobject" align="center"><img src="images/ch05_img013.png" align="middle" width="450" /><div class="caption"><div class="para">
+						Vista Raw
+					</div></div></div><div class="para">
+					<span class="bold bold"><strong>Tops:</strong></span> añada eventos basados en una unidad para mostrar los más destacados, de una manera que muestre la suma total de datos de diferentes eventos mostrados como uno.
+				</div><div class="mediaobject" align="center"><img src="images/ch05_img014.png" align="middle" width="450" /><div class="caption"><div class="para">
+						Vista Tops
+					</div></div></div><div class="para">
+					<span class="bold bold"><strong>Comparar:</strong></span> comparación en el tiempo (horas, días, semanas y meses) de los más destacados.
+				</div><div class="para">
+					Un ejemplo de uso sería comparar diferentes días en la evolución del tráfico para una aplicación en particular. A diferencia de la vista Tops, esto solo permite el estilo gráfico "Serie".
+				</div><div class="mediaobject" align="center"><img src="images/ch05_img015.png" align="middle" width="450" /><div class="caption"><div class="para">
+						Vista Comparar
+					</div></div></div><div class="para">
+					<span class="bold bold"><strong>Cardinalidad:</strong></span>
+				</div><div class="itemizedlist"><ul><li class="listitem"><div class="para">
+							<span class="bold bold"><strong>Único:</strong></span> con esta opción, las ocurrencias o eventos de una columna se aíslan en un momento específico.
+						</div></li><li class="listitem"><div class="para">
+							<span class="bold bold"><strong>Agrupados:</strong></span> con esta opción, las ocurrencias o eventos de una columna se aíslan a un tiempo específico agrupado de acuerdo con los criterios determinados.
+						</div></li></ul></div><div class="mediaobject" align="center"><img src="images/ch05_img016.png" align="middle" width="450" /><div class="caption"><div class="para">
+						Vista Único
+					</div></div></div><div class="mediaobject" align="center"><img src="images/ch05_img017.png" align="middle" width="450" /><div class="caption"><div class="para">
+						Vista Agrupados
+					</div></div></div><div class="para">
+					<span class="bold bold"><strong>Gráfico:</strong></span> El usuario puede elegir entre diferentes estilos gráficos disponibles dependiendo de la pantalla seleccionada.
+				</div><div class="mediaobject" align="center"><img src="images/ch05_img013.png" align="middle" width="450" /><div class="caption"><div class="para">
+						Gráfico Serie
+					</div></div></div><div class="mediaobject" align="center"><img src="images/ch05_img018.png" align="middle" width="450" /><div class="caption"><div class="para">
+						Flujo
+					</div></div></div><div class="mediaobject" align="center"><img src="images/ch05_img019.png" align="middle" width="450" /><div class="caption"><div class="para">
+						Disco
+					</div></div></div><div class="mediaobject" align="center"><img src="images/ch05_img016.png" align="middle" width="450" /><div class="caption"><div class="para">
+						Valor
+					</div></div></div><div class="mediaobject" align="center"><img src="images/ch05_img020.png" align="middle" width="450" /><div class="caption"><div class="para">
+						Barras horizontales
+					</div></div></div><div class="mediaobject" align="center"><img src="images/ch05_img017.png" align="middle" width="450" /><div class="caption"><div class="para">
+						Barras verticales
+					</div></div></div><div class="mediaobject" align="center"><img src="images/ch05_img022.png" align="middle" width="450" /><div class="caption"><div class="para">
+						Tabla
+					</div></div></div><div class="para">
+					<code class="literal">Próximo paso:</code> Luego ingrese la información solicitada en el formulario y presione <code class="literal">Crear widget</code>. En este momento, el nuevo widget se agrega a su dashboard.
+				</div></div><div class="section"><div class="titlepage"><div><div><h4 class="title"><a id="idm139774932585792"></a>5.1.4.2. Personalizar un widget de estado</h4></div></div></div><div class="para">
+					El usuario puede elegir entre dos tipos de widgets aplicables a las opciones de configuración del Manager de Redborder
+				</div><div class="para">
+					<span class="bold bold"><strong>Infraestructura:</strong></span> Esta opción le permite seleccionar el modo que mostrará información sobre la configuración y el estado de la infraestructura de red.
+				</div><div class="orderedlist"><ol class="arabic"><li class="listitem"><div class="para">
+							<span class="emphasis"><em>Sensor:</em></span> Mapa/Árbol
+						</div></li><li class="listitem"><div class="para">
+							<span class="emphasis"><em>Clúster:</em></span> Diagrama/Tabla
+						</div></li><li class="listitem"><div class="para">
+							<span class="emphasis"><em>Alarma:</em></span> Permite insertar los detalles de configuración en el formulario correspondiente.
+						</div></li><li class="listitem"><div class="para">
+							<span class="emphasis"><em>Info Hardware:</em></span> Permite insertar los detalles de configuración en el formulario correspondiente (con respecto al estado de un sensor de dispositivo seleccionado). Muestra información referente al dispositivo (chasis, procesador, pcie).
+						</div></li><li class="listitem"><div class="para">
+							<span class="emphasis"><em>Estado Hardware:</em></span> Permite insertar los detalles de configuración en el formulario correspondiente (con respecto al filtro de estado de un sensor de dispositivo seleccionado). Indica si el funcionamiento del dispositivo es el correcto junto con una imágen identificativa del mismo.
+						</div></li><li class="listitem"><div class="para">
+							<span class="emphasis"><em>Monitor:</em></span> Serie/Valor
+						</div></li></ol></div><div class="mediaobject" align="center"><img src="images/ch05_img023.png" align="middle" width="450" /><div class="caption"><div class="para">
+						Opciones de widgets de estado
+					</div></div></div></div><div class="section"><div class="titlepage"><div><div><h4 class="title"><a id="idm139774932569184"></a>5.1.4.3. Widgets de formato</h4></div></div></div><div class="para">
+					<span class="bold bold"><strong>Formas:</strong></span> Esta opción le permite editar e insertar elementos auxiliares en sus widgets como texto, imagen, forma de widget e incrustar una URL personalizada.
+				</div><div class="mediaobject" align="center"><img src="images/ch05_img024.png" align="middle" width="450" /><div class="caption"><div class="para">
+						Opciones de widgets de formato
+					</div></div></div><div class="para">
+					Para ingresar cualquiera de estos elementos a los widgets, simplemente complete el formulario que aparece en cada caso y aplique los cambios con la <code class="literal">opción Crear widget.</code>
+				</div><div class="mediaobject" align="center"><img src="images/ch05_img025.png" align="middle" width="450" /><div class="caption"><div class="para">
+						Edición de la forma del widget de formato
+					</div></div></div></div></div><div class="section"><div class="titlepage"><div><div><h3 class="title"><a id="idm139774932558096"></a>5.1.5. Máquina del tiempo</h3></div></div></div><div class="para">
+				Esta opción vuelve al estado de la máquina durante el día y la hora que haya determinado. El usuario verá los datos como si estuvieran en tiempo real.
+			</div><div class="para">
+				Este "viaje en el tiempo" nos ofrece un grado máximo de precisión en el análisis porque puede indicar el minuto exacto que desea consultar.
+			</div><div class="mediaobject" align="center"><img src="images/ch05_img027.png" align="middle" width="450" alt="Máquina del tiempo" /><div class="caption"><div class="para">
+					Máquina del tiempo
+				</div></div></div></div><div class="section"><div class="titlepage"><div><div><h3 class="title"><a id="idm139774932551216"></a>5.1.6. Clonar, editar, recargar y eliminar widgets del dashboard</h3></div></div></div><div class="para">
+				El usuario puede acceder directamente a los widgets desde el dashboard. En la esquina superior derecha aparece un menú que da acceso directo a las siguientes acciones.:
+			</div><div class="itemizedlist"><ul><li class="listitem"><div class="para">
+						Clonar: permite duplicar el widget e incorporarlo directamente en el dashboard que el usuario seleccione.
+					</div></li><li class="listitem"><div class="para">
+						Editar: da acceso a la configuración general del widget para editar los campos que desee.
+					</div></li><li class="listitem"><div class="para">
+						Recargar: datos actualizados.
+					</div></li><li class="listitem"><div class="para">
+						Eliminar
+					</div></li></ul></div><div class="mediaobject" align="center"><img src="images/ch05_img028.png" align="middle" width="450" /><div class="caption"><div class="para">
+					Acceso directo a un widget desde el dashboard
+				</div></div></div><div class="warning"><div class="admonition_header"><p><strong>Advertencia</strong></p></div><div class="admonition"><div class="para">
+					Cuando seleccionas la opción <code class="literal">Eliminar</code>, el sistema no mostrará un mensaje de confirmación, por lo que debe asegurarse de que desea eliminar ese widget. En caso de que elimine accidentalmente un widget, recuerde que siempre puede ir al "Añadir widget" para reinsertar o duplicar cualquiera de las características similares, y luego editarlo.
+				</div></div></div></div></div><div class="footnotes"><br /><hr /><div id="ftn.idm139774931641472" class="footnote"><div class="para"><a href="#idm139774931641472" class="para"><sup class="para">[3] </sup></a>
+					(En la versión community, hay un límite de un panel de control).
+				</div></div></div></div><ul class="docnav"><li class="previous"><a accesskey="p" href="ch04s11.html"><strong>Anterior</strong>4.11. Informes</a></li><li class="up"><a accesskey="u" href="#"><strong>Subir</strong></a></li><li class="home"><a accesskey="h" href="index.html"><strong>Inicio</strong></a></li><li class="next"><a accesskey="n" href="ch06.html"><strong>Siguiente</strong>Capítulo 6. Sensores</a></li></ul></body></html>

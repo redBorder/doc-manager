@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><title>9.4. Caso de uso: detectar un ataque de Eternalblue con Redborder</title><link rel="stylesheet" type="text/css" href="Common_Content/css/default.css" /><link rel="stylesheet" media="print" href="Common_Content/css/print.css" type="text/css" /><meta name="generator" content="publican 3.2.0" /><meta name="package" content="redBorder_Manager-Guia_de_Usuario-3.1-es-ES-0.2-0" /><link rel="home" href="index.html" title="Guía de Usuario" /><link rel="up" href="ch09.html" title="Capítulo 9. Casos de uso" /><link rel="prev" href="ch09s03.html" title="9.3. Caso de uso: revisión de información remota desde Untangle" /><link rel="next" href="ch09s05.html" title="9.5. Caso de uso: Ataques de fuerza bruta Ssh" /></head><body><p id="title"><a class="left" href="https://fedorahosted.org/publican"><img alt="Product Site" src="Common_Content/images//image_left.png" /></a><a class="right" href="https://fedorahosted.org/publican"><img alt="Documentation Site" src="Common_Content/images//image_right.png" /></a></p><ul class="docnav top"><li class="previous"><a accesskey="p" href="ch09s03.html"><strong>Anterior</strong></a></li><li class="home">Guía de Usuario</li><li class="next"><a accesskey="n" href="ch09s05.html"><strong>Siguiente</strong></a></li></ul><div class="section"><div class="titlepage"><div><div><h2 class="title"><a id="idm139774930729264"></a>9.4. Caso de uso: detectar un ataque de Eternalblue con Redborder</h2></div></div></div><div class="para">
+			En este caso, veremos cómo Redborder puede usar las reglas de Snort para detectar un ataque de Eternalblue.
+		</div><div class="para">
+			Todo comienza con un correo electrónico malicioso que contiene un dropper que instala un ransomware.
+		</div><div class="para">
+			El ramsomware intentará utilizar un exploit conocido para tomar el control de todas las máquinas posibles.
+		</div><div class="mediaobject" align="center"><img src="images/ch30_img004_a.png" align="middle" width="450" /><div class="caption"><div class="para">
+				Ataque Eternalblue: Escenario
+			</div></div></div><div class="para">
+			Redborder puede usar las reglas de Snort para detectar la respuesta de eco del protocolo SMBv1 utilizada por el ransomware, por lo que podemos usar el módulo de intrusión para ver las firmas para identificar el ataque.
+		</div><div class="mediaobject" align="center"><img src="images/ch30_img004_b.png" align="middle" width="450" /><div class="caption"><div class="para">
+				Ataque Eternalblue: Intrusión
+			</div></div></div><div class="para">
+			Aquí podemos ver las firmas actuales recopiladas por Redborder.
+		</div><div class="mediaobject" align="center"><img src="images/ch30_img004_c.png" align="middle" width="450" /><div class="caption"><div class="para">
+				Ataque Eternalblue: Filtrando firmas
+			</div></div></div><div class="para">
+			Una vez que hayamos filtrado la firma de Eternalblue, podemos mostrar la métrica de la Dirección SRC para rastrear las IP involucradas en el ataque.
+		</div><div class="mediaobject" align="center"><img src="images/ch30_img004_d.png" align="middle" width="450" /><div class="caption"><div class="para">
+				Ataque Eternalblue: Selección de métrica de dirección SRC
+			</div></div></div><div class="para">
+			Ahora tenemos las IP de las máquinas involucradas, por lo que es posible tomar medidas para resolver el agujero de seguridad.
+		</div><div class="mediaobject" align="center"><img src="images/ch30_img004_e.png" align="middle" width="450" /><div class="caption"><div class="para">
+				Ataque Eternalblue: IPs envueltas en el ataque
+			</div></div></div><div class="note"><div class="admonition_header"><p><strong>Nota</strong></p></div><div class="admonition"><div class="para">
+				Es importante tener una versión actualizada de las reglas de Snort para detectar comportamientos extraños y tráfico con Redborder
+			</div></div></div></div><ul class="docnav"><li class="previous"><a accesskey="p" href="ch09s03.html"><strong>Anterior</strong>9.3. Caso de uso: revisión de información remota ...</a></li><li class="up"><a accesskey="u" href="#"><strong>Subir</strong></a></li><li class="home"><a accesskey="h" href="index.html"><strong>Inicio</strong></a></li><li class="next"><a accesskey="n" href="ch09s05.html"><strong>Siguiente</strong>9.5. Caso de uso: Ataques de fuerza bruta Ssh </a></li></ul></body></html>

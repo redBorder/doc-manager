@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><title>8.2. Operaciones</title><link rel="stylesheet" type="text/css" href="Common_Content/css/default.css" /><link rel="stylesheet" media="print" href="Common_Content/css/print.css" type="text/css" /><meta name="generator" content="publican 3.2.0" /><meta name="package" content="redBorder_Manager-Guia_de_Usuario-3.1-es-ES-0.2-0" /><link rel="home" href="index.html" title="Guía de Usuario" /><link rel="up" href="ch08.html" title="Capítulo 8. Avanzado" /><link rel="prev" href="ch08.html" title="Capítulo 8. Avanzado" /><link rel="next" href="ch08s03.html" title="8.3. Tecnologías de Redborder" /></head><body><p id="title"><a class="left" href="https://fedorahosted.org/publican"><img alt="Product Site" src="Common_Content/images//image_left.png" /></a><a class="right" href="https://fedorahosted.org/publican"><img alt="Documentation Site" src="Common_Content/images//image_right.png" /></a></p><ul class="docnav top"><li class="previous"><a accesskey="p" href="ch08.html"><strong>Anterior</strong></a></li><li class="home">Guía de Usuario</li><li class="next"><a accesskey="n" href="ch08s03.html"><strong>Siguiente</strong></a></li></ul><div class="section"><div class="titlepage"><div><div><h2 class="title"><a id="idm139774934148272"></a>8.2. Operaciones</h2></div></div></div><div class="para">
+			Hay algunas operaciones importantes que deben ejecutarse para realizar configuraciones avanzadas en Redborder.
+		</div><div class="itemizedlist"><ul><li class="listitem"><div class="para">
+					<span class="bold bold"><strong>motd</strong></span>: Motd muestra información general sobre el nodo y el clúster
+				</div><div class="mediaobject" align="center"><img src="images/ch20_img002.png" align="middle" width="450" /><div class="caption"><div class="para">
+						Motd: salida
+					</div></div></div></li><li class="listitem"><div class="para">
+					<span class="bold bold"><strong>rb_get_managers.rb</strong></span>: Muestra información sobre nodos en el clúster
+				</div><div class="mediaobject" align="center"><img src="images/ch20_img003.png" align="middle" width="450" /><div class="caption"><div class="para">
+						rb_get_managers.rb: salida
+					</div></div></div></li><li class="listitem"><div class="para">
+					<span class="bold bold"><strong>rb_get_services.sh</strong></span>: Obtenga todo el estado de los servicios en el nodo. Utilizado con la opción "all" muestra información para todos los nodos. Si el servicio opcional también se añade, solo se muestra el estado de este servicio
+				</div><div class="mediaobject" align="center"><img src="images/ch20_img004.png" align="middle" width="450" /><div class="caption"><div class="para">
+						rb_get_services.sh: salida
+					</div></div></div></li><li class="listitem"><div class="para">
+					<span class="bold bold"><strong>rb_set_service.rb</strong></span>: Permite habilitar o deshabilitar un servicio.
+				</div><div class="mediaobject" align="center"><img src="images/ch20_img005.png" align="middle" width="450" /><div class="caption"><div class="para">
+						rb_set_service.rb: uso
+					</div></div></div></li><li class="listitem"><div class="para">
+					<span class="bold bold"><strong>rb_service</strong></span>: Permite trabajar con un servicio. Puede iniciar, detener y reiniciar servicios. Se puede usar con servicios como postgresql, riak, hadoop, zookeeper, druid, kafka, chef y más.
+				</div><div class="mediaobject" align="center"><img src="images/ch20_img006.png" align="middle" width="450" /><div class="caption"><div class="para">
+						rb_service: uso
+					</div></div></div></li><li class="listitem"><div class="para">
+					<span class="bold bold"><strong>rb_set_topics.rb</strong></span>: Asignar el destino del tema, que puede ser samza o realtime. Los servicios correspondientes deben iniciarse para mantener el funcionamiento correcto de la plataforma Redborder.
+				</div><div class="mediaobject" align="center"><img src="images/ch20_img007.png" align="middle" width="450" /><div class="caption"><div class="para">
+						rb_set_topics.rb: uso
+					</div></div></div></li><li class="listitem"><div class="para">
+					<span class="bold bold"><strong>rb_cluster_configure.rb</strong></span>: Obtenga el estado de todos los servicios para todos los nodos. Permite cambiar la configuración de todo el clúster.
+				</div><div class="mediaobject" align="center"><img src="images/ch20_img008.png" align="middle" width="450" /><div class="caption"><div class="para">
+						rb_cluster_configure.rb: uso
+					</div></div></div></li><li class="listitem"><div class="para">
+					<span class="bold bold"><strong>rb_manager_ssh.sh</strong></span>: Este comando se usa para mover o ejecutar otro comando en otro nodo.
+				</div><div class="mediaobject" align="center"><img src="images/ch20_img009.png" align="middle" width="450" /><div class="caption"><div class="para">
+						rb_manager_ssh.sh: uso
+					</div></div></div></li><li class="listitem"><div class="para">
+					<span class="bold bold"><strong>rb_manager_scp.sh</strong></span>: Este script se usa para copiar un archivo desde el Manager donde se está iniciando a todos los demás nodos o una lista de nodos.
+				</div><div class="mediaobject" align="center"><img src="images/ch20_img010.png" align="middle" width="450" /><div class="caption"><div class="para">
+						rb_manager_scp.sh: uso
+					</div></div></div></li><li class="listitem"><div class="para">
+					<span class="bold bold"><strong>rb_cluster_reboot.sh</strong></span>: Solicita el reinicio de todos los nodos del clúster.
+				</div><div class="mediaobject" align="center"><img src="images/ch20_img011.png" align="middle" width="450" /><div class="caption"><div class="para">
+						rb_cluster_reboot.sh: uso
+					</div></div></div></li><li class="listitem"><div class="para">
+					<span class="bold bold"><strong>rb_cluster_update.sh</strong></span>: Se utiliza para actualizar el Manager a una nueva versión lanzada.
+				</div><div class="mediaobject" align="center"><img src="images/ch20_img012.png" align="middle" width="450" /><div class="caption"><div class="para">
+						rb_cluster_update: uso
+					</div></div></div></li><li class="listitem"><div class="para">
+					<span class="bold bold"><strong>rb_get_tasks.rb</strong></span>: Obtiene información sobre el servicio de indexación.
+				</div><div class="mediaobject" align="center"><img src="images/ch20_img013.png" align="middle" width="450" /><div class="caption"><div class="para">
+						rb_get_tasks.rb: uso
+					</div></div></div></li><li class="listitem"><div class="para">
+					<span class="bold bold"><strong>rb_wakeup_chef</strong></span>: Inicia el cliente de chef en todos los nodos.
+				</div><div class="mediaobject" align="center"><img src="images/ch20_img014.png" align="middle" width="450" /><div class="caption"><div class="para">
+						rb_wakeup_chef: uso
+					</div></div></div></li></ul></div></div><ul class="docnav"><li class="previous"><a accesskey="p" href="ch08.html"><strong>Anterior</strong>Capítulo 8. Avanzado</a></li><li class="up"><a accesskey="u" href="#"><strong>Subir</strong></a></li><li class="home"><a accesskey="h" href="index.html"><strong>Inicio</strong></a></li><li class="next"><a accesskey="n" href="ch08s03.html"><strong>Siguiente</strong>8.3. Tecnologías de Redborder</a></li></ul></body></html>

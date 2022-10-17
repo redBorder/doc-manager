@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><title>7.4. Configuración General</title><link rel="stylesheet" type="text/css" href="Common_Content/css/default.css" /><link rel="stylesheet" media="print" href="Common_Content/css/print.css" type="text/css" /><meta name="generator" content="publican 3.2.0" /><meta name="package" content="redBorder_Manager-Guia_de_Usuario-3.1-es-ES-0.2-0" /><link rel="home" href="index.html" title="Guía de Usuario" /><link rel="up" href="ch07.html" title="Capítulo 7. Herramientas y administración" /><link rel="prev" href="ch07s03.html" title="7.3. Configuración del clúster" /><link rel="next" href="ch07s05.html" title="7.5. Reglas del motor de correlación" /></head><body><p id="title"><a class="left" href="https://fedorahosted.org/publican"><img alt="Product Site" src="Common_Content/images//image_left.png" /></a><a class="right" href="https://fedorahosted.org/publican"><img alt="Documentation Site" src="Common_Content/images//image_right.png" /></a></p><ul class="docnav top"><li class="previous"><a accesskey="p" href="ch07s03.html"><strong>Anterior</strong></a></li><li class="home">Guía de Usuario</li><li class="next"><a accesskey="n" href="ch07s05.html"><strong>Siguiente</strong></a></li></ul><div class="section"><div class="titlepage"><div><div><h2 class="title"><a id="idm139774928873552"></a>7.4. Configuración General</h2></div></div></div><div class="para">
+			La opción <code class="literal">Configuración General</code> nos muestra una interfaz cuya edición se determinará tanto para la configuración de la plataforma como para la infraestructura de la red, como se explicó en el capítulo sobre sensores.
+		</div><div class="mediaobject" align="center"><img src="images/ch13_img006.png" align="middle" width="162" /><div class="caption"><div class="para">
+				Configuración General: Configuración general del Manager de Redborder
+			</div></div></div><div class="note"><div class="admonition_header"><p><strong>Nota</strong></p></div><div class="admonition"><div class="para">
+				Para ver todas las secciones, se recomienda habilitar la opción <code class="literal">Mostrar opciones avanzadas</code> ubicado en la parte superior derecha de la pantalla en la configuración general.
+			</div><div class="para">
+				En esta pantalla puede editar los parámetros tanto del Manager como de las Aplicaciones que se han registrado. Por lo tanto, las secciones que se muestran dependerán de las aplicaciones integradas en la plataforma Redborder.
+			</div></div></div><div class="mediaobject" align="center"><img src="images/ch13_img008.png" align="middle" width="162" /><div class="caption"><div class="para">
+				Configuración general: opciones avanzadas
+			</div></div></div><div class="para">
+			TPara realizar una configuración básica en Manager, el usuario puede editar parámetros generales, características de las aplicaciones, configuración del servidor, red, rutas y geolocalización de las IPs.
+		</div><div class="para">
+			<span class="bold bold"><strong>Parametros generales</strong></span>
+		</div><div class="para">
+			En esta sección, el usuario puede cambiar los siguientes elementos:
+		</div><div class="itemizedlist"><ul><li class="listitem"><div class="para">
+					<code class="literal"> Company name</code>: Nombre de la compañía que usa Redborder
+				</div></li><li class="listitem"><div class="para">
+					<code class="literal">Correo electrónico de la empresa</code>: Correo electrónico de la empresa. Se utilizará como remitente de informes y gestión de licencias.
+				</div></li><li class="listitem"><div class="para">
+					<code class="literal">URL de la Web</code>: Interfaz URL
+				</div></li><li class="listitem"><div class="para">
+					<code class="literal">Tiempo de refresco del dashboard</code>: Periodo del refresco del dashboard en segundos
+				</div></li><li class="listitem"><div class="para">
+					<code class="literal">Tiempo bruto de recarga automática</code>: Periodo de actualización para la interfaz en segundos
+				</div></li><li class="listitem"><div class="para">
+					<code class="literal">Periodicidad de regla de actualización de trabajos</code>: Periodicidad para actualizar las Reglas
+				</div></li><li class="listitem"><div class="para">
+					<code class="literal">Hora de actualización de reglas</code> Hora UTC en que se ejecutará el trabajo de actualización de reglas
+				</div></li></ul></div><div class="mediaobject" align="center"><img src="images/ch13_img006.png" align="middle" width="162" /><div class="caption"><div class="para">
+				Configuración general: edición de parámetros generales
+			</div></div></div><div class="important"><div class="admonition_header"><p><strong>Importante</strong></p></div><div class="admonition"><div class="para">
+				Todos los parámetros definidos en esta interfaz son heredados por aquellos elementos que se encuentran en niveles inferiores en un estado dependiente (dominios, sensores). Para modificar esta información, el usuario debe escribirla o editarla, como se describe en el capítulo sobre edición de sensores y configuración <code class="literal">Sensores.</code>
+			</div></div></div><div class="para">
+			<span class="bold bold"><strong>Ajustes IPS/IDS</strong></span>
+		</div><div class="para">
+			Aquí podemos establecer en Redborder la configuración y configuración física de IPS / IDS.
+		</div><div class="mediaobject" align="center"><img src="images/ch13_img009_a.png" align="middle" width="450" /><div class="caption"><div class="para">
+				Configuración general: Ajustes IPS/IDS
+			</div></div></div><div class="para">
+			<span class="bold bold"><strong>Certificados HTTP SSL</strong></span>
+		</div><div class="para">
+			Permite establecer un certificado SSL para comunicaciones seguras.
+		</div><div class="mediaobject" align="center"><img src="images/ch13_img009_b.png" align="middle" width="450" /><div class="caption"><div class="para">
+				Configuración general: Ajustes IPS/IDS
+			</div></div></div><div class="para">
+			<span class="bold bold"><strong>Servers</strong></span>
+		</div><div class="para">
+			Configuración de servidores Syslog, MTA, NTP y habilitar la configuración de proxy.
+		</div><div class="note"><div class="admonition_header"><p><strong>Nota</strong></p></div><div class="admonition"><div class="para">
+				Un ejemplo de cómo configurar servidores se encuentra en el Capítulo 11, “Edición de sensor y / o dominio."
+			</div></div></div><div class="mediaobject" align="center"><img src="images/ch13_img009_c.png" align="middle" width="450" /><div class="caption"><div class="para">
+				Configuración general: configuración del servidor
+			</div></div></div><div class="para">
+			<span class="bold bold"><strong>Reglas por defecto</strong></span>
+		</div><div class="para">
+			Configuración de reglas predeterminadas para cargar o soltar datos.
+		</div><div class="mediaobject" align="center"><img src="images/ch13_img009_d.png" align="middle" width="450" /><div class="caption"><div class="para">
+				Configuración general: Reglas por defecto
+			</div></div></div><div class="para">
+			<span class="bold bold"><strong>Monitoreo y registros</strong></span>
+		</div><div class="para">
+			Esta sección le ayuda a momificar la infraestructura de Redborder. En el campo <code class="literal"> Servidores Syslog </code> debe indicar en qué servidor remoto se enviarán los registros.
+		</div><div class="para">
+			Debe seleccionar qué protocolo y qué modo Syslog desea utilizar para los envíos.
+		</div><div class="note"><div class="admonition_header"><p><strong>Nota</strong></p></div><div class="admonition"><div class="para">
+				Se recomienda el protocolo TCP para garantizar un envío seguro. Elija esta opción siempre que sea posible.
+			</div></div></div><div class="mediaobject" align="center"><img src="images/ch13_img009_e.png" align="middle" width="450" /><div class="caption"><div class="para">
+				Configuración general: Monitorización y registros
+			</div></div></div><div class="para">
+			La sección New Relic le permite informar a la nube de New Relic. En este caso, el usuario debe indicar el número de su nueva licencia de reliquia y, si tiene un grupo de clúster, escriba su nombre.
+		</div><div class="para">
+			La activación de la verificación <code class="literal"> Habilitar complementos </code> es opcional porque este es un servicio de pago. Active <code class="literal"> Habilitar APM </code> en caso de monitoreo web.
+		</div><div class="para">
+			<span class="bold bold"><strong>Amazon CloudWatch</strong></span>
+		</div><div class="para">
+			Si el usuario desea enviar sus registros a este servicio de Amazon, se deben completar los campos obligatorios.
+		</div><div class="mediaobject" align="center"><img src="images/ch13_img009_f.png" align="middle" width="450" /><div class="caption"><div class="para">
+				Configuración general: Amazon CloudWatch
+			</div></div></div><div class="para">
+			<span class="bold bold"><strong>Google Maps API</strong></span>
+		</div><div class="para">
+			Es posible vincular Redborder con la API de Google Maps para obtener mejor información de ubicación.
+		</div><div class="mediaobject" align="center"><img src="images/ch13_img009_g.png" align="middle" width="450" /><div class="caption"><div class="para">
+				Configuración general: Google Maps API
+			</div></div></div><div class="para">
+			<span class="bold bold"><strong>Segmentos de respaldo (Remote S3)</strong></span>
+		</div><div class="para">
+			Permite una copia de seguridad de los datos del usuario en un servidor remoto o base de datos. Para esto, es necesario indicar el nombre de host, el depósito y la clave de acceso secreta.
+		</div><div class="mediaobject" align="center"><img src="images/ch13_img009_h.png" align="middle" width="450" /><div class="caption"><div class="para">
+				Configuración general: Segmentos de respaldo (Remote S3)
+			</div></div></div><div class="para">
+			<span class="bold bold"><strong>White networks</strong></span>
+		</div><div class="para">
+			En esta sección, se indican las redes cuyo tráfico pasará sin inspección del paquete, porque las redes se consideran "fiables".
+		</div><div class="para">
+			Agregar una nueva red: haga clic en el botón <code class="literal"> + Agregar </code> e indique la IP de la red.
+		</div><div class="para">
+			Eliminar una red de la lista: a través del icono "Eliminar".
+		</div><div class="mediaobject" align="center"><img src="images/ch13_img009_i.png" align="middle" width="450" /><div class="caption"><div class="para">
+				Configuración general: Añadir una red blanca
+			</div></div></div><div class="para">
+			<span class="bold bold"><strong>Black Networks</strong></span>
+		</div><div class="para">
+			Lista de redes cuyo tráfico debe bloquearse debido a la mala reputación.
+		</div><div class="para">
+			Agregue una nueva red: simplemente haga clic en el botón <code class="literal"> + Agregar </code> e indique la IP de la red.
+		</div><div class="para">
+			Eliminar una red de la lista: a través del icono "Eliminar".
+		</div><div class="mediaobject" align="center"><img src="images/ch13_img009_j.png" align="middle" width="450" /><div class="caption"><div class="para">
+				Configuración general: Añadir una red negra
+			</div></div></div><div class="para">
+			<span class="bold bold"><strong><code class="literal">Rutas de red</code></strong></span>
+		</div><div class="para">
+			En esta sección, el usuario definirá las rutas de red para el Manager.
+		</div><div class="para">
+			Agregar una nueva red: haga clic en el botón <code class="literal"> + Agregar </code> e indique la ruta IP de la red.
+		</div><div class="para">
+			Eliminar una red de la lista: a través del icono " Borrar".
+		</div><div class="mediaobject" align="center"><img src="images/ch13_img009_k.png" align="middle" width="450" /><div class="caption"><div class="para">
+				Configuración general: lista de rutas de red
+			</div></div></div><div class="para">
+			<span class="bold bold"><strong><code class="literal">Hosts fijos</code></strong></span>
+		</div><div class="para">
+			En esta sección, el usuario definirá las rutas de red para el Manager.
+		</div><div class="para">
+			Agregar una nueva red: haga clic en el botón <code class="literal"> + Agregar </code> e indique la ruta IP de la red.
+		</div><div class="para">
+			Eliminar una red de la lista: a través del icono "Borrar".
+		</div><div class="mediaobject" align="center"><img src="images/ch13_img009_l.png" align="middle" width="450" /><div class="caption"><div class="para">
+				Configuración general: lista de rutas de red
+			</div></div></div><div class="para">
+			<span class="bold bold"><strong>Geo IP</strong></span>
+		</div><div class="para">
+			Para habilitar la función Geo Protection es necesario tener una base de datos de geolocalización actualizada para evitar errores en la geolocalización de IP. Redborder se ha configurado para admitir solo el formato de base de datos Maxmind.
+		</div><div class="para">
+			Estos son los tipos de bases de datos que se admiten para las versiones IPv4 e IPv6 (formato binario de GeoIp antiguo):
+		</div><div class="itemizedlist"><ul><li class="listitem"><div class="para">
+					País: determina el país de un visitante de Internet en función de su dirección IP.
+				</div></li><li class="listitem"><div class="para">
+					Ciudad: indica el país, subdivisiones, ciudad, código postal, latitud y longitud asociados con las direcciones mundiales IPv4 e IPv6.
+				</div></li><li class="listitem"><div class="para">
+					ASN: la base de datos GeoIP2 de IP anónima contiene datos sobre las direcciones IP de las redes que anónimo ha utilizado de diversas maneras.
+				</div></li></ul></div><div class="para">
+			Descargue todos los archivos del sitio web de Maxmind y descomprímalos. Solo es posible cargar archivos con formato .dat como podemos ver en la imagen a continuación. Para esto, haga clic en <code class="literal">+Seleccionar archivo</code>
+		</div><div class="mediaobject" align="center"><img src="images/ch13_img009_m.png" align="middle" width="450" /><div class="caption"><div class="para">
+				Configuración general: GeoIP Protection
+			</div></div></div><div class="para">
+			<span class="bold bold"><strong>Logstash Tunning</strong></span>
+		</div><div class="para">
+			En esta sección, el usuario puede seleccionar desde la interfaz web los diferentes pasos adicionales para el enriquecimiento de datos en logstash (disponible para el módulo Tráfico, Intrusión y Movilidad).Desactivar estas opciones supondría una mejora en la gestión de recursos y rendimiento general, pero perdería las funcionalidades descritas a continuación. Es recomendable mantenerlas activas.
+		</div><div class="itemizedlist"><ul><li class="listitem"><div class="para">
+					MAC Scrambling: Permite proteger la MAC del sensor, para ello se utiliza una clave codificada hexadecimal que se combina con una MAC falsa. Esto permite a su vez obtener la MAC real del sensor y proporcionar seguridad para no comprometer el servicio que se presta.
+				</div></li><li class="listitem"><div class="para">
+					Geo IP: Permite proteger la MAC del sensor, para esto se utiliza una clave codificada hexadecimal que se combina con una MAC falsa para obtener la MAC real de la misma.
+				</div></li><li class="listitem"><div class="para">
+					MAC Vendor: El proceso de traducción de la MAC incluido en el evento permite obtener el nombre del fabricante del dispositivo. Este proceso se compara en un archivo almacenado dentro del sistema.
+				</div></li><li class="listitem"><div class="para">
+					Darklist: Es un servicio que se encarga de recuperar una lista de IP que son maliciosas y almacenar múltiples valores como puntuación, tipo de amenaza, país, latitud, longitud... en el sistema, permitiendo así realizar operaciones de modificación en los campos del evento. Los archivos se actualizan cada día.
+				</div></li></ul></div><div class="mediaobject" align="center"><img src="images/ch13_img009_n.png" align="middle" width="450" /><div class="caption"><div class="para">
+				Configuración general: Logstash Tunning
+			</div></div></div></div><ul class="docnav"><li class="previous"><a accesskey="p" href="ch07s03.html"><strong>Anterior</strong>7.3. Configuración del clúster</a></li><li class="up"><a accesskey="u" href="#"><strong>Subir</strong></a></li><li class="home"><a accesskey="h" href="index.html"><strong>Inicio</strong></a></li><li class="next"><a accesskey="n" href="ch07s05.html"><strong>Siguiente</strong>7.5. Reglas del motor de correlación</a></li></ul></body></html>
