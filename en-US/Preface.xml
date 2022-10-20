@@ -57,7 +57,7 @@
 	</section>
 	<section>
 		<title>Versions of redBorder Manager software </title>
-		<para>This document addresses the installation of the redBorder Manager that includes the following software versions: </para>
+		<para>This document addresses the installation of the redBorder Manager that includes the following software versions: </para> <!-- TODO -->
 		<itemizedlist mark="bullet">
 			<listitem>
 				<para>Apache Zookeeper 3.4.6</para>

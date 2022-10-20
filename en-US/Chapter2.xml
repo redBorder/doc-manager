@@ -39,7 +39,7 @@
 		<para>As soon as your system boots with the redborder ISO image you will see the redborder Enterprise installation Welcome Screen with useful options related to the operation of your computer..</para>
 		<mediaobject>
 					<imageobject>
-						<imagedata scalefit="1" align="center" width="450" fileref="images/ch02_img002.png"/>
+						<imagedata scalefit="1" align="center" width="450" fileref="images/ch02_img002.png"/> <!-- TODO Change picture and Install Gateway Sensor option-->
 					</imageobject>
 					<textobject>
 						<phrase>Redborder Enterprise installation wellcome screen</phrase>

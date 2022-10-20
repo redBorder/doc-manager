@@ -32,6 +32,30 @@
 			</mediaobject>
 		</section>
 		<section>
+			<title>Malware</title>
+			<para>Malware module is a complete solution for detecting malicious files, IP addresses and URL addresses.
+				To do this, multiple detection engines are employed, along with reputation services that go beyond
+				signature-based policies and the like.
+			</para>
+			<!-- TODO
+			<para>Thanks to reputation tools and the use of sandboxing, we can obtain a broader analysis and the
+				possibility to rate files, emails, IP addresses and URL addresses with the objective of protecting the
+				devices that make up its network infrastructure.
+			</para>
+			<para>For file capturing and threat detection, redborder Malware is supported by the use of different sensors
+				that are able to block the entry of files with bad reputations in real time. Furthermore, an agent has
+				been developed for specific versions of the Microsoft Windows operating system to increase the local
+				detection of Commitment Indicators which can be used for the forensic analysis. These are the elements
+				that make of the redborder Malware scenario:
+			</para>
+			-->
+			<!-- TODO Add picture
+			 <imageobject>
+					<imagedata scalefit="1" align="center" width="450" fileref="images/MALWARE TOPS"/>
+			 </imageobject>
+ 			-->
+		</section>
+		<section>
 			<title>Traffic</title>
 			<para>Traffic module uses netflow data to extract information about all the traffic from the sensor. The module provides information as IPs, protocols, locations and much more.</para>
 			<mediaobject>
@@ -775,6 +799,146 @@
 				</caption>
 			</mediaobject>
 		</section>
+		<section>
+			<title>Analyze (Malware Module)</title>
+			<para>In this view you can obtain a detailed analysis of a URL, IP, Hash or a file on demand.</para>
+			<para>To do this, simply enter the IP, URL or Hash that you want to analyze and click on <literal>Search</literal>
+				or, in case of a file, it is necessary to upload it clicking on <literal>Upload.</literal>
+			</para>
+			<para>You can switch from one view to another without returning to the Malware event interface by selecting it
+				in the dropdown menu.
+			</para>
+			<mediaobject>
+				<imageobject>
+					<imagedata scalefit="1" align="center" width="450" fileref="images/ch06_img031_analyze.png"/> <!-- TODO Update this picture -->
+				</imageobject>
+				<caption>
+					<para>Vistas: Analyze</para>
+				</caption>
+			</mediaobject>
+		</section>
+		<!-- TODO Check this
+		<section>
+			<title>State Changes (Módulo Malware)</title>
+			<para>Programa que realiza el análisis de la actividad de los EndPoints. En esta interfaz es posible la descarga
+			 de un archivo .csv que incluye las diferencias observadas entre un periodo de tiempo y el momento de la consulta.
+			 </para>
+			<para>El Agente de Carga recoge todos los procesos creados y destruidos, las conexiones generadas por esos procesos
+				y las capturas de los ficheros e identifica las amenazas
+				mediante el análisis de ficheros y los Indicadores de Compromiso (IOCs).
+			</para>
+			<para>Como se puede observar en la imagen, en esta pantalla encontramos un listado que incluye todos los EndPoints
+				(identificados a través de su Hostname e IP), información del tipo de proceso (estado de procesos/estados de red)
+				y los botones de descarga del anterior archivo csv generado y el nuevo, de modo que el usuario pueda fácilmente
+				realizar una comparación de los cambios de estado (Old CSV/ New CSV).
+			</para>
+			<mediaobject>
+				<imageobject>
+					<imagedata scalefit="1" align="center" width="450" fileref="images/ch08_img016.png"/>
+				</imageobject>
+				<caption>
+					<para>Interfaz State Changes</para>
+				</caption>
+			</mediaobject>
+			<para><emphasis role="bold">Opciones de filtrado de cambios de estado:</emphasis></para>
+			<orderedlist numeration="arabic">
+				<listitem>
+					<para>View: Show everything, Show only reviewed elements, Show only unreviewed elements.</para>
+					<para>La casilla <literal>Reviewed</literal> posibilita que el usuario marque aquellos EndPoints que ya
+						ha supervisado y tener disponible las diferentes opciones de filtrado.
+					</para>
+				</listitem>
+				<listitem>
+					<para>Filtrado por rango temporal: seleccionar el periodo que desea analizar en la barra de filtrado
+						temporal del margen superior izquierdo.
+					</para>
+				</listitem>
+			</orderedlist>
+			<mediaobject>
+				<imageobject>
+					<imagedata scalefit="1" align="center" width="450" fileref="images/ch08_img017.png"/>
+				</imageobject>
+				<caption>
+					<para>Opciones de visualización en State Changes</para>
+				</caption>
+			</mediaobject>
+		</section>
+		<section>
+			<title>IOCs (Módulo Malware)</title>
+			<para>El Manager analiza e identifica las amenazas gracias a las reglas incluidas en los Indicadores de Compromiso
+				o IOCs y a la información de cada EndPoint que es reportada por el Agente de carga.
+			</para>
+			<para>Los IOCs se componen de una serie de reglas cuyo cumplimiento o no determinan la activación o desactivación
+				de los mismos. En caso de que los procesos capturados coincidan con alguna regla estos se visualizarán
+				indicando el o los EndPoints que se han visto comprometidos por la activación de uno o más IOCs.
+			</para>
+			<para>Esta vista ofrece una visión global de los IOCs que han sido activados y los EndPoints que han sido
+				comprometidos. Se compone principalmente de dos áreas o apartados:
+			</para>
+			<orderedlist numeration="arabic">
+				<listitem>
+					<para><emphasis role="bold">Evolución temporal de los IOCs y EndPoints comprometidos</emphasis></para>
+				</listitem>
+				<listitem>
+					<para><emphasis role="bold">Currently compromised EndPoints</emphasis></para>
+				</listitem>
+			</orderedlist>
+			<para><emphasis role="bold">Evolución temporal de los IOCs y EndPoints comprometidos</emphasis></para>
+			<para>En este apartado se incluye una gráfica de barras en la que se muestran el número de IOCs únicos que se han
+				activado (color rojo) y el número de EndPoints únicos que se han visto comprometidos (color azul).
+			</para>
+			<para>El usuario puede realizar una selección del periodo de tiempo que se desea consultar a través de la franja
+				temporal que se encuentra en el margen superior izquierdo. Además, puede aumentar la granuralidad de los datos
+				realizando Filter zoom sobre la gráfica.
+			</para>
+			<para><emphasis role="bold">Currently compromised EndPoints</emphasis></para>
+			<para>En este apartado se visualiza la información relacionada con los EndPoints que se encuentran comprometidos
+				en el momento de la consulta. Se compone de una tabla resumen y de un listado detallado de cada uno de los
+				EndPoints comprometidos.
+			</para>
+			<para>En la tabla resumen se muestra el total de Enpoints comprometidos y el total de IOCs que se han activado:</para>
+			<itemizedlist mark="bullet">
+				<listitem>
+					<para><literal>Number of compromised EndPoints</literal>: Número total de EndPoints comprometidos (cuya
+						actividad ha activado una o varias reglas de los IOCs definidos).
+					</para>
+				</listitem>
+				<listitem>
+					<para><literal>Number of active IOCs</literal>: Cantidad total de IOCs activos.</para>
+				</listitem>
+				<listitem>
+					<para><literal>Mean of IOCs/EndPoint</literal>: media de EndPoints comprometidos e IOCs activos en el
+						momento de la consulta.
+					</para>
+				</listitem>
+			</itemizedlist>
+			<para>A continuación se visualiza un listado que incluye todos los EndPoints que se han visto comprometidos
+				acompañados de la siguiente información:
+			</para>
+			<itemizedlist mark="bullet">
+				<listitem>
+					<para><literal>EndPoint ID</literal>: Identificador del EndPoint.</para>
+				</listitem>
+				<listitem>
+					<para><literal>Compromised since:</literal> fecha en la que se activó el IOC y se consideró que dicho
+						EndPoint podía estar comprometido.
+					</para>
+				</listitem>
+				<listitem>
+					<para><literal>Number of active IOCs</literal>: número de IOCs que se han activado para ese EndPoint.</para>
+				</listitem>
+				<listitem>
+					<para><literal>IOC IDs:</literal> identificador/es de los IOCs que se han activado para dicho EndPoint (uuid). </para>
+				</listitem>
+				<listitem>
+					<para><literal>Detailed information:</literal> seleccionando esta opción se abre una ventana emergente
+						en la que se muestra la información referente a ese EndPoint y un listado con los IOCs que se han
+						activado (punto rojo) y aquellos que se han desactivado para dicho equipo (punto verde).
+					</para>
+				</listitem>
+			</itemizedlist>
+		</section>
+		-->
 	</section>
 	<section>
 		<title>Type of aggregation</title>

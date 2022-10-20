@@ -39,7 +39,7 @@
 		<para>Tan pronto como su sistema se inicie con la imagen ISO de redborder, verá la pantalla de bienvenida de instalación de redborder Enterprise con opciones útiles relacionadas con el funcionamiento de su computadora...</para>
 		<mediaobject>
 					<imageobject>
-						<imagedata scalefit="1" align="center" width="450" fileref="images/ch02_img002.png"/>
+						<imagedata scalefit="1" align="center" width="450" fileref="images/ch02_img002.png"/>  <!-- TODO Change picture and Install Gateway Sensor option-->
 					</imageobject>
 					<textobject>
 						<phrase>Pantalla de bienvenida de la instalación de Redborder Enterprise</phrase>
