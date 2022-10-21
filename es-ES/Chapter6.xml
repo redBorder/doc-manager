@@ -184,6 +184,7 @@
 					<para>-Social</para>
 					<para>-Vault</para>
 					<para>-Movilidad</para>
+					<para>-Malware</para>
 					<para>-Combinación</para>
 				</listitem>
 				<listitem>
@@ -401,7 +402,7 @@
 				</orderedlist>
 				<mediaobject>
 					<imageobject>
-						<imagedata scalefit="1" align="center" width="450" fileref="images/ch05_img023.png"/>  <!-- TODO Update this picture -->
+						<imagedata scalefit="1" align="center" width="450" fileref="images/ch05_img023.png"/>
 					</imageobject>
 					<caption>
 						<para>Opciones de widgets de estado</para>
@@ -453,7 +454,7 @@
 					<listitem>
 						<para><emphasis role="bold">Recent Malware:</emphasis> muestra eventos de malware detectados en las últimas 24 horas.</para>
 					</listitem>
-					<!-- TODO Check this
+					<!-- TODO State Changes
                     <listitem>
                         <para><emphasis role="bold">State Changes Alerts:</emphasis> alertas de cambios de estado en las últimas 24 horas.</para>
                     </listitem>

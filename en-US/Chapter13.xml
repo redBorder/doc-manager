@@ -11,7 +11,7 @@
 	<para>On the right side of the menu bar, next to the menu <literal>Sensors</literal> we find the “tools” section or <literal>Tools</literal> where you can find the options for the configuration of the redBorder platform.</para>
 	<mediaobject>
 		<imageobject>
-			<imagedata scalefit="1" width="450" align="center" fileref="images/ch13_img001.png"/> <!-- TODO Update this picture -->
+			<imagedata scalefit="1" width="450" align="center" fileref="images/ch13_img001.png"/>
 		</imageobject>
 		<caption>
 			<para><literal>Tools:</literal> available options for configuring the redBorder platform </para>
@@ -23,13 +23,6 @@
 		<listitem>
 			<para><literal>Alarms</literal>: establishing the conditions for activating a user notification.</para>
 		</listitem>
-		<!-- TODO Check this
-		<listitem>
-			<para><literal>Malware Settings</literal>: the user can set the general parameter settings of the Malware
-			module.
-			</para>
-		</listitem>
-		  -->
 		<listitem>
 			<para><literal>Audits</literal>: allows tracking of user activity using log.</para>
 		</listitem>
@@ -38,6 +31,11 @@
 		</listitem>
 		<listitem>
 			<para><literal>General Settings</literal>: the user can establish the general parameter settings of the Manager, as well as the Apps they have registered. </para>
+		</listitem>
+		<listitem>
+			<para><literal>Malware Settings</literal>: the user can set the general parameter settings of the Malware
+				module.
+			</para>
 		</listitem>
 		<listitem>
 			<para><literal>Correlation Engine Rules</literal>: provides the list of the cep rules. Here we can also check the existing rules and create new ones.</para>
@@ -69,6 +67,11 @@
 		<listitem>
 			<para><literal>Users</literal>: profile management and user permissions.</para>
 		</listitem>
+		<!--
+		<listitem>
+    		<para>Politicas de Yara <literal>(Yara Policies)</literal>: panel de gestión de políticas de reglas para el motor Yara.</para>
+		</listitem>
+		-->
 		<listitem>
 			<para><literal>Worker and Job Queue</literal>: show the current active and stored workers and jobs on Redborder manager.</para>
 		</listitem>
@@ -552,7 +555,7 @@
 		</warning>
 		<mediaobject>
 			<imageobject>
-				<imagedata scalefit="1" align="center" width="450" fileref="images/ch13_img002_malware_settings.png"/>
+				<imagedata scalefit="1" align="center" width="450" fileref="images/ch11_img054.png"/>
 			</imageobject>
 			<caption>
 				<para>Specific configuration of Mail Gateway sensors</para>
@@ -648,7 +651,7 @@
 			</para>
 			<mediaobject>
 				<imageobject>
-					<imagedata scalefit="1" align="center" width="450" fileref="images/ch13_img004_malware_settings.png"/> <!-- TODO Update this picture -->
+					<imagedata scalefit="1" align="center" width="450" fileref="images/ch13_img004_malware_settings.png"/>
 				</imageobject>
 				<caption>
 					<para>Loaders</para>
@@ -686,7 +689,7 @@
 			-->
 			<mediaobject>
 				<imageobject>
-					<imagedata scalefit="1" align="center" width="450" fileref="images/ch13_img005_malware_settings.png"/> <!-- TODO Update this picture -->
+					<imagedata scalefit="1" align="center" width="450" fileref="images/ch13_img005_malware_settings.png"/>
 				</imageobject>
 				<caption>
 					<para>API Keys <!-- and licenses/BrightCloud --></para>

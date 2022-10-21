@@ -124,6 +124,19 @@
 					</simplelist>
 				</revdescription>
 			</revision>
+			<revision>
+				<revnumber>1.1-5</revnumber>
+				<date>Octubre 2022</date>
+				<author>
+					<firstname>Eneo Tecnología</firstname>
+					<email>spain@redborder.com</email>
+				</author>
+				<revdescription>
+					<simplelist>
+						<member>Actualizaciones de imágenes e inclusión del módulo Malware.</member>
+					</simplelist>
+				</revdescription>
+			</revision>
 		</revhistory>
 	</simpara>
 </appendix>

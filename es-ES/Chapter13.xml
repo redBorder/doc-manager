@@ -11,7 +11,7 @@
 	<para>En el margen derecho de la barra de menú, cerca de <literal>Sensores</literal> podemos encontrar la sección <literal>Herramientas</literal> donde puede encontrar las opciones para la configuración de la plataforma Redborder.</para>
 	<mediaobject>
 		<imageobject>
-			<imagedata scalefit="1" width="450" align="center" fileref="images/ch13_img001.png"/> <!-- TODO Update this picture -->
+			<imagedata scalefit="1" width="450" align="center" fileref="images/ch13_img001.png"/>
 		</imageobject>
 		<caption>
 			<para><literal>Herramientas:</literal> opciones disponibles para configurar la plataforma Redborder </para>
@@ -23,12 +23,6 @@
 		<listitem>
 			<para><literal>Alarmas</literal>: establece las condiciones para activar una notificación de usuario.</para>
 		</listitem>
-		<!-- TODO Check this
-		<listitem>
-			<para><literal>Malware Settings</literal>: el usuario puede establecer la configuración general de parámetros
-			 del módulo de Malware.
-			 </para>
-		</listitem>  -->
 		<listitem>
 			<para><literal>Auditorías</literal>: permite el seguimiento de la actividad del usuario mediante el registro.</para>
 		</listitem>
@@ -37,6 +31,11 @@
 		</listitem>
 		<listitem>
 			<para><literal>Configuración General</literal>: el usuario puede establecer la configuración general de parámetros del Manager, así como las Aplicaciones que ha registrado.</para>
+		</listitem>
+		<listitem>
+			<para><literal>Malware Settings</literal>: el usuario puede establecer la configuración general de parámetros
+				del módulo de Malware.
+			</para>
 		</listitem>
 		<listitem>
 			<para><literal>Reglas del Motor de Correlación</literal>: proporciona la lista de las reglas del cep. Aquí también podemos verificar las reglas existentes y crear otras nuevas.</para>
@@ -68,8 +67,13 @@
 		<listitem>
 			<para><literal>Usuarios</literal>: gestión de perfiles y permisos de usuario.</para>
 		</listitem>
+		<!--
 		<listitem>
-			<para><literal>Worker y cola de trabajo</literal>: mostrar los workers y trabajos activos y almacenados actuales en el Manager de Redborder.</para>
+			<para>Politicas de Yara <literal>(Yara Policies)</literal>: panel de gestión de políticas de reglas para el motor Yara.</para>
+		</listitem>
+		-->
+		<listitem>
+			<para><literal>Cola Tareas y Trabajadores</literal>: muestra los workers y trabajos activos y almacenados actuales en el Manager de Redborder.</para>
 		</listitem>
 	</itemizedlist>
 	<section>
@@ -535,7 +539,7 @@
 		</warning>
 		<mediaobject>
 			<imageobject>
-				<imagedata scalefit="1" align="center" width="450" fileref="images/ch13_img002_malware_settings.png"/>
+				<imagedata scalefit="1" align="center" width="450" fileref="images/ch11_img054.png"/>
 			</imageobject>
 			<caption>
 				<para>Configuración específica de los sensores Mail Gateway</para>
@@ -552,17 +556,17 @@
 			<listitem>
 				<para>Mail Gateway</para>
 			</listitem>
-			<!-- TODO Check this
+			<!-- TODO GRR
 			<listitem>
 				<para>GRR Server <footnote><para>Consultar este apartado en el capítulo correspondiente a EndPoint.</para></footnote></para>
 			</listitem>
 			-->
-			<!-- TODO Check this
+			<!-- TODO EndPoints
 			<listitem>
 				<para>EndPoints</para>
 			</listitem>
 			-->
-			<!-- TODO Check this
+			<!-- TODO ICAP
 			<listitem>
 				<para>ICAP</para>
 			</listitem>
@@ -631,7 +635,7 @@
 			</para>
 			<mediaobject>
 				<imageobject>
-					<imagedata scalefit="1" align="center" width="450" fileref="images/ch13_img004_malware_settings.png"/> <!-- TODO Update this picture -->
+					<imagedata scalefit="1" align="center" width="450" fileref="images/ch13_img004_malware_settings.png"/>
 				</imageobject>
 				<caption>
 					<para>Cargadores: Loaders</para>
@@ -669,7 +673,7 @@
 			-->
 			<mediaobject>
 				<imageobject>
-					<imagedata scalefit="1" align="center" width="450" fileref="images/ch13_img005_malware_settings.png"/> <!-- TODO Update this picture -->
+					<imagedata scalefit="1" align="center" width="450" fileref="images/ch13_img005_malware_settings.png"/>
 				</imageobject>
 				<caption>
 					<para>API Keys <!-- and licenses/BrightCloud --></para>
@@ -779,7 +783,7 @@
 				<para>-3: objeto incluido en una blacklist</para>
 			</note>
 		</section>
-		<!-- TODO Check this
+		<!-- TODO EndPoints
 		<section>
 			<title>EndPoints</title>
 			<para>En este apartado el usuario puede fijar la periodicidad de descarga de las capturas o informes de

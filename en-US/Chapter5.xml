@@ -810,7 +810,7 @@
 			</para>
 			<mediaobject>
 				<imageobject>
-					<imagedata scalefit="1" align="center" width="450" fileref="images/ch06_img031_analyze.png"/> <!-- TODO Update this picture -->
+					<imagedata scalefit="1" align="center" width="450" fileref="images/ch06_img031_analyze.png"/>
 				</imageobject>
 				<caption>
 					<para>Vistas: Analyze</para>
