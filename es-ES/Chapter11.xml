@@ -1450,7 +1450,8 @@
 							correspondiente a los servicios externos de reputación.
 						</para>
 						<para>Es posible descargar el fichero que se está analizando mediante la opción
-							<literal>Download File.</literal>
+							<literal>Download File</literal>. Se descargará un fichero comprimido en formato .zip,
+							cuya contraseña es <literal>infected</literal>.
 						</para>
 					</listitem>
 					<listitem>
@@ -1521,7 +1522,6 @@
 				<mediaobject>
 					<imageobject>
 						<imagedata scalefit="1" align="center" width="450" fileref="images/ch11_img075.png"/> <!-- TODO Update this picture -->
-					</imageobject>
 					</imageobject>
 					<caption>
 						<para>Show evolution</para>
