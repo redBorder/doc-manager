@@ -1521,7 +1521,7 @@
 				</para>
 				<mediaobject>
 					<imageobject>
-						<imagedata scalefit="1" align="center" width="450" fileref="images/ch11_img075.png"/> <!-- TODO Update this picture -->
+						<imagedata scalefit="1" align="center" width="450" fileref="images/ch11_img075.png"/>
 					</imageobject>
 					<caption>
 						<para>Show evolution</para>
@@ -1558,7 +1558,7 @@
 				</important>
 				<mediaobject>
 					<imageobject>
-						<imagedata scalefit="1" align="center" width="450" fileref="images/ch11_img076.png"/> <!-- TODO Update this picture -->
+						<imagedata scalefit="1" align="center" width="450" fileref="images/ch11_img076.png"/>
 					</imageobject>
 					<caption>
 						<para>Propagation</para>
@@ -1566,7 +1566,7 @@
 				</mediaobject>
 				<mediaobject>
 					<imageobject>
-						<imagedata scalefit="1" align="center" width="450" fileref="images/ch11_img077.png"/> <!-- TODO Update this picture -->
+						<imagedata scalefit="1" align="center" width="450" fileref="images/ch11_img077.png"/>
 					</imageobject>
 					<caption>
 						<para>Propagation: eventos de un nodo</para>
@@ -1574,7 +1574,7 @@
 				</mediaobject>
 				<mediaobject>
 					<imageobject>
-						<imagedata scalefit="1" align="center" width="450" fileref="images/ch11_img078.png"/> <!-- TODO Update this picture -->
+						<imagedata scalefit="1" align="center" width="450" fileref="images/ch11_img078.png"/>
 					</imageobject>
 					<caption>
 						<para>Propagation: detalle de interacción entre nodos</para>
@@ -1582,7 +1582,7 @@
 				</mediaobject>
 				<mediaobject>
 					<imageobject>
-						<imagedata scalefit="1" align="center" width="450" fileref="images/ch11_img079.png"/> <!-- TODO Update this picture -->
+						<imagedata scalefit="1" align="center" width="450" fileref="images/ch11_img079.png"/>
 					</imageobject>
 					<caption>
 						<para>Propagation: filtrar información a través del buscador</para>

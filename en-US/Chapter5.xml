@@ -35,7 +35,7 @@
 			<title>Malware</title>
 			<para>Malware module is a complete solution for detecting malicious files, IP addresses and URL addresses.
 				To do this, multiple detection engines are employed, along with reputation services that go beyond
-				signature-based policies and the like.
+				signature-based policies.
 			</para>
 			<!-- TODO
 			<para>Thanks to reputation tools and the use of sandboxing, we can obtain a broader analysis and the
@@ -49,11 +49,13 @@
 				that make of the redborder Malware scenario:
 			</para>
 			-->
-			<!-- TODO Add picture
+			<para>This module is disabled by default, to activate it run the following command from the console
+				interface: <emphasis role="bold">rb_set_modules.rb malware:1; rb_set_malware_mode.rb enable logstash;
+					rb_run_chef_once.sh</emphasis>
+			</para>
 			 <imageobject>
-					<imagedata scalefit="1" align="center" width="450" fileref="images/MALWARE TOPS"/>
+					<imagedata scalefit="1" align="center" width="450" fileref="images/ch06_img063.png"/>
 			 </imageobject>
- 			-->
 		</section>
 		<section>
 			<title>Traffic</title>

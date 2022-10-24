@@ -1557,7 +1557,7 @@
 					</para>
 					<mediaobject>
 						<imageobject>
-							<imagedata scalefit="1" align="center" width="450" fileref="images/ch11_img075.png"/> <!-- TODO Update this picture -->
+							<imagedata scalefit="1" align="center" width="450" fileref="images/ch11_img075.png"/>
 						</imageobject>
 						<caption>
 							<para>Show evolution</para>

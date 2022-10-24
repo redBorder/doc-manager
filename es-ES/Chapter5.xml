@@ -40,8 +40,6 @@
 			<para>Gracias a herramientas de reputación y el uso de sandboxing se puede obtener un análisis más amplio
 				y la posibilidad de calificar ficheros, direcciones de correo, direcciones IP y direcciones URL con el fin
 				de proteger los equipos que conforman su infraestructura de red.</para>
-			<para>Este módulo viene desactivado por defecto, para activarlo ejecute el siguiente comando desde la consola:
-				<emphasis role="bold">rb_set_modules.rb malware:1; rb_set_malware_mode.rb enable logstash; rb_run_chef_once.sh</emphasis></para>
 			<para>Para la captura de ficheros y la detección de amenazas, redborder Malware se apoya en el uso de
 				diferentes sondas capaces de bloquear en tiempo real la entrada de un fichero si este posee mala reputación.
 				Además, se ha desarrollado un agente para versiones del sistema operativo Microsoft Windows específico para
@@ -59,11 +57,12 @@
 				</listitem>
 			</itemizedlist>
 			-->
-			<!-- TODO Add picture
+			<para>Este módulo viene desactivado por defecto, para activarlo ejecute el siguiente comando desde la consola:
+				<emphasis role="bold">rb_set_modules.rb malware:1; rb_set_malware_mode.rb enable logstash; rb_run_chef_once.sh</emphasis>
+			</para>
 			 <imageobject>
-					<imagedata scalefit="1" align="center" width="450" fileref="images/MALWARE TOPS"/>
+					<imagedata scalefit="1" align="center" width="450" fileref="images/ch06_img063.png"/>
 			 </imageobject>
-			 -->
 		</section>
 		<section>
 			<title>Tráfico</title>
