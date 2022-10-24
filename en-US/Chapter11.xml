@@ -589,7 +589,8 @@
 		</section>
 		<section>
 			<title>Mail Gateway</title>
-			<para>Sensor through which mail traffic (SMTP) passes. It works as a simple MTA (Mail Traffic Agent). When the
+			<para>Mail Gateway sensor is one of the latest developments that comes with the 80-22 version of redBorder.
+				Sensor through which mail traffic (SMTP) passes. It works as a simple MTA (Mail Traffic Agent). When the
 				sensor receives an email, it forwards it to the corresponding mail server. In addition, it also sends to
 				the Manager a copy of the emails and their attachments including additional data. this sensor must be
 				registered in the Manager for its correct operation.

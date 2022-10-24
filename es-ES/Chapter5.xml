@@ -60,9 +60,14 @@
 			<para>Este módulo viene desactivado por defecto, para activarlo ejecute el siguiente comando desde la consola:
 				<emphasis role="bold">rb_set_modules.rb malware:1; rb_set_malware_mode.rb enable logstash; rb_run_chef_once.sh</emphasis>
 			</para>
-			 <imageobject>
-					<imagedata scalefit="1" align="center" width="450" fileref="images/ch06_img063.png"/>
-			 </imageobject>
+			<mediaobject>
+				 <imageobject>
+						<imagedata scalefit="1" align="center" width="450" fileref="images/ch06_img063.png"/>
+				 </imageobject>
+				<textobject>
+					<phrase>Módulo Malware</phrase>
+				</textobject>
+			</mediaobject>
 		</section>
 		<section>
 			<title>Tráfico</title>
