@@ -33,6 +33,11 @@
 			<para><literal>Configuración General</literal>: el usuario puede establecer la configuración general de parámetros del Manager, así como las Aplicaciones que ha registrado.</para>
 		</listitem>
 		<listitem>
+			<para><literal>Malware Settings</literal>: el usuario puede establecer la configuración general de parámetros
+				del módulo de Malware.
+			</para>
+		</listitem>
+		<listitem>
 			<para><literal>Reglas del Motor de Correlación</literal>: proporciona la lista de las reglas del cep. Aquí también podemos verificar las reglas existentes y crear otras nuevas.</para>
 		</listitem>
 		<listitem>
@@ -62,8 +67,13 @@
 		<listitem>
 			<para><literal>Usuarios</literal>: gestión de perfiles y permisos de usuario.</para>
 		</listitem>
+		<!--
 		<listitem>
-			<para><literal>Worker y cola de trabajo</literal>: mostrar los workers y trabajos activos y almacenados actuales en el Manager de Redborder.</para>
+			<para>Politicas de Yara <literal>(Yara Policies)</literal>: panel de gestión de políticas de reglas para el motor Yara.</para>
+		</listitem>
+		-->
+		<listitem>
+			<para><literal>Cola Tareas y Trabajadores</literal>: muestra los workers y trabajos activos y almacenados actuales en el Manager de Redborder.</para>
 		</listitem>
 	</itemizedlist>
 	<section>
@@ -504,7 +514,370 @@
 		</mediaobject>
 		<para>Para cada OID, la salida se almacenará en una variable que luego usaremos en la operación de OID. </para> <para> Una vez en este punto, solo tenemos que crear el monitor presionando el botón Crear. </para> <para> Para agregar el nuevo monitor a un dispositivo sensor, crearemos un nuevo sensor en la pestaña Sensor, seleccionando Monitor Device.</para>
 		</section>
-	</section>	
+	</section>
+	<section>
+		<title>Malware Settings</title>
+		<para>Todos los sensores y servicios que componen la solución redborder Malware se pueden configurar a nivel
+			raíz (root) desde la sección <literal>Herramientas -> Malware Settings.</literal>
+		</para>
+		<mediaobject>
+			<imageobject>
+				<imagedata scalefit="1" align="center" width="450" fileref="images/ch13_img001_malware_settings.png"/>
+			</imageobject>
+			<caption>
+				<para>Malware Settings</para>
+			</caption>
+		</mediaobject>
+		<warning>
+			<title>Advertencia</title>
+			<para>La configuración de los sensores Mail Gateway que se realice desde esta interfaz será aplicada de manera
+				automática a todos los elementos que se encuentren por debajo, por lo que si se desea realizar una
+				configuración más específica, el usuario deberá sobreescribir esta información accediendo al sensor
+				correspondiente en <literal>Sensors</literal> y seleccionado la opción "Edit" en el menú desplegado por
+				el icono "Edición".
+			</para>
+		</warning>
+		<mediaobject>
+			<imageobject>
+				<imagedata scalefit="1" align="center" width="450" fileref="images/ch11_img054.png"/>
+			</imageobject>
+			<caption>
+				<para>Configuración específica de los sensores Mail Gateway</para>
+			</caption>
+		</mediaobject>
+		<para>La interfaz de Malware Settings se compone de cinco apartados:</para>
+		<orderedlist numeration="arabic">
+			<listitem>
+				<para>General</para>
+			</listitem>
+			<listitem>
+				<para>Loaders</para>
+			</listitem>
+			<listitem>
+				<para>Mail Gateway</para>
+			</listitem>
+			<!-- TODO GRR
+			<listitem>
+				<para>GRR Server <footnote><para>Consultar este apartado en el capítulo correspondiente a EndPoint.</para></footnote></para>
+			</listitem>
+			-->
+			<!-- TODO EndPoints
+			<listitem>
+				<para>EndPoints</para>
+			</listitem>
+			-->
+			<!-- TODO ICAP
+			<listitem>
+				<para>ICAP</para>
+			</listitem>
+			-->
+			<listitem>
+				<para>Blacklist</para>
+			</listitem>
+			<listitem>
+				<para>Whitelist</para>
+			</listitem>
+		</orderedlist>
+		<section>
+			<title>General</title>
+			<para>En este apartado se indica el valor o "score" a partir del cual un fichero es considerado Malware.
+				Este valor aplicará sobre todos los sensores siempre y cuando estos no tengan una Filter Policy
+				configurada previamente<footnote><para>En caso de que se hayan creado Filter Policies, el score será
+					determinado del siguiente modo: <emphasis role="bold">Filter Policies -> Editar política -> Threshold
+						Configuration -> Score to consider element as Malware.</emphasis></para></footnote>.
+			</para>
+			<para>Se trata de un valor que es definido por el usuario para indicar el riesgo mayor o menos de intrusión
+				o peligro: a menor score, menor probabilidad de Malware, a mayor score, mayor probabilidad de Malware.
+				Este valor debe ser positivo para que sea considerado un score válido.
+			</para>
+			<mediaobject>
+				<imageobject>
+					<imagedata scalefit="1" align="center" width="450" fileref="images/ch13_img003_malware_settings.png"/>
+				</imageobject>
+				<caption>
+					<para>Malware Settings: Global Malware score threshold</para>
+				</caption>
+			</mediaobject>
+			<note>
+				<title>Nota</title>
+				<para>Los valores válidos para el score son los siguientes:</para>
+				<para>Malware: cualquier valor igual o mayor que el definido por el usuario. </para>
+				<para>-1: score desconocido</para>
+				<para>-2: objeto incluido en una whitelist</para>
+				<para>-3: objeto incluido en una blacklist</para>
+			</note>
+		</section>
+		<section>
+			<title>Loaders</title>
+			<para>El apartado <literal>Loaders</literal> (cargadores) está compuesto por dos subapartados:</para>
+			<itemizedlist mark="bullet">
+				<listitem>
+					<para>Loaders</para>
+				</listitem>
+				<listitem>
+					<para>API Keys <!-- and licenses/BrightCloud --></para>
+				</listitem>
+				<!-- TODO
+				<listitem>
+					<para>Cuckoo</para>
+				</listitem>
+				-->
+			</itemizedlist>
+			<para><emphasis role="bold">Loaders</emphasis></para>
+			<para>En este subapartado se define el peso otorgado a cada cargador de manera que la plataforma pueda realizar
+				una poderación entre todos los cargadores para obtener así el score total.
+			</para>
+			<para>El objetivo principal de este subapartado es que ecada usuario optimice los valores que aquí se indican
+				según sus necesidades.
+			</para>
+			<para>Cada componente tiene una serie de cargadores asociados cuyo peso se puede definir en cada una de las
+				pestañas que se muestran: Hash, URL e IP.
+			</para>
+			<mediaobject>
+				<imageobject>
+					<imagedata scalefit="1" align="center" width="450" fileref="images/ch13_img004_malware_settings.png"/>
+				</imageobject>
+				<caption>
+					<para>Cargadores: Loaders</para>
+				</caption>
+			</mediaobject>
+			<para>Los analizadores se reparten en tres secciones en función del tiempo requerido para el análisis:</para>
+			<itemizedlist mark="circle">
+				<listitem>
+					<para>Realtime: cargadores que obtienen información en tiempo real.</para>
+				</listitem>
+				<listitem>
+					<para>Fast Batch processing: cargadores de procesado rápido de lotes de información.</para>
+				</listitem>
+				<listitem>
+					<para>Slow Batch processing: cargadores de procesado lento de lotes de información.</para>
+				</listitem>
+			</itemizedlist>
+			<para><emphasis role="bold">API Keys <!-- and licenses/BrightCloud --></emphasis></para>
+			<para>En este apartado el usuario debe introducir las <!-- licencias y -->claves que le han sido
+				proporcionadas por los proveedores para la activación de los cargadores.
+			</para>
+			<!-- TODO Brightcloud
+			<para>En el caso de <emphasis>Brightcloud</emphasis> deberá introducir asimismo la información relativa a los diferentes parámetros proporcionados por Brightcloud en la compra de la licencia:</para>
+			<itemizedlist mark="bullet">
+				<listitem>
+					<para>OEM</para>
+				</listitem>
+				<listitem>
+					<para>Device (dispositivo)</para>
+				</listitem>
+				<listitem>
+					<para>UID</para>
+				</listitem>
+			</itemizedlist>
+			-->
+			<mediaobject>
+				<imageobject>
+					<imagedata scalefit="1" align="center" width="450" fileref="images/ch13_img005_malware_settings.png"/>
+				</imageobject>
+				<caption>
+					<para>API Keys <!-- and licenses/BrightCloud --></para>
+				</caption>
+			</mediaobject>
+			<!-- TODO Cuckoo
+			<para><emphasis role="bold">Cuckoo</emphasis></para>
+			<para>En este apartado se indican los tipos de ficheros que se excluirán del análisis de Cuckoo, pero sí por el resto de cargadores. Aquellos cuya casilla no haya sido activada serán analizados por este cargador.</para>
+			<mediaobject>
+				<imageobject>
+					<imagedata scalefit="1" align="center" width="450" fileref="images/ch13_img006_malware_settings.png"/>
+				</imageobject>
+				<caption>
+					<para>Cuckoo</para>
+				</caption>
+			</mediaobject>
+			-->
+		</section>
+		<section>
+			<title>Mail Gateway</title>
+			<para>En este apartado el usuario puede realizar la configuración general de los sensores Mail Gateway.
+				Para realizar una configuración específica en alguno de los sensores, deberá sobreescribir esta información
+				en <literal>Sensors (sensores Mail Gateway -> Edit)</literal>.
+			</para>
+			<mediaobject>
+				<imageobject>
+					<imagedata scalefit="1" align="center" width="450" fileref="images/ch13_img007_malware_settings.png"/>
+				</imageobject>
+				<caption>
+					<para>Malware Settings: Mail Gateway </para>
+				</caption>
+			</mediaobject>
+			<para>El usuario puede definir los valores que se van a tomar como referencia para regular el comportamiento
+				de los sensores Mail Gateway para la identificación del riesgo de intrusión y/o peligro de propagación
+				de Malware.
+			</para>
+			<para>Este apartado se encuentra dividido en dos subsecciones:</para>
+			<orderedlist numeration="arabic">
+				<listitem>
+					<para>Relay Domain</para>
+				</listitem>
+				<listitem>
+					<para>Default Values</para>
+				</listitem>
+			</orderedlist>
+			<para><emphasis role="bold">Default Relay Domain</emphasis></para>
+			<para>En este apartado se debe indicar cuál va ser el dominio que será gestionado por los sensores Mail
+				Gateway por defecto. Para que este valor quede guardado se deberá actualizar la configuración mediante
+				<literal>Update settings</literal>.
+			</para>
+			<para><emphasis role="bold">Default values</emphasis></para>
+			<para>El usuario puede indicar una serie de valores por defecto que estarán relacionados con el comportamiento
+				de los sensores para la detección de Malware:
+			</para>
+			<itemizedlist mark="bullet">
+				<listitem>
+					<para><emphasis role="bold">Relay Host:</emphasis> Especificar la IP del servidor de correo final.</para>
+				</listitem>
+				<listitem>
+					<para><emphasis role="bold">Message Size Limit:</emphasis> Definir el tamaño máximo de los mensajes
+						que se pueden recibir.
+					</para>
+				</listitem>
+				<listitem>
+					<para><emphasis role="bold">Max Paralell Process:</emphasis> Indicar el número máximo de procesos en
+						paralelo que trata el Mail Gateway.
+					</para>
+				</listitem>
+				<listitem>
+					<para><emphasis role="bold">API timeout (seconds):</emphasis> Definir el tiempo máximo de espera
+						para la obtención de un score válido por parte de la caché remota.
+					</para>
+				</listitem>
+				<listitem>
+					<para><emphasis role="bold">Email detained timeout (seconds):</emphasis> En este campo se indica el
+						tiempo máximo de espera para la obtención de un score válido por parte de la caché remota.
+						Superado este tiempo el fichero se dejará pasar.
+					</para>
+				</listitem>
+				<listitem>
+					<para><emphasis role="bold">Quarantine timeout (days):</emphasis> Configurar los días que han de
+						pasar desde que un fichero identificado como Malware es bloqueado y retenido hasta que se define
+						una acción para gestionarlo. Si no se realiza ninguna acción o se supera el tiempo indicado el
+						fichero es descartado.
+					</para>
+				</listitem>
+				<listitem>
+					<para><emphasis role="bold">Cache Sync (hours) (minutes):</emphasis> Indicar el tiempo máximo que
+						debe pasar para la sincronización de la caché local y remota. Valor en horas y en minutos.
+					</para>
+				</listitem>
+				<listitem>
+					<para><emphasis role="bold">Maximum number of stored log files:</emphasis> Delimitar el tiempo máximo
+						que el fichero permancerá almacenado en el histórico de correos.
+					</para>
+				</listitem>
+			</itemizedlist>
+			<note>
+				<title>Nota</title>
+				<para>El score que se obtiene mediante la consulta de la caché remota es la media de los resultados
+					obtenidos tras la consulta de diversas fuentes externas como Virustotal o Metadefender.
+				</para>
+				<para>Los valores válidos para el score son los siguientes:</para>
+				<para>Malware: cualquier valor igual o mayor que el definido por el usuario.</para>
+				<para>-1: score desconocido</para>
+				<para>-2: objeto incluido en una whitelist</para>
+				<para>-3: objeto incluido en una blacklist</para>
+			</note>
+		</section>
+		<!-- TODO EndPoints
+		<section>
+			<title>EndPoints</title>
+			<para>En este apartado el usuario puede fijar la periodicidad de descarga de las capturas o informes de
+			Cambios de Estado cuyos archivos puede descargar en <literal>Malware -> Vista-State Changes.</literal>
+			</para>
+			<mediaobject>
+				<imageobject>
+					<imagedata scalefit="1" align="center" width="450" fileref="images/ch08_img019.png"/>
+				</imageobject>
+				<caption>
+					<para>Periodicidad descarga Snapshots</para>
+				</caption>
+			</mediaobject>
+		</section>
+		<section>
+			<title>Proxy ICAP</title>
+			<para>Es posible indicar el tamaño máximo de los ficheros (MB) que van a ser enviados a S3. Los ficheros que
+			 superen dicho tamaño no serán enviados para su almacenamiento.
+			 </para>
+			<mediaobject>
+				<imageobject>
+					<imagedata scalefit="1" align="center" width="450" fileref="images/ch07_img001.png"/>
+				</imageobject>
+				<caption>
+					<para>Tools -> Malware Settings -> ICAP</para>
+				</caption>
+			</mediaobject>
+		</section>
+		-->
+		<section>
+			<title>Blacklist</title>
+			<para>En este apartado el usuario puede crear un listado de aquellos ficheros (Hash), URLs o IPs que se
+			consideran fiables, y por tanto, no deben ser bloqueados.
+			</para>
+			<para>Para indicar el tipo de objeto que se desea bloquear, es necesario seleccionar la pestaña correspondiente
+			 e introducir el valor del fichero, IP o URL mediante la opción <literal>+ Add (Hash, URL, IP).</literal>
+			</para>
+			<para>Una vez se ha insertado esta información, al seleccionar la opción <literal>Add to blacklist</literal>
+			 el nuevo objeto se incorporará al listado de objetos bloqueados: Blacklisted Hashes, Blacklisted URLs o
+				Blacklisted IPs.
+			</para>
+			<para><literal>Search:</literal> El usuario puede utilizar el buscador para localizar un objeto bloqueado
+				de manera rápida.
+			</para>
+			<para><literal>Download CSV:</literal> Descarga del listado de los objetos bloqueados en formato .csv.</para>
+			<mediaobject>
+				<imageobject>
+					<imagedata scalefit="1" align="center" width="450" fileref="images/ch13_img008_malware_settings.png"/>
+				</imageobject>
+				<caption>
+					<para>Blacklist</para>
+				</caption>
+			</mediaobject>
+			<para><emphasis role="bold">Excluir un objeto de una blacklist e incluirlo en una whitelist</emphasis></para>
+			<para>Es posible que tras su análisis el usuario considere que un determinado objeto no debe ser bloqueado
+				y se debe permitir su acceso a la red en todos los casos. Para ello, basta con posar el ratón encima de
+				dicho objeto y al hacer clic seleccione la opción <literal>Move to whitelist.</literal> También se puede
+				eliminar ese objeto de la lista mediante la opción <literal>Remove</literal> que aparece en el mismo submenú.
+			</para>
+		</section>
+
+		<section>
+			<title>Whitelist</title>
+			<para>En este apartado el usuario puede crear un listado de aquellos ficheros (Hash), URLs o IPs que deben
+				ser bloqueados de manera automática por la plataforma.
+			</para>
+			<para>Para indicar el tipo de objeto que se desea añadir a la whitelist es necesario seleccionar la pestaña
+				correspondiente e introducir el valor del fichero, IP o URL mediante la opción
+				<literal>+ Add (Hash, URL, IP)</literal>.
+			</para>
+			<para>Una vez se ha insertado esta información, al seleccionar la opción <literal>Add to whitelist</literal>
+				el nuevo objeto se incorporará al listado de objetos bloqueados: Whitelisted Hashes, Whitelisted URLs o
+				Whitelisted IPs.
+			</para>
+			<para><literal>Search:</literal> El usuario puede utilizar el buscador para localizar un objeto bloqueado de
+				manera rápida.
+			</para>
+			<para><literal>Download CSV:</literal> Descarga del listado de los objetos bloqueados en formato .csv.</para>
+			<mediaobject>
+				<imageobject>
+					<imagedata scalefit="1" align="center" width="450" fileref="images/ch13_img009_malware_settings.png"/>
+				</imageobject>
+				<caption>
+					<para>Whitelist</para>
+				</caption>
+			</mediaobject>
+			<para><emphasis role="bold">Excluir un objetos de una whitelist e incluirlo en una blacklist</emphasis></para>
+			<para>Es posible que tras su análisis el usuario considere que un determinado objeto debe ser bloqueado e
+				impedir su acceso a la red en todos los casos. Para ello, basta con posar el ratón encima de dicho objeto
+				y al hacer clic seleccionar la opción <literal>Move to blacklist</literal>. También se puede eliminar ese
+				objeto de la lista mediante la opción <literal>Remove</literal> que aparece en el mismo submenú.
+			</para>
+		</section>
+	</section>
 	<section>
 		<title>Licencias</title>
 		<para>A través de esta opción, el usuario puede verificar qué nodos tienen sus licencias vencidas. Del mismo modo, es posible cargar una nueva licencia o solicitar una nueva..</para>

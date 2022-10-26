@@ -16,6 +16,12 @@
 		<para> Depending on the Apps that are integrated in the platform, the user will see one or other options in the menu bar. The Apps that are available in this new version of redborder are the following:</para>
 		<itemizedlist mark = "bullet">
 			<listitem>
+				<para>Business Intelligence</para>
+			</listitem>
+			<listitem>
+				<para>Malware</para>
+			</listitem>
+			<listitem>
 				<para>Traffic</para>
 			</listitem>
 			<listitem>

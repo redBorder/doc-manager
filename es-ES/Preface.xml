@@ -65,7 +65,7 @@
 	</section>
 	<section>
 		<title>Versiones de software de redBorder Manager </title>
-		<para>Este documento aborda la instalación de la versión del Manager redBorder que incluye las siguientes versiones de software:</para>
+		<para>Este documento aborda la instalación de la versión del Manager redBorder que incluye las siguientes versiones de software:</para> <!-- TODO -->
 		<itemizedlist mark="bullet">
 			<listitem>
 				<para>Apache Zookeeper 3.4.6</para>

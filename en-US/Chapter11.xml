@@ -1,20 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE chapter PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd" [
-<!ENTITY % BOOK_ENTITIES SYSTEM "manual.ent">
-<!ENTITY PRODUCT "Documentation">
-<!ENTITY BOOKID "manual">
-<!ENTITY YEAR "2022">
-<!ENTITY HOLDER "Eneo Tecnología S.L. |">
-]>
+				<!ENTITY % BOOK_ENTITIES SYSTEM "manual.ent">
+				<!ENTITY PRODUCT "Documentation">
+				<!ENTITY BOOKID "manual">
+				<!ENTITY YEAR "2022">
+				<!ENTITY HOLDER "Eneo Tecnología S.L. |">
+				]>
 
 <chapter>
 	<title>Sensors</title>
 	<para>In <literal>Sensors</literal>the user can make queries, manage and make configurations of their network
-	infrastructure through the creation and edition of domains and sensors. There are many views that
-	offer the possibility to make different actions on their network elements.</para>
+		infrastructure through the creation and edition of domains and sensors. There are many views that
+		offer the possibility to make different actions on their network elements.</para>
 	<para><literal>Sensors</literal> is available in the top right margin of the header menu, next to <emphasis role="bold">Tools</emphasis> section and User's
-	Area. This menu area is named as <emphasis role="bold">Configuration zone,</emphasis> because unlike the options available in the top left margin (Analysis), these allow the complete management and configuration of the Manager
-	and sensors: rules policies, alarms, cluster configuration or user's management, among other actions.</para>
+		Area. This menu area is named as <emphasis role="bold">Configuration zone,</emphasis> because unlike the options available in the top left margin (Analysis), these allow the complete management and configuration of the Manager
+		and sensors: rules policies, alarms, cluster configuration or user's management, among other actions.</para>
 	<section>
 		<title>Sensors: menu and options</title>
 		<para>The organization of this sections is very similar (in terms of structure) to the other parts of the web. We can find in this case:</para>
@@ -30,16 +30,16 @@
 			</listitem>
 			<listitem>
 				<para><emphasis role="bold">Main area:</emphasis> the information that is shown in this area depends on the selected <literal>View.</literal> There are four
-				available views in order to visualize our network infrastructure:</para>
+					available views in order to visualize our network infrastructure:</para>
 				<para><literal>Tree</literal>: list with the different levels that compose the network infrastructure classified by dependency
-				and hierarchy. Alongside each element are two icons for editing and deleting actions. This is the
-				view that is displayed by default. </para>
+					and hierarchy. Alongside each element are two icons for editing and deleting actions. This is the
+					view that is displayed by default. </para>
 				<para><literal>Map</literal>: locate the domains and sensors over a map.</para>
 				<para><literal>Access Points</literal>: direct access to the visualization of the deployed Access Points.</para>
 				<para><literal>Sensors: </literal> in the <literal>View</literal> the user can find a list of available sensors depending on the Apps
-				included in your license. Click on the sensor you want to check for view an alphabetic list of all the
-				sensors associated with this App.</para>
-			</listitem>		
+					included in your license. Click on the sensor you want to check for view an alphabetic list of all the
+					sensors associated with this App.</para>
+			</listitem>
 		</itemizedlist>
 		<mediaobject>
 			<imageobject>
@@ -52,13 +52,13 @@
 		<note>
 			<title>Note</title>
 			<para>Each view has its own options menu and the different possibilities of creation and edition of the
-			sensors or domains.</para>
+				sensors or domains.</para>
 			<para>Map view hasn't any available option.</para>
 		</note>
 	</section>
 	<section>
 		<title>Options</title>
-		<para>Here are the options available in the Sensors section. They can be selected from the <emphasis role="bold">Options</emphasis> and from the options shown by clicking "Edit"both domain level and sensor level.</para>
+		<para>Here are the options available in the Sensors section. They can be selected from the <emphasis role="bold">Options</emphasis> and from the options shown by clicking "Edit" both domain level and sensor level.</para>
 		<itemizedlist>
 			<listitem><para>Import Tree</para>
 				<para>This option allows to import your network infrastructure through the uploading of a file to redBorder
@@ -70,7 +70,7 @@
 					<caption>
 						<para>Import Tree</para>
 					</caption>
-				</mediaobject>	
+				</mediaobject>
 				<para>There are two ways to import tree:</para>
 				<orderedlist numeration="arabic">
 					<listitem>
@@ -87,7 +87,7 @@
 					<caption>
 						<para>Import/Export tree from Options menu</para>
 					</caption>
-				</mediaobject>		
+				</mediaobject>
 			</listitem>
 			<listitem><para>Export Tree</para>
 				<para>This option allows to export a tree and is within easy reach for other applications. User will download a
@@ -104,7 +104,7 @@
 					<caption>
 						<para>Export Tree</para>
 					</caption>
-				</mediaobject>			
+				</mediaobject>
 			</listitem>
 			<listitem><para>Wakeup Chef Cluster</para></listitem>
 			<listitem><para>Cluster data</para>
@@ -116,13 +116,13 @@
 					</listitem>
 				</itemizedlist>
 			</listitem>
-		</itemizedlist>		
+		</itemizedlist>
 	</section>
 	<section>
 		<title>View</title>
 		<para>When the user access to the <literal>Sensors</literal> section can find a list (Tree view) in which the domains and
-		sensors that are a part of their network infrastructure are shown. In this point we are going to review
-		each view and the actions available.</para>
+			sensors that are a part of their network infrastructure are shown. In this point we are going to review
+			each view and the actions available.</para>
 		<mediaobject>
 			<imageobject>
 				<imagedata scalefit="1" width="450" align="center" fileref="images/ch11_img002.png"/>
@@ -134,8 +134,8 @@
 		<section>
 			<title>Tree view</title>
 			<para><literal>Tree</literal> view is shown by default in the <literal>Sensors</literal> section.
-			It is a list with the different levels that compose
-			the network infrastructure classified by dependency and hierarchy. </para>
+				It is a list with the different levels that compose
+				the network infrastructure classified by dependency and hierarchy. </para>
 			<mediaobject>
 				<imageobject>
 					<imagedata scalefit="1" align="center" width="450" fileref="images/ch11_img003.png"/>
@@ -145,10 +145,10 @@
 				</caption>
 			</mediaobject>
 			<para>From this view, the user can add a new domain or sensor, delete the existing, access to other views,
-			import and export the tree as well as direct editing of all the domains and sensors that are a part of the
-			list.</para>
+				import and export the tree as well as direct editing of all the domains and sensors that are a part of the
+				list.</para>
 			<para>Every element that is shown in the tree has two icons: Edit and Delete. (The same icons work in tree
-			and sensors view):</para>
+				and sensors view):</para>
 			<mediaobject>
 				<imageobject>
 					<imagedata scale="100" align="center" fileref="images/ch11_img004b.png"/>
@@ -160,17 +160,17 @@
 			<note>
 				<title>Note</title>
 				<para>The options in the <emphasis role="bold">Edit menu</emphasis> can change depending on if we are consulting the infrastructure at
-				domain or at sensor level.</para>
+					domain or at sensor level.</para>
 			</note>
 			<warning>
 				<title>Warning</title>
 				<para><emphasis role="bold">Some sensors can't be deleted.</emphasis></para>
 				<para>In these cases, the "Delete" icon will appear colored in grey.
-				Before the domain or sensor will be deleted, the system will show you a pop-up screen with
-				a warning message.</para>
+					Before the domain or sensor will be deleted, the system will show you a pop-up screen with
+					a warning message.</para>
 				<para> All the users and descendants assigned to this domain or sensor will be
-				disable and assigned to the parents of this domain or root domain. The user with Administrator
-				role should activate user's permissions from <emphasis>Tools>Users section.</emphasis></para>
+					disable and assigned to the parents of this domain or root domain. The user with Administrator
+					role should activate user's permissions from <emphasis>Tools>Users section.</emphasis></para>
 			</warning>
 			<mediaobject>
 				<imageobject>
@@ -180,9 +180,9 @@
 					<para>Confirm the deleting of the sensor</para>
 				</caption>
 			</mediaobject>
-			<para>In case that <emphasis role="bold">IPS/IDS sensors</emphasis> have been registered an icon with the type of policy it has will be shown.</para> 
+			<para>In case that <emphasis role="bold">IPS/IDS sensors</emphasis> have been registered an icon with the type of policy it has will be shown.</para>
 			<para>Click on this icon to access the interface for this policy and from which we can perform
-			some different actions.</para>
+				some different actions.</para>
 			<mediaobject>
 				<imageobject>
 					<imagedata scale="100" align="center" fileref="images/ch11_img004c.png"/>
@@ -214,8 +214,8 @@
 				<itemizedlist mark="bullet">
 					<listitem>
 						<para><emphasis role="bold">Domain:</emphasis> containers which may include sensors, group of sensors, etc.
-						Domain level shows us the domain name and allows us to add a description. It is possible to classify
-						them according to their nature (organizational, spacial, etc.); each one will have an identifying icon:.</para>		
+							Domain level shows us the domain name and allows us to add a description. It is possible to classify
+							them according to their nature (organizational, spacial, etc.); each one will have an identifying icon:.</para>
 					</listitem>
 					<listitem>
 						<para><emphasis>Generic</emphasis></para>
@@ -246,93 +246,93 @@
 					</listitem>
 					<listitem>
 						<para><emphasis role="bold">Sensors:</emphasis> end nodes that correspond with physical elements placed on the network (switches,
-						routers, IPS, etc.).</para>
+							routers, IPS, etc.).</para>
 						<para>The information in sensor level is: sensor name, IP, policy (IPS sensors), last check and version. It
-						is possible to add a description to the sensor.</para>
+							is possible to add a description to the sensor.</para>
 					</listitem>
 				</itemizedlist>
 				<note>
 					<title>Note</title>
 					<para>Note that to create IPS sensors you must do that through the registration of the sensors in the
-					Manager in the Manager Installation process. From this section you can edit and overwrite the
-					parameters that they have inherited from <literal>Tools->General Settings</literal></para>
+						Manager in the Manager Installation process. From this section you can edit and overwrite the
+						parameters that they have inherited from <literal>Tools->General Settings</literal></para>
 					<para>The sensors of the rest of the Apps can be created from <literal>Sensors section</literal>.</para>
-				</note>		
+				</note>
 				<para><emphasis role="bold">Configuration inheritance</emphasis></para>
 				<para>In <emphasis role="bold">Tools</emphasis> section we find General Settings option from which the user can define general parameters of the Manager and Apps.</para>
 				<para>This is the maximum level of configuration (it acts as root domain) therefore, the properties defined
-				here will be inherited by domains and sensors that fall below this level.</para>
+					here will be inherited by domains and sensors that fall below this level.</para>
 				<para>When a domain or sensor is created or it is edited for the first time, we can observe that some
-				parameters have the tag "Inherited", it means that they have inherited the values from General
-				Settings. Overwrite this information in case that you want to change it.</para>
+					parameters have the tag "Inherited", it means that they have inherited the values from General
+					Settings. Overwrite this information in case that you want to change it.</para>
 				<para>The domains and sensors that fall below the level of the element overwritten, inherit again, the
-				properties applied to this element.</para>
+					properties applied to this element.</para>
 			</section>
-				<section>
-					<title>Monitors</title>
-					<note>
-						<title>Note</title>
-						<para>This option is only available in the Edit icon menu (sensor level).</para>
-					</note>
-					<para>Click on sensor's Edit icon and select <literal>Monitor</literal> option.
-					 Then, we can see a list with the monitoring metrics using for monitor the sensor status at different levels. Technology column indicates the origin from where the data is collected.</para>
-					 <mediaobject>
-						<imageobject>
-							<imagedata scalefit="1" align="center" width="450" fileref="images/ch11_img009.png"/>
-						</imageobject>
-						<caption>
-							<para>Monitors edit icon</para>
-						</caption>
-					</mediaobject>
-					<para>These are the available actions for controlling the satus of the sensor: </para>
-					<itemizedlist mark="bullet">
-						<listitem>
-							<para><emphasis role="bold">Restore default:</emphasis> applies default metrics that are included in sensors creation.</para>
-						</listitem>
-						<listitem>
-							<para><emphasis role="bold">Add monitor:</emphasis> shows available metrics. (<literal>+Add Monitor</literal>)</para>
-						</listitem>
-						<listitem>
-							<para><emphasis role="bold">Delete monitor:</emphasis> delete the metric applied.</para>
-						</listitem>
-					</itemizedlist>	
-					<mediaobject>
-						<imageobject>
-							<imagedata scalefit="1" align="center" width="450" fileref="images/ch11_img010.png"/>
-						</imageobject>
-						<caption>
-							<para>Monitors</para>
-						</caption>	
-					</mediaobject>	
-					<mediaobject>
-						<imageobject>
-							<imagedata scalefit="1" align="center" width="300" fileref="images/ch11_img010b.png"/>
-						</imageobject>
-						<caption>
-							<para>Add Monitor: available metrics</para>
-						</caption>	
-					</mediaobject>	
+			<section>
+				<title>Monitors</title>
+				<note>
+					<title>Note</title>
+					<para>This option is only available in the Edit icon menu (sensor level).</para>
+				</note>
+				<para>Click on sensor's Edit icon and select <literal>Monitor</literal> option.
+					Then, we can see a list with the monitoring metrics using for monitor the sensor status at different levels. Technology column indicates the origin from where the data is collected.</para>
+				<mediaobject>
+					<imageobject>
+						<imagedata scalefit="1" align="center" width="450" fileref="images/ch11_img009.png"/>
+					</imageobject>
+					<caption>
+						<para>Monitors edit icon</para>
+					</caption>
+				</mediaobject>
+				<para>These are the available actions for controlling the satus of the sensor: </para>
+				<itemizedlist mark="bullet">
+					<listitem>
+						<para><emphasis role="bold">Restore default:</emphasis> applies default metrics that are included in sensors creation.</para>
+					</listitem>
+					<listitem>
+						<para><emphasis role="bold">Add monitor:</emphasis> shows available metrics. (<literal>+Add Monitor</literal>)</para>
+					</listitem>
+					<listitem>
+						<para><emphasis role="bold">Delete monitor:</emphasis> delete the metric applied.</para>
+					</listitem>
+				</itemizedlist>
+				<mediaobject>
+					<imageobject>
+						<imagedata scalefit="1" align="center" width="450" fileref="images/ch11_img010.png"/>
+					</imageobject>
+					<caption>
+						<para>Monitors</para>
+					</caption>
+				</mediaobject>
+				<mediaobject>
+					<imageobject>
+						<imagedata scalefit="1" align="center" width="300" fileref="images/ch11_img010b.png"/>
+					</imageobject>
+					<caption>
+						<para>Add Monitor: available metrics</para>
+					</caption>
+				</mediaobject>
 			</section>
 		</section>
 	</section>
 	<section>
 		<title>Map view</title>
 		<para>In this view, the user can see where the domains and sensors are located. It is possible to <emphasis role="bold">add a new location,</emphasis> both for a new domain/sensor and for an
-		existing one.</para>
+			existing one.</para>
 		<mediaobject>
 			<imageobject>
-				<imagedata scalefit="1" align="center" width="450" fileref="images/ch11_img012.png"/>					
+				<imagedata scalefit="1" align="center" width="450" fileref="images/ch11_img012.png"/>
 			</imageobject>
-				<caption>
-					<para>Map view</para>
-				</caption>
+			<caption>
+				<para>Map view</para>
+			</caption>
 		</mediaobject>
 		<para><emphasis role="bold">Add location</emphasis></para>
 		<para>To add a sensor to Map view it’s necessary to add first a location in the domain or sensor editing
-		interface that has been selected.</para>
-        <para>For this, you can edit them when you add a new one <literal>(+Add Sensor/Domain)</literal> or by editing an existing one using the Edit icon.
-		In both cases you will find a paragraph called Location in which a Map is shown; you can find the
-		desired location or point by clicking on the map. Then select <literal>+Add Location tab.</literal></para>
+			interface that has been selected.</para>
+		<para>For this, you can edit them when you add a new one <literal>(+Add Sensor/Domain)</literal> or by editing an existing one using the Edit icon.
+			In both cases you will find a paragraph called Location in which a Map is shown; you can find the
+			desired location or point by clicking on the map. Then select <literal>+Add Location tab.</literal></para>
 		<mediaobject>
 			<imageobject>
 				<imagedata scalefit="1" align="center" width="400" fileref="images/ch11_img014.png"/><!--Cambiar captura por una de redborder 11, 13, 14, 17, 18, 18b, 18c-->
@@ -349,19 +349,19 @@
 			<caption>
 				<para>Define coordinates to add a location for a sensor or domain</para>
 			</caption>
-		</mediaobject>			
+		</mediaobject>
 	</section>
 	<section>
 		<title>View Access Points</title>
 		<para>Access Points (AP) are access points of the network infrastructure which are associated with a
-		location. The Access Points depend on the Flow App and apply to both the domain level, as well as
-		the sensors.</para>
+			location. The Access Points depend on the Flow App and apply to both the domain level, as well as
+			the sensors.</para>
 		<para>This is another way to display your network infrastructure, through the distribution of the APs per
-		domain, and you can also view the status of each AP. You can access the display or create access
-		points in two different ways:</para>
+			domain, and you can also view the status of each AP. You can access the display or create access
+			points in two different ways:</para>
 		<itemizedlist mark="bullet">
 			<listitem>
-				<para>View->Access Points</para>				
+				<para>View->Access Points</para>
 			</listitem>
 			<listitem>
 				<para>Edit icon to sensor/domain level->Edit: View Access Points (located in the submenu upper right side).</para>
@@ -378,14 +378,14 @@
 		<note>
 			<title>Note</title>
 			<para>To find out which level you are, you can check the shipping route in the upper left margin. You
-			can browse through the different screens by clicking on any of the items of the route.</para>
+				can browse through the different screens by clicking on any of the items of the route.</para>
 		</note>
 		<para>The submenu of this interface shows a series of buttons similar to those on the main screen
-		<emphasis role="bold">Sensors.</emphasis> The actions you can perform from this screen are as follows (these vary depending on
-		whether it is consulting a domain or sensor level):</para>
+			<emphasis role="bold">Sensors.</emphasis> The actions you can perform from this screen are as follows (these vary depending on
+			whether it is consulting a domain or sensor level):</para>
 		<itemizedlist mark="bullet">
 			<listitem>
-				<para><literal>Show Map</literal>/ <literal>Show Floors</literal>: 
+				<para><literal>Show Map</literal>/ <literal>Show Floors</literal>:
 					shows the geographical distribution of access points or its plant location
 					in the case we are consulting a domain Floor with more than a floor level.</para>
 			</listitem>
@@ -393,8 +393,8 @@
 				<para><literal>Edit (sensor name or domain):</literal> we return to the editing screen for the domain or sensor.</para>
 			</listitem>
 			<listitem>
-				<para><literal>Options->Export Access Points/ Delete All Access Points.</literal>: 
-				allows you to export all Access Points to a .csv file or delete all the Access Points defined for that localization.</para>
+				<para><literal>Options->Export Access Points/ Delete All Access Points.</literal>:
+					allows you to export all Access Points to a .csv file or delete all the Access Points defined for that localization.</para>
 			</listitem>
 			<listitem>
 				<para><literal>+Add sensors</literal>: add sensors to the domain we are consulting. </para>
@@ -439,16 +439,16 @@
 		<mediaobject>
 			<imageobject>
 				<imagedata scalefit="1" align="center" width="450" fileref="images/ch11_img019.png"/>
-		</imageobject>
+			</imageobject>
 			<caption>
 				<para>Add a new AP zone</para>
 			</caption>
 		</mediaobject>
-	</section>	
+	</section>
 	<section>
-		<title>Add a new domain</title>	
-		<para>Select option <literal>+Add Domain</literal> which is located in the upper right submenu, choose the type of domain you want to add, 
-		and then fill out the required fields (these vary depending on the type of domain to be created).</para>
+		<title>Add a new domain</title>
+		<para>Select option <literal>+Add Domain</literal> which is located in the upper right submenu, choose the type of domain you want to add,
+			and then fill out the required fields (these vary depending on the type of domain to be created).</para>
 		<mediaobject>
 			<imageobject>
 				<imagedata scalefit="1" align="center" width="450" fileref="images/ch11_img021.png"/>
@@ -466,13 +466,13 @@
 			</caption>
 		</mediaobject>
 		<para>From this moment, the rest of the information associated with the domain will need to be modified by
-		clicking the edit button to the right of each domain in the tree view, or <literal>Access Points</literal> and selecting the option <literal>Edit</literal>.</para>
+			clicking the edit button to the right of each domain in the tree view, or <literal>Access Points</literal> and selecting the option <literal>Edit</literal>.</para>
 	</section>
 	<section>
 		<title>Edit a domain</title>
 		<para>From this interface you can modify the settings of an existing domain, and enter the information of a newly created domain.</para>
-		<para>To access this screen the user must click the edit button to the right of the domain you want to edit from the tree view or <literal>Access Points</literal> 
-		and select the option<literal>Edit</literal>.</para>
+		<para>To access this screen the user must click the edit button to the right of the domain you want to edit from the tree view or <literal>Access Points</literal>
+			and select the option<literal>Edit</literal>.</para>
 		<mediaobject>
 			<imageobject>
 				<imagedata scalefit="1" align="center" width="450" fileref="images/ch11_img023.png"/>
@@ -484,23 +484,23 @@
 		<para>This is the general data that we can modify for the domains. However, depending on the type of domain selected, one of these fields will appear:</para>
 		<itemizedlist mark="bullet">
 			<listitem>
-				<para><emphasis role="bold">General:</emphasis> Displays general information of the sensor. Name (not editable from the Web), type of domain-select the domain type in the box) 
-				and description.</para>	
+				<para><emphasis role="bold">General:</emphasis> Displays general information of the sensor. Name (not editable from the Web), type of domain-select the domain type in the box)
+					and description.</para>
 			</listitem>
 			<listitem>
 				<para><emphasis role="bold">Servers:</emphasis> In this section the user can define the configuration of the Proxy and Syslog servers. All
-				values shown are inherited by default. Overwrite if necessary.</para>	
+					values shown are inherited by default. Overwrite if necessary.</para>
 			</listitem>
 			<listitem>
 				<para><emphasis role="bold">Location:</emphasis> Locate the sensor/domain on a world map. This location will be displayed in the view
-				Map. </para>	
+					Map. </para>
 			</listitem>
-		</itemizedlist>			
-	</section>	
+		</itemizedlist>
+	</section>
 	<section>
 		<title>Add a sensor</title>
 		<para>Among the submenu options, we find <literal>+Add Sensor.</literal> In the dropdown menu they show the different
-		sensors available to add to the network infrastructure.</para>
+			sensors available to add to the network infrastructure.</para>
 		<para>Select the type of sensor in the drop-down menu, and then complete the information requested.</para>
 		<para>It is also possible to claim a sensor from a remote proxy by using the option in the drop-down menu and entering the UUID of the sensor.</para>
 		<mediaobject>
@@ -517,58 +517,61 @@
 			<para>The user can organize its sensor infrastructure in any moment, dragging and dropping the sensor in the level they want to place it in.</para>
 			<para><emphasis role="bold">The sensor automatically inherits the properties of the root domain</emphasis> (policies, operating mode, Snort variables, etc.).</para>
 		</important>
-	</section>	
+	</section>
 	<section>
-		<title>Sensor types and Monitor device configuration</title>
+		<title>Sensor types and devices configuration</title>
 		<para>In the sensor section of a redBorder manager, the user can find the different types of sensors, each one performs a different function:</para>
 		<itemizedlist mark="bullet">
 			<listitem>
-				<para><literal>Flow</literal>: For monitoring and supervision of the data traffic received.</para>			
+				<para><literal>Flow</literal>: For monitoring and supervision of the data traffic received.</para>
 			</listitem>
 			<listitem>
-				<para><literal>MSE</literal>: To provide services related to mobility</para>			
+				<para><literal>MSE</literal>: To provide services related to mobility</para>
 			</listitem>
 			<listitem>
-				<para><literal>Meraki</literal>: Specific sensor desinged to integrate the Cisco Meraki solution.</para>			
+				<para><literal>Meraki</literal>: Specific sensor desinged to integrate the Cisco Meraki solution.</para>
 			</listitem>
 			<listitem>
-				<para><literal>Aruba ALE</literal>: To collect data from Wi-Fi networks enabled mobile devices (protecting personal privacy).</para>			
+				<para><literal>Aruba ALE</literal>: To collect data from Wi-Fi networks enabled mobile devices (protecting personal privacy).</para>
 			</listitem>
 			<listitem>
-				<para><literal>Monitor device</literal>: To maintain full control over the state of the infrastructure.</para>			
+				<para><literal>Monitor device</literal>: To maintain full control over the state of the infrastructure.</para>
 			</listitem>
 			<listitem>
-				<para><literal>Twitter</literal>: Designed to collect activity from Twitter use.</para>			
+				<para><literal>Twitter</literal>: Designed to collect activity from Twitter use.</para>
 			</listitem>
 			<listitem>
-				<para><literal>Vault</literal>: Allows to visualize and analyze the logs received from the different services and devices.</para>			
+				<para><literal>Vault</literal>: Allows to visualize and analyze the logs received from the different services and devices.</para>
 			</listitem>
 			<listitem>
-				<para><literal>Claim Sensor</literal>: Allows to link the manager with the client proxy, which is centralized software that collects data from a client's request and sends it to the manager.</para>			
+				<para><literal>Mail Gateway</literal>: Sensor through which mail traffic passes (SMTP). </para>
+			</listitem>
+			<listitem>
+				<para><literal>Claim Sensor</literal>: Allows to link the manager with the client proxy, which is centralized software that collects data from a client's request and sends it to the manager.</para>
 			</listitem>
 		</itemizedlist>
 
 		<section>
-		<title>Monitor device</title>
-		<para>The monitor device sensor is one of the latest developments that comes with the 80-6 version of redBorder. It can be used to monitor any device with an ip address that supports snmp, redfish or ipmi. When creating or updating the monitor device sensor the credentials for the corresponding protocols needs to be defined. In case no community string for snmp is defined, the default ‘public’ will be used.</para>
-		<para>Once the user are logged in into the Manager dashboard, the sensor can be added using the menu <literal>‘Sensors > Add sensor’</literal> and then clicking on <literal>‘Monitor device’</literal>.</para>
-		<para>It can be prompted for some required and optional parameters.</para>
-		<itemizedlist mark="bullet">
-			<listitem>
-				<para>A unique name</para>
-			</listitem>
-			<listitem>	
-				<para>The ip address of the machine the user want to monitor</para>
-			</listitem>
-			<listitem>	
-				<para>The protocol the user will use to monitor</para>
-			</listitem>
-			<listitem>	
-				<para>The credentials of the machine to access the selected protocol</para>
-			</listitem>
-			<listitem>	
-				<para>The community string in case the user will use snmp protocol</para>		
-			</listitem>
+			<title>Monitor device</title>
+			<para>The monitor device sensor is one of the latest developments that comes with the 80-6 version of redBorder. It can be used to monitor any device with an ip address that supports snmp, redfish or ipmi. When creating or updating the monitor device sensor the credentials for the corresponding protocols needs to be defined. In case no community string for snmp is defined, the default ‘public’ will be used.</para>
+			<para>Once the user are logged in into the Manager dashboard, the sensor can be added using the menu <literal>‘Sensors > Add sensor’</literal> and then clicking on <literal>‘Monitor device’</literal>.</para>
+			<para>It can be prompted for some required and optional parameters.</para>
+			<itemizedlist mark="bullet">
+				<listitem>
+					<para>A unique name</para>
+				</listitem>
+				<listitem>
+					<para>The ip address of the machine the user want to monitor</para>
+				</listitem>
+				<listitem>
+					<para>The protocol the user will use to monitor</para>
+				</listitem>
+				<listitem>
+					<para>The credentials of the machine to access the selected protocol</para>
+				</listitem>
+				<listitem>
+					<para>The community string in case the user will use snmp protocol</para>
+				</listitem>
 			</itemizedlist>
 			<mediaobject>
 				<imageobject>
@@ -578,11 +581,1057 @@
 					<para>Press on the ‘Save’ button to apply the configuration</para>
 				</caption>
 			</mediaobject>
-		<note>
-			<title>Note</title>
-			<para>Different sensor configuration guides can be found on the reBorder support page:</para>
-			<para><emphasis role="bold">https://support.redborder.com</emphasis></para>
-		</note>
-	</section>
+			<note>
+				<title>Note</title>
+				<para>Different sensor configuration guides can be found on the reBorder support page:</para>
+				<para><emphasis role="bold">https://support.redborder.com</emphasis></para>
+			</note>
+		</section>
+		<section>
+			<title>Mail Gateway</title>
+			<para>Mail Gateway sensor is one of the latest developments that comes with the 80-22 version of redBorder.
+				Sensor through which mail traffic (SMTP) passes. It works as a simple MTA (Mail Traffic Agent). When the
+				sensor receives an email, it forwards it to the corresponding mail server. In addition, it also sends to
+				the Manager a copy of the emails and their attachments including additional data. this sensor must be
+				registered in the Manager for its correct operation.
+			</para>
+			<section>
+				<title>Installation and registration of Mail Gateway sensors</title>
+				<para>The installation process for the Mail Gateway sensor basically consists of three steps: configuration
+					network, registering the sensor in the Manager and configuring the general parameters of the sensor in the
+					redborder platform. To do this, you must have the installation wizard (ISO image) obtained
+					via download or through the DVD provided by redborder.
+				</para>
+				<para>
+					When starting the installation wizard, we will see the main menu in which
+					you will find the option <literal>Install Gateway Sensor</literal>:
+				</para>
+				<mediaobject>
+					<imageobject>
+						<imagedata scalefit="1" align="center" width="450" fileref="images/ch11_img040.png"/>
+					</imageobject>
+					<textobject>
+						<phrase>Redborder Setup Wizard: Install Mail Gateway Sensor</phrase>
+					</textobject>
+					<caption>
+						<para>Redborder Setup Wizard: Install Mail Gateway Sensor</para>
+					</caption>
+				</mediaobject>
+				<para>Next, the user must enter their username and password <footnote><para>The username and password to be entered in this step correspond to
+					those indicated in the
+					Manager installation process and will be used to access the redborder web platform.
+					</para></footnote>
+					, and run the command <emphasis role="bold">rb_sysconf</emphasis>:
+				</para>
+				<orderedlist numeration="arabic">
+					<listitem>
+						<para>Login</para>
+					</listitem>
+					<listitem>
+						<para>Password</para>
+					</listitem>
+					<listitem>
+						<para>rb_sysconf</para>
+					</listitem>
+				</orderedlist>
+			</section>
+			<section>
+				<title>Network configuration of the Gateway sensors</title>
+				<para>Once <literal>rb_sysconf</literal> has been executed go to <emphasis role="bold"> redBorder
+					configuration menu</emphasis>.
+				</para>
+				<para>This menu has 4 options:</para>
+				<orderedlist numeration="arabic">
+					<listitem>
+						<para><literal>System Configuration:</literal> From this option you can define and modify a
+							series of basic system settings such as name, time, keyboard type, etc.
+						</para>
+					</listitem>
+					<listitem>
+						<para><literal>Network Configuration:</literal> this is the option from which all are made
+							network configurations.
+						</para>
+					</listitem>
+					<listitem>
+						<para><literal>Passwords:</literal> use this option if you want to change the password.</para>
+					</listitem>
+					<listitem>
+						<para><literal>quit:</literal> Exit.</para>
+					</listitem>
+				</orderedlist>
+				<mediaobject>
+					<imageobject>
+						<imagedata scalefit="1" align="center" width="450" fileref="images/ch11_img041.png"/>
+					</imageobject>
+					<textobject>
+						<phrase>redBorder configuration menu</phrase>
+					</textobject>
+					<caption>
+						<para>redBorder configuration menu</para>
+					</caption>
+				</mediaobject>
+				<note>
+					<title>Note</title>
+					<para>Remember: press <keycap>Enter</keycap> for default values.</para>
+				</note>
+				<para>
+					As mentioned at the beginning of the chapter, the first step to start configuring the
+					sensors Mail Gateway is to set network parameters.
+				</para>
+				<para>To start the process select the option <literal>2) Network Configuration</literal> from
+					redBorder configuration menu.
+				</para>
+				<para>These are the steps to follow to install Mail Gateway sensors:</para>
+				<orderedlist numeration="arabic">
+					<listitem>
+						<para>Management Network configuration:</para>
+						<para>Add bond and set management interface.</para>
+					</listitem>
+					<listitem>
+						<para>DNS and domain configuration</para>
+					</listitem>
+				</orderedlist>
+				<note>
+					<title>Note</title>
+					<para>The order to be followed in the steps that comprise the configuration of the management network is
+						indifferent. The order indicated in this installation manual is the one considered most optimal.
+					</para>
+					<para>
+						Until this configuration has been carried out, it will not be possible to proceed with the registration of the
+						sensors in the Manager.
+					</para>
+				</note>
+				<warning>
+					<title>Warning</title>
+					<para>For the installation and registration of the Mail Gateway sensors it is necessary to have only one bond.</para>
+					<para>In case the system is installed on a real computer that has more than one network card,
+						the user must choose which will be the management bond.
+					</para>
+				</warning>
+				<section>
+					<title>
+						Creating a new bond and assigning ports</title>
+					<para>
+						Once we have accessed the <literal>redborder Network configuration menu</literal>, select the
+						option <literal>1) Management Network Configuration</literal> from which we can create a bond
+						for the installation of the sensor.
+					</para>
+					<mediaobject>
+						<imageobject>
+							<imagedata scalefit="1" align="center" width="450" fileref="images/ch11_img042.png"/>
+						</imageobject>
+						<caption>
+							<para>redborder Network Configuration menu
+							</para>
+						</caption>
+					</mediaobject>
+					<para>To illustrate this process we will create a bonding (bond0) and assign 2 ports to it.</para>
+					<para>Select the option <keycap>n</keycap> that appears in the submenu on the right side of the screen.</para>
+					<para>Once you have reviewed the ports that are available, select the one you want assign to bonding,
+						as it appears in the lower margin of the previous screen.
+					</para>
+					<para><literal>Insert bonding first port [0]:</literal></para>
+					<para>The number that appears between square brackets <literal>[]</literal> is the one that defines
+						the system by flaw. To select this number, press <keycap>Enter.</keycap>
+					</para>
+					<mediaobject>
+						<imageobject>
+							<imagedata scalefit="1" align="center" width="450" fileref="images/ch11_img043.png"/>
+						</imageobject>
+						<caption>
+							<para>Creating a bond: port mapping</para>
+						</caption>
+					</mediaobject>
+					<para>The selected port will disappear from the available ports option.</para>
+					<important>
+						<title>Important</title>
+						<para>The system only allows the creation of a maximum of 4 bonds: (0-3).</para>
+					</important>
+				</section>
+				<section>
+					<title>Finish the bonding creation process</title>
+					<para>Before applying changes and finishing the bonding creation process, the system will show you a
+						table that shows the new bonding created (bond0) together with the ports that have been
+						assigned, the IP and Mask and the route assigned.
+					</para>
+					<para><emphasis role="bold">Apply changes</emphasis></para>
+					<para>
+						In order to save changes, select option <keycap>a.</keycap>
+					</para>
+					<para>
+						You can delete the created bond(s) at any time by selecting the option <literal>delete
+						bonding</literal> pressing <keycap>d.</keycap>
+					</para>
+					<para>To return to the main network configuration menu, select the option <literal>quit</literal>
+						pressing <keycap>q.</keycap>
+					</para>
+				</section>
+				<section>
+					<title>DNS and domain configuration</title>
+					<para>Start the setup by selecting: <literal>2) DNS and domain settings.</literal></para>
+					<para>PTo perform the configuration correctly, the user must enter:</para>
+					<itemizedlist mark="bullet">
+						<listitem>
+							<para>Domain name</para>
+						</listitem>
+						<listitem>
+							<para>DNS primary</para>
+						</listitem>
+						<listitem>
+							<para>DNS secondary (optional)</para>
+						</listitem>
+					</itemizedlist>
+					<para>Once this information has been entered, the system will warn that this configuration has been applied
+						correctly.
+					</para>
+					<mediaobject>
+						<imageobject>
+							<imagedata scalefit="1" align="center" width="450" fileref="images/ch11_img044.png"/>
+						</imageobject>
+						<caption>
+							<para>DNS and domain configuration</para>
+						</caption>
+					</mediaobject>
+					<para>To finish the process, it is necessary to apply changes: select the option <literal>apply</literal>
+						pressing <keycap>a</keycap>.
+					</para>
+					<mediaobject>
+						<imageobject>
+							<imagedata scalefit="1" align="center" width="450" fileref="images/ch11_img045.png"/>
+						</imageobject>
+						<caption>
+							<para>DNS and domain configuration</para>
+						</caption>
+					</mediaobject>
+				</section>
+			</section>
+			<section>
+				<title>Sensors registration in the Manager</title>
+				<para>To finish the installation process of the Mail Gateway sensors, the last step that must be carried out
+					out is the <emphasis role="bold">RSensors registration in the Manager.</emphasis>
+				</para>
+				<para>
+					Until registration is complete, a message will be displayed indicating that the
+					Sensors have not yet been registered in the Manager.
+				</para>
+				<mediaobject>
+					<imageobject>
+						<imagedata scalefit="1" align="center" width="450" fileref="images/ch11_img046.png"/>
+					</imageobject>
+					<caption>
+						<para>Starting sensor registration in the Manager</para>
+					</caption>
+				</mediaobject>
+				<para>
+					In the sensor registration menu in the Manager we find the following options:</para>
+				<orderedlist numeration="arabic">
+					<listitem>
+						<para><literal>Hostname [rbsensor]:</literal> give a name to the sensor.</para>
+					</listitem>
+					<listitem>
+						<para><literal>Set local time:</literal> Set local time.</para>
+					</listitem>
+					<listitem>
+						<para><literal>IP address for rB Master Manager [127.0.0.1]:</literal> enter the IP of the Manager.</para>
+					</listitem>
+					<listitem>
+						<para><literal>Register rB Sensor/Manager:</literal> registration of sensors in the manager
+							Sensor/Manager. Until the registration process has been completed, the user will see the
+							next message labeled in red: <literal>(not registered yet)</literal>
+						</para>
+					</listitem>
+				</orderedlist>
+				<section>
+					<title>Give a name to the sensor (Hostname)</title>
+					<para> Select option <literal>Hostname [rbsensor]</literal>  from the menu pressing <keycap>1.</keycap>
+					</para>
+					<para> Then, in <literal>Insert Hostname [rbsensor]:</literal> Write the name that you want to give
+						the sensor to be registered in the Manager. As of right now, this is the name that will be
+						displayed on the web when you access the list of IPS sensors.
+					</para>
+					<mediaobject>
+						<imageobject>
+							<imagedata scalefit="1" align="center" width="450" fileref="images/ch11_img047.png"/>
+						</imageobject>
+						<caption>
+							<para>Give a name to the sensor</para>
+						</caption>
+					</mediaobject>
+					<note>
+						<title>Note</title>
+						<para>Remember to enter a consistent name for the sensor. Avoid using the name “Sensor”, as that
+							this is the generic name used by the Manager and that, in the long run, it could cause confusion.
+						</para>
+					</note>
+					<warning>
+						<title>Warning</title>
+						<para>The system will ask you to verify that the chosen name is correct, in that case, press
+							<keycap>Enter</keycap>
+						</para>
+						<para>If you wish to modify it, press <keycap>n</keycap></para>
+						<para>The system will change the name of the sensor. To continue with the process and return to
+							the menu redborder system configuration, press any key as indicated
+							<literal>Press a key to continue...</literal>
+						</para>
+					</warning>
+				</section>
+				<section>
+					<title>Set local time</title>
+					<para>Select option <literal>2) Set local time.</literal></para>
+					<para>Insert date and time of the time zone corresponding to the country in which you are. This
+						should match the one selected in the basic settings phase during the IPS sensor setup process.
+					</para>
+					<para> The system shows two possible formats for inserting the date and time:</para>
+					<itemizedlist mark="bullet">
+						<listitem>
+							<para><literal>[HH:mm]</literal> or <literal>[YYYY/MM/DD]</literal></para>
+						</listitem>
+						<listitem>
+							<para><literal> [YYYY/MM/DD HH:mm]</literal></para>
+						</listitem>
+					</itemizedlist>
+					<para>Press <keycap>Enter</keycap> to continue with the registration process.</para>
+					<mediaobject>
+						<imageobject>
+							<imagedata scalefit="1" align="center" width="450" fileref="images/ch11_img048.png"/>
+						</imageobject>
+						<caption>
+							<para>Sensor registration in the Manager: Setting local time</para>
+						</caption>
+					</mediaobject>
+				</section>
+				<section>
+					<title>IP address for rB Master Manager</title>
+					<para>Select option <literal>3) IP address for rB Master Manager [00.0.000.00].</literal></para>
+					<para>Insert the IP address or domain name of the computer used by the user. The system will verify
+						whether it is reachable. This process may take a few seconds.
+					</para>
+					<para>The system will synchronize the time of the computers and then restart a couple of services in
+						order to finish the time synchronization.
+					</para>
+					<para> !Congratulations! Your device is ready to register the sensors in the Manager.</para>
+					<mediaobject>
+						<imageobject>
+							<imagedata scalefit="1" align="center" width="450" fileref="images/ch11_img049.png"/>
+						</imageobject>
+						<caption>
+							<para>Insert IP rB Master Manager</para>
+						</caption>
+					</mediaobject>
+					<para>To continue with the process and return to the menu redborder system configuration, press any
+						key as indicated <literal>Press a key to continue...</literal>
+					</para>
+				</section>
+				<section>
+					<title>Sensor registration in the Manager</title>
+					<para>This is the last step that completes the process of installing and configuring the Mail
+						Gateway sensor with the redborder installation wizard.
+					</para>
+					<para>From this moment on, you will be able to work directly from the redborder platform where you will
+						have to make the last general configurations for the Mail Gateway sensor, as will be seen later.
+					</para>
+					<para><emphasis>Finish the sensor registration process in the Manager</emphasis></para>
+					<para>The steps to follow to complete the sensor registration process in the Manager are as follows:
+					</para>
+					<orderedlist numeration="arabic">
+						<listitem>
+							<para>Indicate whether you like to have a debug output: <literal>Would you like to have a
+								debug output?</literal> Select the default option (No) by pressing <keycap>N</keycap>.
+							</para>
+						</listitem>
+						<listitem>
+							<para><emphasis role="bold">Insert password:</emphasis> indicate the password that has been
+								given in the basic settings during Manager configuration.
+							</para>
+						</listitem>
+						<listitem>
+							<para><emphasis role="bold"> Time synchronization (automatic) between the Manager and the
+								sensors.</emphasis> This process may take a few seconds to complete.
+							</para>
+						</listitem>
+					</orderedlist>
+					<para>After completing these steps, the system will notify you with a message that the sensor has
+						been successfully registered.
+					</para>
+					<para><literal> Sensor registered succesfully with chef server</literal></para>
+					<mediaobject>
+						<imageobject>
+							<imagedata scalefit="1" align="center" width="450" fileref="images/ch11_img051.png"/>
+						</imageobject>
+						<caption>
+							<para>Sensor registration on the server</para>
+						</caption>
+					</mediaobject>
+					<warning>
+						<title>Warning</title>
+						<para>Do not change the name of the sensor or <emphasis>hostname</emphasis> Do not change the
+							name of the sensor once it has been registered. If you want to make changes, you will need
+							to undo the entire registration process and start over.
+						</para>
+					</warning>
+					<para>To continue with the process and return to the menu redborder system configuration, press any
+						key as indicated <literal>Press a key to continue...</literal>
+					</para>
+					<para>In the sensor registration menu in the redborder Manager you can check that the sensor has
+						been successfully registered:<literal>(Registered).</literal>
+					</para>
+					<mediaobject>
+						<imageobject>
+							<imagedata scalefit="1" align="center" width="450" fileref="images/ch11_img052.png"/>
+						</imageobject>
+						<caption>
+							<para>Successfully sensor registration</para>
+						</caption>
+					</mediaobject>
+					<para>To exit the sensor registration wizard, select the option <literal>quit</literal>
+						pressing <keycap>q.</keycap>
+					</para>
+				</section>
+			</section>
+			<section>
+				<title>Editing and configuring Mail Gateway sensors</title>
+				<para>To configure Mail Gateway sensors, it is necessary to access the redborder web platform by
+					inserting the management IP assigned to the Manager in the address bar of your browser.
+				</para>
+				<para><screen>https://address-IP-manager</screen></para>
+				<note>
+					<title>Note</title>
+					<para>It is possible to log in to the platform using the account defined by default:
+						<emphasis role="bold">admin</emphasis> using the password that you entered during the Manager
+						installation process.
+					</para>
+				</note>
+				<warning>
+					<title>Warning</title>
+					<para>The management web will not work if you try to access it through an unencrypted web.</para>
+				</warning>
+				<para>Configuration of the Mail Gateway sensors can be done in two ways: </para>
+				<orderedlist numeration="arabic">
+					<listitem>
+						<para><emphasis role="bold">General configuration of all Mail Gateway sensors:
+						</emphasis> Tools -> Malware Settings -> Mail Gateway.
+						</para>
+					</listitem>
+					<listitem>
+						<para><emphasis role="bold">Particular configuration of each of the Mail Gateway sensors:
+						</emphasis> Sensors -> "Edit" icon for each of the sensors.
+						</para>
+					</listitem>
+				</orderedlist>
+				<mediaobject>
+					<imageobject>
+						<imagedata scalefit="1" align="center" width="150" fileref="images/ch11_img053.png"/>
+					</imageobject>
+					<caption>
+						<para>General Configuration of Mail Gateway Sensors</para>
+					</caption>
+				</mediaobject>
+				<mediaobject>
+					<imageobject>
+						<imagedata scalefit="1" align="center" width="450" fileref="images/ch11_img054.png"/>
+					</imageobject>
+					<caption>
+						<para>Edit Mail Gateway Sensor</para>
+					</caption>
+				</mediaobject>
+				<para>Next, each one of the configuration screens is explained, as well as the parameters that can be
+					modified for the detection of Malware in your network.
+				</para>
+				<section>
+					<title>General Settings: General Configuration of Mail Gateway Sensors</title>
+					<para>From the interface <emphasis role="bold">Tools -> Malware Settings</emphasis> the user can
+						make the general configuration to apply to all registered sensors. Remember that this level acts
+						as a root, so that those sensors that are below it will inherit the configuration that has been
+						defined in this interface.
+					</para>
+					<note>
+						<title>Note</title>
+						<para>It is possible to override the general settings of the Mail Gateway sensors at the individual
+							level by editing them in the section <literal>Sensors</literal> selecting the sensor to be
+							edited in the tree or in the list that appears in Sensors -> View -> Gateway Sensors.
+						</para>
+					</note>
+					<para>These are the sections that the user must edit for the root level configuration of the Mail
+						Gateway sensors:
+					</para>
+					<itemizedlist mark="bullet">
+						<listitem>
+							<para>General</para>
+						</listitem>
+						<listitem>
+							<para>Mail Gateway</para>
+						</listitem>
+						<listitem>
+							<para>Blacklist</para>
+						</listitem>
+						<listitem>
+							<para>Whitelist</para>
+						</listitem>
+					</itemizedlist>
+				</section>
+				<section>
+					<title>Sensors: individual configuration of Mail Gateway sensors</title>
+					<para>To edit the configuration of any of the Mail Gateway sensors individually, the user must go to
+						the section <literal>Sensors</literal> located on the right side of the header menu. You will
+						then need to select the sensor you wish to edit.
+					</para>
+					<para>In the tree view, the Mail Gateway sensors are accompanied by an identification icon. You can
+						also search for the sensor in the list that is displayed from <literal>View -> Gateway Sensors.</literal>
+					</para>
+					<mediaobject>
+						<imageobject>
+							<imagedata scalefit="1" align="center" width="450" fileref="images/ch11_img055.png"/>
+						</imageobject>
+						<caption>
+							<para>Sensors: ways to edit a sensor</para>
+						</caption>
+					</mediaobject>
+					<mediaobject>
+						<imageobject>
+							<imagedata scalefit="1" align="center" width="450" fileref="images/ch11_img056.png"/>
+						</imageobject>
+						<caption>
+							<para>List of Mail Gateway sensors: Sensors -> View -> Gateway Sensors</para>
+						</caption>
+					</mediaobject>
+					<para>Within the menu that is displayed we find the following options:</para>
+					<itemizedlist mark="circle">
+						<listitem>
+							<para><emphasis role="bold">Edit:</emphasis> allows editing a sensor's configuration at an
+								individual level.
+							</para>
+						</listitem>
+						<listitem>
+							<para><emphasis role="bold">Monitors</emphasis> </para>
+						</listitem>
+						<listitem>
+							<para><emphasis role="bold">Quarantine:</emphasis> list of emails that are in quarantine.
+							</para>
+						</listitem>
+						<listitem>
+							<para><emphasis role="bold">Filter Policies:</emphasis> configuration and assignment of
+								Filter Policies for each sensor.
+							</para>
+						</listitem>
+					</itemizedlist>
+					<mediaobject>
+						<imageobject>
+							<imagedata scalefit="1" align="center" width="450" fileref="images/ch11_img054.png"/>
+						</imageobject>
+						<caption>
+							<para>Editar sensor Mail Gateway</para>
+						</caption>
+					</mediaobject>
+					<para>To start editing the sensor parameters select <literal>Edit.</literal></para>
+					<para>In the sensor editing interface, the following information will be entered. To save the sensor
+						configuration, click the button <keycap>Update.</keycap>
+					</para>
+					<note>
+						<title>Note</title>
+						<para>The name, IP and version fields are not editable, since this information is entered in the
+							sensor configuration and registration process.
+						</para>
+					</note>
+					<section>
+						<title>Gateway Settings</title>
+						<para>In this section, the user can define the behavior of the sensor based on the values entered
+							in each of the fields shown in it.
+						</para>
+						<itemizedlist mark="circle">
+							<listitem>
+								<para><emphasis role="bold">Relay Host:</emphasis> Specify the IP of the final mail server.</para>
+							</listitem>
+							<listitem>
+								<para><emphasis role="bold">Message Size Limit:</emphasis> Define the maximum size of
+									messages that can be received.
+								</para>
+							</listitem>
+							<listitem>
+								<para><emphasis role="bold">Max Paralell Process:</emphasis> Indicate the maximum number
+									of parallel processes handled by the Mail Gateway.
+								</para>
+							</listitem>
+							<listitem>
+								<para><emphasis role="bold">API timeout (seconds):</emphasis> Define the maximum waiting
+									time for obtaining a valid score from the remote cache.
+								</para>
+							</listitem>
+							<listitem>
+								<para><emphasis role="bold">Email detained timeout (seconds):</emphasis> This field
+									indicates the maximum waiting time for obtaining a valid score from the remote cache.
+									After this time the file will be passed.
+								</para>
+							</listitem>
+							<listitem>
+								<para><emphasis role="bold">Quarantine timeout (days):</emphasis> Configure the days that
+									have to pass since a file identified as Malware is blocked and retained until an action
+									is defined to manage it. If no action is performed or the indicated time is exceeded,
+									the file is discarded.
+								</para>
+							</listitem>
+							<listitem>
+								<para><emphasis role="bold">Cache Sync (hours) (minutes):</emphasis> Indicate the maximum
+									time that must pass for the synchronization of the local and remote cache. Value in
+									hours and minutes.
+								</para>
+							</listitem>
+							<listitem>
+								<para><emphasis role="bold">Maximum number of stored log files:</emphasis> Delimit the
+									maximum time that the file will remain stored in the email history.
+								</para>
+							</listitem>
+						</itemizedlist>
+						<mediaobject>
+							<imageobject>
+								<imagedata scalefit="1" align="center" width="450" fileref="images/ch11_img058.png"/>
+							</imageobject>
+							<caption>
+								<para>Gateway Settings</para>
+							</caption>
+						</mediaobject>
+					</section>
+					<section>
+						<title>Relay Domains</title>
+						<para>In this section the user must define which domain or domains are going to be managed by
+							the sensor.
+						</para>
+						<para>Here is a list of the domains that have already been added. The user can eliminate at any
+							time those domains that are not in use or that they consider should not be managed by the sensor.
+						</para>
+						<mediaobject>
+							<imageobject>
+								<imagedata scalefit="1" align="center" width="450" fileref="images/ch11_img059.png"/>
+							</imageobject>
+							<caption>
+								<para>List of Relay Domains</para>
+							</caption>
+						</mediaobject>
+						<para>To add a new domain just click on the tab <literal>+Add Domains</literal>
+							and enter the domain you want to associate, click on <keycap>Update</keycap> to save.
+						</para>
+						<mediaobject>
+							<imageobject>
+								<imagedata scalefit="1" align="center" width="350" fileref="images/ch11_img060.png"/>
+							</imageobject>
+							<caption>
+								<para>Add a new Relay Domain</para>
+							</caption>
+						</mediaobject>
+						<warning>
+							<title>Warning</title>
+							<para>Once you have finished editing the Mail Gateway sensor, click on <literal>Update</literal>
+								to apply the changes made.
+							</para>
+						</warning>
+					</section>
+				</section>
+				<section>
+					<title>Quarantine</title>
+					<para>There are two ways to get to the list of quarantined emails:</para>
+					<orderedlist numeration="arabic">
+						<listitem>
+							<para><emphasis role="bold">Total quarantined emails for all registered Mail Gateway sensors:
+							</emphasis> Sensors -> Options -> Mail Quarantine
+							</para>
+						</listitem>
+						<listitem>
+							<para><emphasis role="bold">Quarantined emails for a specific sensor:
+							</emphasis> Sensors -> "Edit" icon for each of the sensors -> Quarantine
+							</para>
+						</listitem>
+					</orderedlist>
+					<mediaobject>
+						<imageobject>
+							<imagedata scalefit="1" align="center" width="450" fileref="images/ch11_img064.png"/>
+						</imageobject>
+						<caption>
+							<para>Quarantine</para>
+						</caption>
+					</mediaobject>
+					<para>In both cases, the interface shows a list of all the emails that have been quarantined and
+						the following information:
+					</para>
+					<itemizedlist mark="bullet">
+						<listitem>
+							<para><emphasis role="bold">Timestamp:</emphasis> reception date and time.</para>
+						</listitem>
+						<listitem>
+							<para>Sensor through which the mail has passed.</para>
+						</listitem>
+						<listitem>
+							<para><emphasis role="bold">Email sender:</emphasis> sender's email.</para>
+						</listitem>
+						<listitem>
+							<para><emphasis role="bold">Email Destinations:</emphasis> recipient's email.</para>
+						</listitem>
+						<listitem>
+							<para><emphasis role="bold">URLs:</emphasis> number of URLs included in the mail.</para>
+						</listitem>
+						<listitem>
+							<para><emphasis role="bold">Files:</emphasis> number of files included in the mail. </para>
+						</listitem>
+						<listitem>
+							<para><emphasis role="bold">Email ID:</emphasis> email id number. </para>
+						</listitem>
+					</itemizedlist>
+					<para><emphasis role="bold">Free email:</emphasis> At any time, the user can release from the
+						quarantine those emails that they consider have already been analyzed and do not represent a
+						danger. To do this, click on the following icon:
+					</para>
+					<mediaobject>
+						<imageobject>
+							<imagedata scalefit="1" align="center" width="50" fileref="images/ch11_img065.png"/>
+						</imageobject>
+						<caption>
+							<para>Button to release email</para>
+						</caption>
+					</mediaobject>
+					<para><emphasis role="bold">Remove email: </emphasis> click the "Delete" icon.</para>
+					<mediaobject>
+						<imageobject>
+							<imagedata scalefit="1" align="center" width="50" fileref="images/ch11_img065b.png"/>
+						</imageobject>
+						<caption>
+							<para>Button to delete email</para>
+						</caption>
+					</mediaobject>
+				</section>
+				<section>
+					<title>Filter Policies: Mail Gateway sensors</title>
+					<para>To access the creation or edition of the Filter Policies the user has two different ways: </para>
+					<orderedlist numeration="arabic">
+						<listitem>
+							<para><emphasis role="bold">Total Filter Policies created for the root sensor:
+							</emphasis> Sensors -> Options -> Filter Policies
+							</para>
+						</listitem>
+						<listitem>
+							<para><emphasis role="bold">Filter Policies for a specific sensor:</emphasis>
+								Sensors -> "Edit" icon for each of the sensors -> Filter Policies
+							</para>
+						</listitem>
+					</orderedlist>
+					<mediaobject>
+						<imageobject>
+							<imagedata scalefit="1" align="center" width="450" fileref="images/ch11_img066.png"/>
+						</imageobject>
+						<caption>
+							<para>List of Filter Policies for the root sensor</para>
+						</caption>
+					</mediaobject>
+					<para>In both cases, the user accesses an interface which shows a list with all the Filter Policies
+						that have been created for that sensor. The policy that is active (assigned) will be shaded green.
+					</para>
+					<para>To assign a policy to a sensor, click on the button <literal>Assign</literal>. To apply the
+						policy assigned to the sensor select the option <literal>Apply</literal>.
+					</para>
+					<para>To unassign a policy select the option <literal>Clear</literal>.</para>
+					<mediaobject>
+						<imageobject>
+							<imagedata scalefit="1" align="center" width="450" fileref="images/ch11_img067.png"/>
+						</imageobject>
+						<caption>
+							<para>List of Filter Policies for a Mail Gateway sensor</para>
+						</caption>
+					</mediaobject>
+					<section>
+						<title>Creating a new Filter Policy</title>
+						<para>Once you have accessed the Filter Policies interface to create a new policy, simply select
+							the option <literal>+New Policy</literal>. The user must indicate at least one name for the
+							new policy and optionally insert a description.
+						</para>
+						<para>Below you must indicate the rules that are included in this policy. The procedure will vary
+							depending on whether you want to apply the policy at the Hash, URL or IP level.
+						</para>
+						<para>To define the rules of the policy, simply click on the policy to be modified or by clicking
+							on the "Edit" icon.
+						</para>
+						<mediaobject>
+							<imageobject>
+								<imagedata scalefit="1" align="center" width="350" fileref="images/ch11_img068.png"/>
+							</imageobject>
+							<caption>
+								<para>Create a new Filter Policy</para>
+							</caption>
+						</mediaobject>
+						<para>The Filter Policies editing interface consists of two sections: Edit Filter Policy and
+							Threshold Configuration. In both sections the user can edit the following information:
+						</para>
+						<itemizedlist mark="bullet">
+							<listitem>
+								<para><emphasis role="bold">Name</emphasis></para>
+							</listitem>
+							<listitem>
+								<para><emphasis role="bold">Description</emphasis></para>
+							</listitem>
+							<listitem>
+								<para><emphasis role="bold">Caché query method:</emphasis> the user must indicate the
+									type of queries they want to be made to the cache.
+								</para>
+							</listitem>
+							<listitem>
+								<para><emphasis role="bold">Apply Filter Policy for:</emphasis> Select the type of object
+									to analyze.
+								</para>
+							</listitem>
+							<listitem>
+								<para><emphasis role="bold">Score to consider element as Malware:</emphasis> indicate
+									the score from which an object is considered Malware.
+								</para>
+							</listitem>
+							<listitem>
+								<para><emphasis role="bold">Drop files that exceed this size (MB)</emphasis> (this field
+									is only enabled if you have selected to apply the Hash policy): indicate the maximum
+									size of the files from which they will be blocked by the system.
+								</para>
+							</listitem>
+						</itemizedlist>
+						<note>
+							<title>Recommended configuration</title>
+							<para><emphasis role="bold">Cache query method:</emphasis> Local+API</para>
+							<para><emphasis role="bold">Apply Filter Policy for:</emphasis> it is recommended to select
+								all three types of objects (Hash, URL and IP).
+							</para>
+						</note>
+						<para><emphasis role="bold">File Rules</emphasis></para>
+						<para>In the event that the box corresponding to Hash has been activated
+							(<literal>Apply Filter Policy for:</literal>), a new section will be displayed in the lower
+							margin: File Rules.
+						</para>
+						<mediaobject>
+							<imageobject>
+								<imagedata scalefit="1" align="center" width="450" fileref="images/ch11_img069.png"/>
+							</imageobject>
+							<caption>
+								<para>Filter Policies: File Rules</para>
+							</caption>
+						</mediaobject>
+						<para>This section shows a list of the type of files on which actions can be performed.
+							The available actions are:
+						</para>
+						<itemizedlist mark="bullet">
+							<listitem>
+								<para>Filter</para>
+							</listitem>
+							<listitem>
+								<para>Drop (block)</para>
+							</listitem>
+							<listitem>
+								<para>Pass</para>
+							</listitem>
+						</itemizedlist>
+						<para>To apply the new configuration select the option <literal>Save.</literal></para>
+					</section>
+				</section>
+			</section>
+			<section>
+				<title>Malware events (Mail Gateway)</title>
+				<para>To carry out a deep monitoring and analysis of the objects that are interacting with our network,
+					the user can make a series of actions from the Malware section located on the left margin of the
+					header menu.
+				</para>
+				<note>
+					<title>Viewing the objects detected by the Mail Gateway sensor</title>
+					<para>To view the events produced by the objects detected by the Mail Gateway sensor, the user can
+						select the attributes corresponding to Hash, URL and IP using the option <literal>+Add Tab.</literal>
+					</para>
+					<para>In this way, those attributes will be added to the view and the user will be able to perform
+						different actions on them.
+					</para>
+				</note>
+				<para>Once we have added the desired attributes to the view, we can view a summary with the events
+					produced by them. Clicking on any of these elements displays a submenu from which you can perform
+					object analysis and monitoring actions.
+				</para>
+				<mediaobject>
+					<imageobject>
+						<imagedata scalefit="1" align="center" width="150" fileref="images/ch11_img070.png"/>
+					</imageobject>
+					<caption>
+						<para>Attributes submenu in Malware event view</para>
+					</caption>
+				</mediaobject>
+				<section>
+					<title>Outliers</title>
+					<para>By activating this option, the anomalies of the events of the selected attribute will be
+						marked in the view. This action is very useful to isolate anomalous behavior within the traffic flow.
+					</para>
+				</section>
+				<section>
+					<title>Filenames (Hash)</title>
+					<para>Thanks to this option the user obtains from a Hash the successive names that a file has had.
+						This simplifies the identification of a file that has been assigned a single hash even though it
+						has had different names.
+					</para>
+					<mediaobject>
+						<imageobject>
+							<imagedata scalefit="1" align="center" width="350" fileref="images/ch11_img071.png"/>
+						</imageobject>
+						<caption>
+							<para>Filenames</para>
+						</caption>
+					</mediaobject>
+				</section>
+				<section>
+					<title>Analysis</title>
+					<para>When selecting the option <literal>Analysis</literal> the user visualizes a complete summary
+						about the status of the file.
+					</para>
+					<para>The following information is displayed in the Analysis view:</para>
+					<itemizedlist mark="bullet">
+						<listitem>
+							<para><emphasis role="bold">Status</emphasis></para>
+							<para>This section shows the progress of the file analysis and the information corresponding
+								to the external reputation services.
+							</para>
+							<para>It is possible to download the file that is being analyzed using the option
+								<literal>Download File</literal>. A compressed file will be downloaded in .zip format,
+								whose password is <literal>infected</literal>.
+							</para>
+						</listitem>
+						<listitem>
+							<para><emphasis role="bold">Loaders</emphasis></para>
+							<para>This section shows in greater detail the process and result of the analysis carried out
+								by the different chargers or reputation services<!-- TODO
+								<footnote><para> In the case of Cuckoo, depending on the number of files to be analyzed, there may be a delay in reflecting the score. </para></footnote>-->.</para>
+							<para>It is possible to download the history of the file in JSON format.</para>
+							<note>
+								<title>Note</title>
+								<para>These are the values that may appear as a result of the analysis carried out by
+									the loaders:
+								</para>
+								<para><emphasis role="bold">-</emphasis>: unanalyzed item.</para>
+								<para><emphasis role="bold">Unknown</emphasis>: the element has been analyzed, but the
+									result is unknown (equivalent to a score of -1).
+								</para>
+							</note>
+						</listitem>
+					</itemizedlist>
+					<mediaobject>
+						<imageobject>
+							<imagedata scalefit="1" align="center" width="450" fileref="images/ch11_img072.png"/>
+						</imageobject>
+						<caption>
+							<para>Analysis -> Status</para>
+						</caption>
+					</mediaobject>
+					<mediaobject>
+						<imageobject>
+							<imagedata scalefit="1" align="center" width="450" fileref="images/ch11_img073.png"/>
+						</imageobject>
+						<caption>
+							<para>Analysis -> Loaders</para>
+						</caption>
+					</mediaobject>
+					<note>
+						<title>Note</title>
+						<para>At any time you can switch to the Evolution or Propagation view of the object being
+							analyzed, thanks to the possibility of jumping from one view to another using the options
+							displayed in the upper right margin: <literal>Show Evolution/Show Propagation.</literal>
+						</para>
+					</note>
+				</section>
+				<section>
+					<title>Evolution</title>
+					<para><literal>Evolution</literal> shows the time evolution of the different events collected by
+						each of the sensors that are registered in the Manager.
+					</para>
+					<para>At the top of the screen there is a graphical representation of this evolution on a timeline.
+						Depending on the volume of the circles, a greater or lesser number of events will have been
+						recorded for a given period of time.
+					</para>
+					<para>It is possible to visualize the evolution of an object in a specific time by selecting
+						<literal>Filter Time.</literal>
+					</para>
+					<mediaobject>
+						<imageobject>
+							<imagedata scalefit="1" align="center" width="450" fileref="images/ch11_img074.png"/>
+						</imageobject>
+						<caption>
+							<para>Filter Time</para>
+						</caption>
+					</mediaobject>
+					<para>At the bottom, a detailed summary of each of the events per sensor is offered, specifying the
+						score assigned to the object being analyzed, the sensor, SRC Address, DST Address, the sending
+						email, the receiving emails and the number of events. generated by that object (in the image
+						they are registered events for that Hash/file).
+					</para>
+					<mediaobject>
+						<imageobject>
+							<imagedata scalefit="1" align="center" width="450" fileref="images/ch11_img075.png"/>
+						</imageobject>
+						<caption>
+							<para>Show evolution</para>
+						</caption>
+					</mediaobject>
+					<note>
+						<title>Note</title>
+						<para>At any time you can switch to the Analysis or propagation view of the object whose evolution
+							is being analyzed, thanks to the possibility of jumping from one view to another using the
+							options displayed in the upper right margin:
+							<literal>Show Analysis/Show Propagation.</literal>
+						</para>
+					</note>
+				</section>
+				<section>
+					<title>Propagation</title>
+					<para>When selecting the option <literal>Propagation</literal> we access an interface that graphically
+						shows us the propagation of that object (in the hash image or file) through the IPs or Emails of
+						our organization.
+					</para>
+					<para>By clicking on any of the nodes displayed (source and destination IPs/emails), a summary of all
+						the events associated with that node in the selected period of time is displayed at the bottom.
+					</para>
+					<para>Likewise, placing the mouse over any of the nodes will highlight the nodes (IPs/Emails) that
+						have interacted with it.
+					</para>
+					<important>
+						<title>Important</title>
+						<para>It is possible to filter a specific element by entering its data in the search engine located
+							on the right margin. When starting to write the data, those matching nodes will be highlighted.
+						</para>
+					</important>
+					<mediaobject>
+						<imageobject>
+							<imagedata scalefit="1" align="center" width="450" fileref="images/ch11_img076.png"/>
+						</imageobject>
+						<caption>
+							<para>Propagation</para>
+						</caption>
+					</mediaobject>
+					<mediaobject>
+						<imageobject>
+							<imagedata scalefit="1" align="center" width="450" fileref="images/ch11_img077.png"/>
+						</imageobject>
+						<caption>
+							<para>Propagation: node events</para>
+						</caption>
+					</mediaobject>
+					<mediaobject>
+						<imageobject>
+							<imagedata scalefit="1" align="center" width="450" fileref="images/ch11_img078.png"/>
+						</imageobject>
+						<caption>
+							<para>Propagation: detail of interaction between nodes</para>
+						</caption>
+					</mediaobject>
+					<mediaobject>
+						<imageobject>
+							<imagedata scalefit="1" align="center" width="450" fileref="images/ch11_img079.png"/>
+						</imageobject>
+						<caption>
+							<para>Propagation: filter information through the search engine</para>
+						</caption>
+					</mediaobject>
+					<note>
+						<title>Note</title>
+						<para>At any time you can switch to the Evolution or Propagation view of the object being analyzed,
+							thanks to the possibility of jumping from one view to another using the options displayed in
+							the upper right margin: <literal>Show Analysis/Show Evolution.</literal>
+						</para>
+					</note>
+				</section>
+			</section>
+		</section>
 	</section>
 </chapter>

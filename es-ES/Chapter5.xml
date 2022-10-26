@@ -7,10 +7,10 @@
 <!ENTITY HOLDER "Eneo Tecnología S.L. |">
 ]>
 <chapter>
-		<title>Eventos</title>
+	<title>Eventos</title>
 	<para>En esta sección el usuario puede mostrar, analizar y gestionar eventos recolectados por los sensores.</para>
 	<para>Redborder ofrece la máxima visibilidad de red gracias a las muchas opciones de representación y visualización de datos que nuestra App provee. Asegurate de revisar las <emphasis>Opciones disponibles en el submenú de Redborder</emphasis> y <emphasis>filtros de eventos</emphasis> para descubrir la versatilidad de mostrar solamente la información que quiere analizar en un determinado momento y en unas determinadas condiciones. </para>
-	
+
 	<section>
 		<title>Módulos</title>
 		<para>Redborder tiene un módulo para cada funcionalidad. Cada una utiliza diferentes tecnologías y tiene una interfaz independiente. Todos los módulos necesitan un sensor que le provea de datos.
@@ -18,7 +18,7 @@
 		<section>
 			<title>Business Intelligence</title>
 			<para>El módulo Business Intelligence utiliza la información de clientes a través de los sensores BI. Puede ser usado para obtener las respuestas de los cuestionarios definidos en la plataforma rbmobility (<emphasis role="bold">https://rbmobility.redborder.com</emphasis>).</para>
-                        <para>Este módulo viene desactivado por defecto, para activarlo ejecute el siguiente comando desde la consola: <emphasis role="bold">rb_set_modules.rb bi:1; rb_run_chef_once.sh</emphasis></para>
+			<para>Este módulo viene desactivado por defecto, para activarlo ejecute el siguiente comando desde la consola: <emphasis role="bold">rb_set_modules.rb bi:1; rb_run_chef_once.sh</emphasis></para>
 			<mediaobject>
 				<imageobject>
 					<imagedata scalefit="1" align="center" width="450" fileref="images/ch06_img062.png"/>
@@ -29,6 +29,44 @@
 				<caption>
 					<para>Módulo BI</para>
 				</caption>
+			</mediaobject>
+		</section>
+		<section>
+			<title>Malware</title>
+			<para>El módulo Malware es una solución completa para la detección de archivos, direcciones IP y direcciones
+				URL maliciosas. Para ello se emplean múltiples motores de detección y servicios de reputación
+				que van más allá de las políticas basadas en firmas y técnicas similares. </para>
+			<!-- TODO
+			<para>Gracias a herramientas de reputación y el uso de sandboxing se puede obtener un análisis más amplio
+				y la posibilidad de calificar ficheros, direcciones de correo, direcciones IP y direcciones URL con el fin
+				de proteger los equipos que conforman su infraestructura de red.</para>
+			<para>Para la captura de ficheros y la detección de amenazas, redborder Malware se apoya en el uso de
+				diferentes sondas capaces de bloquear en tiempo real la entrada de un fichero si este posee mala reputación.
+				Además, se ha desarrollado un agente para versiones del sistema operativo Microsoft Windows específico para
+				incrementar la detección local de Indicadores de Compromiso y que puede ser usado para el análisis forense.
+				Estos son los elementos que componen el escenario de redborder Malware:</para>
+			<itemizedlist mark="bullet">
+				<listitem>
+					<para>Snort redborder edition</para>
+				</listitem>
+				<listitem>
+					<para>Email e ICAP Proxy</para>
+				</listitem>
+				<listitem>
+					<para>EndPoint</para>
+				</listitem>
+			</itemizedlist>
+			-->
+			<para>Este módulo viene desactivado por defecto, para activarlo ejecute el siguiente comando desde la consola:
+				<emphasis role="bold">rb_set_modules.rb malware:1; rb_set_malware_mode.rb enable logstash; rb_run_chef_once.sh</emphasis>
+			</para>
+			<mediaobject>
+				 <imageobject>
+						<imagedata scalefit="1" align="center" width="450" fileref="images/ch06_img063.png"/>
+				 </imageobject>
+				<textobject>
+					<phrase>Módulo Malware</phrase>
+				</textobject>
 			</mediaobject>
 		</section>
 		<section>
@@ -168,9 +206,10 @@
 			</mediaobject>
 			<itemizedlist mark="bullet">
 				<listitem>
-					<para><emphasis role="bold"><literal>Filtros</literal>:</emphasis> permiten a los usuarios aislar una porcion de la información para detallarla. En esta pestaña puede ver el número de filtros que han sido aplicados para aplicar acciones sobre ellos:
-
-					allow users to isolate a portion of information for more detail. In this tab, you can view the number of filters that have been applied and perform actions on them: </para>
+					<para><emphasis role="bold"><literal>Filtros</literal>:</emphasis> permiten a los usuarios aislar una
+						porción de la información para detallarla. En esta pestaña puede ver el número de filtros que
+						han sido aplicados para aplicar acciones sobre ellos:
+					</para>
 					<para>-<literal>Busqueda avanzada</literal>.</para>
 					<para>-<literal>Crear una alarma</literal>.</para>
 					<para>-<literal>Crear un widget</literal>.</para>
@@ -347,7 +386,7 @@
 				</caption>
 			</mediaobject>
 		</section>
-	</section>	
+	</section>
 	<section>
 		<title>Filtrado de eventos</title>
 		<para>En el submenú de la sección existen muchas opciones que nos permiten visualizar eventos de acuerdo a sus necesidades de análisis.</para>
@@ -396,7 +435,7 @@
 			</caption>
 		</mediaobject>
 		<section>
-			<title>Es posible filtrar eventos únicamente en un periodo de tiempo?</title>
+			<title>¿Es posible filtrar eventos únicamente en un periodo de tiempo?</title>
 			<para>Es posible aislar los eventos correspondientes a un periodo de tiempo para analizar en más detalle los datos asociados con el atributo seleccionado.</para>
 			<para>Hay cinco modos de hacer un filtro temporal: </para>
 			<itemizedlist mark="bullet">
@@ -414,7 +453,7 @@
 				</listitem>
 				<listitem>
 					<para>Filtro por atributo</para>
-				</listitem>	
+				</listitem>
 			</itemizedlist>
 			<para><emphasis role="bold">Filtro por periodo de tiempo</emphasis></para>
 			<para>Un modo simple y rápido para ver únicamente eventos correspondiente a un periodo específico de tiempo es seleccionar algunas de las opciones que proporcionan el filtro de la línea de tiempo de pestañas:</para>
@@ -430,7 +469,7 @@
 				</caption>
 			</mediaobject>
 			<para><emphasis role="bold"></emphasis></para>
-			<para>El usuario puede seleccionar un periodo de tiempo manualmente. Para esto se puede clickar con el ratón en un punto específico del gráfico, arrastrar y soltar hasta el instante de tiempo deseado. Después podrá ver el periodo de tiempo expandido en el gráfico.</para>	 
+			<para>El usuario puede seleccionar un periodo de tiempo manualmente. Para esto se puede clickar con el ratón en un punto específico del gráfico, arrastrar y soltar hasta el instante de tiempo deseado. Después podrá ver el periodo de tiempo expandido en el gráfico.</para>
 			<para>En el submenú indicado podrá ver <literal>Filtro Zoom</literal></para>
 			<mediaobject>
 				<imageobject>
@@ -450,7 +489,7 @@
 				<para>Cuando ejecutamos un filtro <literal>Personalizado</literal> podemos aislar en el gráfico datos para un periodo de tiempo.</para>
 			</note>
 			<para>También es posible seleccionar el periodo de tiempo directamente en la barra temporal que aparece en el margen superior.</para>
-			<para>Click en  <literal>Enviar</literal> para aplicar el filtro.</para> 
+			<para>Click en  <literal>Enviar</literal> para aplicar el filtro.</para>
 			<mediaobject>
 				<imageobject>
 					<imagedata scalefit="1" align="center" width="450" fileref="images/ch06_img017.png"/>
@@ -526,7 +565,7 @@
 				<listitem>
 					<para><literal>Copiar al portapapeles:</literal> el valor del elemento seleccionado se copia en el portapapeles para que esté disponible para posterior uso.</para>
 				</listitem>
-			</itemizedlist>	
+			</itemizedlist>
 			<mediaobject>
 				<imageobject>
 					<imagedata scalefit="1" align="center" width="450" fileref="images/ch06_img019.png"/>
@@ -555,13 +594,13 @@
 		<para>También encontramos la opción de consultar fuentes externas para ayudarnos a identificar la ubicación y la reputación de las IP consultadas.</para>
 		<itemizedlist mark="circle">
 			<listitem>
-				<para>uTrace</para> 
+				<para>uTrace</para>
 			</listitem>
 			<listitem>
-				<para>Trusted Source</para> 
+				<para>Trusted Source</para>
 			</listitem>
 			<listitem>
-				<para>Whois.sc</para> 
+				<para>Whois.sc</para>
 			</listitem>
 		</itemizedlist>
 		<mediaobject>
@@ -598,7 +637,7 @@
 			</caption>
 		</mediaobject>
 		<para><emphasis role="bold">Búsqueda de fuente básica:</emphasis> es posible obtener un resumen completo de la información asociada con las IP consultadas. Al seleccionar esta opción, aparecerá una ventana emergente con dos pestañas: </para>
-		<para><emphasis>Whois:</emphasis> muestra el resultado de la consulta del Manager a whois, y de donde se obtiene. También muestra, entre otra información, quién posee esa IP, reputación, etc.</para> 
+		<para><emphasis>Whois:</emphasis> muestra el resultado de la consulta del Manager a whois, y de donde se obtiene. También muestra, entre otra información, quién posee esa IP, reputación, etc.</para>
 		<para><emphasis>DNS:</emphasis> el Manager realiza una resolución inversa que nos permite conocer el DNS asociado con la IP consultada.</para>
 		<mediaobject>
 			<imageobject>
@@ -628,7 +667,7 @@
 				<para><emphasis role="bold">Raw:</emphasis> ver todos los eventos de datos sin procesar, clasificados por atributos y franjas horarias.</para>
 			</listitem>
 			<listitem>
-				<para><emphasis role="bold">Comparar:</emphasis> comparar intervalos de tiempo para analizar diferencias en el estado de la red.</para> 
+				<para><emphasis role="bold">Comparar:</emphasis> comparar intervalos de tiempo para analizar diferencias en el estado de la red.</para>
 			</listitem>
 			<listitem>
 				<para><emphasis role="bold">Único:</emphasis> muestra los diferentes elementos que han interactuado con la red según el atributo.</para>
@@ -742,7 +781,7 @@
 				<note>
 					<title>Nota</title>
 					<para>Recuerde que la máxima granularidad disponible es de 1 minuto.</para>
-				</note>	
+				</note>
 			</section>
 		</section>
 		<section>
@@ -777,6 +816,149 @@
 				</caption>
 			</mediaobject>
 		</section>
+		<section>
+			<title>Analyze (Módulo Malware)</title>
+			<para>En esta vista se puede obtener un análisis detallado de una URL, IP, Hash o bien, de un fichero bajo demanda,
+				como si este hubiera entrado por otros canales.
+			</para>
+			<para>Para ello basta con introducir la IP, la URL o Hash que se desea analizar y hacer clic en
+				<literal>Search</literal> o, en el caso de querer analizar un fichero es necesario cargar el archivo y después
+				subirlo a la plataforma seleccionando <literal>Upload.</literal>
+			</para>
+			<para>Puede saltar de una vista a otra sin necesidad de regresar a la interfaz de eventos Malware seleccionándola
+				en el desplegable del margen superior derecho.
+			</para>
+			<mediaobject>
+				<imageobject>
+					<imagedata scalefit="1" align="center" width="450" fileref="images/ch06_img031_analyze.png"/>
+				</imageobject>
+				<caption>
+					<para>Vistas: Analyze</para>
+				</caption>
+			</mediaobject>
+		</section>
+		<!-- TODO State Changes
+		<section>
+			<title>State Changes (Módulo Malware)</title>
+			<para>Programa que realiza el análisis de la actividad de los EndPoints. En esta interfaz es posible la descarga
+			 de un archivo .csv que incluye las diferencias observadas entre un periodo de tiempo y el momento de la consulta.
+			 </para>
+			<para>El Agente de Carga recoge todos los procesos creados y destruidos, las conexiones generadas por esos procesos
+				y las capturas de los ficheros e identifica las amenazas
+				mediante el análisis de ficheros y los Indicadores de Compromiso (IOCs).
+			</para>
+			<para>Como se puede observar en la imagen, en esta pantalla encontramos un listado que incluye todos los EndPoints
+				(identificados a través de su Hostname e IP), información del tipo de proceso (estado de procesos/estados de red)
+				y los botones de descarga del anterior archivo csv generado y el nuevo, de modo que el usuario pueda fácilmente
+				realizar una comparación de los cambios de estado (Old CSV/ New CSV).
+			</para>
+			<mediaobject>
+				<imageobject>
+					<imagedata scalefit="1" align="center" width="450" fileref="images/ch08_img016.png"/>
+				</imageobject>
+				<caption>
+					<para>Interfaz State Changes</para>
+				</caption>
+			</mediaobject>
+			<para><emphasis role="bold">Opciones de filtrado de cambios de estado:</emphasis></para>
+			<orderedlist numeration="arabic">
+				<listitem>
+					<para>View: Show everything, Show only reviewed elements, Show only unreviewed elements.</para>
+					<para>La casilla <literal>Reviewed</literal> posibilita que el usuario marque aquellos EndPoints que ya
+						ha supervisado y tener disponible las diferentes opciones de filtrado.
+					</para>
+				</listitem>
+				<listitem>
+					<para>Filtrado por rango temporal: seleccionar el periodo que desea analizar en la barra de filtrado
+						temporal del margen superior izquierdo.
+					</para>
+				</listitem>
+			</orderedlist>
+			<mediaobject>
+				<imageobject>
+					<imagedata scalefit="1" align="center" width="450" fileref="images/ch08_img017.png"/>
+				</imageobject>
+				<caption>
+					<para>Opciones de visualización en State Changes</para>
+				</caption>
+			</mediaobject>
+		</section>
+		<section>
+			<title>IOCs (Módulo Malware)</title>
+			<para>El Manager analiza e identifica las amenazas gracias a las reglas incluidas en los Indicadores de Compromiso
+				o IOCs y a la información de cada EndPoint que es reportada por el Agente de carga.
+			</para>
+			<para>Los IOCs se componen de una serie de reglas cuyo cumplimiento o no determinan la activación o desactivación
+				de los mismos. En caso de que los procesos capturados coincidan con alguna regla estos se visualizarán
+				indicando el o los EndPoints que se han visto comprometidos por la activación de uno o más IOCs.
+			</para>
+			<para>Esta vista ofrece una visión global de los IOCs que han sido activados y los EndPoints que han sido
+				comprometidos. Se compone principalmente de dos áreas o apartados:
+			</para>
+			<orderedlist numeration="arabic">
+				<listitem>
+					<para><emphasis role="bold">Evolución temporal de los IOCs y EndPoints comprometidos</emphasis></para>
+				</listitem>
+				<listitem>
+					<para><emphasis role="bold">Currently compromised EndPoints</emphasis></para>
+				</listitem>
+			</orderedlist>
+			<para><emphasis role="bold">Evolución temporal de los IOCs y EndPoints comprometidos</emphasis></para>
+			<para>En este apartado se incluye una gráfica de barras en la que se muestran el número de IOCs únicos que se han
+				activado (color rojo) y el número de EndPoints únicos que se han visto comprometidos (color azul).
+			</para>
+			<para>El usuario puede realizar una selección del periodo de tiempo que se desea consultar a través de la franja
+				temporal que se encuentra en el margen superior izquierdo. Además, puede aumentar la granuralidad de los datos
+				realizando Filter zoom sobre la gráfica.
+			</para>
+			<para><emphasis role="bold">Currently compromised EndPoints</emphasis></para>
+			<para>En este apartado se visualiza la información relacionada con los EndPoints que se encuentran comprometidos
+				en el momento de la consulta. Se compone de una tabla resumen y de un listado detallado de cada uno de los
+				EndPoints comprometidos.
+			</para>
+			<para>En la tabla resumen se muestra el total de Enpoints comprometidos y el total de IOCs que se han activado:</para>
+			<itemizedlist mark="bullet">
+				<listitem>
+					<para><literal>Number of compromised EndPoints</literal>: Número total de EndPoints comprometidos (cuya
+						actividad ha activado una o varias reglas de los IOCs definidos).
+					</para>
+				</listitem>
+				<listitem>
+					<para><literal>Number of active IOCs</literal>: Cantidad total de IOCs activos.</para>
+				</listitem>
+				<listitem>
+					<para><literal>Mean of IOCs/EndPoint</literal>: media de EndPoints comprometidos e IOCs activos en el
+						momento de la consulta.
+					</para>
+				</listitem>
+			</itemizedlist>
+			<para>A continuación se visualiza un listado que incluye todos los EndPoints que se han visto comprometidos
+				acompañados de la siguiente información:
+			</para>
+			<itemizedlist mark="bullet">
+				<listitem>
+					<para><literal>EndPoint ID</literal>: Identificador del EndPoint.</para>
+				</listitem>
+				<listitem>
+					<para><literal>Compromised since:</literal> fecha en la que se activó el IOC y se consideró que dicho
+						EndPoint podía estar comprometido.
+					</para>
+				</listitem>
+				<listitem>
+					<para><literal>Number of active IOCs</literal>: número de IOCs que se han activado para ese EndPoint.</para>
+				</listitem>
+				<listitem>
+					<para><literal>IOC IDs:</literal> identificador/es de los IOCs que se han activado para dicho EndPoint (uuid). </para>
+				</listitem>
+				<listitem>
+					<para><literal>Detailed information:</literal> seleccionando esta opción se abre una ventana emergente
+						en la que se muestra la información referente a ese EndPoint y un listado con los IOCs que se han
+						activado (punto rojo) y aquellos que se han desactivado para dicho equipo (punto verde).
+					</para>
+				</listitem>
+			</itemizedlist>
+		</section>
+		-->
 	</section>
 	<section>
 		<title>Tipo de agregación</title>
@@ -800,7 +982,7 @@
 			</listitem>
 			<listitem>
 				<para>flows/s</para>
-			</listitem>			
+			</listitem>
 			<listitem>
 				<para>client</para>
 			</listitem>
@@ -880,7 +1062,7 @@
 			<caption>
 				<para>Combinación de vista Raw para un período de tiempo seleccionado (granularidad)</para>
 			</caption>
-		</mediaobject>	
+		</mediaobject>
 	</section>
 	<section>
 		<title>Tipo de gráfico</title>
@@ -897,7 +1079,7 @@
 			<caption>
 				<para>Gráfico Acumulado para vistas de sensor</para>
 			</caption>
-		</mediaobject>	
+		</mediaobject>
 		<para><emphasis role="bold">Área:</emphasis> gráfico que proporciona una superposición de los datos a un grupo de elementos que pertenecen al atributo seleccionado, haciendo que el tráfico total sea la suma del tráfico por atributo (en la imagen, se muestra por cada sensor).</para>
 		<mediaobject>
 			<imageobject>
@@ -921,7 +1103,7 @@
 			<caption>
 				<para>Área para la vista gráfica de Tops por Sensor: elemento único</para>
 			</caption>
-		</mediaobject>	
+		</mediaobject>
 		<para><emphasis role="bold">Línea:</emphasis> gráfico que proporciona una superposición de los datos a un grupo de elementos que pertenecen al atributo seleccionado; en este caso, el área no se muestra pero el gráfico está representado por una línea.</para>
 		<mediaobject>
 			<imageobject>
@@ -933,7 +1115,7 @@
 			<caption>
 				<para>Gráfico Top de líneas por sensor</para>
 			</caption>
-		</mediaobject>	
+		</mediaobject>
 		<para><emphasis role="bold">Barras:</emphasis> proporciona una superposición de datos a un grupo de elementos que pertenecen al atributo seleccionado, siendo el total, la suma de valores de cada uno de esos elementos. En este caso, los datos se representan mediante barras.</para>
 		<mediaobject>
 			<imageobject>
@@ -957,7 +1139,7 @@
 			<caption>
 				<para>Gráficos SBarras para vista superior por dirección SRC</para>
 			</caption>
-		</mediaobject>	
+		</mediaobject>
 		<para><emphasis role="bold">Flujos:</emphasis> gráfico solo disponible en la vista Raw. Muestra el flujo de tráfico por sensor.</para>
 		<mediaobject>
 			<imageobject>
@@ -969,8 +1151,8 @@
 			<caption>
 				<para>Gráficos de flujo (solo en vista Raw)</para>
 			</caption>
-		</mediaobject>	
-	</section>	
+		</mediaobject>
+	</section>
 	<section>
 		<title>Opciones</title>
 		<para>Cada vista tiene una serie de opciones que permiten al usuario, entre otras cosas, mostrar el tráfico total, exportar los datos a un CSV o llevar la máquina a un estado del pasado para analizar y comparar el comportamiento actual y pasado.</para>
@@ -1016,7 +1198,7 @@
 			<caption>
 				<para>Opciones: Exportar a CSV</para>
 			</caption>
-		</mediaobject>	
+		</mediaobject>
 		<mediaobject>
 			<imageobject>
 				<imagedata scalefit="1" width="450" align="center" fileref="images/ch06_img042.png"/>
@@ -1027,7 +1209,7 @@
 			<caption>
 				<para>Optiones: Máquina del tiempo</para>
 			</caption>
-		</mediaobject>	
+		</mediaobject>
 		<mediaobject>
 			<imageobject>
 				<imagedata scalefit="1" width="450" align="center" fileref="images/ch06_img043.png"/>
@@ -1038,7 +1220,7 @@
 			<caption>
 				<para>Opciones: Ordenar agregaciones</para>
 			</caption>
-		</mediaobject>		
+		</mediaobject>
 	</section>
 	<section>
 		<title>Atributos: pestañas y columnas</title>
@@ -1135,7 +1317,7 @@
 			</listitem>
 		</itemizedlist>
 		<para><emphasis role="bold">Gráfico de dispersión</emphasis></para>
-		<para>En el menú de atributos de Red encontramos el gráfico de dispersión, una opción que nos da una idea de la distribución del tráfico de la red. Es un gráfico que representa puntos de coordenadas a través de IP que interactúan con el tráfico de la red en tiempo real. En el eje horizontal, muestra el destino de IP y las coordenadas del origen de IP. Cuanto más tráfico se genera, más grueso es el punto.</para> 
+		<para>En el menú de atributos de Red encontramos el gráfico de dispersión, una opción que nos da una idea de la distribución del tráfico de la red. Es un gráfico que representa puntos de coordenadas a través de IP que interactúan con el tráfico de la red en tiempo real. En el eje horizontal, muestra el destino de IP y las coordenadas del origen de IP. Cuanto más tráfico se genera, más grueso es el punto.</para>
 		<para>Al colocar el ratón sobre cada uno de los puntos en el gráfico, obtenemos la dirección IP asociada.</para>
 		<note>
 			<title>Nota</title>
@@ -1151,32 +1333,67 @@
 			<caption>
 				<para>Distribución del tráfico de red: Red> Diagrama de dispersión</para>
 			</caption>
-			</mediaobject>	
-			<para><emphasis role="bold">SRC/DST MAP</emphasis></para>
-			<para>En el menú de atributos de Ubicación encontramos las opciones SRC MAP y DST MAP. En ambos casos, ofrecemos la posibilidad de mostrar el mapa que es la localización de la IP origen (SRC MAP) y destino (DST MAP) que genera la mayor cantidad de tráfico.</para>
-			<mediaobject>
-				<imageobject>
-					<imagedata scalefit="1" align="center" width="450" fileref="images/ch06_img045.png"/>
-				</imageobject>
-				<textobject>
-					<phrase>Ubicación del tráfico de red: Ubicación> MAPA SRC/DST</phrase>
-				</textobject>
-				<caption>
-					<para>Ubicación del tráfico de red: Ubicación> MAPA SRC/DST</para>
-				</caption>
-			</mediaobject>	
-			<para>Cuando hay más de una IP conectada en el mismo punto geográfico, estas se agrupan y se muestran como un punto con el tamaño más grande que incluye un número. Este número indica el número total de IP conectadas en esa ubicación. Para el detalle de las IP, simplemente aplique al mapa o zoom, haga doble clic en el punto en el que desea obtener más información.</para>
-			<mediaobject>
-				<imageobject>
-					<imagedata scalefit="1" align="center" width="450" fileref="images/ch06_img046.png"/>
-				</imageobject>
-				<textobject>
-					<phrase>Ubicación del tráfico de red: detalles de conexión</phrase>
-				</textobject>
-				<caption>
-					<para>Ubicación del tráfico de red: detalles de conexión</para>
-				</caption>
-			</mediaobject>	
+		</mediaobject>
+		<para><emphasis role="bold">SRC/DST MAP</emphasis></para>
+		<para>En el menú de atributos de Ubicación encontramos las opciones SRC MAP y DST MAP. En ambos casos, ofrecemos la posibilidad de mostrar el mapa que es la localización de la IP origen (SRC MAP) y destino (DST MAP) que genera la mayor cantidad de tráfico.</para>
+		<mediaobject>
+			<imageobject>
+				<imagedata scalefit="1" align="center" width="450" fileref="images/ch06_img045.png"/>
+			</imageobject>
+			<textobject>
+				<phrase>Ubicación del tráfico de red: Ubicación> MAPA SRC/DST</phrase>
+			</textobject>
+			<caption>
+				<para>Ubicación del tráfico de red: Ubicación> MAPA SRC/DST</para>
+			</caption>
+		</mediaobject>
+		<para>Cuando hay más de una IP conectada en el mismo punto geográfico, estas se agrupan y se muestran como un punto con el tamaño más grande que incluye un número. Este número indica el número total de IP conectadas en esa ubicación. Para el detalle de las IP, simplemente aplique al mapa o zoom, haga doble clic en el punto en el que desea obtener más información.</para>
+		<mediaobject>
+			<imageobject>
+				<imagedata scalefit="1" align="center" width="450" fileref="images/ch06_img046.png"/>
+			</imageobject>
+			<textobject>
+				<phrase>Ubicación del tráfico de red: detalles de conexión</phrase>
+			</textobject>
+			<caption>
+				<para>Ubicación del tráfico de red: detalles de conexión</para>
+			</caption>
+		</mediaobject>
+		<section>
+			<title>Atributos disponibles para Malware: pestañas y columnas</title>
+			<para>A continuación enumeramos los atributos que el usuario tiene disponibles para aplicar en las vistas
+				Malware y los diferentes aspectos que puede consultar de cada uno de ellos:
+			</para>
+			<itemizedlist mark="circle">
+				<listitem>
+					<para>Email</para>
+					<para>- Email ID</para>
+					<para>- Email DST</para>
+					<para>- Email Action</para>
+				</listitem>
+				<listitem>
+					<para>File</para>
+					<para>- Filename</para>
+					<para>- File size</para>
+					<para>- Hash</para>
+				</listitem>
+				<listitem>
+					<para>Malware</para>
+					<para>- Domain name</para>
+					<para>- Hash Score</para>
+					<para>- Hash probe Score</para>
+					<para>- URL score</para>
+					<para>- URL probe score</para>
+					<para>- IP score</para>
+					<para>- IP probe score</para>
+				</listitem>
+				<listitem>
+					<para>Network</para>
+					<para>- Sensor UUID</para>
+					<para>- Proxy IP</para>
+				</listitem>
+			</itemizedlist>
+		</section>
 	</section>
 	<section>
 		<title>Informes</title>
