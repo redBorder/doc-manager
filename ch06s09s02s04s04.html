@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><title xmlns:d="http://docbook.org/ns/docbook">6.9.2.4.4. Filter Policies: sensores Mail Gateway</title><link rel="stylesheet" type="text/css" href="Common_Content/css/default.css" /><link rel="stylesheet" media="print" href="Common_Content/css/print.css" type="text/css" /><meta xmlns:d="http://docbook.org/ns/docbook" name="generator" content="publican v4.1.3" /><meta xmlns:d="http://docbook.org/ns/docbook" name="package" content="redBorder_Manager-Guia_de_Usuario-3.1-es-ES-1.1-5" /><link rel="home" href="index.html" title="Guía de Usuario" /><link rel="up" href="ch06s09s02s04.html" title="6.9.2.4. Edición y configuración de los sensores Mail Gateway" /><link rel="prev" href="ch06s09s02s04s03.html" title="6.9.2.4.3. Quarantine" /><link rel="next" href="ch06s09s02s05.html" title="6.9.2.5. Eventos Malware (Mail Gateway)" /></head><body><p id="title"><a class="left" href="https://fedorahosted.org/publican"><img alt="Product Site" src="Common_Content/images//image_left.png" /></a><a class="right" href="https://fedorahosted.org/publican"><img alt="Documentation Site" src="Common_Content/images//image_right.png" /></a></p><ul class="docnav top"><li class="previous"><a accesskey="p" href="ch06s09s02s04s03.html"><strong>Anterior</strong></a></li><li class="home">Guía de Usuario</li><li class="next"><a accesskey="n" href="ch06s09s02s05.html"><strong>Siguiente</strong></a></li></ul><div class="section"><div class="titlepage"><div><div><h5 class="title"><a id="idm140285284367840">
+      ⁠</a>6.9.2.4.4. Filter Policies: sensores Mail Gateway</h5></div></div></div><div class="para">
+						Para acceder a la creación o edición de las Filter Policies el usuario tiene dos vías diferentes:
+					</div><div xmlns:d="http://docbook.org/ns/docbook" class="orderedlist"><ol class="arabic"><li class="listitem"><div class="para">
+								<span class="bold bold"><strong>Total de Filter Policies creadas para el sensor root: </strong></span> Sensors -&gt; Options -&gt; Filter Policies
+							</div></li><li class="listitem"><div class="para">
+								<span class="bold bold"><strong>Filter Policies para un sensor concreto:</strong></span> Sensors -&gt; icono "Editar" de cada uno de los sensores -&gt; Filter Policies
+							</div></li></ol></div><div class="mediaobject" align="center"><img src="images/ch11_img066.png" align="middle" width="450" /><div class="caption"><div class="para">
+							Listado de Filter Policies para el sensor root
+						</div></div></div><div class="para">
+						En ambos casos el usuario accede a una interfaz en la que visualiza un listado con todas las Filter Policies que han sido creadas para ese sensor. La política que se encuentra activa (asignada) aparecerá sombreada en color verde.
+					</div><div class="para">
+						Para asignar una política a un sensor hacer clic en el botón <code class="literal">Assign</code>. Para aplicar la política asignada al sensor seleccionar la opción <code class="literal">Apply</code>.
+					</div><div class="para">
+						Para desasignar una política seleccionar la opción <code class="literal">Clear</code>.
+					</div><div class="mediaobject" align="center"><img src="images/ch11_img067.png" align="middle" width="450" /><div class="caption"><div class="para">
+							Listado de Filter Policies para un sensor Mail Gateway
+						</div></div></div><div class="section"><div class="titlepage"><div><div><h6 class="title"><a id="idm140285284351488">
+      ⁠</a>6.9.2.4.4.1. Creación de una nueva Filter Policy</h6></div></div></div><div class="para">
+							Una vez que se ha accedido a la interfaz de Filter Policies para crear una nueva política basta con seleccionar la opción <code class="literal">+New Policy</code>. El usuario deberá indicar al menos un nombre para la nueva política y de modo opcional, insertar una descripción.
+						</div><div class="para">
+							A continuación deberá indicar las reglas que se incluyen en esta política. El procedimiento variará según se quiera aplicar la política a nivel de Hash, URL o IP.
+						</div><div class="para">
+							Para definir las reglas de la política basta con hacer clic sobre la política que se desea modificar o bien mediante el icono "Editar".
+						</div><div class="mediaobject" align="center"><img src="images/ch11_img068.png" align="middle" width="350" /><div class="caption"><div class="para">
+								Crear una nueva Filter Policy
+							</div></div></div><div class="para">
+							La interfaz de edición de las Filter Policies consta de dos apartados: Edit Filter Policy y Threshold Configuration. En ambos apartados el usuario puede editar la siguiente información:
+						</div><div xmlns:d="http://docbook.org/ns/docbook" class="itemizedlist"><ul><li class="listitem"><div class="para">
+									<span class="bold bold"><strong>Name</strong></span>
+								</div></li><li class="listitem"><div class="para">
+									<span class="bold bold"><strong>Description</strong></span>
+								</div></li><li class="listitem"><div class="para">
+									<span class="bold bold"><strong>Caché query method:</strong></span> el usuario debe indicar el tipo de consultas que desea que se realicen a la caché.
+								</div></li><li class="listitem"><div class="para">
+									<span class="bold bold"><strong>Apply Filter Policy for:</strong></span> seleccionar el tipo de objeto a analizar.
+								</div></li><li class="listitem"><div class="para">
+									<span class="bold bold"><strong>Score to consider element as Malware:</strong></span> indicar el score a partir del cual un objeto es considerado Malware.
+								</div></li><li class="listitem"><div class="para">
+									<span class="bold bold"><strong>Drop files that exceed this size (MB)</strong></span> (este campo solo se encuentra habilitado en el caso de que se haya seleccionado aplicar la política para Hash): indicar el tamaño máximo de los ficheros a partir del cual serán bloqueados por el sistema.
+								</div></li></ul></div><div xmlns:d="http://docbook.org/ns/docbook" class="note"><div class="admonition_header"><p><strong>Configuración recomendada</strong></p></div><div class="admonition"><div class="para">
+								<span class="bold bold"><strong>Caché query method:</strong></span> Local+API
+							</div><div class="para">
+								<span class="bold bold"><strong>Apply Filter Policy for:</strong></span> se recomienda seleccionar los tres tipos de objetos (Hash, URL e IP).
+							</div></div></div><div class="para">
+							<span class="bold bold"><strong>File Rules</strong></span>
+						</div><div class="para">
+							En el caso de que se haya activado en el campo <code class="literal">Apply Filter Policy for:</code> la casilla correspondiente a Hash se desplegará un nuevo apartado en el margen inferior: File Rules.
+						</div><div class="mediaobject" align="center"><img src="images/ch11_img069.png" align="middle" width="450" /><div class="caption"><div class="para">
+								Filter Policies: File Rules
+							</div></div></div><div class="para">
+							En este apartado se muestra un listado del tipo de ficheros sobre los que se pueden realizar acciones. Las acciones disponibles son:
+						</div><div xmlns:d="http://docbook.org/ns/docbook" class="itemizedlist"><ul><li class="listitem"><div class="para">
+									Filter
+								</div></li><li class="listitem"><div class="para">
+									Drop (bloqueo)
+								</div></li><li class="listitem"><div class="para">
+									Pass
+								</div></li></ul></div><div class="para">
+							Para aplicar la nueva configuración seleccionar la opción <code class="literal">Save.</code>
+						</div></div></div><ul class="docnav"><li class="previous"><a accesskey="p" href="ch06s09s02s04s03.html"><strong>Anterior</strong>6.9.2.4.3. Quarantine</a></li><li class="up"><a accesskey="u" href="#"><strong>Subir</strong></a></li><li class="home"><a accesskey="h" href="index.html"><strong>Inicio</strong></a></li><li class="next"><a accesskey="n" href="ch06s09s02s05.html"><strong>Siguiente</strong>6.9.2.5. Eventos Malware (Mail Gateway)</a></li></ul></body></html>

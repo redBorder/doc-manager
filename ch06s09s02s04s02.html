@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><title xmlns:d="http://docbook.org/ns/docbook">6.9.2.4.2. Sensors: configuración individual de los sensores Mail Gateway</title><link rel="stylesheet" type="text/css" href="Common_Content/css/default.css" /><link rel="stylesheet" media="print" href="Common_Content/css/print.css" type="text/css" /><meta xmlns:d="http://docbook.org/ns/docbook" name="generator" content="publican v4.1.3" /><meta xmlns:d="http://docbook.org/ns/docbook" name="package" content="redBorder_Manager-Guia_de_Usuario-3.1-es-ES-1.1-5" /><link rel="home" href="index.html" title="Guía de Usuario" /><link rel="up" href="ch06s09s02s04.html" title="6.9.2.4. Edición y configuración de los sensores Mail Gateway" /><link rel="prev" href="ch06s09s02s04.html" title="6.9.2.4. Edición y configuración de los sensores Mail Gateway" /><link rel="next" href="ch06s09s02s04s03.html" title="6.9.2.4.3. Quarantine" /></head><body><p id="title"><a class="left" href="https://fedorahosted.org/publican"><img alt="Product Site" src="Common_Content/images//image_left.png" /></a><a class="right" href="https://fedorahosted.org/publican"><img alt="Documentation Site" src="Common_Content/images//image_right.png" /></a></p><ul class="docnav top"><li class="previous"><a accesskey="p" href="ch06s09s02s04.html"><strong>Anterior</strong></a></li><li class="home">Guía de Usuario</li><li class="next"><a accesskey="n" href="ch06s09s02s04s03.html"><strong>Siguiente</strong></a></li></ul><div class="section"><div class="titlepage"><div><div><h5 class="title"><a id="idm140285282520704">
+      ⁠</a>6.9.2.4.2. Sensors: configuración individual de los sensores Mail Gateway</h5></div></div></div><div class="para">
+						Para editar la configuración de cualquiera de los sensores Mail Gateway a nivel individual el usuario debe dirigirse a la sección <code class="literal">Sensors</code> situada en el lado derecho del menú de cabecera. A continuación, deberá seleccionar el sensor que desea editar.
+					</div><div class="para">
+						En la vista árbol, los sensores Mail Gateway vienen acompañados de un icono identificativo. También puede buscar el sensor en el listado que se muestra desde <code class="literal">View -&gt; Gateway Sensors.</code>
+					</div><div class="mediaobject" align="center"><img src="images/ch11_img055.png" align="middle" width="450" /><div class="caption"><div class="para">
+							Sensors: vías para la edición de un sensor
+						</div></div></div><div class="mediaobject" align="center"><img src="images/ch11_img056.png" align="middle" width="450" /><div class="caption"><div class="para">
+							Listado de sensores Mail Gateway: Sensors -&gt; View -&gt; Gateway Sensors
+						</div></div></div><div class="para">
+						Dentro del menú que se despliega encontramos las siguientes opciones:
+					</div><div xmlns:d="http://docbook.org/ns/docbook" class="itemizedlist"><ul><li class="listitem"><div class="para">
+								<span class="bold bold"><strong>Edit:</strong></span> permite la edición de la configuración de un sensor a nivel individual.
+							</div></li><li class="listitem"><div class="para">
+								<span class="bold bold"><strong>Monitors</strong></span>
+							</div></li><li class="listitem"><div class="para">
+								<span class="bold bold"><strong>Quarantine:</strong></span> listado de los correos que se encuentran en cuarentena.
+							</div></li><li class="listitem"><div class="para">
+								<span class="bold bold"><strong>Filter Policies:</strong></span> configuración y asignación de Filter Policies para cada sensor.
+							</div></li></ul></div><div class="mediaobject" align="center"><img src="images/ch11_img054.png" align="middle" width="450" /><div class="caption"><div class="para">
+							Editar sensor Mail Gateway
+						</div></div></div><div class="para">
+						Para comenzar la edición de los parámetros del sensor seleccionar <code class="literal">Edit.</code>
+					</div><div class="para">
+						En la interfaz de edición del sensor se introducirá la siguiente información. Para guardar la configuración del sensor, hacer clic en el botón <span class="keycap"><strong>Update.</strong></span>
+					</div><div xmlns:d="http://docbook.org/ns/docbook" class="note"><div class="admonition_header"><p><strong>Nota</strong></p></div><div class="admonition"><div class="para">
+							Los campos nombre, IP y versión son no editables, ya que esta información se introduce en el proceso de configuración y registro del sensor.
+						</div></div></div><div class="section"><div class="titlepage"><div><div><h6 class="title"><a id="idm140285282494496">
+      ⁠</a>6.9.2.4.2.1. Gateway Settings</h6></div></div></div><div class="para">
+							En este apartado el usuario puede definir el comportamiento del sensor en base a los valores que introduzca en cada uno de los campos que se muestran en él.
+						</div><div xmlns:d="http://docbook.org/ns/docbook" class="itemizedlist"><ul><li class="listitem"><div class="para">
+									<span class="bold bold"><strong>Relay Host:</strong></span> Especificar la IP del servidor de correo final.
+								</div></li><li class="listitem"><div class="para">
+									<span class="bold bold"><strong>Message Size Limit:</strong></span> Definir el tamaño máximo de los mensajes que se pueden recibir.
+								</div></li><li class="listitem"><div class="para">
+									<span class="bold bold"><strong>Max Paralell Process:</strong></span> Indicar el número máximo de procesos en paralelo que trata el Mail Gateway.
+								</div></li><li class="listitem"><div class="para">
+									<span class="bold bold"><strong>API timeout (seconds):</strong></span> Definir el tiempo máximo de espera para la obtención de un score válido por parte de la caché remota.
+								</div></li><li class="listitem"><div class="para">
+									<span class="bold bold"><strong>Email detained timeout (seconds):</strong></span> En este campo se indica el tiempo máximo de espera para la obtención de un score válido por parte de la caché remota. Superado este tiempo el fichero se dejará pasar.
+								</div></li><li class="listitem"><div class="para">
+									<span class="bold bold"><strong>Quarantine timeout (days):</strong></span> Configurar los días que han de pasar desde que un fichero identificado como Malware es bloqueado y retenido hasta que se define una acción para gestionarlo. Si no se realiza ninguna acción o se supera el tiempo indicado el fichero es descartado.
+								</div></li><li class="listitem"><div class="para">
+									<span class="bold bold"><strong>Cache Sync (hours) (minutes):</strong></span> Indicar el tiempo máximo que debe pasar para la sincronización de la caché local y remota. Valor en horas y en minutos.
+								</div></li><li class="listitem"><div class="para">
+									<span class="bold bold"><strong>Maximum number of stored log files:</strong></span> Delimitar el tiempo máximo que el fichero permancerá almacenado en el histórico de correos.
+								</div></li></ul></div><div class="mediaobject" align="center"><img src="images/ch11_img058.png" align="middle" width="450" /><div class="caption"><div class="para">
+								Gateway Settings
+							</div></div></div></div><div class="section"><div class="titlepage"><div><div><h6 class="title"><a id="idm140285282473872">
+      ⁠</a>6.9.2.4.2.2. Relay Domains</h6></div></div></div><div class="para">
+							En este apartado el usuario debe definir qué dominio o dominios son los que van a estar gestionados por el sensor.
+						</div><div class="para">
+							Aquí se visualiza un listado de los dominios que ya han sido agregados. El usuario puede eliminar en cualquier momento aquellos dominios en desuso o que considere que no deben ser gestionados por el sensor.
+						</div><div class="mediaobject" align="center"><img src="images/ch11_img059.png" align="middle" width="450" /><div class="caption"><div class="para">
+								Listado de Relay Domains
+							</div></div></div><div class="para">
+							Para añadir un nuevo dominio basta con hacer clic en la en la pestaña <code class="literal">+Add Domains</code> e introducir el dominio que se desea asociar, haga clic en <span class="keycap"><strong>Update</strong></span> para guardar la información.
+						</div><div class="mediaobject" align="center"><img src="images/ch11_img060.png" align="middle" width="350" /><div class="caption"><div class="para">
+								Añadir nuevo Relay Domain
+							</div></div></div><div xmlns:d="http://docbook.org/ns/docbook" class="warning"><div class="admonition_header"><p><strong>Advertencia</strong></p></div><div class="admonition"><div class="para">
+								Una vez finalizada la edición del sensor Mail Gateway hacer clic en <code class="literal">Update</code> para aplicar los cambios realizados.
+							</div></div></div></div></div><ul class="docnav"><li class="previous"><a accesskey="p" href="ch06s09s02s04.html"><strong>Anterior</strong>6.9.2.4. Edición y configuración de los sensores ...</a></li><li class="up"><a accesskey="u" href="#"><strong>Subir</strong></a></li><li class="home"><a accesskey="h" href="index.html"><strong>Inicio</strong></a></li><li class="next"><a accesskey="n" href="ch06s09s02s04s03.html"><strong>Siguiente</strong>6.9.2.4.3. Quarantine</a></li></ul></body></html>

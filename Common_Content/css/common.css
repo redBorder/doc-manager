@@ -107,7 +107,7 @@ div.section {
 
 p, div.para {
 	padding-top: 0px;
-	margin-top: 0.3em;
+	margin-top: 1em;
 	padding-bottom: 0px;
 	margin-bottom: 1em;
 }
@@ -229,7 +229,7 @@ h2 {
 }
 
 
-div.subtitle, h2.subtitle, h3.subtitle {
+.book div.subtitle, .book h2.subtitle, .book h3.subtitle {
 	margin-top: 1em;
 	margin-bottom: 1em;
 	font-size: 18px;
@@ -294,6 +294,9 @@ h6 {
 
 .section > div > div > div > h2.title {
 	font-size: 21px;
+	page-break-inside: avoid;
+	page-break-before: avoid;
+	page-break-after: avoid;
 }
 
 .section > div > div > div > h3.title {
@@ -564,7 +567,7 @@ div.authorgroup.contrib {
 }
 
 .perl_Comment {
-	color: #FF00FF;
+	color: #888888;
 }
 
 
@@ -639,42 +642,33 @@ div.authorgroup.contrib {
 
 /*Lists*/
 ul {
-	padding-left:1.6em;
-	list-style-image:url(../images/dot.png);
-	list-style-type: circle;
+    list-style-image: url("../images/dot.png");
+    list-style-type: circle;
+    padding-left: 1.6em;
 }
 
 ul ul {
-	list-style-image:url(../images/dot2.png);
-	list-style-type: circle;
+    list-style-image: url("../images/dot2.png");
+    list-style-type: circle;
 }
 
-ol {
-	list-style-image:none;
+ol.1 {
 	list-style-type: decimal;
 }
 
+ol.a,
 ol ol {
 	list-style-type: lower-alpha;
 }
 
-ol.arabic {
-	list-style-type: decimal;
-}
-
-ol.loweralpha {
-	list-style-type: lower-alpha;
-}
-
-ol.lowerroman {
+ol.i {
 	list-style-type: lower-roman;
 }
-
-ol.upperalpha {
+ol.A {
 	list-style-type: upper-alpha;
 }
 
-ol.upperroman {
+ol.I {
 	list-style-type: upper-roman;
 }
 
@@ -688,7 +682,6 @@ dd {
 	margin:0px;
 	margin-left:2em;
 	padding-top:0px;
-	padding-bottom: 1em;
 }
 
 li {
@@ -696,13 +689,6 @@ li {
 	margin-top: 0px;
 	padding-bottom: 0px;
 /*	margin-bottom: 16px; */
-}
-
-li p, li div.para {
-	padding-top:0px;
-	margin-top:0px;
-	padding-bottom:0px;
-	margin-bottom:0.3em;
 }
 
 /*images*/
@@ -720,15 +706,19 @@ img {
 	overflow: hidden;
 }
 
+.figure {
+    margin-top: 1em;
+    width: 100%;
+}
+
 .figure img,
 .mediaobject img {
 	display:block;
-	margin:0;
+	margin: 0em;
 	page-break-inside: avoid;
 }
 
 .figure .title {
-	margin:0px;
 	margin-bottom:2em;
 	padding:0px;
 }
@@ -809,7 +799,6 @@ div.title {
 }
 
 .replaceable {
-	font-family:"liberation mono", "bitstream vera mono", "dejavu mono", monospace;
 	font-style: italic;
 }
 
@@ -932,6 +921,7 @@ div.admonition_header p {
 }
 
 div.admonition_header {
+	background-origin:content-box;
 	clear: both;
 	margin: 0px;
 	padding: 0px;
@@ -944,21 +934,30 @@ div.admonition_header {
 div.warning div.admonition_header {
 	background: url(../images/red.png) top left repeat-x;
 	background-color: #590000;
+	background: -webkit-linear-gradient(#a40000,#590000);
+	background: linear-gradient(#a40000,#590000);
 }
 
 div.note div.admonition_header {
 	background: url(../images/green.png) top right repeat-x;
 	background-color: #597800;
+	background: -webkit-linear-gradient(#769f00,#597800);
+	background: linear-gradient(#769f00,#597800);
 }
 
 div.important div.admonition_header {
 	background: url(../images/yellow.png) top right repeat-x;
 	background-color: #a6710f;
+	background: -webkit-linear-gradient(#d08e13,#a6710f);
+	background: linear-gradient(#d08e13,#a6710f);
 }
 
-div.warning p, div.warning div.para,
-div.note p, div.note div.para,
-div.important p, div.important div.para {
+div.warning p:first-child,
+div.warning div.para:first-child,
+div.note p:first-child,
+div.note div.para:first-child,
+div.important p:first-child,
+div.important div.para:first-child {
 	padding: 0px;
 	margin: 0px;
 }
@@ -1012,7 +1011,7 @@ div.admonition {
 
 /*Table*/
 div.table {
-	page-break-inside: avoid;
+/*	page-break-inside: avoid; */
 }
 
 table {
@@ -1138,6 +1137,28 @@ span.chapter {
 table.simplelist td, .calloutlist table td {
 	border-style: none;
 }
+
+
+table.lt-4-cols.lt-7-rows td {
+	border: none;
+}
+/*to simplify layout*/
+
+
+table.lt-4-cols.gt-14-rows tr:nth-child(odd) {
+	background-color: #fafafa;
+}
+/* to keep simple but stripe rows */ 
+
+
+.gt-8-cols td {
+	border-left: 1px solid #ccc;
+}
+
+.gt-8-cols td:first-child {
+	border-left: 0;
+}
+/* to apply vertical lines to differentiate columns*/
 
 /*Breadcrumbs*/
 #breadcrumbs ul li.first:before {
@@ -1297,7 +1318,7 @@ div.chapter {
 }
 
 
-div.titlepage {
+div.titlepage, div.titlepage > div, div.titlepage > div > div {
 	page-break-inside: avoid;
 	page-break-after: avoid;
 }
@@ -1617,7 +1638,7 @@ pre {
 	-moz-border-radius:11px;
 	-webkit-border-radius:11px;
 	border-radius: 11px;
-	page-break-inside: avoid;
+/*	page-break-inside: avoid; */
 }
 
 .example {
@@ -1627,11 +1648,18 @@ pre {
 	page-break-inside: avoid;
 }
 
+/* move these invisible fields out of the flow */
+.example > a:first-child,
+.table > a:first-child {
+    float: left;
+}
+
 .package, .citetitle {
 	font-style: italic;
 }
 
-.titlepage .edition {
+.titlepage .edition,
+.titlepage .releaseinfo {
 	color: #336699;
 	background-color: transparent;
 	margin-top: 1em;
@@ -1657,6 +1685,8 @@ span.remark {
 
 dt {
 	clear:both;
+	page-break-inside: avoid;
+	page-break-after: avoid;
 }
 
 dt img {
@@ -1713,7 +1743,7 @@ div.toc > dl > dt {
 }
 
 li.step > a:first-child {
-	display: none;
+	display: block;
 }
 
 .stepalternatives {
@@ -1722,6 +1752,20 @@ li.step > a:first-child {
 }
 .task {
 /*	page-break-inside: avoid; */
+}
+
+
+.added {
+	background-color: #99ff99;
+}
+
+.changed {
+	background-color: #ffff77;
+}
+
+.deleted {
+	background-color: #ff4455;
+	text-decoration: line-through;
 }
 
 
