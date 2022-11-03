@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><title xmlns:d="http://docbook.org/ns/docbook">6.9.2.6. Configurar Office365 para enviar correos al Mail Gateway</title><link rel="stylesheet" type="text/css" href="Common_Content/css/default.css" /><link rel="stylesheet" media="print" href="Common_Content/css/print.css" type="text/css" /><meta xmlns:d="http://docbook.org/ns/docbook" name="generator" content="publican v4.1.3" /><meta xmlns:d="http://docbook.org/ns/docbook" name="package" content="redBorder_Manager-Guia_de_Usuario-3.1-es-ES-1.1-5" /><link rel="home" href="index.html" title="Guía de Usuario" /><link rel="up" href="ch06s09s02.html" title="6.9.2. Mail Gateway" /><link rel="prev" href="ch06s09s02s05s05.html" title="6.9.2.5.5. Propagation" /><link rel="next" href="ch07.html" title="Capítulo 7. Herramientas y administración" /></head><body><p id="title"><a class="left" href="https://fedorahosted.org/publican"><img alt="Product Site" src="Common_Content/images//image_left.png" /></a><a class="right" href="https://fedorahosted.org/publican"><img alt="Documentation Site" src="Common_Content/images//image_right.png" /></a></p><ul class="docnav top"><li class="previous"><a accesskey="p" href="ch06s09s02s05s05.html"><strong>Anterior</strong></a></li><li class="home">Guía de Usuario</li><li class="next"><a accesskey="n" href="ch07.html"><strong>Siguiente</strong></a></li></ul><div class="section"><div class="titlepage"><div><div><h4 class="title"><a id="idm140625756708128">
+      ⁠</a>6.9.2.6. Configurar Office365 para enviar correos al Mail Gateway</h4></div></div></div><div class="para">
+					Para conectar el Mail Gateway con Office365 debes realizar una serie de configuraciones en el portal de Office365.
+				</div><div xmlns:d="http://docbook.org/ns/docbook" class="orderedlist"><ol class="arabic"><li class="listitem"><div class="para">
+							Inicia sesión en Microsoft Office 365, <span class="bold bold"><strong>https://portal.microsoft.com/</strong></span>, y haz clic en <span class="bold bold"><strong>Admin &gt; Exchange</strong></span> desde el panel de navegación izquierdo.
+						</div></li><li class="listitem"><div class="para">
+							Selecciona Mail Flow desde el panel de navegación izquierdo.
+						</div></li><li class="listitem"><div class="para">
+							Crear un conector.
+						</div><div class="orderedlist"><ol><li class="listitem"><div class="para">
+									Haz click en <span class="bold bold"><strong>Connectors</strong></span>, y luego click en el símbolo (+) para añadir un nuevo conector.
+								</div></li><li class="listitem"><div class="para">
+									En el Connection from, selecciona <span class="bold bold"><strong>Office 365</strong></span>, y en el Connection to <span class="bold bold"><strong>Your organization's mail server.</strong></span>
+								</div></li><li class="listitem"><div class="para">
+									Click en <span class="bold bold"><strong>Next</strong></span>.
+								</div></li><li class="listitem"><div class="para">
+									Introduce un nombre y una descripción para el conector.
+								</div></li><li class="listitem"><div class="para">
+									Click en <span class="bold bold"><strong>Next</strong></span>.
+								</div></li><li class="listitem"><div class="para">
+									Para la opción <span class="bold bold"><strong>Specify when you want to use this connector</strong></span> selecciona <span class="bold bold"><strong>Only when I have a transport rule set up that redirects messages to this connector</strong></span>.
+								</div></li><li class="listitem"><div class="para">
+									Click en <span class="bold bold"><strong>Next</strong></span>.
+								</div></li><li class="listitem"><div class="para">
+									Haz click en el símbolo más (+) en el apartado de <span class="bold bold"><strong>How do you want to route email messages?</strong></span> e introduce la dirección IP o FQDN que apunta al sensor Mail Gateway. Si estás usando un balanceador de carga delante del Mail Gateway, introduce el FQDN de la ip virtual.
+								</div></li><li class="listitem"><div class="para">
+									Click en <span class="bold bold"><strong>Next</strong></span>.
+								</div></li><li class="listitem"><div class="para">
+									Selecciona <span class="bold bold"><strong>Always use Transport Layer Security (TLS) to secore the connection</strong></span> y <span class="bold bold"><strong>Any digital certificate, including self-signed certificates</strong></span>.
+								</div></li><li class="listitem"><div class="para">
+									Click en <span class="bold bold"><strong>Next</strong></span>.
+								</div></li><li class="listitem"><div class="para">
+									Click en + para añadir un email de prueba para realizar la validación. Y luego click en <span class="bold bold"><strong>Validate</strong></span>. El sistema valida el nuevo conector enviando un email de prueba.
+								</div></li><li class="listitem"><div class="para">
+									Click en <span class="bold bold"><strong>Next</strong></span> para ir a la página resumen y guarda el conector.
+								</div></li></ol></div></li><li class="listitem"><div class="para">
+							Crear reglas de redireccionamiento del tráfico hacia el Mail Gateway.
+						</div><div class="orderedlist"><ol><li class="listitem"><div class="para">
+									Click en <span class="bold bold"><strong>Rules</strong></span> desde la sección Mail Flow en el panel de navegación izquierdo y haz click en + <span class="bold bold"><strong>Add a rule</strong></span> &gt; <span class="bold bold"><strong>Create a new rule</strong></span>.
+								</div></li><li class="listitem"><div class="para">
+									Asigna un nombre a la regla.
+								</div><div class="mediaobject" align="center"><img src="images/ch11_img080.png" align="middle" width="450" /><div class="caption"><div class="para">
+										Regla de redireccionamiento
+									</div></div></div></li><li class="listitem"><div class="para">
+									En <span class="bold bold"><strong>Apply this rule if</strong></span> selecciona <span class="bold bold"><strong>*Apply to all messages</strong></span>.
+								</div><div class="note"><div class="admonition_header"><p><strong>*Nota</strong></p></div><div class="admonition"><div class="para">
+										En este ejemplo queremos que tanto los correos entrantes como los salientes pasen a través del Mail Gateway, pero este parámetro se puede ajustar según el escenario deseado.
+									</div></div></div></li><li class="listitem"><div class="para">
+									En <span class="bold bold"><strong>Do the following</strong></span> selecciona <span class="bold bold"><strong>Redirect the message to</strong></span> &gt; <span class="bold bold"><strong>the following connector</strong></span>, selecciona el connector creado en el paso previo y haz click en <span class="bold bold"><strong>Save</strong></span>.
+								</div></li><li class="listitem"><div class="para">
+									En <span class="bold bold"><strong>Except if</strong></span>, selecciona <span class="bold bold"><strong>The sender</strong></span> &gt; <span class="bold bold"><strong>Ip Address is in any of these ranges or exactly matches</strong></span> y añade la dirección IP pública del Mail Gateway. Si utilizas un balanceador de carga antes que el Mail Gateway, introduce la ip virtual del mismo.
+								</div></li><li class="listitem"><div class="para">
+									Click en <span class="bold bold"><strong>Next</strong></span>.
+								</div></li><li class="listitem"><div class="para">
+									Selecciona <span class="bold bold"><strong>Stop processing more rules</strong></span> y acepta las otras configuraciones por defecto haciendo click en <span class="bold bold"><strong>Next</strong></span>.
+								</div></li><li class="listitem"><div class="para">
+									Click en <span class="bold bold"><strong>Finish</strong></span> para guardar la regla.
+								</div></li></ol></div></li><li class="listitem"><div class="para">
+							Crear un segundo conector.
+						</div><div class="orderedlist"><ol><li class="listitem"><div class="para">
+									Haz click en <span class="bold bold"><strong>Connectors</strong></span>, y luego click en el símbolo (+) para añadir un nuevo conector.
+								</div></li><li class="listitem"><div class="para">
+									Esta vez, en Connection from, selecciona <span class="bold bold"><strong>Your organization's email</strong></span> y en Connection to selecciona <span class="bold bold"><strong>Office 365</strong></span>.
+								</div></li><li class="listitem"><div class="para">
+									Click en <span class="bold bold"><strong>Next</strong></span>.
+								</div></li><li class="listitem"><div class="para">
+									Introduce un nombre y una descripción para el conector.
+								</div></li><li class="listitem"><div class="para">
+									Click en <span class="bold bold"><strong>Next</strong></span>.
+								</div></li><li class="listitem"><div class="para">
+									En <span class="bold bold"><strong>How should Office 365 identify email from your email server?</strong></span> selecciona una de las dos opciones:
+								</div><div class="itemizedlist"><ul><li class="listitem"><div class="para">
+											La opción recomendada, seleccionando <span class="bold bold"><strong>By verifying that the subject name on the certificate</strong></span> e introduce el CN del certificado firmado comprado a través de algún vendor como Godaddy o Digicert.
+										</div></li><li class="listitem"><div class="para">
+											Alternativamente, selecciona <span class="bold bold"><strong>By verifying that the IP address of the sending server</strong></span> e introduce el FQDN de la máquina Mail Gateway.
+										</div></li></ul></div></li><li class="listitem"><div class="para">
+									Click en <span class="bold bold"><strong>Next</strong></span> para ver la página resumen. Y click en <span class="bold bold"><strong>Create connector</strong></span> para guardar el conector.
+								</div></li></ol></div></li><li class="listitem"><div class="para">
+							Si alguna de las direcciones IP públicas usadas por el Mail Gateway está en la lista de SpamHaus y por tanto bloqueada por Offce 365 a través del Policy Block List (PBL), debes desbloquearla.
+						</div><div class="orderedlist"><ol class="arabic"><li class="listitem"><div class="para">
+									Ve a <span class="bold bold"><strong>http://www.spamhouse.org/lookup.lasso</strong></span> e introduce cada una de las direcciones IP.
+								</div></li><li class="listitem"><div class="para">
+									Si alguna está en la lista, sigue las instrucciones para eliminarla. Para más información lee <span class="bold bold"><strong>https://www.spamhaus.org/faq/section/Spamhaus%20PBL</strong></span>
+								</div></li></ol></div></li></ol></div></div><ul class="docnav"><li class="previous"><a accesskey="p" href="ch06s09s02s05s05.html"><strong>Anterior</strong>6.9.2.5.5. Propagation</a></li><li class="up"><a accesskey="u" href="#"><strong>Subir</strong></a></li><li class="home"><a accesskey="h" href="index.html"><strong>Inicio</strong></a></li><li class="next"><a accesskey="n" href="ch07.html"><strong>Siguiente</strong>Capítulo 7. Herramientas y administración</a></li></ul></body></html>
