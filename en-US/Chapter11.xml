@@ -1630,7 +1630,150 @@
 							the upper right margin: <literal>Show Analysis/Show Evolution.</literal>
 						</para>
 					</note>
-				</section>
+			</section>			
+		</section>
+		<section>
+				<title>Configure Office365 to send emails to Mail Gateway</title>
+				<para>You must configure Exchange Online to transfer email to the Mail Gateway.</para>
+				<orderedlist numeration="arabic">
+					<listitem>
+						<para>Log onto Microsoft Office 365, <emphasis role="bold">https://portal.microsoft.com/</emphasis>, and click <emphasis role="bold">Admin > Exchange</emphasis> from the left navigation panel.</para>
+					</listitem>
+					<listitem>
+						<para>Select Mail Flow from the left navigation panel.</para>
+					</listitem>
+					<listitem>
+						<para>Create a connector.</para>
+						<orderedlist>
+							<listitem>
+								<para>Click <emphasis role="bold">Connectors</emphasis>, and then click the plus sign (+) to add a new connector.</para>
+							</listitem>
+							<listitem>
+								<para>In the Connection from, select <emphasis role="bold">Office 365</emphasis>, and in Connection to <emphasis role="bold">Your organization's mail server.</emphasis></para>
+							</listitem>
+							<listitem>
+								<para>Click <emphasis role="bold">Next</emphasis>.</para>
+							</listitem>
+							<listitem>
+								<para>Enter a name and description for this connector.</para>
+							</listitem>
+							<listitem>
+								<para>Click <emphasis role="bold">Next</emphasis>.</para>
+							</listitem>
+							<listitem>
+								<para>For <emphasis role="bold">Specify when you want to use this connector</emphasis> select <emphasis role="bold">Only when I have a transport rule set up that redirects messages to this connector</emphasis>.</para>
+							</listitem>
+							<listitem>
+								<para>Click <emphasis role="bold">Next</emphasis>.</para>
+							</listitem>
+							<listitem>
+								<para>Click the plus sign (+) on the <emphasis role="bold">How do you want to route email messages?</emphasis> page, and enter the IP address or FQDN for the Mail Gateway. If you are using a load balancer inf ront of the gateways, enter the FQDN of the virtual IP.</para>
+							</listitem>
+							<listitem>
+								<para>Click <emphasis role="bold">Next</emphasis>.</para>
+							</listitem>
+							<listitem>
+								<para>Select <emphasis role="bold">Always use Transport Layer Security (TLS) to secore the connection</emphasis> and <emphasis role="bold">Any digital certificate, including self-signed certificates</emphasis>.</para>
+							</listitem>
+							<listitem>
+								<para>Click <emphasis role="bold">Next</emphasis>.</para>
+							</listitem>
+							<listitem>
+								<para>Click + to add a test email to make the validation. And then click  <emphasis role="bold">Validate</emphasis>. The system validates the new connector and sends a test email.</para>
+							</listitem>
+							<listitem>
+								<para>Click <emphasis role="bold">Next</emphasis> to view a summary screen and save the connector.</para>
+							</listitem>
+						</orderedlist>
+					</listitem>
+					<listitem>
+						<para>Create rules that forward traffic to the Mail Gateway.</para>
+						<orderedlist>
+							<listitem>
+								<para>Click <emphasis role="bold">Rules</emphasis> from  Mail Flow section in the left navigation panel and click + <emphasis role="bold">Add a rule</emphasis> > <emphasis role="bold">Create a new rule</emphasis>.</para>
+							</listitem>
+							<listitem>
+								<para>Assign a name to the rule.</para>
+								<mediaobject>
+									<imageobject>
+										<imagedata scalefit="1" align="center" width="450" fileref="images/ch11_img080.png"/>
+									</imageobject>
+									<caption>
+										<para>Forward rule</para>
+									</caption>
+								</mediaobject>
+							</listitem>
+							<listitem>
+								<para>For <emphasis role="bold">Apply this rule if</emphasis> select <emphasis role="bold">*Apply to all messages</emphasis>.</para>
+								<note>
+									<title>*Note</title>
+									<para>On this example we want to forward all emails (incoming and outgoing) to the Mail Gateway,this parameter may be different for another type of setup.
+									</para>
+								</note>
+							</listitem>
+							<listitem>
+								<para>For <emphasis role="bold">Do the following</emphasis> select <emphasis role="bold">Redirect the message to</emphasis> > <emphasis role="bold">the following connector</emphasis>, select the connect you just created and click <emphasis role="bold">Save</emphasis>.</para>
+							</listitem>
+							<listitem>
+								<para>For <emphasis role="bold">Except if</emphasis>, select <emphasis role="bold">The sender</emphasis> > <emphasis role="bold">Ip Address is in any of these ranges or exactly matches</emphasis> and introduce the public IP address of the Mail Gateway. If you are using a load balancer in front of the Mail Gateways, introduce the virtual ip.</para>
+							</listitem>
+							<listitem>
+								<para>Click <emphasis role="bold">Next</emphasis>.</para>
+							</listitem>
+							<listitem>
+								<para>Select <emphasis role="bold">Stop processing more rules</emphasis> and accept the remaining defaults, click <emphasis role="bold">Next</emphasis>.</para>
+							</listitem>
+							<listitem>
+								<para>Click <emphasis role="bold">Finish</emphasis> to save your rule.</para>
+							</listitem>
+						</orderedlist>
+					</listitem>
+					<listitem>
+						<para>Create a second connector.</para>
+						<orderedlist>
+							<listitem>
+								<para>Click <emphasis role="bold">Connectors</emphasis>, and then click in the sign (+) to add a new connector.</para>
+							</listitem>
+							<listitem>
+								<para>This time, in Connection from, select <emphasis role="bold">Your organization's email</emphasis> and in Connection to, select <emphasis role="bold">Office 365</emphasis>.</para>
+							</listitem>
+							<listitem>
+								<para>Click <emphasis role="bold">Next</emphasis>.</para>
+							</listitem>
+							<listitem>
+								<para>Enter a name and description of the connector.</para>
+							</listitem>
+							<listitem>
+								<para>Click <emphasis role="bold">Next</emphasis>.</para>
+							</listitem>
+							<listitem>
+								<para>On the  <emphasis role="bold">How should Office 365 identify email from your email server?</emphasis> select 1 of 2 options:</para>
+								<itemizedlist mark="circle">
+									<listitem>
+										<para>For best practice, select <emphasis role="bold">By verifying that the subject name on the certificate</emphasis> and enter the CN of a signed certificated purchased through a vendor like Godaddy or Digicert.</para>
+									</listitem>
+									<listitem>
+										<para>Alternately, select <emphasis role="bold">By verifying that the IP address of the sending server</emphasis> and enter the FQDN of the Mail Gateway.</para>
+									</listitem>
+								</itemizedlist>
+							</listitem>
+							<listitem>
+								<para>Click <emphasis role="bold">Next</emphasis> to view a summary screen. Click <emphasis role="bold">Create connector</emphasis> to save your connector.</para>
+							</listitem>
+						</orderedlist>
+					</listitem>
+					<listitem>
+						<para>Make sure none of the public static IPs used by the Mail Gateway is listed in SpamHaus and thus blocked by Offce 365, likely in the Policy Block List (PBL).</para>
+						<orderedlist numeration="arabic">
+							<listitem>
+								<para>Go to <emphasis role="bold">http://www.spamhouse.org/lookup.lasso</emphasis>  and enter each IP.</para>
+							</listitem>
+							<listitem>
+								<para>If any is listed, follow the instructions to remove it. For more information, read <emphasis role="bold">https://www.spamhaus.org/faq/section/Spamhaus%20PBL</emphasis></para>
+							</listitem>
+						</orderedlist>
+					</listitem>
+				</orderedlist>
 			</section>
 		</section>
 	</section>

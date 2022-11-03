@@ -1596,8 +1596,152 @@
 						que se muestran en el margen superior derecho: <literal>Show Analysis/Show Evolution.</literal>
 					</para>
 				</note>
-			</section>
+			</section>			
 		</section>
+		<section>
+				<title>Configurar Office365 para enviar correos al Mail Gateway</title>
+				<para>Para conectar el Mail Gateway con Office365 debes realizar una serie de configuraciones en el portal de Office365.</para>
+				<orderedlist numeration="arabic">
+					<listitem>
+						<para>Inicia sesión en Microsoft Office 365, <emphasis role="bold">https://portal.microsoft.com/</emphasis>, y haz clic en <emphasis role="bold">Admin > Exchange</emphasis> desde el panel de navegación izquierdo.</para>
+					</listitem>
+					<listitem>
+						<para>Selecciona Mail Flow desde el panel de navegación izquierdo.</para>
+					</listitem>
+					<listitem>
+						<para>Crear un conector.</para>
+						<orderedlist>
+							<listitem>
+								<para>Haz click en <emphasis role="bold">Connectors</emphasis>, y luego click en el símbolo (+) para añadir un nuevo conector.</para>
+							</listitem>
+							<listitem>
+								<para>En el Connection from, selecciona <emphasis role="bold">Office 365</emphasis>, y en el Connection to <emphasis role="bold">Your organization's mail server.</emphasis></para>
+							</listitem>
+							<listitem>
+								<para>Click en <emphasis role="bold">Next</emphasis>.</para>
+							</listitem>
+							<listitem>
+								<para>Introduce un nombre y una descripción para el conector.</para>
+							</listitem>
+							<listitem>
+								<para>Click en <emphasis role="bold">Next</emphasis>.</para>
+							</listitem>
+							<listitem>
+								<para>Para la opción <emphasis role="bold">Specify when you want to use this connector</emphasis> selecciona <emphasis role="bold">Only when I have a transport rule set up that redirects messages to this connector</emphasis>.</para>
+							</listitem>
+							<listitem>
+								<para>Click en <emphasis role="bold">Next</emphasis>.</para>
+							</listitem>
+							<listitem>
+								<para>Haz click en el símbolo más (+) en el apartado de <emphasis role="bold">How do you want to route email messages?</emphasis> e introduce la dirección IP o FQDN que apunta al sensor Mail Gateway. Si estás usando un balanceador de carga delante del Mail Gateway, introduce el FQDN de la ip virtual.</para>
+							</listitem>
+							<listitem>
+								<para>Click en <emphasis role="bold">Next</emphasis>.</para>
+							</listitem>
+							<listitem>
+								<para>Selecciona <emphasis role="bold">Always use Transport Layer Security (TLS) to secore the connection</emphasis> y <emphasis role="bold">Any digital certificate, including self-signed certificates</emphasis>.</para>
+							</listitem>
+							<listitem>
+								<para>Click en <emphasis role="bold">Next</emphasis>.</para>
+							</listitem>
+							<listitem>
+								<para>Click en + para añadir un email de prueba para realizar la validación. Y luego click en <emphasis role="bold">Validate</emphasis>. El sistema valida el nuevo conector enviando un email de prueba.</para>
+							</listitem>
+							<listitem>
+								<para>Click en <emphasis role="bold">Next</emphasis> para ir a la página resumen y guarda el conector.</para>
+							</listitem>
+						</orderedlist>
+					</listitem>
+					<listitem>
+						<para>Crear reglas de redireccionamiento del tráfico hacia el Mail Gateway.</para>
+						<orderedlist>
+							<listitem>
+								<para>Click en <emphasis role="bold">Rules</emphasis> desde la sección Mail Flow en el panel de navegación izquierdo y haz click en + <emphasis role="bold">Add a rule</emphasis> > <emphasis role="bold">Create a new rule</emphasis>.</para>
+							</listitem>
+							<listitem>
+								<para>Asigna un nombre a la regla.</para>
+								<mediaobject>
+									<imageobject>
+										<imagedata scalefit="1" align="center" width="450" fileref="images/ch11_img080.png"/>
+									</imageobject>
+									<caption>
+										<para>Regla de redireccionamiento</para>
+									</caption>
+								</mediaobject>
+							</listitem>
+							<listitem>
+								<para>En <emphasis role="bold">Apply this rule if</emphasis> selecciona <emphasis role="bold">*Apply to all messages</emphasis>.</para>
+								<note>
+									<title>*Nota</title>
+									<para>En este ejemplo queremos que tanto los correos entrantes como los salientes pasen a través del Mail Gateway, 
+										pero este parámetro se puede ajustar según el escenario deseado.
+									</para>
+								</note>
+							</listitem>
+							<listitem>
+								<para>En <emphasis role="bold">Do the following</emphasis> selecciona <emphasis role="bold">Redirect the message to</emphasis> > <emphasis role="bold">the following connector</emphasis>, selecciona el connector creado en el paso previo y haz click en <emphasis role="bold">Save</emphasis>.</para>
+							</listitem>
+							<listitem>
+								<para>En <emphasis role="bold">Except if</emphasis>, selecciona <emphasis role="bold">The sender</emphasis> > <emphasis role="bold">Ip Address is in any of these ranges or exactly matches</emphasis> y añade la dirección IP pública del Mail Gateway. Si utilizas un balanceador de carga antes que el Mail Gateway, introduce la ip virtual del mismo.</para>
+							</listitem>
+							<listitem>
+								<para>Click en <emphasis role="bold">Next</emphasis>.</para>
+							</listitem>
+							<listitem>
+								<para>Selecciona <emphasis role="bold">Stop processing more rules</emphasis> y acepta las otras configuraciones por defecto haciendo click en <emphasis role="bold">Next</emphasis>.</para>
+							</listitem>
+							<listitem>
+								<para>Click en <emphasis role="bold">Finish</emphasis> para guardar la regla.</para>
+							</listitem>
+						</orderedlist>
+					</listitem>
+					<listitem>
+						<para>Crear un segundo conector.</para>
+						<orderedlist>
+							<listitem>
+								<para>Haz click en <emphasis role="bold">Connectors</emphasis>, y luego click en el símbolo (+) para añadir un nuevo conector.</para>
+							</listitem>
+							<listitem>
+								<para>Esta vez, en Connection from, selecciona <emphasis role="bold">Your organization's email</emphasis> y en Connection to selecciona <emphasis role="bold">Office 365</emphasis>.</para>
+							</listitem>
+							<listitem>
+								<para>Click en <emphasis role="bold">Next</emphasis>.</para>
+							</listitem>
+							<listitem>
+								<para>Introduce un nombre y una descripción para el conector.</para>
+							</listitem>
+							<listitem>
+								<para>Click en <emphasis role="bold">Next</emphasis>.</para>
+							</listitem>
+							<listitem>
+								<para>En <emphasis role="bold">How should Office 365 identify email from your email server?</emphasis> selecciona una de las dos opciones:</para>
+								<itemizedlist mark="circle">
+									<listitem>
+										<para>La opción recomendada, seleccionando <emphasis role="bold">By verifying that the subject name on the certificate</emphasis> e introduce el CN del certificado firmado comprado a través de algún vendor como Godaddy o Digicert.</para>
+									</listitem>
+									<listitem>
+										<para>Alternativamente, selecciona <emphasis role="bold">By verifying that the IP address of the sending server</emphasis> e introduce el FQDN de la máquina Mail Gateway.</para>
+									</listitem>
+								</itemizedlist>
+							</listitem>
+							<listitem>
+								<para>Click en <emphasis role="bold">Next</emphasis> para ver la página resumen. Y click en <emphasis role="bold">Create connector</emphasis> para guardar el conector.</para>
+							</listitem>
+						</orderedlist>
+					</listitem>
+					<listitem>
+						<para>Si alguna de las direcciones IP públicas usadas por el Mail Gateway está en la lista de SpamHaus y por tanto bloqueada por Offce 365 a través del Policy Block List (PBL), debes desbloquearla.</para>
+						<orderedlist numeration="arabic">
+							<listitem>
+								<para>Ve a <emphasis role="bold">http://www.spamhouse.org/lookup.lasso</emphasis>  e introduce cada una de las direcciones IP.</para>
+							</listitem>
+							<listitem>
+								<para>Si alguna está en la lista, sigue las instrucciones para eliminarla. Para más información lee <emphasis role="bold">https://www.spamhaus.org/faq/section/Spamhaus%20PBL</emphasis></para>
+							</listitem>
+						</orderedlist>
+					</listitem>
+				</orderedlist>
+			</section>
 		</section>
 	</section>
 </chapter>
