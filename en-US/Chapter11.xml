@@ -1707,7 +1707,7 @@
 								<para>For <emphasis role="bold">Apply this rule if</emphasis> select <emphasis role="bold">*Apply to all messages</emphasis>.</para>
 								<note>
 									<title>*Note</title>
-									<para>On this example we want to forward all emails (incoming and outgoing)to the Mail Gateway,this parámeter may change for a different setup.
+									<para>On this example we want to forward all emails (incoming and outgoing) to the Mail Gateway,this parameter may be different for another type of setup.
 									</para>
 								</note>
 							</listitem>
@@ -1750,7 +1750,7 @@
 								<para>On the  <emphasis role="bold">How should Office 365 identify email from your email server?</emphasis> select 1 of 2 options:</para>
 								<itemizedlist mark="circle">
 									<listitem>
-										<para>For best practice, select <emphasis role="bold">By verifying that the subject name on the certificate</emphasis> and enter the CD of a signed certificated purchased through a vendor like Godaddy or Digicert.</para>
+										<para>For best practice, select <emphasis role="bold">By verifying that the subject name on the certificate</emphasis> and enter the CN of a signed certificated purchased through a vendor like Godaddy or Digicert.</para>
 									</listitem>
 									<listitem>
 										<para>Alternately, select <emphasis role="bold">By verifying that the IP address of the sending server</emphasis> and enter the FQDN of the Mail Gateway.</para>
