@@ -3,7 +3,7 @@
 <!ENTITY % BOOK_ENTITIES SYSTEM "manual.ent">
 <!ENTITY PRODUCT "Documentation">
 <!ENTITY BOOKID "manual">
-<!ENTITY YEAR "2022">
+<!ENTITY YEAR "2023">
 <!ENTITY HOLDER "Eneo Tecnología S.L. |">
 ]>
 <bookinfo id="book-manual-manual">
@@ -13,12 +13,14 @@
 	  <year>2019</year>
 	  <year>2020</year>
     <year>2022</year>
+    <year>2023</year>
     <holder>Eneo Tecnología S.L.</holder>
   </copyright>
   <title>User Guide</title>
   <productname>redBorder Manager</productname>
   <productnumber>3.1</productnumber>
-  <edition>2</edition>
+  <subtitle></subtitle>
+  <edition>1.1-7</edition>
   <pubsnumber>0</pubsnumber>
   <abstract>
     <para>ISBN: Unavailable </para>

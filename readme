@@ -28,5 +28,4 @@ Best order for compiling this guide. Check out Installation Guide:
   <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="Chapter6.xml"/>
   <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="Chapter11.xml"/>
   <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="Chapter13.xml"/>
-  <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="Revision_History.xml"/>
 </book>
