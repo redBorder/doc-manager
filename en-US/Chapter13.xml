@@ -502,45 +502,133 @@
 		<section>
 			<title>SNMP Operation</title>			
 			<para>To explain the feature snmp operation we will use an example, monitor memory usage. When we create a new monitor category using the New Monitor Category button from the Monitor Categories page, we will see the following popup.</para>
-		<mediaobject>
-			<imageobject>
-				<imagedata scalefit="1" width="450" align="center" fileref="images/ch13_img013_c.png"/>
-			</imageobject>
-			<caption>
-				<para>Initial creation of a monitor category</para>
-			</caption>
-		</mediaobject>	
-		<para>This is the formula to calculate the memory usage of a device:</para>
-		<mediaobject>
-			<imageobject>
-				<imagedata scale="30" align="center" fileref="images/ch13_img013_d.png"/>
-			</imageobject>
-		</mediaobject>	
-		<para>The result is a combination of different snmp values. Now, if we want to create a monitor as the one in this example, we must choose SNMP Operation in the technology dropdown. Now our form will change to the following:</para>
-		<mediaobject>
-			<imageobject>
-				<imagedata scale="30" align="center" fileref="images/ch13_img013_d.png"/>
-			</imageobject>
-			<caption>
-				<para>Create monitor with SNMP Operation</para>
-			</caption>
-		</mediaobject>
-		<para>Under the OID field, now there is a button called Add new variable, which adds another field so we can enter more snmp OIDs. Also, at the bottom, there is an OIDs Operation field, in which we will introduce the operation we want to do with the OIDs previously entered.</para>
-		<mediaobject>
-			<imageobject>
-				<imagedata scalefit="1" width="450" align="center" fileref="images/ch13_img013_e.png"/>
-			</imageobject>
-			<caption>
-				<para>Example monitor</para>
-			</caption>
-		</mediaobject>
-		<para>For every OID the output is going to be stored on a varaible which we will later used in the OIDs operation.</para>
-		<para>Once at this point, we just have to create the monitor by pressing the create button.</para>
-		<para>To add the new monitor to a sensor device we will create a new sensor in Sensor tab, selecting Monitor Device.</para>
-
-
+			<mediaobject>
+				<imageobject>
+					<imagedata scalefit="1" width="450" align="center" fileref="images/ch13_img013_c.png"/>
+				</imageobject>
+				<caption>
+					<para>Initial creation of a monitor category</para>
+				</caption>
+			</mediaobject>	
+			<para>This is the formula to calculate the memory usage of a device:</para>
+			<mediaobject>
+				<imageobject>
+					<imagedata scale="30" align="center" fileref="images/ch13_img013_d.png"/>
+				</imageobject>
+			</mediaobject>	
+			<para>The result is a combination of different snmp values. Now, if we want to create a monitor as the one in this example, we must choose SNMP Operation in the technology dropdown. Now our form will change to the following:</para>
+			<mediaobject>
+				<imageobject>
+					<imagedata scale="30" align="center" fileref="images/ch13_img013_d.png"/>
+				</imageobject>
+				<caption>
+					<para>Create monitor with SNMP Operation</para>
+				</caption>
+			</mediaobject>
+			<para>Under the OID field, now there is a button called Add new variable, which adds another field so we can enter more snmp OIDs. Also, at the bottom, there is an OIDs Operation field, in which we will introduce the operation we want to do with the OIDs previously entered.</para>
+			<mediaobject>
+				<imageobject>
+					<imagedata scalefit="1" width="450" align="center" fileref="images/ch13_img013_e.png"/>
+				</imageobject>
+				<caption>
+					<para>Example monitor</para>
+				</caption>
+			</mediaobject>
+			<para>For every OID the output is going to be stored on a varaible which we will later used in the OIDs operation.</para>
+			<para>Once at this point, we just have to create the monitor by pressing the create button.</para>
+			<para>To add the new monitor to a sensor device we will create a new sensor in Sensor tab, selecting Monitor Device.</para>
 		</section>
-
+		<section>
+			<title>Bulkstats</title>
+			<para>Bulk statistics are <emphasis role="bold">statistics that are collected in a group or scheme</emphasis>, for example, system statistics, port statistics, or Radius statistics.</para>
+			<para>It's possible to display Bulkstats information in the redBorder manager, for this it is necessary to configure the client part in the Cisco device to activate the sending of information to the manager via ftp.</para>
+			<para>Once this is done, we can view all the information regarding Bulkstats in the redBorder manager by accessing its corresponding tab and selecting the desired fields within the Monitor module.</para>
+			<mediaobject>
+					<imageobject>
+						<imagedata scalefit="1" align="center" width="450" fileref="images/ch20_img021.png"/>
+					</imageobject>
+					<caption>
+						<para>Monitor Module: Bulkstats fields</para>
+					</caption>
+			</mediaobject>
+			<para>But... <emphasis role="bold">How to define a custom bulkstat monitor?</emphasis></para>
+			<para>To define custom Bulkstats monitor crafted specifically for a Bulkstats schema, it necessary that the user have a bulkstats schema in their network device. Once having this requirement,  then navigate to the <emphasis role="bold">Monitor Categories</emphasis> view.</para> 
+			<para>It's located in: <emphasis role="bold">Tools -> Monitor Categories</emphasis>.</para>
+			<mediaobject>
+					<imageobject>
+						<imagedata scalefit="1" align="center" width="450" fileref="images/ch20_img029.png"/>
+					</imageobject>
+					<caption>
+						<para>Tools section: Monitor Categories</para>
+					</caption>
+			</mediaobject> 
+			<para>Before proceding to uploading it, the user must save the schema into a plan text file and give it a name for example: <emphasis role="bold">Bulkstats-Schema.txt</emphasis>.</para>
+			<para>The file created should be a <emphasis role="bold">plain txt file</emphasis> and must contain the bulkstats schema that is define in the network device. Normaly the bulkstats schemas looks like this:</para>
+			<mediaobject>
+					<imageobject>
+						<imagedata scalefit="1" align="center" width="450" fileref="images/ch20_img022.png"/>
+					</imageobject>
+					<caption>
+						<para>Bulkstats schemas: Plain txt file</para>
+					</caption>
+			</mediaobject>
+			<para>Then click on <emphasis role="bold">New Monitor Category</emphasis> button and a modal will be displayed:</para>
+			<mediaobject>
+					<imageobject>
+						<imagedata scalefit="1" align="center" width="450" fileref="images/ch20_img023.png"/>
+					</imageobject>
+					<caption>
+						<para>New Monitor Category: Modal displayed</para>
+					</caption>
+			</mediaobject>
+			<para>Inside the new monitor category formulary select Bulkstats under the Technology list. This will display the new option to put your bulkstats schema file that define the user configuration.</para>
+			<mediaobject>
+					<imageobject>
+						<imagedata scalefit="1" align="center" width="250" fileref="images/ch20_img024.png"/>
+					</imageobject>
+					<caption>
+						<para>New Monitor Category: Technolgy selection</para>
+					</caption>
+			</mediaobject>
+			<para>To assign the new monitor category to a device sensor, it's necessary to create a device monitor if the user don't have one yet from Sensor Tree view.</para>
+			<para>Click on the <emphasis role="bold">sensor menu</emphasis> and then click on <emphasis role="bold">Monitors</emphasis>.</para>
+			<mediaobject>
+					<imageobject>
+						<imagedata scalefit="1" align="center" width="450" fileref="images/ch20_img025.png"/>
+					</imageobject>
+					<caption>
+						<para>Sensors menu: Monitors</para>
+					</caption>
+			</mediaobject>
+			<para>Then click on the category <emphasis role="bold">+ Add Monitor</emphasis></para>
+			<mediaobject>
+					<imageobject>
+						<imagedata scalefit="1" align="center" width="450" fileref="images/ch20_img026.png"/>
+					</imageobject>
+					<caption>
+						<para>Monitors for Device: Add Monitor category</para>
+					</caption>
+			</mediaobject>
+			<para>Once this is done, the user must click on the <emphasis role="bold">+ Add</emphasis> button to add the monitor category described above.</para>
+			<mediaobject>
+					<imageobject>
+						<imagedata scalefit="1" align="center" width="450" fileref="images/ch20_img027.png"/>
+					</imageobject>
+					<caption>
+						<para>Monitors for Device: Add Monitors modal displayed</para>
+					</caption>
+			</mediaobject>
+			<para>Once added the monitor to the sensor, It would diplay the destination where need to configure the device to send.</para>
+			<mediaobject>
+					<imageobject>
+						<imagedata scalefit="1" align="center" width="450" fileref="images/ch20_img028.png"/>
+					</imageobject>
+					<caption>
+						<para>Monitors for Device: Destination path</para>
+					</caption>
+			</mediaobject>
+			<para>The url corresponds to the destination path. It is necessary to configure sftp protocol in the device network to send the information regarding the bulkstat schemes to the manager.</para>
+		</section>
 	</section>
 	<section>
 		<title>Malware Settings</title>
