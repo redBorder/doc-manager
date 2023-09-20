@@ -1427,5 +1427,29 @@
 			</caption>
 		</mediaobject>
 		<para>When you hover the cursor over the graph, it displays the actual value, the expected value, and the predicted value.</para>
+		<para>To automate this process, it is possible to create alarms in the system that will notify the user when anomalies occur. To do this, click on <emphasis role="bold">Tools -> Alarms</emphasis> and adjust the alarm parameters by enabling the <emphasis role="bold">Outliers Enabled</emphasis> option, setting the Time Window, and defining the conditions or filters for anomaly detection.</para>
+		<mediaobject>
+			<imageobject>
+				<imagedata scalefit="1" align="center" width="450" fileref="images/ch06_img067.png"/>
+			</imageobject>
+			<textobject>
+				<phrase>Anomaly alarms</phrase>
+			</textobject>
+			<caption>
+				<para>Anomaly alarms</para>
+			</caption>
+		</mediaobject>
+		<para>If email notification has been configured, the user will receive an email when the alarm is triggered.</para>
+		<mediaobject>
+			<imageobject>
+				<imagedata scalefit="1" align="center" width="450" fileref="images/ch06_img068.png"/>
+			</imageobject>
+			<textobject>
+				<phrase>Email alarm notification</phrase>
+			</textobject>
+			<caption>
+				<para>Email alarm notification</para>
+			</caption>
+		</mediaobject>
 	</section>
 </chapter>
