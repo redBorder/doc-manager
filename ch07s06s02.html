@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><title>7.6.2. Bulkstats</title><link rel="stylesheet" type="text/css" href="Common_Content/css/default.css" /><link rel="stylesheet" media="print" href="Common_Content/css/print.css" type="text/css" /><meta name="generator" content="publican 3.2.0" /><meta name="package" content="redBorder_Manager-Guia_de_Usuario-3.1-es-ES-0.2-0" /><link rel="home" href="index.html" title="Guía de Usuario" /><link rel="up" href="ch07s06.html" title="7.6. Categorías de Monitor" /><link rel="prev" href="ch07s06.html" title="7.6. Categorías de Monitor" /><link rel="next" href="ch07s07.html" title="7.7. Malware Settings" /></head><body><p id="title"><a class="left" href="https://fedorahosted.org/publican"><img alt="Product Site" src="Common_Content/images//image_left.png" /></a><a class="right" href="https://fedorahosted.org/publican"><img alt="Documentation Site" src="Common_Content/images//image_right.png" /></a></p><ul class="docnav top"><li class="previous"><a accesskey="p" href="ch07s06.html"><strong>Anterior</strong></a></li><li class="home">Guía de Usuario</li><li class="next"><a accesskey="n" href="ch07s07.html"><strong>Siguiente</strong></a></li></ul><div class="section"><div class="titlepage"><div><div><h3 class="title"><a id="idm140250532393584"></a>7.6.2. Bulkstats</h3></div></div></div><div class="para">
+				Las Bulk statistics (o estadísticas recopiladas) son <span class="bold bold"><strong>estadísticas que se recopilan en un grupo o esquema</strong></span>, por ejemplo, estadísticas del sistema, estadísticas de puertos o estadísticas Radius.
+			</div><div class="para">
+				Es posible visualizar información de Bulkstats en el manager de redBorder, para ello es necesario configurar la parte del cliente en el dispositivo de Cisco para activar el envío de información al manager via ftp.
+			</div><div class="para">
+				Una vez hecho esto, podremos visualizar toda la información referente a Bulkstats en el manager de redBorder accediendo a su correspondiente tab y seleccionando los campos deseados dentro del módulo de Monitor.
+			</div><div class="mediaobject" align="center"><img src="images/ch20_img021.png" align="middle" width="450" /><div class="caption"><div class="para">
+					Módulo de Monitor: Campos de Bulkstats
+				</div></div></div><div class="para">
+				Pero... <span class="bold bold"><strong>Cómo se define un monitor bulkstat personalizado?</strong></span>
+			</div><div class="para">
+				Para definir un monitor Bulkstats personalizado diseñado específicamente para un esquema Bulkstats, es necesario que el usuario tenga un esquema de Bulkstat en su dispositivo de red. Una vez que tenga este requisito, debe navegar hasta la vista de <span class="bold bold"><strong>Categorías Monitor</strong></span>
+			</div><div class="para">
+				Está localizado en: <span class="bold bold"><strong>Herramientas -&gt; Categorías Monitor</strong></span>.
+			</div><div class="mediaobject" align="center"><img src="images/ch20_img029.png" align="middle" width="450" /><div class="caption"><div class="para">
+					Sección de Herramientas: Categorías Monitor
+				</div></div></div><div class="para">
+				Antes de proceder a cargarlo, el usuario debe guardar el esquema en un archivo de texto plano y darle un nombre, por ejemplo: <span class="bold bold"><strong>Bulkstats-Schema.txt</strong></span>.
+			</div><div class="para">
+				El archivo creado debe ser un <span class="bold bold"><strong>archivo de texto plano</strong></span> y debe contener el esquema de bulkstats que se define en el dispositivo de red. Normalmente, los esquemas de bulkstats se ven así:
+			</div><div class="mediaobject" align="center"><img src="images/ch20_img022.png" align="middle" width="450" /><div class="caption"><div class="para">
+					Esquemas Bulkstats: Archivo de texto plano
+				</div></div></div><div class="para">
+				Luego, se debe hacer clic en el botón <span class="bold bold"><strong>Nueva categoría de monitor</strong></span> y se mostrará un modal:
+			</div><div class="mediaobject" align="center"><img src="images/ch20_img023.png" align="middle" width="450" /><div class="caption"><div class="para">
+					Nueva categoría de monitor: Modal mostrado
+				</div></div></div><div class="para">
+				Dentro del nuevo formulario de categoría de monitores, seleccione Bulkstats en la lista de Tecnología. Esto mostrará la nueva opción para colocar su archivo de esquema de archivos masivos que define la configuración del usuario.
+			</div><div class="mediaobject" align="center"><img src="images/ch20_img024.png" align="middle" width="250" /><div class="caption"><div class="para">
+					Nueva categoría de monitor: Selección tecnológica
+				</div></div></div><div class="para">
+				Para asignar la nueva categoría de monitor a un device sensor, es necesario crear un monitor device (si el usuario aún no hay uno creado) desde la vista de Árbol de sensores.
+			</div><div class="para">
+				Hacer clic en el <span class="bold bold"><strong>menú del sensor</strong></span> y luego haga clic en <span class="bold bold"><strong>Monitores</strong></span>.
+			</div><div class="mediaobject" align="center"><img src="images/ch20_img025.png" align="middle" width="450" /><div class="caption"><div class="para">
+					Menú de sensores: Monitores
+				</div></div></div><div class="para">
+				Luego hay que hacer clic en la categoría <span class="bold bold"><strong>+ Añadir Monitor</strong></span>
+			</div><div class="mediaobject" align="center"><img src="images/ch20_img026.png" align="middle" width="450" /><div class="caption"><div class="para">
+					Monitores para dispositivo: Añadir categoría de monitor
+				</div></div></div><div class="para">
+				Una vez hecho esto, el usuario debe hacer clic en el botón<span class="bold bold"><strong>+ Añadir</strong></span> para agregar la categoría de monitor descrita anteriormente.
+			</div><div class="mediaobject" align="center"><img src="images/ch20_img027.png" align="middle" width="450" /><div class="caption"><div class="para">
+					Monitores para dispositivo: Se muestra el modo Añadir monitores
+				</div></div></div><div class="para">
+				Una vez agregado el monitor al sensor, mostraría el destino donde necesita configurar el dispositivo para enviar la información.
+			</div><div class="mediaobject" align="center"><img src="images/ch20_img028.png" align="middle" width="450" /><div class="caption"><div class="para">
+					Monitores para dispositivo: Ruta de destino
+				</div></div></div><div class="para">
+				La url corresponde a la ruta de destino. Es necesario configurar el protocolo sftp en la red del dispositivo para enviar la información sobre los esquemas bulkstats al manager.
+			</div></div><ul class="docnav"><li class="previous"><a accesskey="p" href="ch07s06.html"><strong>Anterior</strong>7.6. Categorías de Monitor</a></li><li class="up"><a accesskey="u" href="#"><strong>Subir</strong></a></li><li class="home"><a accesskey="h" href="index.html"><strong>Inicio</strong></a></li><li class="next"><a accesskey="n" href="ch07s07.html"><strong>Siguiente</strong>7.7. Malware Settings</a></li></ul></body></html>
