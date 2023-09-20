@@ -399,7 +399,7 @@
 			</caption>
 		</mediaobject>
 		<para><emphasis role="bold"><literal>Outliers</literal></emphasis></para>
-		<para>Para activar la detección de anomalías (outliers) despliegue la sección Outliers y haga click en <literal> Enable anomaly detection functionality</literal>.</para> <para> Si desea desactivar la opción, simplemente desmarque esa opción.</para>
+		<para>Para activar la detección de anomalías despliegue la sección Outliers y haga click en <literal> Enable anomaly detection functionality</literal>.</para> <para> Si desea desactivar la opción, simplemente desmarque esa opción.</para>
 		<mediaobject>
 			<imageobject>
 				<imagedata scalefit="1" width="450" align="center" fileref="images/ch13_img031.png"/>

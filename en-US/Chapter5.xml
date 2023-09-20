@@ -1389,17 +1389,17 @@
 		<para>The blocks of the report can be also modified choosing the block edit option in the report list, where the user will be able to add, move and delete any kind of block for the report.</para>
 	</section>
 		<section>
-		<title>Outliers</title>
+		<title>Anomalies</title>
 		<para>When anomaly detection is enabled (See General Settings: outliers), the 'Outliers' option will appear in the event dropdown menu in the Tops view of each module.</para>
 		<mediaobject>
 			<imageobject>
 				<imagedata scalefit="1" align="center" width="450" fileref="images/ch06_img064.png"/>
 			</imageobject>
 			<textobject>
-				<phrase>Outliers</phrase>
+				<phrase>Anomalies</phrase>
 			</textobject>
 			<caption>
-				<para>Outliers</para>
+				<para>Anomalies</para>
 			</caption>
 		</mediaobject>
 		<para>The system will perform anomaly detection and update the chart with the results.</para>

@@ -408,8 +408,8 @@
 				<para>General settings: list of Network Routes</para>
 			</caption>
 		</mediaobject>
-		<para><emphasis role="bold"><literal>Outliers</literal></emphasis></para>
-		<para>To enable anomalies detection (outliers) open outliers section and click on <literal> Enable anomaly detection functionality</literal>.</para> <para> Uncheck this option if you want to disable it.</para>
+		<para><emphasis role="bold"><literal>Anomalies</literal></emphasis></para>
+		<para>To enable anomalies detection open "Outliers" section and click on <literal> Enable anomaly detection functionality</literal>.</para> <para> Uncheck this option if you want to disable it.</para>
 		<mediaobject>
 			<imageobject>
 				<imagedata scalefit="1" width="450" align="center" fileref="images/ch13_img031.png"/>
