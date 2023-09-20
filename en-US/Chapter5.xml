@@ -1388,4 +1388,44 @@
 		<para>In the report list we have the possibility to edit an existing report or also generate it in PDF or send it by email, all this options are in the edit button in the right of the list.</para>
 		<para>The blocks of the report can be also modified choosing the block edit option in the report list, where the user will be able to add, move and delete any kind of block for the report.</para>
 	</section>
+		<section>
+		<title>Outliers</title>
+		<para>When anomaly detection is enabled (See General Settings: outliers), the 'Outliers' option will appear in the event dropdown menu in the Tops view of each module.</para>
+		<mediaobject>
+			<imageobject>
+				<imagedata scalefit="1" align="center" width="450" fileref="images/ch06_img064.png"/>
+			</imageobject>
+			<textobject>
+				<phrase>Outliers</phrase>
+			</textobject>
+			<caption>
+				<para>Outliers</para>
+			</caption>
+		</mediaobject>
+		<para>The system will perform anomaly detection and update the chart with the results.</para>
+		<mediaobject>
+			<imageobject>
+				<imagedata scalefit="1" align="center" width="450" fileref="images/ch06_img065.png"/>
+			</imageobject>
+			<textobject>
+				<phrase>Anomalies</phrase>
+			</textobject>
+			<caption>
+				<para>Anomalies</para>
+			</caption>
+		</mediaobject>
+		<para>In the resulting graph, the dashed line corresponds to the prediction, while the circles represent the detected anomalies.</para>
+		<mediaobject>
+			<imageobject>
+				<imagedata scalefit="1" align="center" width="450" fileref="images/ch06_img066.png"/>
+			</imageobject>
+			<textobject>
+				<phrase>Anomaly detail</phrase>
+			</textobject>
+			<caption>
+				<para>Anomaly detail</para>
+			</caption>
+		</mediaobject>
+		<para>When you hover the cursor over the graph, it displays the actual value, the expected value, and the predicted value.</para>
+	</section>
 </chapter>

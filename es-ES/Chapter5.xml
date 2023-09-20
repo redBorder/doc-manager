@@ -1436,4 +1436,44 @@
 		<para>En la lista de informes tenemos la posibilidad de editar un informe existente o también generarlo en PDF o enviarlo por correo electrónico, todas estas opciones están en el botón de edición a la derecha de la lista.</para>
 		<para>Los bloques del informe también se pueden modificar eligiendo la opción de edición de bloque en la lista de informes, donde el usuario podrá agregar, mover y eliminar cualquier tipo de bloque para el informe.</para>
 	</section>
+	<section>
+		<title>Outliers</title>
+		<para>Cuando la detección de anomalías está activada (Ver General Settings: outliers) en las vista de Tops de cada módulo aparecerá, en el menú desplegable de los eventos la opción de "Outliers".</para>
+		<mediaobject>
+			<imageobject>
+				<imagedata scalefit="1" align="center" width="450" fileref="images/ch06_img064.png"/>
+			</imageobject>
+			<textobject>
+				<phrase>Outliers</phrase>
+			</textobject>
+			<caption>
+				<para>Outliers</para>
+			</caption>
+		</mediaobject>
+		<para>El sistema realizará la detección de anomalías y actualizará el gŕafico con los resultados.</para>
+		<mediaobject>
+			<imageobject>
+				<imagedata scalefit="1" align="center" width="450" fileref="images/ch06_img065.png"/>
+			</imageobject>
+			<textobject>
+				<phrase>Anomalías</phrase>
+			</textobject>
+			<caption>
+				<para>Anomalías</para>
+			</caption>
+		</mediaobject>
+		<para>En la gráfica resultante, la línea de puntos corresponde con la predicción mientras que los círculos representan las anomalías detectadas.</para>
+		<mediaobject>
+			<imageobject>
+				<imagedata scalefit="1" align="center" width="450" fileref="images/ch06_img066.png"/>
+			</imageobject>
+			<textobject>
+				<phrase>Detalle de anomalía</phrase>
+			</textobject>
+			<caption>
+				<para>Detalle de anomalía</para>
+			</caption>
+		</mediaobject>
+		<para>Al posicionar el cursor encima de la gráfica, ésta muestra el valor real, el valor esperado y la valor de la predicción.</para>
+	</section>
 </chapter>
