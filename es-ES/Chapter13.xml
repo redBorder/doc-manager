@@ -388,7 +388,7 @@
 				<para>Configuración general: lista de rutas de red</para>
 			</caption>
 		</mediaobject>
-		<para><emphasis role="bold"><literal>Hosts fijos</literal></emphasis></para>
+		<para><emphasis role="bold"><literal>Fixed Hosts</literal></emphasis></para>
 		<para>En esta sección, el usuario definirá las rutas de red para el Manager. </para> <para> Agregar una nueva red: haga clic en el botón <literal> + Agregar </literal> e indique la ruta IP de la red. </para> <para> Eliminar una red de la lista: a través del icono "Borrar".</para>
 		<mediaobject>
 			<imageobject>
@@ -396,6 +396,16 @@
 			</imageobject>
 			<caption>
 				<para>Configuración general: lista de rutas de red</para>
+			</caption>
+		</mediaobject>
+		<para><emphasis role="bold"><literal>Outliers</literal></emphasis></para>
+		<para>Para activar la detección de anomalías (outliers) despliegue la sección Outliers y haga click en <literal> Enable anomaly detection functionality</literal>.</para> <para> Si desea desactivar la opción, simplemente desmarque esa opción.</para>
+		<mediaobject>
+			<imageobject>
+				<imagedata scalefit="1" width="450" align="center" fileref="images/ch13_img031.png"/>
+			</imageobject>
+			<caption>
+				<para>Configuración general: outilers</para>
 			</caption>
 		</mediaobject>
 		<para><emphasis role="bold">Geo IP</emphasis></para>

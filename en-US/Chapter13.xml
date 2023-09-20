@@ -408,6 +408,16 @@
 				<para>General settings: list of Network Routes</para>
 			</caption>
 		</mediaobject>
+		<para><emphasis role="bold"><literal>Outliers</literal></emphasis></para>
+		<para>To enable anomalies detection (outliers) open outliers section and click on <literal> Enable anomaly detection functionality</literal>.</para> <para> Uncheck this option if you want to disable it.</para>
+		<mediaobject>
+			<imageobject>
+				<imagedata scalefit="1" width="450" align="center" fileref="images/ch13_img031.png"/>
+			</imageobject>
+			<caption>
+				<para>General settings: outliers</para>
+			</caption>
+		</mediaobject>
 		<para><emphasis role="bold">Geo IP</emphasis></para>
 		<para>To enable Geo Protection function it is necessary to have an updated geolocalization database in order to avoid errors in IPs geolocalization. redBorder has been configured to support only Maxmind database format.</para>
 		<para>These are the types of databases that are admitted for IPv4 and IPv6 versions (binary format of old GeoIp):</para>
