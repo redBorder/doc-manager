@@ -139,7 +139,7 @@
 			</revision>
 			<revision>
 				<revnumber>1.1-5</revnumber>
-				<date>Octubre 2022</date>
+				<date>October 2022</date>
 				<author>
 					<firstname>Eneo Tecnología</firstname>
 					<email>spain@redborder.com</email>
@@ -147,6 +147,19 @@
 				<revdescription>
 					<simplelist>
 						<member>Update pictures and add Malware module description.</member>
+					</simplelist>
+				</revdescription>
+			</revision>
+			<revision>
+				<revnumber>1.1-6</revnumber>
+				<date>September 2023</date>
+				<author>
+					<firstname>Eneo Tecnología</firstname>
+					<email>spain@redborder.com</email>
+				</author>
+				<revdescription>
+					<simplelist>
+						<member>Added outliers section, moved Bulkstat to the monitors section, and made changes to the Advanced section.</member>
 					</simplelist>
 				</revdescription>
 			</revision>
